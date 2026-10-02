@@ -55,6 +55,21 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 - U prvoj verziji **nema automatskog ocjenjivanja izgovora**. Korisnik sam ocjenjuje. Automatsko ocjenjivanje (Whisper) je moguće proširenje kasnije.
 - Media Session API (kontrole na zaključanom zaslonu i slušalicama) i Screen Wake Lock tijekom vježbanja.
 
+## Modovi učenja
+### Rendgen mod
+- Rečenica se prikazuje rastavljena na **riječi i čestice**, svaki dio u svojoj boji prema ulozi (npr. vrijeme, mjesto, subjekt, objekt, glagol, čestica).
+- Dodir na dio prikazuje **kratko objašnjenje na hrvatskom**: značenje riječi **u kontekstu te rečenice** i njezina uloga (ne samo rječnička definicija).
+- Gruba podjela: uljudni završeci (ます, です) ostaju uz riječ, ali se **objašnjavaju** (npr. 行きます: glagol 行く + ます, uljudni oblik; です: kopula "je/jest", uljudno).
+- Uloge i objašnjenja generiraju se **unaprijed u pipelineu** i spremaju u JSON uz rečenicu. Aplikacija ih ne računa.
+
+### Mod postupnog slaganja
+- Rečenica se uči kroz chunkove koji se nadograđuju, dok se ne dođe do cijele rečenice.
+- **Dva smjera:**
+  - od početka: 1 → 1+2 → 1+2+3 → …
+  - od kraja: zadnji → predzadnji+zadnji → …
+- Smjer se mijenja gumbom koji je vidljiv kad je mod upaljen. Dizajn gumba: **kao UNO karta "obrni smjer"** (dvije zakrivljene strelice).
+- Ne treba dodatni audio: koristi se snimka cijele rečenice i **vremenske oznake po riječima** (Azure) da se pusti samo traženi raspon.
+
 ## Platforma: mobile-first PWA
 - **Glavni uređaj je mobitel**, uspravni položaj. Dizajniraj prvo za mobitel.
 - Veliki gumbi, sve dohvatljivo jednom rukom, rečenica velikim slovima u sredini zaslona.
@@ -97,13 +112,14 @@ public/          # manifest, ikone, service worker
 1. Postavi `.devcontainer` (Claude Code unutar Codespacea) i prazan projekt
 2. **Najmanji prototip:** jedna stranica, jedna rečenica s furiganom, gumb za zvuk, tipke za brzinu
 3. Objava na GitHub Pages i test na mobitelu (PWA)
-4. Pipeline sadržaja za jednu temu (jedna priča, audio, furigana)
+4. Pipeline sadržaja za jednu temu (jedna priča, audio, furigana, vremenske oznake po riječima, uloge i objašnjenja za rendgen mod)
 5. Fond: popisi N4/N3 i provjera pokrivenosti
-6. Shadowing sučelje (chunkovi, petlja, isticanje riječi)
-7. FSRS kartice i izvoz/uvoz napretka
-8. Snimanje sebe
-9. Više tema, nestajanje furigane, kanji praćenje
-10. Opcionalno: automatsko ocjenjivanje izgovora, pitch accent
+6. Shadowing sučelje (chunkovi, petlja, isticanje riječi) + mod postupnog slaganja (oba smjera)
+7. Rendgen mod
+8. FSRS kartice i izvoz/uvoz napretka
+9. Snimanje sebe
+10. Više tema, nestajanje furigane, kanji praćenje
+11. Opcionalno: automatsko ocjenjivanje izgovora, pitch accent
 
 ## Što NE radimo
 - Ne vježbamo pisanje (nema KanjiVG, crtanja znakova ni tipkanja odgovora na japanskom).
