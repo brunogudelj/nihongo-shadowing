@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import sentence from '../content/prototip.json'
 
 // Svi mp3 iz content/audio, po imenu datoteke.
@@ -16,6 +16,23 @@ function App() {
   const [speed, setSpeed] = useState(1)
   const [playing, setPlaying] = useState(false)
   const [showTranslation, setShowTranslation] = useState(false)
+  const [audioSrc, setAudioSrc] = useState<string>()
+
+  // mp3 se učitava cijeli u memoriju: iPhone tada pouzdano pušta i offline
+  // (iz spremljene kopije ne zna puštati "u komadićima").
+  useEffect(() => {
+    if (!audioUrl) return
+    let objectUrl: string | undefined
+    fetch(audioUrl)
+      .then((res) => res.blob())
+      .then((blob) => {
+        objectUrl = URL.createObjectURL(blob)
+        setAudioSrc(objectUrl)
+      })
+    return () => {
+      if (objectUrl) URL.revokeObjectURL(objectUrl)
+    }
+  }, [])
 
   function applySpeed(rate: number) {
     const audio = audioRef.current
@@ -71,7 +88,7 @@ function App() {
           <>
             <audio
               ref={audioRef}
-              src={audioUrl}
+              src={audioSrc}
               preload="auto"
               onPlay={() => setPlaying(true)}
               onPause={() => setPlaying(false)}
