@@ -4,7 +4,7 @@
 // Svako pokretanje radi NOVU priču (001, 002, ...) i nikad ne prepisuje postojeću.
 // Nova priča se odmah provjeri (fond). Ako je ispod cilja, Claude je jednom prepravi.
 
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import Anthropic from '@anthropic-ai/sdk'
 import { parse } from 'yaml'
 import { checkFond, fondRecord, printFond, TARGET } from './fond.mjs'
@@ -104,6 +104,17 @@ mkdirSync(outDir, { recursive: true })
 const next = readdirSync(outDir).filter((f) => /^\d{3}\.json$/.test(f)).length + 1
 const id = String(next).padStart(3, '0')
 
+// Rezerviraj broj priče, da dvije naredbe u isto vrijeme ne pišu istu priču (i ne troše dvaput).
+const lock = `${outDir}/${id}.lock`
+try {
+  writeFileSync(lock, '', { flag: 'wx' })
+} catch {
+  console.error(`Priča ${id} za ovu temu se već piše (radi druga naredba). Pričekaj da završi.`)
+  process.exit(1)
+}
+process.on('exit', () => rmSync(lock, { force: true }))
+process.on('SIGINT', () => process.exit(130))
+
 const themeYaml = readFileSync(themeFile, 'utf8')
 const client = new Anthropic()
 let totalIn = 0
@@ -180,6 +191,7 @@ writeFileSync(
       created: new Date().toISOString().slice(0, 10),
       needs_review: problems,
       fond: fondRecord(fond),
+      trosak_usd: Math.round(cost * 1000) / 1000,
       ...story,
     },
     null,

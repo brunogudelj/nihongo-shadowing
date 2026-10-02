@@ -26,3 +26,6 @@ dist-ssr
 # Tajni ključevi (nikad na GitHub)
 .env
 .env.*
+
+# Privremena rezervacija broja priče dok se piše
+content/stories/**/*.lock

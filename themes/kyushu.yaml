@@ -9,7 +9,6 @@ kljucne_rijeci:
   - 島        # otok
   - 海        # more
   - 山        # planina
-  - 温泉      # vruće vrelo (onsen)
   - 町        # grad, mjesto
   - おいしい  # ukusno
 
@@ -37,5 +36,8 @@ vlastita_imena:
     hr: Kumamoto
 
 dodatni_rjecnik:
+  - ja: 温泉
+    citanje: おんせん
+    hr: vruće vrelo (onsen)
   - ja: ラーメン
     hr: ramen

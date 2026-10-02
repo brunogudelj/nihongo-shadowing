@@ -12,7 +12,8 @@
     "furigana": "node pipeline/furigana.mjs",
     "audio": "node --env-file-if-exists=.env pipeline/audio.mjs",
     "popisi": "node pipeline/lists.mjs",
-    "provjera": "node pipeline/check.mjs"
+    "provjera": "node pipeline/check.mjs",
+    "nova-prica": "node --env-file-if-exists=.env pipeline/new-story.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

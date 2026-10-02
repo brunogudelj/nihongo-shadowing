@@ -1,0 +1,929 @@
+{
+  "id": "kyushu-001",
+  "theme": "kyushu",
+  "model": "claude-opus-5-5",
+  "created": "2026-10-02",
+  "needs_review": [],
+  "fond": {
+    "pokrivenost": 100,
+    "izvan_popisa": []
+  },
+  "trosak_usd": 0.105,
+  "title_ja": "九州旅行",
+  "title_hr": "Putovanje po Kyushuu",
+  "sentences": [
+    {
+      "ja": "夏休みに九州へ行きました。",
+      "hr": "Za ljetnih praznika otišao sam na Kyushu.",
+      "chunks": [
+        "夏休みに",
+        "九州へ",
+        "行きました。"
+      ],
+      "words": [
+        {
+          "text": "夏休み",
+          "lemma": "夏休み",
+          "reading": "なつやすみ",
+          "role": "vrijeme",
+          "explanation_hr": "Ljetni praznici; određuje vrijeme radnje.",
+          "furigana": [
+            {
+              "text": "夏休",
+              "reading": "なつやす"
+            },
+            {
+              "text": "み"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 750
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava vrijeme kada se nešto dogodilo.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 763,
+          "end_ms": 925
+        },
+        {
+          "text": "九州",
+          "lemma": "九州",
+          "reading": "きゅうしゅう",
+          "role": "mjesto",
+          "explanation_hr": "Kyushu, japanski otok na jugozapadu.",
+          "furigana": [
+            {
+              "text": "九州",
+              "reading": "きゅうしゅう"
+            }
+          ],
+          "start_ms": 938,
+          "end_ms": 1425
+        },
+        {
+          "text": "へ",
+          "lemma": "へ",
+          "reading": "え",
+          "role": "cestica",
+          "explanation_hr": "Čestica smjera: prema, na (cilj kretanja); čita se \"e\".",
+          "furigana": [
+            {
+              "text": "へ"
+            }
+          ],
+          "start_ms": 1438,
+          "end_ms": 1525
+        },
+        {
+          "text": "行きました",
+          "lemma": "行く",
+          "reading": "いきました",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) + ました, uljudni prošli oblik: otišao sam.",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きました"
+            }
+          ],
+          "start_ms": 1538,
+          "end_ms": 2288
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2300,
+          "end_ms": 2400
+        }
+      ],
+      "audio": "kyushu-001-1.mp3",
+      "duration_ms": 3100,
+      "full_start_ms": 75,
+      "full_end_ms": 2400
+    },
+    {
+      "ja": "最初に博多でラーメンを食べました。",
+      "hr": "Najprije sam u Hakati jeo ramen.",
+      "chunks": [
+        "最初に",
+        "博多で",
+        "ラーメンを",
+        "食べました。"
+      ],
+      "words": [
+        {
+          "text": "最初",
+          "lemma": "最初",
+          "reading": "さいしょ",
+          "role": "vrijeme",
+          "explanation_hr": "Početak, prvo; s に znači \"najprije\".",
+          "furigana": [
+            {
+              "text": "最初",
+              "reading": "さいしょ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 513
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja od 最初 čini prilog \"najprije\".",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 525,
+          "end_ms": 638
+        },
+        {
+          "text": "博多",
+          "lemma": "博多",
+          "reading": "はかた",
+          "role": "mjesto",
+          "explanation_hr": "Hakata, dio grada Fukuoke poznat po ramenu.",
+          "furigana": [
+            {
+              "text": "博多",
+              "reading": "はかた"
+            }
+          ],
+          "start_ms": 650,
+          "end_ms": 1025
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava mjesto gdje se radnja odvija.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ],
+          "start_ms": 1038,
+          "end_ms": 1150
+        },
+        {
+          "text": "ラーメン",
+          "lemma": "ラーメン",
+          "reading": "ラーメン",
+          "role": "objekt",
+          "explanation_hr": "Ramen, juha s rezancima.",
+          "furigana": [
+            {
+              "text": "ラーメン"
+            }
+          ],
+          "start_ms": 1163,
+          "end_ms": 1575
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 1588,
+          "end_ms": 1688
+        },
+        {
+          "text": "食べました",
+          "lemma": "食べる",
+          "reading": "たべました",
+          "role": "glagol",
+          "explanation_hr": "食べる (jesti) + ました, uljudni prošli oblik: jeo sam.",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べました"
+            }
+          ],
+          "start_ms": 1700,
+          "end_ms": 2425
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2438,
+          "end_ms": 2538
+        }
+      ],
+      "audio": "kyushu-001-2.mp3",
+      "duration_ms": 3238,
+      "full_start_ms": 3175,
+      "full_end_ms": 5638
+    },
+    {
+      "ja": "とてもおいしかったです。",
+      "hr": "Bilo je jako ukusno.",
+      "chunks": [
+        "とても",
+        "おいしかったです。"
+      ],
+      "words": [
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "prilog",
+          "explanation_hr": "Jako, vrlo; pojačava pridjev.",
+          "furigana": [
+            {
+              "text": "とても"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 475
+        },
+        {
+          "text": "おいしかったです",
+          "lemma": "おいしい",
+          "reading": "おいしかったです",
+          "role": "pridjev",
+          "explanation_hr": "おいしい (ukusan) u prošlom obliku かった + です za uljudnost: bilo je ukusno.",
+          "furigana": [
+            {
+              "text": "おいしかったです"
+            }
+          ],
+          "start_ms": 488,
+          "end_ms": 1550
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 1563,
+          "end_ms": 1663
+        }
+      ],
+      "audio": "kyushu-001-3.mp3",
+      "duration_ms": 2363,
+      "full_start_ms": 6413,
+      "full_end_ms": 8000
+    },
+    {
+      "ja": "次の日、別府の温泉に入りました。",
+      "hr": "Sljedeći dan okupao sam se u vrućem vrelu u Beppuu.",
+      "chunks": [
+        "次の日、",
+        "別府の",
+        "温泉に",
+        "入りました。"
+      ],
+      "words": [
+        {
+          "text": "次",
+          "lemma": "次",
+          "reading": "つぎ",
+          "role": "vrijeme",
+          "explanation_hr": "Sljedeći, idući.",
+          "furigana": [
+            {
+              "text": "次",
+              "reading": "つぎ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 375
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja povezuje dvije imenice: sljedeći + dan.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 388,
+          "end_ms": 475
+        },
+        {
+          "text": "日",
+          "lemma": "日",
+          "reading": "ひ",
+          "role": "vrijeme",
+          "explanation_hr": "Dan; 次の日 znači \"sljedeći dan\".",
+          "furigana": [
+            {
+              "text": "日",
+              "reading": "ひ"
+            }
+          ],
+          "start_ms": 488,
+          "end_ms": 738
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 838,
+          "end_ms": 1013
+        },
+        {
+          "text": "別府",
+          "lemma": "別府",
+          "reading": "べっぷ",
+          "role": "imenica",
+          "explanation_hr": "Beppu, grad poznat po vrućim vrelima.",
+          "furigana": [
+            {
+              "text": "別府",
+              "reading": "べっぷ"
+            }
+          ],
+          "start_ms": 1025,
+          "end_ms": 1363
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Čestica pripadnosti: vrelo u Beppuu.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 1375,
+          "end_ms": 1500
+        },
+        {
+          "text": "温泉",
+          "lemma": "温泉",
+          "reading": "おんせん",
+          "role": "mjesto",
+          "explanation_hr": "Onsen, vruće vrelo za kupanje.",
+          "furigana": [
+            {
+              "text": "温泉",
+              "reading": "おんせん"
+            }
+          ],
+          "start_ms": 1513,
+          "end_ms": 1938
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava mjesto u koje se ulazi.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 1950,
+          "end_ms": 2063
+        },
+        {
+          "text": "入りました",
+          "lemma": "入る",
+          "reading": "はいりました",
+          "role": "glagol",
+          "explanation_hr": "入る (ući) + ました; uz 温泉 znači \"okupati se u vrelu\".",
+          "furigana": [
+            {
+              "text": "入",
+              "reading": "はい"
+            },
+            {
+              "text": "りました"
+            }
+          ],
+          "start_ms": 2075,
+          "end_ms": 2888
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2900,
+          "end_ms": 3000
+        }
+      ],
+      "audio": "kyushu-001-4.mp3",
+      "duration_ms": 3700,
+      "full_start_ms": 8775,
+      "full_end_ms": 11700
+    },
+    {
+      "ja": "それから、阿蘇の山を見に行きました。",
+      "hr": "Zatim sam otišao vidjeti planinu Aso.",
+      "chunks": [
+        "それから、",
+        "阿蘇の",
+        "山を",
+        "見に",
+        "行きました。"
+      ],
+      "words": [
+        {
+          "text": "それから",
+          "lemma": "それから",
+          "reading": "それから",
+          "role": "veznik",
+          "explanation_hr": "Zatim, nakon toga.",
+          "furigana": [
+            {
+              "text": "それから"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 688
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 813,
+          "end_ms": 1013
+        },
+        {
+          "text": "阿蘇",
+          "lemma": "阿蘇",
+          "reading": "あそ",
+          "role": "imenica",
+          "explanation_hr": "Aso, poznati vulkan u prefekturi Kumamoto.",
+          "furigana": [
+            {
+              "text": "阿蘇",
+              "reading": "あそ"
+            }
+          ],
+          "start_ms": 1025,
+          "end_ms": 1313
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja povezuje ime i imenicu: planina Aso.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 1325,
+          "end_ms": 1425
+        },
+        {
+          "text": "山",
+          "lemma": "山",
+          "reading": "やま",
+          "role": "objekt",
+          "explanation_hr": "Planina; ovdje vulkan Aso.",
+          "furigana": [
+            {
+              "text": "山",
+              "reading": "やま"
+            }
+          ],
+          "start_ms": 1438,
+          "end_ms": 1688
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 1700,
+          "end_ms": 1838
+        },
+        {
+          "text": "見",
+          "lemma": "見る",
+          "reading": "み",
+          "role": "glagol",
+          "explanation_hr": "Osnova glagola 見る (gledati, vidjeti) ispred に za svrhu.",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            }
+          ],
+          "start_ms": 1850,
+          "end_ms": 2000
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica svrhe: osnova glagola + に + 行く = ići nešto učiniti.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 2013,
+          "end_ms": 2125
+        },
+        {
+          "text": "行きました",
+          "lemma": "行く",
+          "reading": "いきました",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) + ました, uljudni prošli oblik: otišao sam.",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きました"
+            }
+          ],
+          "start_ms": 2138,
+          "end_ms": 2825
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2838,
+          "end_ms": 2938
+        }
+      ],
+      "audio": "kyushu-001-5.mp3",
+      "duration_ms": 3638,
+      "full_start_ms": 12475,
+      "full_end_ms": 15338
+    },
+    {
+      "ja": "最後に長崎の町から海を見ました。",
+      "hr": "Na kraju sam iz grada Nagasakija gledao more.",
+      "chunks": [
+        "最後に",
+        "長崎の",
+        "町から",
+        "海を",
+        "見ました。"
+      ],
+      "words": [
+        {
+          "text": "最後",
+          "lemma": "最後",
+          "reading": "さいご",
+          "role": "vrijeme",
+          "explanation_hr": "Kraj, posljednje; s に znači \"na kraju\".",
+          "furigana": [
+            {
+              "text": "最後",
+              "reading": "さいご"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 463
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja od 最後 čini prilog \"na kraju\".",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 475,
+          "end_ms": 625
+        },
+        {
+          "text": "長崎",
+          "lemma": "長崎",
+          "reading": "ながさき",
+          "role": "imenica",
+          "explanation_hr": "Nagasaki, lučki grad na Kyushuu.",
+          "furigana": [
+            {
+              "text": "長崎",
+              "reading": "ながさき"
+            }
+          ],
+          "start_ms": 638,
+          "end_ms": 1150
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja povezuje ime i imenicu: grad Nagasaki.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 1163,
+          "end_ms": 1263
+        },
+        {
+          "text": "町",
+          "lemma": "町",
+          "reading": "まち",
+          "role": "mjesto",
+          "explanation_hr": "Grad, mjesto.",
+          "furigana": [
+            {
+              "text": "町",
+              "reading": "まち"
+            }
+          ],
+          "start_ms": 1275,
+          "end_ms": 1525
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Čestica \"iz, od\"; označava mjesto odakle se gleda.",
+          "furigana": [
+            {
+              "text": "から"
+            }
+          ],
+          "start_ms": 1538,
+          "end_ms": 1775
+        },
+        {
+          "text": "海",
+          "lemma": "海",
+          "reading": "うみ",
+          "role": "objekt",
+          "explanation_hr": "More.",
+          "furigana": [
+            {
+              "text": "海",
+              "reading": "うみ"
+            }
+          ],
+          "start_ms": 1800,
+          "end_ms": 2125
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 2138,
+          "end_ms": 2250
+        },
+        {
+          "text": "見ました",
+          "lemma": "見る",
+          "reading": "みました",
+          "role": "glagol",
+          "explanation_hr": "見る (gledati) + ました, uljudni prošli oblik: gledao sam.",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "ました"
+            }
+          ],
+          "start_ms": 2263,
+          "end_ms": 2875
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2888,
+          "end_ms": 2988
+        }
+      ],
+      "audio": "kyushu-001-6.mp3",
+      "duration_ms": 3688,
+      "full_start_ms": 16113,
+      "full_end_ms": 19025
+    },
+    {
+      "ja": "また九州の島に来たいです。",
+      "hr": "Želim ponovno doći na otok Kyushu.",
+      "chunks": [
+        "また",
+        "九州の",
+        "島に",
+        "来たいです。"
+      ],
+      "words": [
+        {
+          "text": "また",
+          "lemma": "また",
+          "reading": "また",
+          "role": "prilog",
+          "explanation_hr": "Ponovno, opet.",
+          "furigana": [
+            {
+              "text": "また"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 388
+        },
+        {
+          "text": "九州",
+          "lemma": "九州",
+          "reading": "きゅうしゅう",
+          "role": "imenica",
+          "explanation_hr": "Kyushu, japanski otok.",
+          "furigana": [
+            {
+              "text": "九州",
+              "reading": "きゅうしゅう"
+            }
+          ],
+          "start_ms": 400,
+          "end_ms": 925
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja povezuje ime i imenicu: otok Kyushu.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 938,
+          "end_ms": 1025
+        },
+        {
+          "text": "島",
+          "lemma": "島",
+          "reading": "しま",
+          "role": "mjesto",
+          "explanation_hr": "Otok.",
+          "furigana": [
+            {
+              "text": "島",
+              "reading": "しま"
+            }
+          ],
+          "start_ms": 1038,
+          "end_ms": 1288
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava cilj dolaska.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 1300,
+          "end_ms": 1450
+        },
+        {
+          "text": "来たいです",
+          "lemma": "来る",
+          "reading": "きたいです",
+          "role": "glagol",
+          "explanation_hr": "来る (doći) + たい (željeti) + です: želim doći.",
+          "furigana": [
+            {
+              "text": "来",
+              "reading": "き"
+            },
+            {
+              "text": "たいです"
+            }
+          ],
+          "start_ms": 1463,
+          "end_ms": 2150
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2163,
+          "end_ms": 2263
+        }
+      ],
+      "audio": "kyushu-001-7.mp3",
+      "duration_ms": 2963,
+      "full_start_ms": 19800,
+      "full_end_ms": 21988
+    }
+  ],
+  "audio": "kyushu-001-cijela.mp3",
+  "duration_ms": 22688
+}
