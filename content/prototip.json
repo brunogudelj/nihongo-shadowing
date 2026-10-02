@@ -1,0 +1,14 @@
+{
+  "id": "prototip-1",
+  "translation": "Svako jutro pješačim do stanice.",
+  "segments": [
+    { "text": "毎朝", "reading": "まいあさ" },
+    { "text": "、" },
+    { "text": "駅", "reading": "えき" },
+    { "text": "まで" },
+    { "text": "歩", "reading": "ある" },
+    { "text": "いて" },
+    { "text": "行", "reading": "い" },
+    { "text": "きます。" }
+  ]
+}
