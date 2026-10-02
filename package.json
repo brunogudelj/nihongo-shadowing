@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "story": "node --env-file-if-exists=.env pipeline/story.mjs",
     "furigana": "node pipeline/furigana.mjs",
-    "audio": "node --env-file-if-exists=.env pipeline/audio.mjs"
+    "audio": "node --env-file-if-exists=.env pipeline/audio.mjs",
+    "popisi": "node pipeline/lists.mjs",
+    "provjera": "node pipeline/check.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

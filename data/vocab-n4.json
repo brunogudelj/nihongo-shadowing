@@ -1,0 +1,9508 @@
+[
+ {
+  "word": "会う",
+  "reading": "あう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to meet"
+ },
+ {
+  "word": "青",
+  "reading": "あお",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "blue"
+ },
+ {
+  "word": "青い",
+  "reading": "あおい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "blue"
+ },
+ {
+  "word": "赤",
+  "reading": "あか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "red"
+ },
+ {
+  "word": "赤い",
+  "reading": "あかい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "red"
+ },
+ {
+  "word": "明るい",
+  "reading": "あかるい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bright"
+ },
+ {
+  "word": "秋",
+  "reading": "あき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "autumn"
+ },
+ {
+  "word": "開く",
+  "reading": "あく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to open; to become open"
+ },
+ {
+  "word": "開ける",
+  "reading": "あける",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to open"
+ },
+ {
+  "word": "上げる",
+  "reading": "あげる",
+  "other_forms": [
+   "あげる"
+  ],
+  "level": "N5",
+  "meanings": "to give"
+ },
+ {
+  "word": "朝",
+  "reading": "あさ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "morning"
+ },
+ {
+  "word": "朝ごはん",
+  "reading": "あさごはん",
+  "other_forms": [
+   "朝御飯"
+  ],
+  "level": "N5",
+  "meanings": "breakfast"
+ },
+ {
+  "word": "あさって",
+  "reading": "あさって",
+  "other_forms": [
+   "明後日"
+  ],
+  "level": "N5",
+  "meanings": "day after tomorrow"
+ },
+ {
+  "word": "足",
+  "reading": "あし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "foot; leg"
+ },
+ {
+  "word": "明日",
+  "reading": "あした",
+  "other_forms": [
+   "あした"
+  ],
+  "level": "N5",
+  "meanings": "tomorrow"
+ },
+ {
+  "word": "あそこ",
+  "reading": "あそこ",
+  "other_forms": [
+   "彼処"
+  ],
+  "level": "N5",
+  "meanings": "over there"
+ },
+ {
+  "word": "遊ぶ",
+  "reading": "あそぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to play; to make a visit"
+ },
+ {
+  "word": "暖かい",
+  "reading": "あたたかい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "warm"
+ },
+ {
+  "word": "頭",
+  "reading": "あたま",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "head"
+ },
+ {
+  "word": "新しい",
+  "reading": "あたらしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "new"
+ },
+ {
+  "word": "あちら",
+  "reading": "あちら",
+  "other_forms": [
+   "彼方"
+  ],
+  "level": "N5",
+  "meanings": "there"
+ },
+ {
+  "word": "厚い",
+  "reading": "あつい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "kind; deep; thick"
+ },
+ {
+  "word": "暑い",
+  "reading": "あつい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hot"
+ },
+ {
+  "word": "熱い",
+  "reading": "あつい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hot to the touch"
+ },
+ {
+  "word": "あっち",
+  "reading": "あっち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "over there"
+ },
+ {
+  "word": "後",
+  "reading": "あと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "afterwards"
+ },
+ {
+  "word": "あなた",
+  "reading": "あなた",
+  "other_forms": [
+   "貴女"
+  ],
+  "level": "N5",
+  "meanings": "you"
+ },
+ {
+  "word": "兄",
+  "reading": "あに",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(humble) older brother"
+ },
+ {
+  "word": "姉",
+  "reading": "あね",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(humble) older sister"
+ },
+ {
+  "word": "あの",
+  "reading": "あの",
+  "other_forms": [
+   "彼の"
+  ],
+  "level": "N5",
+  "meanings": "that over there"
+ },
+ {
+  "word": "アパート",
+  "reading": "アパート",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "apartment"
+ },
+ {
+  "word": "あびる",
+  "reading": "あびる",
+  "other_forms": [
+   "浴びる"
+  ],
+  "level": "N5",
+  "meanings": "to bathe; to shower"
+ },
+ {
+  "word": "危ない",
+  "reading": "あぶない",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dangerous"
+ },
+ {
+  "word": "甘い",
+  "reading": "あまい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sweet"
+ },
+ {
+  "word": "あまり",
+  "reading": "あまり",
+  "other_forms": [
+   "余り"
+  ],
+  "level": "N5",
+  "meanings": "not very"
+ },
+ {
+  "word": "飴",
+  "reading": "あめ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "candy"
+ },
+ {
+  "word": "雨",
+  "reading": "あめ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "rain"
+ },
+ {
+  "word": "洗う",
+  "reading": "あらう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to wash"
+ },
+ {
+  "word": "ありがとう",
+  "reading": "ありがとう",
+  "other_forms": [
+   "有難う"
+  ],
+  "level": "N5",
+  "meanings": "Thank you"
+ },
+ {
+  "word": "ある",
+  "reading": "ある",
+  "other_forms": [
+   "有る",
+   "在る"
+  ],
+  "level": "N5",
+  "meanings": "to be; to have (used for inanimate objects)"
+ },
+ {
+  "word": "歩く",
+  "reading": "あるく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to walk"
+ },
+ {
+  "word": "あれ",
+  "reading": "あれ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "that"
+ },
+ {
+  "word": "いい",
+  "reading": "いい",
+  "other_forms": [
+   "よい"
+  ],
+  "level": "N5",
+  "meanings": "good"
+ },
+ {
+  "word": "いいえ",
+  "reading": "いいえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "no"
+ },
+ {
+  "word": "言う",
+  "reading": "いう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to say"
+ },
+ {
+  "word": "家",
+  "reading": "いえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "house"
+ },
+ {
+  "word": "いかが",
+  "reading": "いかが",
+  "other_forms": [
+   "如何"
+  ],
+  "level": "N5",
+  "meanings": "how"
+ },
+ {
+  "word": "行く",
+  "reading": "いく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to go"
+ },
+ {
+  "word": "いくつ",
+  "reading": "いくつ",
+  "other_forms": [
+   "幾つ"
+  ],
+  "level": "N5",
+  "meanings": "how many?; how old?"
+ },
+ {
+  "word": "いくら",
+  "reading": "いくら",
+  "other_forms": [
+   "幾ら"
+  ],
+  "level": "N5",
+  "meanings": "how much?"
+ },
+ {
+  "word": "池",
+  "reading": "いけ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "pond"
+ },
+ {
+  "word": "医者",
+  "reading": "いしゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "medical doctor"
+ },
+ {
+  "word": "いす",
+  "reading": "いす",
+  "other_forms": [
+   "椅子"
+  ],
+  "level": "N5",
+  "meanings": "chair"
+ },
+ {
+  "word": "忙しい",
+  "reading": "いそがしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "busy; irritated"
+ },
+ {
+  "word": "痛い",
+  "reading": "いたい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "painful"
+ },
+ {
+  "word": "いただきます",
+  "reading": "いただきます",
+  "other_forms": [
+   "頂きます"
+  ],
+  "level": "N5",
+  "meanings": "expression of gratitude before meals"
+ },
+ {
+  "word": "一",
+  "reading": "いち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "one"
+ },
+ {
+  "word": "一日",
+  "reading": "いちにち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "one day; first of month"
+ },
+ {
+  "word": "いちばん",
+  "reading": "いちばん",
+  "other_forms": [
+   "一番"
+  ],
+  "level": "N5",
+  "meanings": "best; first"
+ },
+ {
+  "word": "いつ",
+  "reading": "いつ",
+  "other_forms": [
+   "何時"
+  ],
+  "level": "N5",
+  "meanings": "when"
+ },
+ {
+  "word": "五日",
+  "reading": "いつか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "five days; fifth day"
+ },
+ {
+  "word": "一緒",
+  "reading": "いっしょ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "together"
+ },
+ {
+  "word": "五つ",
+  "reading": "いつつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "five"
+ },
+ {
+  "word": "いつも",
+  "reading": "いつも",
+  "other_forms": [
+   "何時も"
+  ],
+  "level": "N5",
+  "meanings": "always"
+ },
+ {
+  "word": "犬",
+  "reading": "いぬ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dog"
+ },
+ {
+  "word": "今",
+  "reading": "いま",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "now"
+ },
+ {
+  "word": "意味",
+  "reading": "いみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "meaning"
+ },
+ {
+  "word": "妹",
+  "reading": "いもうと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(humble) younger sister"
+ },
+ {
+  "word": "嫌",
+  "reading": "いや",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "unpleasant"
+ },
+ {
+  "word": "入口",
+  "reading": "いりぐち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "entrance"
+ },
+ {
+  "word": "いる",
+  "reading": "いる",
+  "other_forms": [
+   "居る"
+  ],
+  "level": "N5",
+  "meanings": "to be; to have (used for people and animals)"
+ },
+ {
+  "word": "要る",
+  "reading": "いる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to need"
+ },
+ {
+  "word": "入れる",
+  "reading": "いれる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to put in"
+ },
+ {
+  "word": "色",
+  "reading": "いろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "colour"
+ },
+ {
+  "word": "いろいろ",
+  "reading": "いろいろ",
+  "other_forms": [
+   "色々"
+  ],
+  "level": "N5",
+  "meanings": "various"
+ },
+ {
+  "word": "上",
+  "reading": "うえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "on top of"
+ },
+ {
+  "word": "後ろ",
+  "reading": "うしろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "behind"
+ },
+ {
+  "word": "薄い",
+  "reading": "うすい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "thin; weak"
+ },
+ {
+  "word": "歌",
+  "reading": "うた",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "song"
+ },
+ {
+  "word": "歌う",
+  "reading": "うたう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to sing"
+ },
+ {
+  "word": "生まれる",
+  "reading": "うまれる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to be born"
+ },
+ {
+  "word": "海",
+  "reading": "うみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sea"
+ },
+ {
+  "word": "売る",
+  "reading": "うる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to sell"
+ },
+ {
+  "word": "煩い",
+  "reading": "うるさい",
+  "other_forms": [
+   "うるさい"
+  ],
+  "level": "N5",
+  "meanings": "noisy; annoying"
+ },
+ {
+  "word": "上着",
+  "reading": "うわぎ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "jacket"
+ },
+ {
+  "word": "絵",
+  "reading": "え",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "picture"
+ },
+ {
+  "word": "映画",
+  "reading": "えいが",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "movie"
+ },
+ {
+  "word": "映画館",
+  "reading": "えいがかん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cinema"
+ },
+ {
+  "word": "英語",
+  "reading": "えいご",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "English language"
+ },
+ {
+  "word": "ええ",
+  "reading": "ええ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "yes"
+ },
+ {
+  "word": "駅",
+  "reading": "えき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "station"
+ },
+ {
+  "word": "エレベーター",
+  "reading": "エレベーター",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "elevator"
+ },
+ {
+  "word": "鉛筆",
+  "reading": "えんぴつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "pencil"
+ },
+ {
+  "word": "おいしい",
+  "reading": "おいしい",
+  "other_forms": [
+   "美味しい"
+  ],
+  "level": "N5",
+  "meanings": "delicious"
+ },
+ {
+  "word": "多い",
+  "reading": "おおい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "many"
+ },
+ {
+  "word": "大きい",
+  "reading": "おおきい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "big"
+ },
+ {
+  "word": "大きな",
+  "reading": "おおきな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "big"
+ },
+ {
+  "word": "大勢",
+  "reading": "おおぜい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "great number of people"
+ },
+ {
+  "word": "お母さん",
+  "reading": "おかあさん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(honorable) mother"
+ },
+ {
+  "word": "お菓子",
+  "reading": "おかし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sweets; candy"
+ },
+ {
+  "word": "お金",
+  "reading": "おかね",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "money"
+ },
+ {
+  "word": "起きる",
+  "reading": "おきる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to get up"
+ },
+ {
+  "word": "置く",
+  "reading": "おく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to put"
+ },
+ {
+  "word": "奥さん",
+  "reading": "おくさん",
+  "other_forms": [
+   "おくさん"
+  ],
+  "level": "N5",
+  "meanings": "(honorable) wife"
+ },
+ {
+  "word": "お酒",
+  "reading": "おさけ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "alcohol; rice wine"
+ },
+ {
+  "word": "お皿",
+  "reading": "おさら",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "plate; dish"
+ },
+ {
+  "word": "お祖父さん",
+  "reading": "おじいさん",
+  "other_forms": [
+   "お爺さん",
+   "おじいさん"
+  ],
+  "level": "N5",
+  "meanings": "grandfather; male senior citizen"
+ },
+ {
+  "word": "教える",
+  "reading": "おしえる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to teach; to tell"
+ },
+ {
+  "word": "押す",
+  "reading": "おす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to push; to stamp something"
+ },
+ {
+  "word": "遅い",
+  "reading": "おそい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "late; slow"
+ },
+ {
+  "word": "お茶",
+  "reading": "おちゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "green tea"
+ },
+ {
+  "word": "お手洗い",
+  "reading": "おてあらい",
+  "other_forms": [
+   "御手洗"
+  ],
+  "level": "N5",
+  "meanings": "bathroom"
+ },
+ {
+  "word": "お父さん",
+  "reading": "おとうさん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(honorable) father"
+ },
+ {
+  "word": "弟",
+  "reading": "おとうと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "younger brother"
+ },
+ {
+  "word": "男",
+  "reading": "おとこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "man"
+ },
+ {
+  "word": "男の子",
+  "reading": "おとこのこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "boy"
+ },
+ {
+  "word": "一昨日",
+  "reading": "おととい",
+  "other_forms": [
+   "おととい"
+  ],
+  "level": "N5",
+  "meanings": "day before yesterday"
+ },
+ {
+  "word": "一昨年",
+  "reading": "おととし",
+  "other_forms": [
+   "おととし"
+  ],
+  "level": "N5",
+  "meanings": "year before last"
+ },
+ {
+  "word": "大人",
+  "reading": "おとな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "adult"
+ },
+ {
+  "word": "おなか",
+  "reading": "おなか",
+  "other_forms": [
+   "お腹"
+  ],
+  "level": "N5",
+  "meanings": "stomach"
+ },
+ {
+  "word": "同じ",
+  "reading": "おなじ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "same"
+ },
+ {
+  "word": "お兄さん",
+  "reading": "おにいさん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(honorable) older brother"
+ },
+ {
+  "word": "お姉さん",
+  "reading": "おねえさん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(honorable) older sister"
+ },
+ {
+  "word": "お願いします",
+  "reading": "おねがいします",
+  "other_forms": [
+   "おねがいします"
+  ],
+  "level": "N5",
+  "meanings": "please"
+ },
+ {
+  "word": "おばあさん",
+  "reading": "おばあさん",
+  "other_forms": [
+   "お祖母さん"
+  ],
+  "level": "N5",
+  "meanings": "grandmother; female senior-citizen"
+ },
+ {
+  "word": "伯母さん",
+  "reading": "おばさん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "aunt"
+ },
+ {
+  "word": "おはよう",
+  "reading": "おはよう",
+  "other_forms": [
+   "お早う"
+  ],
+  "level": "N5",
+  "meanings": "(abbreviation) Good morning"
+ },
+ {
+  "word": "お風呂",
+  "reading": "おふろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bath"
+ },
+ {
+  "word": "お弁当",
+  "reading": "おべんとう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "boxed lunch"
+ },
+ {
+  "word": "覚える",
+  "reading": "おぼえる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to remember"
+ },
+ {
+  "word": "おまわりさん",
+  "reading": "おまわりさん",
+  "other_forms": [
+   "お巡りさん"
+  ],
+  "level": "N5",
+  "meanings": "friendly term for policeman"
+ },
+ {
+  "word": "重い",
+  "reading": "おもい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "heavy"
+ },
+ {
+  "word": "おもしろい",
+  "reading": "おもしろい",
+  "other_forms": [
+   "面白い"
+  ],
+  "level": "N5",
+  "meanings": "interesting"
+ },
+ {
+  "word": "泳ぐ",
+  "reading": "およぐ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to swim"
+ },
+ {
+  "word": "降りる",
+  "reading": "おりる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to get off; to descend"
+ },
+ {
+  "word": "終る",
+  "reading": "おわる",
+  "other_forms": [
+   "終わる"
+  ],
+  "level": "N5",
+  "meanings": "to finish"
+ },
+ {
+  "word": "音楽",
+  "reading": "おんがく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "music"
+ },
+ {
+  "word": "女",
+  "reading": "おんな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "woman"
+ },
+ {
+  "word": "女の子",
+  "reading": "おんなのこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "girl"
+ },
+ {
+  "word": "外国",
+  "reading": "がいこく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "foreign country"
+ },
+ {
+  "word": "外国人",
+  "reading": "がいこくじん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "foreigner"
+ },
+ {
+  "word": "会社",
+  "reading": "かいしゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "company"
+ },
+ {
+  "word": "階段",
+  "reading": "かいだん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "stairs"
+ },
+ {
+  "word": "買い物",
+  "reading": "かいもの",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "shopping"
+ },
+ {
+  "word": "買う",
+  "reading": "かう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to buy"
+ },
+ {
+  "word": "返す",
+  "reading": "かえす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to return something"
+ },
+ {
+  "word": "帰る",
+  "reading": "かえる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to go back"
+ },
+ {
+  "word": "かかる",
+  "reading": "かかる",
+  "other_forms": [
+   "掛かる"
+  ],
+  "level": "N5",
+  "meanings": "to take time or money"
+ },
+ {
+  "word": "かぎ",
+  "reading": "かぎ",
+  "other_forms": [
+   "鍵"
+  ],
+  "level": "N5",
+  "meanings": "key"
+ },
+ {
+  "word": "書く",
+  "reading": "かく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to write"
+ },
+ {
+  "word": "学生",
+  "reading": "がくせい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "student"
+ },
+ {
+  "word": "かける",
+  "reading": "かける",
+  "other_forms": [
+   "掛ける"
+  ],
+  "level": "N5",
+  "meanings": "to call by phone"
+ },
+ {
+  "word": "傘",
+  "reading": "かさ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "umbrella"
+ },
+ {
+  "word": "貸す",
+  "reading": "かす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to lend"
+ },
+ {
+  "word": "風",
+  "reading": "かぜ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "wind"
+ },
+ {
+  "word": "風邪",
+  "reading": "かぜ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "a cold"
+ },
+ {
+  "word": "家族",
+  "reading": "かぞく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "family"
+ },
+ {
+  "word": "方",
+  "reading": "かた",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "person; way of doing"
+ },
+ {
+  "word": "学校",
+  "reading": "がっこう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "school"
+ },
+ {
+  "word": "カップ",
+  "reading": "カップ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cup"
+ },
+ {
+  "word": "家庭",
+  "reading": "かてい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "household"
+ },
+ {
+  "word": "角",
+  "reading": "かど",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "a corner"
+ },
+ {
+  "word": "かばん",
+  "reading": "かばん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bag; basket"
+ },
+ {
+  "word": "花瓶",
+  "reading": "かびん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "a vase"
+ },
+ {
+  "word": "紙",
+  "reading": "かみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "paper"
+ },
+ {
+  "word": "カメラ",
+  "reading": "カメラ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "camera"
+ },
+ {
+  "word": "火曜日",
+  "reading": "かようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Tuesday"
+ },
+ {
+  "word": "辛い",
+  "reading": "からい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "spicy"
+ },
+ {
+  "word": "体",
+  "reading": "からだ",
+  "other_forms": [
+   "身体"
+  ],
+  "level": "N5",
+  "meanings": "body"
+ },
+ {
+  "word": "借りる",
+  "reading": "かりる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to borrow"
+ },
+ {
+  "word": "軽い",
+  "reading": "かるい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "light"
+ },
+ {
+  "word": "カレー",
+  "reading": "カレー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "curry"
+ },
+ {
+  "word": "カレンダー",
+  "reading": "カレンダー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "calendar"
+ },
+ {
+  "word": "川",
+  "reading": "かわ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "river"
+ },
+ {
+  "word": "かわいい",
+  "reading": "かわいい",
+  "other_forms": [
+   "可愛い"
+  ],
+  "level": "N5",
+  "meanings": "cute"
+ },
+ {
+  "word": "漢字",
+  "reading": "かんじ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Chinese character"
+ },
+ {
+  "word": "木",
+  "reading": "き",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "tree; wood"
+ },
+ {
+  "word": "黄色",
+  "reading": "きいろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "yellow"
+ },
+ {
+  "word": "黄色い",
+  "reading": "きいろい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "yellow"
+ },
+ {
+  "word": "消える",
+  "reading": "きえる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to disappear"
+ },
+ {
+  "word": "聞く",
+  "reading": "きく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to hear; to listen to; to ask"
+ },
+ {
+  "word": "北",
+  "reading": "きた",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "north"
+ },
+ {
+  "word": "ギター",
+  "reading": "ギター",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "guitar"
+ },
+ {
+  "word": "汚い",
+  "reading": "きたない",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dirty"
+ },
+ {
+  "word": "喫茶店",
+  "reading": "きっさてん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "coffee lounge"
+ },
+ {
+  "word": "切手",
+  "reading": "きって",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "postage stamp"
+ },
+ {
+  "word": "切符",
+  "reading": "きっぷ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ticket"
+ },
+ {
+  "word": "昨日",
+  "reading": "きのう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "yesterday"
+ },
+ {
+  "word": "九",
+  "reading": "きゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "nine"
+ },
+ {
+  "word": "牛肉",
+  "reading": "ぎゅうにく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "beef"
+ },
+ {
+  "word": "牛乳",
+  "reading": "ぎゅうにゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "milk"
+ },
+ {
+  "word": "今日",
+  "reading": "きょう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "today"
+ },
+ {
+  "word": "教室",
+  "reading": "きょうしつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "classroom"
+ },
+ {
+  "word": "兄弟",
+  "reading": "きょうだい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(humble) siblings"
+ },
+ {
+  "word": "去年",
+  "reading": "きょねん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "last year"
+ },
+ {
+  "word": "嫌い",
+  "reading": "きらい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hate"
+ },
+ {
+  "word": "切る",
+  "reading": "きる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to cut"
+ },
+ {
+  "word": "着る",
+  "reading": "きる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to put on from the shoulders down"
+ },
+ {
+  "word": "きれい",
+  "reading": "きれい",
+  "other_forms": [
+   "奇麗"
+  ],
+  "level": "N5",
+  "meanings": "pretty; clean"
+ },
+ {
+  "word": "キロ",
+  "reading": "キロ",
+  "other_forms": [
+   "キロメートル",
+   "キログラム"
+  ],
+  "level": "N5",
+  "meanings": "kilometre; kilogram"
+ },
+ {
+  "word": "銀行",
+  "reading": "ぎんこう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bank"
+ },
+ {
+  "word": "金曜日",
+  "reading": "きんようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Friday"
+ },
+ {
+  "word": "薬",
+  "reading": "くすり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "medicine"
+ },
+ {
+  "word": "ください",
+  "reading": "ください",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "please"
+ },
+ {
+  "word": "果物",
+  "reading": "くだもの",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "fruit"
+ },
+ {
+  "word": "口",
+  "reading": "くち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "mouth; opening"
+ },
+ {
+  "word": "靴",
+  "reading": "くつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "shoes"
+ },
+ {
+  "word": "靴下",
+  "reading": "くつした",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "socks"
+ },
+ {
+  "word": "国",
+  "reading": "くに",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "country"
+ },
+ {
+  "word": "曇り",
+  "reading": "くもり",
+  "other_forms": [
+   "曇"
+  ],
+  "level": "N5",
+  "meanings": "cloudy weather"
+ },
+ {
+  "word": "曇る",
+  "reading": "くもる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to become cloudy; to become dim"
+ },
+ {
+  "word": "暗い",
+  "reading": "くらい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "gloomy"
+ },
+ {
+  "word": "クラス",
+  "reading": "クラス",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "class"
+ },
+ {
+  "word": "グラム",
+  "reading": "グラム",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "gram"
+ },
+ {
+  "word": "来る",
+  "reading": "くる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to come"
+ },
+ {
+  "word": "車",
+  "reading": "くるま",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "car; vehicle"
+ },
+ {
+  "word": "黒",
+  "reading": "くろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "black"
+ },
+ {
+  "word": "黒い",
+  "reading": "くろい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "black"
+ },
+ {
+  "word": "警官",
+  "reading": "けいかん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "policeman"
+ },
+ {
+  "word": "今朝",
+  "reading": "けさ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this morning"
+ },
+ {
+  "word": "消す",
+  "reading": "けす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to erase; to turn off power"
+ },
+ {
+  "word": "結構",
+  "reading": "けっこう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "splendid; enough"
+ },
+ {
+  "word": "結婚",
+  "reading": "けっこん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "marriage"
+ },
+ {
+  "word": "月曜日",
+  "reading": "げつようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Monday"
+ },
+ {
+  "word": "玄関",
+  "reading": "げんかん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "entry hall"
+ },
+ {
+  "word": "元気",
+  "reading": "げんき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "health; vitality"
+ },
+ {
+  "word": "五",
+  "reading": "ご",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "five"
+ },
+ {
+  "word": "公園",
+  "reading": "こうえん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "park"
+ },
+ {
+  "word": "交差点",
+  "reading": "こうさてん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "intersection"
+ },
+ {
+  "word": "紅茶",
+  "reading": "こうちゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "black tea"
+ },
+ {
+  "word": "交番",
+  "reading": "こうばん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "police box"
+ },
+ {
+  "word": "声",
+  "reading": "こえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "voice"
+ },
+ {
+  "word": "コート",
+  "reading": "コート",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "coat; tennis court"
+ },
+ {
+  "word": "コーヒー",
+  "reading": "コーヒー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "coffee"
+ },
+ {
+  "word": "ここ",
+  "reading": "ここ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "here"
+ },
+ {
+  "word": "午後",
+  "reading": "ごご",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "afternoon"
+ },
+ {
+  "word": "九日",
+  "reading": "ここのか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "nine days; ninth day"
+ },
+ {
+  "word": "九つ",
+  "reading": "ここのつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "nine"
+ },
+ {
+  "word": "午前",
+  "reading": "ごぜん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "morning"
+ },
+ {
+  "word": "答える",
+  "reading": "こたえる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to answer"
+ },
+ {
+  "word": "ごちそうさま",
+  "reading": "ごちそうさま",
+  "other_forms": [
+   "ご馳走さま"
+  ],
+  "level": "N5",
+  "meanings": "feast"
+ },
+ {
+  "word": "こちら",
+  "reading": "こちら",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this person or way"
+ },
+ {
+  "word": "こっち",
+  "reading": "こっち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this person or way"
+ },
+ {
+  "word": "コップ",
+  "reading": "コップ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "a glass"
+ },
+ {
+  "word": "今年",
+  "reading": "ことし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this year"
+ },
+ {
+  "word": "言葉",
+  "reading": "ことば",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "word; language"
+ },
+ {
+  "word": "子供",
+  "reading": "こども",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "child"
+ },
+ {
+  "word": "この",
+  "reading": "この",
+  "other_forms": [
+   "此の"
+  ],
+  "level": "N5",
+  "meanings": "this"
+ },
+ {
+  "word": "御飯",
+  "reading": "ごはん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cooked rice; meal"
+ },
+ {
+  "word": "コピーする",
+  "reading": "コピーする",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to copy"
+ },
+ {
+  "word": "困る",
+  "reading": "こまる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to be worried"
+ },
+ {
+  "word": "ごめんなさい",
+  "reading": "ごめんなさい",
+  "other_forms": [
+   "御免なさい"
+  ],
+  "level": "N5",
+  "meanings": "I beg your pardon; excuse me"
+ },
+ {
+  "word": "これ",
+  "reading": "これ",
+  "other_forms": [
+   "此れ"
+  ],
+  "level": "N5",
+  "meanings": "this"
+ },
+ {
+  "word": "今月",
+  "reading": "こんげつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this month"
+ },
+ {
+  "word": "今週",
+  "reading": "こんしゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this week"
+ },
+ {
+  "word": "こんな",
+  "reading": "こんな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "such"
+ },
+ {
+  "word": "こんにちは",
+  "reading": "こんにちは",
+  "other_forms": [
+   "今日は"
+  ],
+  "level": "N5",
+  "meanings": "hello; good day (daytime greeting, id)"
+ },
+ {
+  "word": "今晩",
+  "reading": "こんばん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "this evening"
+ },
+ {
+  "word": "こんばんは",
+  "reading": "こんばんは",
+  "other_forms": [
+   "今晩は"
+  ],
+  "level": "N5",
+  "meanings": "good evening"
+ },
+ {
+  "word": "さあ",
+  "reading": "さあ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "well…"
+ },
+ {
+  "word": "財布",
+  "reading": "さいふ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "wallet"
+ },
+ {
+  "word": "魚",
+  "reading": "さかな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "fish"
+ },
+ {
+  "word": "先",
+  "reading": "さき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "the future; previous"
+ },
+ {
+  "word": "咲く",
+  "reading": "さく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to bloom"
+ },
+ {
+  "word": "作文",
+  "reading": "さくぶん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "composition; writing"
+ },
+ {
+  "word": "差す",
+  "reading": "さす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to stretch out hands; to raise an umbrella"
+ },
+ {
+  "word": "雑誌",
+  "reading": "ざっし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "magazine"
+ },
+ {
+  "word": "砂糖",
+  "reading": "さとう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sugar"
+ },
+ {
+  "word": "寒い",
+  "reading": "さむい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cold"
+ },
+ {
+  "word": "さようなら",
+  "reading": "さようなら",
+  "other_forms": [
+   "左様なら"
+  ],
+  "level": "N5",
+  "meanings": "good-bye"
+ },
+ {
+  "word": "再来年",
+  "reading": "さらいねん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "year after next"
+ },
+ {
+  "word": "三",
+  "reading": "さん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "three"
+ },
+ {
+  "word": "散歩",
+  "reading": "さんぽ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to stroll"
+ },
+ {
+  "word": "四",
+  "reading": "し",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "four"
+ },
+ {
+  "word": "塩",
+  "reading": "しお",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "salt"
+ },
+ {
+  "word": "しかし",
+  "reading": "しかし",
+  "other_forms": [
+   "然し"
+  ],
+  "level": "N5",
+  "meanings": "however"
+ },
+ {
+  "word": "時間",
+  "reading": "じかん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "time"
+ },
+ {
+  "word": "仕事",
+  "reading": "しごと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "job"
+ },
+ {
+  "word": "辞書",
+  "reading": "じしょ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dictionary"
+ },
+ {
+  "word": "静か",
+  "reading": "しずか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "quiet"
+ },
+ {
+  "word": "下",
+  "reading": "した",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "below"
+ },
+ {
+  "word": "七",
+  "reading": "しち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "seven"
+ },
+ {
+  "word": "質問",
+  "reading": "しつもん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "question"
+ },
+ {
+  "word": "自転車",
+  "reading": "じてんしゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bicycle"
+ },
+ {
+  "word": "自動車",
+  "reading": "じどうしゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "automobile"
+ },
+ {
+  "word": "死ぬ",
+  "reading": "しぬ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to die"
+ },
+ {
+  "word": "字引",
+  "reading": "じびき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dictionary"
+ },
+ {
+  "word": "自分",
+  "reading": "じぶん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "oneself"
+ },
+ {
+  "word": "閉まる",
+  "reading": "しまる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to close; to be closed"
+ },
+ {
+  "word": "締める",
+  "reading": "しめる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to tie"
+ },
+ {
+  "word": "閉める",
+  "reading": "しめる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to close something"
+ },
+ {
+  "word": "じゃ",
+  "reading": "じゃ",
+  "other_forms": [
+   "じゃあ"
+  ],
+  "level": "N5",
+  "meanings": "well then…"
+ },
+ {
+  "word": "写真",
+  "reading": "しゃしん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "photograph"
+ },
+ {
+  "word": "シャツ",
+  "reading": "シャツ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "shirt"
+ },
+ {
+  "word": "シャワー",
+  "reading": "シャワー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "shower"
+ },
+ {
+  "word": "十",
+  "reading": "じゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ten"
+ },
+ {
+  "word": "授業",
+  "reading": "じゅぎょう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "lesson; class work"
+ },
+ {
+  "word": "宿題",
+  "reading": "しゅくだい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "homework"
+ },
+ {
+  "word": "上手",
+  "reading": "じょうず",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "skillful"
+ },
+ {
+  "word": "丈夫",
+  "reading": "じょうぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "strong; durable"
+ },
+ {
+  "word": "しょうゆ",
+  "reading": "しょうゆ",
+  "other_forms": [
+   "醤油"
+  ],
+  "level": "N5",
+  "meanings": "soy sauce"
+ },
+ {
+  "word": "食堂",
+  "reading": "しょくどう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dining hall"
+ },
+ {
+  "word": "知る",
+  "reading": "しる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to know"
+ },
+ {
+  "word": "白",
+  "reading": "しろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "white"
+ },
+ {
+  "word": "白い",
+  "reading": "しろい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "white"
+ },
+ {
+  "word": "新聞",
+  "reading": "しんぶん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "newspaper"
+ },
+ {
+  "word": "水曜日",
+  "reading": "すいようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Wednesday"
+ },
+ {
+  "word": "吸う",
+  "reading": "すう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to smoke; to suck"
+ },
+ {
+  "word": "スカート",
+  "reading": "スカート",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "skirt"
+ },
+ {
+  "word": "好き",
+  "reading": "すき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "likeable"
+ },
+ {
+  "word": "すぐ",
+  "reading": "すぐ",
+  "other_forms": [
+   "直ぐ"
+  ],
+  "level": "N5",
+  "meanings": "immediately; soon; easily; right (near); honest; upright"
+ },
+ {
+  "word": "少ない",
+  "reading": "すくない",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "a few"
+ },
+ {
+  "word": "すぐに",
+  "reading": "すぐに",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "instantly"
+ },
+ {
+  "word": "少し",
+  "reading": "すこし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "few"
+ },
+ {
+  "word": "涼しい",
+  "reading": "すずしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "refreshing"
+ },
+ {
+  "word": "ストーブ",
+  "reading": "ストーブ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "heater"
+ },
+ {
+  "word": "スプーン",
+  "reading": "スプーン",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "spoon"
+ },
+ {
+  "word": "スポーツ",
+  "reading": "スポーツ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sport"
+ },
+ {
+  "word": "ズボン",
+  "reading": "ズボン",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "trousers"
+ },
+ {
+  "word": "すみません",
+  "reading": "すみません",
+  "other_forms": [
+   "済みません"
+  ],
+  "level": "N5",
+  "meanings": "sorry; excuse me"
+ },
+ {
+  "word": "住む",
+  "reading": "すむ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to live in"
+ },
+ {
+  "word": "スリッパ",
+  "reading": "スリッパ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "slippers"
+ },
+ {
+  "word": "する",
+  "reading": "する",
+  "other_forms": [
+   "為る"
+  ],
+  "level": "N5",
+  "meanings": "to do"
+ },
+ {
+  "word": "座る",
+  "reading": "すわる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to sit"
+ },
+ {
+  "word": "背",
+  "reading": "せ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "height; stature"
+ },
+ {
+  "word": "生徒",
+  "reading": "せいと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "pupil"
+ },
+ {
+  "word": "セーター",
+  "reading": "セーター",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sweater; jumper"
+ },
+ {
+  "word": "せっけん",
+  "reading": "せっけん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "economy"
+ },
+ {
+  "word": "背広",
+  "reading": "せびろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "business suit"
+ },
+ {
+  "word": "狭い",
+  "reading": "せまい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "narrow"
+ },
+ {
+  "word": "ゼロ",
+  "reading": "ゼロ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "zero"
+ },
+ {
+  "word": "千",
+  "reading": "せん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "thousand"
+ },
+ {
+  "word": "先月",
+  "reading": "せんげつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "last month"
+ },
+ {
+  "word": "先週",
+  "reading": "せんしゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "last week"
+ },
+ {
+  "word": "先生",
+  "reading": "せんせい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "teacher; doctor"
+ },
+ {
+  "word": "洗濯",
+  "reading": "せんたく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "washing"
+ },
+ {
+  "word": "全部",
+  "reading": "ぜんぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "all"
+ },
+ {
+  "word": "掃除",
+  "reading": "そうじ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to clean; to sweep"
+ },
+ {
+  "word": "そうして",
+  "reading": "そうして",
+  "other_forms": [
+   "そして",
+   "然うして"
+  ],
+  "level": "N5",
+  "meanings": "and"
+ },
+ {
+  "word": "そこ",
+  "reading": "そこ",
+  "other_forms": [
+   "其処"
+  ],
+  "level": "N5",
+  "meanings": "that place"
+ },
+ {
+  "word": "そちら",
+  "reading": "そちら",
+  "other_forms": [
+   "其方"
+  ],
+  "level": "N5",
+  "meanings": "over there"
+ },
+ {
+  "word": "そっち",
+  "reading": "そっち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "over there"
+ },
+ {
+  "word": "外",
+  "reading": "そと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "outside"
+ },
+ {
+  "word": "その",
+  "reading": "その",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "that"
+ },
+ {
+  "word": "そば",
+  "reading": "そば",
+  "other_forms": [
+   "側"
+  ],
+  "level": "N5",
+  "meanings": "near; beside"
+ },
+ {
+  "word": "空",
+  "reading": "そら",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sky"
+ },
+ {
+  "word": "それ",
+  "reading": "それ",
+  "other_forms": [
+   "其れ"
+  ],
+  "level": "N5",
+  "meanings": "that"
+ },
+ {
+  "word": "それから",
+  "reading": "それから",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "after that"
+ },
+ {
+  "word": "それでは",
+  "reading": "それでは",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "in that situation"
+ },
+ {
+  "word": "大学",
+  "reading": "だいがく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "university"
+ },
+ {
+  "word": "大使館",
+  "reading": "たいしかん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "embassy"
+ },
+ {
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "all right"
+ },
+ {
+  "word": "大好き",
+  "reading": "だいすき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to be very likeable"
+ },
+ {
+  "word": "大切",
+  "reading": "たいせつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "important"
+ },
+ {
+  "word": "台所",
+  "reading": "だいどころ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "kitchen"
+ },
+ {
+  "word": "たいへん",
+  "reading": "たいへん",
+  "other_forms": [
+   "大変"
+  ],
+  "level": "N5",
+  "meanings": "very"
+ },
+ {
+  "word": "高い",
+  "reading": "たかい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "tall; expensive"
+ },
+ {
+  "word": "たくさん",
+  "reading": "たくさん",
+  "other_forms": [
+   "沢山"
+  ],
+  "level": "N5",
+  "meanings": "many"
+ },
+ {
+  "word": "タクシー",
+  "reading": "タクシー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "taxi"
+ },
+ {
+  "word": "出す",
+  "reading": "だす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to put out"
+ },
+ {
+  "word": "立つ",
+  "reading": "たつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to stand"
+ },
+ {
+  "word": "たて",
+  "reading": "たて",
+  "other_forms": [
+   "縦"
+  ],
+  "level": "N5",
+  "meanings": "length; height"
+ },
+ {
+  "word": "建物",
+  "reading": "たてもの",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "building"
+ },
+ {
+  "word": "楽しい",
+  "reading": "たのしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "enjoyable"
+ },
+ {
+  "word": "頼む",
+  "reading": "たのむ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to ask"
+ },
+ {
+  "word": "たばこ",
+  "reading": "たばこ",
+  "other_forms": [
+   "煙草"
+  ],
+  "level": "N5",
+  "meanings": "tobacco; cigarettes"
+ },
+ {
+  "word": "たぶん",
+  "reading": "たぶん",
+  "other_forms": [
+   "多分"
+  ],
+  "level": "N5",
+  "meanings": "probably"
+ },
+ {
+  "word": "食べ物",
+  "reading": "たべもの",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "food"
+ },
+ {
+  "word": "食べる",
+  "reading": "たべる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to eat"
+ },
+ {
+  "word": "卵",
+  "reading": "たまご",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "egg"
+ },
+ {
+  "word": "誰",
+  "reading": "だれ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "who"
+ },
+ {
+  "word": "誕生日",
+  "reading": "たんじょうび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "birthday"
+ },
+ {
+  "word": "だんだん",
+  "reading": "だんだん",
+  "other_forms": [
+   "段々"
+  ],
+  "level": "N5",
+  "meanings": "gradually"
+ },
+ {
+  "word": "小さい",
+  "reading": "ちいさい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "little"
+ },
+ {
+  "word": "小さな",
+  "reading": "ちいさな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "little"
+ },
+ {
+  "word": "近い",
+  "reading": "ちかい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "near"
+ },
+ {
+  "word": "違う",
+  "reading": "ちがう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to differ"
+ },
+ {
+  "word": "近く",
+  "reading": "ちかく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "near"
+ },
+ {
+  "word": "地下鉄",
+  "reading": "ちかてつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "underground train"
+ },
+ {
+  "word": "地図",
+  "reading": "ちず",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "map"
+ },
+ {
+  "word": "茶色",
+  "reading": "ちゃいろ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "brown"
+ },
+ {
+  "word": "ちゃわん",
+  "reading": "ちゃわん",
+  "other_forms": [
+   "茶碗"
+  ],
+  "level": "N5",
+  "meanings": "rice bowl"
+ },
+ {
+  "word": "ちょうど",
+  "reading": "ちょうど",
+  "other_forms": [
+   "丁度",
+   "恰度"
+  ],
+  "level": "N5",
+  "meanings": "exactly"
+ },
+ {
+  "word": "ちょっと",
+  "reading": "ちょっと",
+  "other_forms": [
+   "一寸"
+  ],
+  "level": "N5",
+  "meanings": "somewhat"
+ },
+ {
+  "word": "使う",
+  "reading": "つかう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to use"
+ },
+ {
+  "word": "疲れる",
+  "reading": "つかれる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to get tired"
+ },
+ {
+  "word": "次",
+  "reading": "つぎ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "next"
+ },
+ {
+  "word": "着く",
+  "reading": "つく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to arrive at"
+ },
+ {
+  "word": "机",
+  "reading": "つくえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "desk"
+ },
+ {
+  "word": "作る",
+  "reading": "つくる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to make"
+ },
+ {
+  "word": "つける",
+  "reading": "つける",
+  "other_forms": [
+   "点ける"
+  ],
+  "level": "N5",
+  "meanings": "to turn on"
+ },
+ {
+  "word": "勤める",
+  "reading": "つとめる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to work for someone"
+ },
+ {
+  "word": "つまらない",
+  "reading": "つまらない",
+  "other_forms": [
+   "詰らない"
+  ],
+  "level": "N5",
+  "meanings": "boring"
+ },
+ {
+  "word": "冷たい",
+  "reading": "つめたい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cold to the touch"
+ },
+ {
+  "word": "強い",
+  "reading": "つよい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "powerful"
+ },
+ {
+  "word": "手",
+  "reading": "て",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hand"
+ },
+ {
+  "word": "テープ",
+  "reading": "テープ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "tape"
+ },
+ {
+  "word": "テーブル",
+  "reading": "テーブル",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "table"
+ },
+ {
+  "word": "テープレコーダー",
+  "reading": "テープレコーダー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "tape recorder"
+ },
+ {
+  "word": "出かける",
+  "reading": "でかける",
+  "other_forms": [
+   "出掛ける"
+  ],
+  "level": "N5",
+  "meanings": "to go out"
+ },
+ {
+  "word": "手紙",
+  "reading": "てがみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "letter"
+ },
+ {
+  "word": "できる",
+  "reading": "できる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to be able to"
+ },
+ {
+  "word": "出口",
+  "reading": "でぐち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "exit"
+ },
+ {
+  "word": "テスト",
+  "reading": "テスト",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "test"
+ },
+ {
+  "word": "では",
+  "reading": "では",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "with that..."
+ },
+ {
+  "word": "デパート",
+  "reading": "デパート",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "department store"
+ },
+ {
+  "word": "でも",
+  "reading": "でも",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "but"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to appear; to leave"
+ },
+ {
+  "word": "テレビ",
+  "reading": "テレビ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "television"
+ },
+ {
+  "word": "天気",
+  "reading": "てんき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "weather"
+ },
+ {
+  "word": "電気",
+  "reading": "でんき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "electricity; electric light"
+ },
+ {
+  "word": "電車",
+  "reading": "でんしゃ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "electric train"
+ },
+ {
+  "word": "電話",
+  "reading": "でんわ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "telephone"
+ },
+ {
+  "word": "戸",
+  "reading": "と",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Japanese style door"
+ },
+ {
+  "word": "ドア",
+  "reading": "ドア",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Western style door"
+ },
+ {
+  "word": "トイレ",
+  "reading": "トイレ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "toilet"
+ },
+ {
+  "word": "どう",
+  "reading": "どう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "how; in what way"
+ },
+ {
+  "word": "どうして",
+  "reading": "どうして",
+  "other_forms": [
+   "如何して"
+  ],
+  "level": "N5",
+  "meanings": "for what reason"
+ },
+ {
+  "word": "どうぞ",
+  "reading": "どうぞ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "please"
+ },
+ {
+  "word": "どうぞよろしく",
+  "reading": "どうぞよろしく",
+  "other_forms": [
+   "どうぞ宜しく"
+  ],
+  "level": "N5",
+  "meanings": "pleased to meet you"
+ },
+ {
+  "word": "動物",
+  "reading": "どうぶつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "animal"
+ },
+ {
+  "word": "どうも",
+  "reading": "どうも",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "thanks"
+ },
+ {
+  "word": "遠い",
+  "reading": "とおい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "far"
+ },
+ {
+  "word": "十日",
+  "reading": "とおか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ten days; the tenth day"
+ },
+ {
+  "word": "時々",
+  "reading": "ときどき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sometimes"
+ },
+ {
+  "word": "時計",
+  "reading": "とけい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "watch; clock"
+ },
+ {
+  "word": "どこ",
+  "reading": "どこ",
+  "other_forms": [
+   "何処"
+  ],
+  "level": "N5",
+  "meanings": "where"
+ },
+ {
+  "word": "所",
+  "reading": "ところ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "place"
+ },
+ {
+  "word": "年",
+  "reading": "とし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "year"
+ },
+ {
+  "word": "図書館",
+  "reading": "としょかん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "library"
+ },
+ {
+  "word": "どちら",
+  "reading": "どちら",
+  "other_forms": [
+   "何方"
+  ],
+  "level": "N5",
+  "meanings": "which of two"
+ },
+ {
+  "word": "どっち",
+  "reading": "どっち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "which"
+ },
+ {
+  "word": "とても",
+  "reading": "とても",
+  "other_forms": [
+   "迚も"
+  ],
+  "level": "N5",
+  "meanings": "very"
+ },
+ {
+  "word": "どなた",
+  "reading": "どなた",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "who"
+ },
+ {
+  "word": "隣",
+  "reading": "となり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "next door to"
+ },
+ {
+  "word": "どの",
+  "reading": "どの",
+  "other_forms": [
+   "何の"
+  ],
+  "level": "N5",
+  "meanings": "which"
+ },
+ {
+  "word": "飛ぶ",
+  "reading": "とぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to fly; to hop"
+ },
+ {
+  "word": "止まる",
+  "reading": "とまる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to come to a halt"
+ },
+ {
+  "word": "友達",
+  "reading": "ともだち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "friend"
+ },
+ {
+  "word": "土曜日",
+  "reading": "どようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Saturday"
+ },
+ {
+  "word": "鳥",
+  "reading": "とり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bird"
+ },
+ {
+  "word": "鶏肉",
+  "reading": "とりにく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "chicken meat"
+ },
+ {
+  "word": "撮る",
+  "reading": "とる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to take a photo or record a film"
+ },
+ {
+  "word": "取る",
+  "reading": "とる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to take something"
+ },
+ {
+  "word": "どれ",
+  "reading": "どれ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "which (of three or more)"
+ },
+ {
+  "word": "ナイフ",
+  "reading": "ナイフ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "knife"
+ },
+ {
+  "word": "中",
+  "reading": "なか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "middle"
+ },
+ {
+  "word": "長い",
+  "reading": "ながい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "long"
+ },
+ {
+  "word": "鳴く",
+  "reading": "なく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to make a sound (of an animal); to cry; to chirp; to sing (of birds)"
+ },
+ {
+  "word": "無くす",
+  "reading": "なくす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to lose something"
+ },
+ {
+  "word": "なぜ",
+  "reading": "なぜ",
+  "other_forms": [
+   "何故"
+  ],
+  "level": "N5",
+  "meanings": "why"
+ },
+ {
+  "word": "夏",
+  "reading": "なつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "summer"
+ },
+ {
+  "word": "夏休み",
+  "reading": "なつやすみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "summer holiday"
+ },
+ {
+  "word": "など",
+  "reading": "など",
+  "other_forms": [
+   "等"
+  ],
+  "level": "N5",
+  "meanings": "et cetera"
+ },
+ {
+  "word": "七つ",
+  "reading": "ななつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "seven"
+ },
+ {
+  "word": "七日",
+  "reading": "なのか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "seven days; the seventh day"
+ },
+ {
+  "word": "名前",
+  "reading": "なまえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "name"
+ },
+ {
+  "word": "習う",
+  "reading": "ならう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to learn"
+ },
+ {
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to line up; to stand in a line"
+ },
+ {
+  "word": "並べる",
+  "reading": "ならべる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to line up; to set up"
+ },
+ {
+  "word": "なる",
+  "reading": "なる",
+  "other_forms": [
+   "成る"
+  ],
+  "level": "N5",
+  "meanings": "to become"
+ },
+ {
+  "word": "何",
+  "reading": "なん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "what"
+ },
+ {
+  "word": "二",
+  "reading": "に",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "two"
+ },
+ {
+  "word": "賑やか",
+  "reading": "にぎやか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bustling; busy"
+ },
+ {
+  "word": "肉",
+  "reading": "にく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "meat"
+ },
+ {
+  "word": "西",
+  "reading": "にし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "west"
+ },
+ {
+  "word": "日曜日",
+  "reading": "にちようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Sunday"
+ },
+ {
+  "word": "荷物",
+  "reading": "にもつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "luggage"
+ },
+ {
+  "word": "ニュース",
+  "reading": "ニュース",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "news"
+ },
+ {
+  "word": "庭",
+  "reading": "にわ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "garden"
+ },
+ {
+  "word": "脱ぐ",
+  "reading": "ぬぐ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to take off clothes"
+ },
+ {
+  "word": "温い",
+  "reading": "ぬるい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "luke warm"
+ },
+ {
+  "word": "ネクタイ",
+  "reading": "ネクタイ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "tie; necktie"
+ },
+ {
+  "word": "猫",
+  "reading": "ねこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cat"
+ },
+ {
+  "word": "寝る",
+  "reading": "ねる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to go to bed; to sleep"
+ },
+ {
+  "word": "ノート",
+  "reading": "ノート",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "notebook; exercise book"
+ },
+ {
+  "word": "登る",
+  "reading": "のぼる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to climb"
+ },
+ {
+  "word": "飲み物",
+  "reading": "のみもの",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "a drink"
+ },
+ {
+  "word": "飲む",
+  "reading": "のむ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to drink"
+ },
+ {
+  "word": "乗る",
+  "reading": "のる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to get on; to ride"
+ },
+ {
+  "word": "歯",
+  "reading": "は",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "tooth"
+ },
+ {
+  "word": "パーティー",
+  "reading": "パーティー",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "party"
+ },
+ {
+  "word": "はい",
+  "reading": "はい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "yes"
+ },
+ {
+  "word": "灰皿",
+  "reading": "はいざら",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ashtray"
+ },
+ {
+  "word": "入る",
+  "reading": "はいる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to enter; to contain"
+ },
+ {
+  "word": "葉書",
+  "reading": "はがき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "postcard"
+ },
+ {
+  "word": "はく",
+  "reading": "はく",
+  "other_forms": [
+   "履く"
+  ],
+  "level": "N5",
+  "meanings": "to wear; to put on trousers"
+ },
+ {
+  "word": "箱",
+  "reading": "はこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "box"
+ },
+ {
+  "word": "はし",
+  "reading": "はし",
+  "other_forms": [
+   "箸"
+  ],
+  "level": "N5",
+  "meanings": "chopsticks"
+ },
+ {
+  "word": "橋",
+  "reading": "はし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bridge"
+ },
+ {
+  "word": "始まる",
+  "reading": "はじまる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to begin"
+ },
+ {
+  "word": "初め",
+  "reading": "はじめ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "beginning"
+ },
+ {
+  "word": "初めて",
+  "reading": "はじめて",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "for the first time"
+ },
+ {
+  "word": "はじめまして",
+  "reading": "はじめまして",
+  "other_forms": [
+   "始めまして"
+  ],
+  "level": "N5",
+  "meanings": "How do you do?; I am glad to meet you"
+ },
+ {
+  "word": "走る",
+  "reading": "はしる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to run"
+ },
+ {
+  "word": "バス",
+  "reading": "バス",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bus"
+ },
+ {
+  "word": "バター",
+  "reading": "バター",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "butter"
+ },
+ {
+  "word": "二十歳",
+  "reading": "はたち",
+  "other_forms": [
+   "二十"
+  ],
+  "level": "N5",
+  "meanings": "20 years old; 20th year"
+ },
+ {
+  "word": "働く",
+  "reading": "はたらく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to work"
+ },
+ {
+  "word": "八",
+  "reading": "はち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "eight"
+ },
+ {
+  "word": "二十日",
+  "reading": "はつか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "twenty days; twentieth"
+ },
+ {
+  "word": "花",
+  "reading": "はな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "flower"
+ },
+ {
+  "word": "鼻",
+  "reading": "はな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "nose"
+ },
+ {
+  "word": "話",
+  "reading": "はなし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "talk; story"
+ },
+ {
+  "word": "話す",
+  "reading": "はなす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to speak"
+ },
+ {
+  "word": "早い",
+  "reading": "はやい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "early"
+ },
+ {
+  "word": "速い",
+  "reading": "はやい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "quick"
+ },
+ {
+  "word": "春",
+  "reading": "はる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "spring"
+ },
+ {
+  "word": "貼る",
+  "reading": "はる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to stick"
+ },
+ {
+  "word": "晴れ",
+  "reading": "はれ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "clear weather"
+ },
+ {
+  "word": "晴れる",
+  "reading": "はれる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to be sunny"
+ },
+ {
+  "word": "半",
+  "reading": "はん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "half"
+ },
+ {
+  "word": "晩",
+  "reading": "ばん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "evening"
+ },
+ {
+  "word": "パン",
+  "reading": "パン",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bread"
+ },
+ {
+  "word": "ハンカチ",
+  "reading": "ハンカチ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "handkerchief"
+ },
+ {
+  "word": "番号",
+  "reading": "ばんごう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "number"
+ },
+ {
+  "word": "晩御飯",
+  "reading": "ばんごはん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "evening meal"
+ },
+ {
+  "word": "半分",
+  "reading": "はんぶん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "half minute"
+ },
+ {
+  "word": "東",
+  "reading": "ひがし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "east"
+ },
+ {
+  "word": "引く",
+  "reading": "ひく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to pull"
+ },
+ {
+  "word": "弾く",
+  "reading": "ひく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to play an instrument with strings; including piano"
+ },
+ {
+  "word": "低い",
+  "reading": "ひくい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "short; low"
+ },
+ {
+  "word": "飛行機",
+  "reading": "ひこうき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "aeroplane"
+ },
+ {
+  "word": "左",
+  "reading": "ひだり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "left hand side"
+ },
+ {
+  "word": "人",
+  "reading": "ひと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "person"
+ },
+ {
+  "word": "一つ",
+  "reading": "ひとつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "one"
+ },
+ {
+  "word": "一月",
+  "reading": "ひとつき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "one month"
+ },
+ {
+  "word": "一人",
+  "reading": "ひとり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "one person"
+ },
+ {
+  "word": "暇",
+  "reading": "ひま",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "free time"
+ },
+ {
+  "word": "百",
+  "reading": "ひゃく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hundred"
+ },
+ {
+  "word": "病院",
+  "reading": "びょういん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hospital"
+ },
+ {
+  "word": "病気",
+  "reading": "びょうき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "illness"
+ },
+ {
+  "word": "昼",
+  "reading": "ひる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "noon; daytime"
+ },
+ {
+  "word": "昼御飯",
+  "reading": "ひるごはん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "midday meal"
+ },
+ {
+  "word": "広い",
+  "reading": "ひろい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "spacious; wide"
+ },
+ {
+  "word": "フィルム",
+  "reading": "フィルム",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "roll of film"
+ },
+ {
+  "word": "封筒",
+  "reading": "ふうとう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "envelope"
+ },
+ {
+  "word": "プール",
+  "reading": "プール",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "swimming pool"
+ },
+ {
+  "word": "フォーク",
+  "reading": "フォーク",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "fork"
+ },
+ {
+  "word": "吹く",
+  "reading": "ふく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to blow"
+ },
+ {
+  "word": "服",
+  "reading": "ふく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "clothes"
+ },
+ {
+  "word": "二つ",
+  "reading": "ふたつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "two"
+ },
+ {
+  "word": "豚肉",
+  "reading": "ぶたにく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "pork"
+ },
+ {
+  "word": "二人",
+  "reading": "ふたり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "two people"
+ },
+ {
+  "word": "二日",
+  "reading": "ふつか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "two days; second day of the month"
+ },
+ {
+  "word": "太い",
+  "reading": "ふとい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "fat"
+ },
+ {
+  "word": "冬",
+  "reading": "ふゆ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "winter"
+ },
+ {
+  "word": "降る",
+  "reading": "ふる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to fall (e.g. rain or snow)"
+ },
+ {
+  "word": "古い",
+  "reading": "ふるい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "old (not used for people)"
+ },
+ {
+  "word": "ふろ",
+  "reading": "ふろ",
+  "other_forms": [
+   "風呂"
+  ],
+  "level": "N5",
+  "meanings": "bath"
+ },
+ {
+  "word": "文章",
+  "reading": "ぶんしょう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "sentence; text"
+ },
+ {
+  "word": "ページ",
+  "reading": "ページ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "page"
+ },
+ {
+  "word": "下手",
+  "reading": "へた",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "unskillful"
+ },
+ {
+  "word": "ベッド",
+  "reading": "ベッド",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bed"
+ },
+ {
+  "word": "ペット",
+  "reading": "ペット",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "pet"
+ },
+ {
+  "word": "部屋",
+  "reading": "へや",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "room"
+ },
+ {
+  "word": "辺",
+  "reading": "へん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "area"
+ },
+ {
+  "word": "ペン",
+  "reading": "ペン",
+  "other_forms": [
+   "ぺん"
+  ],
+  "level": "N5",
+  "meanings": "pen"
+ },
+ {
+  "word": "勉強",
+  "reading": "べんきょう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to study"
+ },
+ {
+  "word": "便利",
+  "reading": "べんり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "useful; convenient"
+ },
+ {
+  "word": "帽子",
+  "reading": "ぼうし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hat"
+ },
+ {
+  "word": "ボールペン",
+  "reading": "ボールペン",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ball-point pen"
+ },
+ {
+  "word": "ほか",
+  "reading": "ほか",
+  "other_forms": [
+   "外"
+  ],
+  "level": "N5",
+  "meanings": "other; the rest"
+ },
+ {
+  "word": "ポケット",
+  "reading": "ポケット",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "pocket"
+ },
+ {
+  "word": "欲しい",
+  "reading": "ほしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "want"
+ },
+ {
+  "word": "ポスト",
+  "reading": "ポスト",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "post"
+ },
+ {
+  "word": "細い",
+  "reading": "ほそい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "thin"
+ },
+ {
+  "word": "ボタン",
+  "reading": "ボタン",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "button"
+ },
+ {
+  "word": "ホテル",
+  "reading": "ホテル",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "hotel"
+ },
+ {
+  "word": "本",
+  "reading": "ほん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "book"
+ },
+ {
+  "word": "本棚",
+  "reading": "ほんだな",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bookshelves"
+ },
+ {
+  "word": "ほんとう",
+  "reading": "ほんとう",
+  "other_forms": [
+   "本当"
+  ],
+  "level": "N5",
+  "meanings": "truth"
+ },
+ {
+  "word": "毎朝",
+  "reading": "まいあさ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "every morning"
+ },
+ {
+  "word": "毎月",
+  "reading": "まいげつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "every month"
+ },
+ {
+  "word": "毎週",
+  "reading": "まいしゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "every week"
+ },
+ {
+  "word": "毎日",
+  "reading": "まいにち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "every day"
+ },
+ {
+  "word": "毎年",
+  "reading": "まいねん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "every year"
+ },
+ {
+  "word": "毎晩",
+  "reading": "まいばん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "every night"
+ },
+ {
+  "word": "前",
+  "reading": "まえ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "before"
+ },
+ {
+  "word": "曲る",
+  "reading": "まがる",
+  "other_forms": [
+   "曲がる"
+  ],
+  "level": "N5",
+  "meanings": "to turn; to bend"
+ },
+ {
+  "word": "まずい",
+  "reading": "まずい",
+  "other_forms": [
+   "不味い"
+  ],
+  "level": "N5",
+  "meanings": "unpleasant"
+ },
+ {
+  "word": "また",
+  "reading": "また",
+  "other_forms": [
+   "又"
+  ],
+  "level": "N5",
+  "meanings": "again; and"
+ },
+ {
+  "word": "まだ",
+  "reading": "まだ",
+  "other_forms": [
+   "未だ"
+  ],
+  "level": "N5",
+  "meanings": "yet; still"
+ },
+ {
+  "word": "町",
+  "reading": "まち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "town; city"
+ },
+ {
+  "word": "待つ",
+  "reading": "まつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to wait"
+ },
+ {
+  "word": "まっすぐ",
+  "reading": "まっすぐ",
+  "other_forms": [
+   "真っ直ぐ"
+  ],
+  "level": "N5",
+  "meanings": "straight ahead; direct"
+ },
+ {
+  "word": "マッチ",
+  "reading": "マッチ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "match"
+ },
+ {
+  "word": "窓",
+  "reading": "まど",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "window"
+ },
+ {
+  "word": "丸い",
+  "reading": "まるい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "round; circular"
+ },
+ {
+  "word": "万",
+  "reading": "まん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ten thousand"
+ },
+ {
+  "word": "万年筆",
+  "reading": "まんねんひつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "fountain pen"
+ },
+ {
+  "word": "磨く",
+  "reading": "みがく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to brush teeth; to polish"
+ },
+ {
+  "word": "右",
+  "reading": "みぎ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "right side"
+ },
+ {
+  "word": "短い",
+  "reading": "みじかい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "short"
+ },
+ {
+  "word": "水",
+  "reading": "みず",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "water"
+ },
+ {
+  "word": "店",
+  "reading": "みせ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "shop"
+ },
+ {
+  "word": "見せる",
+  "reading": "みせる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to show"
+ },
+ {
+  "word": "道",
+  "reading": "みち",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "street"
+ },
+ {
+  "word": "三日",
+  "reading": "みっか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "three days; third day of the month"
+ },
+ {
+  "word": "三つ",
+  "reading": "みっつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "three"
+ },
+ {
+  "word": "緑",
+  "reading": "みどり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "green"
+ },
+ {
+  "word": "皆さん",
+  "reading": "みなさん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "everyone"
+ },
+ {
+  "word": "南",
+  "reading": "みなみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "south"
+ },
+ {
+  "word": "耳",
+  "reading": "みみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "ear"
+ },
+ {
+  "word": "見る",
+  "reading": "みる",
+  "other_forms": [
+   "観る"
+  ],
+  "level": "N5",
+  "meanings": "to see; to watch"
+ },
+ {
+  "word": "みんな",
+  "reading": "みんな",
+  "other_forms": [
+   "皆"
+  ],
+  "level": "N5",
+  "meanings": "everyone"
+ },
+ {
+  "word": "六日",
+  "reading": "むいか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "six days; sixth day of the month"
+ },
+ {
+  "word": "向こう",
+  "reading": "むこう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "over there"
+ },
+ {
+  "word": "難しい",
+  "reading": "むずかしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "difficult"
+ },
+ {
+  "word": "六つ",
+  "reading": "むっつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "six"
+ },
+ {
+  "word": "村",
+  "reading": "むら",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "village"
+ },
+ {
+  "word": "目",
+  "reading": "め",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "eye"
+ },
+ {
+  "word": "メートル",
+  "reading": "メートル",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "metre"
+ },
+ {
+  "word": "眼鏡",
+  "reading": "めがね",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "glasses"
+ },
+ {
+  "word": "もう",
+  "reading": "もう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "already"
+ },
+ {
+  "word": "もう一度",
+  "reading": "もういちど",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "again"
+ },
+ {
+  "word": "木曜日",
+  "reading": "もくようび",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "Thursday"
+ },
+ {
+  "word": "持つ",
+  "reading": "もつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to hold"
+ },
+ {
+  "word": "もっと",
+  "reading": "もっと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "more"
+ },
+ {
+  "word": "物",
+  "reading": "もの",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "thing"
+ },
+ {
+  "word": "門",
+  "reading": "もん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "gate"
+ },
+ {
+  "word": "問題",
+  "reading": "もんだい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "problem"
+ },
+ {
+  "word": "八百屋",
+  "reading": "やおや",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "greengrocer"
+ },
+ {
+  "word": "野菜",
+  "reading": "やさい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "vegetable"
+ },
+ {
+  "word": "易しい",
+  "reading": "やさしい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "easy; simple"
+ },
+ {
+  "word": "安い",
+  "reading": "やすい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cheap"
+ },
+ {
+  "word": "休み",
+  "reading": "やすみ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "rest; holiday"
+ },
+ {
+  "word": "休む",
+  "reading": "やすむ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to rest"
+ },
+ {
+  "word": "八つ",
+  "reading": "やっつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "eight"
+ },
+ {
+  "word": "山",
+  "reading": "やま",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "mountain"
+ },
+ {
+  "word": "やる",
+  "reading": "やる",
+  "other_forms": [
+   "遣る"
+  ],
+  "level": "N5",
+  "meanings": "to do"
+ },
+ {
+  "word": "夕方",
+  "reading": "ゆうがた",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "evening"
+ },
+ {
+  "word": "夕飯",
+  "reading": "ゆうはん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "dinner"
+ },
+ {
+  "word": "郵便局",
+  "reading": "ゆうびんきょく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "post office"
+ },
+ {
+  "word": "昨夜",
+  "reading": "ゆうべ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "last night"
+ },
+ {
+  "word": "有名",
+  "reading": "ゆうめい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "famous"
+ },
+ {
+  "word": "雪",
+  "reading": "ゆき",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "snow"
+ },
+ {
+  "word": "ゆっくりと",
+  "reading": "ゆっくりと",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "slowly"
+ },
+ {
+  "word": "八日",
+  "reading": "ようか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "eight days; eighth day of the month"
+ },
+ {
+  "word": "洋服",
+  "reading": "ようふく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "western-style clothes"
+ },
+ {
+  "word": "よく",
+  "reading": "よく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "often; well"
+ },
+ {
+  "word": "横",
+  "reading": "よこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "beside; side; width"
+ },
+ {
+  "word": "四日",
+  "reading": "よっか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "four days; fouth day of the month"
+ },
+ {
+  "word": "四つ",
+  "reading": "よっつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "four"
+ },
+ {
+  "word": "呼ぶ",
+  "reading": "よぶ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to call out; to invite"
+ },
+ {
+  "word": "読む",
+  "reading": "よむ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to read"
+ },
+ {
+  "word": "より",
+  "reading": "より",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "than; (used for comparison)"
+ },
+ {
+  "word": "夜",
+  "reading": "よる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "evening; night"
+ },
+ {
+  "word": "弱い",
+  "reading": "よわい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "weak"
+ },
+ {
+  "word": "来月",
+  "reading": "らいげつ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "next month"
+ },
+ {
+  "word": "来週",
+  "reading": "らいしゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "next week"
+ },
+ {
+  "word": "来年",
+  "reading": "らいねん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "next year"
+ },
+ {
+  "word": "ラジオ",
+  "reading": "ラジオ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "radio"
+ },
+ {
+  "word": "ラジカセ",
+  "reading": "ラジカセ",
+  "other_forms": [
+   "ラジオカセット"
+  ],
+  "level": "N5",
+  "meanings": "radio cassette player"
+ },
+ {
+  "word": "りっぱ",
+  "reading": "りっぱ",
+  "other_forms": [
+   "立派"
+  ],
+  "level": "N5",
+  "meanings": "splendid"
+ },
+ {
+  "word": "留学生",
+  "reading": "りゅうがくせい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "overseas student"
+ },
+ {
+  "word": "両親",
+  "reading": "りょうしん",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "both parents"
+ },
+ {
+  "word": "料理",
+  "reading": "りょうり",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "cuisine"
+ },
+ {
+  "word": "旅行",
+  "reading": "りょこう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "travel"
+ },
+ {
+  "word": "零",
+  "reading": "れい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "zero"
+ },
+ {
+  "word": "冷蔵庫",
+  "reading": "れいぞうこ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "refrigerator"
+ },
+ {
+  "word": "レコード",
+  "reading": "レコード",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "record"
+ },
+ {
+  "word": "レストラン",
+  "reading": "レストラン",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "restaurant"
+ },
+ {
+  "word": "練習",
+  "reading": "れんしゅう",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to practice"
+ },
+ {
+  "word": "廊下",
+  "reading": "ろうか",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "corridor"
+ },
+ {
+  "word": "六",
+  "reading": "ろく",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "six"
+ },
+ {
+  "word": "ワイシャツ",
+  "reading": "ワイシャツ",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "business shirt"
+ },
+ {
+  "word": "若い",
+  "reading": "わかい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "young"
+ },
+ {
+  "word": "分かる",
+  "reading": "わかる",
+  "other_forms": [
+   "分る"
+  ],
+  "level": "N5",
+  "meanings": "to be understood"
+ },
+ {
+  "word": "忘れる",
+  "reading": "わすれる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to forget"
+ },
+ {
+  "word": "私",
+  "reading": "わたくし",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "(humble) I; myself"
+ },
+ {
+  "word": "渡す",
+  "reading": "わたす",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to hand over"
+ },
+ {
+  "word": "渡る",
+  "reading": "わたる",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "to go across"
+ },
+ {
+  "word": "悪い",
+  "reading": "わるい",
+  "other_forms": [],
+  "level": "N5",
+  "meanings": "bad"
+ },
+ {
+  "word": "あ",
+  "reading": "あ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Ah"
+ },
+ {
+  "word": "ああ",
+  "reading": "ああ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "like that"
+ },
+ {
+  "word": "あいさつする",
+  "reading": "あいさつする",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to greet"
+ },
+ {
+  "word": "間",
+  "reading": "あいだ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "a space"
+ },
+ {
+  "word": "合う",
+  "reading": "あう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to match"
+ },
+ {
+  "word": "あかちゃん",
+  "reading": "あかちゃん",
+  "other_forms": [
+   "赤ちゃん"
+  ],
+  "level": "N4",
+  "meanings": "infant"
+ },
+ {
+  "word": "上がる",
+  "reading": "あがる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to rise"
+ },
+ {
+  "word": "赤ん坊",
+  "reading": "あかんぼう",
+  "other_forms": [
+   "あかんぼう"
+  ],
+  "level": "N4",
+  "meanings": "baby"
+ },
+ {
+  "word": "空く",
+  "reading": "あく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to open; to become empty"
+ },
+ {
+  "word": "アクセサリー",
+  "reading": "アクセサリー",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "accessory"
+ },
+ {
+  "word": "浅い",
+  "reading": "あさい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "shallow; superficial"
+ },
+ {
+  "word": "味",
+  "reading": "あじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "flavour"
+ },
+ {
+  "word": "アジア",
+  "reading": "アジア",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Asia"
+ },
+ {
+  "word": "明日",
+  "reading": "あす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "tomorrow"
+ },
+ {
+  "word": "遊び",
+  "reading": "あそび",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "play"
+ },
+ {
+  "word": "集まる",
+  "reading": "あつまる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to gather"
+ },
+ {
+  "word": "集める",
+  "reading": "あつめる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to collect something"
+ },
+ {
+  "word": "アナウンサー",
+  "reading": "アナウンサー",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "announcer"
+ },
+ {
+  "word": "アフリカ",
+  "reading": "アフリカ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Africa"
+ },
+ {
+  "word": "アメリカ",
+  "reading": "アメリカ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "America"
+ },
+ {
+  "word": "謝る",
+  "reading": "あやまる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to apologize"
+ },
+ {
+  "word": "アルコール",
+  "reading": "アルコール",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "alcohol"
+ },
+ {
+  "word": "アルバイト",
+  "reading": "アルバイト",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "part-time job"
+ },
+ {
+  "word": "安心",
+  "reading": "あんしん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "relief"
+ },
+ {
+  "word": "安全",
+  "reading": "あんぜん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "safety"
+ },
+ {
+  "word": "あんな",
+  "reading": "あんな",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "such"
+ },
+ {
+  "word": "案内",
+  "reading": "あんない",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to guide"
+ },
+ {
+  "word": "以下",
+  "reading": "いか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "less than"
+ },
+ {
+  "word": "以外",
+  "reading": "いがい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "with the exception of"
+ },
+ {
+  "word": "医学",
+  "reading": "いがく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "medical science"
+ },
+ {
+  "word": "生きる",
+  "reading": "いきる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to live"
+ },
+ {
+  "word": "意見",
+  "reading": "いけん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "opinion"
+ },
+ {
+  "word": "石",
+  "reading": "いし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "stone"
+ },
+ {
+  "word": "いじめる",
+  "reading": "いじめる",
+  "other_forms": [
+   "苛める"
+  ],
+  "level": "N4",
+  "meanings": "to tease"
+ },
+ {
+  "word": "以上",
+  "reading": "いじょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "more than; this is all"
+ },
+ {
+  "word": "急ぐ",
+  "reading": "いそぐ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to hurry"
+ },
+ {
+  "word": "致す",
+  "reading": "いたす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) to do"
+ },
+ {
+  "word": "いただく",
+  "reading": "いただく",
+  "other_forms": [
+   "頂く"
+  ],
+  "level": "N4",
+  "meanings": "(humble) to receive"
+ },
+ {
+  "word": "一度",
+  "reading": "いちど",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "once"
+ },
+ {
+  "word": "一生懸命",
+  "reading": "いっしょうけんめい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "with utmost effort"
+ },
+ {
+  "word": "いっぱい",
+  "reading": "いっぱい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "full"
+ },
+ {
+  "word": "糸",
+  "reading": "いと",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "thread"
+ },
+ {
+  "word": "以内",
+  "reading": "いない",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "within"
+ },
+ {
+  "word": "田舎",
+  "reading": "いなか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "countryside"
+ },
+ {
+  "word": "祈る",
+  "reading": "いのる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to pray"
+ },
+ {
+  "word": "いらっしゃる",
+  "reading": "いらっしゃる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(respectful) to be; to come or to go"
+ },
+ {
+  "word": "植える",
+  "reading": "うえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to plant; to grow"
+ },
+ {
+  "word": "うかがう",
+  "reading": "うかがう",
+  "other_forms": [
+   "伺う"
+  ],
+  "level": "N4",
+  "meanings": "to visit"
+ },
+ {
+  "word": "受付",
+  "reading": "うけつけ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "receipt"
+ },
+ {
+  "word": "受ける",
+  "reading": "うける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to take a lesson or test"
+ },
+ {
+  "word": "動く",
+  "reading": "うごく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to move"
+ },
+ {
+  "word": "うそ",
+  "reading": "うそ",
+  "other_forms": [
+   "嘘"
+  ],
+  "level": "N4",
+  "meanings": "a lie"
+ },
+ {
+  "word": "うち",
+  "reading": "うち",
+  "other_forms": [
+   "内"
+  ],
+  "level": "N4",
+  "meanings": "within"
+ },
+ {
+  "word": "打つ",
+  "reading": "うつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to hit"
+ },
+ {
+  "word": "美しい",
+  "reading": "うつくしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "beautiful"
+ },
+ {
+  "word": "写す",
+  "reading": "うつす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to copy or photograph"
+ },
+ {
+  "word": "移る",
+  "reading": "うつる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to move house or transfer"
+ },
+ {
+  "word": "腕",
+  "reading": "うで",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "arm"
+ },
+ {
+  "word": "うまい",
+  "reading": "うまい",
+  "other_forms": [
+   "甘い"
+  ],
+  "level": "N4",
+  "meanings": "delicious"
+ },
+ {
+  "word": "裏",
+  "reading": "うら",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "reverse side"
+ },
+ {
+  "word": "売り場",
+  "reading": "うりば",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "place where things are sold"
+ },
+ {
+  "word": "うれしい",
+  "reading": "うれしい",
+  "other_forms": [
+   "嬉しい"
+  ],
+  "level": "N4",
+  "meanings": "glad"
+ },
+ {
+  "word": "うん",
+  "reading": "うん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(informal) yes"
+ },
+ {
+  "word": "運転",
+  "reading": "うんてん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to drive"
+ },
+ {
+  "word": "運転手",
+  "reading": "うんてんしゅ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "driver"
+ },
+ {
+  "word": "運動",
+  "reading": "うんどう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to exercise"
+ },
+ {
+  "word": "エスカレーター",
+  "reading": "エスカレーター",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "escalator"
+ },
+ {
+  "word": "枝",
+  "reading": "えだ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "branch; twig"
+ },
+ {
+  "word": "選ぶ",
+  "reading": "えらぶ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to choose"
+ },
+ {
+  "word": "遠慮",
+  "reading": "えんりょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be reserved; to be restrained"
+ },
+ {
+  "word": "おいでになる",
+  "reading": "おいでになる",
+  "other_forms": [
+   "お出でになる"
+  ],
+  "level": "N4",
+  "meanings": "(respectful) to be"
+ },
+ {
+  "word": "お祝い",
+  "reading": "おいわい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "congratulation"
+ },
+ {
+  "word": "オートバイ",
+  "reading": "オートバイ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "motorcycle"
+ },
+ {
+  "word": "おかげ",
+  "reading": "おかげ",
+  "other_forms": [
+   "お陰",
+   "お蔭"
+  ],
+  "level": "N4",
+  "meanings": "owing to"
+ },
+ {
+  "word": "おかしい",
+  "reading": "おかしい",
+  "other_forms": [
+   "可笑しい"
+  ],
+  "level": "N4",
+  "meanings": "strange or funny"
+ },
+ {
+  "word": "お金持ち",
+  "reading": "おかねもち",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "rich man"
+ },
+ {
+  "word": "億",
+  "reading": "おく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "one hundred million"
+ },
+ {
+  "word": "屋上",
+  "reading": "おくじょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "rooftop"
+ },
+ {
+  "word": "贈り物",
+  "reading": "おくりもの",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "gift"
+ },
+ {
+  "word": "送る",
+  "reading": "おくる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to send"
+ },
+ {
+  "word": "遅れる",
+  "reading": "おくれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be late"
+ },
+ {
+  "word": "起す",
+  "reading": "おこす",
+  "other_forms": [
+   "起こす"
+  ],
+  "level": "N4",
+  "meanings": "to wake"
+ },
+ {
+  "word": "行う",
+  "reading": "おこなう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to do"
+ },
+ {
+  "word": "怒る",
+  "reading": "おこる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to get angry; to be angry"
+ },
+ {
+  "word": "押し入れ",
+  "reading": "おしいれ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "closet"
+ },
+ {
+  "word": "お嬢さん",
+  "reading": "おじょうさん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "young lady"
+ },
+ {
+  "word": "お宅",
+  "reading": "おたく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(polite) your house"
+ },
+ {
+  "word": "落ちる",
+  "reading": "おちる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to fall or drop"
+ },
+ {
+  "word": "おっしゃる",
+  "reading": "おっしゃる",
+  "other_forms": [
+   "仰る"
+  ],
+  "level": "N4",
+  "meanings": "(respectful) to say"
+ },
+ {
+  "word": "夫",
+  "reading": "おっと",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "husband"
+ },
+ {
+  "word": "おつり",
+  "reading": "おつり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "change from purchase; balance"
+ },
+ {
+  "word": "音",
+  "reading": "おと",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sound; note"
+ },
+ {
+  "word": "落す",
+  "reading": "おとす",
+  "other_forms": [
+   "落とす"
+  ],
+  "level": "N4",
+  "meanings": "to drop"
+ },
+ {
+  "word": "踊り",
+  "reading": "おどり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "a dance"
+ },
+ {
+  "word": "踊る",
+  "reading": "おどる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to dance"
+ },
+ {
+  "word": "驚く",
+  "reading": "おどろく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be surprised"
+ },
+ {
+  "word": "お祭り",
+  "reading": "おまつり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "festival"
+ },
+ {
+  "word": "お見舞い",
+  "reading": "おみまい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "calling on someone who is ill; enquiry"
+ },
+ {
+  "word": "お土産",
+  "reading": "おみやげ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "souvenir"
+ },
+ {
+  "word": "思い出す",
+  "reading": "おもいだす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to remember"
+ },
+ {
+  "word": "思う",
+  "reading": "おもう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to think; to feel"
+ },
+ {
+  "word": "おもちゃ",
+  "reading": "おもちゃ",
+  "other_forms": [
+   "玩具"
+  ],
+  "level": "N4",
+  "meanings": "toy"
+ },
+ {
+  "word": "表",
+  "reading": "おもて",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "the front"
+ },
+ {
+  "word": "親",
+  "reading": "おや",
+  "other_forms": [
+   "おや"
+  ],
+  "level": "N4",
+  "meanings": "parents"
+ },
+ {
+  "word": "泳ぎ方",
+  "reading": "およぎかた",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "way of swimming"
+ },
+ {
+  "word": "下りる",
+  "reading": "おりる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to get off"
+ },
+ {
+  "word": "折る",
+  "reading": "おる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to break or to fold"
+ },
+ {
+  "word": "お礼",
+  "reading": "おれい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "expression of gratitude"
+ },
+ {
+  "word": "折れる",
+  "reading": "おれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to break or be folded"
+ },
+ {
+  "word": "終わり",
+  "reading": "おわり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "the end"
+ },
+ {
+  "word": "カーテン",
+  "reading": "カーテン",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "curtain"
+ },
+ {
+  "word": "海岸",
+  "reading": "かいがん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "coast"
+ },
+ {
+  "word": "会議",
+  "reading": "かいぎ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "meeting"
+ },
+ {
+  "word": "会議室",
+  "reading": "かいぎしつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "meeting room"
+ },
+ {
+  "word": "会場",
+  "reading": "かいじょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "assembly hall or meeting place"
+ },
+ {
+  "word": "会話",
+  "reading": "かいわ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "conversation"
+ },
+ {
+  "word": "帰り",
+  "reading": "かえり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "return"
+ },
+ {
+  "word": "変える",
+  "reading": "かえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to change"
+ },
+ {
+  "word": "科学",
+  "reading": "かがく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "science"
+ },
+ {
+  "word": "鏡",
+  "reading": "かがみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "mirror"
+ },
+ {
+  "word": "飾る",
+  "reading": "かざる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to decorate"
+ },
+ {
+  "word": "火事",
+  "reading": "かじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "fire"
+ },
+ {
+  "word": "ガス",
+  "reading": "ガス",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "petrol"
+ },
+ {
+  "word": "ガソリン",
+  "reading": "ガソリン",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "petrol"
+ },
+ {
+  "word": "ガソリンスタンド",
+  "reading": "ガソリンスタンド",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "petrol station"
+ },
+ {
+  "word": "堅い",
+  "reading": "かたい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "hard"
+ },
+ {
+  "word": "形",
+  "reading": "かたち",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "shape"
+ },
+ {
+  "word": "片付ける",
+  "reading": "かたづける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to tidy up"
+ },
+ {
+  "word": "課長",
+  "reading": "かちょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "section manager"
+ },
+ {
+  "word": "勝つ",
+  "reading": "かつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to win"
+ },
+ {
+  "word": "かっこう",
+  "reading": "かっこう",
+  "other_forms": [
+   "格好"
+  ],
+  "level": "N4",
+  "meanings": "appearance"
+ },
+ {
+  "word": "家内",
+  "reading": "かない",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "housewife"
+ },
+ {
+  "word": "悲しい",
+  "reading": "かなしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sad"
+ },
+ {
+  "word": "必ず",
+  "reading": "かならず",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "certainly; necessarily"
+ },
+ {
+  "word": "彼女",
+  "reading": "かのじょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "she; girlfriend"
+ },
+ {
+  "word": "壁",
+  "reading": "かべ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "wall"
+ },
+ {
+  "word": "かまう",
+  "reading": "かまう",
+  "other_forms": [
+   "構う"
+  ],
+  "level": "N4",
+  "meanings": "to mind"
+ },
+ {
+  "word": "髪",
+  "reading": "かみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "hair"
+ },
+ {
+  "word": "噛む",
+  "reading": "かむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to bite; to chew"
+ },
+ {
+  "word": "通う",
+  "reading": "かよう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to commute"
+ },
+ {
+  "word": "ガラス",
+  "reading": "ガラス",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "a glass pane"
+ },
+ {
+  "word": "彼",
+  "reading": "かれ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "he; boyfriend"
+ },
+ {
+  "word": "彼ら",
+  "reading": "かれら",
+  "other_forms": [
+   "彼等"
+  ],
+  "level": "N4",
+  "meanings": "they"
+ },
+ {
+  "word": "乾く",
+  "reading": "かわく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to get dry"
+ },
+ {
+  "word": "代わり",
+  "reading": "かわり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "substitute; alternate"
+ },
+ {
+  "word": "変わる",
+  "reading": "かわる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to change"
+ },
+ {
+  "word": "考える",
+  "reading": "かんがえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to consider"
+ },
+ {
+  "word": "関係",
+  "reading": "かんけい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "relationship"
+ },
+ {
+  "word": "看護婦",
+  "reading": "かんごふ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "female nurse"
+ },
+ {
+  "word": "簡単",
+  "reading": "かんたん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "simple"
+ },
+ {
+  "word": "気",
+  "reading": "き",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "spirit; mood"
+ },
+ {
+  "word": "機会",
+  "reading": "きかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "opportunity"
+ },
+ {
+  "word": "危険",
+  "reading": "きけん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "danger"
+ },
+ {
+  "word": "聞こえる",
+  "reading": "きこえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be heard"
+ },
+ {
+  "word": "汽車",
+  "reading": "きしゃ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "steam train"
+ },
+ {
+  "word": "技術",
+  "reading": "ぎじゅつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "art; technology; skill"
+ },
+ {
+  "word": "季節",
+  "reading": "きせつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "season"
+ },
+ {
+  "word": "規則",
+  "reading": "きそく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "regulations"
+ },
+ {
+  "word": "きっと",
+  "reading": "きっと",
+  "other_forms": [
+   "屹度"
+  ],
+  "level": "N4",
+  "meanings": "surely"
+ },
+ {
+  "word": "絹",
+  "reading": "きぬ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "silk"
+ },
+ {
+  "word": "厳しい",
+  "reading": "きびしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "strict"
+ },
+ {
+  "word": "気分",
+  "reading": "きぶん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "mood"
+ },
+ {
+  "word": "決まる",
+  "reading": "きまる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be decided"
+ },
+ {
+  "word": "君",
+  "reading": "きみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(informal) You (used by men towards women)"
+ },
+ {
+  "word": "決める",
+  "reading": "きめる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to decide"
+ },
+ {
+  "word": "気持ち",
+  "reading": "きもち",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "feeling; mood"
+ },
+ {
+  "word": "着物",
+  "reading": "きもの",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "kimono"
+ },
+ {
+  "word": "客",
+  "reading": "きゃく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "guest; customer"
+ },
+ {
+  "word": "急",
+  "reading": "きゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "urgent; steep"
+ },
+ {
+  "word": "急行",
+  "reading": "きゅうこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "speedy; express"
+ },
+ {
+  "word": "教育",
+  "reading": "きょういく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "education"
+ },
+ {
+  "word": "教会",
+  "reading": "きょうかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "church"
+ },
+ {
+  "word": "競争",
+  "reading": "きょうそう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "competition"
+ },
+ {
+  "word": "興味",
+  "reading": "きょうみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "an interest"
+ },
+ {
+  "word": "近所",
+  "reading": "きんじょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "neighbourhood"
+ },
+ {
+  "word": "具合",
+  "reading": "ぐあい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "condition; health"
+ },
+ {
+  "word": "空気",
+  "reading": "くうき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "air; atmosphere"
+ },
+ {
+  "word": "空港",
+  "reading": "くうこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "airport"
+ },
+ {
+  "word": "草",
+  "reading": "くさ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "grass"
+ },
+ {
+  "word": "くださる",
+  "reading": "くださる",
+  "other_forms": [
+   "下さる"
+  ],
+  "level": "N4",
+  "meanings": "(respectful) to give"
+ },
+ {
+  "word": "首",
+  "reading": "くび",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "neck"
+ },
+ {
+  "word": "雲",
+  "reading": "くも",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "cloud"
+ },
+ {
+  "word": "比べる",
+  "reading": "くらべる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to compare"
+ },
+ {
+  "word": "くれる",
+  "reading": "くれる",
+  "other_forms": [
+   "呉れる"
+  ],
+  "level": "N4",
+  "meanings": "to give"
+ },
+ {
+  "word": "暮れる",
+  "reading": "くれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to get dark; to come to an end"
+ },
+ {
+  "word": "毛",
+  "reading": "け",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "hair or fur"
+ },
+ {
+  "word": "計画",
+  "reading": "けいかく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to plan"
+ },
+ {
+  "word": "経験",
+  "reading": "けいけん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to experience"
+ },
+ {
+  "word": "経済",
+  "reading": "けいざい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "finance; economy"
+ },
+ {
+  "word": "警察",
+  "reading": "けいさつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "police"
+ },
+ {
+  "word": "ケーキ",
+  "reading": "ケーキ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "cake"
+ },
+ {
+  "word": "けがする",
+  "reading": "けがする",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to injure"
+ },
+ {
+  "word": "景色",
+  "reading": "けしき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "scene; landscape"
+ },
+ {
+  "word": "消しゴム",
+  "reading": "けしゴム",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "eraser"
+ },
+ {
+  "word": "下宿",
+  "reading": "げしゅく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "lodging"
+ },
+ {
+  "word": "決して",
+  "reading": "けっして",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "never"
+ },
+ {
+  "word": "けれど",
+  "reading": "けれど",
+  "other_forms": [
+   "けれども"
+  ],
+  "level": "N4",
+  "meanings": "however"
+ },
+ {
+  "word": "原因",
+  "reading": "げんいん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "cause; source"
+ },
+ {
+  "word": "けんかする",
+  "reading": "けんかする",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to quarrel"
+ },
+ {
+  "word": "研究",
+  "reading": "けんきゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "research"
+ },
+ {
+  "word": "研究室",
+  "reading": "けんきゅうしつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "study room; laboratory"
+ },
+ {
+  "word": "見物",
+  "reading": "けんぶつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sightseeing"
+ },
+ {
+  "word": "子",
+  "reading": "こ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "child"
+ },
+ {
+  "word": "こう",
+  "reading": "こう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "this way"
+ },
+ {
+  "word": "郊外",
+  "reading": "こうがい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "outskirts"
+ },
+ {
+  "word": "講義",
+  "reading": "こうぎ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "lecture"
+ },
+ {
+  "word": "工業",
+  "reading": "こうぎょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "the manufacturing industry"
+ },
+ {
+  "word": "高校",
+  "reading": "こうこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "high school"
+ },
+ {
+  "word": "高校生",
+  "reading": "こうこうせい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "high school student"
+ },
+ {
+  "word": "工場",
+  "reading": "こうじょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "factory"
+ },
+ {
+  "word": "校長",
+  "reading": "こうちょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "headmaster"
+ },
+ {
+  "word": "交通",
+  "reading": "こうつう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "traffic; transportation"
+ },
+ {
+  "word": "講堂",
+  "reading": "こうどう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "auditorium"
+ },
+ {
+  "word": "高等学校",
+  "reading": "こうとうがっこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "high school"
+ },
+ {
+  "word": "公務員",
+  "reading": "こうむいん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "government worker"
+ },
+ {
+  "word": "国際",
+  "reading": "こくさい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "international"
+ },
+ {
+  "word": "心",
+  "reading": "こころ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "core; heart"
+ },
+ {
+  "word": "御主人",
+  "reading": "ごしゅじん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(honorable) your husband"
+ },
+ {
+  "word": "故障",
+  "reading": "こしょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to break-down"
+ },
+ {
+  "word": "ご存じ",
+  "reading": "ごぞんじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "knowing; acquaintance"
+ },
+ {
+  "word": "答",
+  "reading": "こたえ",
+  "other_forms": [
+   "答え"
+  ],
+  "level": "N4",
+  "meanings": "response"
+ },
+ {
+  "word": "ごちそう",
+  "reading": "ごちそう",
+  "other_forms": [
+   "御馳走",
+   "ご馳走"
+  ],
+  "level": "N4",
+  "meanings": "a feast"
+ },
+ {
+  "word": "こと",
+  "reading": "こと",
+  "other_forms": [
+   "事"
+  ],
+  "level": "N4",
+  "meanings": "thing; matter"
+ },
+ {
+  "word": "小鳥",
+  "reading": "ことり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "small bird"
+ },
+ {
+  "word": "このあいだ",
+  "reading": "このあいだ",
+  "other_forms": [
+   "この間"
+  ],
+  "level": "N4",
+  "meanings": "the other day; recently"
+ },
+ {
+  "word": "このごろ",
+  "reading": "このごろ",
+  "other_forms": [
+   "この頃"
+  ],
+  "level": "N4",
+  "meanings": "these days; nowadays"
+ },
+ {
+  "word": "細かい",
+  "reading": "こまかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "small; fine"
+ },
+ {
+  "word": "ごみ",
+  "reading": "ごみ",
+  "other_forms": [
+   "ゴミ",
+   "塵"
+  ],
+  "level": "N4",
+  "meanings": "rubbish"
+ },
+ {
+  "word": "込む",
+  "reading": "こむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be crowded"
+ },
+ {
+  "word": "米",
+  "reading": "こめ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "uncooked rice"
+ },
+ {
+  "word": "ごらんになる",
+  "reading": "ごらんになる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(respectful) to see"
+ },
+ {
+  "word": "これから",
+  "reading": "これから",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "after this"
+ },
+ {
+  "word": "怖い",
+  "reading": "こわい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "frightening"
+ },
+ {
+  "word": "壊す",
+  "reading": "こわす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to break"
+ },
+ {
+  "word": "壊れる",
+  "reading": "こわれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be broken"
+ },
+ {
+  "word": "コンサート",
+  "reading": "コンサート",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "concert"
+ },
+ {
+  "word": "今度",
+  "reading": "こんど",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "now; next time"
+ },
+ {
+  "word": "コンピュータ",
+  "reading": "コンピュータ",
+  "other_forms": [
+   "コンピューター"
+  ],
+  "level": "N4",
+  "meanings": "computer"
+ },
+ {
+  "word": "今夜",
+  "reading": "こんや",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "tonight"
+ },
+ {
+  "word": "最近",
+  "reading": "さいきん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "latest; nowadays"
+ },
+ {
+  "word": "最後",
+  "reading": "さいご",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "last; end"
+ },
+ {
+  "word": "最初",
+  "reading": "さいしょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "beginning; first"
+ },
+ {
+  "word": "坂",
+  "reading": "さか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "slope; hill"
+ },
+ {
+  "word": "探す",
+  "reading": "さがす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to look for"
+ },
+ {
+  "word": "下がる",
+  "reading": "さがる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to get down; to descend"
+ },
+ {
+  "word": "盛ん",
+  "reading": "さかん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "popularity; prosperous"
+ },
+ {
+  "word": "下げる",
+  "reading": "さげる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to hang; to lower; to move back"
+ },
+ {
+  "word": "差し上げる",
+  "reading": "さしあげる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(polite) to give"
+ },
+ {
+  "word": "さっき",
+  "reading": "さっき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "some time ago"
+ },
+ {
+  "word": "寂しい",
+  "reading": "さびしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "lonely"
+ },
+ {
+  "word": "再来月",
+  "reading": "さらいげつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "the month after next"
+ },
+ {
+  "word": "再来週",
+  "reading": "さらいしゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "the week after next"
+ },
+ {
+  "word": "サラダ",
+  "reading": "サラダ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "salad"
+ },
+ {
+  "word": "騒ぐ",
+  "reading": "さわぐ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to make noise; to be excited"
+ },
+ {
+  "word": "触る",
+  "reading": "さわる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to touch"
+ },
+ {
+  "word": "産業",
+  "reading": "さんぎょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "industry"
+ },
+ {
+  "word": "サンダル",
+  "reading": "サンダル",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sandal"
+ },
+ {
+  "word": "サンドイッチ",
+  "reading": "サンドイッチ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sandwich"
+ },
+ {
+  "word": "残念",
+  "reading": "ざんねん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "disappointment"
+ },
+ {
+  "word": "市",
+  "reading": "し",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "city"
+ },
+ {
+  "word": "字",
+  "reading": "じ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "character"
+ },
+ {
+  "word": "試合",
+  "reading": "しあい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "match; game"
+ },
+ {
+  "word": "仕方",
+  "reading": "しかた",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "method"
+ },
+ {
+  "word": "しかる",
+  "reading": "しかる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "a particular"
+ },
+ {
+  "word": "試験",
+  "reading": "しけん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "examination"
+ },
+ {
+  "word": "事故",
+  "reading": "じこ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "accident"
+ },
+ {
+  "word": "地震",
+  "reading": "じしん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "earthquake"
+ },
+ {
+  "word": "時代",
+  "reading": "じだい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "era"
+ },
+ {
+  "word": "下着",
+  "reading": "したぎ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "underwear"
+ },
+ {
+  "word": "支度",
+  "reading": "したく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to prepare"
+ },
+ {
+  "word": "しっかり",
+  "reading": "しっかり",
+  "other_forms": [
+   "確り"
+  ],
+  "level": "N4",
+  "meanings": "firmly; steadily"
+ },
+ {
+  "word": "失敗",
+  "reading": "しっぱい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "failure; mistake"
+ },
+ {
+  "word": "辞典",
+  "reading": "じてん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "dictionary"
+ },
+ {
+  "word": "品物",
+  "reading": "しなもの",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "goods"
+ },
+ {
+  "word": "しばらく",
+  "reading": "しばらく",
+  "other_forms": [
+   "暫く"
+  ],
+  "level": "N4",
+  "meanings": "little while"
+ },
+ {
+  "word": "島",
+  "reading": "しま",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "island"
+ },
+ {
+  "word": "市民",
+  "reading": "しみん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "citizen"
+ },
+ {
+  "word": "事務所",
+  "reading": "じむしょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "office"
+ },
+ {
+  "word": "社会",
+  "reading": "しゃかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "society; public"
+ },
+ {
+  "word": "社長",
+  "reading": "しゃちょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "company president"
+ },
+ {
+  "word": "じゃま",
+  "reading": "じゃま",
+  "other_forms": [
+   "邪魔"
+  ],
+  "level": "N4",
+  "meanings": "hindrance; intrusion"
+ },
+ {
+  "word": "ジャム",
+  "reading": "ジャム",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "jam"
+ },
+ {
+  "word": "自由",
+  "reading": "じゆう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "freedom"
+ },
+ {
+  "word": "習慣",
+  "reading": "しゅうかん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "custom; manners"
+ },
+ {
+  "word": "住所",
+  "reading": "じゅうしょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "an address; a residence"
+ },
+ {
+  "word": "柔道",
+  "reading": "じゅうどう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "judo"
+ },
+ {
+  "word": "十分",
+  "reading": "じゅうぶん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "enough"
+ },
+ {
+  "word": "出席",
+  "reading": "しゅっせき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to attend"
+ },
+ {
+  "word": "出発",
+  "reading": "しゅっぱつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to depart"
+ },
+ {
+  "word": "趣味",
+  "reading": "しゅみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "hobby"
+ },
+ {
+  "word": "準備",
+  "reading": "じゅんび",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to prepare"
+ },
+ {
+  "word": "紹介",
+  "reading": "しょうかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "introduction"
+ },
+ {
+  "word": "小学校",
+  "reading": "しょうがっこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "elementary school"
+ },
+ {
+  "word": "小説",
+  "reading": "しょうせつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "novel"
+ },
+ {
+  "word": "招待",
+  "reading": "しょうたい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to invite"
+ },
+ {
+  "word": "承知",
+  "reading": "しょうち",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to consent"
+ },
+ {
+  "word": "将来",
+  "reading": "しょうらい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "future; prospects"
+ },
+ {
+  "word": "食事",
+  "reading": "しょくじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to have a meal"
+ },
+ {
+  "word": "食料品",
+  "reading": "しょくりょうひん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "groceries"
+ },
+ {
+  "word": "女性",
+  "reading": "じょせい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "woman"
+ },
+ {
+  "word": "知らせる",
+  "reading": "しらせる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to notify"
+ },
+ {
+  "word": "調べる",
+  "reading": "しらべる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to investigate"
+ },
+ {
+  "word": "人口",
+  "reading": "じんこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "population"
+ },
+ {
+  "word": "神社",
+  "reading": "じんじゃ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Shinto shrine"
+ },
+ {
+  "word": "親切",
+  "reading": "しんせつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "kindness"
+ },
+ {
+  "word": "心配",
+  "reading": "しんぱい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to worry"
+ },
+ {
+  "word": "新聞社",
+  "reading": "しんぶんしゃ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "newspaper company"
+ },
+ {
+  "word": "水泳",
+  "reading": "すいえい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "swimming"
+ },
+ {
+  "word": "水道",
+  "reading": "すいどう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "water supply"
+ },
+ {
+  "word": "ずいぶん",
+  "reading": "ずいぶん",
+  "other_forms": [
+   "随分"
+  ],
+  "level": "N4",
+  "meanings": "extremely"
+ },
+ {
+  "word": "数学",
+  "reading": "すうがく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "mathematics; arithmetic"
+ },
+ {
+  "word": "スーツ",
+  "reading": "スーツ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "suit"
+ },
+ {
+  "word": "スーツケース",
+  "reading": "スーツケース",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "suitcase"
+ },
+ {
+  "word": "過ぎる",
+  "reading": "すぎる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to exceed"
+ },
+ {
+  "word": "すく",
+  "reading": "すく",
+  "other_forms": [
+   "空く"
+  ],
+  "level": "N4",
+  "meanings": "to become empty"
+ },
+ {
+  "word": "スクリーン",
+  "reading": "スクリーン",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "screen"
+ },
+ {
+  "word": "凄い",
+  "reading": "すごい",
+  "other_forms": [
+   "すごい"
+  ],
+  "level": "N4",
+  "meanings": "terrific"
+ },
+ {
+  "word": "進む",
+  "reading": "すすむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to make progress"
+ },
+ {
+  "word": "すっかり",
+  "reading": "すっかり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "completely"
+ },
+ {
+  "word": "すっと",
+  "reading": "すっと",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "straight; all of a sudden"
+ },
+ {
+  "word": "ステーキ",
+  "reading": "ステーキ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "steak"
+ },
+ {
+  "word": "捨てる",
+  "reading": "すてる",
+  "other_forms": [
+   "棄てる"
+  ],
+  "level": "N4",
+  "meanings": "to throw away"
+ },
+ {
+  "word": "ステレオ",
+  "reading": "ステレオ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "stereo"
+ },
+ {
+  "word": "砂",
+  "reading": "すな",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sand"
+ },
+ {
+  "word": "すばらしい",
+  "reading": "すばらしい",
+  "other_forms": [
+   "素晴らしい"
+  ],
+  "level": "N4",
+  "meanings": "wonderful"
+ },
+ {
+  "word": "滑る",
+  "reading": "すべる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to slide; to slip"
+ },
+ {
+  "word": "隅",
+  "reading": "すみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "corner; nook"
+ },
+ {
+  "word": "済む",
+  "reading": "すむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to finish"
+ },
+ {
+  "word": "すり",
+  "reading": "すり",
+  "other_forms": [
+   "掏摸"
+  ],
+  "level": "N4",
+  "meanings": "pickpocket"
+ },
+ {
+  "word": "すると",
+  "reading": "すると",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "then"
+ },
+ {
+  "word": "生活",
+  "reading": "せいかつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to live"
+ },
+ {
+  "word": "生産",
+  "reading": "せいさん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to produce"
+ },
+ {
+  "word": "政治",
+  "reading": "せいじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "politics; government"
+ },
+ {
+  "word": "西洋",
+  "reading": "せいよう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "western countries"
+ },
+ {
+  "word": "世界",
+  "reading": "せかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "the world"
+ },
+ {
+  "word": "席",
+  "reading": "せき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "seat"
+ },
+ {
+  "word": "説明",
+  "reading": "せつめい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "explanation"
+ },
+ {
+  "word": "背中",
+  "reading": "せなか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "back of the body"
+ },
+ {
+  "word": "ぜひ",
+  "reading": "ぜひ",
+  "other_forms": [
+   "是非"
+  ],
+  "level": "N4",
+  "meanings": "without fail"
+ },
+ {
+  "word": "世話",
+  "reading": "せわ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to look after"
+ },
+ {
+  "word": "線",
+  "reading": "せん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "line"
+ },
+ {
+  "word": "ぜんぜん",
+  "reading": "ぜんぜん",
+  "other_forms": [
+   "全然"
+  ],
+  "level": "N4",
+  "meanings": "not entirely (used in a negative sentence)"
+ },
+ {
+  "word": "戦争",
+  "reading": "せんそう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "war"
+ },
+ {
+  "word": "先輩",
+  "reading": "せんぱい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "senior"
+ },
+ {
+  "word": "そう",
+  "reading": "そう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "really"
+ },
+ {
+  "word": "相談",
+  "reading": "そうだん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to discuss"
+ },
+ {
+  "word": "育てる",
+  "reading": "そだてる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to rear; to bring up"
+ },
+ {
+  "word": "卒業",
+  "reading": "そつぎょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "graduation"
+ },
+ {
+  "word": "祖父",
+  "reading": "そふ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "grandfather"
+ },
+ {
+  "word": "ソフト",
+  "reading": "ソフト",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "soft"
+ },
+ {
+  "word": "祖母",
+  "reading": "そぼ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "grandmother"
+ },
+ {
+  "word": "それで",
+  "reading": "それで",
+  "other_forms": [
+   "其れで"
+  ],
+  "level": "N4",
+  "meanings": "because of that"
+ },
+ {
+  "word": "それに",
+  "reading": "それに",
+  "other_forms": [
+   "其れに"
+  ],
+  "level": "N4",
+  "meanings": "moreover"
+ },
+ {
+  "word": "それほど",
+  "reading": "それほど",
+  "other_forms": [
+   "其れ程"
+  ],
+  "level": "N4",
+  "meanings": "to that extent"
+ },
+ {
+  "word": "そろそろ",
+  "reading": "そろそろ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "gradually; soon"
+ },
+ {
+  "word": "そんな",
+  "reading": "そんな",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "that sort of"
+ },
+ {
+  "word": "そんなに",
+  "reading": "そんなに",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "so much; like that"
+ },
+ {
+  "word": "退院",
+  "reading": "たいいん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to leave hospital"
+ },
+ {
+  "word": "大学生",
+  "reading": "だいがくせい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "university student"
+ },
+ {
+  "word": "大事",
+  "reading": "だいじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "important; valuable; serious matter"
+ },
+ {
+  "word": "大体",
+  "reading": "だいたい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "generally"
+ },
+ {
+  "word": "たいてい",
+  "reading": "たいてい",
+  "other_forms": [
+   "大抵"
+  ],
+  "level": "N4",
+  "meanings": "usually"
+ },
+ {
+  "word": "タイプ",
+  "reading": "タイプ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "type; style"
+ },
+ {
+  "word": "大分",
+  "reading": "だいぶ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "greatly"
+ },
+ {
+  "word": "台風",
+  "reading": "たいふう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "typhoon"
+ },
+ {
+  "word": "倒れる",
+  "reading": "たおれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to break down"
+ },
+ {
+  "word": "だから",
+  "reading": "だから",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "so; therefore"
+ },
+ {
+  "word": "確か",
+  "reading": "たしか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "definite"
+ },
+ {
+  "word": "足す",
+  "reading": "たす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to add a number"
+ },
+ {
+  "word": "尋ねる",
+  "reading": "たずねる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to ask"
+ },
+ {
+  "word": "訪ねる",
+  "reading": "たずねる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to visit"
+ },
+ {
+  "word": "正しい",
+  "reading": "ただしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "correct"
+ },
+ {
+  "word": "畳",
+  "reading": "たたみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Japanese straw mat"
+ },
+ {
+  "word": "建てる",
+  "reading": "たてる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to build"
+ },
+ {
+  "word": "立てる",
+  "reading": "たてる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to stand something up"
+ },
+ {
+  "word": "例えば",
+  "reading": "たとえば",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "for example"
+ },
+ {
+  "word": "棚",
+  "reading": "たな",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "shelves"
+ },
+ {
+  "word": "楽しみ",
+  "reading": "たのしみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "joy"
+ },
+ {
+  "word": "楽しむ",
+  "reading": "たのしむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to enjoy oneself"
+ },
+ {
+  "word": "たまに",
+  "reading": "たまに",
+  "other_forms": [
+   "偶に"
+  ],
+  "level": "N4",
+  "meanings": "occasionally"
+ },
+ {
+  "word": "為",
+  "reading": "ため",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "in order to"
+ },
+ {
+  "word": "だめ",
+  "reading": "だめ",
+  "other_forms": [
+   "駄目"
+  ],
+  "level": "N4",
+  "meanings": "no good"
+ },
+ {
+  "word": "足りる",
+  "reading": "たりる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be enough"
+ },
+ {
+  "word": "男性",
+  "reading": "だんせい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "male"
+ },
+ {
+  "word": "暖房",
+  "reading": "だんぼう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "heating"
+ },
+ {
+  "word": "血",
+  "reading": "ち",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "blood"
+ },
+ {
+  "word": "チェックする",
+  "reading": "チェックする",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to check"
+ },
+ {
+  "word": "力",
+  "reading": "ちから",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "strength; power"
+ },
+ {
+  "word": "ちっとも",
+  "reading": "ちっとも",
+  "other_forms": [
+   "些とも"
+  ],
+  "level": "N4",
+  "meanings": "not at all (used with a negative verb)"
+ },
+ {
+  "word": "ちゃん",
+  "reading": "ちゃん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "suffix for familiar female person"
+ },
+ {
+  "word": "注意",
+  "reading": "ちゅうい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "caution"
+ },
+ {
+  "word": "中学校",
+  "reading": "ちゅうがっこう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "junior high school; middle school"
+ },
+ {
+  "word": "注射",
+  "reading": "ちゅうしゃ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "injection"
+ },
+ {
+  "word": "駐車場",
+  "reading": "ちゅうしゃじょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "parking lot"
+ },
+ {
+  "word": "地理",
+  "reading": "ちり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "geography"
+ },
+ {
+  "word": "捕まえる",
+  "reading": "つかまえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to seize"
+ },
+ {
+  "word": "つき",
+  "reading": "つき",
+  "other_forms": [
+   "月"
+  ],
+  "level": "N4",
+  "meanings": "moon"
+ },
+ {
+  "word": "付く",
+  "reading": "つく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be attached"
+ },
+ {
+  "word": "漬ける",
+  "reading": "つける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to soak; to pickle"
+ },
+ {
+  "word": "都合",
+  "reading": "つごう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "circumstances; convenience"
+ },
+ {
+  "word": "伝える",
+  "reading": "つたえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to report"
+ },
+ {
+  "word": "続く",
+  "reading": "つづく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be continued"
+ },
+ {
+  "word": "続ける",
+  "reading": "つづける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to continue"
+ },
+ {
+  "word": "包む",
+  "reading": "つつむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to wrap"
+ },
+ {
+  "word": "妻",
+  "reading": "つま",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) wife"
+ },
+ {
+  "word": "つもり",
+  "reading": "つもり",
+  "other_forms": [
+   "積もり"
+  ],
+  "level": "N4",
+  "meanings": "intention"
+ },
+ {
+  "word": "釣る",
+  "reading": "つる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to fish"
+ },
+ {
+  "word": "連れる",
+  "reading": "つれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to lead"
+ },
+ {
+  "word": "丁寧",
+  "reading": "ていねい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "polite"
+ },
+ {
+  "word": "テキスト",
+  "reading": "テキスト",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "text; text book"
+ },
+ {
+  "word": "適当",
+  "reading": "てきとう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "suitability"
+ },
+ {
+  "word": "できるだけ",
+  "reading": "できるだけ",
+  "other_forms": [
+   "出来るだけ"
+  ],
+  "level": "N4",
+  "meanings": "as much as possible"
+ },
+ {
+  "word": "手伝う",
+  "reading": "てつだう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to assist"
+ },
+ {
+  "word": "テニス",
+  "reading": "テニス",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "tennis"
+ },
+ {
+  "word": "手袋",
+  "reading": "てぶくろ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "glove"
+ },
+ {
+  "word": "寺",
+  "reading": "てら",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "temple"
+ },
+ {
+  "word": "点",
+  "reading": "てん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "point; dot"
+ },
+ {
+  "word": "店員",
+  "reading": "てんいん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "shop assistant"
+ },
+ {
+  "word": "天気予報",
+  "reading": "てんきよほう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "weather forecast"
+ },
+ {
+  "word": "電灯",
+  "reading": "でんとう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "electric light"
+ },
+ {
+  "word": "電報",
+  "reading": "でんぽう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "telegram"
+ },
+ {
+  "word": "展覧会",
+  "reading": "てんらんかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "exhibition"
+ },
+ {
+  "word": "都",
+  "reading": "と",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "metropolitan"
+ },
+ {
+  "word": "道具",
+  "reading": "どうぐ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "tool; means"
+ },
+ {
+  "word": "とうとう",
+  "reading": "とうとう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "finally; after all"
+ },
+ {
+  "word": "動物園",
+  "reading": "どうぶつえん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "zoo"
+ },
+ {
+  "word": "遠く",
+  "reading": "とおく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "distant"
+ },
+ {
+  "word": "通る",
+  "reading": "とおる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to go through"
+ },
+ {
+  "word": "特に",
+  "reading": "とくに",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "particularly; especially"
+ },
+ {
+  "word": "特別",
+  "reading": "とくべつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "special"
+ },
+ {
+  "word": "とこや",
+  "reading": "とこや",
+  "other_forms": [
+   "床屋"
+  ],
+  "level": "N4",
+  "meanings": "barber"
+ },
+ {
+  "word": "途中",
+  "reading": "とちゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "on the way"
+ },
+ {
+  "word": "特急",
+  "reading": "とっきゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "limited express train (faster than an express train)"
+ },
+ {
+  "word": "届ける",
+  "reading": "とどける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to reach"
+ },
+ {
+  "word": "泊まる",
+  "reading": "とまる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to lodge at"
+ },
+ {
+  "word": "止める",
+  "reading": "とめる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to stop something"
+ },
+ {
+  "word": "取り替える",
+  "reading": "とりかえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to exchange"
+ },
+ {
+  "word": "泥棒",
+  "reading": "どろぼう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "thief"
+ },
+ {
+  "word": "どんどん",
+  "reading": "どんどん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "more and more"
+ },
+ {
+  "word": "直す",
+  "reading": "なおす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to fix; to repair"
+ },
+ {
+  "word": "治る",
+  "reading": "なおる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be cured; to heal"
+ },
+ {
+  "word": "直る",
+  "reading": "なおる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be fixed; to be repaired"
+ },
+ {
+  "word": "中々",
+  "reading": "なかなか",
+  "other_forms": [
+   "なかなか"
+  ],
+  "level": "N4",
+  "meanings": "considerably"
+ },
+ {
+  "word": "泣く",
+  "reading": "なく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to weep"
+ },
+ {
+  "word": "亡くなる",
+  "reading": "なくなる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to die"
+ },
+ {
+  "word": "無くなる",
+  "reading": "なくなる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to disappear; to get lost"
+ },
+ {
+  "word": "投げる",
+  "reading": "なげる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to throw or cast away"
+ },
+ {
+  "word": "なさる",
+  "reading": "なさる",
+  "other_forms": [
+   "為さる"
+  ],
+  "level": "N4",
+  "meanings": "(respectful) to do"
+ },
+ {
+  "word": "鳴る",
+  "reading": "なる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to sound"
+ },
+ {
+  "word": "なるべく",
+  "reading": "なるべく",
+  "other_forms": [
+   "成るべく"
+  ],
+  "level": "N4",
+  "meanings": "as much as possible"
+ },
+ {
+  "word": "なるほど",
+  "reading": "なるほど",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "now I understand"
+ },
+ {
+  "word": "慣れる",
+  "reading": "なれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to grow accustomed to"
+ },
+ {
+  "word": "におい",
+  "reading": "におい",
+  "other_forms": [
+   "匂い"
+  ],
+  "level": "N4",
+  "meanings": "a smell"
+ },
+ {
+  "word": "苦い",
+  "reading": "にがい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "bitter"
+ },
+ {
+  "word": "二階建て",
+  "reading": "にかいだて",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "two storied"
+ },
+ {
+  "word": "逃げる",
+  "reading": "にげる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to escape"
+ },
+ {
+  "word": "日記",
+  "reading": "にっき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "journal"
+ },
+ {
+  "word": "入院",
+  "reading": "にゅういん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to hospitalise"
+ },
+ {
+  "word": "入学",
+  "reading": "にゅうがく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to enter school or university"
+ },
+ {
+  "word": "似る",
+  "reading": "にる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be similar"
+ },
+ {
+  "word": "人形",
+  "reading": "にんぎょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "doll; figure"
+ },
+ {
+  "word": "盗む",
+  "reading": "ぬすむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to steal"
+ },
+ {
+  "word": "塗る",
+  "reading": "ぬる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to paint; to plaster"
+ },
+ {
+  "word": "ぬれる",
+  "reading": "ぬれる",
+  "other_forms": [
+   "濡れる"
+  ],
+  "level": "N4",
+  "meanings": "to get wet"
+ },
+ {
+  "word": "ねだん",
+  "reading": "ねだん",
+  "other_forms": [
+   "値段"
+  ],
+  "level": "N4",
+  "meanings": "price"
+ },
+ {
+  "word": "熱",
+  "reading": "ねつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "fever"
+ },
+ {
+  "word": "ねっしん",
+  "reading": "ねっしん",
+  "other_forms": [
+   "熱心"
+  ],
+  "level": "N4",
+  "meanings": "enthusiasm"
+ },
+ {
+  "word": "寝坊",
+  "reading": "ねぼう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sleeping in late"
+ },
+ {
+  "word": "眠い",
+  "reading": "ねむい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "sleepy"
+ },
+ {
+  "word": "眠る",
+  "reading": "ねむる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to sleep"
+ },
+ {
+  "word": "残る",
+  "reading": "のこる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to remain"
+ },
+ {
+  "word": "のど",
+  "reading": "のど",
+  "other_forms": [
+   "喉"
+  ],
+  "level": "N4",
+  "meanings": "throat"
+ },
+ {
+  "word": "乗り換える",
+  "reading": "のりかえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to change between buses or trains"
+ },
+ {
+  "word": "乗り物",
+  "reading": "のりもの",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "vehicle"
+ },
+ {
+  "word": "葉",
+  "reading": "は",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "leaf"
+ },
+ {
+  "word": "場合",
+  "reading": "ばあい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "situation"
+ },
+ {
+  "word": "パート",
+  "reading": "パート",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "part time"
+ },
+ {
+  "word": "倍",
+  "reading": "ばい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "double"
+ },
+ {
+  "word": "拝見",
+  "reading": "はいけん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) to look at"
+ },
+ {
+  "word": "歯医者",
+  "reading": "はいしゃ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "dentist"
+ },
+ {
+  "word": "運ぶ",
+  "reading": "はこぶ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to transport"
+ },
+ {
+  "word": "始める",
+  "reading": "はじめる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to begin"
+ },
+ {
+  "word": "場所",
+  "reading": "ばしょ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "location"
+ },
+ {
+  "word": "はず",
+  "reading": "はず",
+  "other_forms": [
+   "筈"
+  ],
+  "level": "N4",
+  "meanings": "it should be so"
+ },
+ {
+  "word": "恥ずかしい",
+  "reading": "はずかしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "embarrassed"
+ },
+ {
+  "word": "パソコン",
+  "reading": "パソコン",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "personal computer"
+ },
+ {
+  "word": "発音",
+  "reading": "はつおん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "pronunciation"
+ },
+ {
+  "word": "はっきり",
+  "reading": "はっきり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "clearly"
+ },
+ {
+  "word": "花見",
+  "reading": "はなみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "cherry-blossom viewing"
+ },
+ {
+  "word": "林",
+  "reading": "はやし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "woods; forester"
+ },
+ {
+  "word": "払う",
+  "reading": "はらう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to pay"
+ },
+ {
+  "word": "番組",
+  "reading": "ばんぐみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "television or radio program"
+ },
+ {
+  "word": "反対",
+  "reading": "はんたい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "opposition"
+ },
+ {
+  "word": "ハンドバッグ",
+  "reading": "ハンドバッグ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "handbag"
+ },
+ {
+  "word": "火",
+  "reading": "ひ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "fire"
+ },
+ {
+  "word": "日",
+  "reading": "ひ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "day; sun"
+ },
+ {
+  "word": "ピアノ",
+  "reading": "ピアノ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "piano"
+ },
+ {
+  "word": "冷える",
+  "reading": "ひえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to grow cold"
+ },
+ {
+  "word": "光",
+  "reading": "ひかり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "light"
+ },
+ {
+  "word": "光る",
+  "reading": "ひかる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to shine; to glitter"
+ },
+ {
+  "word": "引き出し",
+  "reading": "ひきだし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "drawer; drawing out"
+ },
+ {
+  "word": "引き出す",
+  "reading": "ひきだす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to withdraw"
+ },
+ {
+  "word": "ひげ",
+  "reading": "ひげ",
+  "other_forms": [
+   "髭"
+  ],
+  "level": "N4",
+  "meanings": "beard"
+ },
+ {
+  "word": "飛行場",
+  "reading": "ひこうじょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "airport"
+ },
+ {
+  "word": "久しぶり",
+  "reading": "ひさしぶり",
+  "other_forms": [
+   "久し振り"
+  ],
+  "level": "N4",
+  "meanings": "after a long time"
+ },
+ {
+  "word": "美術館",
+  "reading": "びじゅつかん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "art gallery"
+ },
+ {
+  "word": "非常に",
+  "reading": "ひじょうに",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "extremely"
+ },
+ {
+  "word": "びっくりする",
+  "reading": "びっくりする",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be surprised"
+ },
+ {
+  "word": "引っ越す",
+  "reading": "ひっこす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to move house"
+ },
+ {
+  "word": "必要",
+  "reading": "ひつよう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "necessary"
+ },
+ {
+  "word": "ひどい",
+  "reading": "ひどい",
+  "other_forms": [
+   "酷い"
+  ],
+  "level": "N4",
+  "meanings": "awful"
+ },
+ {
+  "word": "開く",
+  "reading": "ひらく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to open an event"
+ },
+ {
+  "word": "ビル",
+  "reading": "ビル",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "building or bill"
+ },
+ {
+  "word": "昼間",
+  "reading": "ひるま",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "daytime; during the day"
+ },
+ {
+  "word": "昼休み",
+  "reading": "ひるやすみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "noon break"
+ },
+ {
+  "word": "拾う",
+  "reading": "ひろう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to pick up; to gather"
+ },
+ {
+  "word": "ファックス",
+  "reading": "ファックス",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "fax"
+ },
+ {
+  "word": "増える",
+  "reading": "ふえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to increase"
+ },
+ {
+  "word": "深い",
+  "reading": "ふかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "deep"
+ },
+ {
+  "word": "複雑",
+  "reading": "ふくざつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "complexity; complication"
+ },
+ {
+  "word": "復習",
+  "reading": "ふくしゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "revision"
+ },
+ {
+  "word": "部長",
+  "reading": "ぶちょう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "head of a section"
+ },
+ {
+  "word": "普通",
+  "reading": "ふつう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "usually; normally; ordinary; local train (stopping at every station)"
+ },
+ {
+  "word": "ぶどう",
+  "reading": "ぶどう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "grapes"
+ },
+ {
+  "word": "太る",
+  "reading": "ふとる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to become fat"
+ },
+ {
+  "word": "布団",
+  "reading": "ふとん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Japanese bedding; futon"
+ },
+ {
+  "word": "舟",
+  "reading": "ふね",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "ship"
+ },
+ {
+  "word": "不便",
+  "reading": "ふべん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "inconvenience"
+ },
+ {
+  "word": "踏む",
+  "reading": "ふむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to step on"
+ },
+ {
+  "word": "降り出す",
+  "reading": "ふりだす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to start to rain"
+ },
+ {
+  "word": "プレゼント",
+  "reading": "プレゼント",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "present"
+ },
+ {
+  "word": "文化",
+  "reading": "ぶんか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "culture"
+ },
+ {
+  "word": "文学",
+  "reading": "ぶんがく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "literature"
+ },
+ {
+  "word": "文法",
+  "reading": "ぶんぽう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "grammar"
+ },
+ {
+  "word": "別",
+  "reading": "べつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "different"
+ },
+ {
+  "word": "ベル",
+  "reading": "ベル",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "bell"
+ },
+ {
+  "word": "変",
+  "reading": "へん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "strange"
+ },
+ {
+  "word": "返事",
+  "reading": "へんじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "reply"
+ },
+ {
+  "word": "貿易",
+  "reading": "ぼうえき",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "trade"
+ },
+ {
+  "word": "放送",
+  "reading": "ほうそう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to broadcast"
+ },
+ {
+  "word": "法律",
+  "reading": "ほうりつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "law"
+ },
+ {
+  "word": "僕",
+  "reading": "ぼく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "I (used by males)"
+ },
+ {
+  "word": "星",
+  "reading": "ほし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "star"
+ },
+ {
+  "word": "ほど",
+  "reading": "ほど",
+  "other_forms": [
+   "程"
+  ],
+  "level": "N4",
+  "meanings": "extent"
+ },
+ {
+  "word": "ほとんど",
+  "reading": "ほとんど",
+  "other_forms": [
+   "殆ど"
+  ],
+  "level": "N4",
+  "meanings": "mostly"
+ },
+ {
+  "word": "ほめる",
+  "reading": "ほめる",
+  "other_forms": [
+   "褒める"
+  ],
+  "level": "N4",
+  "meanings": "to praise"
+ },
+ {
+  "word": "翻訳",
+  "reading": "ほんやく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "translation"
+ },
+ {
+  "word": "参る",
+  "reading": "まいる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) to go; to come"
+ },
+ {
+  "word": "負ける",
+  "reading": "まける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to lose"
+ },
+ {
+  "word": "まじめ",
+  "reading": "まじめ",
+  "other_forms": [
+   "真面目"
+  ],
+  "level": "N4",
+  "meanings": "serious"
+ },
+ {
+  "word": "まず",
+  "reading": "まず",
+  "other_forms": [
+   "先ず"
+  ],
+  "level": "N4",
+  "meanings": "first of all"
+ },
+ {
+  "word": "または",
+  "reading": "または",
+  "other_forms": [
+   "又は"
+  ],
+  "level": "N4",
+  "meanings": "or; otherwise"
+ },
+ {
+  "word": "間違える",
+  "reading": "まちがえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to make a mistake"
+ },
+ {
+  "word": "間に合う",
+  "reading": "まにあう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be in time for"
+ },
+ {
+  "word": "周り",
+  "reading": "まわり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "surroundings"
+ },
+ {
+  "word": "回る",
+  "reading": "まわる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to go around"
+ },
+ {
+  "word": "漫画",
+  "reading": "まんが",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "comic"
+ },
+ {
+  "word": "真ん中",
+  "reading": "まんなか",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "middle"
+ },
+ {
+  "word": "見える",
+  "reading": "みえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be in sight"
+ },
+ {
+  "word": "湖",
+  "reading": "みずうみ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "lake"
+ },
+ {
+  "word": "味噌",
+  "reading": "みそ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "bean paste"
+ },
+ {
+  "word": "見つかる",
+  "reading": "みつかる",
+  "other_forms": [
+   "見付かる"
+  ],
+  "level": "N4",
+  "meanings": "to be discovered"
+ },
+ {
+  "word": "見つける",
+  "reading": "みつける",
+  "other_forms": [
+   "見付ける"
+  ],
+  "level": "N4",
+  "meanings": "to discover"
+ },
+ {
+  "word": "皆",
+  "reading": "みな",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "everybody"
+ },
+ {
+  "word": "港",
+  "reading": "みなと",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "harbour"
+ },
+ {
+  "word": "向かう",
+  "reading": "むかう",
+  "other_forms": [
+   "向う"
+  ],
+  "level": "N4",
+  "meanings": "to face"
+ },
+ {
+  "word": "迎える",
+  "reading": "むかえる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to go out to meet"
+ },
+ {
+  "word": "昔",
+  "reading": "むかし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "olden days; former"
+ },
+ {
+  "word": "虫",
+  "reading": "むし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "insect"
+ },
+ {
+  "word": "息子",
+  "reading": "むすこ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) son"
+ },
+ {
+  "word": "娘",
+  "reading": "むすめ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) daughter"
+ },
+ {
+  "word": "無理",
+  "reading": "むり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "impossible"
+ },
+ {
+  "word": "召し上がる",
+  "reading": "めしあがる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(polite) to eat"
+ },
+ {
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "rare"
+ },
+ {
+  "word": "申し上げる",
+  "reading": "もうしあげる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) to say; to tell"
+ },
+ {
+  "word": "申す",
+  "reading": "もうす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "(humble) to be called; to say"
+ },
+ {
+  "word": "もうすぐ",
+  "reading": "もうすぐ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "soon"
+ },
+ {
+  "word": "もし",
+  "reading": "もし",
+  "other_forms": [
+   "若し"
+  ],
+  "level": "N4",
+  "meanings": "if"
+ },
+ {
+  "word": "もちろん",
+  "reading": "もちろん",
+  "other_forms": [
+   "勿論"
+  ],
+  "level": "N4",
+  "meanings": "of course"
+ },
+ {
+  "word": "もっとも",
+  "reading": "もっとも",
+  "other_forms": [
+   "最も"
+  ],
+  "level": "N4",
+  "meanings": "extremely"
+ },
+ {
+  "word": "戻る",
+  "reading": "もどる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to turn back"
+ },
+ {
+  "word": "木綿",
+  "reading": "もめん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "cotton"
+ },
+ {
+  "word": "もらう",
+  "reading": "もらう",
+  "other_forms": [
+   "貰う"
+  ],
+  "level": "N4",
+  "meanings": "to receive"
+ },
+ {
+  "word": "森",
+  "reading": "もり",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "forest"
+ },
+ {
+  "word": "焼く",
+  "reading": "やく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to bake; to grill"
+ },
+ {
+  "word": "約束",
+  "reading": "やくそく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "promise"
+ },
+ {
+  "word": "役に立つ",
+  "reading": "やくにたつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to be helpful"
+ },
+ {
+  "word": "焼ける",
+  "reading": "やける",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to burn; to be roasted"
+ },
+ {
+  "word": "優しい",
+  "reading": "やさしい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "kind"
+ },
+ {
+  "word": "痩せる",
+  "reading": "やせる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to become thin"
+ },
+ {
+  "word": "やっと",
+  "reading": "やっと",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "at last"
+ },
+ {
+  "word": "やはり",
+  "reading": "やはり",
+  "other_forms": [
+   "やっぱり"
+  ],
+  "level": "N4",
+  "meanings": "as I thought; absolutely"
+ },
+ {
+  "word": "止む",
+  "reading": "やむ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to stop"
+ },
+ {
+  "word": "柔らかい",
+  "reading": "やわらかい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "soft"
+ },
+ {
+  "word": "湯",
+  "reading": "ゆ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "hot water"
+ },
+ {
+  "word": "輸出",
+  "reading": "ゆしゅつ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to export"
+ },
+ {
+  "word": "輸入",
+  "reading": "ゆにゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to import"
+ },
+ {
+  "word": "指",
+  "reading": "ゆび",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "finger"
+ },
+ {
+  "word": "指輪",
+  "reading": "ゆびわ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "finger ring"
+ },
+ {
+  "word": "夢",
+  "reading": "ゆめ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "dream"
+ },
+ {
+  "word": "揺れる",
+  "reading": "ゆれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to shake; to sway"
+ },
+ {
+  "word": "用",
+  "reading": "よう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "use"
+ },
+ {
+  "word": "用意",
+  "reading": "ようい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "preparation"
+ },
+ {
+  "word": "用事",
+  "reading": "ようじ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "things to do"
+ },
+ {
+  "word": "汚れる",
+  "reading": "よごれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to get dirty"
+ },
+ {
+  "word": "予習",
+  "reading": "よしゅう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "preparation for a lesson"
+ },
+ {
+  "word": "予定",
+  "reading": "よてい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "arrangement"
+ },
+ {
+  "word": "予約",
+  "reading": "よやく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "reservation"
+ },
+ {
+  "word": "寄る",
+  "reading": "よる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to visit"
+ },
+ {
+  "word": "喜ぶ",
+  "reading": "よろこぶ",
+  "other_forms": [
+   "慶ぶ"
+  ],
+  "level": "N4",
+  "meanings": "to be delighted"
+ },
+ {
+  "word": "よろしい",
+  "reading": "よろしい",
+  "other_forms": [
+   "宜しい"
+  ],
+  "level": "N4",
+  "meanings": "(respectful) OK; all right"
+ },
+ {
+  "word": "理由",
+  "reading": "りゆう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "reason"
+ },
+ {
+  "word": "利用",
+  "reading": "りよう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "utilization"
+ },
+ {
+  "word": "両方",
+  "reading": "りょうほう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "both sides"
+ },
+ {
+  "word": "旅館",
+  "reading": "りょかん",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "Japanese hotel"
+ },
+ {
+  "word": "留守",
+  "reading": "るす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "absence"
+ },
+ {
+  "word": "冷房",
+  "reading": "れいぼう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "air conditioning"
+ },
+ {
+  "word": "歴史",
+  "reading": "れきし",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "history"
+ },
+ {
+  "word": "レジ",
+  "reading": "レジ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "register"
+ },
+ {
+  "word": "レポート",
+  "reading": "レポート",
+  "other_forms": [
+   "リポート"
+  ],
+  "level": "N4",
+  "meanings": "report"
+ },
+ {
+  "word": "連絡",
+  "reading": "れんらく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "contact"
+ },
+ {
+  "word": "ワープロ",
+  "reading": "ワープロ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "word processor"
+ },
+ {
+  "word": "沸かす",
+  "reading": "わかす",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to boil; to heat"
+ },
+ {
+  "word": "別れる",
+  "reading": "わかれる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to separate"
+ },
+ {
+  "word": "沸く",
+  "reading": "わく",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to boil; to grow hot; to get excited"
+ },
+ {
+  "word": "訳",
+  "reading": "わけ",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "meaning; reason"
+ },
+ {
+  "word": "忘れ物",
+  "reading": "わすれもの",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "lost article"
+ },
+ {
+  "word": "笑う",
+  "reading": "わらう",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to laugh; to smile"
+ },
+ {
+  "word": "割合",
+  "reading": "わりあい",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "rate; ratio; percentage"
+ },
+ {
+  "word": "割れる",
+  "reading": "われる",
+  "other_forms": [],
+  "level": "N4",
+  "meanings": "to break"
+ }
+]

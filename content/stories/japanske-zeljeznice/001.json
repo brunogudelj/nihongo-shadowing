@@ -1417,5 +1417,9 @@
     }
   ],
   "audio": "japanske-zeljeznice-001-cijela.mp3",
-  "duration_ms": 34600
+  "duration_ms": 34600,
+  "fond": {
+    "pokrivenost": 100,
+    "izvan_popisa": []
+  }
 }

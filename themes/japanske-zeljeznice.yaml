@@ -15,7 +15,6 @@ kljucne_rijeci:
   - 乗り換える # presjedati
   - 窓        # prozor
   - 時間      # vrijeme
-  - 弁当      # bento
   - 北        # sjever
   - 南        # jug
 
@@ -49,6 +48,9 @@ vlastita_imena:
     hr: Japan
 
 dodatni_rjecnik:
+  - ja: 弁当
+    citanje: べんとう
+    hr: bento (obrok u kutiji)
   - ja: 新幹線
     citanje: しんかんせん
     hr: shinkansen (brzi vlak)

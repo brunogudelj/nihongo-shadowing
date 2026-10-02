@@ -1,0 +1,1962 @@
+[
+ {
+  "id": "wa",
+  "pattern": "〜は",
+  "level": "N5",
+  "meaning": "as for; marks the topic of the sentence",
+  "formation": "Noun + は"
+ },
+ {
+  "id": "ga-subject",
+  "pattern": "〜が（subject）",
+  "level": "N5",
+  "meaning": "marks the subject; points out new or focused information",
+  "formation": "Noun + が"
+ },
+ {
+  "id": "o",
+  "pattern": "〜を",
+  "level": "N5",
+  "meaning": "marks the direct object of a verb; marks a place moved through or left",
+  "formation": "Noun + を"
+ },
+ {
+  "id": "ni-time",
+  "pattern": "〜に（time）",
+  "level": "N5",
+  "meaning": "at; on; in (a specific point in time)",
+  "formation": "Noun + に"
+ },
+ {
+  "id": "ni-destination",
+  "pattern": "〜に（destination）",
+  "level": "N5",
+  "meaning": "to; into (the destination of movement)",
+  "formation": "Noun + に + 行く / 来る / 帰る"
+ },
+ {
+  "id": "ni-location",
+  "pattern": "〜に（place of existence）",
+  "level": "N5",
+  "meaning": "in; at; on (where someone or something is)",
+  "formation": "Noun + に + ある / いる"
+ },
+ {
+  "id": "ni-indirect-object",
+  "pattern": "〜に（indirect object）",
+  "level": "N5",
+  "meaning": "to (the person who receives or is the target of an action)",
+  "formation": "Noun + に"
+ },
+ {
+  "id": "ni-frequency",
+  "pattern": "〜に（frequency）",
+  "level": "N5",
+  "meaning": "per; in (how many times within a period)",
+  "formation": "Noun + に + Noun"
+ },
+ {
+  "id": "e",
+  "pattern": "〜へ",
+  "level": "N5",
+  "meaning": "to; toward (the direction of movement)",
+  "formation": "Noun + へ"
+ },
+ {
+  "id": "de-place",
+  "pattern": "〜で（place of action）",
+  "level": "N5",
+  "meaning": "at; in (the place where an action happens)",
+  "formation": "Noun + で"
+ },
+ {
+  "id": "de-means",
+  "pattern": "〜で（means）",
+  "level": "N5",
+  "meaning": "by; with; in (means, tool, method or language)",
+  "formation": "Noun + で"
+ },
+ {
+  "id": "to-and",
+  "pattern": "〜と（and）",
+  "level": "N5",
+  "meaning": "and (joining nouns in a complete list)",
+  "formation": "Noun + と + Noun"
+ },
+ {
+  "id": "to-with",
+  "pattern": "〜と（with）",
+  "level": "N5",
+  "meaning": "with; together with (a partner in an action)",
+  "formation": "Noun + と"
+ },
+ {
+  "id": "ya",
+  "pattern": "〜や",
+  "level": "N5",
+  "meaning": "and (giving some examples out of more); ... and so on",
+  "formation": "Noun + や + Noun"
+ },
+ {
+  "id": "ka-or",
+  "pattern": "〜か（or）",
+  "level": "N5",
+  "meaning": "or (a choice between nouns)",
+  "formation": "Noun + か + Noun"
+ },
+ {
+  "id": "mo",
+  "pattern": "〜も",
+  "level": "N5",
+  "meaning": "also; too; (with a negative) not ... either; neither ... nor",
+  "formation": "Noun + も"
+ },
+ {
+  "id": "no",
+  "pattern": "〜の（possessive）",
+  "level": "N5",
+  "meaning": "'s; of (possession, belonging or description)",
+  "formation": "Noun + の + Noun"
+ },
+ {
+  "id": "kara-from",
+  "pattern": "〜から（from）",
+  "level": "N5",
+  "meaning": "from (a starting point in time or place)",
+  "formation": "Noun + から"
+ },
+ {
+  "id": "made",
+  "pattern": "〜まで（until）",
+  "level": "N5",
+  "meaning": "until; up to; as far as",
+  "formation": "Noun + まで"
+ },
+ {
+  "id": "ka-question",
+  "pattern": "〜か（question）",
+  "level": "N5",
+  "meaning": "(question marker) turns a sentence into a question",
+  "formation": "Sentence + か"
+ },
+ {
+  "id": "ne",
+  "pattern": "〜ね",
+  "level": "N5",
+  "meaning": "isn't it?; right? (seeking agreement or sharing a feeling)",
+  "formation": "Sentence + ね"
+ },
+ {
+  "id": "yo",
+  "pattern": "〜よ",
+  "level": "N5",
+  "meaning": "you know; I tell you (giving new information or emphasis)",
+  "formation": "Sentence + よ"
+ },
+ {
+  "id": "yori",
+  "pattern": "〜より",
+  "level": "N5",
+  "meaning": "than (the standard of comparison)",
+  "formation": "Noun + より"
+ },
+ {
+  "id": "no-hou-ga-yori",
+  "pattern": "〜の方が〜より",
+  "level": "N5",
+  "meaning": "X is more ... than Y",
+  "formation": "Noun + の方が + Noun + より"
+ },
+ {
+  "id": "to-to-dochira-ga",
+  "pattern": "〜と〜とどちらが",
+  "level": "N5",
+  "meaning": "which is more ..., X or Y?",
+  "formation": "Noun + と + Noun + とどちらが"
+ },
+ {
+  "id": "no-naka-de-ga-ichiban",
+  "pattern": "〜の中で〜が一番",
+  "level": "N5",
+  "meaning": "... is the most ... among/of",
+  "formation": "Noun + の中で + Noun + が一番"
+ },
+ {
+  "id": "desu",
+  "pattern": "〜です",
+  "level": "N5",
+  "meaning": "is; am; are (polite copula)",
+  "formation": "Noun + です / na-Adj + です / i-Adj + です"
+ },
+ {
+  "id": "da",
+  "pattern": "〜だ",
+  "level": "N5",
+  "meaning": "is; am; are (plain copula)",
+  "formation": "Noun + だ / na-Adj + だ"
+ },
+ {
+  "id": "de-wa-arimasen-ja-nai",
+  "pattern": "〜ではありません / 〜じゃない",
+  "level": "N5",
+  "meaning": "is not; am not; are not",
+  "formation": "Noun + ではありません / na-Adj + ではありません / Noun + じゃない / na-Adj + じゃない"
+ },
+ {
+  "id": "deshita",
+  "pattern": "〜でした",
+  "level": "N5",
+  "meaning": "was; were (polite past copula)",
+  "formation": "Noun + でした / na-Adj + でした"
+ },
+ {
+  "id": "masu",
+  "pattern": "〜ます",
+  "level": "N5",
+  "meaning": "polite non-past verb ending (do; will do)",
+  "formation": "Verb-stem + ます"
+ },
+ {
+  "id": "masen",
+  "pattern": "〜ません",
+  "level": "N5",
+  "meaning": "do not; will not (polite negative)",
+  "formation": "Verb-stem + ません"
+ },
+ {
+  "id": "mashita",
+  "pattern": "〜ました",
+  "level": "N5",
+  "meaning": "did (polite past)",
+  "formation": "Verb-stem + ました"
+ },
+ {
+  "id": "masen-deshita",
+  "pattern": "〜ませんでした",
+  "level": "N5",
+  "meaning": "did not (polite past negative)",
+  "formation": "Verb-stem + ませんでした"
+ },
+ {
+  "id": "nai",
+  "pattern": "〜ない",
+  "level": "N5",
+  "meaning": "do not; will not (plain negative of verbs)",
+  "formation": "Verb-nai stem + ない"
+ },
+ {
+  "id": "ta",
+  "pattern": "〜た",
+  "level": "N5",
+  "meaning": "did (plain past of verbs)",
+  "formation": "Verb-ta"
+ },
+ {
+  "id": "mashou",
+  "pattern": "〜ましょう",
+  "level": "N5",
+  "meaning": "let's (do)",
+  "formation": "Verb-stem + ましょう"
+ },
+ {
+  "id": "mashou-ka",
+  "pattern": "〜ましょうか",
+  "level": "N5",
+  "meaning": "shall I ...?; shall we ...?",
+  "formation": "Verb-stem + ましょうか"
+ },
+ {
+  "id": "masen-ka",
+  "pattern": "〜ませんか",
+  "level": "N5",
+  "meaning": "won't you ...?; would you like to ...? (polite invitation)",
+  "formation": "Verb-stem + ませんか"
+ },
+ {
+  "id": "tai",
+  "pattern": "〜たい",
+  "level": "N5",
+  "meaning": "want to (do)",
+  "formation": "Verb-stem + たい"
+ },
+ {
+  "id": "ga-hoshii",
+  "pattern": "〜がほしい",
+  "level": "N5",
+  "meaning": "want (something)",
+  "formation": "Noun + がほしい"
+ },
+ {
+  "id": "o-kudasai",
+  "pattern": "〜をください",
+  "level": "N5",
+  "meaning": "please give me (something); I'll have",
+  "formation": "Noun + をください"
+ },
+ {
+  "id": "te-kudasai",
+  "pattern": "〜てください",
+  "level": "N5",
+  "meaning": "please (do)",
+  "formation": "Verb-te + ください"
+ },
+ {
+  "id": "naide-kudasai",
+  "pattern": "〜ないでください",
+  "level": "N5",
+  "meaning": "please don't (do)",
+  "formation": "Verb-nai + でください"
+ },
+ {
+  "id": "te-mo-ii",
+  "pattern": "〜てもいい",
+  "level": "N5",
+  "meaning": "may; it's okay to",
+  "formation": "Verb-te + もいい"
+ },
+ {
+  "id": "te-wa-ikenai",
+  "pattern": "〜てはいけない",
+  "level": "N5",
+  "meaning": "must not; may not",
+  "formation": "Verb-te + はいけない"
+ },
+ {
+  "id": "nakereba-naranai-nakute-wa-ikenai",
+  "pattern": "〜なければならない / 〜なくてはいけない",
+  "level": "N5",
+  "meaning": "must; have to",
+  "formation": "Verb-nai stem + なければならない / Verb-nai stem + なくてはいけない"
+ },
+ {
+  "id": "nakute-mo-ii",
+  "pattern": "〜なくてもいい",
+  "level": "N5",
+  "meaning": "don't have to; need not",
+  "formation": "Verb-nai stem + なくてもいい"
+ },
+ {
+  "id": "te-iru",
+  "pattern": "〜ている",
+  "level": "N5",
+  "meaning": "be doing (ongoing action); be in a state (result of a change); do regularly",
+  "formation": "Verb-te + いる"
+ },
+ {
+  "id": "te",
+  "pattern": "〜て",
+  "level": "N5",
+  "meaning": "and; and then (linking actions in order)",
+  "formation": "Verb-te + Sentence"
+ },
+ {
+  "id": "te-kara",
+  "pattern": "〜てから",
+  "level": "N5",
+  "meaning": "after doing; (do A) and then (B); since",
+  "formation": "Verb-te + から"
+ },
+ {
+  "id": "tari-tari-suru",
+  "pattern": "〜たり〜たりする",
+  "level": "N5",
+  "meaning": "do things like A and B; sometimes A, sometimes B",
+  "formation": "Verb-ta + り + Verb-ta + りする"
+ },
+ {
+  "id": "ta-koto-ga-aru",
+  "pattern": "〜たことがある",
+  "level": "N5",
+  "meaning": "have (ever) done; have the experience of doing",
+  "formation": "Verb-ta + ことがある"
+ },
+ {
+  "id": "mae-ni",
+  "pattern": "〜前に",
+  "level": "N5",
+  "meaning": "before (doing); before (an event); ago",
+  "formation": "Verb-dict + 前に / Noun + の + 前に"
+ },
+ {
+  "id": "ato-de",
+  "pattern": "〜後で",
+  "level": "N5",
+  "meaning": "after (doing); after (an event)",
+  "formation": "Verb-ta + 後で / Noun + の + 後で"
+ },
+ {
+  "id": "nagara",
+  "pattern": "〜ながら（while）",
+  "level": "N5",
+  "meaning": "while (doing two actions at the same time)",
+  "formation": "Verb-stem + ながら"
+ },
+ {
+  "id": "ni-iku",
+  "pattern": "〜に行く",
+  "level": "N5",
+  "meaning": "go (somewhere) to do",
+  "formation": "Verb-stem + に行く / Noun + に行く"
+ },
+ {
+  "id": "ga-suki-ga-kirai",
+  "pattern": "〜が好き / 〜が嫌い",
+  "level": "N5",
+  "meaning": "like; dislike",
+  "formation": "Noun + が好き / Noun + が嫌い / Verb-dict + の + が好き"
+ },
+ {
+  "id": "ga-jouzu-ga-heta",
+  "pattern": "〜が上手 / 〜が下手",
+  "level": "N5",
+  "meaning": "good at; bad at",
+  "formation": "Noun + が上手 / Noun + が下手"
+ },
+ {
+  "id": "ga-aru-ga-iru",
+  "pattern": "〜がある / 〜がいる",
+  "level": "N5",
+  "meaning": "there is; there are; have (ある for things, いる for people and animals)",
+  "formation": "Noun + がある / Noun + がいる"
+ },
+ {
+  "id": "kara-reason",
+  "pattern": "〜から（reason）",
+  "level": "N5",
+  "meaning": "because; since; so",
+  "formation": "Sentence + から"
+ },
+ {
+  "id": "ga-but",
+  "pattern": "〜が（but）",
+  "level": "N5",
+  "meaning": "but; although",
+  "formation": "Sentence + が"
+ },
+ {
+  "id": "deshou",
+  "pattern": "〜でしょう",
+  "level": "N5",
+  "meaning": "probably; I think; ..., right?",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + でしょう"
+ },
+ {
+  "id": "ku-naru-ni-naru",
+  "pattern": "〜くなる / 〜になる",
+  "level": "N5",
+  "meaning": "become; get; turn",
+  "formation": "i-Adj-ku + なる / na-Adj + になる / Noun + になる"
+ },
+ {
+  "id": "ni-suru",
+  "pattern": "〜にする（decide）",
+  "level": "N5",
+  "meaning": "decide on; choose; I'll have",
+  "formation": "Noun + にする"
+ },
+ {
+  "id": "mada-te-inai",
+  "pattern": "まだ〜ていない",
+  "level": "N5",
+  "meaning": "not yet (have done)",
+  "formation": "まだ + Verb-te + いない / まだ + Verb-te + いません"
+ },
+ {
+  "id": "mou-ta",
+  "pattern": "もう〜た",
+  "level": "N5",
+  "meaning": "already (have done); (in questions) yet",
+  "formation": "もう + Verb-ta / もう + Verb-stem + ました"
+ },
+ {
+  "id": "amari-nai",
+  "pattern": "あまり〜ない",
+  "level": "N5",
+  "meaning": "not very; not much; not often",
+  "formation": "あまり + Verb-nai / あまり + i-Adj-ku + ない / あまり + na-Adj + じゃない"
+ },
+ {
+  "id": "zenzen-nai",
+  "pattern": "全然〜ない",
+  "level": "N5",
+  "meaning": "not at all; not in the least",
+  "formation": "全然 + Verb-nai / 全然 + i-Adj-ku + ない / 全然 + na-Adj + じゃない"
+ },
+ {
+  "id": "dake",
+  "pattern": "〜だけ",
+  "level": "N5",
+  "meaning": "only; just",
+  "formation": "Noun + だけ / Verb-dict + だけ"
+ },
+ {
+  "id": "kurai-gurai",
+  "pattern": "〜くらい / 〜ぐらい（approximately）",
+  "level": "N5",
+  "meaning": "about; approximately (an amount or length of time)",
+  "formation": "Noun + くらい / Noun + ぐらい"
+ },
+ {
+  "id": "goro",
+  "pattern": "〜ごろ",
+  "level": "N5",
+  "meaning": "around; about (a point in time)",
+  "formation": "Noun + ごろ"
+ },
+ {
+  "id": "nani-mo-nai-dare-mo-nai",
+  "pattern": "何も〜ない / 誰も〜ない",
+  "level": "N5",
+  "meaning": "nothing; nobody; not anything; not anyone",
+  "formation": "何も + Verb-nai / 誰も + Verb-nai"
+ },
+ {
+  "id": "nani-ka-dare-ka-doko-ka",
+  "pattern": "何か / 誰か / どこか",
+  "level": "N5",
+  "meaning": "something; someone; somewhere",
+  "formation": "Question word + か"
+ },
+ {
+  "id": "kore-sore-are-dore",
+  "pattern": "これ / それ / あれ / どれ",
+  "level": "N5",
+  "meaning": "this one; that one (near you); that one (over there); which one",
+  "formation": "これ / それ / あれ / どれ"
+ },
+ {
+  "id": "kono-sono-ano-dono",
+  "pattern": "この / その / あの / どの",
+  "level": "N5",
+  "meaning": "this; that (near you); that ... over there; which (before a noun)",
+  "formation": "この / その / あの / どの + Noun"
+ },
+ {
+  "id": "koko-soko-asoko-doko",
+  "pattern": "ここ / そこ / あそこ / どこ",
+  "level": "N5",
+  "meaning": "here; there (near you); over there; where",
+  "formation": "ここ / そこ / あそこ / どこ"
+ },
+ {
+  "id": "ku-nai-katta-ku-nakatta",
+  "pattern": "〜くない / 〜かった / 〜くなかった",
+  "level": "N5",
+  "meaning": "negative and past forms of i-adjectives (is not; was; was not)",
+  "formation": "i-Adj stem + くない / i-Adj stem + かった / i-Adj stem + くなかった"
+ },
+ {
+  "id": "na-na-adjective",
+  "pattern": "〜な（na-adjective）",
+  "level": "N5",
+  "meaning": "na-adjectives: take な before a noun and です or だ at the end of a sentence",
+  "formation": "na-Adj + な + Noun / na-Adj + です / na-Adj + ではありません / na-Adj + でした"
+ },
+ {
+  "id": "kute-de",
+  "pattern": "〜くて / 〜で",
+  "level": "N5",
+  "meaning": "and (linking adjectives or nouns)",
+  "formation": "i-Adj-ku + て / na-Adj + で / Noun + で"
+ },
+ {
+  "id": "to-iu-named",
+  "pattern": "〜という（named）",
+  "level": "N5",
+  "meaning": "called; named",
+  "formation": "Noun + という + Noun"
+ },
+ {
+  "id": "ageru-kureru-morau",
+  "pattern": "あげる / くれる / もらう",
+  "level": "N4",
+  "meaning": "give (to someone else); give (to me or my group); receive",
+  "formation": "Noun (receiver) + に + Noun + を + あげる / Noun (giver) + が + Noun + を + くれる / Noun (giver) + に + Noun + を + もらう"
+ },
+ {
+  "id": "te-ageru",
+  "pattern": "〜てあげる",
+  "level": "N4",
+  "meaning": "do something for someone (as a favor)",
+  "formation": "Verb-te + あげる"
+ },
+ {
+  "id": "te-kureru",
+  "pattern": "〜てくれる",
+  "level": "N4",
+  "meaning": "someone does something for me (or my group)",
+  "formation": "Verb-te + くれる"
+ },
+ {
+  "id": "te-morau",
+  "pattern": "〜てもらう",
+  "level": "N4",
+  "meaning": "have someone do something (for me); get someone to do",
+  "formation": "Verb-te + もらう"
+ },
+ {
+  "id": "te-kudasaru-te-itadaku",
+  "pattern": "〜てくださる / 〜ていただく",
+  "level": "N4",
+  "meaning": "(honorific) someone kindly does for me; (humble) I receive the favor of someone doing",
+  "formation": "Verb-te + くださる / Verb-te + いただく"
+ },
+ {
+  "id": "te-iku",
+  "pattern": "〜ていく",
+  "level": "N4",
+  "meaning": "do something and go; go on doing (from now into the future)",
+  "formation": "Verb-te + いく"
+ },
+ {
+  "id": "te-kuru",
+  "pattern": "〜てくる",
+  "level": "N4",
+  "meaning": "do something and come back; come doing; (change) up to now; start to",
+  "formation": "Verb-te + くる"
+ },
+ {
+  "id": "te-shimau-chau",
+  "pattern": "〜てしまう / 〜ちゃう",
+  "level": "N4",
+  "meaning": "finish completely; do by accident; end up doing (with regret)",
+  "formation": "Verb-te + しまう"
+ },
+ {
+  "id": "te-oku",
+  "pattern": "〜ておく",
+  "level": "N4",
+  "meaning": "do in advance (to prepare); do and leave as is",
+  "formation": "Verb-te + おく"
+ },
+ {
+  "id": "te-miru",
+  "pattern": "〜てみる",
+  "level": "N4",
+  "meaning": "try doing (to see what it is like)",
+  "formation": "Verb-te + みる"
+ },
+ {
+  "id": "te-aru",
+  "pattern": "〜てある",
+  "level": "N4",
+  "meaning": "has been done (and stays that way); resulting state of a deliberate action",
+  "formation": "Verb-te + ある"
+ },
+ {
+  "id": "toki",
+  "pattern": "〜とき",
+  "level": "N4",
+  "meaning": "when; at the time when",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + とき"
+ },
+ {
+  "id": "aida-aida-ni",
+  "pattern": "〜間 / 〜間に",
+  "level": "N4",
+  "meaning": "while; during (the whole time); at some point during",
+  "formation": "Verb-te + いる / Verb-dict / Noun + の + 間（に）"
+ },
+ {
+  "id": "sou-da-appearance",
+  "pattern": "〜そうだ（appearance）",
+  "level": "N4",
+  "meaning": "looks like; seems; looks about to",
+  "formation": "Verb-stem / i-Adj stem / na-Adj + そうだ"
+ },
+ {
+  "id": "sou-da-hearsay",
+  "pattern": "〜そうだ（hearsay）",
+  "level": "N4",
+  "meaning": "I heard that; they say that",
+  "formation": "Verb-plain / i-Adj + そうだ / na-Adj + だ + そうだ / Noun + だ + そうだ"
+ },
+ {
+  "id": "rashii",
+  "pattern": "〜らしい（hearsay/conjecture）",
+  "level": "N4",
+  "meaning": "apparently; it seems; I hear",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + らしい"
+ },
+ {
+  "id": "you-da",
+  "pattern": "〜ようだ",
+  "level": "N4",
+  "meaning": "it seems; it appears (judging from evidence)",
+  "formation": "Verb-plain / i-Adj + ようだ / na-Adj + な + ようだ / Noun + の + ようだ"
+ },
+ {
+  "id": "mitai",
+  "pattern": "〜みたい",
+  "level": "N4",
+  "meaning": "seems like; looks like; like (casual)",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + みたい"
+ },
+ {
+  "id": "sugiru",
+  "pattern": "〜すぎる",
+  "level": "N4",
+  "meaning": "too; too much; excessively",
+  "formation": "Verb-stem / i-Adj stem / na-Adj + すぎる"
+ },
+ {
+  "id": "kata",
+  "pattern": "〜方",
+  "level": "N4",
+  "meaning": "how to; way of doing",
+  "formation": "Verb-stem + 方"
+ },
+ {
+  "id": "chuu-juu",
+  "pattern": "〜中",
+  "level": "N4",
+  "meaning": "in the middle of; during (ちゅう); throughout; all over (じゅう)",
+  "formation": "Noun + 中"
+ },
+ {
+  "id": "tsumori",
+  "pattern": "〜つもり",
+  "level": "N4",
+  "meaning": "intend to; plan to",
+  "formation": "Verb-dict / Verb-nai + つもり"
+ },
+ {
+  "id": "yotei",
+  "pattern": "〜予定",
+  "level": "N4",
+  "meaning": "plan to; be scheduled to",
+  "formation": "Verb-dict + 予定 / Noun + の + 予定"
+ },
+ {
+  "id": "koto-ni-suru",
+  "pattern": "〜ことにする",
+  "level": "N4",
+  "meaning": "decide to",
+  "formation": "Verb-dict / Verb-nai + ことにする"
+ },
+ {
+  "id": "koto-ni-naru",
+  "pattern": "〜ことになる",
+  "level": "N4",
+  "meaning": "it has been decided that; it turns out that",
+  "formation": "Verb-dict / Verb-nai + ことになる"
+ },
+ {
+  "id": "koto-ga-dekiru",
+  "pattern": "〜ことができる",
+  "level": "N4",
+  "meaning": "can; be able to; be possible to",
+  "formation": "Verb-dict + ことができる"
+ },
+ {
+  "id": "eru-rareru-potential",
+  "pattern": "〜える / 〜られる（potential）",
+  "level": "N4",
+  "meaning": "can; be able to (potential form)",
+  "formation": "Verb-dict (Group 1: final u → e) + る / Verb-nai stem + られる (Group 2)"
+ },
+ {
+  "id": "reru-rareru-passive",
+  "pattern": "〜れる / 〜られる（passive）",
+  "level": "N4",
+  "meaning": "be done (by someone); passive voice",
+  "formation": "Verb-nai stem + れる (Group 1) / Verb-nai stem + られる (Group 2)"
+ },
+ {
+  "id": "seru-saseru",
+  "pattern": "〜せる / 〜させる",
+  "level": "N4",
+  "meaning": "make someone do; let someone do (causative)",
+  "formation": "Verb-nai stem + せる (Group 1) / Verb-nai stem + させる (Group 2)"
+ },
+ {
+  "id": "serareru-saserareru",
+  "pattern": "〜せられる / 〜させられる",
+  "level": "N4",
+  "meaning": "be made to do (against one's will)",
+  "formation": "Verb-nai stem + せられる (Group 1; short form される) / Verb-nai stem + させられる (Group 2)"
+ },
+ {
+  "id": "ou-you",
+  "pattern": "〜おう / 〜よう",
+  "level": "N4",
+  "meaning": "let's (casual); I'll (volitional form)",
+  "formation": "Verb-dict (Group 1: final u → o) + う / Verb-stem + よう (Group 2)"
+ },
+ {
+  "id": "you-to-omou",
+  "pattern": "〜(よ)うと思う",
+  "level": "N4",
+  "meaning": "be thinking of doing; plan to",
+  "formation": "Verb-volitional + と思う"
+ },
+ {
+  "id": "e-ro",
+  "pattern": "〜え / 〜ろ",
+  "level": "N4",
+  "meaning": "do it! (imperative form; blunt command)",
+  "formation": "Verb-dict (Group 1: final u → e) / Verb-stem + ろ (Group 2)"
+ },
+ {
+  "id": "na-prohibition",
+  "pattern": "〜な（prohibition）",
+  "level": "N4",
+  "meaning": "don't! (strong prohibition)",
+  "formation": "Verb-dict + な"
+ },
+ {
+  "id": "nasai",
+  "pattern": "〜なさい",
+  "level": "N4",
+  "meaning": "do (instruction from a parent, teacher, etc.)",
+  "formation": "Verb-stem + なさい"
+ },
+ {
+  "id": "ba",
+  "pattern": "〜ば",
+  "level": "N4",
+  "meaning": "if",
+  "formation": "Verb-ba / i-Adj stem + ければ / na-Adj + なら / Noun + なら"
+ },
+ {
+  "id": "tara",
+  "pattern": "〜たら",
+  "level": "N4",
+  "meaning": "if; when; after",
+  "formation": "Verb-ta + ら / i-Adj stem + かったら / na-Adj + だったら / Noun + だったら"
+ },
+ {
+  "id": "nara",
+  "pattern": "〜なら",
+  "level": "N4",
+  "meaning": "if (it's the case that); if you're talking about",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + なら"
+ },
+ {
+  "id": "to",
+  "pattern": "〜と（conditional）",
+  "level": "N4",
+  "meaning": "when; if; whenever (natural or automatic result)",
+  "formation": "Verb-dict / Verb-nai / i-Adj + と / na-Adj + だ + と / Noun + だ + と"
+ },
+ {
+  "id": "te-mo-de-mo",
+  "pattern": "〜ても / 〜でも",
+  "level": "N4",
+  "meaning": "even if; even though",
+  "formation": "Verb-te + も / i-Adj-ku + ても / na-Adj + でも / Noun + でも"
+ },
+ {
+  "id": "noni-although",
+  "pattern": "〜のに（although）",
+  "level": "N4",
+  "meaning": "although; even though (with surprise or dissatisfaction)",
+  "formation": "Verb-plain / i-Adj + のに / na-Adj + な + のに / Noun + な + のに"
+ },
+ {
+  "id": "noni-purpose",
+  "pattern": "〜のに（purpose）",
+  "level": "N4",
+  "meaning": "for; in order to (with use, time or cost)",
+  "formation": "Verb-dict + のに / Noun + に"
+ },
+ {
+  "id": "node",
+  "pattern": "〜ので",
+  "level": "N4",
+  "meaning": "because; since",
+  "formation": "Verb-plain / i-Adj + ので / na-Adj + な + ので / Noun + な + ので"
+ },
+ {
+  "id": "te-reason",
+  "pattern": "〜て（reason）",
+  "level": "N4",
+  "meaning": "because; so (cause of a feeling or state)",
+  "formation": "Verb-te / i-Adj stem + くて / na-Adj + で / Noun + で"
+ },
+ {
+  "id": "shi",
+  "pattern": "〜し",
+  "level": "N4",
+  "meaning": "and what's more; and besides (listing reasons)",
+  "formation": "Verb-plain / i-Adj + し / na-Adj + だ + し / Noun + だ + し"
+ },
+ {
+  "id": "kedo-keredomo",
+  "pattern": "〜けど / 〜けれども",
+  "level": "N4",
+  "meaning": "but; although; (soft lead-in)",
+  "formation": "Sentence + けど / けれども"
+ },
+ {
+  "id": "tame-ni",
+  "pattern": "〜ために",
+  "level": "N4",
+  "meaning": "in order to; for (the sake of); because of",
+  "formation": "Verb-dict / Verb-ta / Noun + の + ために"
+ },
+ {
+  "id": "you-ni",
+  "pattern": "〜ように（purpose）",
+  "level": "N4",
+  "meaning": "so that; in order that",
+  "formation": "Verb-dict / Verb-nai + ように"
+ },
+ {
+  "id": "you-ni-suru",
+  "pattern": "〜ようにする",
+  "level": "N4",
+  "meaning": "try to; make sure to; make a habit of",
+  "formation": "Verb-dict / Verb-nai + ようにする"
+ },
+ {
+  "id": "you-ni-naru",
+  "pattern": "〜ようになる",
+  "level": "N4",
+  "meaning": "come to; reach the point where (change in ability or habit)",
+  "formation": "Verb-dict / Verb-nai + ようになる"
+ },
+ {
+  "id": "te-hoshii",
+  "pattern": "〜てほしい",
+  "level": "N4",
+  "meaning": "want someone to do",
+  "formation": "Verb-te + ほしい / Verb-nai + で + ほしい"
+ },
+ {
+  "id": "tagaru",
+  "pattern": "〜たがる",
+  "level": "N4",
+  "meaning": "(someone else) wants to",
+  "formation": "Verb-stem + たがる"
+ },
+ {
+  "id": "garu",
+  "pattern": "〜がる",
+  "level": "N4",
+  "meaning": "(someone else) feels; shows signs of feeling",
+  "formation": "i-Adj stem / na-Adj + がる"
+ },
+ {
+  "id": "kamo-shirenai",
+  "pattern": "〜かもしれない",
+  "level": "N4",
+  "meaning": "might; may; possibly",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + かもしれない"
+ },
+ {
+  "id": "darou",
+  "pattern": "〜だろう",
+  "level": "N4",
+  "meaning": "probably; I suppose (plain form of でしょう)",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + だろう"
+ },
+ {
+  "id": "hazu-da",
+  "pattern": "〜はずだ",
+  "level": "N4",
+  "meaning": "should be; is expected to (based on reasoning)",
+  "formation": "Verb-plain / i-Adj + はずだ / na-Adj + な + はずだ / Noun + の + はずだ"
+ },
+ {
+  "id": "hazu-ga-nai",
+  "pattern": "〜はずがない",
+  "level": "N4",
+  "meaning": "can't be; there's no way that",
+  "formation": "Verb-plain / i-Adj + はずがない / na-Adj + な + はずがない / Noun + の + はずがない"
+ },
+ {
+  "id": "n-desu-no-desu",
+  "pattern": "〜んです / 〜のです",
+  "level": "N4",
+  "meaning": "it's that ...; (explaining or asking for an explanation)",
+  "formation": "Verb-plain / i-Adj + んです / na-Adj + な + んです / Noun + な + んです"
+ },
+ {
+  "id": "ka-dou-ka",
+  "pattern": "〜かどうか",
+  "level": "N4",
+  "meaning": "whether or not",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + かどうか"
+ },
+ {
+  "id": "ka-embedded-question",
+  "pattern": "〜か（embedded question）",
+  "level": "N4",
+  "meaning": "embedded question (what, where, who, etc.)",
+  "formation": "Question word + ... + Verb-plain / i-Adj / na-Adj / Noun + か"
+ },
+ {
+  "id": "to-omou",
+  "pattern": "〜と思う",
+  "level": "N4",
+  "meaning": "I think that",
+  "formation": "Verb-plain / i-Adj + と思う / na-Adj + だ + と思う / Noun + だ + と思う"
+ },
+ {
+  "id": "to-iu-say",
+  "pattern": "〜と言う",
+  "level": "N4",
+  "meaning": "say that; tell (quotation)",
+  "formation": "「Sentence」 + と言う / Sentence (plain) + と言う"
+ },
+ {
+  "id": "shika-nai",
+  "pattern": "〜しか〜ない",
+  "level": "N4",
+  "meaning": "only; nothing but",
+  "formation": "Noun + しか + Verb-nai"
+ },
+ {
+  "id": "bakari",
+  "pattern": "〜ばかり",
+  "level": "N4",
+  "meaning": "nothing but; only; all",
+  "formation": "Noun + ばかり"
+ },
+ {
+  "id": "ta-bakari",
+  "pattern": "〜たばかり",
+  "level": "N4",
+  "meaning": "have just done",
+  "formation": "Verb-ta + ばかり"
+ },
+ {
+  "id": "tokoro-da",
+  "pattern": "〜ところだ",
+  "level": "N4",
+  "meaning": "be about to; be in the middle of; have just done",
+  "formation": "Verb-dict / Verb-te + いる / Verb-ta + ところだ"
+ },
+ {
+  "id": "yasui-nikui",
+  "pattern": "〜やすい / 〜にくい",
+  "level": "N4",
+  "meaning": "easy to; hard to",
+  "formation": "Verb-stem + やすい / Verb-stem + にくい"
+ },
+ {
+  "id": "hajimeru-owaru-tsuzukeru",
+  "pattern": "〜始める / 〜終わる / 〜続ける",
+  "level": "N4",
+  "meaning": "start doing; finish doing; keep doing",
+  "formation": "Verb-stem + 始める / Verb-stem + 終わる / Verb-stem + 続ける"
+ },
+ {
+  "id": "dasu",
+  "pattern": "〜出す",
+  "level": "N4",
+  "meaning": "suddenly start doing; burst out",
+  "formation": "Verb-stem + 出す"
+ },
+ {
+  "id": "hodo-nai",
+  "pattern": "〜ほど〜ない",
+  "level": "N4",
+  "meaning": "not as ... as",
+  "formation": "Noun / Verb-plain + ほど + i-Adj-ku + ない / na-Adj + ではない"
+ },
+ {
+  "id": "nakanaka-nai",
+  "pattern": "なかなか〜ない",
+  "level": "N4",
+  "meaning": "not easily; just won't; not readily",
+  "formation": "なかなか + Verb-nai"
+ },
+ {
+  "id": "zutsu",
+  "pattern": "〜ずつ",
+  "level": "N4",
+  "meaning": "each; at a time; little by little",
+  "formation": "Noun (quantity) + ずつ"
+ },
+ {
+  "id": "mo-emphasis",
+  "pattern": "〜も（emphasis）",
+  "level": "N4",
+  "meaning": "as many as; as much as; (with a negative) not even one",
+  "formation": "Noun (number + counter) + も"
+ },
+ {
+  "id": "made-ni",
+  "pattern": "〜までに",
+  "level": "N4",
+  "meaning": "by (a deadline); before",
+  "formation": "Noun / Verb-dict + までに"
+ },
+ {
+  "id": "koto-ga-aru",
+  "pattern": "〜ことがある",
+  "level": "N4",
+  "meaning": "sometimes; there are times when",
+  "formation": "Verb-dict / Verb-nai + ことがある"
+ },
+ {
+  "id": "nai-to-ikenai-nakucha",
+  "pattern": "〜ないといけない / 〜なくちゃ",
+  "level": "N4",
+  "meaning": "have to; must (conversational)",
+  "formation": "Verb-nai + といけない / Verb-nai stem + なくちゃ"
+ },
+ {
+  "id": "sasete-kudasai",
+  "pattern": "〜させてください",
+  "level": "N4",
+  "meaning": "please let me (do)",
+  "formation": "Verb-nai stem + せてください (Group 1) / Verb-nai stem + させてください (Group 2)"
+ },
+ {
+  "id": "sonkeigo",
+  "pattern": "尊敬語",
+  "level": "N4",
+  "meaning": "honorific verbs; respectful language for others' actions",
+  "formation": "いらっしゃる（行く・来る・いる） / 召し上がる（食べる・飲む） / おっしゃる（言う） / なさる（する） / ご覧になる（見る） / くださる（くれる）"
+ },
+ {
+  "id": "kenjougo",
+  "pattern": "謙譲語",
+  "level": "N4",
+  "meaning": "humble verbs; modest language for one's own actions",
+  "formation": "参る（行く・来る） / おる（いる） / いただく（食べる・飲む・もらう） / 申す（言う） / いたす（する） / 拝見する（見る） / 伺う（聞く・訪ねる）"
+ },
+ {
+  "id": "o-ni-naru",
+  "pattern": "お〜になる",
+  "level": "N4",
+  "meaning": "(honorific) someone respected does",
+  "formation": "お + Verb-stem + になる"
+ },
+ {
+  "id": "o-suru",
+  "pattern": "お〜する",
+  "level": "N4",
+  "meaning": "(humble) I do (for someone respected)",
+  "formation": "お + Verb-stem + する / ご + Noun + する"
+ },
+ {
+  "id": "de-gozaimasu",
+  "pattern": "〜でございます",
+  "level": "N4",
+  "meaning": "is; am; are (very polite copula)",
+  "formation": "Noun / na-Adj + でございます"
+ },
+ {
+  "id": "te-mo-kamawanai",
+  "pattern": "〜ても構わない",
+  "level": "N4",
+  "meaning": "don't mind if; it's fine if",
+  "formation": "Verb-te + も構わない / i-Adj-ku + ても構わない / na-Adj + でも構わない / Noun + でも構わない"
+ },
+ {
+  "id": "no-koto-nominalizer",
+  "pattern": "〜の / 〜こと（nominalizer）",
+  "level": "N4",
+  "meaning": "the act of doing (turns a verb phrase into a noun)",
+  "formation": "Verb-plain + の / Verb-plain + こと"
+ },
+ {
+  "id": "ba-yokatta",
+  "pattern": "〜ばよかった",
+  "level": "N4",
+  "meaning": "should have (done); I wish I had",
+  "formation": "Verb-ba + よかった / Verb-nai stem + なければよかった"
+ },
+ {
+  "id": "tara-dou",
+  "pattern": "〜たらどう",
+  "level": "N4",
+  "meaning": "why don't you ...?; how about ...?",
+  "formation": "Verb-ta + らどう"
+ },
+ {
+  "id": "hou-ga-ii",
+  "pattern": "〜ほうがいい",
+  "level": "N4",
+  "meaning": "had better; should",
+  "formation": "Verb-ta / Verb-nai + ほうがいい"
+ },
+ {
+  "id": "toka-toka",
+  "pattern": "〜とか〜とか",
+  "level": "N4",
+  "meaning": "things like A and B; A, B and so on (casual)",
+  "formation": "Noun + とか + Noun + とか / Verb-dict + とか + Verb-dict + とか"
+ },
+ {
+  "id": "nado",
+  "pattern": "〜など",
+  "level": "N4",
+  "meaning": "etc.; and so on; such as",
+  "formation": "Noun + など"
+ },
+ {
+  "id": "de-mo-suggestion",
+  "pattern": "〜でも（suggestion）",
+  "level": "N4",
+  "meaning": "or something (softening a suggestion)",
+  "formation": "Noun + でも"
+ },
+ {
+  "id": "sa",
+  "pattern": "〜さ",
+  "level": "N4",
+  "meaning": "-ness (turns an adjective into a noun of degree)",
+  "formation": "i-Adj stem + さ / na-Adj + さ"
+ },
+ {
+  "id": "me",
+  "pattern": "〜目",
+  "level": "N4",
+  "meaning": "-th (ordinal: first, second, third ...)",
+  "formation": "Noun (number + counter) + 目"
+ },
+ {
+  "id": "oki-ni",
+  "pattern": "〜おきに",
+  "level": "N4",
+  "meaning": "every other; at intervals of",
+  "formation": "Noun (number + counter) + おきに"
+ },
+ {
+  "id": "ku-suru-ni-suru",
+  "pattern": "〜くする / 〜にする（make）",
+  "level": "N4",
+  "meaning": "make (something) ...; change something to a state",
+  "formation": "i-Adj-ku + する / na-Adj + に + する / Noun + に + する"
+ },
+ {
+  "id": "ga-suru",
+  "pattern": "〜がする",
+  "level": "N4",
+  "meaning": "(a smell, sound, taste or feeling) is perceived",
+  "formation": "Noun + がする"
+ },
+ {
+  "id": "kana-kashira",
+  "pattern": "〜かな / 〜かしら",
+  "level": "N4",
+  "meaning": "I wonder",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + かな / かしら"
+ },
+ {
+  "id": "te-kuremasen-ka-te-itadakemasen-ka",
+  "pattern": "〜てくれませんか / 〜ていただけませんか",
+  "level": "N4",
+  "meaning": "could you please ...? (polite request)",
+  "formation": "Verb-te + くれませんか / Verb-te + いただけませんか"
+ },
+ {
+  "id": "naide",
+  "pattern": "〜ないで",
+  "level": "N4",
+  "meaning": "without doing; instead of doing",
+  "formation": "Verb-nai + で"
+ },
+ {
+  "id": "wake-da",
+  "pattern": "〜わけだ",
+  "level": "N3",
+  "meaning": "no wonder; that's why; it follows that",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + という + わけだ"
+ },
+ {
+  "id": "wake-de-wa-nai",
+  "pattern": "〜わけではない",
+  "level": "N3",
+  "meaning": "it doesn't mean that; it's not that; not necessarily",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + という + わけではない"
+ },
+ {
+  "id": "wake-ga-nai",
+  "pattern": "〜わけがない",
+  "level": "N3",
+  "meaning": "there's no way that; cannot possibly",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + わけがない"
+ },
+ {
+  "id": "wake-ni-wa-ikanai",
+  "pattern": "〜わけにはいかない",
+  "level": "N3",
+  "meaning": "can't afford to; can't very well; must not (for social or moral reasons)",
+  "formation": "Verb-dict / Verb-nai + わけにはいかない"
+ },
+ {
+  "id": "mono-da",
+  "pattern": "〜ものだ",
+  "level": "N3",
+  "meaning": "it's natural that; one should; used to (nostalgia); how ...! (deep feeling)",
+  "formation": "Verb-dict / Verb-ta / i-Adj / na-Adj + な + ものだ"
+ },
+ {
+  "id": "mono-de-wa-nai",
+  "pattern": "〜ものではない",
+  "level": "N3",
+  "meaning": "one shouldn't; it's not right to",
+  "formation": "Verb-dict + ものではない"
+ },
+ {
+  "id": "mono-mon",
+  "pattern": "〜もの / 〜もん",
+  "level": "N3",
+  "meaning": "because (casual excuse or self-justification)",
+  "formation": "Sentence + もの / もん"
+ },
+ {
+  "id": "mono-dakara-mono-de",
+  "pattern": "〜ものだから / 〜もので",
+  "level": "N3",
+  "meaning": "because; since (explaining or excusing a situation)",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + な + ものだから / もので"
+ },
+ {
+  "id": "koto-da",
+  "pattern": "〜ことだ",
+  "level": "N3",
+  "meaning": "should; the best thing is to (advice)",
+  "formation": "Verb-dict / Verb-nai + ことだ"
+ },
+ {
+  "id": "koto-wa-nai",
+  "pattern": "〜ことはない",
+  "level": "N3",
+  "meaning": "there's no need to; don't have to",
+  "formation": "Verb-dict + ことはない"
+ },
+ {
+  "id": "koto-ni-shite-iru",
+  "pattern": "〜ことにしている",
+  "level": "N3",
+  "meaning": "make it a rule to; make a point of",
+  "formation": "Verb-dict / Verb-nai + ことにしている"
+ },
+ {
+  "id": "koto-ni-natte-iru",
+  "pattern": "〜ことになっている",
+  "level": "N3",
+  "meaning": "it has been arranged that; it's the rule that; be supposed to",
+  "formation": "Verb-dict / Verb-nai + ことになっている"
+ },
+ {
+  "id": "koto-instruction",
+  "pattern": "〜こと（instruction）",
+  "level": "N3",
+  "meaning": "must; do (written rule or instruction)",
+  "formation": "Verb-dict / Verb-nai + こと"
+ },
+ {
+  "id": "you-ni-iu-you-ni-tanomu",
+  "pattern": "〜ように言う / 〜ように頼む",
+  "level": "N3",
+  "meaning": "tell someone to do; ask someone to do (reported command or request)",
+  "formation": "Verb-dict / Verb-nai + ように言う / ように頼む"
+ },
+ {
+  "id": "you-to-suru",
+  "pattern": "〜ようとする",
+  "level": "N3",
+  "meaning": "try to; attempt to; be about to",
+  "formation": "Verb-volitional + とする"
+ },
+ {
+  "id": "sou-ni-nai-sou-mo-nai",
+  "pattern": "〜そうにない / 〜そうもない",
+  "level": "N3",
+  "meaning": "unlikely to; doesn't look like it will",
+  "formation": "Verb-stem + そうにない / そうもない"
+ },
+ {
+  "id": "ippou-da",
+  "pattern": "〜一方だ",
+  "level": "N3",
+  "meaning": "keep on -ing; more and more (change in one direction)",
+  "formation": "Verb-dict + 一方だ"
+ },
+ {
+  "id": "ippou-de",
+  "pattern": "〜一方で",
+  "level": "N3",
+  "meaning": "while; on the other hand; at the same time",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + である + 一方で"
+ },
+ {
+  "id": "ni-taishite",
+  "pattern": "〜に対して",
+  "level": "N3",
+  "meaning": "toward; against; in contrast to",
+  "formation": "Noun + に対して / Noun + に対する + Noun / Verb-plain / i-Adj / na-Adj + な + のに対して"
+ },
+ {
+  "id": "ni-tsuite",
+  "pattern": "〜について",
+  "level": "N3",
+  "meaning": "about; concerning; regarding",
+  "formation": "Noun + について / Noun + についての + Noun"
+ },
+ {
+  "id": "ni-yotte-ni-yoru",
+  "pattern": "〜によって / 〜による",
+  "level": "N3",
+  "meaning": "by (agent); by means of; due to; depending on",
+  "formation": "Noun + によって / Noun + による + Noun"
+ },
+ {
+  "id": "ni-yoru-to-ni-yoreba",
+  "pattern": "〜によると / 〜によれば",
+  "level": "N3",
+  "meaning": "according to",
+  "formation": "Noun + によると / Noun + によれば"
+ },
+ {
+  "id": "bakari-de-naku",
+  "pattern": "〜ばかりでなく",
+  "level": "N3",
+  "meaning": "not only ... but also",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + ばかりでなく"
+ },
+ {
+  "id": "dake-de-naku",
+  "pattern": "〜だけでなく",
+  "level": "N3",
+  "meaning": "not only ... but also",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + だけでなく"
+ },
+ {
+  "id": "mo-ba-mo",
+  "pattern": "〜も〜ば〜も",
+  "level": "N3",
+  "meaning": "both ... and ...; not only ... but also",
+  "formation": "Noun + も + Verb-ba + Noun + も / Noun + も + i-Adj stem + ければ + Noun + も"
+ },
+ {
+  "id": "rashii-typical-of",
+  "pattern": "〜らしい（typical of）",
+  "level": "N3",
+  "meaning": "typical of; befitting; truly like",
+  "formation": "Noun + らしい"
+ },
+ {
+  "id": "ppoi",
+  "pattern": "〜っぽい",
+  "level": "N3",
+  "meaning": "-ish; -like; tends to (casual)",
+  "formation": "Noun / Verb-stem / i-Adj stem + っぽい"
+ },
+ {
+  "id": "teki",
+  "pattern": "〜的",
+  "level": "N3",
+  "meaning": "-ic; -al; in terms of",
+  "formation": "Noun + 的な + Noun / Noun + 的に"
+ },
+ {
+  "id": "you-na-you-ni-like",
+  "pattern": "〜ような / 〜ように（like）",
+  "level": "N3",
+  "meaning": "like; as; such as",
+  "formation": "Verb-plain / Noun + の + ような / ように"
+ },
+ {
+  "id": "marude-you-da",
+  "pattern": "まるで〜ようだ",
+  "level": "N3",
+  "meaning": "just like; as if",
+  "formation": "まるで + Verb-plain / Noun + の + ようだ"
+ },
+ {
+  "id": "ni-chigai-nai",
+  "pattern": "〜に違いない",
+  "level": "N3",
+  "meaning": "must be; surely; no doubt",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + に違いない"
+ },
+ {
+  "id": "ni-kimatte-iru",
+  "pattern": "〜に決まっている",
+  "level": "N3",
+  "meaning": "certainly; is bound to; of course",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + に決まっている"
+ },
+ {
+  "id": "ki-ga-suru",
+  "pattern": "〜気がする",
+  "level": "N3",
+  "meaning": "have a feeling that; feel like",
+  "formation": "Verb-plain / i-Adj / na-Adj + な + 気がする / Verb-plain / Noun + の + ような + 気がする"
+ },
+ {
+  "id": "zu-ni",
+  "pattern": "〜ずに",
+  "level": "N3",
+  "meaning": "without doing",
+  "formation": "Verb-nai stem + ずに"
+ },
+ {
+  "id": "mama",
+  "pattern": "〜まま",
+  "level": "N3",
+  "meaning": "as it is; unchanged; while still (in a state)",
+  "formation": "Verb-ta / Verb-nai / i-Adj / na-Adj + な / Noun + の + まま"
+ },
+ {
+  "id": "uchi-ni",
+  "pattern": "〜うちに",
+  "level": "N3",
+  "meaning": "while (before it changes); before it's too late; in the course of",
+  "formation": "Verb-dict / Verb-te + いる / Verb-nai / i-Adj / na-Adj + な / Noun + の + うちに"
+ },
+ {
+  "id": "tokoro-ni-tokoro-e-tokoro-o",
+  "pattern": "〜ところに / 〜ところへ / 〜ところを",
+  "level": "N3",
+  "meaning": "just when; at the moment (someone arrives or something interrupts)",
+  "formation": "Verb-dict / Verb-te + いる / Verb-ta + ところに / ところへ / ところを"
+ },
+ {
+  "id": "ba-hodo",
+  "pattern": "〜ば〜ほど",
+  "level": "N3",
+  "meaning": "the more ... the more",
+  "formation": "Verb-ba + Verb-dict + ほど / i-Adj stem + ければ + i-Adj + ほど / na-Adj + なら + na-Adj + な + ほど"
+ },
+ {
+  "id": "hodo",
+  "pattern": "〜ほど",
+  "level": "N3",
+  "meaning": "to the extent that; so ... that",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + ほど"
+ },
+ {
+  "id": "kurai-gurai-extent",
+  "pattern": "〜くらい / 〜ぐらい（extent）",
+  "level": "N3",
+  "meaning": "to the extent that; so ... that; at least (something minimal)",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + くらい"
+ },
+ {
+  "id": "sae",
+  "pattern": "〜さえ",
+  "level": "N3",
+  "meaning": "even",
+  "formation": "Noun + さえ / Noun + でさえ / Noun + にさえ"
+ },
+ {
+  "id": "sae-ba",
+  "pattern": "〜さえ〜ば",
+  "level": "N3",
+  "meaning": "if only; as long as; provided that",
+  "formation": "Noun + さえ + Verb-ba / Verb-stem + さえ + すれば / Verb-te + さえ + いれば"
+ },
+ {
+  "id": "koso",
+  "pattern": "〜こそ",
+  "level": "N3",
+  "meaning": "precisely; it is ... that; (strong emphasis)",
+  "formation": "Noun + こそ"
+ },
+ {
+  "id": "to-shite",
+  "pattern": "〜として",
+  "level": "N3",
+  "meaning": "as; in the role or capacity of",
+  "formation": "Noun + として / Noun + としての + Noun"
+ },
+ {
+  "id": "ni-totte",
+  "pattern": "〜にとって",
+  "level": "N3",
+  "meaning": "for; to (from the standpoint of)",
+  "formation": "Noun + にとって / Noun + にとっての + Noun"
+ },
+ {
+  "id": "ni-shite-wa",
+  "pattern": "〜にしては",
+  "level": "N3",
+  "meaning": "for (considering it's); unexpectedly for",
+  "formation": "Verb-plain / Noun + にしては"
+ },
+ {
+  "id": "ni-shite-mo",
+  "pattern": "〜にしても",
+  "level": "N3",
+  "meaning": "even if; even considering; granted that",
+  "formation": "Verb-plain / Noun + にしても"
+ },
+ {
+  "id": "ni-kanshite-ni-kansuru",
+  "pattern": "〜に関して / 〜に関する",
+  "level": "N3",
+  "meaning": "regarding; concerning; related to",
+  "formation": "Noun + に関して / Noun + に関する + Noun"
+ },
+ {
+  "id": "ni-kurabete",
+  "pattern": "〜に比べて",
+  "level": "N3",
+  "meaning": "compared to; in comparison with",
+  "formation": "Noun + に比べて / Verb-dict + のに比べて"
+ },
+ {
+  "id": "ni-kawatte",
+  "pattern": "〜に代わって",
+  "level": "N3",
+  "meaning": "instead of; on behalf of; replacing",
+  "formation": "Noun + に代わって / Noun + に代わり"
+ },
+ {
+  "id": "kawari-ni",
+  "pattern": "〜代わりに",
+  "level": "N3",
+  "meaning": "instead of; in exchange for; to make up for",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + 代わりに"
+ },
+ {
+  "id": "ni-shitagatte",
+  "pattern": "〜に従って",
+  "level": "N3",
+  "meaning": "in accordance with; following; as ... (so ...)",
+  "formation": "Noun + に従って / Verb-dict + に従って"
+ },
+ {
+  "id": "ni-tsurete",
+  "pattern": "〜につれて",
+  "level": "N3",
+  "meaning": "as (one thing changes, another changes too)",
+  "formation": "Verb-dict / Noun + につれて"
+ },
+ {
+  "id": "to-tomo-ni",
+  "pattern": "〜とともに",
+  "level": "N3",
+  "meaning": "together with; along with; as; at the same time as",
+  "formation": "Noun + とともに / Verb-dict + とともに"
+ },
+ {
+  "id": "tabi-ni",
+  "pattern": "〜たびに",
+  "level": "N3",
+  "meaning": "every time; whenever",
+  "formation": "Verb-dict / Noun + の + たびに"
+ },
+ {
+  "id": "goto-ni",
+  "pattern": "〜ごとに",
+  "level": "N3",
+  "meaning": "every; each; at intervals of",
+  "formation": "Noun + ごとに / Verb-dict + ごとに"
+ },
+ {
+  "id": "saichuu-ni",
+  "pattern": "〜最中に",
+  "level": "N3",
+  "meaning": "right in the middle of; while (busy with)",
+  "formation": "Verb-te + いる / Noun + の + 最中に"
+ },
+ {
+  "id": "tsuide-ni",
+  "pattern": "〜ついでに",
+  "level": "N3",
+  "meaning": "while (at it); on the occasion of; since one is doing it anyway",
+  "formation": "Verb-dict / Verb-ta / Noun + の + ついでに"
+ },
+ {
+  "id": "okage-de",
+  "pattern": "〜おかげで",
+  "level": "N3",
+  "meaning": "thanks to; because of (good result)",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + おかげで"
+ },
+ {
+  "id": "sei-de",
+  "pattern": "〜せいで",
+  "level": "N3",
+  "meaning": "because of; due to (bad result, blame)",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + せいで"
+ },
+ {
+  "id": "ta-totan-ta-totan-ni",
+  "pattern": "〜たとたん / 〜たとたんに",
+  "level": "N3",
+  "meaning": "the moment; just as (something unexpected happens)",
+  "formation": "Verb-ta + とたん / とたんに"
+ },
+ {
+  "id": "tara-ta",
+  "pattern": "〜たら〜た",
+  "level": "N3",
+  "meaning": "when I did A, (I found that) B; upon doing, I discovered",
+  "formation": "Verb-ta + ら ... Verb-ta"
+ },
+ {
+  "id": "tatte-datte",
+  "pattern": "〜たって / 〜だって",
+  "level": "N3",
+  "meaning": "even if; no matter (casual)",
+  "formation": "Verb-ta + って / i-Adj-ku + たって / na-Adj / Noun + だって"
+ },
+ {
+  "id": "nai-koto-wa-nai",
+  "pattern": "〜ないことはない",
+  "level": "N3",
+  "meaning": "it's not that ... not; can if necessary; not impossible",
+  "formation": "Verb-nai / i-Adj-ku + ない / na-Adj + でない + ことはない"
+ },
+ {
+  "id": "te-shou-ga-nai-te-shikata-ga-nai",
+  "pattern": "〜てしょうがない / 〜てしかたがない",
+  "level": "N3",
+  "meaning": "extremely; can't help (feeling); unbearably",
+  "formation": "Verb-te / i-Adj-ku + て / na-Adj + で + しょうがない / しかたがない"
+ },
+ {
+  "id": "te-tamaranai",
+  "pattern": "〜てたまらない",
+  "level": "N3",
+  "meaning": "unbearably; dying to; extremely (feeling)",
+  "formation": "Verb-te / i-Adj-ku + て / na-Adj + で + たまらない"
+ },
+ {
+  "id": "te-hajimete",
+  "pattern": "〜てはじめて",
+  "level": "N3",
+  "meaning": "only after; not until",
+  "formation": "Verb-te + はじめて"
+ },
+ {
+  "id": "te-bakari-iru",
+  "pattern": "〜てばかりいる",
+  "level": "N3",
+  "meaning": "do nothing but; keep on doing (critical)",
+  "formation": "Verb-te + ばかりいる"
+ },
+ {
+  "id": "ba-ii",
+  "pattern": "〜ばいい",
+  "level": "N3",
+  "meaning": "should; all you need to do is; I hope (with のに/けど: I wish)",
+  "formation": "Verb-ba + いい / i-Adj stem + ければ + いい"
+ },
+ {
+  "id": "baai-wa",
+  "pattern": "〜場合（は）",
+  "level": "N3",
+  "meaning": "in the case of; if; in the event that",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + 場合（は）"
+ },
+ {
+  "id": "to-sureba-to-shitara",
+  "pattern": "〜とすれば / 〜としたら",
+  "level": "N3",
+  "meaning": "if; supposing that; assuming",
+  "formation": "Verb-plain / i-Adj / na-Adj + だ / Noun + だ + とすれば / としたら"
+ },
+ {
+  "id": "to-shite-mo",
+  "pattern": "〜としても",
+  "level": "N3",
+  "meaning": "even if; even supposing",
+  "formation": "Verb-plain / i-Adj / na-Adj + だ / Noun + だ + としても"
+ },
+ {
+  "id": "toka-hearsay",
+  "pattern": "〜とか（hearsay）",
+  "level": "N3",
+  "meaning": "I heard something like; apparently",
+  "formation": "Sentence + とか"
+ },
+ {
+  "id": "tte",
+  "pattern": "〜って",
+  "level": "N3",
+  "meaning": "(casual quotation) says that; I heard; as for; what is",
+  "formation": "Sentence + って / Noun + って"
+ },
+ {
+  "id": "to-iu-koto-da",
+  "pattern": "〜ということだ",
+  "level": "N3",
+  "meaning": "I heard that; it means that; in other words",
+  "formation": "Sentence + ということだ"
+ },
+ {
+  "id": "to-iu-no-wa",
+  "pattern": "〜というのは",
+  "level": "N3",
+  "meaning": "what is meant by ... is; ... means; the reason is",
+  "formation": "Noun / Sentence + というのは"
+ },
+ {
+  "id": "to-iu-yori",
+  "pattern": "〜というより",
+  "level": "N3",
+  "meaning": "rather than; not so much A as B",
+  "formation": "Verb-plain / i-Adj / na-Adj / Noun + というより"
+ },
+ {
+  "id": "wari-ni-wari-ni-wa",
+  "pattern": "〜わりに / 〜わりには",
+  "level": "N3",
+  "meaning": "considering; for (unexpectedly)",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + わりに"
+ },
+ {
+  "id": "kuse-ni",
+  "pattern": "〜くせに",
+  "level": "N3",
+  "meaning": "even though; despite (critical, reproachful)",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + くせに"
+ },
+ {
+  "id": "kara-ni-kakete",
+  "pattern": "〜から〜にかけて",
+  "level": "N3",
+  "meaning": "from ... through; over (a period or area)",
+  "formation": "Noun + から + Noun + にかけて"
+ },
+ {
+  "id": "buri",
+  "pattern": "〜ぶり",
+  "level": "N3",
+  "meaning": "for the first time in (a period); manner, way of doing",
+  "formation": "Noun + ぶり / Verb-stem + ぶり"
+ },
+ {
+  "id": "kke",
+  "pattern": "〜っけ",
+  "level": "N3",
+  "meaning": "was it?; did I?; (trying to recall)",
+  "formation": "Verb-ta / Noun + だ / Noun + だった + っけ"
+ },
+ {
+  "id": "masu-you-ni",
+  "pattern": "〜ますように",
+  "level": "N3",
+  "meaning": "I hope; may (wish, prayer)",
+  "formation": "Verb-stem + ますように / Verb-stem + ませんように"
+ },
+ {
+  "id": "furi-o-suru",
+  "pattern": "〜ふりをする",
+  "level": "N3",
+  "meaning": "pretend to; act as if",
+  "formation": "Verb-plain / i-Adj / na-Adj + な / Noun + の + ふりをする"
+ },
+ {
+  "id": "muki-muke",
+  "pattern": "〜向き / 〜向け",
+  "level": "N3",
+  "meaning": "suitable for / aimed at; intended for",
+  "formation": "Noun + 向き / Noun + 向け"
+ },
+ {
+  "id": "gachi",
+  "pattern": "〜がち",
+  "level": "N3",
+  "meaning": "tend to; be prone to; often",
+  "formation": "Verb-stem / Noun + がち"
+ },
+ {
+  "id": "gimi",
+  "pattern": "〜気味",
+  "level": "N3",
+  "meaning": "a touch of; slightly; somewhat (in that condition)",
+  "formation": "Noun / Verb-stem + 気味"
+ },
+ {
+  "id": "darake",
+  "pattern": "〜だらけ",
+  "level": "N3",
+  "meaning": "full of; covered with; riddled with",
+  "formation": "Noun + だらけ"
+ },
+ {
+  "id": "kiru-kirenai",
+  "pattern": "〜切る / 〜切れない",
+  "level": "N3",
+  "meaning": "do completely; finish / can't finish; too many to",
+  "formation": "Verb-stem + 切る / Verb-stem + 切れない"
+ },
+ {
+  "id": "kakeru",
+  "pattern": "〜かける",
+  "level": "N3",
+  "meaning": "half-done; start to; be about to",
+  "formation": "Verb-stem + かける / Verb-stem + かけの + Noun"
+ },
+ {
+  "id": "au",
+  "pattern": "〜合う",
+  "level": "N3",
+  "meaning": "do to each other; do together",
+  "formation": "Verb-stem + 合う"
+ },
+ {
+  "id": "naosu",
+  "pattern": "〜直す",
+  "level": "N3",
+  "meaning": "redo; do over again (to fix or improve)",
+  "formation": "Verb-stem + 直す"
+ },
+ {
+  "id": "zurai",
+  "pattern": "〜づらい",
+  "level": "N3",
+  "meaning": "hard to; difficult or uncomfortable to",
+  "formation": "Verb-stem + づらい"
+ },
+ {
+  "id": "beki-da-beki-de-wa-nai",
+  "pattern": "〜べきだ / 〜べきではない",
+  "level": "N3",
+  "meaning": "should; ought to / should not",
+  "formation": "Verb-dict + べきだ / Verb-dict + べきではない"
+ },
+ {
+  "id": "hodo-wa-nai",
+  "pattern": "〜ほど〜はない",
+  "level": "N3",
+  "meaning": "nothing is as ... as; there's no ... like",
+  "formation": "Noun + ほど + i-Adj / na-Adj + な + Noun + はない"
+ },
+ {
+  "id": "shika-nai-no-choice",
+  "pattern": "〜しかない",
+  "level": "N3",
+  "meaning": "have no choice but to; can only",
+  "formation": "Verb-dict + しかない"
+ },
+ {
+  "id": "made-even",
+  "pattern": "〜まで（even）",
+  "level": "N3",
+  "meaning": "even (an extreme case)",
+  "formation": "Noun + まで / Noun + にまで"
+ },
+ {
+  "id": "tokoro-datta",
+  "pattern": "〜ところだった",
+  "level": "N3",
+  "meaning": "almost; nearly (but didn't)",
+  "formation": "Verb-dict + ところだった"
+ },
+ {
+  "id": "kara-to-itte",
+  "pattern": "〜からといって",
+  "level": "N3",
+  "meaning": "just because (... doesn't mean); simply because",
+  "formation": "Sentence + からといって"
+ },
+ {
+  "id": "toori-ni-doori-ni",
+  "pattern": "〜とおりに / 〜どおりに",
+  "level": "N3",
+  "meaning": "as; in the way that; exactly as",
+  "formation": "Verb-dict / Verb-ta / Noun + の + とおりに / Noun + どおりに"
+ },
+ {
+  "id": "nanka-nante",
+  "pattern": "〜なんか / 〜なんて",
+  "level": "N3",
+  "meaning": "things like; the likes of (dismissive or humble); how ...! (surprise)",
+  "formation": "Noun + なんか / Noun + なんて / Sentence + なんて"
+ }
+]
