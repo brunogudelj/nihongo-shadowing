@@ -22,63 +22,116 @@
           "lemma": "朝",
           "reading": "あさ",
           "role": "vrijeme",
-          "explanation_hr": "Jutro; ovdje znači »ujutro«, kada se radnja dogodila."
+          "explanation_hr": "Jutro; ovdje znači »ujutro«, kada se radnja dogodila.",
+          "furigana": [
+            {
+              "text": "朝",
+              "reading": "あさ"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "札幌",
           "lemma": "札幌",
           "reading": "さっぽろ",
           "role": "mjesto",
-          "explanation_hr": "Sapporo, grad na sjeveru Japana (Hokkaido)."
+          "explanation_hr": "Sapporo, grad na sjeveru Japana (Hokkaido).",
+          "furigana": [
+            {
+              "text": "札幌",
+              "reading": "さっぽろ"
+            }
+          ]
         },
         {
           "text": "駅",
           "lemma": "駅",
           "reading": "えき",
           "role": "mjesto",
-          "explanation_hr": "Stanica; 札幌駅 = stanica Sapporo."
+          "explanation_hr": "Stanica; 札幌駅 = stanica Sapporo.",
+          "furigana": [
+            {
+              "text": "駅",
+              "reading": "えき"
+            }
+          ]
         },
         {
           "text": "で",
           "lemma": "で",
           "reading": "で",
           "role": "cestica",
-          "explanation_hr": "Čestica koja označava mjesto gdje se radnja odvija."
+          "explanation_hr": "Čestica koja označava mjesto gdje se radnja odvija.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ]
         },
         {
           "text": "切符",
           "lemma": "切符",
           "reading": "きっぷ",
           "role": "objekt",
-          "explanation_hr": "Vozna karta."
+          "explanation_hr": "Vozna karta.",
+          "furigana": [
+            {
+              "text": "切符",
+              "reading": "きっぷ"
+            }
+          ]
         },
         {
           "text": "を",
           "lemma": "を",
           "reading": "を",
           "role": "cestica",
-          "explanation_hr": "Označava izravni objekt (kartu)."
+          "explanation_hr": "Označava izravni objekt (kartu).",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ]
         },
         {
           "text": "買いました",
           "lemma": "買う",
           "reading": "かいました",
           "role": "glagol",
-          "explanation_hr": "買う (kupiti) + ました, uljudni oblik prošlog vremena: kupio sam."
+          "explanation_hr": "買う (kupiti) + ました, uljudni oblik prošlog vremena: kupio sam.",
+          "furigana": [
+            {
+              "text": "買",
+              "reading": "か"
+            },
+            {
+              "text": "いました"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -98,70 +151,138 @@
           "lemma": "電車",
           "reading": "でんしゃ",
           "role": "imenica",
-          "explanation_hr": "Vlak (električni, običan)."
+          "explanation_hr": "Vlak (električni, običan).",
+          "furigana": [
+            {
+              "text": "電車",
+              "reading": "でんしゃ"
+            }
+          ]
         },
         {
           "text": "で",
           "lemma": "で",
           "reading": "で",
           "role": "cestica",
-          "explanation_hr": "Ovdje označava prijevozno sredstvo: vlakom."
+          "explanation_hr": "Ovdje označava prijevozno sredstvo: vlakom.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ]
         },
         {
           "text": "函館",
           "lemma": "函館",
           "reading": "はこだて",
           "role": "mjesto",
-          "explanation_hr": "Hakodate, grad na jugu Hokkaida."
+          "explanation_hr": "Hakodate, grad na jugu Hokkaida.",
+          "furigana": [
+            {
+              "text": "函館",
+              "reading": "はこだて"
+            }
+          ]
         },
         {
           "text": "まで",
           "lemma": "まで",
           "reading": "まで",
           "role": "cestica",
-          "explanation_hr": "Do (krajnja točka): do Hakodatea."
+          "explanation_hr": "Do (krajnja točka): do Hakodatea.",
+          "furigana": [
+            {
+              "text": "まで"
+            }
+          ]
         },
         {
           "text": "行って",
           "lemma": "行く",
           "reading": "いって",
           "role": "glagol",
-          "explanation_hr": "行く (ići) u te-obliku, povezuje s idućom radnjom: otišao sam i…"
+          "explanation_hr": "行く (ići) u te-obliku, povezuje s idućom radnjom: otišao sam i…",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "って"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "新幹線",
           "lemma": "新幹線",
           "reading": "しんかんせん",
           "role": "imenica",
-          "explanation_hr": "Shinkansen, japanski brzi vlak."
+          "explanation_hr": "Shinkansen, japanski brzi vlak.",
+          "furigana": [
+            {
+              "text": "新幹線",
+              "reading": "しんかんせん"
+            }
+          ]
         },
         {
           "text": "に",
           "lemma": "に",
           "reading": "に",
           "role": "cestica",
-          "explanation_hr": "Označava na što se presjeda."
+          "explanation_hr": "Označava na što se presjeda.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ]
         },
         {
           "text": "乗り換えました",
           "lemma": "乗り換える",
           "reading": "のりかえました",
           "role": "glagol",
-          "explanation_hr": "乗り換える (presjesti) + ました, uljudno prošlo vrijeme."
+          "explanation_hr": "乗り換える (presjesti) + ました, uljudno prošlo vrijeme.",
+          "furigana": [
+            {
+              "text": "乗",
+              "reading": "の"
+            },
+            {
+              "text": "り"
+            },
+            {
+              "text": "換",
+              "reading": "か"
+            },
+            {
+              "text": "えました"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -181,84 +302,152 @@
           "lemma": "仙台",
           "reading": "せんだい",
           "role": "mjesto",
-          "explanation_hr": "Sendai, grad na sjeveroistoku Japana."
+          "explanation_hr": "Sendai, grad na sjeveroistoku Japana.",
+          "furigana": [
+            {
+              "text": "仙台",
+              "reading": "せんだい"
+            }
+          ]
         },
         {
           "text": "で",
           "lemma": "で",
           "reading": "で",
           "role": "cestica",
-          "explanation_hr": "Označava mjesto: u Sendaiju."
+          "explanation_hr": "Označava mjesto: u Sendaiju.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ]
         },
         {
           "text": "は",
           "lemma": "は",
           "reading": "は",
           "role": "cestica",
-          "explanation_hr": "Označava temu; では naglašava »što se tiče Sendaija«."
+          "explanation_hr": "Označava temu; では naglašava »što se tiče Sendaija«.",
+          "furigana": [
+            {
+              "text": "は"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "窓",
           "lemma": "窓",
           "reading": "まど",
           "role": "imenica",
-          "explanation_hr": "Prozor (vlaka)."
+          "explanation_hr": "Prozor (vlaka).",
+          "furigana": [
+            {
+              "text": "窓",
+              "reading": "まど"
+            }
+          ]
         },
         {
           "text": "から",
           "lemma": "から",
           "reading": "から",
           "role": "cestica",
-          "explanation_hr": "Iz, kroz: pogled kroz prozor."
+          "explanation_hr": "Iz, kroz: pogled kroz prozor.",
+          "furigana": [
+            {
+              "text": "から"
+            }
+          ]
         },
         {
           "text": "緑",
           "lemma": "緑",
           "reading": "みどり",
           "role": "imenica",
-          "explanation_hr": "Zelena boja, zelenilo."
+          "explanation_hr": "Zelena boja, zelenilo.",
+          "furigana": [
+            {
+              "text": "緑",
+              "reading": "みどり"
+            }
+          ]
         },
         {
           "text": "の",
           "lemma": "の",
           "reading": "の",
           "role": "cestica",
-          "explanation_hr": "Povezuje imenice: zelene planine."
+          "explanation_hr": "Povezuje imenice: zelene planine.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ]
         },
         {
           "text": "山",
           "lemma": "山",
           "reading": "やま",
           "role": "subjekt",
-          "explanation_hr": "Planina, brdo; ono što se vidi."
+          "explanation_hr": "Planina, brdo; ono što se vidi.",
+          "furigana": [
+            {
+              "text": "山",
+              "reading": "やま"
+            }
+          ]
         },
         {
           "text": "が",
           "lemma": "が",
           "reading": "が",
           "role": "cestica",
-          "explanation_hr": "Označava subjekt uz glagol 見える."
+          "explanation_hr": "Označava subjekt uz glagol 見える.",
+          "furigana": [
+            {
+              "text": "が"
+            }
+          ]
         },
         {
           "text": "見えました",
           "lemma": "見える",
           "reading": "みえました",
           "role": "glagol",
-          "explanation_hr": "見える (vidjeti se, biti vidljiv) + ました, uljudno prošlo vrijeme."
+          "explanation_hr": "見える (vidjeti se, biti vidljiv) + ました, uljudno prošlo vrijeme.",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "えました"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -278,77 +467,139 @@
           "lemma": "東京",
           "reading": "とうきょう",
           "role": "mjesto",
-          "explanation_hr": "Tokio, glavni grad Japana."
+          "explanation_hr": "Tokio, glavni grad Japana.",
+          "furigana": [
+            {
+              "text": "東京",
+              "reading": "とうきょう"
+            }
+          ]
         },
         {
           "text": "駅",
           "lemma": "駅",
           "reading": "えき",
           "role": "mjesto",
-          "explanation_hr": "Stanica; 東京駅 = stanica Tokio."
+          "explanation_hr": "Stanica; 東京駅 = stanica Tokio.",
+          "furigana": [
+            {
+              "text": "駅",
+              "reading": "えき"
+            }
+          ]
         },
         {
           "text": "の",
           "lemma": "の",
           "reading": "の",
           "role": "cestica",
-          "explanation_hr": "Posvojna čestica: peron stanice."
+          "explanation_hr": "Posvojna čestica: peron stanice.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ]
         },
         {
           "text": "ホーム",
           "lemma": "ホーム",
           "reading": "ホーム",
           "role": "mjesto",
-          "explanation_hr": "Peron na stanici."
+          "explanation_hr": "Peron na stanici.",
+          "furigana": [
+            {
+              "text": "ホーム"
+            }
+          ]
         },
         {
           "text": "は",
           "lemma": "は",
           "reading": "は",
           "role": "cestica",
-          "explanation_hr": "Označava temu rečenice: što se tiče perona."
+          "explanation_hr": "Označava temu rečenice: što se tiče perona.",
+          "furigana": [
+            {
+              "text": "は"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "人",
           "lemma": "人",
           "reading": "ひと",
           "role": "subjekt",
-          "explanation_hr": "Ljudi, osobe."
+          "explanation_hr": "Ljudi, osobe.",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ]
         },
         {
           "text": "が",
           "lemma": "が",
           "reading": "が",
           "role": "cestica",
-          "explanation_hr": "Označava subjekt: ljudi."
+          "explanation_hr": "Označava subjekt: ljudi.",
+          "furigana": [
+            {
+              "text": "が"
+            }
+          ]
         },
         {
           "text": "とても",
           "lemma": "とても",
           "reading": "とても",
           "role": "prilog",
-          "explanation_hr": "Jako, vrlo."
+          "explanation_hr": "Jako, vrlo.",
+          "furigana": [
+            {
+              "text": "とても"
+            }
+          ]
         },
         {
           "text": "多かったです",
           "lemma": "多い",
           "reading": "おおかったです",
           "role": "pridjev",
-          "explanation_hr": "多い (mnogo) u prošlom vremenu + です, uljudno: bilo je mnogo."
+          "explanation_hr": "多い (mnogo) u prošlom vremenu + です, uljudno: bilo je mnogo.",
+          "furigana": [
+            {
+              "text": "多",
+              "reading": "おお"
+            },
+            {
+              "text": "かったです"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -369,84 +620,156 @@
           "lemma": "金沢",
           "reading": "かなざわ",
           "role": "mjesto",
-          "explanation_hr": "Kanazawa, grad uz Japansko more."
+          "explanation_hr": "Kanazawa, grad uz Japansko more.",
+          "furigana": [
+            {
+              "text": "金沢",
+              "reading": "かなざわ"
+            }
+          ]
         },
         {
           "text": "で",
           "lemma": "で",
           "reading": "で",
           "role": "cestica",
-          "explanation_hr": "Mjesto radnje: u Kanazawi."
+          "explanation_hr": "Mjesto radnje: u Kanazawi.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ]
         },
         {
           "text": "買った",
           "lemma": "買う",
           "reading": "かった",
           "role": "glagol",
-          "explanation_hr": "買う (kupiti) u običnom prošlom obliku, opisuje bento: koji sam kupio."
+          "explanation_hr": "買う (kupiti) u običnom prošlom obliku, opisuje bento: koji sam kupio.",
+          "furigana": [
+            {
+              "text": "買",
+              "reading": "か"
+            },
+            {
+              "text": "った"
+            }
+          ]
         },
         {
           "text": "弁当",
           "lemma": "弁当",
           "reading": "べんとう",
           "role": "objekt",
-          "explanation_hr": "Bento, obrok u kutiji."
+          "explanation_hr": "Bento, obrok u kutiji.",
+          "furigana": [
+            {
+              "text": "弁当",
+              "reading": "べんとう"
+            }
+          ]
         },
         {
           "text": "を",
           "lemma": "を",
           "reading": "を",
           "role": "cestica",
-          "explanation_hr": "Označava izravni objekt (bento)."
+          "explanation_hr": "Označava izravni objekt (bento).",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "新幹線",
           "lemma": "新幹線",
           "reading": "しんかんせん",
           "role": "imenica",
-          "explanation_hr": "Shinkansen, brzi vlak."
+          "explanation_hr": "Shinkansen, brzi vlak.",
+          "furigana": [
+            {
+              "text": "新幹線",
+              "reading": "しんかんせん"
+            }
+          ]
         },
         {
           "text": "の",
           "lemma": "の",
           "reading": "の",
           "role": "cestica",
-          "explanation_hr": "Povezuje imenice: unutrašnjost shinkansena."
+          "explanation_hr": "Povezuje imenice: unutrašnjost shinkansena.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ]
         },
         {
           "text": "中",
           "lemma": "中",
           "reading": "なか",
           "role": "mjesto",
-          "explanation_hr": "Unutrašnjost, unutra."
+          "explanation_hr": "Unutrašnjost, unutra.",
+          "furigana": [
+            {
+              "text": "中",
+              "reading": "なか"
+            }
+          ]
         },
         {
           "text": "で",
           "lemma": "で",
           "reading": "で",
           "role": "cestica",
-          "explanation_hr": "Mjesto radnje: u vlaku."
+          "explanation_hr": "Mjesto radnje: u vlaku.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ]
         },
         {
           "text": "食べました",
           "lemma": "食べる",
           "reading": "たべました",
           "role": "glagol",
-          "explanation_hr": "食べる (jesti) + ました, uljudno prošlo vrijeme: pojeo sam."
+          "explanation_hr": "食べる (jesti) + ました, uljudno prošlo vrijeme: pojeo sam.",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べました"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -466,84 +789,156 @@
           "lemma": "福岡",
           "reading": "ふくおか",
           "role": "mjesto",
-          "explanation_hr": "Fukuoka, veliki grad na otoku Kyushu."
+          "explanation_hr": "Fukuoka, veliki grad na otoku Kyushu.",
+          "furigana": [
+            {
+              "text": "福岡",
+              "reading": "ふくおか"
+            }
+          ]
         },
         {
           "text": "の",
           "lemma": "の",
           "reading": "の",
           "role": "cestica",
-          "explanation_hr": "Povezuje imenice: stanica Hakata u Fukuoki."
+          "explanation_hr": "Povezuje imenice: stanica Hakata u Fukuoki.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ]
         },
         {
           "text": "博多",
           "lemma": "博多",
           "reading": "はかた",
           "role": "mjesto",
-          "explanation_hr": "Hakata, dio Fukuoke s glavnom stanicom."
+          "explanation_hr": "Hakata, dio Fukuoke s glavnom stanicom.",
+          "furigana": [
+            {
+              "text": "博多",
+              "reading": "はかた"
+            }
+          ]
         },
         {
           "text": "駅",
           "lemma": "駅",
           "reading": "えき",
           "role": "mjesto",
-          "explanation_hr": "Stanica."
+          "explanation_hr": "Stanica.",
+          "furigana": [
+            {
+              "text": "駅",
+              "reading": "えき"
+            }
+          ]
         },
         {
           "text": "に",
           "lemma": "に",
           "reading": "に",
           "role": "cestica",
-          "explanation_hr": "Označava cilj dolaska: na stanicu."
+          "explanation_hr": "Označava cilj dolaska: na stanicu.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ]
         },
         {
           "text": "着いた",
           "lemma": "着く",
           "reading": "ついた",
           "role": "glagol",
-          "explanation_hr": "着く (stići) u običnom prošlom obliku."
+          "explanation_hr": "着く (stići) u običnom prošlom obliku.",
+          "furigana": [
+            {
+              "text": "着",
+              "reading": "つ"
+            },
+            {
+              "text": "いた"
+            }
+          ]
         },
         {
           "text": "とき",
           "lemma": "とき",
           "reading": "とき",
           "role": "vrijeme",
-          "explanation_hr": "Kad, u trenutku kada: kad sam stigao."
+          "explanation_hr": "Kad, u trenutku kada: kad sam stigao.",
+          "furigana": [
+            {
+              "text": "とき"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "雨",
           "lemma": "雨",
           "reading": "あめ",
           "role": "subjekt",
-          "explanation_hr": "Kiša."
+          "explanation_hr": "Kiša.",
+          "furigana": [
+            {
+              "text": "雨",
+              "reading": "あめ"
+            }
+          ]
         },
         {
           "text": "が",
           "lemma": "が",
           "reading": "が",
           "role": "cestica",
-          "explanation_hr": "Označava subjekt: kiša."
+          "explanation_hr": "Označava subjekt: kiša.",
+          "furigana": [
+            {
+              "text": "が"
+            }
+          ]
         },
         {
           "text": "降っていました",
           "lemma": "降る",
           "reading": "ふっていました",
           "role": "glagol",
-          "explanation_hr": "降る (padati) + ていました, trajna radnja u prošlosti: padala je."
+          "explanation_hr": "降る (padati) + ていました, trajna radnja u prošlosti: padala je.",
+          "furigana": [
+            {
+              "text": "降",
+              "reading": "ふ"
+            },
+            {
+              "text": "っていました"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -562,63 +957,115 @@
           "lemma": "最後",
           "reading": "さいご",
           "role": "imenica",
-          "explanation_hr": "Kraj, posljednje."
+          "explanation_hr": "Kraj, posljednje.",
+          "furigana": [
+            {
+              "text": "最後",
+              "reading": "さいご"
+            }
+          ]
         },
         {
           "text": "に",
           "lemma": "に",
           "reading": "に",
           "role": "cestica",
-          "explanation_hr": "最後に = na kraju, napokon."
+          "explanation_hr": "最後に = na kraju, napokon.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "南",
           "lemma": "南",
           "reading": "みなみ",
           "role": "imenica",
-          "explanation_hr": "Jug."
+          "explanation_hr": "Jug.",
+          "furigana": [
+            {
+              "text": "南",
+              "reading": "みなみ"
+            }
+          ]
         },
         {
           "text": "の",
           "lemma": "の",
           "reading": "の",
           "role": "cestica",
-          "explanation_hr": "Povezuje imenice: Nagasaki na jugu."
+          "explanation_hr": "Povezuje imenice: Nagasaki na jugu.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ]
         },
         {
           "text": "長崎",
           "lemma": "長崎",
           "reading": "ながさき",
           "role": "mjesto",
-          "explanation_hr": "Nagasaki, grad na jugozapadu Japana."
+          "explanation_hr": "Nagasaki, grad na jugozapadu Japana.",
+          "furigana": [
+            {
+              "text": "長崎",
+              "reading": "ながさき"
+            }
+          ]
         },
         {
           "text": "に",
           "lemma": "に",
           "reading": "に",
           "role": "cestica",
-          "explanation_hr": "Označava cilj dolaska: u Nagasaki."
+          "explanation_hr": "Označava cilj dolaska: u Nagasaki.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ]
         },
         {
           "text": "着きました",
           "lemma": "着く",
           "reading": "つきました",
           "role": "glagol",
-          "explanation_hr": "着く (stići) + ました, uljudno prošlo vrijeme."
+          "explanation_hr": "着く (stići) + ました, uljudno prošlo vrijeme.",
+          "furigana": [
+            {
+              "text": "着",
+              "reading": "つ"
+            },
+            {
+              "text": "きました"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     },
@@ -638,70 +1085,131 @@
           "lemma": "北",
           "reading": "きた",
           "role": "imenica",
-          "explanation_hr": "Sjever."
+          "explanation_hr": "Sjever.",
+          "furigana": [
+            {
+              "text": "北",
+              "reading": "きた"
+            }
+          ]
         },
         {
           "text": "から",
           "lemma": "から",
           "reading": "から",
           "role": "cestica",
-          "explanation_hr": "Od (početna točka): od sjevera."
+          "explanation_hr": "Od (početna točka): od sjevera.",
+          "furigana": [
+            {
+              "text": "から"
+            }
+          ]
         },
         {
           "text": "南",
           "lemma": "南",
           "reading": "みなみ",
           "role": "imenica",
-          "explanation_hr": "Jug."
+          "explanation_hr": "Jug.",
+          "furigana": [
+            {
+              "text": "南",
+              "reading": "みなみ"
+            }
+          ]
         },
         {
           "text": "まで",
           "lemma": "まで",
           "reading": "まで",
           "role": "cestica",
-          "explanation_hr": "Do (krajnja točka): do juga."
+          "explanation_hr": "Do (krajnja točka): do juga.",
+          "furigana": [
+            {
+              "text": "まで"
+            }
+          ]
         },
         {
           "text": "、",
           "lemma": "、",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Zarez, kratka stanka."
+          "explanation_hr": "Zarez, kratka stanka.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ]
         },
         {
           "text": "長くて",
           "lemma": "長い",
           "reading": "ながくて",
           "role": "pridjev",
-          "explanation_hr": "長い (dug) u te-obliku, povezuje s idućim pridjevom: dug i…"
+          "explanation_hr": "長い (dug) u te-obliku, povezuje s idućim pridjevom: dug i…",
+          "furigana": [
+            {
+              "text": "長",
+              "reading": "なが"
+            },
+            {
+              "text": "くて"
+            }
+          ]
         },
         {
           "text": "楽しい",
           "lemma": "楽しい",
           "reading": "たのしい",
           "role": "pridjev",
-          "explanation_hr": "Zabavan, ugodan."
+          "explanation_hr": "Zabavan, ugodan.",
+          "furigana": [
+            {
+              "text": "楽",
+              "reading": "たの"
+            },
+            {
+              "text": "しい"
+            }
+          ]
         },
         {
           "text": "旅行",
           "lemma": "旅行",
           "reading": "りょこう",
           "role": "imenica",
-          "explanation_hr": "Putovanje."
+          "explanation_hr": "Putovanje.",
+          "furigana": [
+            {
+              "text": "旅行",
+              "reading": "りょこう"
+            }
+          ]
         },
         {
           "text": "でした",
           "lemma": "です",
           "reading": "でした",
           "role": "kopula",
-          "explanation_hr": "です u prošlom vremenu: bilo je."
+          "explanation_hr": "です u prošlom vremenu: bilo je.",
+          "furigana": [
+            {
+              "text": "でした"
+            }
+          ]
         },
         {
           "text": "。",
           "lemma": "。",
           "reading": "",
           "role": "interpunkcija",
-          "explanation_hr": "Točka, kraj rečenice."
+          "explanation_hr": "Točka, kraj rečenice.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ]
         }
       ]
     }
