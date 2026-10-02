@@ -1,0 +1,17 @@
+{
+  "name": "Nihongo Shadowing",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
+  "features": {
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": { "label": "Aplikacija", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["anthropic.claude-code", "bradlc.vscode-tailwindcss"]
+    }
+  }
+}
