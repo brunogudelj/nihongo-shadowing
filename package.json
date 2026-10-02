@@ -8,13 +8,15 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "tts": "node --env-file-if-exists=.env pipeline/tts.mjs"
+    "tts": "node --env-file-if-exists=.env pipeline/tts.mjs",
+    "story": "node --env-file-if-exists=.env pipeline/story.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
@@ -24,6 +26,7 @@
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
     "vite": "^8.3.0",
-    "vite-plugin-pwa": "^1.3.0"
+    "vite-plugin-pwa": "^1.3.0",
+    "yaml": "^2.9.1"
   }
 }

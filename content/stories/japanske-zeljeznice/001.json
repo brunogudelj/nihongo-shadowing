@@ -1,0 +1,709 @@
+{
+  "id": "japanske-zeljeznice-001",
+  "theme": "japanske-zeljeznice",
+  "model": "claude-opus-5-5",
+  "created": "2026-10-02",
+  "needs_review": [],
+  "title_ja": "新幹線で札幌から長崎へ",
+  "title_hr": "Shinkansenom od Sappora do Nagasakija",
+  "sentences": [
+    {
+      "ja": "朝、札幌駅で切符を買いました。",
+      "hr": "Ujutro sam na stanici Sapporo kupio kartu.",
+      "chunks": [
+        "朝、",
+        "札幌駅で",
+        "切符を",
+        "買いました。"
+      ],
+      "words": [
+        {
+          "text": "朝",
+          "lemma": "朝",
+          "reading": "あさ",
+          "role": "vrijeme",
+          "explanation_hr": "Jutro; ovdje znači »ujutro«, kada se radnja dogodila."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "札幌",
+          "lemma": "札幌",
+          "reading": "さっぽろ",
+          "role": "mjesto",
+          "explanation_hr": "Sapporo, grad na sjeveru Japana (Hokkaido)."
+        },
+        {
+          "text": "駅",
+          "lemma": "駅",
+          "reading": "えき",
+          "role": "mjesto",
+          "explanation_hr": "Stanica; 札幌駅 = stanica Sapporo."
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava mjesto gdje se radnja odvija."
+        },
+        {
+          "text": "切符",
+          "lemma": "切符",
+          "reading": "きっぷ",
+          "role": "objekt",
+          "explanation_hr": "Vozna karta."
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava izravni objekt (kartu)."
+        },
+        {
+          "text": "買いました",
+          "lemma": "買う",
+          "reading": "かいました",
+          "role": "glagol",
+          "explanation_hr": "買う (kupiti) + ました, uljudni oblik prošlog vremena: kupio sam."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "電車で函館まで行って、新幹線に乗り換えました。",
+      "hr": "Vlakom sam otišao do Hakodatea i presjeo na shinkansen.",
+      "chunks": [
+        "電車で",
+        "函館まで",
+        "行って、",
+        "新幹線に",
+        "乗り換えました。"
+      ],
+      "words": [
+        {
+          "text": "電車",
+          "lemma": "電車",
+          "reading": "でんしゃ",
+          "role": "imenica",
+          "explanation_hr": "Vlak (električni, običan)."
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Ovdje označava prijevozno sredstvo: vlakom."
+        },
+        {
+          "text": "函館",
+          "lemma": "函館",
+          "reading": "はこだて",
+          "role": "mjesto",
+          "explanation_hr": "Hakodate, grad na jugu Hokkaida."
+        },
+        {
+          "text": "まで",
+          "lemma": "まで",
+          "reading": "まで",
+          "role": "cestica",
+          "explanation_hr": "Do (krajnja točka): do Hakodatea."
+        },
+        {
+          "text": "行って",
+          "lemma": "行く",
+          "reading": "いって",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) u te-obliku, povezuje s idućom radnjom: otišao sam i…"
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "新幹線",
+          "lemma": "新幹線",
+          "reading": "しんかんせん",
+          "role": "imenica",
+          "explanation_hr": "Shinkansen, japanski brzi vlak."
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava na što se presjeda."
+        },
+        {
+          "text": "乗り換えました",
+          "lemma": "乗り換える",
+          "reading": "のりかえました",
+          "role": "glagol",
+          "explanation_hr": "乗り換える (presjesti) + ました, uljudno prošlo vrijeme."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "仙台では、窓から緑の山が見えました。",
+      "hr": "U Sendaiju sam kroz prozor vidio zelene planine.",
+      "chunks": [
+        "仙台では、",
+        "窓から",
+        "緑の",
+        "山が",
+        "見えました。"
+      ],
+      "words": [
+        {
+          "text": "仙台",
+          "lemma": "仙台",
+          "reading": "せんだい",
+          "role": "mjesto",
+          "explanation_hr": "Sendai, grad na sjeveroistoku Japana."
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: u Sendaiju."
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu; では naglašava »što se tiče Sendaija«."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "窓",
+          "lemma": "窓",
+          "reading": "まど",
+          "role": "imenica",
+          "explanation_hr": "Prozor (vlaka)."
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Iz, kroz: pogled kroz prozor."
+        },
+        {
+          "text": "緑",
+          "lemma": "緑",
+          "reading": "みどり",
+          "role": "imenica",
+          "explanation_hr": "Zelena boja, zelenilo."
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: zelene planine."
+        },
+        {
+          "text": "山",
+          "lemma": "山",
+          "reading": "やま",
+          "role": "subjekt",
+          "explanation_hr": "Planina, brdo; ono što se vidi."
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt uz glagol 見える."
+        },
+        {
+          "text": "見えました",
+          "lemma": "見える",
+          "reading": "みえました",
+          "role": "glagol",
+          "explanation_hr": "見える (vidjeti se, biti vidljiv) + ました, uljudno prošlo vrijeme."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "東京駅のホームは、人がとても多かったです。",
+      "hr": "Na peronu stanice Tokio bilo je jako puno ljudi.",
+      "chunks": [
+        "東京駅の",
+        "ホームは、",
+        "人が",
+        "とても",
+        "多かったです。"
+      ],
+      "words": [
+        {
+          "text": "東京",
+          "lemma": "東京",
+          "reading": "とうきょう",
+          "role": "mjesto",
+          "explanation_hr": "Tokio, glavni grad Japana."
+        },
+        {
+          "text": "駅",
+          "lemma": "駅",
+          "reading": "えき",
+          "role": "mjesto",
+          "explanation_hr": "Stanica; 東京駅 = stanica Tokio."
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Posvojna čestica: peron stanice."
+        },
+        {
+          "text": "ホーム",
+          "lemma": "ホーム",
+          "reading": "ホーム",
+          "role": "mjesto",
+          "explanation_hr": "Peron na stanici."
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice: što se tiče perona."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "subjekt",
+          "explanation_hr": "Ljudi, osobe."
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: ljudi."
+        },
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "prilog",
+          "explanation_hr": "Jako, vrlo."
+        },
+        {
+          "text": "多かったです",
+          "lemma": "多い",
+          "reading": "おおかったです",
+          "role": "pridjev",
+          "explanation_hr": "多い (mnogo) u prošlom vremenu + です, uljudno: bilo je mnogo."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "金沢で買った弁当を、新幹線の中で食べました。",
+      "hr": "Bento koji sam kupio u Kanazawi pojeo sam u shinkansenu.",
+      "chunks": [
+        "金沢で",
+        "買った",
+        "弁当を、",
+        "新幹線の",
+        "中で",
+        "食べました。"
+      ],
+      "words": [
+        {
+          "text": "金沢",
+          "lemma": "金沢",
+          "reading": "かなざわ",
+          "role": "mjesto",
+          "explanation_hr": "Kanazawa, grad uz Japansko more."
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Mjesto radnje: u Kanazawi."
+        },
+        {
+          "text": "買った",
+          "lemma": "買う",
+          "reading": "かった",
+          "role": "glagol",
+          "explanation_hr": "買う (kupiti) u običnom prošlom obliku, opisuje bento: koji sam kupio."
+        },
+        {
+          "text": "弁当",
+          "lemma": "弁当",
+          "reading": "べんとう",
+          "role": "objekt",
+          "explanation_hr": "Bento, obrok u kutiji."
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava izravni objekt (bento)."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "新幹線",
+          "lemma": "新幹線",
+          "reading": "しんかんせん",
+          "role": "imenica",
+          "explanation_hr": "Shinkansen, brzi vlak."
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: unutrašnjost shinkansena."
+        },
+        {
+          "text": "中",
+          "lemma": "中",
+          "reading": "なか",
+          "role": "mjesto",
+          "explanation_hr": "Unutrašnjost, unutra."
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Mjesto radnje: u vlaku."
+        },
+        {
+          "text": "食べました",
+          "lemma": "食べる",
+          "reading": "たべました",
+          "role": "glagol",
+          "explanation_hr": "食べる (jesti) + ました, uljudno prošlo vrijeme: pojeo sam."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "福岡の博多駅に着いたとき、雨が降っていました。",
+      "hr": "Kad sam stigao na stanicu Hakata u Fukuoki, padala je kiša.",
+      "chunks": [
+        "福岡の",
+        "博多駅に",
+        "着いたとき、",
+        "雨が",
+        "降っていました。"
+      ],
+      "words": [
+        {
+          "text": "福岡",
+          "lemma": "福岡",
+          "reading": "ふくおか",
+          "role": "mjesto",
+          "explanation_hr": "Fukuoka, veliki grad na otoku Kyushu."
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: stanica Hakata u Fukuoki."
+        },
+        {
+          "text": "博多",
+          "lemma": "博多",
+          "reading": "はかた",
+          "role": "mjesto",
+          "explanation_hr": "Hakata, dio Fukuoke s glavnom stanicom."
+        },
+        {
+          "text": "駅",
+          "lemma": "駅",
+          "reading": "えき",
+          "role": "mjesto",
+          "explanation_hr": "Stanica."
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava cilj dolaska: na stanicu."
+        },
+        {
+          "text": "着いた",
+          "lemma": "着く",
+          "reading": "ついた",
+          "role": "glagol",
+          "explanation_hr": "着く (stići) u običnom prošlom obliku."
+        },
+        {
+          "text": "とき",
+          "lemma": "とき",
+          "reading": "とき",
+          "role": "vrijeme",
+          "explanation_hr": "Kad, u trenutku kada: kad sam stigao."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "雨",
+          "lemma": "雨",
+          "reading": "あめ",
+          "role": "subjekt",
+          "explanation_hr": "Kiša."
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: kiša."
+        },
+        {
+          "text": "降っていました",
+          "lemma": "降る",
+          "reading": "ふっていました",
+          "role": "glagol",
+          "explanation_hr": "降る (padati) + ていました, trajna radnja u prošlosti: padala je."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "最後に、南の長崎に着きました。",
+      "hr": "Na kraju sam stigao u Nagasaki na jugu.",
+      "chunks": [
+        "最後に、",
+        "南の",
+        "長崎に",
+        "着きました。"
+      ],
+      "words": [
+        {
+          "text": "最後",
+          "lemma": "最後",
+          "reading": "さいご",
+          "role": "imenica",
+          "explanation_hr": "Kraj, posljednje."
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "最後に = na kraju, napokon."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "南",
+          "lemma": "南",
+          "reading": "みなみ",
+          "role": "imenica",
+          "explanation_hr": "Jug."
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: Nagasaki na jugu."
+        },
+        {
+          "text": "長崎",
+          "lemma": "長崎",
+          "reading": "ながさき",
+          "role": "mjesto",
+          "explanation_hr": "Nagasaki, grad na jugozapadu Japana."
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava cilj dolaska: u Nagasaki."
+        },
+        {
+          "text": "着きました",
+          "lemma": "着く",
+          "reading": "つきました",
+          "role": "glagol",
+          "explanation_hr": "着く (stići) + ました, uljudno prošlo vrijeme."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    },
+    {
+      "ja": "北から南まで、長くて楽しい旅行でした。",
+      "hr": "Od sjevera do juga, bilo je to dugo i zabavno putovanje.",
+      "chunks": [
+        "北から",
+        "南まで、",
+        "長くて",
+        "楽しい",
+        "旅行でした。"
+      ],
+      "words": [
+        {
+          "text": "北",
+          "lemma": "北",
+          "reading": "きた",
+          "role": "imenica",
+          "explanation_hr": "Sjever."
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Od (početna točka): od sjevera."
+        },
+        {
+          "text": "南",
+          "lemma": "南",
+          "reading": "みなみ",
+          "role": "imenica",
+          "explanation_hr": "Jug."
+        },
+        {
+          "text": "まで",
+          "lemma": "まで",
+          "reading": "まで",
+          "role": "cestica",
+          "explanation_hr": "Do (krajnja točka): do juga."
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, kratka stanka."
+        },
+        {
+          "text": "長くて",
+          "lemma": "長い",
+          "reading": "ながくて",
+          "role": "pridjev",
+          "explanation_hr": "長い (dug) u te-obliku, povezuje s idućim pridjevom: dug i…"
+        },
+        {
+          "text": "楽しい",
+          "lemma": "楽しい",
+          "reading": "たのしい",
+          "role": "pridjev",
+          "explanation_hr": "Zabavan, ugodan."
+        },
+        {
+          "text": "旅行",
+          "lemma": "旅行",
+          "reading": "りょこう",
+          "role": "imenica",
+          "explanation_hr": "Putovanje."
+        },
+        {
+          "text": "でした",
+          "lemma": "です",
+          "reading": "でした",
+          "role": "kopula",
+          "explanation_hr": "です u prošlom vremenu: bilo je."
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka, kraj rečenice."
+        }
+      ]
+    }
+  ]
+}
