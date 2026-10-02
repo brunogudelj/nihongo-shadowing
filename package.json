@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "tts": "node --env-file-if-exists=.env pipeline/tts.mjs",
     "story": "node --env-file-if-exists=.env pipeline/story.mjs",
-    "furigana": "node pipeline/furigana.mjs"
+    "furigana": "node pipeline/furigana.mjs",
+    "audio": "node --env-file-if-exists=.env pipeline/audio.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
@@ -24,6 +25,7 @@
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "kuromoji": "^0.1.2",
+    "microsoft-cognitiveservices-speech-sdk": "^1.52.0",
     "oxlint": "^1.81.0",
     "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2",
