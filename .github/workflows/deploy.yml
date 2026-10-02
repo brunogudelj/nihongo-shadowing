@@ -1,10 +1,13 @@
 # Nakon svakog pusha na main izgradi aplikaciju i objavi je na GitHub Pages.
+# Poziva ga i robot "Nova priča" (workflow_call), jer GitHub ne pokreće objavu
+# sam kad robot spremi promjene.
 name: Objava na GitHub Pages
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: read
@@ -20,7 +23,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Najnovije stanje grane (uključuje priču koju je robot upravo spremio).
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: 24

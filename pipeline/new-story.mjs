@@ -7,7 +7,7 @@ import { spawnSync } from 'node:child_process'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 
 const themeId = process.argv[2]
-if (!themeId || !existsSync(`themes/${themeId}.yaml`)) {
+if (!themeId || !/^[a-z0-9-]+$/.test(themeId) || !existsSync(`themes/${themeId}.yaml`)) {
   const themes = readdirSync('themes').map((f) => f.replace(/\.ya?ml$/, ''))
   console.error('Napiši temu, npr.: npm run nova-prica -- kyushu')
   console.error(`Teme: ${themes.join(', ')}`)
