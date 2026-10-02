@@ -1,0 +1,1168 @@
+{
+  "id": "putovanje-po-japanu-001",
+  "theme": "putovanje-po-japanu",
+  "model": "claude-opus-5-5",
+  "created": "2026-10-02",
+  "needs_review": [
+    "furigana: rečenica 1: 日本: rječnik kaže にっぽん, Claude kaže にほん"
+  ],
+  "fond": {
+    "pokrivenost": 97.3,
+    "izvan_popisa": [
+      "本当に (rečenica 8)"
+    ]
+  },
+  "trosak_usd": 0.126,
+  "title_ja": "京都の旅行",
+  "title_hr": "Putovanje u Kyoto",
+  "sentences": [
+    {
+      "ja": "先週、クロアチアから日本に来ました。",
+      "hr": "Prošli tjedan došao sam iz Hrvatske u Japan.",
+      "chunks": [
+        "先週、",
+        "クロアチアから",
+        "日本に",
+        "来ました。"
+      ],
+      "words": [
+        {
+          "text": "先週",
+          "lemma": "先週",
+          "reading": "せんしゅう",
+          "role": "vrijeme",
+          "explanation_hr": "Prošli tjedan, označava vrijeme radnje.",
+          "furigana": [
+            {
+              "text": "先週",
+              "reading": "せんしゅう"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 688
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 763,
+          "end_ms": 850
+        },
+        {
+          "text": "クロアチア",
+          "lemma": "クロアチア",
+          "reading": "クロアチア",
+          "role": "mjesto",
+          "explanation_hr": "Hrvatska, mjesto polaska.",
+          "furigana": [
+            {
+              "text": "クロアチア"
+            }
+          ],
+          "start_ms": 863,
+          "end_ms": 1488
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava polazište (iz).",
+          "furigana": [
+            {
+              "text": "から"
+            }
+          ],
+          "start_ms": 1500,
+          "end_ms": 1713
+        },
+        {
+          "text": "日本",
+          "lemma": "日本",
+          "reading": "にほん",
+          "role": "mjesto",
+          "explanation_hr": "Japan, cilj dolaska.",
+          "furigana": [
+            {
+              "text": "日本",
+              "reading": "にっぽん"
+            }
+          ],
+          "start_ms": 1725,
+          "end_ms": 2138
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Čestica koja označava cilj kretanja (u).",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 2150,
+          "end_ms": 2288
+        },
+        {
+          "text": "来ました",
+          "lemma": "来る",
+          "reading": "きました",
+          "role": "glagol",
+          "explanation_hr": "来る (doći) + ました, uljudni oblik prošlog vremena.",
+          "furigana": [
+            {
+              "text": "来",
+              "reading": "き"
+            },
+            {
+              "text": "ました"
+            }
+          ],
+          "start_ms": 2300,
+          "end_ms": 2888
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2900,
+          "end_ms": 3000
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-1.mp3",
+      "duration_ms": 3700,
+      "full_start_ms": 75,
+      "full_end_ms": 3000
+    },
+    {
+      "ja": "今は京都のホテルにいます。",
+      "hr": "Sada sam u hotelu u Kyotu.",
+      "chunks": [
+        "今は",
+        "京都の",
+        "ホテルに",
+        "います。"
+      ],
+      "words": [
+        {
+          "text": "今",
+          "lemma": "今",
+          "reading": "いま",
+          "role": "vrijeme",
+          "explanation_hr": "Sada.",
+          "furigana": [
+            {
+              "text": "今",
+              "reading": "いま"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 338
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Čestica teme; ističe 'sada' kao temu.",
+          "furigana": [
+            {
+              "text": "は"
+            }
+          ],
+          "start_ms": 350,
+          "end_ms": 500
+        },
+        {
+          "text": "京都",
+          "lemma": "京都",
+          "reading": "きょうと",
+          "role": "mjesto",
+          "explanation_hr": "Kyoto, grad u Japanu.",
+          "furigana": [
+            {
+              "text": "京都",
+              "reading": "きょうと"
+            }
+          ],
+          "start_ms": 513,
+          "end_ms": 913
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: hotel u Kyotu.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 925,
+          "end_ms": 1038
+        },
+        {
+          "text": "ホテル",
+          "lemma": "ホテル",
+          "reading": "ホテル",
+          "role": "mjesto",
+          "explanation_hr": "Hotel.",
+          "furigana": [
+            {
+              "text": "ホテル"
+            }
+          ],
+          "start_ms": 1050,
+          "end_ms": 1425
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto gdje se netko nalazi.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 1438,
+          "end_ms": 1550
+        },
+        {
+          "text": "います",
+          "lemma": "いる",
+          "reading": "います",
+          "role": "glagol",
+          "explanation_hr": "いる (biti, nalaziti se, za živa bića) + ます, uljudni oblik.",
+          "furigana": [
+            {
+              "text": "います"
+            }
+          ],
+          "start_ms": 1563,
+          "end_ms": 2050
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2063,
+          "end_ms": 2163
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-2.mp3",
+      "duration_ms": 2863,
+      "full_start_ms": 3813,
+      "full_end_ms": 5863
+    },
+    {
+      "ja": "今朝、地図を持って店を探しました。",
+      "hr": "Jutros sam s kartom tražio trgovinu.",
+      "chunks": [
+        "今朝、",
+        "地図を",
+        "持って",
+        "店を",
+        "探しました。"
+      ],
+      "words": [
+        {
+          "text": "今朝",
+          "lemma": "今朝",
+          "reading": "けさ",
+          "role": "vrijeme",
+          "explanation_hr": "Jutros.",
+          "furigana": [
+            {
+              "text": "今朝",
+              "reading": "けさ"
+            }
+          ],
+          "start_ms": 125,
+          "end_ms": 425
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 513,
+          "end_ms": 663
+        },
+        {
+          "text": "地図",
+          "lemma": "地図",
+          "reading": "ちず",
+          "role": "objekt",
+          "explanation_hr": "Karta (zemljopisna).",
+          "furigana": [
+            {
+              "text": "地図",
+              "reading": "ちず"
+            }
+          ],
+          "start_ms": 663,
+          "end_ms": 950
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 963,
+          "end_ms": 1063
+        },
+        {
+          "text": "持って",
+          "lemma": "持つ",
+          "reading": "もって",
+          "role": "glagol",
+          "explanation_hr": "持つ (držati, nositi) u te-obliku: noseći kartu.",
+          "furigana": [
+            {
+              "text": "持",
+              "reading": "も"
+            },
+            {
+              "text": "って"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1375
+        },
+        {
+          "text": "店",
+          "lemma": "店",
+          "reading": "みせ",
+          "role": "objekt",
+          "explanation_hr": "Trgovina, ono što sam tražio.",
+          "furigana": [
+            {
+              "text": "店",
+              "reading": "みせ"
+            }
+          ],
+          "start_ms": 1388,
+          "end_ms": 1675
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 1688,
+          "end_ms": 1788
+        },
+        {
+          "text": "探しました",
+          "lemma": "探す",
+          "reading": "さがしました",
+          "role": "glagol",
+          "explanation_hr": "探す (tražiti) + ました, uljudni oblik prošlog vremena.",
+          "furigana": [
+            {
+              "text": "探",
+              "reading": "さが"
+            },
+            {
+              "text": "しました"
+            }
+          ],
+          "start_ms": 1800,
+          "end_ms": 2675
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2688,
+          "end_ms": 2788
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-3.mp3",
+      "duration_ms": 3488,
+      "full_start_ms": 6688,
+      "full_end_ms": 9350
+    },
+    {
+      "ja": "でも、道がわかりませんでした。",
+      "hr": "Ali nisam znao put.",
+      "chunks": [
+        "でも、",
+        "道が",
+        "わかりませんでした。"
+      ],
+      "words": [
+        {
+          "text": "でも",
+          "lemma": "でも",
+          "reading": "でも",
+          "role": "veznik",
+          "explanation_hr": "Ali, međutim.",
+          "furigana": [
+            {
+              "text": "でも"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 550
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 688,
+          "end_ms": 813
+        },
+        {
+          "text": "道",
+          "lemma": "道",
+          "reading": "みち",
+          "role": "objekt",
+          "explanation_hr": "Put, ulica; ono što nisam znao.",
+          "furigana": [
+            {
+              "text": "道",
+              "reading": "みち"
+            }
+          ],
+          "start_ms": 825,
+          "end_ms": 1100
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Uz わかる označava ono što se (ne) razumije.",
+          "furigana": [
+            {
+              "text": "が"
+            }
+          ],
+          "start_ms": 1113,
+          "end_ms": 1213
+        },
+        {
+          "text": "わかりませんでした",
+          "lemma": "わかる",
+          "reading": "わかりませんでした",
+          "role": "glagol",
+          "explanation_hr": "わかる (razumjeti, znati) u uljudnom niječnom prošlom obliku.",
+          "furigana": [
+            {
+              "text": "わかりませんでした"
+            }
+          ],
+          "start_ms": 1225,
+          "end_ms": 2413
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2425,
+          "end_ms": 2525
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-4.mp3",
+      "duration_ms": 3225,
+      "full_start_ms": 10125,
+      "full_end_ms": 12575
+    },
+    {
+      "ja": "駅の前で、女の人に道を聞きました。",
+      "hr": "Ispred stanice pitao sam jednu ženu za put.",
+      "chunks": [
+        "駅の前で、",
+        "女の人に",
+        "道を",
+        "聞きました。"
+      ],
+      "words": [
+        {
+          "text": "駅",
+          "lemma": "駅",
+          "reading": "えき",
+          "role": "mjesto",
+          "explanation_hr": "Stanica (željeznička).",
+          "furigana": [
+            {
+              "text": "駅",
+              "reading": "えき"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 363
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: ispred stanice.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 375,
+          "end_ms": 488
+        },
+        {
+          "text": "前",
+          "lemma": "前",
+          "reading": "まえ",
+          "role": "mjesto",
+          "explanation_hr": "Prednji dio, ispred.",
+          "furigana": [
+            {
+              "text": "前",
+              "reading": "まえ"
+            }
+          ],
+          "start_ms": 500,
+          "end_ms": 725
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto radnje.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ],
+          "start_ms": 738,
+          "end_ms": 963
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1088,
+          "end_ms": 1238
+        },
+        {
+          "text": "女",
+          "lemma": "女",
+          "reading": "おんな",
+          "role": "imenica",
+          "explanation_hr": "Žena, ženski.",
+          "furigana": [
+            {
+              "text": "女",
+              "reading": "おんな"
+            }
+          ],
+          "start_ms": 1250,
+          "end_ms": 1600
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: 女の人 = žena.",
+          "furigana": [
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 1613,
+          "end_ms": 1700
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "imenica",
+          "explanation_hr": "Osoba.",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "start_ms": 1713,
+          "end_ms": 1925
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava osobu kojoj se postavlja pitanje.",
+          "furigana": [
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 1938,
+          "end_ms": 2075
+        },
+        {
+          "text": "道",
+          "lemma": "道",
+          "reading": "みち",
+          "role": "objekt",
+          "explanation_hr": "Put, ono za što sam pitao.",
+          "furigana": [
+            {
+              "text": "道",
+              "reading": "みち"
+            }
+          ],
+          "start_ms": 2088,
+          "end_ms": 2363
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 2375,
+          "end_ms": 2463
+        },
+        {
+          "text": "聞きました",
+          "lemma": "聞く",
+          "reading": "ききました",
+          "role": "glagol",
+          "explanation_hr": "聞く (pitati, slušati) + ました, uljudni oblik prošlog vremena.",
+          "furigana": [
+            {
+              "text": "聞",
+              "reading": "き"
+            },
+            {
+              "text": "きました"
+            }
+          ],
+          "start_ms": 2475,
+          "end_ms": 3225
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3238,
+          "end_ms": 3338
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-5.mp3",
+      "duration_ms": 4038,
+      "full_start_ms": 13350,
+      "full_end_ms": 16613
+    },
+    {
+      "ja": "その人はとても親切に教えてくれました。",
+      "hr": "Ta mi je osoba vrlo ljubazno objasnila.",
+      "chunks": [
+        "その人は",
+        "とても",
+        "親切に",
+        "教えてくれました。"
+      ],
+      "words": [
+        {
+          "text": "その",
+          "lemma": "その",
+          "reading": "その",
+          "role": "ostalo",
+          "explanation_hr": "Ta, taj (spomenuta osoba).",
+          "furigana": [
+            {
+              "text": "その"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 375
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "subjekt",
+          "explanation_hr": "Osoba, ona koja objašnjava.",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "start_ms": 388,
+          "end_ms": 638
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Čestica teme.",
+          "furigana": [
+            {
+              "text": "は"
+            }
+          ],
+          "start_ms": 650,
+          "end_ms": 875
+        },
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "prilog",
+          "explanation_hr": "Vrlo, jako.",
+          "furigana": [
+            {
+              "text": "とても"
+            }
+          ],
+          "start_ms": 938,
+          "end_ms": 1350
+        },
+        {
+          "text": "親切に",
+          "lemma": "親切",
+          "reading": "しんせつに",
+          "role": "prilog",
+          "explanation_hr": "親切 (ljubazan) + に, prilog: ljubazno.",
+          "furigana": [
+            {
+              "text": "親切",
+              "reading": "しんせつ"
+            },
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 1363,
+          "end_ms": 2050
+        },
+        {
+          "text": "教えて",
+          "lemma": "教える",
+          "reading": "おしえて",
+          "role": "glagol",
+          "explanation_hr": "教える (objasniti, pokazati) u te-obliku.",
+          "furigana": [
+            {
+              "text": "教",
+              "reading": "おし"
+            },
+            {
+              "text": "えて"
+            }
+          ],
+          "start_ms": 2063,
+          "end_ms": 2550
+        },
+        {
+          "text": "くれました",
+          "lemma": "くれる",
+          "reading": "くれました",
+          "role": "glagol",
+          "explanation_hr": "て+くれる: netko čini nešto za mene; uljudni prošli oblik.",
+          "furigana": [
+            {
+              "text": "くれました"
+            }
+          ],
+          "start_ms": 2563,
+          "end_ms": 3238
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3250,
+          "end_ms": 3350
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-6.mp3",
+      "duration_ms": 4050,
+      "full_start_ms": 17388,
+      "full_end_ms": 20663
+    },
+    {
+      "ja": "店でおいしい食べ物を買って、写真も撮りました。",
+      "hr": "U trgovini sam kupio ukusnu hranu i također fotografirao.",
+      "chunks": [
+        "店で",
+        "おいしい",
+        "食べ物を",
+        "買って、",
+        "写真も",
+        "撮りました。"
+      ],
+      "words": [
+        {
+          "text": "店",
+          "lemma": "店",
+          "reading": "みせ",
+          "role": "mjesto",
+          "explanation_hr": "Trgovina, mjesto kupovine.",
+          "furigana": [
+            {
+              "text": "店",
+              "reading": "みせ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 375
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto radnje.",
+          "furigana": [
+            {
+              "text": "で"
+            }
+          ],
+          "start_ms": 388,
+          "end_ms": 475
+        },
+        {
+          "text": "おいしい",
+          "lemma": "おいしい",
+          "reading": "おいしい",
+          "role": "pridjev",
+          "explanation_hr": "Ukusan.",
+          "furigana": [
+            {
+              "text": "おいしい"
+            }
+          ],
+          "start_ms": 488,
+          "end_ms": 1000
+        },
+        {
+          "text": "食べ物",
+          "lemma": "食べ物",
+          "reading": "たべもの",
+          "role": "objekt",
+          "explanation_hr": "Hrana.",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べ"
+            },
+            {
+              "text": "物",
+              "reading": "もの"
+            }
+          ],
+          "start_ms": 1013,
+          "end_ms": 1463
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava izravni objekt.",
+          "furigana": [
+            {
+              "text": "を"
+            }
+          ],
+          "start_ms": 1475,
+          "end_ms": 1563
+        },
+        {
+          "text": "買って",
+          "lemma": "買う",
+          "reading": "かって",
+          "role": "glagol",
+          "explanation_hr": "買う (kupiti) u te-obliku: povezuje s idućom radnjom.",
+          "furigana": [
+            {
+              "text": "買",
+              "reading": "か"
+            },
+            {
+              "text": "って"
+            }
+          ],
+          "start_ms": 1575,
+          "end_ms": 2088
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2175,
+          "end_ms": 2325
+        },
+        {
+          "text": "写真",
+          "lemma": "写真",
+          "reading": "しゃしん",
+          "role": "objekt",
+          "explanation_hr": "Fotografija.",
+          "furigana": [
+            {
+              "text": "写真",
+              "reading": "しゃしん"
+            }
+          ],
+          "start_ms": 2325,
+          "end_ms": 2763
+        },
+        {
+          "text": "も",
+          "lemma": "も",
+          "reading": "も",
+          "role": "cestica",
+          "explanation_hr": "Također, i.",
+          "furigana": [
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 2775,
+          "end_ms": 2888
+        },
+        {
+          "text": "撮りました",
+          "lemma": "撮る",
+          "reading": "とりました",
+          "role": "glagol",
+          "explanation_hr": "撮る (snimiti, fotografirati) + ました, uljudni prošli oblik.",
+          "furigana": [
+            {
+              "text": "撮",
+              "reading": "と"
+            },
+            {
+              "text": "りました"
+            }
+          ],
+          "start_ms": 2900,
+          "end_ms": 3600
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3613,
+          "end_ms": 3713
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-7.mp3",
+      "duration_ms": 4413,
+      "full_start_ms": 21438,
+      "full_end_ms": 25075
+    },
+    {
+      "ja": "本当に楽しい旅行です。",
+      "hr": "Ovo je zaista zabavno putovanje.",
+      "chunks": [
+        "本当に",
+        "楽しい",
+        "旅行です。"
+      ],
+      "words": [
+        {
+          "text": "本当に",
+          "lemma": "本当に",
+          "reading": "ほんとうに",
+          "role": "prilog",
+          "explanation_hr": "Zaista, stvarno.",
+          "furigana": [
+            {
+              "text": "本当",
+              "reading": "ほんとう"
+            },
+            {
+              "text": "に"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 688
+        },
+        {
+          "text": "楽しい",
+          "lemma": "楽しい",
+          "reading": "たのしい",
+          "role": "pridjev",
+          "explanation_hr": "Zabavan, ugodan.",
+          "furigana": [
+            {
+              "text": "楽",
+              "reading": "たの"
+            },
+            {
+              "text": "しい"
+            }
+          ],
+          "start_ms": 700,
+          "end_ms": 1213
+        },
+        {
+          "text": "旅行",
+          "lemma": "旅行",
+          "reading": "りょこう",
+          "role": "imenica",
+          "explanation_hr": "Putovanje.",
+          "furigana": [
+            {
+              "text": "旅行",
+              "reading": "りょこう"
+            }
+          ],
+          "start_ms": 1225,
+          "end_ms": 1588
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Uljudna kopula: jest.",
+          "furigana": [
+            {
+              "text": "です"
+            }
+          ],
+          "start_ms": 1600,
+          "end_ms": 1963
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 1975,
+          "end_ms": 2075
+        }
+      ],
+      "audio": "putovanje-po-japanu-001-8.mp3",
+      "duration_ms": 2775,
+      "full_start_ms": 25850,
+      "full_end_ms": 27850
+    }
+  ],
+  "audio": "putovanje-po-japanu-001-cijela.mp3",
+  "duration_ms": 28550
+}
