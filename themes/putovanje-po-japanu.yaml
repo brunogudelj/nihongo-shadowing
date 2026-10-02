@@ -1,0 +1,36 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Putovanje po Japanu
+opis: >
+  Turist iz Hrvatske putuje po Japanu: hotel, hrana, kupovina,
+  pitanje za put, razgovor s ljubaznim ljudima.
+
+kljucne_rijeci:
+  - 旅行      # putovanje
+  - ホテル    # hotel
+  - 地図      # karta (zemljopisna)
+  - 道        # put, ulica
+  - 店        # trgovina
+  - 食べ物    # hrana
+  - 写真      # fotografija
+
+vlastita_imena:
+  - ja: 日本
+    citanje: にほん
+    hr: Japan
+  - ja: 東京
+    citanje: とうきょう
+    hr: Tokio
+  - ja: 京都
+    citanje: きょうと
+    hr: Kyoto
+  - ja: 大阪
+    citanje: おおさか
+    hr: Osaka
+  - ja: 奈良
+    citanje: なら
+    hr: Nara
+  - ja: クロアチア
+    hr: Hrvatska
+
+dodatni_rjecnik: []

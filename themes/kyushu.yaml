@@ -1,0 +1,41 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Kyushu
+opis: >
+  Putovanje po otoku Kyushu: ramen u Hakati, vruća vrela u Beppuu,
+  vulkan Aso, luka u Nagasakiju.
+
+kljucne_rijeci:
+  - 島        # otok
+  - 海        # more
+  - 山        # planina
+  - 温泉      # vruće vrelo (onsen)
+  - 町        # grad, mjesto
+  - おいしい  # ukusno
+
+vlastita_imena:
+  - ja: 九州
+    citanje: きゅうしゅう
+    hr: Kyushu
+  - ja: 福岡
+    citanje: ふくおか
+    hr: Fukuoka
+  - ja: 博多
+    citanje: はかた
+    hr: Hakata
+  - ja: 別府
+    citanje: べっぷ
+    hr: Beppu
+  - ja: 阿蘇
+    citanje: あそ
+    hr: Aso
+  - ja: 長崎
+    citanje: ながさき
+    hr: Nagasaki
+  - ja: 熊本
+    citanje: くまもと
+    hr: Kumamoto
+
+dodatni_rjecnik:
+  - ja: ラーメン
+    hr: ramen

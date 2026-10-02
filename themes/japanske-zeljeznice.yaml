@@ -1,0 +1,56 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Shinkansenom od Sappora do Nagasakija
+opis: >
+  Putovanje vlakom kroz cijeli Japan, od sjevera prema jugu, u prvom licu.
+  Iz Sappora običnim vlakom do Hakodatea, zatim shinkansenom: Sendai,
+  Tokio, Kanazawa, Fukuoka (Hakata) i na kraju Nagasaki.
+  U svakom gradu jedna kratka slika: hrana, pogled kroz prozor, vrijeme, ljudi.
+  Kupovina karte, peron, presjedanje, bento u vlaku.
+
+kljucne_rijeci:
+  - 電車      # vlak
+  - 駅        # stanica
+  - 切符      # karta (vozna)
+  - 乗り換える # presjedati
+  - 窓        # prozor
+  - 時間      # vrijeme
+  - 弁当      # bento
+  - 北        # sjever
+  - 南        # jug
+
+vlastita_imena:
+  - ja: 札幌
+    citanje: さっぽろ
+    hr: Sapporo
+  - ja: 函館
+    citanje: はこだて
+    hr: Hakodate
+  - ja: 仙台
+    citanje: せんだい
+    hr: Sendai
+  - ja: 東京
+    citanje: とうきょう
+    hr: Tokio
+  - ja: 金沢
+    citanje: かなざわ
+    hr: Kanazawa
+  - ja: 福岡
+    citanje: ふくおか
+    hr: Fukuoka
+  - ja: 博多
+    citanje: はかた
+    hr: Hakata
+  - ja: 長崎
+    citanje: ながさき
+    hr: Nagasaki
+  - ja: 日本
+    citanje: にほん
+    hr: Japan
+
+dodatni_rjecnik:
+  - ja: 新幹線
+    citanje: しんかんせん
+    hr: shinkansen (brzi vlak)
+  - ja: ホーム
+    hr: peron

@@ -29,7 +29,7 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 
 ## Glas (TTS)
 - Audio se **generira unaprijed** i sprema kao mp3 u repo (po rečenici i po cijeloj priči). Aplikacija **ne poziva TTS u runtimeu**.
-- Preferirani TTS: **Azure Neural TTS** (japanski neuralni glasovi), alternativa Google Cloud TTS. Prije odabira predloži korisniku opcije i okvirnu cijenu.
+- TTS: **Azure Neural TTS**, glas **ja-JP-NanamiNeural** (korisnik ga je odabrao).
 - Za usporavanje i ubrzavanje u aplikaciji koristi `playbackRate` s `preservesPitch = true`. Gumbi za brzinu: **0.7× / 0.85× / 1×** (jedan dodir, ne klizač).
 - mp3 neka bude mono i niskog bitratea (oko 48 do 64 kbps) zbog mobilnog prostora i offline rada.
 - Ako TTS vraća vremenske oznake po riječima, spremi ih za isticanje trenutne riječi.
@@ -51,7 +51,7 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 
 ## Shadowing sučelje
 - Reprodukcija rečenice ili chunka, petlja (ponavljanje), prelazak na iduću.
-- Gumb za **snimanje sebe** (MediaRecorder) i preslušavanje uz original. Podrži oba formata koje daju iPhone i Android (testiraj i riješi razlike).
+- Gumb za **snimanje sebe** (MediaRecorder) i preslušavanje uz original. Podržava se samo format koji daje Firefox na Androidu.
 - U prvoj verziji **nema automatskog ocjenjivanja izgovora**. Korisnik sam ocjenjuje. Automatsko ocjenjivanje (Whisper) je moguće proširenje kasnije.
 - Media Session API (kontrole na zaključanom zaslonu i slušalicama) i Screen Wake Lock tijekom vježbanja.
 
@@ -71,10 +71,11 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 - Ne treba dodatni audio: koristi se snimka cijele rečenice i **vremenske oznake po riječima** (Azure) da se pusti samo traženi raspon.
 
 ## Platforma: mobile-first PWA
+- **Ciljani uređaj: samo Android, preglednik Firefox.** iPhone i ostali preglednici se ne podržavaju i ne testiraju.
 - **Glavni uređaj je mobitel**, uspravni položaj. Dizajniraj prvo za mobitel.
 - Veliki gumbi, sve dohvatljivo jednom rukom, rečenica velikim slovima u sredini zaslona.
 - Instalira se na početni zaslon (manifest, service worker), radi **offline** nakon prvog učitavanja.
-- Audio se na iPhoneu pokreće tek nakon dodira korisnika, pa je "Play" uvijek gumb.
+- Audio se pokreće tek nakon dodira korisnika, pa je "Play" uvijek gumb.
 - Testiranje na pravom uređaju radi se preko objavljenog GitHub Pages linka (HTTPS je potreban za mikrofon).
 
 ## Tehnički stack (predloženo, objasni korisniku prije odluke)
