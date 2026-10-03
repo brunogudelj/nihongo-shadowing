@@ -8,7 +8,7 @@
     "pokrivenost": 100,
     "izvan_popisa": []
   },
-  "trosak_usd": 0.105,
+  "trosak_usd": 0.131,
   "title_ja": "九州旅行",
   "title_hr": "Putovanje po Kyushuu",
   "sentences": [
@@ -37,7 +37,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 750
+          "end_ms": 750,
+          "romaji": "natsuyasumi"
         },
         {
           "text": "に",
@@ -47,11 +48,13 @@
           "explanation_hr": "Čestica koja označava vrijeme kada se nešto dogodilo.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 763,
-          "end_ms": 925
+          "end_ms": 925,
+          "romaji": "ni"
         },
         {
           "text": "九州",
@@ -66,7 +69,8 @@
             }
           ],
           "start_ms": 938,
-          "end_ms": 1425
+          "end_ms": 1425,
+          "romaji": "kyūshū"
         },
         {
           "text": "へ",
@@ -76,11 +80,13 @@
           "explanation_hr": "Čestica smjera: prema, na (cilj kretanja); čita se \"e\".",
           "furigana": [
             {
-              "text": "へ"
+              "text": "へ",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1438,
-          "end_ms": 1525
+          "end_ms": 1525,
+          "romaji": "e"
         },
         {
           "text": "行きました",
@@ -94,11 +100,13 @@
               "reading": "い"
             },
             {
-              "text": "きました"
+              "text": "きました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1538,
-          "end_ms": 2288
+          "end_ms": 2288,
+          "romaji": "ikimashita"
         },
         {
           "text": "。",
@@ -112,13 +120,28 @@
             }
           ],
           "start_ms": 2300,
-          "end_ms": 2400
+          "end_ms": 2400,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-1.mp3",
       "duration_ms": 3100,
       "full_start_ms": 75,
-      "full_end_ms": 2400
+      "full_end_ms": 2400,
+      "chunk_info": [
+        {
+          "literal_hr": "za ljetne praznike",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "na Kyushu",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "otišao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "最初に博多でラーメンを食べました。",
@@ -143,7 +166,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 513
+          "end_ms": 513,
+          "romaji": "saisho"
         },
         {
           "text": "に",
@@ -153,11 +177,13 @@
           "explanation_hr": "Čestica koja od 最初 čini prilog \"najprije\".",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 525,
-          "end_ms": 638
+          "end_ms": 638,
+          "romaji": "ni"
         },
         {
           "text": "博多",
@@ -172,7 +198,8 @@
             }
           ],
           "start_ms": 650,
-          "end_ms": 1025
+          "end_ms": 1025,
+          "romaji": "hakata"
         },
         {
           "text": "で",
@@ -182,11 +209,13 @@
           "explanation_hr": "Čestica koja označava mjesto gdje se radnja odvija.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1038,
-          "end_ms": 1150
+          "end_ms": 1150,
+          "romaji": "de"
         },
         {
           "text": "ラーメン",
@@ -196,11 +225,21 @@
           "explanation_hr": "Ramen, juha s rezancima.",
           "furigana": [
             {
-              "text": "ラーメン"
+              "text": "ラ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "メ"
+            },
+            {
+              "text": "ン"
             }
           ],
           "start_ms": 1163,
-          "end_ms": 1575
+          "end_ms": 1575,
+          "romaji": "rāmen"
         },
         {
           "text": "を",
@@ -210,11 +249,13 @@
           "explanation_hr": "Čestica koja označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1588,
-          "end_ms": 1688
+          "end_ms": 1688,
+          "romaji": "o"
         },
         {
           "text": "食べました",
@@ -228,11 +269,16 @@
               "reading": "た"
             },
             {
-              "text": "べました"
+              "text": "べ"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1700,
-          "end_ms": 2425
+          "end_ms": 2425,
+          "romaji": "tabemashita"
         },
         {
           "text": "。",
@@ -246,13 +292,32 @@
             }
           ],
           "start_ms": 2438,
-          "end_ms": 2538
+          "end_ms": 2538,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-2.mp3",
       "duration_ms": 3238,
       "full_start_ms": 3175,
-      "full_end_ms": 5638
+      "full_end_ms": 5638,
+      "chunk_info": [
+        {
+          "literal_hr": "najprije",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "u Hakati",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "ramen",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "jeo sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "とてもおいしかったです。",
@@ -270,11 +335,18 @@
           "explanation_hr": "Jako, vrlo; pojačava pridjev.",
           "furigana": [
             {
-              "text": "とても"
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
             }
           ],
           "start_ms": 75,
-          "end_ms": 475
+          "end_ms": 475,
+          "romaji": "totemo"
         },
         {
           "text": "おいしかったです",
@@ -284,11 +356,22 @@
           "explanation_hr": "おいしい (ukusan) u prošlom obliku かった + です za uljudnost: bilo je ukusno.",
           "furigana": [
             {
-              "text": "おいしかったです"
+              "text": "お"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "かったです",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 488,
-          "end_ms": 1550
+          "end_ms": 1550,
+          "romaji": "oishikatta desu"
         },
         {
           "text": "。",
@@ -302,13 +385,24 @@
             }
           ],
           "start_ms": 1563,
-          "end_ms": 1663
+          "end_ms": 1663,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-3.mp3",
       "duration_ms": 2363,
       "full_start_ms": 6413,
-      "full_end_ms": 8000
+      "full_end_ms": 8000,
+      "chunk_info": [
+        {
+          "literal_hr": "jako",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "bilo je ukusno",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "次の日、別府の温泉に入りました。",
@@ -333,7 +427,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 375
+          "end_ms": 375,
+          "romaji": "tsugi"
         },
         {
           "text": "の",
@@ -343,11 +438,13 @@
           "explanation_hr": "Čestica koja povezuje dvije imenice: sljedeći + dan.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 388,
-          "end_ms": 475
+          "end_ms": 475,
+          "romaji": "no"
         },
         {
           "text": "日",
@@ -362,7 +459,8 @@
             }
           ],
           "start_ms": 488,
-          "end_ms": 738
+          "end_ms": 738,
+          "romaji": "hi"
         },
         {
           "text": "、",
@@ -376,7 +474,8 @@
             }
           ],
           "start_ms": 838,
-          "end_ms": 1013
+          "end_ms": 1013,
+          "romaji": ","
         },
         {
           "text": "別府",
@@ -391,7 +490,8 @@
             }
           ],
           "start_ms": 1025,
-          "end_ms": 1363
+          "end_ms": 1363,
+          "romaji": "beppu"
         },
         {
           "text": "の",
@@ -401,11 +501,13 @@
           "explanation_hr": "Čestica pripadnosti: vrelo u Beppuu.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1375,
-          "end_ms": 1500
+          "end_ms": 1500,
+          "romaji": "no"
         },
         {
           "text": "温泉",
@@ -420,7 +522,8 @@
             }
           ],
           "start_ms": 1513,
-          "end_ms": 1938
+          "end_ms": 1938,
+          "romaji": "onsen"
         },
         {
           "text": "に",
@@ -430,11 +533,13 @@
           "explanation_hr": "Čestica koja označava mjesto u koje se ulazi.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1950,
-          "end_ms": 2063
+          "end_ms": 2063,
+          "romaji": "ni"
         },
         {
           "text": "入りました",
@@ -448,11 +553,13 @@
               "reading": "はい"
             },
             {
-              "text": "りました"
+              "text": "りました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2075,
-          "end_ms": 2888
+          "end_ms": 2888,
+          "romaji": "hairimashita"
         },
         {
           "text": "。",
@@ -466,13 +573,32 @@
             }
           ],
           "start_ms": 2900,
-          "end_ms": 3000
+          "end_ms": 3000,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-4.mp3",
       "duration_ms": 3700,
       "full_start_ms": 8775,
-      "full_end_ms": 11700
+      "full_end_ms": 11700,
+      "chunk_info": [
+        {
+          "literal_hr": "sljedeći dan",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "Beppuovo",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "u vruće vrelo",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "ušao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "それから、阿蘇の山を見に行きました。",
@@ -493,11 +619,21 @@
           "explanation_hr": "Zatim, nakon toga.",
           "furigana": [
             {
-              "text": "それから"
+              "text": "そ"
+            },
+            {
+              "text": "れ"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "ら"
             }
           ],
           "start_ms": 75,
-          "end_ms": 688
+          "end_ms": 688,
+          "romaji": "sorekara"
         },
         {
           "text": "、",
@@ -511,7 +647,8 @@
             }
           ],
           "start_ms": 813,
-          "end_ms": 1013
+          "end_ms": 1013,
+          "romaji": ","
         },
         {
           "text": "阿蘇",
@@ -526,7 +663,8 @@
             }
           ],
           "start_ms": 1025,
-          "end_ms": 1313
+          "end_ms": 1313,
+          "romaji": "aso"
         },
         {
           "text": "の",
@@ -536,11 +674,13 @@
           "explanation_hr": "Čestica koja povezuje ime i imenicu: planina Aso.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1325,
-          "end_ms": 1425
+          "end_ms": 1425,
+          "romaji": "no"
         },
         {
           "text": "山",
@@ -555,7 +695,8 @@
             }
           ],
           "start_ms": 1438,
-          "end_ms": 1688
+          "end_ms": 1688,
+          "romaji": "yama"
         },
         {
           "text": "を",
@@ -565,11 +706,13 @@
           "explanation_hr": "Čestica koja označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1700,
-          "end_ms": 1838
+          "end_ms": 1838,
+          "romaji": "o"
         },
         {
           "text": "見",
@@ -584,7 +727,8 @@
             }
           ],
           "start_ms": 1850,
-          "end_ms": 2000
+          "end_ms": 2000,
+          "romaji": "mi"
         },
         {
           "text": "に",
@@ -594,11 +738,13 @@
           "explanation_hr": "Čestica svrhe: osnova glagola + に + 行く = ići nešto učiniti.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2013,
-          "end_ms": 2125
+          "end_ms": 2125,
+          "romaji": "ni"
         },
         {
           "text": "行きました",
@@ -612,11 +758,13 @@
               "reading": "い"
             },
             {
-              "text": "きました"
+              "text": "きました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2138,
-          "end_ms": 2825
+          "end_ms": 2825,
+          "romaji": "ikimashita"
         },
         {
           "text": "。",
@@ -630,13 +778,36 @@
             }
           ],
           "start_ms": 2838,
-          "end_ms": 2938
+          "end_ms": 2938,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-5.mp3",
       "duration_ms": 3638,
       "full_start_ms": 12475,
-      "full_end_ms": 15338
+      "full_end_ms": 15338,
+      "chunk_info": [
+        {
+          "literal_hr": "zatim",
+          "role": "ostalo"
+        },
+        {
+          "literal_hr": "Asoovu",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "planinu",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "vidjeti",
+          "role": "glagol"
+        },
+        {
+          "literal_hr": "otišao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "最後に長崎の町から海を見ました。",
@@ -662,7 +833,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 463
+          "end_ms": 463,
+          "romaji": "saigo"
         },
         {
           "text": "に",
@@ -672,11 +844,13 @@
           "explanation_hr": "Čestica koja od 最後 čini prilog \"na kraju\".",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 475,
-          "end_ms": 625
+          "end_ms": 625,
+          "romaji": "ni"
         },
         {
           "text": "長崎",
@@ -691,7 +865,8 @@
             }
           ],
           "start_ms": 638,
-          "end_ms": 1150
+          "end_ms": 1150,
+          "romaji": "nagasaki"
         },
         {
           "text": "の",
@@ -701,11 +876,13 @@
           "explanation_hr": "Čestica koja povezuje ime i imenicu: grad Nagasaki.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1163,
-          "end_ms": 1263
+          "end_ms": 1263,
+          "romaji": "no"
         },
         {
           "text": "町",
@@ -720,7 +897,8 @@
             }
           ],
           "start_ms": 1275,
-          "end_ms": 1525
+          "end_ms": 1525,
+          "romaji": "machi"
         },
         {
           "text": "から",
@@ -730,11 +908,13 @@
           "explanation_hr": "Čestica \"iz, od\"; označava mjesto odakle se gleda.",
           "furigana": [
             {
-              "text": "から"
+              "text": "から",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1538,
-          "end_ms": 1775
+          "end_ms": 1775,
+          "romaji": "kara"
         },
         {
           "text": "海",
@@ -749,7 +929,8 @@
             }
           ],
           "start_ms": 1800,
-          "end_ms": 2125
+          "end_ms": 2125,
+          "romaji": "umi"
         },
         {
           "text": "を",
@@ -759,11 +940,13 @@
           "explanation_hr": "Čestica koja označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2138,
-          "end_ms": 2250
+          "end_ms": 2250,
+          "romaji": "o"
         },
         {
           "text": "見ました",
@@ -777,11 +960,13 @@
               "reading": "み"
             },
             {
-              "text": "ました"
+              "text": "ました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2263,
-          "end_ms": 2875
+          "end_ms": 2875,
+          "romaji": "mimashita"
         },
         {
           "text": "。",
@@ -795,13 +980,36 @@
             }
           ],
           "start_ms": 2888,
-          "end_ms": 2988
+          "end_ms": 2988,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-6.mp3",
       "duration_ms": 3688,
       "full_start_ms": 16113,
-      "full_end_ms": 19025
+      "full_end_ms": 19025,
+      "chunk_info": [
+        {
+          "literal_hr": "na kraju",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "Nagasakijevog",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "iz grada",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "more",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "gledao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "また九州の島に来たいです。",
@@ -821,11 +1029,15 @@
           "explanation_hr": "Ponovno, opet.",
           "furigana": [
             {
-              "text": "また"
+              "text": "ま"
+            },
+            {
+              "text": "た"
             }
           ],
           "start_ms": 75,
-          "end_ms": 388
+          "end_ms": 388,
+          "romaji": "mata"
         },
         {
           "text": "九州",
@@ -840,7 +1052,8 @@
             }
           ],
           "start_ms": 400,
-          "end_ms": 925
+          "end_ms": 925,
+          "romaji": "kyūshū"
         },
         {
           "text": "の",
@@ -850,11 +1063,13 @@
           "explanation_hr": "Čestica koja povezuje ime i imenicu: otok Kyushu.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 938,
-          "end_ms": 1025
+          "end_ms": 1025,
+          "romaji": "no"
         },
         {
           "text": "島",
@@ -869,7 +1084,8 @@
             }
           ],
           "start_ms": 1038,
-          "end_ms": 1288
+          "end_ms": 1288,
+          "romaji": "shima"
         },
         {
           "text": "に",
@@ -879,11 +1095,13 @@
           "explanation_hr": "Čestica koja označava cilj dolaska.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1300,
-          "end_ms": 1450
+          "end_ms": 1450,
+          "romaji": "ni"
         },
         {
           "text": "来たいです",
@@ -897,11 +1115,13 @@
               "reading": "き"
             },
             {
-              "text": "たいです"
+              "text": "たいです",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1463,
-          "end_ms": 2150
+          "end_ms": 2150,
+          "romaji": "kitai desu"
         },
         {
           "text": "。",
@@ -915,13 +1135,32 @@
             }
           ],
           "start_ms": 2163,
-          "end_ms": 2263
+          "end_ms": 2263,
+          "romaji": "."
         }
       ],
       "audio": "kyushu-001-7.mp3",
       "duration_ms": 2963,
       "full_start_ms": 19800,
-      "full_end_ms": 21988
+      "full_end_ms": 21988,
+      "chunk_info": [
+        {
+          "literal_hr": "ponovno",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "Kyushuov",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "na otok",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "želim doći",
+          "role": "glagol"
+        }
+      ]
     }
   ],
   "audio": "kyushu-001-cijela.mp3",

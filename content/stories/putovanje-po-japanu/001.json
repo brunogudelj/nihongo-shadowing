@@ -8,7 +8,7 @@
     "pokrivenost": 100,
     "izvan_popisa": []
   },
-  "trosak_usd": 0.126,
+  "trosak_usd": 0.149,
   "title_ja": "京都の旅行",
   "title_hr": "Putovanje u Kyoto",
   "sentences": [
@@ -35,7 +35,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 688
+          "end_ms": 688,
+          "romaji": "senshū"
         },
         {
           "text": "、",
@@ -49,7 +50,8 @@
             }
           ],
           "start_ms": 763,
-          "end_ms": 850
+          "end_ms": 850,
+          "romaji": ","
         },
         {
           "text": "クロアチア",
@@ -59,11 +61,24 @@
           "explanation_hr": "Hrvatska, mjesto polaska.",
           "furigana": [
             {
-              "text": "クロアチア"
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ア"
+            },
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ア"
             }
           ],
           "start_ms": 863,
-          "end_ms": 1488
+          "end_ms": 1488,
+          "romaji": "kuroachia"
         },
         {
           "text": "から",
@@ -73,11 +88,13 @@
           "explanation_hr": "Čestica koja označava polazište (iz).",
           "furigana": [
             {
-              "text": "から"
+              "text": "から",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1500,
-          "end_ms": 1713
+          "end_ms": 1713,
+          "romaji": "kara"
         },
         {
           "text": "日本",
@@ -92,7 +109,8 @@
             }
           ],
           "start_ms": 1725,
-          "end_ms": 2138
+          "end_ms": 2138,
+          "romaji": "nihon"
         },
         {
           "text": "に",
@@ -102,11 +120,13 @@
           "explanation_hr": "Čestica koja označava cilj kretanja (u).",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2150,
-          "end_ms": 2288
+          "end_ms": 2288,
+          "romaji": "ni"
         },
         {
           "text": "来ました",
@@ -120,11 +140,13 @@
               "reading": "き"
             },
             {
-              "text": "ました"
+              "text": "ました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2300,
-          "end_ms": 2888
+          "end_ms": 2888,
+          "romaji": "kimashita"
         },
         {
           "text": "。",
@@ -138,13 +160,32 @@
             }
           ],
           "start_ms": 2900,
-          "end_ms": 3000
+          "end_ms": 3000,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-1.mp3",
       "duration_ms": 3700,
       "full_start_ms": 75,
-      "full_end_ms": 3000
+      "full_end_ms": 3000,
+      "chunk_info": [
+        {
+          "literal_hr": "prošli tjedan",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "iz Hrvatske",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "u Japan",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "došao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "今は京都のホテルにいます。",
@@ -169,7 +210,8 @@
             }
           ],
           "start_ms": 113,
-          "end_ms": 338
+          "end_ms": 338,
+          "romaji": "ima"
         },
         {
           "text": "は",
@@ -179,11 +221,13 @@
           "explanation_hr": "Čestica teme; ističe 'sada' kao temu.",
           "furigana": [
             {
-              "text": "は"
+              "text": "は",
+              "kind": "cestica"
             }
           ],
           "start_ms": 350,
-          "end_ms": 500
+          "end_ms": 500,
+          "romaji": "wa"
         },
         {
           "text": "京都",
@@ -198,7 +242,8 @@
             }
           ],
           "start_ms": 513,
-          "end_ms": 913
+          "end_ms": 913,
+          "romaji": "kyōto"
         },
         {
           "text": "の",
@@ -208,11 +253,13 @@
           "explanation_hr": "Povezuje imenice: hotel u Kyotu.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 925,
-          "end_ms": 1038
+          "end_ms": 1038,
+          "romaji": "no"
         },
         {
           "text": "ホテル",
@@ -222,11 +269,18 @@
           "explanation_hr": "Hotel.",
           "furigana": [
             {
-              "text": "ホテル"
+              "text": "ホ"
+            },
+            {
+              "text": "テ"
+            },
+            {
+              "text": "ル"
             }
           ],
           "start_ms": 1050,
-          "end_ms": 1425
+          "end_ms": 1425,
+          "romaji": "hoteru"
         },
         {
           "text": "に",
@@ -236,11 +290,13 @@
           "explanation_hr": "Označava mjesto gdje se netko nalazi.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1438,
-          "end_ms": 1550
+          "end_ms": 1550,
+          "romaji": "ni"
         },
         {
           "text": "います",
@@ -250,11 +306,16 @@
           "explanation_hr": "いる (biti, nalaziti se, za živa bića) + ます, uljudni oblik.",
           "furigana": [
             {
-              "text": "います"
+              "text": "い"
+            },
+            {
+              "text": "ます",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1563,
-          "end_ms": 2050
+          "end_ms": 2050,
+          "romaji": "imasu"
         },
         {
           "text": "。",
@@ -268,13 +329,32 @@
             }
           ],
           "start_ms": 2063,
-          "end_ms": 2163
+          "end_ms": 2163,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-2.mp3",
       "duration_ms": 2863,
       "full_start_ms": 3813,
-      "full_end_ms": 5863
+      "full_end_ms": 5863,
+      "chunk_info": [
+        {
+          "literal_hr": "sada",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "Kyotski",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "u hotelu",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "jesam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "今朝、地図を持って店を探しました。",
@@ -300,7 +380,8 @@
             }
           ],
           "start_ms": 125,
-          "end_ms": 425
+          "end_ms": 425,
+          "romaji": "kesa"
         },
         {
           "text": "、",
@@ -314,7 +395,8 @@
             }
           ],
           "start_ms": 513,
-          "end_ms": 663
+          "end_ms": 663,
+          "romaji": ","
         },
         {
           "text": "地図",
@@ -329,7 +411,8 @@
             }
           ],
           "start_ms": 663,
-          "end_ms": 950
+          "end_ms": 950,
+          "romaji": "chizu"
         },
         {
           "text": "を",
@@ -339,11 +422,13 @@
           "explanation_hr": "Označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 963,
-          "end_ms": 1063
+          "end_ms": 1063,
+          "romaji": "o"
         },
         {
           "text": "持って",
@@ -357,11 +442,13 @@
               "reading": "も"
             },
             {
-              "text": "って"
+              "text": "って",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1075,
-          "end_ms": 1375
+          "end_ms": 1375,
+          "romaji": "motte"
         },
         {
           "text": "店",
@@ -376,7 +463,8 @@
             }
           ],
           "start_ms": 1388,
-          "end_ms": 1675
+          "end_ms": 1675,
+          "romaji": "mise"
         },
         {
           "text": "を",
@@ -386,11 +474,13 @@
           "explanation_hr": "Označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1688,
-          "end_ms": 1788
+          "end_ms": 1788,
+          "romaji": "o"
         },
         {
           "text": "探しました",
@@ -404,11 +494,13 @@
               "reading": "さが"
             },
             {
-              "text": "しました"
+              "text": "しました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1800,
-          "end_ms": 2675
+          "end_ms": 2675,
+          "romaji": "sagashimashita"
         },
         {
           "text": "。",
@@ -422,13 +514,36 @@
             }
           ],
           "start_ms": 2688,
-          "end_ms": 2788
+          "end_ms": 2788,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-3.mp3",
       "duration_ms": 3488,
       "full_start_ms": 6688,
-      "full_end_ms": 9350
+      "full_end_ms": 9350,
+      "chunk_info": [
+        {
+          "literal_hr": "jutros",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "kartu",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "držeći",
+          "role": "glagol"
+        },
+        {
+          "literal_hr": "trgovinu",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "tražio sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "でも、道がわかりませんでした。",
@@ -447,11 +562,15 @@
           "explanation_hr": "Ali, međutim.",
           "furigana": [
             {
-              "text": "でも"
+              "text": "で"
+            },
+            {
+              "text": "も"
             }
           ],
           "start_ms": 75,
-          "end_ms": 550
+          "end_ms": 550,
+          "romaji": "demo"
         },
         {
           "text": "、",
@@ -465,7 +584,8 @@
             }
           ],
           "start_ms": 688,
-          "end_ms": 813
+          "end_ms": 813,
+          "romaji": ","
         },
         {
           "text": "道",
@@ -480,7 +600,8 @@
             }
           ],
           "start_ms": 825,
-          "end_ms": 1100
+          "end_ms": 1100,
+          "romaji": "michi"
         },
         {
           "text": "が",
@@ -490,11 +611,13 @@
           "explanation_hr": "Uz わかる označava ono što se (ne) razumije.",
           "furigana": [
             {
-              "text": "が"
+              "text": "が",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1113,
-          "end_ms": 1213
+          "end_ms": 1213,
+          "romaji": "ga"
         },
         {
           "text": "わかりませんでした",
@@ -504,11 +627,19 @@
           "explanation_hr": "わかる (razumjeti, znati) u uljudnom niječnom prošlom obliku.",
           "furigana": [
             {
-              "text": "わかりませんでした"
+              "text": "わ"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "りませんでした",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1225,
-          "end_ms": 2413
+          "end_ms": 2413,
+          "romaji": "wakarimasen deshita"
         },
         {
           "text": "。",
@@ -522,13 +653,28 @@
             }
           ],
           "start_ms": 2425,
-          "end_ms": 2525
+          "end_ms": 2525,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-4.mp3",
       "duration_ms": 3225,
       "full_start_ms": 10125,
-      "full_end_ms": 12575
+      "full_end_ms": 12575,
+      "chunk_info": [
+        {
+          "literal_hr": "ali",
+          "role": "ostalo"
+        },
+        {
+          "literal_hr": "put",
+          "role": "subjekt"
+        },
+        {
+          "literal_hr": "nisam znao",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "駅の前で、女の人に道を聞きました。",
@@ -553,7 +699,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 363
+          "end_ms": 363,
+          "romaji": "eki"
         },
         {
           "text": "の",
@@ -563,11 +710,13 @@
           "explanation_hr": "Povezuje imenice: ispred stanice.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 375,
-          "end_ms": 488
+          "end_ms": 488,
+          "romaji": "no"
         },
         {
           "text": "前",
@@ -582,7 +731,8 @@
             }
           ],
           "start_ms": 500,
-          "end_ms": 725
+          "end_ms": 725,
+          "romaji": "mae"
         },
         {
           "text": "で",
@@ -592,11 +742,13 @@
           "explanation_hr": "Označava mjesto radnje.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 738,
-          "end_ms": 963
+          "end_ms": 963,
+          "romaji": "de"
         },
         {
           "text": "、",
@@ -610,7 +762,8 @@
             }
           ],
           "start_ms": 1088,
-          "end_ms": 1238
+          "end_ms": 1238,
+          "romaji": ","
         },
         {
           "text": "女",
@@ -625,7 +778,8 @@
             }
           ],
           "start_ms": 1250,
-          "end_ms": 1600
+          "end_ms": 1600,
+          "romaji": "onna"
         },
         {
           "text": "の",
@@ -635,11 +789,13 @@
           "explanation_hr": "Povezuje: 女の人 = žena.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1613,
-          "end_ms": 1700
+          "end_ms": 1700,
+          "romaji": "no"
         },
         {
           "text": "人",
@@ -654,7 +810,8 @@
             }
           ],
           "start_ms": 1713,
-          "end_ms": 1925
+          "end_ms": 1925,
+          "romaji": "hito"
         },
         {
           "text": "に",
@@ -664,11 +821,13 @@
           "explanation_hr": "Označava osobu kojoj se postavlja pitanje.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1938,
-          "end_ms": 2075
+          "end_ms": 2075,
+          "romaji": "ni"
         },
         {
           "text": "道",
@@ -683,7 +842,8 @@
             }
           ],
           "start_ms": 2088,
-          "end_ms": 2363
+          "end_ms": 2363,
+          "romaji": "michi"
         },
         {
           "text": "を",
@@ -693,11 +853,13 @@
           "explanation_hr": "Označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2375,
-          "end_ms": 2463
+          "end_ms": 2463,
+          "romaji": "o"
         },
         {
           "text": "聞きました",
@@ -711,11 +873,13 @@
               "reading": "き"
             },
             {
-              "text": "きました"
+              "text": "きました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2475,
-          "end_ms": 3225
+          "end_ms": 3225,
+          "romaji": "kikimashita"
         },
         {
           "text": "。",
@@ -729,13 +893,32 @@
             }
           ],
           "start_ms": 3238,
-          "end_ms": 3338
+          "end_ms": 3338,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-5.mp3",
       "duration_ms": 4038,
       "full_start_ms": 13350,
-      "full_end_ms": 16613
+      "full_end_ms": 16613,
+      "chunk_info": [
+        {
+          "literal_hr": "ispred stanice",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "ženu",
+          "role": "ostalo"
+        },
+        {
+          "literal_hr": "za put",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "pitao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "その人はとても親切に教えてくれました。",
@@ -755,11 +938,15 @@
           "explanation_hr": "Ta, taj (spomenuta osoba).",
           "furigana": [
             {
-              "text": "その"
+              "text": "そ"
+            },
+            {
+              "text": "の"
             }
           ],
           "start_ms": 75,
-          "end_ms": 375
+          "end_ms": 375,
+          "romaji": "sono"
         },
         {
           "text": "人",
@@ -774,7 +961,8 @@
             }
           ],
           "start_ms": 388,
-          "end_ms": 638
+          "end_ms": 638,
+          "romaji": "hito"
         },
         {
           "text": "は",
@@ -784,11 +972,13 @@
           "explanation_hr": "Čestica teme.",
           "furigana": [
             {
-              "text": "は"
+              "text": "は",
+              "kind": "cestica"
             }
           ],
           "start_ms": 650,
-          "end_ms": 875
+          "end_ms": 875,
+          "romaji": "wa"
         },
         {
           "text": "とても",
@@ -798,11 +988,18 @@
           "explanation_hr": "Vrlo, jako.",
           "furigana": [
             {
-              "text": "とても"
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
             }
           ],
           "start_ms": 938,
-          "end_ms": 1350
+          "end_ms": 1350,
+          "romaji": "totemo"
         },
         {
           "text": "親切に",
@@ -816,11 +1013,13 @@
               "reading": "しんせつ"
             },
             {
-              "text": "に"
+              "text": "に",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1363,
-          "end_ms": 2050
+          "end_ms": 2050,
+          "romaji": "shinsetsuni"
         },
         {
           "text": "教えて",
@@ -834,11 +1033,16 @@
               "reading": "おし"
             },
             {
-              "text": "えて"
+              "text": "え"
+            },
+            {
+              "text": "て",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2063,
-          "end_ms": 2550
+          "end_ms": 2550,
+          "romaji": "oshiete"
         },
         {
           "text": "くれました",
@@ -848,11 +1052,13 @@
           "explanation_hr": "て+くれる: netko čini nešto za mene; uljudni prošli oblik.",
           "furigana": [
             {
-              "text": "くれました"
+              "text": "くれました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2563,
-          "end_ms": 3238
+          "end_ms": 3238,
+          "romaji": "kuremashita"
         },
         {
           "text": "。",
@@ -866,13 +1072,32 @@
             }
           ],
           "start_ms": 3250,
-          "end_ms": 3350
+          "end_ms": 3350,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-6.mp3",
       "duration_ms": 4050,
       "full_start_ms": 17388,
-      "full_end_ms": 20663
+      "full_end_ms": 20663,
+      "chunk_info": [
+        {
+          "literal_hr": "ta osoba",
+          "role": "subjekt"
+        },
+        {
+          "literal_hr": "vrlo",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "ljubazno",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "objasnila mi je",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "店でおいしい食べ物を買って、写真も撮りました。",
@@ -899,7 +1124,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 375
+          "end_ms": 375,
+          "romaji": "mise"
         },
         {
           "text": "で",
@@ -909,11 +1135,13 @@
           "explanation_hr": "Označava mjesto radnje.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 388,
-          "end_ms": 475
+          "end_ms": 475,
+          "romaji": "de"
         },
         {
           "text": "おいしい",
@@ -923,11 +1151,21 @@
           "explanation_hr": "Ukusan.",
           "furigana": [
             {
-              "text": "おいしい"
+              "text": "お"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "い"
             }
           ],
           "start_ms": 488,
-          "end_ms": 1000
+          "end_ms": 1000,
+          "romaji": "oishii"
         },
         {
           "text": "食べ物",
@@ -949,7 +1187,8 @@
             }
           ],
           "start_ms": 1013,
-          "end_ms": 1463
+          "end_ms": 1463,
+          "romaji": "tabemono"
         },
         {
           "text": "を",
@@ -959,11 +1198,13 @@
           "explanation_hr": "Označava izravni objekt.",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1475,
-          "end_ms": 1563
+          "end_ms": 1563,
+          "romaji": "o"
         },
         {
           "text": "買って",
@@ -977,11 +1218,13 @@
               "reading": "か"
             },
             {
-              "text": "って"
+              "text": "って",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1575,
-          "end_ms": 2088
+          "end_ms": 2088,
+          "romaji": "katte"
         },
         {
           "text": "、",
@@ -995,7 +1238,8 @@
             }
           ],
           "start_ms": 2175,
-          "end_ms": 2325
+          "end_ms": 2325,
+          "romaji": ","
         },
         {
           "text": "写真",
@@ -1010,7 +1254,8 @@
             }
           ],
           "start_ms": 2325,
-          "end_ms": 2763
+          "end_ms": 2763,
+          "romaji": "shashin"
         },
         {
           "text": "も",
@@ -1020,11 +1265,13 @@
           "explanation_hr": "Također, i.",
           "furigana": [
             {
-              "text": "も"
+              "text": "も",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2775,
-          "end_ms": 2888
+          "end_ms": 2888,
+          "romaji": "mo"
         },
         {
           "text": "撮りました",
@@ -1038,11 +1285,13 @@
               "reading": "と"
             },
             {
-              "text": "りました"
+              "text": "りました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2900,
-          "end_ms": 3600
+          "end_ms": 3600,
+          "romaji": "torimashita"
         },
         {
           "text": "。",
@@ -1056,13 +1305,40 @@
             }
           ],
           "start_ms": 3613,
-          "end_ms": 3713
+          "end_ms": 3713,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-7.mp3",
       "duration_ms": 4413,
       "full_start_ms": 21438,
-      "full_end_ms": 25075
+      "full_end_ms": 25075,
+      "chunk_info": [
+        {
+          "literal_hr": "u trgovini",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "ukusnu",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "hranu",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "kupio sam i",
+          "role": "glagol"
+        },
+        {
+          "literal_hr": "i fotografije",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "snimio sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "本当に楽しい旅行です。",
@@ -1089,7 +1365,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 688
+          "end_ms": 688,
+          "romaji": "hontōni"
         },
         {
           "text": "楽しい",
@@ -1103,11 +1380,15 @@
               "reading": "たの"
             },
             {
-              "text": "しい"
+              "text": "し"
+            },
+            {
+              "text": "い"
             }
           ],
           "start_ms": 700,
-          "end_ms": 1213
+          "end_ms": 1213,
+          "romaji": "tanoshii"
         },
         {
           "text": "旅行",
@@ -1122,7 +1403,8 @@
             }
           ],
           "start_ms": 1225,
-          "end_ms": 1588
+          "end_ms": 1588,
+          "romaji": "ryokō"
         },
         {
           "text": "です",
@@ -1132,11 +1414,13 @@
           "explanation_hr": "Uljudna kopula: jest.",
           "furigana": [
             {
-              "text": "です"
+              "text": "です",
+              "kind": "kopula"
             }
           ],
           "start_ms": 1600,
-          "end_ms": 1963
+          "end_ms": 1963,
+          "romaji": "desu"
         },
         {
           "text": "。",
@@ -1150,13 +1434,28 @@
             }
           ],
           "start_ms": 1975,
-          "end_ms": 2075
+          "end_ms": 2075,
+          "romaji": "."
         }
       ],
       "audio": "putovanje-po-japanu-001-8.mp3",
       "duration_ms": 2775,
       "full_start_ms": 25850,
-      "full_end_ms": 27850
+      "full_end_ms": 27850,
+      "chunk_info": [
+        {
+          "literal_hr": "zaista",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "zabavno",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "putovanje je",
+          "role": "glagol"
+        }
+      ]
     }
   ],
   "audio": "putovanje-po-japanu-001-cijela.mp3",

@@ -13,7 +13,8 @@
     "audio": "node --env-file-if-exists=.env pipeline/audio.mjs",
     "popisi": "node pipeline/lists.mjs",
     "provjera": "node pipeline/check.mjs",
-    "nova-prica": "node --env-file-if-exists=.env pipeline/new-story.mjs"
+    "nova-prica": "node --env-file-if-exists=.env pipeline/new-story.mjs",
+    "doslovno": "node --env-file-if-exists=.env pipeline/literal.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

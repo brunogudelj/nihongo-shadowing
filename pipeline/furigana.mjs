@@ -6,6 +6,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import kuromoji from 'kuromoji'
 import { parse } from 'yaml'
+import { toRomaji } from './romaji.mjs'
 
 const KANJI = /[㐀-䶿一-鿿々]/
 
@@ -33,6 +34,55 @@ function splitFurigana(text, reading) {
   return runs.map((r, i) => (KANJI.test(r) ? { text: r, reading: match[i + 1] } : { text: r }))
 }
 
+// Vrsta svakog znaka rečenice, za isticanje u aplikaciji:
+// "cestica" (は, が, を, の…), "kopula" (です/でした iza imenice) i "nastavak" (ました, て,
+// ている, たい, promjena osnove kao 行き, 多かっ). Ostalo nema oznaku.
+function charKinds(sentence, tokens) {
+  const kinds = new Array(sentence.length).fill(null)
+  let prevKind = null
+  tokens.forEach((t, i) => {
+    const at = t.word_position - 1
+    const surface = t.surface_form
+    let kind = null
+    let from = 0 // od kojeg znaka tokena vrijedi oznaka
+    if (t.pos === '助詞') {
+      kind = ['接続助詞', '副詞化'].includes(t.pos_detail_1) ? 'nastavak' : 'cestica'
+    } else if (t.pos === '助動詞') {
+      if (['です', 'だ'].includes(t.basic_form)) kind = tokens[i - 1]?.pos === '名詞' ? 'kopula' : 'nastavak'
+      else kind = prevKind === 'kopula' ? 'kopula' : 'nastavak' // でし+た je jedna kopula
+    } else if (t.pos === '動詞' && ['非自立', '接尾'].includes(t.pos_detail_1)) {
+      kind = 'nastavak'
+    } else if (['動詞', '形容詞'].includes(t.pos) && t.basic_form !== surface) {
+      // Promijenjeni kraj osnove: 行き (行く), 多かっ (多い), 降っ (降る).
+      while (from < surface.length && surface[from] === t.basic_form[from]) from++
+      kind = from < surface.length ? 'nastavak' : null
+    }
+    for (let c = from; c < surface.length; c++) kinds[at + c] = kind
+    prevKind = kind
+  })
+  return kinds
+}
+
+// Podijeli dijelove furigane (samo kanu, ne kanji) na granicama oznaka.
+function withKinds(parts, kinds, start) {
+  const out = []
+  let pos = start
+  for (const part of parts) {
+    if (part.reading) {
+      out.push(part)
+      pos += part.text.length
+      continue
+    }
+    for (const ch of part.text) {
+      const kind = kinds[pos++]
+      const last = out[out.length - 1]
+      if (last && !last.reading && last.kind === kind) last.text += ch
+      else out.push(kind ? { text: ch, kind } : { text: ch })
+    }
+  }
+  return out
+}
+
 const tokenizer = await new Promise((resolve, reject) =>
   kuromoji.builder({ dicPath: 'node_modules/kuromoji/dict' }).build((err, t) => (err ? reject(err) : resolve(t))),
 )
@@ -49,6 +99,7 @@ const review = []
 story.sentences.forEach((sentence, si) => {
   // Čitanje iz rječnika za svaki znak rečenice, preko tokena.
   const tokens = tokenizer.tokenize(sentence.ja)
+  const kinds = charKinds(sentence.ja, tokens)
   let pos = 0
   for (const word of sentence.words) {
     const start = pos
@@ -63,8 +114,19 @@ story.sentences.forEach((sentence, si) => {
       : null
     const claudeReading = toHiragana(word.reading || word.text)
 
+    // Romaji po izgovoru iz rječnika (čestica は → wa, 東京 → tōkyō).
+    // Čitanje iz teme ima prednost; tamo se dugi samoglasnik izvede iz pisanja (とうきょう → tōkyō).
+    const themeReading = themeReadings.get(word.text)
+    word.romaji = themeReading
+      ? toRomaji(themeReading).replace(/o[ou]/g, 'ō').replace(/uu/g, 'ū')
+      : aligned
+        ? toRomaji(covering.map((t) => (t.pronunciation && t.pronunciation !== '*' ? t.pronunciation : t.surface_form)).join(''))
+        : toRomaji(claudeReading)
+    // Uljudni です odvojeno, kako se uobičajeno piše: oishikatta desu.
+    word.romaji = word.romaji.replace(/(.)(desu|deshita)([,.]?)$/, '$1 $2$3')
+
     if (!KANJI.test(word.text)) {
-      word.furigana = [{ text: word.text }]
+      word.furigana = withKinds([{ text: word.text }], kinds, start)
       continue
     }
 
@@ -81,9 +143,9 @@ story.sentences.forEach((sentence, si) => {
 
     const parts = splitFurigana(word.text, reading)
     if (parts) {
-      word.furigana = parts
+      word.furigana = withKinds(parts, kinds, start)
     } else {
-      word.furigana = [{ text: word.text, reading }]
+      word.furigana = withKinds([{ text: word.text, reading }], kinds, start)
       review.push(`rečenica ${si + 1}: ${word.text}: furigana se ne da rasporediti po kanjijima`)
     }
   }

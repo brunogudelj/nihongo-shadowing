@@ -7,6 +7,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import Anthropic from '@anthropic-ai/sdk'
 import { parse } from 'yaml'
+import { CHUNK_INFO_RULES, CHUNK_INFO_SCHEMA } from './chunk-info.mjs'
 import { checkFond, fondRecord, printFond, TARGET } from './fond.mjs'
 
 const MODEL = 'claude-opus-5-5'
@@ -33,6 +34,7 @@ const SCHEMA = {
           ja: { type: 'string' },
           hr: { type: 'string' },
           chunks: { type: 'array', items: { type: 'string' } },
+          chunk_info: CHUNK_INFO_SCHEMA,
           words: {
             type: 'array',
             items: {
@@ -49,7 +51,7 @@ const SCHEMA = {
             },
           },
         },
-        required: ['ja', 'hr', 'chunks', 'words'],
+        required: ['ja', 'hr', 'chunks', 'chunk_info', 'words'],
         additionalProperties: false,
       },
     },
@@ -73,6 +75,7 @@ For every sentence give:
 - "ja": the sentence in normal Japanese writing (kanji where a native would use them).
 - "hr": a natural Croatian translation.
 - "chunks": the sentence split into bunsetsu-like pieces for shadowing piece by piece. Joined together they must reproduce "ja" exactly, punctuation included (attach punctuation to the preceding chunk).
+${CHUNK_INFO_RULES}
 - "words": the sentence split into words and particles. Joined together the "text" values must reproduce "ja" exactly. Keep polite endings attached to their word (行きます is one word). Punctuation is its own word with role "interpunkcija".
   - "lemma": dictionary form (行きます → 行く).
   - "reading": reading of "text" in hiragana (katakana words: repeat them as they are).
@@ -174,6 +177,7 @@ if (!fond.ok) {
 const problems = []
 story.sentences.forEach((s, i) => {
   if (s.chunks.join('') !== s.ja) problems.push(`rečenica ${i + 1}: chunkovi ne slažu rečenicu`)
+  if (s.chunk_info.length !== s.chunks.length) problems.push(`rečenica ${i + 1}: doslovni prijevod nema svaki blok`)
   if (s.words.map((w) => w.text).join('') !== s.ja) problems.push(`rečenica ${i + 1}: riječi ne slažu rečenicu`)
 })
 if (!fond.ok) problems.push(`fond: pokrivenost ${fond.coverage}% je ispod ${TARGET}%`)

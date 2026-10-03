@@ -30,7 +30,8 @@
             }
           ],
           "start_ms": 113,
-          "end_ms": 438
+          "end_ms": 438,
+          "romaji": "asa"
         },
         {
           "text": "、",
@@ -44,7 +45,8 @@
             }
           ],
           "start_ms": 550,
-          "end_ms": 725
+          "end_ms": 725,
+          "romaji": ","
         },
         {
           "text": "札幌",
@@ -59,7 +61,8 @@
             }
           ],
           "start_ms": 738,
-          "end_ms": 1225
+          "end_ms": 1225,
+          "romaji": "sapporo"
         },
         {
           "text": "駅",
@@ -74,7 +77,8 @@
             }
           ],
           "start_ms": 1238,
-          "end_ms": 1513
+          "end_ms": 1513,
+          "romaji": "eki"
         },
         {
           "text": "で",
@@ -84,11 +88,13 @@
           "explanation_hr": "Čestica koja označava mjesto gdje se radnja odvija.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1525,
-          "end_ms": 1650
+          "end_ms": 1650,
+          "romaji": "de"
         },
         {
           "text": "切符",
@@ -103,7 +109,8 @@
             }
           ],
           "start_ms": 1663,
-          "end_ms": 2013
+          "end_ms": 2013,
+          "romaji": "kippu"
         },
         {
           "text": "を",
@@ -113,11 +120,13 @@
           "explanation_hr": "Označava izravni objekt (kartu).",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2025,
-          "end_ms": 2125
+          "end_ms": 2125,
+          "romaji": "o"
         },
         {
           "text": "買いました",
@@ -131,11 +140,13 @@
               "reading": "か"
             },
             {
-              "text": "いました"
+              "text": "いました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2138,
-          "end_ms": 2838
+          "end_ms": 2838,
+          "romaji": "kaimashita"
         },
         {
           "text": "。",
@@ -149,13 +160,32 @@
             }
           ],
           "start_ms": 2850,
-          "end_ms": 2950
+          "end_ms": 2950,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-1.mp3",
       "duration_ms": 3650,
       "full_start_ms": 113,
-      "full_end_ms": 2950
+      "full_end_ms": 2950,
+      "chunk_info": [
+        {
+          "literal_hr": "ujutro",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "na stanici Sapporo",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "kartu",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "kupio sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "電車で函館まで行って、新幹線に乗り換えました。",
@@ -181,7 +211,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 438
+          "end_ms": 438,
+          "romaji": "densha"
         },
         {
           "text": "で",
@@ -191,11 +222,13 @@
           "explanation_hr": "Ovdje označava prijevozno sredstvo: vlakom.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 450,
-          "end_ms": 588
+          "end_ms": 588,
+          "romaji": "de"
         },
         {
           "text": "函館",
@@ -210,7 +243,8 @@
             }
           ],
           "start_ms": 600,
-          "end_ms": 1138
+          "end_ms": 1138,
+          "romaji": "hakodate"
         },
         {
           "text": "まで",
@@ -220,11 +254,13 @@
           "explanation_hr": "Do (krajnja točka): do Hakodatea.",
           "furigana": [
             {
-              "text": "まで"
+              "text": "まで",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1150,
-          "end_ms": 1375
+          "end_ms": 1375,
+          "romaji": "made"
         },
         {
           "text": "行って",
@@ -238,11 +274,13 @@
               "reading": "い"
             },
             {
-              "text": "って"
+              "text": "って",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1388,
-          "end_ms": 1875
+          "end_ms": 1875,
+          "romaji": "itte"
         },
         {
           "text": "、",
@@ -256,7 +294,8 @@
             }
           ],
           "start_ms": 1975,
-          "end_ms": 2200
+          "end_ms": 2200,
+          "romaji": ","
         },
         {
           "text": "新幹線",
@@ -271,7 +310,8 @@
             }
           ],
           "start_ms": 2200,
-          "end_ms": 2938
+          "end_ms": 2938,
+          "romaji": "shinkansen"
         },
         {
           "text": "に",
@@ -281,11 +321,13 @@
           "explanation_hr": "Označava na što se presjeda.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2950,
-          "end_ms": 3088
+          "end_ms": 3088,
+          "romaji": "ni"
         },
         {
           "text": "乗り換えました",
@@ -306,11 +348,16 @@
               "reading": "か"
             },
             {
-              "text": "えました"
+              "text": "え"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 3100,
-          "end_ms": 4000
+          "end_ms": 4000,
+          "romaji": "norikaemashita"
         },
         {
           "text": "。",
@@ -324,13 +371,36 @@
             }
           ],
           "start_ms": 4013,
-          "end_ms": 4113
+          "end_ms": 4113,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-2.mp3",
       "duration_ms": 4813,
       "full_start_ms": 3725,
-      "full_end_ms": 7763
+      "full_end_ms": 7763,
+      "chunk_info": [
+        {
+          "literal_hr": "vlakom",
+          "role": "ostalo"
+        },
+        {
+          "literal_hr": "do Hakodatea",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "otišao sam i",
+          "role": "glagol"
+        },
+        {
+          "literal_hr": "na shinkansen",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "presjeo sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "仙台では、窓から緑の山が見えました。",
@@ -356,7 +426,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 563
+          "end_ms": 563,
+          "romaji": "sendai"
         },
         {
           "text": "で",
@@ -366,11 +437,13 @@
           "explanation_hr": "Označava mjesto: u Sendaiju.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 575,
-          "end_ms": 688
+          "end_ms": 688,
+          "romaji": "de"
         },
         {
           "text": "は",
@@ -380,11 +453,13 @@
           "explanation_hr": "Označava temu; では naglašava »što se tiče Sendaija«.",
           "furigana": [
             {
-              "text": "は"
+              "text": "は",
+              "kind": "cestica"
             }
           ],
           "start_ms": 700,
-          "end_ms": 988
+          "end_ms": 988,
+          "romaji": "wa"
         },
         {
           "text": "、",
@@ -398,7 +473,8 @@
             }
           ],
           "start_ms": 1113,
-          "end_ms": 1363
+          "end_ms": 1363,
+          "romaji": ","
         },
         {
           "text": "窓",
@@ -413,7 +489,8 @@
             }
           ],
           "start_ms": 1375,
-          "end_ms": 1625
+          "end_ms": 1625,
+          "romaji": "mado"
         },
         {
           "text": "から",
@@ -423,11 +500,13 @@
           "explanation_hr": "Iz, kroz: pogled kroz prozor.",
           "furigana": [
             {
-              "text": "から"
+              "text": "から",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1638,
-          "end_ms": 1875
+          "end_ms": 1875,
+          "romaji": "kara"
         },
         {
           "text": "緑",
@@ -442,7 +521,8 @@
             }
           ],
           "start_ms": 1888,
-          "end_ms": 2288
+          "end_ms": 2288,
+          "romaji": "midori"
         },
         {
           "text": "の",
@@ -452,11 +532,13 @@
           "explanation_hr": "Povezuje imenice: zelene planine.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2300,
-          "end_ms": 2388
+          "end_ms": 2388,
+          "romaji": "no"
         },
         {
           "text": "山",
@@ -471,7 +553,8 @@
             }
           ],
           "start_ms": 2400,
-          "end_ms": 2663
+          "end_ms": 2663,
+          "romaji": "yama"
         },
         {
           "text": "が",
@@ -481,11 +564,13 @@
           "explanation_hr": "Označava subjekt uz glagol 見える.",
           "furigana": [
             {
-              "text": "が"
+              "text": "が",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2675,
-          "end_ms": 2788
+          "end_ms": 2788,
+          "romaji": "ga"
         },
         {
           "text": "見えました",
@@ -499,11 +584,16 @@
               "reading": "み"
             },
             {
-              "text": "えました"
+              "text": "え"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2800,
-          "end_ms": 3500
+          "end_ms": 3500,
+          "romaji": "miemashita"
         },
         {
           "text": "。",
@@ -517,13 +607,36 @@
             }
           ],
           "start_ms": 3513,
-          "end_ms": 3613
+          "end_ms": 3613,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-3.mp3",
       "duration_ms": 4313,
       "full_start_ms": 8538,
-      "full_end_ms": 12075
+      "full_end_ms": 12075,
+      "chunk_info": [
+        {
+          "literal_hr": "u Sendaiju",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "kroz prozor",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "zelene",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "planine",
+          "role": "subjekt"
+        },
+        {
+          "literal_hr": "vidjele su se",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "東京駅のホームは、人がとても多かったです。",
@@ -549,7 +662,8 @@
             }
           ],
           "start_ms": 113,
-          "end_ms": 538
+          "end_ms": 538,
+          "romaji": "tōkyō"
         },
         {
           "text": "駅",
@@ -564,7 +678,8 @@
             }
           ],
           "start_ms": 550,
-          "end_ms": 788
+          "end_ms": 788,
+          "romaji": "eki"
         },
         {
           "text": "の",
@@ -574,11 +689,13 @@
           "explanation_hr": "Posvojna čestica: peron stanice.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 800,
-          "end_ms": 900
+          "end_ms": 900,
+          "romaji": "no"
         },
         {
           "text": "ホーム",
@@ -588,11 +705,18 @@
           "explanation_hr": "Peron na stanici.",
           "furigana": [
             {
-              "text": "ホーム"
+              "text": "ホ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ム"
             }
           ],
           "start_ms": 913,
-          "end_ms": 1275
+          "end_ms": 1275,
+          "romaji": "hōmu"
         },
         {
           "text": "は",
@@ -602,11 +726,13 @@
           "explanation_hr": "Označava temu rečenice: što se tiče perona.",
           "furigana": [
             {
-              "text": "は"
+              "text": "は",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1288,
-          "end_ms": 1575
+          "end_ms": 1575,
+          "romaji": "wa"
         },
         {
           "text": "、",
@@ -620,7 +746,8 @@
             }
           ],
           "start_ms": 1675,
-          "end_ms": 1813
+          "end_ms": 1813,
+          "romaji": ","
         },
         {
           "text": "人",
@@ -635,7 +762,8 @@
             }
           ],
           "start_ms": 1813,
-          "end_ms": 2038
+          "end_ms": 2038,
+          "romaji": "hito"
         },
         {
           "text": "が",
@@ -645,11 +773,13 @@
           "explanation_hr": "Označava subjekt: ljudi.",
           "furigana": [
             {
-              "text": "が"
+              "text": "が",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2050,
-          "end_ms": 2200
+          "end_ms": 2200,
+          "romaji": "ga"
         },
         {
           "text": "とても",
@@ -659,11 +789,18 @@
           "explanation_hr": "Jako, vrlo.",
           "furigana": [
             {
-              "text": "とても"
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
             }
           ],
           "start_ms": 2225,
-          "end_ms": 2638
+          "end_ms": 2638,
+          "romaji": "totemo"
         },
         {
           "text": "多かったです",
@@ -677,11 +814,13 @@
               "reading": "おお"
             },
             {
-              "text": "かったです"
+              "text": "かったです",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2650,
-          "end_ms": 3550
+          "end_ms": 3550,
+          "romaji": "ōkatta desu"
         },
         {
           "text": "。",
@@ -695,13 +834,36 @@
             }
           ],
           "start_ms": 3563,
-          "end_ms": 3663
+          "end_ms": 3663,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-4.mp3",
       "duration_ms": 4363,
       "full_start_ms": 12888,
-      "full_end_ms": 16438
+      "full_end_ms": 16438,
+      "chunk_info": [
+        {
+          "literal_hr": "stanice Tokio",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "na peronu",
+          "role": "subjekt"
+        },
+        {
+          "literal_hr": "ljudi",
+          "role": "subjekt"
+        },
+        {
+          "literal_hr": "jako",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "bilo je puno",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "金沢で買った弁当を、新幹線の中で食べました。",
@@ -728,7 +890,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 563
+          "end_ms": 563,
+          "romaji": "kanazawa"
         },
         {
           "text": "で",
@@ -738,11 +901,13 @@
           "explanation_hr": "Mjesto radnje: u Kanazawi.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 575,
-          "end_ms": 675
+          "end_ms": 675,
+          "romaji": "de"
         },
         {
           "text": "買った",
@@ -756,11 +921,13 @@
               "reading": "か"
             },
             {
-              "text": "った"
+              "text": "った",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 688,
-          "end_ms": 1050
+          "end_ms": 1050,
+          "romaji": "katta"
         },
         {
           "text": "弁当",
@@ -775,7 +942,8 @@
             }
           ],
           "start_ms": 1063,
-          "end_ms": 1525
+          "end_ms": 1525,
+          "romaji": "bentō"
         },
         {
           "text": "を",
@@ -785,11 +953,13 @@
           "explanation_hr": "Označava izravni objekt (bento).",
           "furigana": [
             {
-              "text": "を"
+              "text": "を",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1538,
-          "end_ms": 1750
+          "end_ms": 1750,
+          "romaji": "o"
         },
         {
           "text": "、",
@@ -803,7 +973,8 @@
             }
           ],
           "start_ms": 1850,
-          "end_ms": 2063
+          "end_ms": 2063,
+          "romaji": ","
         },
         {
           "text": "新幹線",
@@ -818,7 +989,8 @@
             }
           ],
           "start_ms": 2063,
-          "end_ms": 2763
+          "end_ms": 2763,
+          "romaji": "shinkansen"
         },
         {
           "text": "の",
@@ -828,11 +1000,13 @@
           "explanation_hr": "Povezuje imenice: unutrašnjost shinkansena.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2775,
-          "end_ms": 2888
+          "end_ms": 2888,
+          "romaji": "no"
         },
         {
           "text": "中",
@@ -847,7 +1021,8 @@
             }
           ],
           "start_ms": 2900,
-          "end_ms": 3138
+          "end_ms": 3138,
+          "romaji": "naka"
         },
         {
           "text": "で",
@@ -857,11 +1032,13 @@
           "explanation_hr": "Mjesto radnje: u vlaku.",
           "furigana": [
             {
-              "text": "で"
+              "text": "で",
+              "kind": "cestica"
             }
           ],
           "start_ms": 3150,
-          "end_ms": 3250
+          "end_ms": 3250,
+          "romaji": "de"
         },
         {
           "text": "食べました",
@@ -875,11 +1052,16 @@
               "reading": "た"
             },
             {
-              "text": "べました"
+              "text": "べ"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 3263,
-          "end_ms": 3975
+          "end_ms": 3975,
+          "romaji": "tabemashita"
         },
         {
           "text": "。",
@@ -893,13 +1075,40 @@
             }
           ],
           "start_ms": 3988,
-          "end_ms": 4088
+          "end_ms": 4088,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-5.mp3",
       "duration_ms": 4788,
       "full_start_ms": 17213,
-      "full_end_ms": 21225
+      "full_end_ms": 21225,
+      "chunk_info": [
+        {
+          "literal_hr": "u Kanazawi",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "kupljeni",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "bento",
+          "role": "objekt"
+        },
+        {
+          "literal_hr": "shinkansena",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "unutar",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "pojeo sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "福岡の博多駅に着いたとき、雨が降っていました。",
@@ -925,7 +1134,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 575
+          "end_ms": 575,
+          "romaji": "fukuoka"
         },
         {
           "text": "の",
@@ -935,11 +1145,13 @@
           "explanation_hr": "Povezuje imenice: stanica Hakata u Fukuoki.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 588,
-          "end_ms": 700
+          "end_ms": 700,
+          "romaji": "no"
         },
         {
           "text": "博多",
@@ -954,7 +1166,8 @@
             }
           ],
           "start_ms": 713,
-          "end_ms": 1088
+          "end_ms": 1088,
+          "romaji": "hakata"
         },
         {
           "text": "駅",
@@ -969,7 +1182,8 @@
             }
           ],
           "start_ms": 1100,
-          "end_ms": 1350
+          "end_ms": 1350,
+          "romaji": "eki"
         },
         {
           "text": "に",
@@ -979,11 +1193,13 @@
           "explanation_hr": "Označava cilj dolaska: na stanicu.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1363,
-          "end_ms": 1488
+          "end_ms": 1488,
+          "romaji": "ni"
         },
         {
           "text": "着いた",
@@ -997,11 +1213,13 @@
               "reading": "つ"
             },
             {
-              "text": "いた"
+              "text": "いた",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1500,
-          "end_ms": 1838
+          "end_ms": 1838,
+          "romaji": "tsuita"
         },
         {
           "text": "とき",
@@ -1011,11 +1229,15 @@
           "explanation_hr": "Kad, u trenutku kada: kad sam stigao.",
           "furigana": [
             {
-              "text": "とき"
+              "text": "と"
+            },
+            {
+              "text": "き"
             }
           ],
           "start_ms": 1850,
-          "end_ms": 2188
+          "end_ms": 2188,
+          "romaji": "toki"
         },
         {
           "text": "、",
@@ -1029,7 +1251,8 @@
             }
           ],
           "start_ms": 2300,
-          "end_ms": 2525
+          "end_ms": 2525,
+          "romaji": ","
         },
         {
           "text": "雨",
@@ -1044,7 +1267,8 @@
             }
           ],
           "start_ms": 2538,
-          "end_ms": 2800
+          "end_ms": 2800,
+          "romaji": "ame"
         },
         {
           "text": "が",
@@ -1054,11 +1278,13 @@
           "explanation_hr": "Označava subjekt: kiša.",
           "furigana": [
             {
-              "text": "が"
+              "text": "が",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2813,
-          "end_ms": 2925
+          "end_ms": 2925,
+          "romaji": "ga"
         },
         {
           "text": "降っていました",
@@ -1072,11 +1298,13 @@
               "reading": "ふ"
             },
             {
-              "text": "っていました"
+              "text": "っていました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2938,
-          "end_ms": 3913
+          "end_ms": 3913,
+          "romaji": "futteimashita"
         },
         {
           "text": "。",
@@ -1090,13 +1318,36 @@
             }
           ],
           "start_ms": 3925,
-          "end_ms": 4025
+          "end_ms": 4025,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-6.mp3",
       "duration_ms": 4725,
       "full_start_ms": 22000,
-      "full_end_ms": 25950
+      "full_end_ms": 25950,
+      "chunk_info": [
+        {
+          "literal_hr": "u Fukuoki",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "na stanicu Hakata",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "kad sam stigao",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "kiša",
+          "role": "subjekt"
+        },
+        {
+          "literal_hr": "padala je",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "最後に、南の長崎に着きました。",
@@ -1121,7 +1372,8 @@
             }
           ],
           "start_ms": 75,
-          "end_ms": 488
+          "end_ms": 488,
+          "romaji": "saigo"
         },
         {
           "text": "に",
@@ -1131,11 +1383,13 @@
           "explanation_hr": "最後に = na kraju, napokon.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 500,
-          "end_ms": 738
+          "end_ms": 738,
+          "romaji": "ni"
         },
         {
           "text": "、",
@@ -1149,7 +1403,8 @@
             }
           ],
           "start_ms": 850,
-          "end_ms": 1013
+          "end_ms": 1013,
+          "romaji": ","
         },
         {
           "text": "南",
@@ -1164,7 +1419,8 @@
             }
           ],
           "start_ms": 1025,
-          "end_ms": 1388
+          "end_ms": 1388,
+          "romaji": "minami"
         },
         {
           "text": "の",
@@ -1174,11 +1430,13 @@
           "explanation_hr": "Povezuje imenice: Nagasaki na jugu.",
           "furigana": [
             {
-              "text": "の"
+              "text": "の",
+              "kind": "cestica"
             }
           ],
           "start_ms": 1400,
-          "end_ms": 1513
+          "end_ms": 1513,
+          "romaji": "no"
         },
         {
           "text": "長崎",
@@ -1193,7 +1451,8 @@
             }
           ],
           "start_ms": 1525,
-          "end_ms": 2050
+          "end_ms": 2050,
+          "romaji": "nagasaki"
         },
         {
           "text": "に",
@@ -1203,11 +1462,13 @@
           "explanation_hr": "Označava cilj dolaska: u Nagasaki.",
           "furigana": [
             {
-              "text": "に"
+              "text": "に",
+              "kind": "cestica"
             }
           ],
           "start_ms": 2063,
-          "end_ms": 2188
+          "end_ms": 2188,
+          "romaji": "ni"
         },
         {
           "text": "着きました",
@@ -1221,11 +1482,13 @@
               "reading": "つ"
             },
             {
-              "text": "きました"
+              "text": "きました",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 2200,
-          "end_ms": 2900
+          "end_ms": 2900,
+          "romaji": "tsukimashita"
         },
         {
           "text": "。",
@@ -1239,13 +1502,32 @@
             }
           ],
           "start_ms": 2913,
-          "end_ms": 3013
+          "end_ms": 3013,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-7.mp3",
       "duration_ms": 3713,
       "full_start_ms": 26725,
-      "full_end_ms": 29663
+      "full_end_ms": 29663,
+      "chunk_info": [
+        {
+          "literal_hr": "na kraju",
+          "role": "vrijeme"
+        },
+        {
+          "literal_hr": "južni",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "u Nagasaki",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "stigao sam",
+          "role": "glagol"
+        }
+      ]
     },
     {
       "ja": "北から南まで、長くて楽しい旅行でした。",
@@ -1271,7 +1553,8 @@
             }
           ],
           "start_ms": 113,
-          "end_ms": 300
+          "end_ms": 300,
+          "romaji": "kita"
         },
         {
           "text": "から",
@@ -1281,11 +1564,13 @@
           "explanation_hr": "Od (početna točka): od sjevera.",
           "furigana": [
             {
-              "text": "から"
+              "text": "から",
+              "kind": "cestica"
             }
           ],
           "start_ms": 313,
-          "end_ms": 538
+          "end_ms": 538,
+          "romaji": "kara"
         },
         {
           "text": "南",
@@ -1300,7 +1585,8 @@
             }
           ],
           "start_ms": 550,
-          "end_ms": 925
+          "end_ms": 925,
+          "romaji": "minami"
         },
         {
           "text": "まで",
@@ -1310,11 +1596,13 @@
           "explanation_hr": "Do (krajnja točka): do juga.",
           "furigana": [
             {
-              "text": "まで"
+              "text": "まで",
+              "kind": "cestica"
             }
           ],
           "start_ms": 938,
-          "end_ms": 1250
+          "end_ms": 1250,
+          "romaji": "made"
         },
         {
           "text": "、",
@@ -1328,7 +1616,8 @@
             }
           ],
           "start_ms": 1350,
-          "end_ms": 1550
+          "end_ms": 1550,
+          "romaji": ","
         },
         {
           "text": "長くて",
@@ -1342,11 +1631,13 @@
               "reading": "なが"
             },
             {
-              "text": "くて"
+              "text": "くて",
+              "kind": "nastavak"
             }
           ],
           "start_ms": 1550,
-          "end_ms": 2038
+          "end_ms": 2038,
+          "romaji": "nagakute"
         },
         {
           "text": "楽しい",
@@ -1360,11 +1651,15 @@
               "reading": "たの"
             },
             {
-              "text": "しい"
+              "text": "し"
+            },
+            {
+              "text": "い"
             }
           ],
           "start_ms": 2050,
-          "end_ms": 2575
+          "end_ms": 2575,
+          "romaji": "tanoshii"
         },
         {
           "text": "旅行",
@@ -1379,7 +1674,8 @@
             }
           ],
           "start_ms": 2588,
-          "end_ms": 2950
+          "end_ms": 2950,
+          "romaji": "ryokō"
         },
         {
           "text": "でした",
@@ -1389,11 +1685,13 @@
           "explanation_hr": "です u prošlom vremenu: bilo je.",
           "furigana": [
             {
-              "text": "でした"
+              "text": "でした",
+              "kind": "kopula"
             }
           ],
           "start_ms": 2963,
-          "end_ms": 3425
+          "end_ms": 3425,
+          "romaji": "deshita"
         },
         {
           "text": "。",
@@ -1407,13 +1705,36 @@
             }
           ],
           "start_ms": 3438,
-          "end_ms": 3538
+          "end_ms": 3538,
+          "romaji": "."
         }
       ],
       "audio": "japanske-zeljeznice-001-8.mp3",
       "duration_ms": 4238,
       "full_start_ms": 30475,
-      "full_end_ms": 33900
+      "full_end_ms": 33900,
+      "chunk_info": [
+        {
+          "literal_hr": "od sjevera",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "do juga",
+          "role": "mjesto"
+        },
+        {
+          "literal_hr": "dugo i",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "zabavno",
+          "role": "opis"
+        },
+        {
+          "literal_hr": "putovanje je bilo",
+          "role": "glagol"
+        }
+      ]
     }
   ],
   "audio": "japanske-zeljeznice-001-cijela.mp3",
@@ -1421,5 +1742,6 @@
   "fond": {
     "pokrivenost": 100,
     "izvan_popisa": []
-  }
+  },
+  "trosak_usd": 0.026
 }

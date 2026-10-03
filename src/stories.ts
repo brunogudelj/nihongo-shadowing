@@ -1,7 +1,8 @@
 // Učitava sve priče iz content/stories/ i njihov zvuk iz content/audio/.
 // Nova priča se pojavi u aplikaciji sama, bez izmjene koda.
 
-export type FuriganaPart = { text: string; reading?: string }
+// kind: čestica, kopula ili nastavak za konjugaciju (za isticanje); bez oznake = osnova riječi.
+export type FuriganaPart = { text: string; reading?: string; kind?: 'cestica' | 'kopula' | 'nastavak' }
 
 export type Word = {
   text: string
@@ -10,14 +11,18 @@ export type Word = {
   role: string
   explanation_hr: string
   furigana: FuriganaPart[]
+  romaji?: string
   start_ms: number
   end_ms: number
 }
+
+export type ChunkInfo = { literal_hr: string; role: string }
 
 export type Sentence = {
   ja: string
   hr: string
   chunks: string[]
+  chunk_info?: ChunkInfo[]
   words: Word[]
   audio: string
   duration_ms: number

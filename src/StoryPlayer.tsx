@@ -4,6 +4,25 @@ import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
 
+// Boja bloka prema ulozi u rečenici (iz pipelinea, polje chunk_info).
+const ROLE_STYLE: Record<string, { bg: string; label: string }> = {
+  vrijeme: { bg: 'bg-amber-100', label: 'vrijeme' },
+  mjesto: { bg: 'bg-sky-100', label: 'mjesto' },
+  subjekt: { bg: 'bg-emerald-100', label: 'tema / subjekt' },
+  objekt: { bg: 'bg-violet-100', label: 'objekt' },
+  glagol: { bg: 'bg-rose-100', label: 'glagol' },
+  opis: { bg: 'bg-stone-200', label: 'opis / ostalo' },
+  ostalo: { bg: 'bg-stone-200', label: 'opis / ostalo' },
+}
+const LEGEND = ['vrijeme', 'mjesto', 'subjekt', 'objekt', 'glagol', 'opis']
+
+// Isticanje unutar bloka: čestice, kopula i nastavci za konjugaciju.
+const KIND_STYLE = {
+  cestica: { className: 'font-bold text-blue-700', label: 'čestica' },
+  kopula: { className: 'font-bold text-emerald-700', label: 'kopula' },
+  nastavak: { className: 'text-orange-600', label: 'nastavak' },
+}
+
 type Mode = 'sentence' | 'full'
 
 // mp3 se učitava cijeli u memoriju, da pouzdano svira i bez interneta.
@@ -111,7 +130,6 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
 
   function goTo(i: number) {
     setIndex(i)
-    setShowTranslation(false)
     // Tijekom cijele priče skoči na tu rečenicu, inače samo zaustavi.
     if (playing === 'full' && audioRef.current) {
       audioRef.current.currentTime = story.sentences[i].full_start_ms / 1000
@@ -141,7 +159,6 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
           const current = story.sentences.findLastIndex((s) => s.full_start_ms <= ms)
           if (current >= 0 && current !== index) {
             setIndex(current)
-            setShowTranslation(false)
           }
           setCurrentWord(wordAtInFull(sentence, ms))
         } else {
@@ -171,30 +188,57 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
       </header>
 
       <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
-        {/* Rečenica po blokovima (chunkovima). */}
-        <p lang="ja" className="flex flex-wrap justify-center gap-x-2 text-[2rem] leading-[2.2] font-medium">
-          {spans.map((span, ci) => (
-            <span key={ci} className="rounded-lg px-1">
-              {sentence.words.slice(span.from, span.to).map((w, k) => {
-                const wi = span.from + k
-                return (
-                  <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
-                    {w.furigana.map((p, pi) =>
-                      p.reading ? (
-                        <ruby key={pi}>
-                          {p.text}
-                          <rt className="text-sm text-stone-500">{p.reading}</rt>
-                        </ruby>
-                      ) : (
-                        <span key={pi}>{p.text}</span>
-                      ),
-                    )}
+        {/* Rečenica po blokovima (chunkovima), obojenima prema ulozi.
+            Uz prijevod se ispod svakog bloka vidi doslovni prijevod, japanskim redom. */}
+        <div lang="ja" className="flex flex-wrap items-start justify-center gap-2">
+          {spans.map((span, ci) => {
+            const info = sentence.chunk_info?.[ci]
+            return (
+              <div
+                key={ci}
+                className={`flex flex-col items-center rounded-xl px-1.5 ${ROLE_STYLE[info?.role ?? '']?.bg ?? ''}`}
+              >
+                <span className="text-[2rem] leading-[2.2] font-medium">
+                  {sentence.words.slice(span.from, span.to).map((w, k) => {
+                    const wi = span.from + k
+                    // Riječ koja se upravo izgovara je cijela crvena; inače se ističu čestice i nastavci.
+                    const spoken = playing && wi === currentWord
+                    return (
+                      <span key={wi} className={spoken ? 'text-red-700' : ''}>
+                        {w.furigana.map((p, pi) =>
+                          p.reading ? (
+                            <ruby key={pi}>
+                              {p.text}
+                              <rt className="text-sm text-stone-500">{p.reading}</rt>
+                            </ruby>
+                          ) : (
+                            <span key={pi} className={!spoken && p.kind ? KIND_STYLE[p.kind].className : ''}>
+                              {p.text}
+                            </span>
+                          ),
+                        )}
+                      </span>
+                    )
+                  })}
+                </span>
+                {showTranslation && (
+                  <span lang="ja-Latn" className="-mt-1 text-sm text-stone-500 italic">
+                    {sentence.words
+                      .slice(span.from, span.to)
+                      .map((w) => w.romaji ?? '')
+                      .join(' ')
+                      .replace(/ ([,.])/g, '$1')}
                   </span>
-                )
-              })}
-            </span>
-          ))}
-        </p>
+                )}
+                {showTranslation && info && (
+                  <span lang="hr" className="pb-1 text-sm text-stone-700">
+                    {info.literal_hr}
+                  </span>
+                )}
+              </div>
+            )
+          })}
+        </div>
         {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
 
         <button
@@ -203,6 +247,20 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
         >
           {showTranslation ? sentence.hr : 'Prikaži prijevod'}
         </button>
+        {showTranslation && sentence.chunk_info && (
+          <div className="-mt-3 flex flex-wrap justify-center gap-1.5 text-xs text-stone-600">
+            {LEGEND.map((role) => (
+              <span key={role} className={`rounded-full px-2 py-0.5 ${ROLE_STYLE[role].bg}`}>
+                {ROLE_STYLE[role].label}
+              </span>
+            ))}
+            {Object.values(KIND_STYLE).map((k) => (
+              <span key={k.label} className={`rounded-full bg-white px-2 py-0.5 ${k.className}`}>
+                {k.label}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col gap-3 pb-4">
