@@ -1,0 +1,3657 @@
+[
+ {
+  "word": "会う",
+  "reading": "あう",
+  "class": "godan",
+  "level": "N5",
+  "hr": "sresti"
+ },
+ {
+  "word": "青い",
+  "reading": "あおい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "plav"
+ },
+ {
+  "word": "赤い",
+  "reading": "あかい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "crven"
+ },
+ {
+  "word": "明るい",
+  "reading": "あかるい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "svijetao"
+ },
+ {
+  "word": "開く",
+  "reading": "あく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "otvoriti se"
+ },
+ {
+  "word": "開ける",
+  "reading": "あける",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "otvoriti"
+ },
+ {
+  "word": "上げる",
+  "reading": "あげる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "dati, podići"
+ },
+ {
+  "word": "遊ぶ",
+  "reading": "あそぶ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "igrati se, posjetiti"
+ },
+ {
+  "word": "暖かい",
+  "reading": "あたたかい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "topao"
+ },
+ {
+  "word": "新しい",
+  "reading": "あたらしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "nov"
+ },
+ {
+  "word": "厚い",
+  "reading": "あつい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "debeo, srdačan"
+ },
+ {
+  "word": "暑い",
+  "reading": "あつい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "vruć"
+ },
+ {
+  "word": "熱い",
+  "reading": "あつい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "vruć (na dodir)"
+ },
+ {
+  "word": "あびる",
+  "reading": "あびる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "kupati se, tuširati se"
+ },
+ {
+  "word": "危ない",
+  "reading": "あぶない",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "opasan"
+ },
+ {
+  "word": "甘い",
+  "reading": "あまい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "sladak"
+ },
+ {
+  "word": "洗う",
+  "reading": "あらう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "prati"
+ },
+ {
+  "word": "ある",
+  "reading": "ある",
+  "class": "aru",
+  "level": "N5",
+  "hr": "biti, imati"
+ },
+ {
+  "word": "歩く",
+  "reading": "あるく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "hodati"
+ },
+ {
+  "word": "いい",
+  "reading": "いい",
+  "class": "ii",
+  "level": "N5",
+  "hr": "dobar"
+ },
+ {
+  "word": "言う",
+  "reading": "いう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "reći"
+ },
+ {
+  "word": "行く",
+  "reading": "いく",
+  "class": "iku",
+  "level": "N5",
+  "hr": "ići"
+ },
+ {
+  "word": "忙しい",
+  "reading": "いそがしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "zaposlen"
+ },
+ {
+  "word": "痛い",
+  "reading": "いたい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "bolan"
+ },
+ {
+  "word": "意味する",
+  "reading": "いみする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "značiti"
+ },
+ {
+  "word": "嫌",
+  "reading": "いや",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "neugodan, mrzak"
+ },
+ {
+  "word": "いる",
+  "reading": "いる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "biti, nalaziti se"
+ },
+ {
+  "word": "要る",
+  "reading": "いる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "trebati"
+ },
+ {
+  "word": "入れる",
+  "reading": "いれる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "staviti unutra"
+ },
+ {
+  "word": "いろいろ",
+  "reading": "いろいろ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "razni"
+ },
+ {
+  "word": "薄い",
+  "reading": "うすい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "tanak, slab"
+ },
+ {
+  "word": "歌う",
+  "reading": "うたう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "pjevati"
+ },
+ {
+  "word": "生まれる",
+  "reading": "うまれる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "roditi se"
+ },
+ {
+  "word": "売る",
+  "reading": "うる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "prodavati"
+ },
+ {
+  "word": "煩い",
+  "reading": "うるさい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "bučan, dosadan"
+ },
+ {
+  "word": "おいしい",
+  "reading": "おいしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "ukusan"
+ },
+ {
+  "word": "多い",
+  "reading": "おおい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "brojan"
+ },
+ {
+  "word": "大きい",
+  "reading": "おおきい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "velik"
+ },
+ {
+  "word": "起きる",
+  "reading": "おきる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "ustati"
+ },
+ {
+  "word": "置く",
+  "reading": "おく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "staviti"
+ },
+ {
+  "word": "教える",
+  "reading": "おしえる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "poučavati, reći"
+ },
+ {
+  "word": "押す",
+  "reading": "おす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "gurati, pritisnuti"
+ },
+ {
+  "word": "遅い",
+  "reading": "おそい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "kasan, spor"
+ },
+ {
+  "word": "大人",
+  "reading": "おとな",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "odrasla osoba"
+ },
+ {
+  "word": "同じ",
+  "reading": "おなじ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "isti"
+ },
+ {
+  "word": "覚える",
+  "reading": "おぼえる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "zapamtiti"
+ },
+ {
+  "word": "重い",
+  "reading": "おもい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "težak"
+ },
+ {
+  "word": "おもしろい",
+  "reading": "おもしろい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "zanimljiv"
+ },
+ {
+  "word": "泳ぐ",
+  "reading": "およぐ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "plivati"
+ },
+ {
+  "word": "降りる",
+  "reading": "おりる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "sići, izaći"
+ },
+ {
+  "word": "終る",
+  "reading": "おわる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "završiti"
+ },
+ {
+  "word": "買い物する",
+  "reading": "かいものする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "kupovati"
+ },
+ {
+  "word": "買う",
+  "reading": "かう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "kupiti"
+ },
+ {
+  "word": "返す",
+  "reading": "かえす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "vratiti"
+ },
+ {
+  "word": "帰る",
+  "reading": "かえる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "vratiti se"
+ },
+ {
+  "word": "かかる",
+  "reading": "かかる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "trajati, koštati"
+ },
+ {
+  "word": "書く",
+  "reading": "かく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "pisati"
+ },
+ {
+  "word": "かける",
+  "reading": "かける",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "nazvati"
+ },
+ {
+  "word": "貸す",
+  "reading": "かす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "posuditi (nekome)"
+ },
+ {
+  "word": "辛い",
+  "reading": "からい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "ljut"
+ },
+ {
+  "word": "借りる",
+  "reading": "かりる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "posuditi (od nekoga)"
+ },
+ {
+  "word": "軽い",
+  "reading": "かるい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "lagan"
+ },
+ {
+  "word": "かわいい",
+  "reading": "かわいい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "sladak"
+ },
+ {
+  "word": "黄色",
+  "reading": "きいろ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "žuta boja"
+ },
+ {
+  "word": "黄色い",
+  "reading": "きいろい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "žut"
+ },
+ {
+  "word": "消える",
+  "reading": "きえる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "nestati"
+ },
+ {
+  "word": "聞く",
+  "reading": "きく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "slušati, pitati"
+ },
+ {
+  "word": "汚い",
+  "reading": "きたない",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "prljav"
+ },
+ {
+  "word": "嫌い",
+  "reading": "きらい",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "mrzak"
+ },
+ {
+  "word": "切る",
+  "reading": "きる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "rezati"
+ },
+ {
+  "word": "着る",
+  "reading": "きる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "obući"
+ },
+ {
+  "word": "きれい",
+  "reading": "きれい",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "lijep, čist"
+ },
+ {
+  "word": "曇る",
+  "reading": "くもる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "naoblačiti se"
+ },
+ {
+  "word": "暗い",
+  "reading": "くらい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "mračan"
+ },
+ {
+  "word": "来る",
+  "reading": "くる",
+  "class": "kuru",
+  "level": "N5",
+  "hr": "doći"
+ },
+ {
+  "word": "黒い",
+  "reading": "くろい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "crn"
+ },
+ {
+  "word": "消す",
+  "reading": "けす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "izbrisati, ugasiti"
+ },
+ {
+  "word": "結構",
+  "reading": "けっこう",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "izvrstan, dovoljan"
+ },
+ {
+  "word": "結婚する",
+  "reading": "けっこんする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "vjenčati se"
+ },
+ {
+  "word": "元気",
+  "reading": "げんき",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "zdrav, živahan"
+ },
+ {
+  "word": "答える",
+  "reading": "こたえる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "odgovoriti"
+ },
+ {
+  "word": "コピーする",
+  "reading": "コピーする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "kopirati"
+ },
+ {
+  "word": "困る",
+  "reading": "こまる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "biti u nevolji"
+ },
+ {
+  "word": "咲く",
+  "reading": "さく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "cvjetati"
+ },
+ {
+  "word": "作文する",
+  "reading": "さくぶんする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "pisati sastav"
+ },
+ {
+  "word": "差す",
+  "reading": "さす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "otvoriti kišobran"
+ },
+ {
+  "word": "寒い",
+  "reading": "さむい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "hladan"
+ },
+ {
+  "word": "散歩する",
+  "reading": "さんぽする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "šetati"
+ },
+ {
+  "word": "仕事する",
+  "reading": "しごとする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "raditi"
+ },
+ {
+  "word": "静か",
+  "reading": "しずか",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "tih"
+ },
+ {
+  "word": "質問する",
+  "reading": "しつもんする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "pitati"
+ },
+ {
+  "word": "死ぬ",
+  "reading": "しぬ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "umrijeti"
+ },
+ {
+  "word": "閉まる",
+  "reading": "しまる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "zatvoriti se"
+ },
+ {
+  "word": "締める",
+  "reading": "しめる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "vezati"
+ },
+ {
+  "word": "閉める",
+  "reading": "しめる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "zatvoriti"
+ },
+ {
+  "word": "授業する",
+  "reading": "じゅぎょうする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "predavati"
+ },
+ {
+  "word": "上手",
+  "reading": "じょうず",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "vješt"
+ },
+ {
+  "word": "丈夫",
+  "reading": "じょうぶ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "čvrst, izdržljiv"
+ },
+ {
+  "word": "知る",
+  "reading": "しる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "znati"
+ },
+ {
+  "word": "白い",
+  "reading": "しろい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "bijel"
+ },
+ {
+  "word": "吸う",
+  "reading": "すう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "pušiti, sisati"
+ },
+ {
+  "word": "好き",
+  "reading": "すき",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "drag"
+ },
+ {
+  "word": "少ない",
+  "reading": "すくない",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "malobrojan"
+ },
+ {
+  "word": "涼しい",
+  "reading": "すずしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "svjež"
+ },
+ {
+  "word": "住む",
+  "reading": "すむ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "stanovati"
+ },
+ {
+  "word": "する",
+  "reading": "する",
+  "class": "suru",
+  "level": "N5",
+  "hr": "raditi"
+ },
+ {
+  "word": "座る",
+  "reading": "すわる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "sjesti"
+ },
+ {
+  "word": "せっけんする",
+  "reading": "せっけんする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "štedjeti"
+ },
+ {
+  "word": "狭い",
+  "reading": "せまい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "uzak"
+ },
+ {
+  "word": "洗濯する",
+  "reading": "せんたくする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "prati rublje"
+ },
+ {
+  "word": "掃除する",
+  "reading": "そうじする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "čistiti"
+ },
+ {
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "u redu"
+ },
+ {
+  "word": "大好き",
+  "reading": "だいすき",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "jako drag"
+ },
+ {
+  "word": "大切",
+  "reading": "たいせつ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "važan"
+ },
+ {
+  "word": "高い",
+  "reading": "たかい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "visok, skup"
+ },
+ {
+  "word": "たくさん",
+  "reading": "たくさん",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "mnogo"
+ },
+ {
+  "word": "出す",
+  "reading": "だす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "izvaditi"
+ },
+ {
+  "word": "立つ",
+  "reading": "たつ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "stajati"
+ },
+ {
+  "word": "楽しい",
+  "reading": "たのしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "zabavan"
+ },
+ {
+  "word": "頼む",
+  "reading": "たのむ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "zamoliti"
+ },
+ {
+  "word": "食べる",
+  "reading": "たべる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "jesti"
+ },
+ {
+  "word": "小さい",
+  "reading": "ちいさい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "malen"
+ },
+ {
+  "word": "近い",
+  "reading": "ちかい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "blizak"
+ },
+ {
+  "word": "違う",
+  "reading": "ちがう",
+  "class": "godan",
+  "level": "N5",
+  "hr": "razlikovati se"
+ },
+ {
+  "word": "使う",
+  "reading": "つかう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "koristiti"
+ },
+ {
+  "word": "疲れる",
+  "reading": "つかれる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "umoriti se"
+ },
+ {
+  "word": "着く",
+  "reading": "つく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "stići"
+ },
+ {
+  "word": "作る",
+  "reading": "つくる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "napraviti"
+ },
+ {
+  "word": "つける",
+  "reading": "つける",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "uključiti"
+ },
+ {
+  "word": "勤める",
+  "reading": "つとめる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "biti zaposlen"
+ },
+ {
+  "word": "つまらない",
+  "reading": "つまらない",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "dosadan"
+ },
+ {
+  "word": "冷たい",
+  "reading": "つめたい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "hladan (na dodir)"
+ },
+ {
+  "word": "強い",
+  "reading": "つよい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "jak"
+ },
+ {
+  "word": "出かける",
+  "reading": "でかける",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "izaći"
+ },
+ {
+  "word": "できる",
+  "reading": "できる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "moći"
+ },
+ {
+  "word": "テストする",
+  "reading": "テストする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "testirati"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "izaći, pojaviti se"
+ },
+ {
+  "word": "電話する",
+  "reading": "でんわする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "telefonirati"
+ },
+ {
+  "word": "遠い",
+  "reading": "とおい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "dalek"
+ },
+ {
+  "word": "飛ぶ",
+  "reading": "とぶ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "letjeti, skakati"
+ },
+ {
+  "word": "止まる",
+  "reading": "とまる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "zaustaviti se"
+ },
+ {
+  "word": "撮る",
+  "reading": "とる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "fotografirati, snimati"
+ },
+ {
+  "word": "取る",
+  "reading": "とる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "uzeti"
+ },
+ {
+  "word": "長い",
+  "reading": "ながい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "dug"
+ },
+ {
+  "word": "鳴く",
+  "reading": "なく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "glasati se, pjevati"
+ },
+ {
+  "word": "無くす",
+  "reading": "なくす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "izgubiti"
+ },
+ {
+  "word": "習う",
+  "reading": "ならう",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "učiti"
+ },
+ {
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "stati u red"
+ },
+ {
+  "word": "並べる",
+  "reading": "ならべる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "poredati"
+ },
+ {
+  "word": "なる",
+  "reading": "なる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "postati"
+ },
+ {
+  "word": "賑やか",
+  "reading": "にぎやか",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "živahan, užurban"
+ },
+ {
+  "word": "脱ぐ",
+  "reading": "ぬぐ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "skinuti"
+ },
+ {
+  "word": "温い",
+  "reading": "ぬるい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "mlak"
+ },
+ {
+  "word": "寝る",
+  "reading": "ねる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "leći, spavati"
+ },
+ {
+  "word": "登る",
+  "reading": "のぼる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "penjati se"
+ },
+ {
+  "word": "飲む",
+  "reading": "のむ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "piti"
+ },
+ {
+  "word": "乗る",
+  "reading": "のる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "ukrcati se, voziti se"
+ },
+ {
+  "word": "入る",
+  "reading": "はいる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "ući, sadržavati"
+ },
+ {
+  "word": "はく",
+  "reading": "はく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "obući, obuti"
+ },
+ {
+  "word": "始まる",
+  "reading": "はじまる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "početi"
+ },
+ {
+  "word": "走る",
+  "reading": "はしる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "trčati"
+ },
+ {
+  "word": "働く",
+  "reading": "はたらく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "raditi"
+ },
+ {
+  "word": "話す",
+  "reading": "はなす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "govoriti"
+ },
+ {
+  "word": "早い",
+  "reading": "はやい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "ran"
+ },
+ {
+  "word": "速い",
+  "reading": "はやい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "brz"
+ },
+ {
+  "word": "貼る",
+  "reading": "はる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "zalijepiti"
+ },
+ {
+  "word": "晴れる",
+  "reading": "はれる",
+  "class": "ichidan",
+  "level": "N5",
+  "hr": "razvedriti se"
+ },
+ {
+  "word": "引く",
+  "reading": "ひく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "vući"
+ },
+ {
+  "word": "弾く",
+  "reading": "ひく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "svirati"
+ },
+ {
+  "word": "低い",
+  "reading": "ひくい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "nizak"
+ },
+ {
+  "word": "広い",
+  "reading": "ひろい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "prostran, širok"
+ },
+ {
+  "word": "吹く",
+  "reading": "ふく",
+  "class": "godan",
+  "level": "N5",
+  "hr": "puhati"
+ },
+ {
+  "word": "太い",
+  "reading": "ふとい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "debeo"
+ },
+ {
+  "word": "降る",
+  "reading": "ふる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "padati"
+ },
+ {
+  "word": "古い",
+  "reading": "ふるい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "star"
+ },
+ {
+  "word": "下手",
+  "reading": "へた",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "nevješt"
+ },
+ {
+  "word": "勉強する",
+  "reading": "べんきょうする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "učiti"
+ },
+ {
+  "word": "便利",
+  "reading": "べんり",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "koristan, praktičan"
+ },
+ {
+  "word": "欲しい",
+  "reading": "ほしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "željen"
+ },
+ {
+  "word": "細い",
+  "reading": "ほそい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "tanak"
+ },
+ {
+  "word": "ほんとう",
+  "reading": "ほんとう",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "istina"
+ },
+ {
+  "word": "曲る",
+  "reading": "まがる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "skrenuti, saviti se"
+ },
+ {
+  "word": "まずい",
+  "reading": "まずい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "neukusan"
+ },
+ {
+  "word": "待つ",
+  "reading": "まつ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "čekati"
+ },
+ {
+  "word": "まっすぐ",
+  "reading": "まっすぐ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "ravno"
+ },
+ {
+  "word": "丸い",
+  "reading": "まるい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "okrugao"
+ },
+ {
+  "word": "磨く",
+  "reading": "みがく",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "četkati, polirati"
+ },
+ {
+  "word": "短い",
+  "reading": "みじかい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "kratak"
+ },
+ {
+  "word": "見せる",
+  "reading": "みせる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "pokazati"
+ },
+ {
+  "word": "見る",
+  "reading": "みる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "vidjeti, gledati"
+ },
+ {
+  "word": "難しい",
+  "reading": "むずかしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "težak"
+ },
+ {
+  "word": "持つ",
+  "reading": "もつ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "držati"
+ },
+ {
+  "word": "易しい",
+  "reading": "やさしい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "lak, jednostavan"
+ },
+ {
+  "word": "安い",
+  "reading": "やすい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "jeftin"
+ },
+ {
+  "word": "休む",
+  "reading": "やすむ",
+  "class": "godan",
+  "level": "N5",
+  "hr": "odmarati se"
+ },
+ {
+  "word": "やる",
+  "reading": "やる",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "raditi"
+ },
+ {
+  "word": "有名",
+  "reading": "ゆうめい",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "poznat"
+ },
+ {
+  "word": "ゆっくりとする",
+  "reading": "ゆっくりとする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "opuštati se"
+ },
+ {
+  "word": "呼ぶ",
+  "reading": "よぶ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "zvati, pozvati"
+ },
+ {
+  "word": "読む",
+  "reading": "よむ",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "čitati"
+ },
+ {
+  "word": "弱い",
+  "reading": "よわい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "slab"
+ },
+ {
+  "word": "りっぱ",
+  "reading": "りっぱ",
+  "class": "na-pridjev",
+  "level": "N5",
+  "hr": "sjajan"
+ },
+ {
+  "word": "料理する",
+  "reading": "りょうりする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "kuhati"
+ },
+ {
+  "word": "旅行する",
+  "reading": "りょこうする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "hr": "putovati"
+ },
+ {
+  "word": "練習する",
+  "reading": "れんしゅうする",
+  "class": "suru-imenica",
+  "level": "N5",
+  "transitive": true,
+  "hr": "vježbati"
+ },
+ {
+  "word": "若い",
+  "reading": "わかい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "mlad"
+ },
+ {
+  "word": "分かる",
+  "reading": "わかる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "razumjeti"
+ },
+ {
+  "word": "忘れる",
+  "reading": "わすれる",
+  "class": "ichidan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "zaboraviti"
+ },
+ {
+  "word": "渡す",
+  "reading": "わたす",
+  "class": "godan",
+  "level": "N5",
+  "transitive": true,
+  "hr": "predati"
+ },
+ {
+  "word": "渡る",
+  "reading": "わたる",
+  "class": "godan",
+  "level": "N5",
+  "hr": "prijeći"
+ },
+ {
+  "word": "悪い",
+  "reading": "わるい",
+  "class": "i-pridjev",
+  "level": "N5",
+  "hr": "loš"
+ },
+ {
+  "word": "あいさつする",
+  "reading": "あいさつする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "pozdraviti"
+ },
+ {
+  "word": "合う",
+  "reading": "あう",
+  "class": "godan",
+  "level": "N4",
+  "hr": "odgovarati, pristajati"
+ },
+ {
+  "word": "上がる",
+  "reading": "あがる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "dići se"
+ },
+ {
+  "word": "空く",
+  "reading": "あく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "isprazniti se"
+ },
+ {
+  "word": "浅い",
+  "reading": "あさい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "plitak, površan"
+ },
+ {
+  "word": "集まる",
+  "reading": "あつまる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "okupiti se"
+ },
+ {
+  "word": "集める",
+  "reading": "あつめる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "skupljati"
+ },
+ {
+  "word": "謝る",
+  "reading": "あやまる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ispričati se"
+ },
+ {
+  "word": "アルバイトする",
+  "reading": "アルバイトする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "honorarno raditi"
+ },
+ {
+  "word": "安心",
+  "reading": "あんしん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "olakšanje"
+ },
+ {
+  "word": "安全",
+  "reading": "あんぜん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "siguran"
+ },
+ {
+  "word": "案内する",
+  "reading": "あんないする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "voditi, pokazati put"
+ },
+ {
+  "word": "生きる",
+  "reading": "いきる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "živjeti"
+ },
+ {
+  "word": "いじめる",
+  "reading": "いじめる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zadirkivati, maltretirati"
+ },
+ {
+  "word": "急ぐ",
+  "reading": "いそぐ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "žuriti"
+ },
+ {
+  "word": "致す",
+  "reading": "いたす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "činiti (ponizno)"
+ },
+ {
+  "word": "いただく",
+  "reading": "いただく",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "primiti (ponizno)"
+ },
+ {
+  "word": "一生懸命",
+  "reading": "いっしょうけんめい",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "svim snagama"
+ },
+ {
+  "word": "いっぱい",
+  "reading": "いっぱい",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "pun"
+ },
+ {
+  "word": "祈る",
+  "reading": "いのる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "moliti se"
+ },
+ {
+  "word": "植える",
+  "reading": "うえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "saditi"
+ },
+ {
+  "word": "うかがう",
+  "reading": "うかがう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "posjetiti"
+ },
+ {
+  "word": "受付する",
+  "reading": "うけつけする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zaprimiti"
+ },
+ {
+  "word": "受ける",
+  "reading": "うける",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "polagati, pohađati"
+ },
+ {
+  "word": "動く",
+  "reading": "うごく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "kretati se"
+ },
+ {
+  "word": "打つ",
+  "reading": "うつ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "udariti"
+ },
+ {
+  "word": "美しい",
+  "reading": "うつくしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "lijep"
+ },
+ {
+  "word": "写す",
+  "reading": "うつす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "kopirati, fotografirati"
+ },
+ {
+  "word": "移る",
+  "reading": "うつる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "preseliti se"
+ },
+ {
+  "word": "うまい",
+  "reading": "うまい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "ukusan"
+ },
+ {
+  "word": "うれしい",
+  "reading": "うれしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "sretan"
+ },
+ {
+  "word": "運転する",
+  "reading": "うんてんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "voziti"
+ },
+ {
+  "word": "運動する",
+  "reading": "うんどうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "vježbati"
+ },
+ {
+  "word": "選ぶ",
+  "reading": "えらぶ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "izabrati"
+ },
+ {
+  "word": "遠慮する",
+  "reading": "えんりょする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "suzdržavati se"
+ },
+ {
+  "word": "おいでになる",
+  "reading": "おいでになる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti (počasno)"
+ },
+ {
+  "word": "おかしい",
+  "reading": "おかしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "čudan, smiješan"
+ },
+ {
+  "word": "送る",
+  "reading": "おくる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "poslati"
+ },
+ {
+  "word": "遅れる",
+  "reading": "おくれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "zakasniti"
+ },
+ {
+  "word": "起す",
+  "reading": "おこす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "probuditi"
+ },
+ {
+  "word": "行う",
+  "reading": "おこなう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "izvršiti"
+ },
+ {
+  "word": "怒る",
+  "reading": "おこる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "ljutiti se"
+ },
+ {
+  "word": "落ちる",
+  "reading": "おちる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "pasti"
+ },
+ {
+  "word": "落す",
+  "reading": "おとす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ispustiti"
+ },
+ {
+  "word": "踊る",
+  "reading": "おどる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "plesati"
+ },
+ {
+  "word": "驚く",
+  "reading": "おどろく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "iznenaditi se"
+ },
+ {
+  "word": "思い出す",
+  "reading": "おもいだす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "sjetiti se"
+ },
+ {
+  "word": "思う",
+  "reading": "おもう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "misliti, osjećati"
+ },
+ {
+  "word": "下りる",
+  "reading": "おりる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "sići"
+ },
+ {
+  "word": "折る",
+  "reading": "おる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "slomiti, saviti"
+ },
+ {
+  "word": "折れる",
+  "reading": "おれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "slomiti se"
+ },
+ {
+  "word": "会議する",
+  "reading": "かいぎする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "sastančiti"
+ },
+ {
+  "word": "会話する",
+  "reading": "かいわする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "razgovarati"
+ },
+ {
+  "word": "変える",
+  "reading": "かえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "promijeniti"
+ },
+ {
+  "word": "飾る",
+  "reading": "かざる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ukrasiti"
+ },
+ {
+  "word": "堅い",
+  "reading": "かたい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "tvrd"
+ },
+ {
+  "word": "片付ける",
+  "reading": "かたづける",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pospremiti"
+ },
+ {
+  "word": "勝つ",
+  "reading": "かつ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "pobijediti"
+ },
+ {
+  "word": "悲しい",
+  "reading": "かなしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "tužan"
+ },
+ {
+  "word": "かまう",
+  "reading": "かまう",
+  "class": "godan",
+  "level": "N4",
+  "hr": "mariti"
+ },
+ {
+  "word": "噛む",
+  "reading": "かむ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "gristi, žvakati"
+ },
+ {
+  "word": "通う",
+  "reading": "かよう",
+  "class": "godan",
+  "level": "N4",
+  "hr": "redovito putovati"
+ },
+ {
+  "word": "乾く",
+  "reading": "かわく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "osušiti se"
+ },
+ {
+  "word": "変わる",
+  "reading": "かわる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "promijeniti se"
+ },
+ {
+  "word": "考える",
+  "reading": "かんがえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "razmišljati"
+ },
+ {
+  "word": "関係する",
+  "reading": "かんけいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "biti povezan"
+ },
+ {
+  "word": "簡単",
+  "reading": "かんたん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "jednostavan"
+ },
+ {
+  "word": "危険",
+  "reading": "きけん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "opasan"
+ },
+ {
+  "word": "聞こえる",
+  "reading": "きこえる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "čuti se"
+ },
+ {
+  "word": "厳しい",
+  "reading": "きびしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "strog"
+ },
+ {
+  "word": "決まる",
+  "reading": "きまる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti odlučen"
+ },
+ {
+  "word": "決める",
+  "reading": "きめる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "odlučiti"
+ },
+ {
+  "word": "急",
+  "reading": "きゅう",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "hitan, strm"
+ },
+ {
+  "word": "教育する",
+  "reading": "きょういくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "obrazovati"
+ },
+ {
+  "word": "競争する",
+  "reading": "きょうそうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "natjecati se"
+ },
+ {
+  "word": "比べる",
+  "reading": "くらべる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "usporediti"
+ },
+ {
+  "word": "くれる",
+  "reading": "くれる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "dati (meni)"
+ },
+ {
+  "word": "暮れる",
+  "reading": "くれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "smračiti se, završiti"
+ },
+ {
+  "word": "計画する",
+  "reading": "けいかくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "planirati"
+ },
+ {
+  "word": "経験する",
+  "reading": "けいけんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "iskusiti"
+ },
+ {
+  "word": "けがする",
+  "reading": "けがする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ozlijediti se"
+ },
+ {
+  "word": "下宿する",
+  "reading": "げしゅくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "stanovati kao podstanar"
+ },
+ {
+  "word": "原因する",
+  "reading": "げんいんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "uzrokovati"
+ },
+ {
+  "word": "けんかする",
+  "reading": "けんかする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "svađati se"
+ },
+ {
+  "word": "研究する",
+  "reading": "けんきゅうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "istraživati"
+ },
+ {
+  "word": "見物する",
+  "reading": "けんぶつする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "razgledavati"
+ },
+ {
+  "word": "講義する",
+  "reading": "こうぎする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "predavati"
+ },
+ {
+  "word": "交通する",
+  "reading": "こうつうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "prometovati"
+ },
+ {
+  "word": "故障する",
+  "reading": "こしょうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "pokvariti se"
+ },
+ {
+  "word": "細かい",
+  "reading": "こまかい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "sitan"
+ },
+ {
+  "word": "込む",
+  "reading": "こむ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti krcat"
+ },
+ {
+  "word": "ごらんになる",
+  "reading": "ごらんになる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "vidjeti (počasno)"
+ },
+ {
+  "word": "怖い",
+  "reading": "こわい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "strašan"
+ },
+ {
+  "word": "壊す",
+  "reading": "こわす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "slomiti, pokvariti"
+ },
+ {
+  "word": "壊れる",
+  "reading": "こわれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "pokvariti se"
+ },
+ {
+  "word": "探す",
+  "reading": "さがす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "tražiti"
+ },
+ {
+  "word": "下がる",
+  "reading": "さがる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "spustiti se"
+ },
+ {
+  "word": "盛ん",
+  "reading": "さかん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "popularan, uspješan"
+ },
+ {
+  "word": "下げる",
+  "reading": "さげる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "spustiti, objesiti"
+ },
+ {
+  "word": "差し上げる",
+  "reading": "さしあげる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "dati (pristojno)"
+ },
+ {
+  "word": "寂しい",
+  "reading": "さびしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "usamljen"
+ },
+ {
+  "word": "騒ぐ",
+  "reading": "さわぐ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "bučiti"
+ },
+ {
+  "word": "触る",
+  "reading": "さわる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "dodirnuti"
+ },
+ {
+  "word": "残念",
+  "reading": "ざんねん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "šteta"
+ },
+ {
+  "word": "試合する",
+  "reading": "しあいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "igrati utakmicu"
+ },
+ {
+  "word": "試験する",
+  "reading": "しけんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ispitivati"
+ },
+ {
+  "word": "支度する",
+  "reading": "したくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pripremiti se"
+ },
+ {
+  "word": "しっかりする",
+  "reading": "しっかりする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "biti čvrst"
+ },
+ {
+  "word": "失敗する",
+  "reading": "しっぱいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ne uspjeti, pogriješiti"
+ },
+ {
+  "word": "じゃま",
+  "reading": "じゃま",
+  "class": "na-pridjev",
+  "level": "N4",
+  "transitive": true,
+  "hr": "smetnja"
+ },
+ {
+  "word": "自由",
+  "reading": "じゆう",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "slobodan"
+ },
+ {
+  "word": "十分",
+  "reading": "じゅうぶん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "dovoljan"
+ },
+ {
+  "word": "出席する",
+  "reading": "しゅっせきする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "prisustvovati"
+ },
+ {
+  "word": "出発する",
+  "reading": "しゅっぱつする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "krenuti"
+ },
+ {
+  "word": "準備する",
+  "reading": "じゅんびする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pripremiti"
+ },
+ {
+  "word": "紹介する",
+  "reading": "しょうかいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "predstaviti"
+ },
+ {
+  "word": "招待する",
+  "reading": "しょうたいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pozvati"
+ },
+ {
+  "word": "承知する",
+  "reading": "しょうちする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pristati"
+ },
+ {
+  "word": "食事する",
+  "reading": "しょくじする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "objedovati"
+ },
+ {
+  "word": "知らせる",
+  "reading": "しらせる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "obavijestiti"
+ },
+ {
+  "word": "調べる",
+  "reading": "しらべる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "istražiti"
+ },
+ {
+  "word": "親切",
+  "reading": "しんせつ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "ljubazan"
+ },
+ {
+  "word": "心配する",
+  "reading": "しんぱいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "brinuti se"
+ },
+ {
+  "word": "水泳する",
+  "reading": "すいえいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "plivati"
+ },
+ {
+  "word": "過ぎる",
+  "reading": "すぎる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "proći, premašiti"
+ },
+ {
+  "word": "すく",
+  "reading": "すく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "isprazniti se"
+ },
+ {
+  "word": "凄い",
+  "reading": "すごい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "sjajan"
+ },
+ {
+  "word": "進む",
+  "reading": "すすむ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "napredovati"
+ },
+ {
+  "word": "すっとする",
+  "reading": "すっとする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "osjetiti olakšanje"
+ },
+ {
+  "word": "捨てる",
+  "reading": "すてる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "baciti"
+ },
+ {
+  "word": "すばらしい",
+  "reading": "すばらしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "divan"
+ },
+ {
+  "word": "滑る",
+  "reading": "すべる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "kliziti, poskliznuti se"
+ },
+ {
+  "word": "済む",
+  "reading": "すむ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "završiti se"
+ },
+ {
+  "word": "生活する",
+  "reading": "せいかつする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "živjeti"
+ },
+ {
+  "word": "生産する",
+  "reading": "せいさんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "proizvoditi"
+ },
+ {
+  "word": "説明する",
+  "reading": "せつめいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "objasniti"
+ },
+ {
+  "word": "世話する",
+  "reading": "せわする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "brinuti se o"
+ },
+ {
+  "word": "戦争する",
+  "reading": "せんそうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "ratovati"
+ },
+ {
+  "word": "そう",
+  "reading": "そう",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "tako"
+ },
+ {
+  "word": "相談する",
+  "reading": "そうだんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "savjetovati se"
+ },
+ {
+  "word": "育てる",
+  "reading": "そだてる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "odgojiti"
+ },
+ {
+  "word": "卒業する",
+  "reading": "そつぎょうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "diplomirati"
+ },
+ {
+  "word": "ソフト",
+  "reading": "ソフト",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "mekan"
+ },
+ {
+  "word": "退院する",
+  "reading": "たいいんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "izaći iz bolnice"
+ },
+ {
+  "word": "大事",
+  "reading": "だいじ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "važan, dragocjen"
+ },
+ {
+  "word": "たいてい",
+  "reading": "たいてい",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "obično"
+ },
+ {
+  "word": "倒れる",
+  "reading": "たおれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "srušiti se"
+ },
+ {
+  "word": "確か",
+  "reading": "たしか",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "siguran"
+ },
+ {
+  "word": "足す",
+  "reading": "たす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zbrojiti, dodati"
+ },
+ {
+  "word": "尋ねる",
+  "reading": "たずねる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pitati"
+ },
+ {
+  "word": "訪ねる",
+  "reading": "たずねる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "posjetiti"
+ },
+ {
+  "word": "正しい",
+  "reading": "ただしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "ispravan"
+ },
+ {
+  "word": "建てる",
+  "reading": "たてる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "graditi"
+ },
+ {
+  "word": "立てる",
+  "reading": "たてる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "uspraviti"
+ },
+ {
+  "word": "楽しみ",
+  "reading": "たのしみ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "radost"
+ },
+ {
+  "word": "楽しむ",
+  "reading": "たのしむ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "uživati"
+ },
+ {
+  "word": "だめ",
+  "reading": "だめ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "ne valja"
+ },
+ {
+  "word": "足りる",
+  "reading": "たりる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "biti dovoljan"
+ },
+ {
+  "word": "暖房する",
+  "reading": "だんぼうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "grijati"
+ },
+ {
+  "word": "注意する",
+  "reading": "ちゅういする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "paziti, upozoriti"
+ },
+ {
+  "word": "注射する",
+  "reading": "ちゅうしゃする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "dati injekciju"
+ },
+ {
+  "word": "捕まえる",
+  "reading": "つかまえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "uhvatiti"
+ },
+ {
+  "word": "付く",
+  "reading": "つく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti pričvršćen"
+ },
+ {
+  "word": "漬ける",
+  "reading": "つける",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "namakati, kiseliti"
+ },
+ {
+  "word": "伝える",
+  "reading": "つたえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "prenijeti"
+ },
+ {
+  "word": "続く",
+  "reading": "つづく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "nastaviti se"
+ },
+ {
+  "word": "続ける",
+  "reading": "つづける",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "nastaviti"
+ },
+ {
+  "word": "包む",
+  "reading": "つつむ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zamotati"
+ },
+ {
+  "word": "釣る",
+  "reading": "つる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pecati"
+ },
+ {
+  "word": "連れる",
+  "reading": "つれる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "povesti"
+ },
+ {
+  "word": "丁寧",
+  "reading": "ていねい",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "pristojan"
+ },
+ {
+  "word": "適当",
+  "reading": "てきとう",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "prikladan"
+ },
+ {
+  "word": "手伝う",
+  "reading": "てつだう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pomoći"
+ },
+ {
+  "word": "通る",
+  "reading": "とおる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "proći"
+ },
+ {
+  "word": "特別",
+  "reading": "とくべつ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "poseban"
+ },
+ {
+  "word": "届ける",
+  "reading": "とどける",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "dostaviti"
+ },
+ {
+  "word": "泊まる",
+  "reading": "とまる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "odsjesti"
+ },
+ {
+  "word": "止める",
+  "reading": "とめる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zaustaviti"
+ },
+ {
+  "word": "取り替える",
+  "reading": "とりかえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zamijeniti"
+ },
+ {
+  "word": "直す",
+  "reading": "なおす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "popraviti"
+ },
+ {
+  "word": "治る",
+  "reading": "なおる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "ozdraviti"
+ },
+ {
+  "word": "直る",
+  "reading": "なおる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti popravljen"
+ },
+ {
+  "word": "中々",
+  "reading": "なかなか",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "prilično"
+ },
+ {
+  "word": "泣く",
+  "reading": "なく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "plakati"
+ },
+ {
+  "word": "亡くなる",
+  "reading": "なくなる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "preminuti"
+ },
+ {
+  "word": "無くなる",
+  "reading": "なくなる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "nestati, izgubiti se"
+ },
+ {
+  "word": "投げる",
+  "reading": "なげる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "baciti"
+ },
+ {
+  "word": "鳴る",
+  "reading": "なる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "zvoniti"
+ },
+ {
+  "word": "慣れる",
+  "reading": "なれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "naviknuti se"
+ },
+ {
+  "word": "苦い",
+  "reading": "にがい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "gorak"
+ },
+ {
+  "word": "逃げる",
+  "reading": "にげる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "pobjeći"
+ },
+ {
+  "word": "入院する",
+  "reading": "にゅういんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "biti hospitaliziran"
+ },
+ {
+  "word": "入学する",
+  "reading": "にゅうがくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "upisati školu"
+ },
+ {
+  "word": "似る",
+  "reading": "にる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "sličiti"
+ },
+ {
+  "word": "盗む",
+  "reading": "ぬすむ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ukrasti"
+ },
+ {
+  "word": "塗る",
+  "reading": "ぬる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "bojati, mazati"
+ },
+ {
+  "word": "ぬれる",
+  "reading": "ぬれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "smočiti se"
+ },
+ {
+  "word": "ねっしん",
+  "reading": "ねっしん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "revan"
+ },
+ {
+  "word": "寝坊する",
+  "reading": "ねぼうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "uspavati se"
+ },
+ {
+  "word": "眠い",
+  "reading": "ねむい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "pospan"
+ },
+ {
+  "word": "眠る",
+  "reading": "ねむる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "spavati"
+ },
+ {
+  "word": "残る",
+  "reading": "のこる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "ostati"
+ },
+ {
+  "word": "乗り換える",
+  "reading": "のりかえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "presjesti"
+ },
+ {
+  "word": "拝見する",
+  "reading": "はいけんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pogledati (ponizno)"
+ },
+ {
+  "word": "運ぶ",
+  "reading": "はこぶ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "prenositi"
+ },
+ {
+  "word": "始める",
+  "reading": "はじめる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "početi"
+ },
+ {
+  "word": "恥ずかしい",
+  "reading": "はずかしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "posramljen"
+ },
+ {
+  "word": "発音する",
+  "reading": "はつおんする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "izgovarati"
+ },
+ {
+  "word": "花見する",
+  "reading": "はなみする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "gledati cvjetove trešnje"
+ },
+ {
+  "word": "払う",
+  "reading": "はらう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "platiti"
+ },
+ {
+  "word": "反対する",
+  "reading": "はんたいする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "protiviti se"
+ },
+ {
+  "word": "冷える",
+  "reading": "ひえる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "ohladiti se"
+ },
+ {
+  "word": "光る",
+  "reading": "ひかる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "sjati"
+ },
+ {
+  "word": "引き出す",
+  "reading": "ひきだす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "podići (novac)"
+ },
+ {
+  "word": "久しぶり",
+  "reading": "ひさしぶり",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "nakon dugo vremena"
+ },
+ {
+  "word": "びっくりする",
+  "reading": "びっくりする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "iznenaditi se"
+ },
+ {
+  "word": "引っ越す",
+  "reading": "ひっこす",
+  "class": "godan",
+  "level": "N4",
+  "hr": "preseliti se"
+ },
+ {
+  "word": "必要",
+  "reading": "ひつよう",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "potreban"
+ },
+ {
+  "word": "ひどい",
+  "reading": "ひどい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "užasan"
+ },
+ {
+  "word": "拾う",
+  "reading": "ひろう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "podići, skupiti"
+ },
+ {
+  "word": "ファックスする",
+  "reading": "ファックスする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "faksirati"
+ },
+ {
+  "word": "増える",
+  "reading": "ふえる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "povećati se"
+ },
+ {
+  "word": "深い",
+  "reading": "ふかい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "dubok"
+ },
+ {
+  "word": "複雑",
+  "reading": "ふくざつ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "složen"
+ },
+ {
+  "word": "復習する",
+  "reading": "ふくしゅうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "ponavljati gradivo"
+ },
+ {
+  "word": "太る",
+  "reading": "ふとる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "udebljati se"
+ },
+ {
+  "word": "不便",
+  "reading": "ふべん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "nepraktičan"
+ },
+ {
+  "word": "踏む",
+  "reading": "ふむ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "stati na"
+ },
+ {
+  "word": "降り出す",
+  "reading": "ふりだす",
+  "class": "godan",
+  "level": "N4",
+  "hr": "početi padati"
+ },
+ {
+  "word": "プレゼントする",
+  "reading": "プレゼントする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "darovati"
+ },
+ {
+  "word": "別",
+  "reading": "べつ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "drugačiji"
+ },
+ {
+  "word": "変",
+  "reading": "へん",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "čudan"
+ },
+ {
+  "word": "返事する",
+  "reading": "へんじする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "odgovoriti"
+ },
+ {
+  "word": "貿易する",
+  "reading": "ぼうえきする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "hr": "trgovati"
+ },
+ {
+  "word": "放送する",
+  "reading": "ほうそうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "emitirati"
+ },
+ {
+  "word": "ほめる",
+  "reading": "ほめる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "hvaliti"
+ },
+ {
+  "word": "翻訳する",
+  "reading": "ほんやくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "prevoditi"
+ },
+ {
+  "word": "参る",
+  "reading": "まいる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "ići, doći (ponizno)"
+ },
+ {
+  "word": "負ける",
+  "reading": "まける",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "izgubiti"
+ },
+ {
+  "word": "まじめ",
+  "reading": "まじめ",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "ozbiljan"
+ },
+ {
+  "word": "間違える",
+  "reading": "まちがえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pogriješiti"
+ },
+ {
+  "word": "間に合う",
+  "reading": "まにあう",
+  "class": "godan",
+  "level": "N4",
+  "hr": "stići na vrijeme"
+ },
+ {
+  "word": "回る",
+  "reading": "まわる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "kružiti"
+ },
+ {
+  "word": "見える",
+  "reading": "みえる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "biti vidljiv"
+ },
+ {
+  "word": "見つかる",
+  "reading": "みつかる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti pronađen"
+ },
+ {
+  "word": "見つける",
+  "reading": "みつける",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pronaći"
+ },
+ {
+  "word": "向かう",
+  "reading": "むかう",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti okrenut prema"
+ },
+ {
+  "word": "迎える",
+  "reading": "むかえる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "dočekati"
+ },
+ {
+  "word": "無理",
+  "reading": "むり",
+  "class": "na-pridjev",
+  "level": "N4",
+  "hr": "nemoguć"
+ },
+ {
+  "word": "召し上がる",
+  "reading": "めしあがる",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "jesti (počasno)"
+ },
+ {
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "rijedak"
+ },
+ {
+  "word": "申し上げる",
+  "reading": "もうしあげる",
+  "class": "ichidan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "reći (ponizno)"
+ },
+ {
+  "word": "申す",
+  "reading": "もうす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zvati se (ponizno)"
+ },
+ {
+  "word": "戻る",
+  "reading": "もどる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "vratiti se"
+ },
+ {
+  "word": "もらう",
+  "reading": "もらう",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "primiti"
+ },
+ {
+  "word": "焼く",
+  "reading": "やく",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "peći"
+ },
+ {
+  "word": "約束する",
+  "reading": "やくそくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "obećati"
+ },
+ {
+  "word": "役に立つ",
+  "reading": "やくにたつ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "biti koristan"
+ },
+ {
+  "word": "焼ける",
+  "reading": "やける",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "izgorjeti, ispeći se"
+ },
+ {
+  "word": "優しい",
+  "reading": "やさしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "ljubazan"
+ },
+ {
+  "word": "痩せる",
+  "reading": "やせる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "smršaviti"
+ },
+ {
+  "word": "止む",
+  "reading": "やむ",
+  "class": "godan",
+  "level": "N4",
+  "hr": "prestati"
+ },
+ {
+  "word": "柔らかい",
+  "reading": "やわらかい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "mekan"
+ },
+ {
+  "word": "輸出する",
+  "reading": "ゆしゅつする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "izvoziti"
+ },
+ {
+  "word": "輸入する",
+  "reading": "ゆにゅうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "uvoziti"
+ },
+ {
+  "word": "揺れる",
+  "reading": "ゆれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "tresti se, njihati se"
+ },
+ {
+  "word": "用意する",
+  "reading": "よういする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pripremiti"
+ },
+ {
+  "word": "汚れる",
+  "reading": "よごれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "zaprljati se"
+ },
+ {
+  "word": "予習する",
+  "reading": "よしゅうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "pripremiti lekciju"
+ },
+ {
+  "word": "予定する",
+  "reading": "よていする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "planirati"
+ },
+ {
+  "word": "予約する",
+  "reading": "よやくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "rezervirati"
+ },
+ {
+  "word": "寄る",
+  "reading": "よる",
+  "class": "godan",
+  "level": "N4",
+  "hr": "svratiti"
+ },
+ {
+  "word": "喜ぶ",
+  "reading": "よろこぶ",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "radovati se"
+ },
+ {
+  "word": "よろしい",
+  "reading": "よろしい",
+  "class": "i-pridjev",
+  "level": "N4",
+  "hr": "u redu"
+ },
+ {
+  "word": "利用する",
+  "reading": "りようする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "koristiti"
+ },
+ {
+  "word": "留守する",
+  "reading": "るすする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "biti odsutan"
+ },
+ {
+  "word": "冷房する",
+  "reading": "れいぼうする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "klimatizirati"
+ },
+ {
+  "word": "レポートする",
+  "reading": "レポートする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "izvijestiti"
+ },
+ {
+  "word": "連絡する",
+  "reading": "れんらくする",
+  "class": "suru-imenica",
+  "level": "N4",
+  "transitive": true,
+  "hr": "kontaktirati"
+ },
+ {
+  "word": "沸かす",
+  "reading": "わかす",
+  "class": "godan",
+  "level": "N4",
+  "transitive": true,
+  "hr": "zakuhati, zagrijati"
+ },
+ {
+  "word": "別れる",
+  "reading": "わかれる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "rastati se"
+ },
+ {
+  "word": "沸く",
+  "reading": "わく",
+  "class": "godan",
+  "level": "N4",
+  "hr": "kipjeti"
+ },
+ {
+  "word": "笑う",
+  "reading": "わらう",
+  "class": "godan",
+  "level": "N4",
+  "hr": "smijati se, smiješiti se"
+ },
+ {
+  "word": "割れる",
+  "reading": "われる",
+  "class": "ichidan",
+  "level": "N4",
+  "hr": "razbiti se"
+ }
+]

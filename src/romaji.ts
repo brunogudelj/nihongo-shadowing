@@ -1,9 +1,10 @@
 // Kana → romaji (Hepburn, s crticom za dugi samoglasnik: トーキョー → tōkyō).
+// Koriste ga i aplikacija (konjugator) i pipeline (furigana.mjs).
 // Ulaz je izgovor (katakana ili hiragana), npr. iz Kuromojija: は kao čestica je već ワ.
 
-const toKatakana = (s) => s.replace(/[ぁ-ゖ]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
+const toKatakana = (s: string) => s.replace(/[ぁ-ゖ]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0x60))
 
-const DIGRAPHS = {
+const DIGRAPHS: Record<string, string> = {
   キャ: 'kya', キュ: 'kyu', キョ: 'kyo', ギャ: 'gya', ギュ: 'gyu', ギョ: 'gyo',
   シャ: 'sha', シュ: 'shu', シェ: 'she', ショ: 'sho', ジャ: 'ja', ジュ: 'ju', ジェ: 'je', ジョ: 'jo',
   チャ: 'cha', チュ: 'chu', チェ: 'che', チョ: 'cho', ニャ: 'nya', ニュ: 'nyu', ニョ: 'nyo',
@@ -13,7 +14,7 @@ const DIGRAPHS = {
   ウィ: 'wi', ウェ: 'we', ウォ: 'wo', ヴァ: 'va', ヴィ: 'vi', ヴェ: 've', ヴォ: 'vo', ツァ: 'tsa',
 }
 
-const SINGLE = {
+const SINGLE: Record<string, string> = {
   ア: 'a', イ: 'i', ウ: 'u', エ: 'e', オ: 'o', カ: 'ka', キ: 'ki', ク: 'ku', ケ: 'ke', コ: 'ko',
   ガ: 'ga', ギ: 'gi', グ: 'gu', ゲ: 'ge', ゴ: 'go', サ: 'sa', シ: 'shi', ス: 'su', セ: 'se', ソ: 'so',
   ザ: 'za', ジ: 'ji', ズ: 'zu', ゼ: 'ze', ゾ: 'zo', タ: 'ta', チ: 'chi', ツ: 'tsu', テ: 'te', ト: 'to',
@@ -25,9 +26,9 @@ const SINGLE = {
   '、': ',', '。': '.', '！': '!', '？': '?',
 }
 
-const MACRON = { a: 'ā', i: 'ī', u: 'ū', e: 'ē', o: 'ō' }
+const MACRON: Record<string, string> = { a: 'ā', i: 'ī', u: 'ū', e: 'ē', o: 'ō' }
 
-export function toRomaji(kana) {
+export function toRomaji(kana: string): string {
   const s = toKatakana(kana)
   let out = ''
   let double = false // ッ: udvostruči idući suglasnik

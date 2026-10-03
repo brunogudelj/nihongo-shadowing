@@ -4,6 +4,7 @@
   "reading": "あう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vi",
   "meanings": "to meet"
  },
  {
@@ -11,6 +12,7 @@
   "reading": "あお",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "blue"
  },
  {
@@ -18,6 +20,7 @@
   "reading": "あおい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "blue"
  },
  {
@@ -25,6 +28,7 @@
   "reading": "あか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "red"
  },
  {
@@ -32,6 +36,7 @@
   "reading": "あかい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "red"
  },
  {
@@ -39,6 +44,7 @@
   "reading": "あかるい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "bright"
  },
  {
@@ -46,6 +52,7 @@
   "reading": "あき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "autumn"
  },
  {
@@ -53,6 +60,7 @@
   "reading": "あく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to open; to become open"
  },
  {
@@ -60,6 +68,7 @@
   "reading": "あける",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to open"
  },
  {
@@ -69,6 +78,7 @@
    "あげる"
   ],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to give"
  },
  {
@@ -76,6 +86,7 @@
   "reading": "あさ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "morning"
  },
  {
@@ -85,6 +96,7 @@
    "朝御飯"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "breakfast"
  },
  {
@@ -94,6 +106,7 @@
    "明後日"
   ],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "day after tomorrow"
  },
  {
@@ -101,6 +114,7 @@
   "reading": "あし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "foot; leg"
  },
  {
@@ -110,6 +124,7 @@
    "あした"
   ],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "tomorrow"
  },
  {
@@ -119,6 +134,7 @@
    "彼処"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "over there"
  },
  {
@@ -126,6 +142,7 @@
   "reading": "あそぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5b; vi",
   "meanings": "to play; to make a visit"
  },
  {
@@ -133,6 +150,7 @@
   "reading": "あたたかい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "warm"
  },
  {
@@ -140,6 +158,7 @@
   "reading": "あたま",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "head"
  },
  {
@@ -147,6 +166,7 @@
   "reading": "あたらしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "new"
  },
  {
@@ -156,6 +176,7 @@
    "彼方"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "there"
  },
  {
@@ -163,6 +184,7 @@
   "reading": "あつい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "kind; deep; thick"
  },
  {
@@ -170,6 +192,7 @@
   "reading": "あつい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "hot"
  },
  {
@@ -177,6 +200,7 @@
   "reading": "あつい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "hot to the touch"
  },
  {
@@ -184,6 +208,7 @@
   "reading": "あっち",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "over there"
  },
  {
@@ -191,6 +216,7 @@
   "reading": "あと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "afterwards"
  },
  {
@@ -200,6 +226,7 @@
    "貴女"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "you"
  },
  {
@@ -207,6 +234,7 @@
   "reading": "あに",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(humble) older brother"
  },
  {
@@ -214,6 +242,7 @@
   "reading": "あね",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(humble) older sister"
  },
  {
@@ -223,6 +252,7 @@
    "彼の"
   ],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "that over there"
  },
  {
@@ -230,6 +260,7 @@
   "reading": "アパート",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "apartment"
  },
  {
@@ -239,6 +270,7 @@
    "浴びる"
   ],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to bathe; to shower"
  },
  {
@@ -246,6 +278,7 @@
   "reading": "あぶない",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "dangerous"
  },
  {
@@ -253,6 +286,7 @@
   "reading": "あまい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "sweet"
  },
  {
@@ -262,6 +296,7 @@
    "余り"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "not very"
  },
  {
@@ -269,6 +304,7 @@
   "reading": "あめ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "candy"
  },
  {
@@ -276,6 +312,7 @@
   "reading": "あめ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "rain"
  },
  {
@@ -283,6 +320,7 @@
   "reading": "あらう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt",
   "meanings": "to wash"
  },
  {
@@ -292,6 +330,7 @@
    "有難う"
   ],
   "level": "N5",
+  "pos": "int",
   "meanings": "Thank you"
  },
  {
@@ -302,6 +341,7 @@
    "在る"
   ],
   "level": "N5",
+  "pos": "v5r-i; vi",
   "meanings": "to be; to have (used for inanimate objects)"
  },
  {
@@ -309,6 +349,7 @@
   "reading": "あるく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to walk"
  },
  {
@@ -316,6 +357,7 @@
   "reading": "あれ",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "that"
  },
  {
@@ -325,6 +367,7 @@
    "よい"
   ],
   "level": "N5",
+  "pos": "adj-ix",
   "meanings": "good"
  },
  {
@@ -332,6 +375,7 @@
   "reading": "いいえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "int",
   "meanings": "no"
  },
  {
@@ -339,6 +383,7 @@
   "reading": "いう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt",
   "meanings": "to say"
  },
  {
@@ -346,6 +391,7 @@
   "reading": "いえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "house"
  },
  {
@@ -355,6 +401,7 @@
    "如何"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "how"
  },
  {
@@ -362,6 +409,7 @@
   "reading": "いく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k-s; vi",
   "meanings": "to go"
  },
  {
@@ -371,6 +419,7 @@
    "幾つ"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "how many?; how old?"
  },
  {
@@ -380,6 +429,7 @@
    "幾ら"
   ],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "how much?"
  },
  {
@@ -387,6 +437,7 @@
   "reading": "いけ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "pond"
  },
  {
@@ -394,6 +445,7 @@
   "reading": "いしゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "medical doctor"
  },
  {
@@ -403,6 +455,7 @@
    "椅子"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "chair"
  },
  {
@@ -410,6 +463,7 @@
   "reading": "いそがしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "busy; irritated"
  },
  {
@@ -417,6 +471,7 @@
   "reading": "いたい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "painful"
  },
  {
@@ -426,6 +481,7 @@
    "頂きます"
   ],
   "level": "N5",
+  "pos": "exp",
   "meanings": "expression of gratitude before meals"
  },
  {
@@ -433,6 +489,7 @@
   "reading": "いち",
   "other_forms": [],
   "level": "N5",
+  "pos": "num; pref",
   "meanings": "one"
  },
  {
@@ -440,6 +497,7 @@
   "reading": "いちにち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "one day; first of month"
  },
  {
@@ -449,6 +507,7 @@
    "一番"
   ],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "best; first"
  },
  {
@@ -458,6 +517,7 @@
    "何時"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "when"
  },
  {
@@ -465,6 +525,7 @@
   "reading": "いつか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "five days; fifth day"
  },
  {
@@ -472,6 +533,7 @@
   "reading": "いっしょ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "together"
  },
  {
@@ -479,6 +541,7 @@
   "reading": "いつつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "five"
  },
  {
@@ -488,6 +551,7 @@
    "何時も"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "always"
  },
  {
@@ -495,6 +559,7 @@
   "reading": "いぬ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "dog"
  },
  {
@@ -502,6 +567,7 @@
   "reading": "いま",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no; adv",
   "meanings": "now"
  },
  {
@@ -509,6 +575,7 @@
   "reading": "いみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "meaning"
  },
  {
@@ -516,6 +583,7 @@
   "reading": "いもうと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(humble) younger sister"
  },
  {
@@ -523,6 +591,7 @@
   "reading": "いや",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "unpleasant"
  },
  {
@@ -530,6 +599,7 @@
   "reading": "いりぐち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "entrance"
  },
  {
@@ -539,6 +609,7 @@
    "居る"
   ],
   "level": "N5",
+  "pos": "aux-v; v1",
   "meanings": "to be; to have (used for people and animals)"
  },
  {
@@ -546,6 +617,7 @@
   "reading": "いる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to need"
  },
  {
@@ -553,6 +625,7 @@
   "reading": "いれる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to put in"
  },
  {
@@ -560,6 +633,7 @@
   "reading": "いろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "colour"
  },
  {
@@ -569,6 +643,7 @@
    "色々"
   ],
   "level": "N5",
+  "pos": "adj-na; adj-no",
   "meanings": "various"
  },
  {
@@ -576,6 +651,7 @@
   "reading": "うえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "on top of"
  },
  {
@@ -583,6 +659,7 @@
   "reading": "うしろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "behind"
  },
  {
@@ -590,6 +667,7 @@
   "reading": "うすい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "thin; weak"
  },
  {
@@ -597,6 +675,7 @@
   "reading": "うた",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "song"
  },
  {
@@ -604,6 +683,7 @@
   "reading": "うたう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt; vi",
   "meanings": "to sing"
  },
  {
@@ -611,6 +691,7 @@
   "reading": "うまれる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to be born"
  },
  {
@@ -618,6 +699,7 @@
   "reading": "うみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sea"
  },
  {
@@ -625,6 +707,7 @@
   "reading": "うる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to sell"
  },
  {
@@ -634,6 +717,7 @@
    "うるさい"
   ],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "noisy; annoying"
  },
  {
@@ -641,6 +725,7 @@
   "reading": "うわぎ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "jacket"
  },
  {
@@ -648,6 +733,7 @@
   "reading": "え",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "picture"
  },
  {
@@ -655,6 +741,7 @@
   "reading": "えいが",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "movie"
  },
  {
@@ -662,6 +749,7 @@
   "reading": "えいがかん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "cinema"
  },
  {
@@ -669,6 +757,7 @@
   "reading": "えいご",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "English language"
  },
  {
@@ -676,6 +765,7 @@
   "reading": "ええ",
   "other_forms": [],
   "level": "N5",
+  "pos": "int",
   "meanings": "yes"
  },
  {
@@ -683,6 +773,7 @@
   "reading": "えき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "station"
  },
  {
@@ -690,6 +781,7 @@
   "reading": "エレベーター",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "elevator"
  },
  {
@@ -697,6 +789,7 @@
   "reading": "えんぴつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "pencil"
  },
  {
@@ -706,6 +799,7 @@
    "美味しい"
   ],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "delicious"
  },
  {
@@ -713,6 +807,7 @@
   "reading": "おおい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "many"
  },
  {
@@ -720,6 +815,7 @@
   "reading": "おおきい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "big"
  },
  {
@@ -727,6 +823,7 @@
   "reading": "おおきな",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "big"
  },
  {
@@ -734,6 +831,7 @@
   "reading": "おおぜい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "great number of people"
  },
  {
@@ -741,6 +839,7 @@
   "reading": "おかあさん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(honorable) mother"
  },
  {
@@ -748,6 +847,7 @@
   "reading": "おかし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sweets; candy"
  },
  {
@@ -755,6 +855,7 @@
   "reading": "おかね",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "money"
  },
  {
@@ -762,6 +863,7 @@
   "reading": "おきる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to get up"
  },
  {
@@ -769,6 +871,7 @@
   "reading": "おく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to put"
  },
  {
@@ -778,6 +881,7 @@
    "おくさん"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "(honorable) wife"
  },
  {
@@ -785,6 +889,7 @@
   "reading": "おさけ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "alcohol; rice wine"
  },
  {
@@ -792,6 +897,7 @@
   "reading": "おさら",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "plate; dish"
  },
  {
@@ -802,6 +908,7 @@
    "おじいさん"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "grandfather; male senior citizen"
  },
  {
@@ -809,6 +916,7 @@
   "reading": "おしえる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to teach; to tell"
  },
  {
@@ -816,6 +924,7 @@
   "reading": "おす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to push; to stamp something"
  },
  {
@@ -823,6 +932,7 @@
   "reading": "おそい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "late; slow"
  },
  {
@@ -830,6 +940,7 @@
   "reading": "おちゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "green tea"
  },
  {
@@ -839,6 +950,7 @@
    "御手洗"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "bathroom"
  },
  {
@@ -846,6 +958,7 @@
   "reading": "おとうさん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(honorable) father"
  },
  {
@@ -853,6 +966,7 @@
   "reading": "おとうと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "younger brother"
  },
  {
@@ -860,6 +974,7 @@
   "reading": "おとこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; n-pref",
   "meanings": "man"
  },
  {
@@ -867,6 +982,7 @@
   "reading": "おとこのこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp; n",
   "meanings": "boy"
  },
  {
@@ -876,6 +992,7 @@
    "おととい"
   ],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "day before yesterday"
  },
  {
@@ -885,6 +1002,7 @@
    "おととし"
   ],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "year before last"
  },
  {
@@ -892,6 +1010,7 @@
   "reading": "おとな",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no; adj-na",
   "meanings": "adult"
  },
  {
@@ -901,6 +1020,7 @@
    "お腹"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "stomach"
  },
  {
@@ -908,6 +1028,7 @@
   "reading": "おなじ",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-f; adj-na",
   "meanings": "same"
  },
  {
@@ -915,6 +1036,7 @@
   "reading": "おにいさん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(honorable) older brother"
  },
  {
@@ -922,6 +1044,7 @@
   "reading": "おねえさん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(honorable) older sister"
  },
  {
@@ -931,6 +1054,7 @@
    "おねがいします"
   ],
   "level": "N5",
+  "pos": "exp",
   "meanings": "please"
  },
  {
@@ -940,6 +1064,7 @@
    "お祖母さん"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "grandmother; female senior-citizen"
  },
  {
@@ -947,6 +1072,7 @@
   "reading": "おばさん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "aunt"
  },
  {
@@ -956,6 +1082,7 @@
    "お早う"
   ],
   "level": "N5",
+  "pos": "int",
   "meanings": "(abbreviation) Good morning"
  },
  {
@@ -963,6 +1090,7 @@
   "reading": "おふろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bath"
  },
  {
@@ -970,6 +1098,7 @@
   "reading": "おべんとう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "boxed lunch"
  },
  {
@@ -977,6 +1106,7 @@
   "reading": "おぼえる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to remember"
  },
  {
@@ -986,6 +1116,7 @@
    "お巡りさん"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "friendly term for policeman"
  },
  {
@@ -993,6 +1124,7 @@
   "reading": "おもい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "heavy"
  },
  {
@@ -1002,6 +1134,7 @@
    "面白い"
   ],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "interesting"
  },
  {
@@ -1009,6 +1142,7 @@
   "reading": "およぐ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5g; vi",
   "meanings": "to swim"
  },
  {
@@ -1016,6 +1150,7 @@
   "reading": "おりる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to get off; to descend"
  },
  {
@@ -1025,6 +1160,7 @@
    "終わる"
   ],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to finish"
  },
  {
@@ -1032,6 +1168,7 @@
   "reading": "おんがく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "music"
  },
  {
@@ -1039,6 +1176,7 @@
   "reading": "おんな",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; n-pref",
   "meanings": "woman"
  },
  {
@@ -1046,6 +1184,7 @@
   "reading": "おんなのこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp; n",
   "meanings": "girl"
  },
  {
@@ -1053,6 +1192,7 @@
   "reading": "がいこく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "foreign country"
  },
  {
@@ -1060,6 +1200,7 @@
   "reading": "がいこくじん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "foreigner"
  },
  {
@@ -1067,6 +1208,7 @@
   "reading": "かいしゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "company"
  },
  {
@@ -1074,6 +1216,7 @@
   "reading": "かいだん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "stairs"
  },
  {
@@ -1081,6 +1224,7 @@
   "reading": "かいもの",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "shopping"
  },
  {
@@ -1088,6 +1232,7 @@
   "reading": "かう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt",
   "meanings": "to buy"
  },
  {
@@ -1095,6 +1240,7 @@
   "reading": "かえす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to return something"
  },
  {
@@ -1102,6 +1248,7 @@
   "reading": "かえる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to go back"
  },
  {
@@ -1111,6 +1258,7 @@
    "掛かる"
   ],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to take time or money"
  },
  {
@@ -1120,6 +1268,7 @@
    "鍵"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "key"
  },
  {
@@ -1127,6 +1276,7 @@
   "reading": "かく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to write"
  },
  {
@@ -1134,6 +1284,7 @@
   "reading": "がくせい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "student"
  },
  {
@@ -1143,6 +1294,7 @@
    "掛ける"
   ],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to call by phone"
  },
  {
@@ -1150,6 +1302,7 @@
   "reading": "かさ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "umbrella"
  },
  {
@@ -1157,6 +1310,7 @@
   "reading": "かす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to lend"
  },
  {
@@ -1164,6 +1318,7 @@
   "reading": "かぜ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "wind"
  },
  {
@@ -1171,6 +1326,7 @@
   "reading": "かぜ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "a cold"
  },
  {
@@ -1178,6 +1334,7 @@
   "reading": "かぞく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "family"
  },
  {
@@ -1185,6 +1342,7 @@
   "reading": "かた",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "person; way of doing"
  },
  {
@@ -1192,6 +1350,7 @@
   "reading": "がっこう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "school"
  },
  {
@@ -1199,6 +1358,7 @@
   "reading": "カップ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "cup"
  },
  {
@@ -1206,6 +1366,7 @@
   "reading": "かてい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "household"
  },
  {
@@ -1213,6 +1374,7 @@
   "reading": "かど",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "a corner"
  },
  {
@@ -1220,6 +1382,7 @@
   "reading": "かばん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bag; basket"
  },
  {
@@ -1227,6 +1390,7 @@
   "reading": "かびん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "a vase"
  },
  {
@@ -1234,6 +1398,7 @@
   "reading": "かみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "paper"
  },
  {
@@ -1241,6 +1406,7 @@
   "reading": "カメラ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "camera"
  },
  {
@@ -1248,6 +1414,7 @@
   "reading": "かようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Tuesday"
  },
  {
@@ -1255,6 +1422,7 @@
   "reading": "からい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "spicy"
  },
  {
@@ -1264,6 +1432,7 @@
    "身体"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "body"
  },
  {
@@ -1271,6 +1440,7 @@
   "reading": "かりる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to borrow"
  },
  {
@@ -1278,6 +1448,7 @@
   "reading": "かるい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "light"
  },
  {
@@ -1285,6 +1456,7 @@
   "reading": "カレー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "curry"
  },
  {
@@ -1292,6 +1464,7 @@
   "reading": "カレンダー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "calendar"
  },
  {
@@ -1299,6 +1472,7 @@
   "reading": "かわ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "river"
  },
  {
@@ -1308,6 +1482,7 @@
    "可愛い"
   ],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "cute"
  },
  {
@@ -1315,6 +1490,7 @@
   "reading": "かんじ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "Chinese character"
  },
  {
@@ -1322,6 +1498,7 @@
   "reading": "き",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "tree; wood"
  },
  {
@@ -1329,6 +1506,7 @@
   "reading": "きいろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no; adj-na",
   "meanings": "yellow"
  },
  {
@@ -1336,6 +1514,7 @@
   "reading": "きいろい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "yellow"
  },
  {
@@ -1343,6 +1522,7 @@
   "reading": "きえる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to disappear"
  },
  {
@@ -1350,6 +1530,7 @@
   "reading": "きく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to hear; to listen to; to ask"
  },
  {
@@ -1357,6 +1538,7 @@
   "reading": "きた",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "north"
  },
  {
@@ -1364,6 +1546,7 @@
   "reading": "ギター",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "guitar"
  },
  {
@@ -1371,6 +1554,7 @@
   "reading": "きたない",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "dirty"
  },
  {
@@ -1378,6 +1562,7 @@
   "reading": "きっさてん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "coffee lounge"
  },
  {
@@ -1385,6 +1570,7 @@
   "reading": "きって",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "postage stamp"
  },
  {
@@ -1392,6 +1578,7 @@
   "reading": "きっぷ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "ticket"
  },
  {
@@ -1399,6 +1586,7 @@
   "reading": "きのう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "yesterday"
  },
  {
@@ -1406,6 +1594,7 @@
   "reading": "きゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "nine"
  },
  {
@@ -1413,6 +1602,7 @@
   "reading": "ぎゅうにく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "beef"
  },
  {
@@ -1420,6 +1610,7 @@
   "reading": "ぎゅうにゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "milk"
  },
  {
@@ -1427,6 +1618,7 @@
   "reading": "きょう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "today"
  },
  {
@@ -1434,6 +1626,7 @@
   "reading": "きょうしつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "classroom"
  },
  {
@@ -1441,6 +1634,7 @@
   "reading": "きょうだい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "(humble) siblings"
  },
  {
@@ -1448,6 +1642,7 @@
   "reading": "きょねん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "last year"
  },
  {
@@ -1455,6 +1650,7 @@
   "reading": "きらい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na; n",
   "meanings": "hate"
  },
  {
@@ -1462,6 +1658,7 @@
   "reading": "きる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to cut"
  },
  {
@@ -1469,6 +1666,7 @@
   "reading": "きる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to put on from the shoulders down"
  },
  {
@@ -1478,6 +1676,7 @@
    "奇麗"
   ],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "pretty; clean"
  },
  {
@@ -1488,6 +1687,7 @@
    "キログラム"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "kilometre; kilogram"
  },
  {
@@ -1495,6 +1695,7 @@
   "reading": "ぎんこう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bank"
  },
  {
@@ -1502,6 +1703,7 @@
   "reading": "きんようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Friday"
  },
  {
@@ -1509,6 +1711,7 @@
   "reading": "くすり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "medicine"
  },
  {
@@ -1516,6 +1719,7 @@
   "reading": "ください",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp",
   "meanings": "please"
  },
  {
@@ -1523,6 +1727,7 @@
   "reading": "くだもの",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "fruit"
  },
  {
@@ -1530,6 +1735,7 @@
   "reading": "くち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "mouth; opening"
  },
  {
@@ -1537,6 +1743,7 @@
   "reading": "くつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "shoes"
  },
  {
@@ -1544,6 +1751,7 @@
   "reading": "くつした",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "socks"
  },
  {
@@ -1551,6 +1759,7 @@
   "reading": "くに",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "country"
  },
  {
@@ -1560,6 +1769,7 @@
    "曇"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "cloudy weather"
  },
  {
@@ -1567,6 +1777,7 @@
   "reading": "くもる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to become cloudy; to become dim"
  },
  {
@@ -1574,6 +1785,7 @@
   "reading": "くらい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "gloomy"
  },
  {
@@ -1581,6 +1793,7 @@
   "reading": "クラス",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "class"
  },
  {
@@ -1588,6 +1801,7 @@
   "reading": "グラム",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "gram"
  },
  {
@@ -1595,6 +1809,7 @@
   "reading": "くる",
   "other_forms": [],
   "level": "N5",
+  "pos": "vk; vi",
   "meanings": "to come"
  },
  {
@@ -1602,6 +1817,7 @@
   "reading": "くるま",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "car; vehicle"
  },
  {
@@ -1609,6 +1825,7 @@
   "reading": "くろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "black"
  },
  {
@@ -1616,6 +1833,7 @@
   "reading": "くろい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "black"
  },
  {
@@ -1623,6 +1841,7 @@
   "reading": "けいかん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "policeman"
  },
  {
@@ -1630,6 +1849,7 @@
   "reading": "けさ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "this morning"
  },
  {
@@ -1637,6 +1857,7 @@
   "reading": "けす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to erase; to turn off power"
  },
  {
@@ -1644,6 +1865,7 @@
   "reading": "けっこう",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "splendid; enough"
  },
  {
@@ -1651,6 +1873,7 @@
   "reading": "けっこん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "marriage"
  },
  {
@@ -1658,6 +1881,7 @@
   "reading": "げつようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Monday"
  },
  {
@@ -1665,6 +1889,7 @@
   "reading": "げんかん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "entry hall"
  },
  {
@@ -1672,6 +1897,7 @@
   "reading": "げんき",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na; n",
   "meanings": "health; vitality"
  },
  {
@@ -1679,6 +1905,7 @@
   "reading": "ご",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "five"
  },
  {
@@ -1686,6 +1913,7 @@
   "reading": "こうえん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "park"
  },
  {
@@ -1693,6 +1921,7 @@
   "reading": "こうさてん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "intersection"
  },
  {
@@ -1700,6 +1929,7 @@
   "reading": "こうちゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "black tea"
  },
  {
@@ -1707,6 +1937,7 @@
   "reading": "こうばん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "police box"
  },
  {
@@ -1714,6 +1945,7 @@
   "reading": "こえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "voice"
  },
  {
@@ -1721,6 +1953,7 @@
   "reading": "コート",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "coat; tennis court"
  },
  {
@@ -1728,6 +1961,7 @@
   "reading": "コーヒー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "coffee"
  },
  {
@@ -1735,6 +1969,7 @@
   "reading": "ここ",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "here"
  },
  {
@@ -1742,6 +1977,7 @@
   "reading": "ごご",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "afternoon"
  },
  {
@@ -1749,6 +1985,7 @@
   "reading": "ここのか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "nine days; ninth day"
  },
  {
@@ -1756,6 +1993,7 @@
   "reading": "ここのつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "nine"
  },
  {
@@ -1763,6 +2001,7 @@
   "reading": "ごぜん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "morning"
  },
  {
@@ -1770,6 +2009,7 @@
   "reading": "こたえる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to answer"
  },
  {
@@ -1779,6 +2019,7 @@
    "ご馳走さま"
   ],
   "level": "N5",
+  "pos": "int",
   "meanings": "feast"
  },
  {
@@ -1786,6 +2027,7 @@
   "reading": "こちら",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "this person or way"
  },
  {
@@ -1793,6 +2035,7 @@
   "reading": "こっち",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "this person or way"
  },
  {
@@ -1800,6 +2043,7 @@
   "reading": "コップ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "a glass"
  },
  {
@@ -1807,6 +2051,7 @@
   "reading": "ことし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "this year"
  },
  {
@@ -1814,6 +2059,7 @@
   "reading": "ことば",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "word; language"
  },
  {
@@ -1821,6 +2067,7 @@
   "reading": "こども",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "child"
  },
  {
@@ -1830,6 +2077,7 @@
    "此の"
   ],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "this"
  },
  {
@@ -1837,6 +2085,7 @@
   "reading": "ごはん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "cooked rice; meal"
  },
  {
@@ -1844,6 +2093,7 @@
   "reading": "コピーする",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "to copy"
  },
  {
@@ -1851,6 +2101,7 @@
   "reading": "こまる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to be worried"
  },
  {
@@ -1860,6 +2111,7 @@
    "御免なさい"
   ],
   "level": "N5",
+  "pos": "exp",
   "meanings": "I beg your pardon; excuse me"
  },
  {
@@ -1869,6 +2121,7 @@
    "此れ"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "this"
  },
  {
@@ -1876,6 +2129,7 @@
   "reading": "こんげつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "this month"
  },
  {
@@ -1883,6 +2137,7 @@
   "reading": "こんしゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "this week"
  },
  {
@@ -1890,6 +2145,7 @@
   "reading": "こんな",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "such"
  },
  {
@@ -1899,6 +2155,7 @@
    "今日は"
   ],
   "level": "N5",
+  "pos": "int",
   "meanings": "hello; good day (daytime greeting, id)"
  },
  {
@@ -1906,6 +2163,7 @@
   "reading": "こんばん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "this evening"
  },
  {
@@ -1915,6 +2173,7 @@
    "今晩は"
   ],
   "level": "N5",
+  "pos": "int",
   "meanings": "good evening"
  },
  {
@@ -1922,6 +2181,7 @@
   "reading": "さあ",
   "other_forms": [],
   "level": "N5",
+  "pos": "int",
   "meanings": "well…"
  },
  {
@@ -1929,6 +2189,7 @@
   "reading": "さいふ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "wallet"
  },
  {
@@ -1936,6 +2197,7 @@
   "reading": "さかな",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "fish"
  },
  {
@@ -1943,6 +2205,7 @@
   "reading": "さき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "the future; previous"
  },
  {
@@ -1950,6 +2213,7 @@
   "reading": "さく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to bloom"
  },
  {
@@ -1957,6 +2221,7 @@
   "reading": "さくぶん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "composition; writing"
  },
  {
@@ -1964,6 +2229,7 @@
   "reading": "さす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to stretch out hands; to raise an umbrella"
  },
  {
@@ -1971,6 +2237,7 @@
   "reading": "ざっし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "magazine"
  },
  {
@@ -1978,6 +2245,7 @@
   "reading": "さとう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sugar"
  },
  {
@@ -1985,6 +2253,7 @@
   "reading": "さむい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "cold"
  },
  {
@@ -1994,6 +2263,7 @@
    "左様なら"
   ],
   "level": "N5",
+  "pos": "int",
   "meanings": "good-bye"
  },
  {
@@ -2001,6 +2271,7 @@
   "reading": "さらいねん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "year after next"
  },
  {
@@ -2008,6 +2279,7 @@
   "reading": "さん",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "three"
  },
  {
@@ -2015,6 +2287,7 @@
   "reading": "さんぽ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "to stroll"
  },
  {
@@ -2022,6 +2295,7 @@
   "reading": "し",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "four"
  },
  {
@@ -2029,6 +2303,7 @@
   "reading": "しお",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "salt"
  },
  {
@@ -2038,6 +2313,7 @@
    "然し"
   ],
   "level": "N5",
+  "pos": "conj",
   "meanings": "however"
  },
  {
@@ -2045,6 +2321,7 @@
   "reading": "じかん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "time"
  },
  {
@@ -2052,6 +2329,7 @@
   "reading": "しごと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "job"
  },
  {
@@ -2059,6 +2337,7 @@
   "reading": "じしょ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "dictionary"
  },
  {
@@ -2066,6 +2345,7 @@
   "reading": "しずか",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "quiet"
  },
  {
@@ -2073,6 +2353,7 @@
   "reading": "した",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "below"
  },
  {
@@ -2080,6 +2361,7 @@
   "reading": "しち",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "seven"
  },
  {
@@ -2087,6 +2369,7 @@
   "reading": "しつもん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt; vi; adj-no",
   "meanings": "question"
  },
  {
@@ -2094,6 +2377,7 @@
   "reading": "じてんしゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bicycle"
  },
  {
@@ -2101,6 +2385,7 @@
   "reading": "じどうしゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "automobile"
  },
  {
@@ -2108,6 +2393,7 @@
   "reading": "しぬ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5n; vi",
   "meanings": "to die"
  },
  {
@@ -2115,6 +2401,7 @@
   "reading": "じびき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "dictionary"
  },
  {
@@ -2122,6 +2409,7 @@
   "reading": "じぶん",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "oneself"
  },
  {
@@ -2129,6 +2417,7 @@
   "reading": "しまる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to close; to be closed"
  },
  {
@@ -2136,6 +2425,7 @@
   "reading": "しめる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to tie"
  },
  {
@@ -2143,6 +2433,7 @@
   "reading": "しめる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to close something"
  },
  {
@@ -2152,6 +2443,7 @@
    "じゃあ"
   ],
   "level": "N5",
+  "pos": "conj",
   "meanings": "well then…"
  },
  {
@@ -2159,6 +2451,7 @@
   "reading": "しゃしん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "photograph"
  },
  {
@@ -2166,6 +2459,7 @@
   "reading": "シャツ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "shirt"
  },
  {
@@ -2173,6 +2467,7 @@
   "reading": "シャワー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "shower"
  },
  {
@@ -2180,6 +2475,7 @@
   "reading": "じゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "ten"
  },
  {
@@ -2187,6 +2483,7 @@
   "reading": "じゅぎょう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "lesson; class work"
  },
  {
@@ -2194,6 +2491,7 @@
   "reading": "しゅくだい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "homework"
  },
  {
@@ -2201,6 +2499,7 @@
   "reading": "じょうず",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na; n",
   "meanings": "skillful"
  },
  {
@@ -2208,6 +2507,7 @@
   "reading": "じょうぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "strong; durable"
  },
  {
@@ -2217,6 +2517,7 @@
    "醤油"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "soy sauce"
  },
  {
@@ -2224,6 +2525,7 @@
   "reading": "しょくどう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "dining hall"
  },
  {
@@ -2231,6 +2533,7 @@
   "reading": "しる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to know"
  },
  {
@@ -2238,6 +2541,7 @@
   "reading": "しろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "white"
  },
  {
@@ -2245,6 +2549,7 @@
   "reading": "しろい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "white"
  },
  {
@@ -2252,6 +2557,7 @@
   "reading": "しんぶん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "newspaper"
  },
  {
@@ -2259,6 +2565,7 @@
   "reading": "すいようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Wednesday"
  },
  {
@@ -2266,6 +2573,7 @@
   "reading": "すう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt",
   "meanings": "to smoke; to suck"
  },
  {
@@ -2273,6 +2581,7 @@
   "reading": "スカート",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "skirt"
  },
  {
@@ -2280,6 +2589,7 @@
   "reading": "すき",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na; n",
   "meanings": "likeable"
  },
  {
@@ -2289,6 +2599,7 @@
    "直ぐ"
   ],
   "level": "N5",
+  "pos": "adv; n",
   "meanings": "immediately; soon; easily; right (near); honest; upright"
  },
  {
@@ -2296,6 +2607,7 @@
   "reading": "すくない",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "a few"
  },
  {
@@ -2303,6 +2615,7 @@
   "reading": "すぐに",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "instantly"
  },
  {
@@ -2310,6 +2623,7 @@
   "reading": "すこし",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "few"
  },
  {
@@ -2317,6 +2631,7 @@
   "reading": "すずしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "refreshing"
  },
  {
@@ -2324,6 +2639,7 @@
   "reading": "ストーブ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "heater"
  },
  {
@@ -2331,6 +2647,7 @@
   "reading": "スプーン",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "spoon"
  },
  {
@@ -2338,6 +2655,7 @@
   "reading": "スポーツ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sport"
  },
  {
@@ -2345,6 +2663,7 @@
   "reading": "ズボン",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "trousers"
  },
  {
@@ -2354,6 +2673,7 @@
    "済みません"
   ],
   "level": "N5",
+  "pos": "exp; int",
   "meanings": "sorry; excuse me"
  },
  {
@@ -2361,6 +2681,7 @@
   "reading": "すむ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5m; vi",
   "meanings": "to live in"
  },
  {
@@ -2368,6 +2689,7 @@
   "reading": "スリッパ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "slippers"
  },
  {
@@ -2377,6 +2699,7 @@
    "為る"
   ],
   "level": "N5",
+  "pos": "vs-i",
   "meanings": "to do"
  },
  {
@@ -2384,6 +2707,7 @@
   "reading": "すわる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to sit"
  },
  {
@@ -2391,6 +2715,7 @@
   "reading": "せ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "height; stature"
  },
  {
@@ -2398,6 +2723,7 @@
   "reading": "せいと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "pupil"
  },
  {
@@ -2405,6 +2731,7 @@
   "reading": "セーター",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sweater; jumper"
  },
  {
@@ -2412,6 +2739,7 @@
   "reading": "せっけん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt; vi",
   "meanings": "economy"
  },
  {
@@ -2419,6 +2747,7 @@
   "reading": "せびろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "business suit"
  },
  {
@@ -2426,6 +2755,7 @@
   "reading": "せまい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "narrow"
  },
  {
@@ -2433,6 +2763,7 @@
   "reading": "ゼロ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "zero"
  },
  {
@@ -2440,6 +2771,7 @@
   "reading": "せん",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "thousand"
  },
  {
@@ -2447,6 +2779,7 @@
   "reading": "せんげつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "last month"
  },
  {
@@ -2454,6 +2787,7 @@
   "reading": "せんしゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "last week"
  },
  {
@@ -2461,6 +2795,7 @@
   "reading": "せんせい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; n-suf",
   "meanings": "teacher; doctor"
  },
  {
@@ -2468,6 +2803,7 @@
   "reading": "せんたく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "washing"
  },
  {
@@ -2475,6 +2811,7 @@
   "reading": "ぜんぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no; adv",
   "meanings": "all"
  },
  {
@@ -2482,6 +2819,7 @@
   "reading": "そうじ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "to clean; to sweep"
  },
  {
@@ -2492,6 +2830,7 @@
    "然うして"
   ],
   "level": "N5",
+  "pos": "conj",
   "meanings": "and"
  },
  {
@@ -2501,6 +2840,7 @@
    "其処"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "that place"
  },
  {
@@ -2510,6 +2850,7 @@
    "其方"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "over there"
  },
  {
@@ -2517,6 +2858,7 @@
   "reading": "そっち",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "over there"
  },
  {
@@ -2524,6 +2866,7 @@
   "reading": "そと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "outside"
  },
  {
@@ -2531,6 +2874,7 @@
   "reading": "その",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "that"
  },
  {
@@ -2540,6 +2884,7 @@
    "側"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "near; beside"
  },
  {
@@ -2547,6 +2892,7 @@
   "reading": "そら",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sky"
  },
  {
@@ -2556,6 +2902,7 @@
    "其れ"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "that"
  },
  {
@@ -2563,6 +2910,7 @@
   "reading": "それから",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp",
   "meanings": "after that"
  },
  {
@@ -2570,6 +2918,7 @@
   "reading": "それでは",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp",
   "meanings": "in that situation"
  },
  {
@@ -2577,6 +2926,7 @@
   "reading": "だいがく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "university"
  },
  {
@@ -2584,6 +2934,7 @@
   "reading": "たいしかん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "embassy"
  },
  {
@@ -2591,6 +2942,7 @@
   "reading": "だいじょうぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "all right"
  },
  {
@@ -2598,6 +2950,7 @@
   "reading": "だいすき",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "to be very likeable"
  },
  {
@@ -2605,6 +2958,7 @@
   "reading": "たいせつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "important"
  },
  {
@@ -2612,6 +2966,7 @@
   "reading": "だいどころ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "kitchen"
  },
  {
@@ -2621,6 +2976,7 @@
    "大変"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "very"
  },
  {
@@ -2628,6 +2984,7 @@
   "reading": "たかい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "tall; expensive"
  },
  {
@@ -2637,6 +2994,7 @@
    "沢山"
   ],
   "level": "N5",
+  "pos": "adj-no; adj-na; n; adv",
   "meanings": "many"
  },
  {
@@ -2644,6 +3002,7 @@
   "reading": "タクシー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "taxi"
  },
  {
@@ -2651,6 +3010,7 @@
   "reading": "だす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to put out"
  },
  {
@@ -2658,6 +3018,7 @@
   "reading": "たつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5t; vi",
   "meanings": "to stand"
  },
  {
@@ -2667,6 +3028,7 @@
    "縦"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "length; height"
  },
  {
@@ -2674,6 +3036,7 @@
   "reading": "たてもの",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "building"
  },
  {
@@ -2681,6 +3044,7 @@
   "reading": "たのしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "enjoyable"
  },
  {
@@ -2688,6 +3052,7 @@
   "reading": "たのむ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5m; vt",
   "meanings": "to ask"
  },
  {
@@ -2697,6 +3062,7 @@
    "煙草"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "tobacco; cigarettes"
  },
  {
@@ -2706,6 +3072,7 @@
    "多分"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "probably"
  },
  {
@@ -2713,6 +3080,7 @@
   "reading": "たべもの",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "food"
  },
  {
@@ -2720,6 +3088,7 @@
   "reading": "たべる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to eat"
  },
  {
@@ -2727,6 +3096,7 @@
   "reading": "たまご",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "egg"
  },
  {
@@ -2734,6 +3104,7 @@
   "reading": "だれ",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "who"
  },
  {
@@ -2741,6 +3112,7 @@
   "reading": "たんじょうび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "birthday"
  },
  {
@@ -2750,6 +3122,7 @@
    "段々"
   ],
   "level": "N5",
+  "pos": "adv; adv-to",
   "meanings": "gradually"
  },
  {
@@ -2757,6 +3130,7 @@
   "reading": "ちいさい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "little"
  },
  {
@@ -2764,6 +3138,7 @@
   "reading": "ちいさな",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "little"
  },
  {
@@ -2771,6 +3146,7 @@
   "reading": "ちかい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "near"
  },
  {
@@ -2778,6 +3154,7 @@
   "reading": "ちがう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vi",
   "meanings": "to differ"
  },
  {
@@ -2785,6 +3162,7 @@
   "reading": "ちかく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no; adv",
   "meanings": "near"
  },
  {
@@ -2792,6 +3170,7 @@
   "reading": "ちかてつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "underground train"
  },
  {
@@ -2799,6 +3178,7 @@
   "reading": "ちず",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "map"
  },
  {
@@ -2806,6 +3186,7 @@
   "reading": "ちゃいろ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "brown"
  },
  {
@@ -2815,6 +3196,7 @@
    "茶碗"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "rice bowl"
  },
  {
@@ -2825,6 +3207,7 @@
    "恰度"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "exactly"
  },
  {
@@ -2834,6 +3217,7 @@
    "一寸"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "somewhat"
  },
  {
@@ -2841,6 +3225,7 @@
   "reading": "つかう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt",
   "meanings": "to use"
  },
  {
@@ -2848,6 +3233,7 @@
   "reading": "つかれる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to get tired"
  },
  {
@@ -2855,6 +3241,7 @@
   "reading": "つぎ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "next"
  },
  {
@@ -2862,6 +3249,7 @@
   "reading": "つく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to arrive at"
  },
  {
@@ -2869,6 +3257,7 @@
   "reading": "つくえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "desk"
  },
  {
@@ -2876,6 +3265,7 @@
   "reading": "つくる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to make"
  },
  {
@@ -2885,6 +3275,7 @@
    "点ける"
   ],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to turn on"
  },
  {
@@ -2892,6 +3283,7 @@
   "reading": "つとめる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt; vi",
   "meanings": "to work for someone"
  },
  {
@@ -2901,6 +3293,7 @@
    "詰らない"
   ],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "boring"
  },
  {
@@ -2908,6 +3301,7 @@
   "reading": "つめたい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "cold to the touch"
  },
  {
@@ -2915,6 +3309,7 @@
   "reading": "つよい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "powerful"
  },
  {
@@ -2922,6 +3317,7 @@
   "reading": "て",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "hand"
  },
  {
@@ -2929,6 +3325,7 @@
   "reading": "テープ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "tape"
  },
  {
@@ -2936,6 +3333,7 @@
   "reading": "テーブル",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "table"
  },
  {
@@ -2943,6 +3341,7 @@
   "reading": "テープレコーダー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "tape recorder"
  },
  {
@@ -2952,6 +3351,7 @@
    "出掛ける"
   ],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to go out"
  },
  {
@@ -2959,6 +3359,7 @@
   "reading": "てがみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "letter"
  },
  {
@@ -2966,6 +3367,7 @@
   "reading": "できる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to be able to"
  },
  {
@@ -2973,6 +3375,7 @@
   "reading": "でぐち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "exit"
  },
  {
@@ -2980,6 +3383,7 @@
   "reading": "テスト",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "test"
  },
  {
@@ -2987,6 +3391,7 @@
   "reading": "では",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp",
   "meanings": "with that..."
  },
  {
@@ -2994,6 +3399,7 @@
   "reading": "デパート",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "department store"
  },
  {
@@ -3001,6 +3407,7 @@
   "reading": "でも",
   "other_forms": [],
   "level": "N5",
+  "pos": "conj",
   "meanings": "but"
  },
  {
@@ -3008,6 +3415,7 @@
   "reading": "でる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to appear; to leave"
  },
  {
@@ -3015,6 +3423,7 @@
   "reading": "テレビ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "television"
  },
  {
@@ -3022,6 +3431,7 @@
   "reading": "てんき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "weather"
  },
  {
@@ -3029,6 +3439,7 @@
   "reading": "でんき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "electricity; electric light"
  },
  {
@@ -3036,6 +3447,7 @@
   "reading": "でんしゃ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "electric train"
  },
  {
@@ -3043,6 +3455,7 @@
   "reading": "でんわ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt; vi",
   "meanings": "telephone"
  },
  {
@@ -3050,6 +3463,7 @@
   "reading": "と",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "Japanese style door"
  },
  {
@@ -3057,6 +3471,7 @@
   "reading": "ドア",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "Western style door"
  },
  {
@@ -3064,6 +3479,7 @@
   "reading": "トイレ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "toilet"
  },
  {
@@ -3071,6 +3487,7 @@
   "reading": "どう",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "how; in what way"
  },
  {
@@ -3080,6 +3497,7 @@
    "如何して"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "for what reason"
  },
  {
@@ -3087,6 +3505,7 @@
   "reading": "どうぞ",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "please"
  },
  {
@@ -3096,6 +3515,7 @@
    "どうぞ宜しく"
   ],
   "level": "N5",
+  "pos": "exp",
   "meanings": "pleased to meet you"
  },
  {
@@ -3103,6 +3523,7 @@
   "reading": "どうぶつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "animal"
  },
  {
@@ -3110,6 +3531,7 @@
   "reading": "どうも",
   "other_forms": [],
   "level": "N5",
+  "pos": "int",
   "meanings": "thanks"
  },
  {
@@ -3117,6 +3539,7 @@
   "reading": "とおい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "far"
  },
  {
@@ -3124,6 +3547,7 @@
   "reading": "とおか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "ten days; the tenth day"
  },
  {
@@ -3131,6 +3555,7 @@
   "reading": "ときどき",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv; adj-no",
   "meanings": "sometimes"
  },
  {
@@ -3138,6 +3563,7 @@
   "reading": "とけい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "watch; clock"
  },
  {
@@ -3147,6 +3573,7 @@
    "何処"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "where"
  },
  {
@@ -3154,6 +3581,7 @@
   "reading": "ところ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv; suf",
   "meanings": "place"
  },
  {
@@ -3161,6 +3589,7 @@
   "reading": "とし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "year"
  },
  {
@@ -3168,6 +3597,7 @@
   "reading": "としょかん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "library"
  },
  {
@@ -3177,6 +3607,7 @@
    "何方"
   ],
   "level": "N5",
+  "pos": "pn",
   "meanings": "which of two"
  },
  {
@@ -3184,6 +3615,7 @@
   "reading": "どっち",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "which"
  },
  {
@@ -3193,6 +3625,7 @@
    "迚も"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "very"
  },
  {
@@ -3200,6 +3633,7 @@
   "reading": "どなた",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "who"
  },
  {
@@ -3207,6 +3641,7 @@
   "reading": "となり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "next door to"
  },
  {
@@ -3216,6 +3651,7 @@
    "何の"
   ],
   "level": "N5",
+  "pos": "adj-pn",
   "meanings": "which"
  },
  {
@@ -3223,6 +3659,7 @@
   "reading": "とぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5b; vi",
   "meanings": "to fly; to hop"
  },
  {
@@ -3230,6 +3667,7 @@
   "reading": "とまる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to come to a halt"
  },
  {
@@ -3237,6 +3675,7 @@
   "reading": "ともだち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "friend"
  },
  {
@@ -3244,6 +3683,7 @@
   "reading": "どようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Saturday"
  },
  {
@@ -3251,6 +3691,7 @@
   "reading": "とり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bird"
  },
  {
@@ -3258,6 +3699,7 @@
   "reading": "とりにく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "chicken meat"
  },
  {
@@ -3265,6 +3707,7 @@
   "reading": "とる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to take a photo or record a film"
  },
  {
@@ -3272,6 +3715,7 @@
   "reading": "とる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to take something"
  },
  {
@@ -3279,6 +3723,7 @@
   "reading": "どれ",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "which (of three or more)"
  },
  {
@@ -3286,6 +3731,7 @@
   "reading": "ナイフ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "knife"
  },
  {
@@ -3293,6 +3739,7 @@
   "reading": "なか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "middle"
  },
  {
@@ -3300,6 +3747,7 @@
   "reading": "ながい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "long"
  },
  {
@@ -3307,6 +3755,7 @@
   "reading": "なく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to make a sound (of an animal); to cry; to chirp; to sing (of birds)"
  },
  {
@@ -3314,6 +3763,7 @@
   "reading": "なくす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to lose something"
  },
  {
@@ -3323,6 +3773,7 @@
    "何故"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "why"
  },
  {
@@ -3330,6 +3781,7 @@
   "reading": "なつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "summer"
  },
  {
@@ -3337,6 +3789,7 @@
   "reading": "なつやすみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "summer holiday"
  },
  {
@@ -3346,6 +3799,7 @@
    "等"
   ],
   "level": "N5",
+  "pos": "prt",
   "meanings": "et cetera"
  },
  {
@@ -3353,6 +3807,7 @@
   "reading": "ななつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "seven"
  },
  {
@@ -3360,6 +3815,7 @@
   "reading": "なのか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "seven days; the seventh day"
  },
  {
@@ -3367,6 +3823,7 @@
   "reading": "なまえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "name"
  },
  {
@@ -3374,6 +3831,7 @@
   "reading": "ならう",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5u; vt",
   "meanings": "to learn"
  },
  {
@@ -3381,6 +3839,7 @@
   "reading": "ならぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5b; vi",
   "meanings": "to line up; to stand in a line"
  },
  {
@@ -3388,6 +3847,7 @@
   "reading": "ならべる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to line up; to set up"
  },
  {
@@ -3397,6 +3857,7 @@
    "成る"
   ],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to become"
  },
  {
@@ -3404,6 +3865,7 @@
   "reading": "なん",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "what"
  },
  {
@@ -3411,6 +3873,7 @@
   "reading": "に",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "two"
  },
  {
@@ -3418,6 +3881,7 @@
   "reading": "にぎやか",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "bustling; busy"
  },
  {
@@ -3425,6 +3889,7 @@
   "reading": "にく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "meat"
  },
  {
@@ -3432,6 +3897,7 @@
   "reading": "にし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "west"
  },
  {
@@ -3439,6 +3905,7 @@
   "reading": "にちようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Sunday"
  },
  {
@@ -3446,6 +3913,7 @@
   "reading": "にもつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "luggage"
  },
  {
@@ -3453,6 +3921,7 @@
   "reading": "ニュース",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "news"
  },
  {
@@ -3460,6 +3929,7 @@
   "reading": "にわ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "garden"
  },
  {
@@ -3467,6 +3937,7 @@
   "reading": "ぬぐ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5g; vt",
   "meanings": "to take off clothes"
  },
  {
@@ -3474,6 +3945,7 @@
   "reading": "ぬるい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "luke warm"
  },
  {
@@ -3481,6 +3953,7 @@
   "reading": "ネクタイ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "tie; necktie"
  },
  {
@@ -3488,6 +3961,7 @@
   "reading": "ねこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "cat"
  },
  {
@@ -3495,6 +3969,7 @@
   "reading": "ねる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to go to bed; to sleep"
  },
  {
@@ -3502,6 +3977,7 @@
   "reading": "ノート",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "notebook; exercise book"
  },
  {
@@ -3509,6 +3985,7 @@
   "reading": "のぼる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to climb"
  },
  {
@@ -3516,6 +3993,7 @@
   "reading": "のみもの",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "a drink"
  },
  {
@@ -3523,6 +4001,7 @@
   "reading": "のむ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5m; vt",
   "meanings": "to drink"
  },
  {
@@ -3530,6 +4009,7 @@
   "reading": "のる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to get on; to ride"
  },
  {
@@ -3537,6 +4017,7 @@
   "reading": "は",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "tooth"
  },
  {
@@ -3544,6 +4025,7 @@
   "reading": "パーティー",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "party"
  },
  {
@@ -3551,6 +4033,7 @@
   "reading": "はい",
   "other_forms": [],
   "level": "N5",
+  "pos": "int",
   "meanings": "yes"
  },
  {
@@ -3558,6 +4041,7 @@
   "reading": "はいざら",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "ashtray"
  },
  {
@@ -3565,6 +4049,7 @@
   "reading": "はいる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to enter; to contain"
  },
  {
@@ -3572,6 +4057,7 @@
   "reading": "はがき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "postcard"
  },
  {
@@ -3581,6 +4067,7 @@
    "履く"
   ],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to wear; to put on trousers"
  },
  {
@@ -3588,6 +4075,7 @@
   "reading": "はこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "box"
  },
  {
@@ -3597,6 +4085,7 @@
    "箸"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "chopsticks"
  },
  {
@@ -3604,6 +4093,7 @@
   "reading": "はし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bridge"
  },
  {
@@ -3611,6 +4101,7 @@
   "reading": "はじまる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to begin"
  },
  {
@@ -3618,6 +4109,7 @@
   "reading": "はじめ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "beginning"
  },
  {
@@ -3625,6 +4117,7 @@
   "reading": "はじめて",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv; adj-no",
   "meanings": "for the first time"
  },
  {
@@ -3634,6 +4127,7 @@
    "始めまして"
   ],
   "level": "N5",
+  "pos": "exp",
   "meanings": "How do you do?; I am glad to meet you"
  },
  {
@@ -3641,6 +4135,7 @@
   "reading": "はしる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to run"
  },
  {
@@ -3648,6 +4143,7 @@
   "reading": "バス",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bus"
  },
  {
@@ -3655,6 +4151,7 @@
   "reading": "バター",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "butter"
  },
  {
@@ -3664,6 +4161,7 @@
    "二十"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "20 years old; 20th year"
  },
  {
@@ -3671,6 +4169,7 @@
   "reading": "はたらく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to work"
  },
  {
@@ -3678,6 +4177,7 @@
   "reading": "はち",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "eight"
  },
  {
@@ -3685,6 +4185,7 @@
   "reading": "はつか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "twenty days; twentieth"
  },
  {
@@ -3692,6 +4193,7 @@
   "reading": "はな",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "flower"
  },
  {
@@ -3699,6 +4201,7 @@
   "reading": "はな",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "nose"
  },
  {
@@ -3706,6 +4209,7 @@
   "reading": "はなし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "talk; story"
  },
  {
@@ -3713,6 +4217,7 @@
   "reading": "はなす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to speak"
  },
  {
@@ -3720,6 +4225,7 @@
   "reading": "はやい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "early"
  },
  {
@@ -3727,6 +4233,7 @@
   "reading": "はやい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "quick"
  },
  {
@@ -3734,6 +4241,7 @@
   "reading": "はる",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "spring"
  },
  {
@@ -3741,6 +4249,7 @@
   "reading": "はる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to stick"
  },
  {
@@ -3748,6 +4257,7 @@
   "reading": "はれ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "clear weather"
  },
  {
@@ -3755,6 +4265,7 @@
   "reading": "はれる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vi",
   "meanings": "to be sunny"
  },
  {
@@ -3762,6 +4273,7 @@
   "reading": "はん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n-pref; n",
   "meanings": "half"
  },
  {
@@ -3769,6 +4281,7 @@
   "reading": "ばん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "evening"
  },
  {
@@ -3776,6 +4289,7 @@
   "reading": "パン",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bread"
  },
  {
@@ -3783,6 +4297,7 @@
   "reading": "ハンカチ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "handkerchief"
  },
  {
@@ -3790,6 +4305,7 @@
   "reading": "ばんごう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "number"
  },
  {
@@ -3797,6 +4313,7 @@
   "reading": "ばんごはん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "evening meal"
  },
  {
@@ -3804,6 +4321,7 @@
   "reading": "はんぶん",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv; n",
   "meanings": "half minute"
  },
  {
@@ -3811,6 +4329,7 @@
   "reading": "ひがし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "east"
  },
  {
@@ -3818,6 +4337,7 @@
   "reading": "ひく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to pull"
  },
  {
@@ -3825,6 +4345,7 @@
   "reading": "ひく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to play an instrument with strings; including piano"
  },
  {
@@ -3832,6 +4353,7 @@
   "reading": "ひくい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "short; low"
  },
  {
@@ -3839,6 +4361,7 @@
   "reading": "ひこうき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "aeroplane"
  },
  {
@@ -3846,6 +4369,7 @@
   "reading": "ひだり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "left hand side"
  },
  {
@@ -3853,6 +4377,7 @@
   "reading": "ひと",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "person"
  },
  {
@@ -3860,6 +4385,7 @@
   "reading": "ひとつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "one"
  },
  {
@@ -3867,6 +4393,7 @@
   "reading": "ひとつき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "one month"
  },
  {
@@ -3874,6 +4401,7 @@
   "reading": "ひとり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "one person"
  },
  {
@@ -3881,6 +4409,7 @@
   "reading": "ひま",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "free time"
  },
  {
@@ -3888,6 +4417,7 @@
   "reading": "ひゃく",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "hundred"
  },
  {
@@ -3895,6 +4425,7 @@
   "reading": "びょういん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "hospital"
  },
  {
@@ -3902,6 +4433,7 @@
   "reading": "びょうき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "illness"
  },
  {
@@ -3909,6 +4441,7 @@
   "reading": "ひる",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "noon; daytime"
  },
  {
@@ -3916,6 +4449,7 @@
   "reading": "ひるごはん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "midday meal"
  },
  {
@@ -3923,6 +4457,7 @@
   "reading": "ひろい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "spacious; wide"
  },
  {
@@ -3930,6 +4465,7 @@
   "reading": "フィルム",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "roll of film"
  },
  {
@@ -3937,6 +4473,7 @@
   "reading": "ふうとう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "envelope"
  },
  {
@@ -3944,6 +4481,7 @@
   "reading": "プール",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "swimming pool"
  },
  {
@@ -3951,6 +4489,7 @@
   "reading": "フォーク",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "fork"
  },
  {
@@ -3958,6 +4497,7 @@
   "reading": "ふく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vi",
   "meanings": "to blow"
  },
  {
@@ -3965,6 +4505,7 @@
   "reading": "ふく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; n-suf",
   "meanings": "clothes"
  },
  {
@@ -3972,6 +4513,7 @@
   "reading": "ふたつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "two"
  },
  {
@@ -3979,6 +4521,7 @@
   "reading": "ぶたにく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "pork"
  },
  {
@@ -3986,6 +4529,7 @@
   "reading": "ふたり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "two people"
  },
  {
@@ -3993,6 +4537,7 @@
   "reading": "ふつか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "two days; second day of the month"
  },
  {
@@ -4000,6 +4545,7 @@
   "reading": "ふとい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "fat"
  },
  {
@@ -4007,6 +4553,7 @@
   "reading": "ふゆ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "winter"
  },
  {
@@ -4014,6 +4561,7 @@
   "reading": "ふる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to fall (e.g. rain or snow)"
  },
  {
@@ -4021,6 +4569,7 @@
   "reading": "ふるい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "old (not used for people)"
  },
  {
@@ -4030,6 +4579,7 @@
    "風呂"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "bath"
  },
  {
@@ -4037,6 +4587,7 @@
   "reading": "ぶんしょう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "sentence; text"
  },
  {
@@ -4044,6 +4595,7 @@
   "reading": "ページ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; ctr",
   "meanings": "page"
  },
  {
@@ -4051,6 +4603,7 @@
   "reading": "へた",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na; n",
   "meanings": "unskillful"
  },
  {
@@ -4058,6 +4611,7 @@
   "reading": "ベッド",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bed"
  },
  {
@@ -4065,6 +4619,7 @@
   "reading": "ペット",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "pet"
  },
  {
@@ -4072,6 +4627,7 @@
   "reading": "へや",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "room"
  },
  {
@@ -4079,6 +4635,7 @@
   "reading": "へん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "area"
  },
  {
@@ -4088,6 +4645,7 @@
    "ぺん"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "pen"
  },
  {
@@ -4095,6 +4653,7 @@
   "reading": "べんきょう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "to study"
  },
  {
@@ -4102,6 +4661,7 @@
   "reading": "べんり",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "useful; convenient"
  },
  {
@@ -4109,6 +4669,7 @@
   "reading": "ぼうし",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "hat"
  },
  {
@@ -4116,6 +4677,7 @@
   "reading": "ボールペン",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "ball-point pen"
  },
  {
@@ -4125,6 +4687,7 @@
    "外"
   ],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "other; the rest"
  },
  {
@@ -4132,6 +4695,7 @@
   "reading": "ポケット",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "pocket"
  },
  {
@@ -4139,6 +4703,7 @@
   "reading": "ほしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i; aux-adj",
   "meanings": "want"
  },
  {
@@ -4146,6 +4711,7 @@
   "reading": "ポスト",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "post"
  },
  {
@@ -4153,6 +4719,7 @@
   "reading": "ほそい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "thin"
  },
  {
@@ -4160,6 +4727,7 @@
   "reading": "ボタン",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "button"
  },
  {
@@ -4167,6 +4735,7 @@
   "reading": "ホテル",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "hotel"
  },
  {
@@ -4174,6 +4743,7 @@
   "reading": "ほん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "book"
  },
  {
@@ -4181,6 +4751,7 @@
   "reading": "ほんだな",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "bookshelves"
  },
  {
@@ -4190,6 +4761,7 @@
    "本当"
   ],
   "level": "N5",
+  "pos": "n; adj-no; adj-na",
   "meanings": "truth"
  },
  {
@@ -4197,6 +4769,7 @@
   "reading": "まいあさ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "every morning"
  },
  {
@@ -4204,6 +4777,7 @@
   "reading": "まいげつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv; n",
   "meanings": "every month"
  },
  {
@@ -4211,6 +4785,7 @@
   "reading": "まいしゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "every week"
  },
  {
@@ -4218,6 +4793,7 @@
   "reading": "まいにち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "every day"
  },
  {
@@ -4225,6 +4801,7 @@
   "reading": "まいねん",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv; n",
   "meanings": "every year"
  },
  {
@@ -4232,6 +4809,7 @@
   "reading": "まいばん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "every night"
  },
  {
@@ -4239,6 +4817,7 @@
   "reading": "まえ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "before"
  },
  {
@@ -4248,6 +4827,7 @@
    "曲がる"
   ],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to turn; to bend"
  },
  {
@@ -4257,6 +4837,7 @@
    "不味い"
   ],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "unpleasant"
  },
  {
@@ -4266,6 +4847,7 @@
    "又"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "again; and"
  },
  {
@@ -4275,6 +4857,7 @@
    "未だ"
   ],
   "level": "N5",
+  "pos": "adv",
   "meanings": "yet; still"
  },
  {
@@ -4282,6 +4865,7 @@
   "reading": "まち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "town; city"
  },
  {
@@ -4289,6 +4873,7 @@
   "reading": "まつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5t; vt; vi",
   "meanings": "to wait"
  },
  {
@@ -4298,6 +4883,7 @@
    "真っ直ぐ"
   ],
   "level": "N5",
+  "pos": "adj-na; adv; n",
   "meanings": "straight ahead; direct"
  },
  {
@@ -4305,6 +4891,7 @@
   "reading": "マッチ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "match"
  },
  {
@@ -4312,6 +4899,7 @@
   "reading": "まど",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "window"
  },
  {
@@ -4319,6 +4907,7 @@
   "reading": "まるい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "round; circular"
  },
  {
@@ -4326,6 +4915,7 @@
   "reading": "まん",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "ten thousand"
  },
  {
@@ -4333,6 +4923,7 @@
   "reading": "まんねんひつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "fountain pen"
  },
  {
@@ -4340,6 +4931,7 @@
   "reading": "みがく",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5k; vt",
   "meanings": "to brush teeth; to polish"
  },
  {
@@ -4347,6 +4939,7 @@
   "reading": "みぎ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "right side"
  },
  {
@@ -4354,6 +4947,7 @@
   "reading": "みじかい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "short"
  },
  {
@@ -4361,6 +4955,7 @@
   "reading": "みず",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "water"
  },
  {
@@ -4368,6 +4963,7 @@
   "reading": "みせ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "shop"
  },
  {
@@ -4375,6 +4971,7 @@
   "reading": "みせる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to show"
  },
  {
@@ -4382,6 +4979,7 @@
   "reading": "みち",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "street"
  },
  {
@@ -4389,6 +4987,7 @@
   "reading": "みっか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "three days; third day of the month"
  },
  {
@@ -4396,6 +4995,7 @@
   "reading": "みっつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "three"
  },
  {
@@ -4403,6 +5003,7 @@
   "reading": "みどり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adj-no",
   "meanings": "green"
  },
  {
@@ -4410,6 +5011,7 @@
   "reading": "みなさん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "everyone"
  },
  {
@@ -4417,6 +5019,7 @@
   "reading": "みなみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "south"
  },
  {
@@ -4424,6 +5027,7 @@
   "reading": "みみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "ear"
  },
  {
@@ -4433,6 +5037,7 @@
    "観る"
   ],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to see; to watch"
  },
  {
@@ -4442,6 +5047,7 @@
    "皆"
   ],
   "level": "N5",
+  "pos": "n; pn; adv",
   "meanings": "everyone"
  },
  {
@@ -4449,6 +5055,7 @@
   "reading": "むいか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "six days; sixth day of the month"
  },
  {
@@ -4456,6 +5063,7 @@
   "reading": "むこう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "over there"
  },
  {
@@ -4463,6 +5071,7 @@
   "reading": "むずかしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "difficult"
  },
  {
@@ -4470,6 +5079,7 @@
   "reading": "むっつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "six"
  },
  {
@@ -4477,6 +5087,7 @@
   "reading": "むら",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "village"
  },
  {
@@ -4484,6 +5095,7 @@
   "reading": "め",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "eye"
  },
  {
@@ -4491,6 +5103,7 @@
   "reading": "メートル",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "metre"
  },
  {
@@ -4498,6 +5111,7 @@
   "reading": "めがね",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "glasses"
  },
  {
@@ -4505,6 +5119,7 @@
   "reading": "もう",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "already"
  },
  {
@@ -4512,6 +5127,7 @@
   "reading": "もういちど",
   "other_forms": [],
   "level": "N5",
+  "pos": "exp; adv",
   "meanings": "again"
  },
  {
@@ -4519,6 +5135,7 @@
   "reading": "もくようび",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "Thursday"
  },
  {
@@ -4526,6 +5143,7 @@
   "reading": "もつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5t; vt",
   "meanings": "to hold"
  },
  {
@@ -4533,6 +5151,7 @@
   "reading": "もっと",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "more"
  },
  {
@@ -4540,6 +5159,7 @@
   "reading": "もの",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "thing"
  },
  {
@@ -4547,6 +5167,7 @@
   "reading": "もん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "gate"
  },
  {
@@ -4554,6 +5175,7 @@
   "reading": "もんだい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "problem"
  },
  {
@@ -4561,6 +5183,7 @@
   "reading": "やおや",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "greengrocer"
  },
  {
@@ -4568,6 +5191,7 @@
   "reading": "やさい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "vegetable"
  },
  {
@@ -4575,6 +5199,7 @@
   "reading": "やさしい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "easy; simple"
  },
  {
@@ -4582,6 +5207,7 @@
   "reading": "やすい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "cheap"
  },
  {
@@ -4589,6 +5215,7 @@
   "reading": "やすみ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "rest; holiday"
  },
  {
@@ -4596,6 +5223,7 @@
   "reading": "やすむ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5m; vi",
   "meanings": "to rest"
  },
  {
@@ -4603,6 +5231,7 @@
   "reading": "やっつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "eight"
  },
  {
@@ -4610,6 +5239,7 @@
   "reading": "やま",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; ctr",
   "meanings": "mountain"
  },
  {
@@ -4619,6 +5249,7 @@
    "遣る"
   ],
   "level": "N5",
+  "pos": "v5r; vt",
   "meanings": "to do"
  },
  {
@@ -4626,6 +5257,7 @@
   "reading": "ゆうがた",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "evening"
  },
  {
@@ -4633,6 +5265,7 @@
   "reading": "ゆうはん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "dinner"
  },
  {
@@ -4640,6 +5273,7 @@
   "reading": "ゆうびんきょく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "post office"
  },
  {
@@ -4647,6 +5281,7 @@
   "reading": "ゆうべ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "last night"
  },
  {
@@ -4654,6 +5289,7 @@
   "reading": "ゆうめい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "famous"
  },
  {
@@ -4661,6 +5297,7 @@
   "reading": "ゆき",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "snow"
  },
  {
@@ -4668,6 +5305,7 @@
   "reading": "ゆっくりと",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv; adv-to; vs",
   "meanings": "slowly"
  },
  {
@@ -4675,6 +5313,7 @@
   "reading": "ようか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "eight days; eighth day of the month"
  },
  {
@@ -4682,6 +5321,7 @@
   "reading": "ようふく",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "western-style clothes"
  },
  {
@@ -4689,6 +5329,7 @@
   "reading": "よく",
   "other_forms": [],
   "level": "N5",
+  "pos": "adv",
   "meanings": "often; well"
  },
  {
@@ -4696,6 +5337,7 @@
   "reading": "よこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "beside; side; width"
  },
  {
@@ -4703,6 +5345,7 @@
   "reading": "よっか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "four days; fouth day of the month"
  },
  {
@@ -4710,6 +5353,7 @@
   "reading": "よっつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "four"
  },
  {
@@ -4717,6 +5361,7 @@
   "reading": "よぶ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5b; vt",
   "meanings": "to call out; to invite"
  },
  {
@@ -4724,6 +5369,7 @@
   "reading": "よむ",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5m; vt",
   "meanings": "to read"
  },
  {
@@ -4731,6 +5377,7 @@
   "reading": "より",
   "other_forms": [],
   "level": "N5",
+  "pos": "prt",
   "meanings": "than; (used for comparison)"
  },
  {
@@ -4738,6 +5385,7 @@
   "reading": "よる",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "evening; night"
  },
  {
@@ -4745,6 +5393,7 @@
   "reading": "よわい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "weak"
  },
  {
@@ -4752,6 +5401,7 @@
   "reading": "らいげつ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "next month"
  },
  {
@@ -4759,6 +5409,7 @@
   "reading": "らいしゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "next week"
  },
  {
@@ -4766,6 +5417,7 @@
   "reading": "らいねん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; adv",
   "meanings": "next year"
  },
  {
@@ -4773,6 +5425,7 @@
   "reading": "ラジオ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "radio"
  },
  {
@@ -4782,6 +5435,7 @@
    "ラジオカセット"
   ],
   "level": "N5",
+  "pos": "n",
   "meanings": "radio cassette player"
  },
  {
@@ -4791,6 +5445,7 @@
    "立派"
   ],
   "level": "N5",
+  "pos": "adj-na",
   "meanings": "splendid"
  },
  {
@@ -4798,6 +5453,7 @@
   "reading": "りゅうがくせい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "overseas student"
  },
  {
@@ -4805,6 +5461,7 @@
   "reading": "りょうしん",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "both parents"
  },
  {
@@ -4812,6 +5469,7 @@
   "reading": "りょうり",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "cuisine"
  },
  {
@@ -4819,6 +5477,7 @@
   "reading": "りょこう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vi",
   "meanings": "travel"
  },
  {
@@ -4826,6 +5485,7 @@
   "reading": "れい",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "zero"
  },
  {
@@ -4833,6 +5493,7 @@
   "reading": "れいぞうこ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "refrigerator"
  },
  {
@@ -4840,6 +5501,7 @@
   "reading": "レコード",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "record"
  },
  {
@@ -4847,6 +5509,7 @@
   "reading": "レストラン",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "restaurant"
  },
  {
@@ -4854,6 +5517,7 @@
   "reading": "れんしゅう",
   "other_forms": [],
   "level": "N5",
+  "pos": "n; vs; vt",
   "meanings": "to practice"
  },
  {
@@ -4861,6 +5525,7 @@
   "reading": "ろうか",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "corridor"
  },
  {
@@ -4868,6 +5533,7 @@
   "reading": "ろく",
   "other_forms": [],
   "level": "N5",
+  "pos": "num",
   "meanings": "six"
  },
  {
@@ -4875,6 +5541,7 @@
   "reading": "ワイシャツ",
   "other_forms": [],
   "level": "N5",
+  "pos": "n",
   "meanings": "business shirt"
  },
  {
@@ -4882,6 +5549,7 @@
   "reading": "わかい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "young"
  },
  {
@@ -4891,6 +5559,7 @@
    "分る"
   ],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to be understood"
  },
  {
@@ -4898,6 +5567,7 @@
   "reading": "わすれる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v1; vt",
   "meanings": "to forget"
  },
  {
@@ -4905,6 +5575,7 @@
   "reading": "わたくし",
   "other_forms": [],
   "level": "N5",
+  "pos": "pn",
   "meanings": "(humble) I; myself"
  },
  {
@@ -4912,6 +5583,7 @@
   "reading": "わたす",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5s; vt",
   "meanings": "to hand over"
  },
  {
@@ -4919,6 +5591,7 @@
   "reading": "わたる",
   "other_forms": [],
   "level": "N5",
+  "pos": "v5r; vi",
   "meanings": "to go across"
  },
  {
@@ -4926,6 +5599,7 @@
   "reading": "わるい",
   "other_forms": [],
   "level": "N5",
+  "pos": "adj-i",
   "meanings": "bad"
  },
  {
@@ -4933,6 +5607,7 @@
   "reading": "あ",
   "other_forms": [],
   "level": "N4",
+  "pos": "int",
   "meanings": "Ah"
  },
  {
@@ -4940,6 +5615,7 @@
   "reading": "ああ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "like that"
  },
  {
@@ -4947,6 +5623,7 @@
   "reading": "あいさつする",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to greet"
  },
  {
@@ -4954,6 +5631,7 @@
   "reading": "あいだ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "a space"
  },
  {
@@ -4961,6 +5639,7 @@
   "reading": "あう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vi",
   "meanings": "to match"
  },
  {
@@ -4970,6 +5649,7 @@
    "赤ちゃん"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "infant"
  },
  {
@@ -4977,6 +5657,7 @@
   "reading": "あがる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to rise"
  },
  {
@@ -4986,6 +5667,7 @@
    "あかんぼう"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "baby"
  },
  {
@@ -4993,6 +5675,7 @@
   "reading": "あく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to open; to become empty"
  },
  {
@@ -5000,6 +5683,7 @@
   "reading": "アクセサリー",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "accessory"
  },
  {
@@ -5007,6 +5691,7 @@
   "reading": "あさい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "shallow; superficial"
  },
  {
@@ -5014,6 +5699,7 @@
   "reading": "あじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "flavour"
  },
  {
@@ -5021,6 +5707,7 @@
   "reading": "アジア",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "Asia"
  },
  {
@@ -5028,6 +5715,7 @@
   "reading": "あす",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "tomorrow"
  },
  {
@@ -5035,6 +5723,7 @@
   "reading": "あそび",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "play"
  },
  {
@@ -5042,6 +5731,7 @@
   "reading": "あつまる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to gather"
  },
  {
@@ -5049,6 +5739,7 @@
   "reading": "あつめる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to collect something"
  },
  {
@@ -5056,6 +5747,7 @@
   "reading": "アナウンサー",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "announcer"
  },
  {
@@ -5063,6 +5755,7 @@
   "reading": "アフリカ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "Africa"
  },
  {
@@ -5070,6 +5763,7 @@
   "reading": "アメリカ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "America"
  },
  {
@@ -5077,6 +5771,7 @@
   "reading": "あやまる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt; vi",
   "meanings": "to apologize"
  },
  {
@@ -5084,6 +5779,7 @@
   "reading": "アルコール",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "alcohol"
  },
  {
@@ -5091,6 +5787,7 @@
   "reading": "アルバイト",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "part-time job"
  },
  {
@@ -5098,6 +5795,7 @@
   "reading": "あんしん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-na; vs; vi",
   "meanings": "relief"
  },
  {
@@ -5105,6 +5803,7 @@
   "reading": "あんぜん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-na",
   "meanings": "safety"
  },
  {
@@ -5112,6 +5811,7 @@
   "reading": "あんな",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-pn",
   "meanings": "such"
  },
  {
@@ -5119,6 +5819,7 @@
   "reading": "あんない",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to guide"
  },
  {
@@ -5126,6 +5827,7 @@
   "reading": "いか",
   "other_forms": [],
   "level": "N4",
+  "pos": "n-suf",
   "meanings": "less than"
  },
  {
@@ -5133,6 +5835,7 @@
   "reading": "いがい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n-suf",
   "meanings": "with the exception of"
  },
  {
@@ -5140,6 +5843,7 @@
   "reading": "いがく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "medical science"
  },
  {
@@ -5147,6 +5851,7 @@
   "reading": "いきる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to live"
  },
  {
@@ -5154,6 +5859,7 @@
   "reading": "いけん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "opinion"
  },
  {
@@ -5161,6 +5867,7 @@
   "reading": "いし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "stone"
  },
  {
@@ -5170,6 +5877,7 @@
    "苛める"
   ],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to tease"
  },
  {
@@ -5177,6 +5885,7 @@
   "reading": "いじょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n-suf",
   "meanings": "more than; this is all"
  },
  {
@@ -5184,6 +5893,7 @@
   "reading": "いそぐ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5g; vi; vt",
   "meanings": "to hurry"
  },
  {
@@ -5191,6 +5901,7 @@
   "reading": "いたす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "(humble) to do"
  },
  {
@@ -5200,6 +5911,7 @@
    "頂く"
   ],
   "level": "N4",
+  "pos": "v5k; vt",
   "meanings": "(humble) to receive"
  },
  {
@@ -5207,6 +5919,7 @@
   "reading": "いちど",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "once"
  },
  {
@@ -5214,6 +5927,7 @@
   "reading": "いっしょうけんめい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv; adj-na; n",
   "meanings": "with utmost effort"
  },
  {
@@ -5221,6 +5935,7 @@
   "reading": "いっぱい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; adj-no; n-suf",
   "meanings": "full"
  },
  {
@@ -5228,6 +5943,7 @@
   "reading": "いと",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; n-suf",
   "meanings": "thread"
  },
  {
@@ -5235,6 +5951,7 @@
   "reading": "いない",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; n-suf; adv",
   "meanings": "within"
  },
  {
@@ -5242,6 +5959,7 @@
   "reading": "いなか",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "countryside"
  },
  {
@@ -5249,6 +5967,7 @@
   "reading": "いのる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "to pray"
  },
  {
@@ -5256,6 +5975,7 @@
   "reading": "いらっしゃる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5aru; vi",
   "meanings": "(respectful) to be; to come or to go"
  },
  {
@@ -5263,6 +5983,7 @@
   "reading": "うえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to plant; to grow"
  },
  {
@@ -5272,6 +5993,7 @@
    "伺う"
   ],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to visit"
  },
  {
@@ -5279,6 +6001,7 @@
   "reading": "うけつけ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi",
   "meanings": "receipt"
  },
  {
@@ -5286,6 +6009,7 @@
   "reading": "うける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to take a lesson or test"
  },
  {
@@ -5293,6 +6017,7 @@
   "reading": "うごく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to move"
  },
  {
@@ -5302,6 +6027,7 @@
    "嘘"
   ],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "a lie"
  },
  {
@@ -5311,6 +6037,7 @@
    "内"
   ],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "within"
  },
  {
@@ -5318,6 +6045,7 @@
   "reading": "うつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5t; vt",
   "meanings": "to hit"
  },
  {
@@ -5325,6 +6053,7 @@
   "reading": "うつくしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "beautiful"
  },
  {
@@ -5332,6 +6061,7 @@
   "reading": "うつす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to copy or photograph"
  },
  {
@@ -5339,6 +6069,7 @@
   "reading": "うつる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to move house or transfer"
  },
  {
@@ -5346,6 +6077,7 @@
   "reading": "うで",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "arm"
  },
  {
@@ -5355,6 +6087,7 @@
    "甘い"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "delicious"
  },
  {
@@ -5362,6 +6095,7 @@
   "reading": "うら",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "reverse side"
  },
  {
@@ -5369,6 +6103,7 @@
   "reading": "うりば",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "place where things are sold"
  },
  {
@@ -5378,6 +6113,7 @@
    "嬉しい"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "glad"
  },
  {
@@ -5385,6 +6121,7 @@
   "reading": "うん",
   "other_forms": [],
   "level": "N4",
+  "pos": "int",
   "meanings": "(informal) yes"
  },
  {
@@ -5392,6 +6129,7 @@
   "reading": "うんてん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi",
   "meanings": "to drive"
  },
  {
@@ -5399,6 +6137,7 @@
   "reading": "うんてんしゅ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "driver"
  },
  {
@@ -5406,6 +6145,7 @@
   "reading": "うんどう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to exercise"
  },
  {
@@ -5413,6 +6153,7 @@
   "reading": "エスカレーター",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "escalator"
  },
  {
@@ -5420,6 +6161,7 @@
   "reading": "えだ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "branch; twig"
  },
  {
@@ -5427,6 +6169,7 @@
   "reading": "えらぶ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5b; vt",
   "meanings": "to choose"
  },
  {
@@ -5434,6 +6177,7 @@
   "reading": "えんりょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi",
   "meanings": "to be reserved; to be restrained"
  },
  {
@@ -5443,6 +6187,7 @@
    "お出でになる"
   ],
   "level": "N4",
+  "pos": "exp; v5r",
   "meanings": "(respectful) to be"
  },
  {
@@ -5450,6 +6195,7 @@
   "reading": "おいわい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "congratulation"
  },
  {
@@ -5457,6 +6203,7 @@
   "reading": "オートバイ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "motorcycle"
  },
  {
@@ -5467,6 +6214,7 @@
    "お蔭"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "owing to"
  },
  {
@@ -5476,6 +6224,7 @@
    "可笑しい"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "strange or funny"
  },
  {
@@ -5483,6 +6232,7 @@
   "reading": "おかねもち",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "rich man"
  },
  {
@@ -5490,6 +6240,7 @@
   "reading": "おく",
   "other_forms": [],
   "level": "N4",
+  "pos": "num",
   "meanings": "one hundred million"
  },
  {
@@ -5497,6 +6248,7 @@
   "reading": "おくじょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "rooftop"
  },
  {
@@ -5504,6 +6256,7 @@
   "reading": "おくりもの",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "gift"
  },
  {
@@ -5511,6 +6264,7 @@
   "reading": "おくる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "to send"
  },
  {
@@ -5518,6 +6272,7 @@
   "reading": "おくれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to be late"
  },
  {
@@ -5527,6 +6282,7 @@
    "起こす"
   ],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to wake"
  },
  {
@@ -5534,6 +6290,7 @@
   "reading": "おこなう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to do"
  },
  {
@@ -5541,6 +6298,7 @@
   "reading": "おこる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to get angry; to be angry"
  },
  {
@@ -5548,6 +6306,7 @@
   "reading": "おしいれ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "closet"
  },
  {
@@ -5555,6 +6314,7 @@
   "reading": "おじょうさん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "young lady"
  },
  {
@@ -5562,6 +6322,7 @@
   "reading": "おたく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "(polite) your house"
  },
  {
@@ -5569,6 +6330,7 @@
   "reading": "おちる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to fall or drop"
  },
  {
@@ -5578,6 +6340,7 @@
    "仰る"
   ],
   "level": "N4",
+  "pos": "v5aru; vt",
   "meanings": "(respectful) to say"
  },
  {
@@ -5585,6 +6348,7 @@
   "reading": "おっと",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "husband"
  },
  {
@@ -5592,6 +6356,7 @@
   "reading": "おつり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "change from purchase; balance"
  },
  {
@@ -5599,6 +6364,7 @@
   "reading": "おと",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "sound; note"
  },
  {
@@ -5608,6 +6374,7 @@
    "落とす"
   ],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to drop"
  },
  {
@@ -5615,6 +6382,7 @@
   "reading": "おどり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "a dance"
  },
  {
@@ -5622,6 +6390,7 @@
   "reading": "おどる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to dance"
  },
  {
@@ -5629,6 +6398,7 @@
   "reading": "おどろく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to be surprised"
  },
  {
@@ -5636,6 +6406,7 @@
   "reading": "おまつり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "festival"
  },
  {
@@ -5643,6 +6414,7 @@
   "reading": "おみまい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "calling on someone who is ill; enquiry"
  },
  {
@@ -5650,6 +6422,7 @@
   "reading": "おみやげ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "souvenir"
  },
  {
@@ -5657,6 +6430,7 @@
   "reading": "おもいだす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to remember"
  },
  {
@@ -5664,6 +6438,7 @@
   "reading": "おもう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to think; to feel"
  },
  {
@@ -5673,6 +6448,7 @@
    "玩具"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "toy"
  },
  {
@@ -5680,6 +6456,7 @@
   "reading": "おもて",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "the front"
  },
  {
@@ -5689,6 +6466,7 @@
    "おや"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "parents"
  },
  {
@@ -5696,6 +6474,7 @@
   "reading": "およぎかた",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "way of swimming"
  },
  {
@@ -5703,6 +6482,7 @@
   "reading": "おりる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to get off"
  },
  {
@@ -5710,6 +6490,7 @@
   "reading": "おる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "to break or to fold"
  },
  {
@@ -5717,6 +6498,7 @@
   "reading": "おれい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "expression of gratitude"
  },
  {
@@ -5724,6 +6506,7 @@
   "reading": "おれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to break or be folded"
  },
  {
@@ -5731,6 +6514,7 @@
   "reading": "おわり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "the end"
  },
  {
@@ -5738,6 +6522,7 @@
   "reading": "カーテン",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "curtain"
  },
  {
@@ -5745,6 +6530,7 @@
   "reading": "かいがん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "coast"
  },
  {
@@ -5752,6 +6538,7 @@
   "reading": "かいぎ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi; vt",
   "meanings": "meeting"
  },
  {
@@ -5759,6 +6546,7 @@
   "reading": "かいぎしつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "meeting room"
  },
  {
@@ -5766,6 +6554,7 @@
   "reading": "かいじょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "assembly hall or meeting place"
  },
  {
@@ -5773,6 +6562,7 @@
   "reading": "かいわ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "conversation"
  },
  {
@@ -5780,6 +6570,7 @@
   "reading": "かえり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "return"
  },
  {
@@ -5787,6 +6578,7 @@
   "reading": "かえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to change"
  },
  {
@@ -5794,6 +6586,7 @@
   "reading": "かがく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "science"
  },
  {
@@ -5801,6 +6594,7 @@
   "reading": "かがみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "mirror"
  },
  {
@@ -5808,6 +6602,7 @@
   "reading": "かざる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "to decorate"
  },
  {
@@ -5815,6 +6610,7 @@
   "reading": "かじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "fire"
  },
  {
@@ -5822,6 +6618,7 @@
   "reading": "ガス",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "petrol"
  },
  {
@@ -5829,6 +6626,7 @@
   "reading": "ガソリン",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "petrol"
  },
  {
@@ -5836,6 +6634,7 @@
   "reading": "ガソリンスタンド",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "petrol station"
  },
  {
@@ -5843,6 +6642,7 @@
   "reading": "かたい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "hard"
  },
  {
@@ -5850,6 +6650,7 @@
   "reading": "かたち",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "shape"
  },
  {
@@ -5857,6 +6658,7 @@
   "reading": "かたづける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to tidy up"
  },
  {
@@ -5864,6 +6666,7 @@
   "reading": "かちょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "section manager"
  },
  {
@@ -5871,6 +6674,7 @@
   "reading": "かつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5t; vi",
   "meanings": "to win"
  },
  {
@@ -5880,6 +6684,7 @@
    "格好"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "appearance"
  },
  {
@@ -5887,6 +6692,7 @@
   "reading": "かない",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "housewife"
  },
  {
@@ -5894,6 +6700,7 @@
   "reading": "かなしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "sad"
  },
  {
@@ -5901,6 +6708,7 @@
   "reading": "かならず",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "certainly; necessarily"
  },
  {
@@ -5908,6 +6716,7 @@
   "reading": "かのじょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "pn",
   "meanings": "she; girlfriend"
  },
  {
@@ -5915,6 +6724,7 @@
   "reading": "かべ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "wall"
  },
  {
@@ -5924,6 +6734,7 @@
    "構う"
   ],
   "level": "N4",
+  "pos": "v5u; vi",
   "meanings": "to mind"
  },
  {
@@ -5931,6 +6742,7 @@
   "reading": "かみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "hair"
  },
  {
@@ -5938,6 +6750,7 @@
   "reading": "かむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vt",
   "meanings": "to bite; to chew"
  },
  {
@@ -5945,6 +6758,7 @@
   "reading": "かよう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vi",
   "meanings": "to commute"
  },
  {
@@ -5952,6 +6766,7 @@
   "reading": "ガラス",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "a glass pane"
  },
  {
@@ -5959,6 +6774,7 @@
   "reading": "かれ",
   "other_forms": [],
   "level": "N4",
+  "pos": "pn",
   "meanings": "he; boyfriend"
  },
  {
@@ -5968,6 +6784,7 @@
    "彼等"
   ],
   "level": "N4",
+  "pos": "pn",
   "meanings": "they"
  },
  {
@@ -5975,6 +6792,7 @@
   "reading": "かわく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to get dry"
  },
  {
@@ -5982,6 +6800,7 @@
   "reading": "かわり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "substitute; alternate"
  },
  {
@@ -5989,6 +6808,7 @@
   "reading": "かわる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to change"
  },
  {
@@ -5996,6 +6816,7 @@
   "reading": "かんがえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to consider"
  },
  {
@@ -6003,6 +6824,7 @@
   "reading": "かんけい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "relationship"
  },
  {
@@ -6010,6 +6832,7 @@
   "reading": "かんごふ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "female nurse"
  },
  {
@@ -6017,6 +6840,7 @@
   "reading": "かんたん",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "simple"
  },
  {
@@ -6024,6 +6848,7 @@
   "reading": "き",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "spirit; mood"
  },
  {
@@ -6031,6 +6856,7 @@
   "reading": "きかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "opportunity"
  },
  {
@@ -6038,6 +6864,7 @@
   "reading": "きけん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-na",
   "meanings": "danger"
  },
  {
@@ -6045,6 +6872,7 @@
   "reading": "きこえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to be heard"
  },
  {
@@ -6052,6 +6880,7 @@
   "reading": "きしゃ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "steam train"
  },
  {
@@ -6059,6 +6888,7 @@
   "reading": "ぎじゅつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "art; technology; skill"
  },
  {
@@ -6066,6 +6896,7 @@
   "reading": "きせつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "season"
  },
  {
@@ -6073,6 +6904,7 @@
   "reading": "きそく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "regulations"
  },
  {
@@ -6082,6 +6914,7 @@
    "屹度"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "surely"
  },
  {
@@ -6089,6 +6922,7 @@
   "reading": "きぬ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "silk"
  },
  {
@@ -6096,6 +6930,7 @@
   "reading": "きびしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "strict"
  },
  {
@@ -6103,6 +6938,7 @@
   "reading": "きぶん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "mood"
  },
  {
@@ -6110,6 +6946,7 @@
   "reading": "きまる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to be decided"
  },
  {
@@ -6117,6 +6954,7 @@
   "reading": "きみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "pn",
   "meanings": "(informal) You (used by men towards women)"
  },
  {
@@ -6124,6 +6962,7 @@
   "reading": "きめる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to decide"
  },
  {
@@ -6131,6 +6970,7 @@
   "reading": "きもち",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "feeling; mood"
  },
  {
@@ -6138,6 +6978,7 @@
   "reading": "きもの",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "kimono"
  },
  {
@@ -6145,6 +6986,7 @@
   "reading": "きゃく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "guest; customer"
  },
  {
@@ -6152,6 +6994,7 @@
   "reading": "きゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "urgent; steep"
  },
  {
@@ -6159,6 +7002,7 @@
   "reading": "きゅうこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "speedy; express"
  },
  {
@@ -6166,6 +7010,7 @@
   "reading": "きょういく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "education"
  },
  {
@@ -6173,6 +7018,7 @@
   "reading": "きょうかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "church"
  },
  {
@@ -6180,6 +7026,7 @@
   "reading": "きょうそう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi",
   "meanings": "competition"
  },
  {
@@ -6187,6 +7034,7 @@
   "reading": "きょうみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "an interest"
  },
  {
@@ -6194,6 +7042,7 @@
   "reading": "きんじょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "neighbourhood"
  },
  {
@@ -6201,6 +7050,7 @@
   "reading": "ぐあい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "condition; health"
  },
  {
@@ -6208,6 +7058,7 @@
   "reading": "くうき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "air; atmosphere"
  },
  {
@@ -6215,6 +7066,7 @@
   "reading": "くうこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "airport"
  },
  {
@@ -6222,6 +7074,7 @@
   "reading": "くさ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "grass"
  },
  {
@@ -6231,6 +7084,7 @@
    "下さる"
   ],
   "level": "N4",
+  "pos": "v5aru; vt",
   "meanings": "(respectful) to give"
  },
  {
@@ -6238,6 +7092,7 @@
   "reading": "くび",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "neck"
  },
  {
@@ -6245,6 +7100,7 @@
   "reading": "くも",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "cloud"
  },
  {
@@ -6252,6 +7108,7 @@
   "reading": "くらべる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to compare"
  },
  {
@@ -6261,6 +7118,7 @@
    "呉れる"
   ],
   "level": "N4",
+  "pos": "v1-s; vt",
   "meanings": "to give"
  },
  {
@@ -6268,6 +7126,7 @@
   "reading": "くれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to get dark; to come to an end"
  },
  {
@@ -6275,6 +7134,7 @@
   "reading": "け",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "hair or fur"
  },
  {
@@ -6282,6 +7142,7 @@
   "reading": "けいかく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to plan"
  },
  {
@@ -6289,6 +7150,7 @@
   "reading": "けいけん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to experience"
  },
  {
@@ -6296,6 +7158,7 @@
   "reading": "けいざい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "finance; economy"
  },
  {
@@ -6303,6 +7166,7 @@
   "reading": "けいさつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "police"
  },
  {
@@ -6310,6 +7174,7 @@
   "reading": "ケーキ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "cake"
  },
  {
@@ -6317,6 +7182,7 @@
   "reading": "けがする",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi",
   "meanings": "to injure"
  },
  {
@@ -6324,6 +7190,7 @@
   "reading": "けしき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "scene; landscape"
  },
  {
@@ -6331,6 +7198,7 @@
   "reading": "けしゴム",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "eraser"
  },
  {
@@ -6338,6 +7206,7 @@
   "reading": "げしゅく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "lodging"
  },
  {
@@ -6345,6 +7214,7 @@
   "reading": "けっして",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "never"
  },
  {
@@ -6354,6 +7224,7 @@
    "けれども"
   ],
   "level": "N4",
+  "pos": "conj; prt",
   "meanings": "however"
  },
  {
@@ -6361,6 +7232,7 @@
   "reading": "げんいん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "cause; source"
  },
  {
@@ -6368,6 +7240,7 @@
   "reading": "けんかする",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to quarrel"
  },
  {
@@ -6375,6 +7248,7 @@
   "reading": "けんきゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "research"
  },
  {
@@ -6382,6 +7256,7 @@
   "reading": "けんきゅうしつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "study room; laboratory"
  },
  {
@@ -6389,6 +7264,7 @@
   "reading": "けんぶつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "sightseeing"
  },
  {
@@ -6396,6 +7272,7 @@
   "reading": "こ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; n-suf",
   "meanings": "child"
  },
  {
@@ -6403,6 +7280,7 @@
   "reading": "こう",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "this way"
  },
  {
@@ -6410,6 +7288,7 @@
   "reading": "こうがい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "outskirts"
  },
  {
@@ -6417,6 +7296,7 @@
   "reading": "こうぎ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "lecture"
  },
  {
@@ -6424,6 +7304,7 @@
   "reading": "こうぎょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "the manufacturing industry"
  },
  {
@@ -6431,6 +7312,7 @@
   "reading": "こうこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "high school"
  },
  {
@@ -6438,6 +7320,7 @@
   "reading": "こうこうせい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "high school student"
  },
  {
@@ -6445,6 +7328,7 @@
   "reading": "こうじょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "factory"
  },
  {
@@ -6452,6 +7336,7 @@
   "reading": "こうちょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "headmaster"
  },
  {
@@ -6459,6 +7344,7 @@
   "reading": "こうつう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs",
   "meanings": "traffic; transportation"
  },
  {
@@ -6466,6 +7352,7 @@
   "reading": "こうどう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "auditorium"
  },
  {
@@ -6473,6 +7360,7 @@
   "reading": "こうとうがっこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "high school"
  },
  {
@@ -6480,6 +7368,7 @@
   "reading": "こうむいん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "government worker"
  },
  {
@@ -6487,6 +7376,7 @@
   "reading": "こくさい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-no; n",
   "meanings": "international"
  },
  {
@@ -6494,6 +7384,7 @@
   "reading": "こころ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "core; heart"
  },
  {
@@ -6501,6 +7392,7 @@
   "reading": "ごしゅじん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "(honorable) your husband"
  },
  {
@@ -6508,6 +7400,7 @@
   "reading": "こしょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to break-down"
  },
  {
@@ -6515,6 +7408,7 @@
   "reading": "ごぞんじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "knowing; acquaintance"
  },
  {
@@ -6524,6 +7418,7 @@
    "答え"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "response"
  },
  {
@@ -6534,6 +7429,7 @@
    "ご馳走"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "a feast"
  },
  {
@@ -6543,6 +7439,7 @@
    "事"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "thing; matter"
  },
  {
@@ -6550,6 +7447,7 @@
   "reading": "ことり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "small bird"
  },
  {
@@ -6559,6 +7457,7 @@
    "この間"
   ],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "the other day; recently"
  },
  {
@@ -6568,6 +7467,7 @@
    "この頃"
   ],
   "level": "N4",
+  "pos": "adv; n",
   "meanings": "these days; nowadays"
  },
  {
@@ -6575,6 +7475,7 @@
   "reading": "こまかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "small; fine"
  },
  {
@@ -6585,6 +7486,7 @@
    "塵"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "rubbish"
  },
  {
@@ -6592,6 +7494,7 @@
   "reading": "こむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vi",
   "meanings": "to be crowded"
  },
  {
@@ -6599,6 +7502,7 @@
   "reading": "こめ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "uncooked rice"
  },
  {
@@ -6606,6 +7510,7 @@
   "reading": "ごらんになる",
   "other_forms": [],
   "level": "N4",
+  "pos": "exp; v5r",
   "meanings": "(respectful) to see"
  },
  {
@@ -6613,6 +7518,7 @@
   "reading": "これから",
   "other_forms": [],
   "level": "N4",
+  "pos": "exp",
   "meanings": "after this"
  },
  {
@@ -6620,6 +7526,7 @@
   "reading": "こわい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "frightening"
  },
  {
@@ -6627,6 +7534,7 @@
   "reading": "こわす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to break"
  },
  {
@@ -6634,6 +7542,7 @@
   "reading": "こわれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to be broken"
  },
  {
@@ -6641,6 +7550,7 @@
   "reading": "コンサート",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "concert"
  },
  {
@@ -6648,6 +7558,7 @@
   "reading": "こんど",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "now; next time"
  },
  {
@@ -6657,6 +7568,7 @@
    "コンピューター"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "computer"
  },
  {
@@ -6664,6 +7576,7 @@
   "reading": "こんや",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "tonight"
  },
  {
@@ -6671,6 +7584,7 @@
   "reading": "さいきん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no; adv",
   "meanings": "latest; nowadays"
  },
  {
@@ -6678,6 +7592,7 @@
   "reading": "さいご",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "last; end"
  },
  {
@@ -6685,6 +7600,7 @@
   "reading": "さいしょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-no; n; adv",
   "meanings": "beginning; first"
  },
  {
@@ -6692,6 +7608,7 @@
   "reading": "さか",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "slope; hill"
  },
  {
@@ -6699,6 +7616,7 @@
   "reading": "さがす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to look for"
  },
  {
@@ -6706,6 +7624,7 @@
   "reading": "さがる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to get down; to descend"
  },
  {
@@ -6713,6 +7632,7 @@
   "reading": "さかん",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "popularity; prosperous"
  },
  {
@@ -6720,6 +7640,7 @@
   "reading": "さげる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to hang; to lower; to move back"
  },
  {
@@ -6727,6 +7648,7 @@
   "reading": "さしあげる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "(polite) to give"
  },
  {
@@ -6734,6 +7656,7 @@
   "reading": "さっき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "some time ago"
  },
  {
@@ -6741,6 +7664,7 @@
   "reading": "さびしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "lonely"
  },
  {
@@ -6748,6 +7672,7 @@
   "reading": "さらいげつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "the month after next"
  },
  {
@@ -6755,6 +7680,7 @@
   "reading": "さらいしゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "the week after next"
  },
  {
@@ -6762,6 +7688,7 @@
   "reading": "サラダ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "salad"
  },
  {
@@ -6769,6 +7696,7 @@
   "reading": "さわぐ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5g; vi",
   "meanings": "to make noise; to be excited"
  },
  {
@@ -6776,6 +7704,7 @@
   "reading": "さわる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi; vt",
   "meanings": "to touch"
  },
  {
@@ -6783,6 +7712,7 @@
   "reading": "さんぎょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "industry"
  },
  {
@@ -6790,6 +7720,7 @@
   "reading": "サンダル",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "sandal"
  },
  {
@@ -6797,6 +7728,7 @@
   "reading": "サンドイッチ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "sandwich"
  },
  {
@@ -6804,6 +7736,7 @@
   "reading": "ざんねん",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "disappointment"
  },
  {
@@ -6811,6 +7744,7 @@
   "reading": "し",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; n-suf",
   "meanings": "city"
  },
  {
@@ -6818,6 +7752,7 @@
   "reading": "じ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "character"
  },
  {
@@ -6825,6 +7760,7 @@
   "reading": "しあい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "match; game"
  },
  {
@@ -6832,6 +7768,7 @@
   "reading": "しかた",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "method"
  },
  {
@@ -6839,6 +7776,7 @@
   "reading": "しかる",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-pn",
   "meanings": "a particular"
  },
  {
@@ -6846,6 +7784,7 @@
   "reading": "しけん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "examination"
  },
  {
@@ -6853,6 +7792,7 @@
   "reading": "じこ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "accident"
  },
  {
@@ -6860,6 +7800,7 @@
   "reading": "じしん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "earthquake"
  },
  {
@@ -6867,6 +7808,7 @@
   "reading": "じだい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "era"
  },
  {
@@ -6874,6 +7816,7 @@
   "reading": "したぎ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "underwear"
  },
  {
@@ -6881,6 +7824,7 @@
   "reading": "したく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to prepare"
  },
  {
@@ -6890,6 +7834,7 @@
    "確り"
   ],
   "level": "N4",
+  "pos": "adv; adv-to; vs",
   "meanings": "firmly; steadily"
  },
  {
@@ -6897,6 +7842,7 @@
   "reading": "しっぱい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi",
   "meanings": "failure; mistake"
  },
  {
@@ -6904,6 +7850,7 @@
   "reading": "じてん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "dictionary"
  },
  {
@@ -6911,6 +7858,7 @@
   "reading": "しなもの",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "goods"
  },
  {
@@ -6920,6 +7868,7 @@
    "暫く"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "little while"
  },
  {
@@ -6927,6 +7876,7 @@
   "reading": "しま",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "island"
  },
  {
@@ -6934,6 +7884,7 @@
   "reading": "しみん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "citizen"
  },
  {
@@ -6941,6 +7892,7 @@
   "reading": "じむしょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "office"
  },
  {
@@ -6948,6 +7900,7 @@
   "reading": "しゃかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "society; public"
  },
  {
@@ -6955,6 +7908,7 @@
   "reading": "しゃちょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "company president"
  },
  {
@@ -6964,6 +7918,7 @@
    "邪魔"
   ],
   "level": "N4",
+  "pos": "n; adj-na; vs; vt",
   "meanings": "hindrance; intrusion"
  },
  {
@@ -6971,6 +7926,7 @@
   "reading": "ジャム",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "jam"
  },
  {
@@ -6978,6 +7934,7 @@
   "reading": "じゆう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-na",
   "meanings": "freedom"
  },
  {
@@ -6985,6 +7942,7 @@
   "reading": "しゅうかん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "custom; manners"
  },
  {
@@ -6992,6 +7950,7 @@
   "reading": "じゅうしょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "an address; a residence"
  },
  {
@@ -6999,6 +7958,7 @@
   "reading": "じゅうどう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "judo"
  },
  {
@@ -7006,6 +7966,7 @@
   "reading": "じゅうぶん",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "enough"
  },
  {
@@ -7013,6 +7974,7 @@
   "reading": "しゅっせき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to attend"
  },
  {
@@ -7020,6 +7982,7 @@
   "reading": "しゅっぱつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to depart"
  },
  {
@@ -7027,6 +7990,7 @@
   "reading": "しゅみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "hobby"
  },
  {
@@ -7034,6 +7998,7 @@
   "reading": "じゅんび",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to prepare"
  },
  {
@@ -7041,6 +8006,7 @@
   "reading": "しょうかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "introduction"
  },
  {
@@ -7048,6 +8014,7 @@
   "reading": "しょうがっこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "elementary school"
  },
  {
@@ -7055,6 +8022,7 @@
   "reading": "しょうせつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "novel"
  },
  {
@@ -7062,6 +8030,7 @@
   "reading": "しょうたい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to invite"
  },
  {
@@ -7069,6 +8038,7 @@
   "reading": "しょうち",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to consent"
  },
  {
@@ -7076,6 +8046,7 @@
   "reading": "しょうらい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "future; prospects"
  },
  {
@@ -7083,6 +8054,7 @@
   "reading": "しょくじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to have a meal"
  },
  {
@@ -7090,6 +8062,7 @@
   "reading": "しょくりょうひん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "groceries"
  },
  {
@@ -7097,6 +8070,7 @@
   "reading": "じょせい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "woman"
  },
  {
@@ -7104,6 +8078,7 @@
   "reading": "しらせる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to notify"
  },
  {
@@ -7111,6 +8086,7 @@
   "reading": "しらべる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to investigate"
  },
  {
@@ -7118,6 +8094,7 @@
   "reading": "じんこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "population"
  },
  {
@@ -7125,6 +8102,7 @@
   "reading": "じんじゃ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "Shinto shrine"
  },
  {
@@ -7132,6 +8110,7 @@
   "reading": "しんせつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "kindness"
  },
  {
@@ -7139,6 +8118,7 @@
   "reading": "しんぱい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; adj-na",
   "meanings": "to worry"
  },
  {
@@ -7146,6 +8126,7 @@
   "reading": "しんぶんしゃ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "newspaper company"
  },
  {
@@ -7153,6 +8134,7 @@
   "reading": "すいえい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "swimming"
  },
  {
@@ -7160,6 +8142,7 @@
   "reading": "すいどう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "water supply"
  },
  {
@@ -7169,6 +8152,7 @@
    "随分"
   ],
   "level": "N4",
+  "pos": "adv; adv-to",
   "meanings": "extremely"
  },
  {
@@ -7176,6 +8160,7 @@
   "reading": "すうがく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "mathematics; arithmetic"
  },
  {
@@ -7183,6 +8168,7 @@
   "reading": "スーツ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "suit"
  },
  {
@@ -7190,6 +8176,7 @@
   "reading": "スーツケース",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "suitcase"
  },
  {
@@ -7197,6 +8184,7 @@
   "reading": "すぎる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to exceed"
  },
  {
@@ -7206,6 +8194,7 @@
    "空く"
   ],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to become empty"
  },
  {
@@ -7213,6 +8202,7 @@
   "reading": "スクリーン",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "screen"
  },
  {
@@ -7222,6 +8212,7 @@
    "すごい"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "terrific"
  },
  {
@@ -7229,6 +8220,7 @@
   "reading": "すすむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vi",
   "meanings": "to make progress"
  },
  {
@@ -7236,6 +8228,7 @@
   "reading": "すっかり",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv; adv-to",
   "meanings": "completely"
  },
  {
@@ -7243,6 +8236,7 @@
   "reading": "すっと",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv; vs",
   "meanings": "straight; all of a sudden"
  },
  {
@@ -7250,6 +8244,7 @@
   "reading": "ステーキ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "steak"
  },
  {
@@ -7259,6 +8254,7 @@
    "棄てる"
   ],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to throw away"
  },
  {
@@ -7266,6 +8262,7 @@
   "reading": "ステレオ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "stereo"
  },
  {
@@ -7273,6 +8270,7 @@
   "reading": "すな",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "sand"
  },
  {
@@ -7282,6 +8280,7 @@
    "素晴らしい"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "wonderful"
  },
  {
@@ -7289,6 +8288,7 @@
   "reading": "すべる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to slide; to slip"
  },
  {
@@ -7296,6 +8296,7 @@
   "reading": "すみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; n-suf",
   "meanings": "corner; nook"
  },
  {
@@ -7303,6 +8304,7 @@
   "reading": "すむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vi",
   "meanings": "to finish"
  },
  {
@@ -7312,6 +8314,7 @@
    "掏摸"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "pickpocket"
  },
  {
@@ -7319,6 +8322,7 @@
   "reading": "すると",
   "other_forms": [],
   "level": "N4",
+  "pos": "conj",
   "meanings": "then"
  },
  {
@@ -7326,6 +8330,7 @@
   "reading": "せいかつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to live"
  },
  {
@@ -7333,6 +8338,7 @@
   "reading": "せいさん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to produce"
  },
  {
@@ -7340,6 +8346,7 @@
   "reading": "せいじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "politics; government"
  },
  {
@@ -7347,6 +8354,7 @@
   "reading": "せいよう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "western countries"
  },
  {
@@ -7354,6 +8362,7 @@
   "reading": "せかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "the world"
  },
  {
@@ -7361,6 +8370,7 @@
   "reading": "せき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "seat"
  },
  {
@@ -7368,6 +8378,7 @@
   "reading": "せつめい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "explanation"
  },
  {
@@ -7375,6 +8386,7 @@
   "reading": "せなか",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "back of the body"
  },
  {
@@ -7384,6 +8396,7 @@
    "是非"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "without fail"
  },
  {
@@ -7391,6 +8404,7 @@
   "reading": "せわ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to look after"
  },
  {
@@ -7398,6 +8412,7 @@
   "reading": "せん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; n-suf",
   "meanings": "line"
  },
  {
@@ -7407,6 +8422,7 @@
    "全然"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "not entirely (used in a negative sentence)"
  },
  {
@@ -7414,6 +8430,7 @@
   "reading": "せんそう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "war"
  },
  {
@@ -7421,6 +8438,7 @@
   "reading": "せんぱい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; suf",
   "meanings": "senior"
  },
  {
@@ -7428,6 +8446,7 @@
   "reading": "そう",
   "other_forms": [],
   "level": "N4",
+  "pos": "aux; adj-na",
   "meanings": "really"
  },
  {
@@ -7435,6 +8454,7 @@
   "reading": "そうだん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to discuss"
  },
  {
@@ -7442,6 +8462,7 @@
   "reading": "そだてる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to rear; to bring up"
  },
  {
@@ -7449,6 +8470,7 @@
   "reading": "そつぎょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "graduation"
  },
  {
@@ -7456,6 +8478,7 @@
   "reading": "そふ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "grandfather"
  },
  {
@@ -7463,6 +8486,7 @@
   "reading": "ソフト",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; adj-no",
   "meanings": "soft"
  },
  {
@@ -7470,6 +8494,7 @@
   "reading": "そぼ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "grandmother"
  },
  {
@@ -7479,6 +8504,7 @@
    "其れで"
   ],
   "level": "N4",
+  "pos": "conj",
   "meanings": "because of that"
  },
  {
@@ -7488,6 +8514,7 @@
    "其れに"
   ],
   "level": "N4",
+  "pos": "conj",
   "meanings": "moreover"
  },
  {
@@ -7497,6 +8524,7 @@
    "其れ程"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "to that extent"
  },
  {
@@ -7504,6 +8532,7 @@
   "reading": "そろそろ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv; adv-to",
   "meanings": "gradually; soon"
  },
  {
@@ -7511,6 +8540,7 @@
   "reading": "そんな",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-pn",
   "meanings": "that sort of"
  },
  {
@@ -7518,6 +8548,7 @@
   "reading": "そんなに",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "so much; like that"
  },
  {
@@ -7525,6 +8556,7 @@
   "reading": "たいいん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to leave hospital"
  },
  {
@@ -7532,6 +8564,7 @@
   "reading": "だいがくせい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "university student"
  },
  {
@@ -7539,6 +8572,7 @@
   "reading": "だいじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "important; valuable; serious matter"
  },
  {
@@ -7546,6 +8580,7 @@
   "reading": "だいたい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "generally"
  },
  {
@@ -7555,6 +8590,7 @@
    "大抵"
   ],
   "level": "N4",
+  "pos": "adj-na; adv; n",
   "meanings": "usually"
  },
  {
@@ -7562,6 +8598,7 @@
   "reading": "タイプ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "type; style"
  },
  {
@@ -7569,6 +8606,7 @@
   "reading": "だいぶ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "greatly"
  },
  {
@@ -7576,6 +8614,7 @@
   "reading": "たいふう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "typhoon"
  },
  {
@@ -7583,6 +8622,7 @@
   "reading": "たおれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to break down"
  },
  {
@@ -7590,6 +8630,7 @@
   "reading": "だから",
   "other_forms": [],
   "level": "N4",
+  "pos": "conj",
   "meanings": "so; therefore"
  },
  {
@@ -7597,6 +8638,7 @@
   "reading": "たしか",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "definite"
  },
  {
@@ -7604,6 +8646,7 @@
   "reading": "たす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to add a number"
  },
  {
@@ -7611,6 +8654,7 @@
   "reading": "たずねる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to ask"
  },
  {
@@ -7618,6 +8662,7 @@
   "reading": "たずねる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to visit"
  },
  {
@@ -7625,6 +8670,7 @@
   "reading": "ただしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "correct"
  },
  {
@@ -7632,6 +8678,7 @@
   "reading": "たたみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "Japanese straw mat"
  },
  {
@@ -7639,6 +8686,7 @@
   "reading": "たてる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to build"
  },
  {
@@ -7646,6 +8694,7 @@
   "reading": "たてる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to stand something up"
  },
  {
@@ -7653,6 +8702,7 @@
   "reading": "たとえば",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "for example"
  },
  {
@@ -7660,6 +8710,7 @@
   "reading": "たな",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "shelves"
  },
  {
@@ -7667,6 +8718,7 @@
   "reading": "たのしみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-na",
   "meanings": "joy"
  },
  {
@@ -7674,6 +8726,7 @@
   "reading": "たのしむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vt",
   "meanings": "to enjoy oneself"
  },
  {
@@ -7683,6 +8736,7 @@
    "偶に"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "occasionally"
  },
  {
@@ -7690,6 +8744,7 @@
   "reading": "ため",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "in order to"
  },
  {
@@ -7699,6 +8754,7 @@
    "駄目"
   ],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "no good"
  },
  {
@@ -7706,6 +8762,7 @@
   "reading": "たりる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to be enough"
  },
  {
@@ -7713,6 +8770,7 @@
   "reading": "だんせい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "male"
  },
  {
@@ -7720,6 +8778,7 @@
   "reading": "だんぼう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "heating"
  },
  {
@@ -7727,6 +8786,7 @@
   "reading": "ち",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "blood"
  },
  {
@@ -7734,6 +8794,7 @@
   "reading": "チェックする",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "to check"
  },
  {
@@ -7741,6 +8802,7 @@
   "reading": "ちから",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "strength; power"
  },
  {
@@ -7750,6 +8812,7 @@
    "些とも"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "not at all (used with a negative verb)"
  },
  {
@@ -7757,6 +8820,7 @@
   "reading": "ちゃん",
   "other_forms": [],
   "level": "N4",
+  "pos": "suf",
   "meanings": "suffix for familiar female person"
  },
  {
@@ -7764,6 +8828,7 @@
   "reading": "ちゅうい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "caution"
  },
  {
@@ -7771,6 +8836,7 @@
   "reading": "ちゅうがっこう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "junior high school; middle school"
  },
  {
@@ -7778,6 +8844,7 @@
   "reading": "ちゅうしゃ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "injection"
  },
  {
@@ -7785,6 +8852,7 @@
   "reading": "ちゅうしゃじょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "parking lot"
  },
  {
@@ -7792,6 +8860,7 @@
   "reading": "ちり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "geography"
  },
  {
@@ -7799,6 +8868,7 @@
   "reading": "つかまえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to seize"
  },
  {
@@ -7808,6 +8878,7 @@
    "月"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "moon"
  },
  {
@@ -7815,6 +8886,7 @@
   "reading": "つく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to be attached"
  },
  {
@@ -7822,6 +8894,7 @@
   "reading": "つける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to soak; to pickle"
  },
  {
@@ -7829,6 +8902,7 @@
   "reading": "つごう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "circumstances; convenience"
  },
  {
@@ -7836,6 +8910,7 @@
   "reading": "つたえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to report"
  },
  {
@@ -7843,6 +8918,7 @@
   "reading": "つづく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to be continued"
  },
  {
@@ -7850,6 +8926,7 @@
   "reading": "つづける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to continue"
  },
  {
@@ -7857,6 +8934,7 @@
   "reading": "つつむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vt",
   "meanings": "to wrap"
  },
  {
@@ -7864,6 +8942,7 @@
   "reading": "つま",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "(humble) wife"
  },
  {
@@ -7873,6 +8952,7 @@
    "積もり"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "intention"
  },
  {
@@ -7880,6 +8960,7 @@
   "reading": "つる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "to fish"
  },
  {
@@ -7887,6 +8968,7 @@
   "reading": "つれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to lead"
  },
  {
@@ -7894,6 +8976,7 @@
   "reading": "ていねい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "polite"
  },
  {
@@ -7901,6 +8984,7 @@
   "reading": "テキスト",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "text; text book"
  },
  {
@@ -7908,6 +8992,7 @@
   "reading": "てきとう",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "suitability"
  },
  {
@@ -7917,6 +9002,7 @@
    "出来るだけ"
   ],
   "level": "N4",
+  "pos": "exp; adv; adj-no",
   "meanings": "as much as possible"
  },
  {
@@ -7924,6 +9010,7 @@
   "reading": "てつだう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to assist"
  },
  {
@@ -7931,6 +9018,7 @@
   "reading": "テニス",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "tennis"
  },
  {
@@ -7938,6 +9026,7 @@
   "reading": "てぶくろ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "glove"
  },
  {
@@ -7945,6 +9034,7 @@
   "reading": "てら",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "temple"
  },
  {
@@ -7952,6 +9042,7 @@
   "reading": "てん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "point; dot"
  },
  {
@@ -7959,6 +9050,7 @@
   "reading": "てんいん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "shop assistant"
  },
  {
@@ -7966,6 +9058,7 @@
   "reading": "てんきよほう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "weather forecast"
  },
  {
@@ -7973,6 +9066,7 @@
   "reading": "でんとう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "electric light"
  },
  {
@@ -7980,6 +9074,7 @@
   "reading": "でんぽう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "telegram"
  },
  {
@@ -7987,6 +9082,7 @@
   "reading": "てんらんかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "exhibition"
  },
  {
@@ -7994,6 +9090,7 @@
   "reading": "と",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "metropolitan"
  },
  {
@@ -8001,6 +9098,7 @@
   "reading": "どうぐ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "tool; means"
  },
  {
@@ -8008,6 +9106,7 @@
   "reading": "とうとう",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "finally; after all"
  },
  {
@@ -8015,6 +9114,7 @@
   "reading": "どうぶつえん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "zoo"
  },
  {
@@ -8022,6 +9122,7 @@
   "reading": "とおく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv; adj-no",
   "meanings": "distant"
  },
  {
@@ -8029,6 +9130,7 @@
   "reading": "とおる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to go through"
  },
  {
@@ -8036,6 +9138,7 @@
   "reading": "とくに",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "particularly; especially"
  },
  {
@@ -8043,6 +9146,7 @@
   "reading": "とくべつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; adj-no; adv; n",
   "meanings": "special"
  },
  {
@@ -8052,6 +9156,7 @@
    "床屋"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "barber"
  },
  {
@@ -8059,6 +9164,7 @@
   "reading": "とちゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "on the way"
  },
  {
@@ -8066,6 +9172,7 @@
   "reading": "とっきゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "limited express train (faster than an express train)"
  },
  {
@@ -8073,6 +9180,7 @@
   "reading": "とどける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to reach"
  },
  {
@@ -8080,6 +9188,7 @@
   "reading": "とまる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to lodge at"
  },
  {
@@ -8087,6 +9196,7 @@
   "reading": "とめる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to stop something"
  },
  {
@@ -8094,6 +9204,7 @@
   "reading": "とりかえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to exchange"
  },
  {
@@ -8101,6 +9212,7 @@
   "reading": "どろぼう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "thief"
  },
  {
@@ -8108,6 +9220,7 @@
   "reading": "どんどん",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv; adv-to",
   "meanings": "more and more"
  },
  {
@@ -8115,6 +9228,7 @@
   "reading": "なおす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to fix; to repair"
  },
  {
@@ -8122,6 +9236,7 @@
   "reading": "なおる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to be cured; to heal"
  },
  {
@@ -8129,6 +9244,7 @@
   "reading": "なおる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to be fixed; to be repaired"
  },
  {
@@ -8138,6 +9254,7 @@
    "なかなか"
   ],
   "level": "N4",
+  "pos": "adv; adj-na",
   "meanings": "considerably"
  },
  {
@@ -8145,6 +9262,7 @@
   "reading": "なく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to weep"
  },
  {
@@ -8152,6 +9270,7 @@
   "reading": "なくなる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to die"
  },
  {
@@ -8159,6 +9278,7 @@
   "reading": "なくなる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to disappear; to get lost"
  },
  {
@@ -8166,6 +9286,7 @@
   "reading": "なげる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to throw or cast away"
  },
  {
@@ -8175,6 +9296,7 @@
    "為さる"
   ],
   "level": "N4",
+  "pos": "v5aru; vt",
   "meanings": "(respectful) to do"
  },
  {
@@ -8182,6 +9304,7 @@
   "reading": "なる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to sound"
  },
  {
@@ -8191,6 +9314,7 @@
    "成るべく"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "as much as possible"
  },
  {
@@ -8198,6 +9322,7 @@
   "reading": "なるほど",
   "other_forms": [],
   "level": "N4",
+  "pos": "int; adv",
   "meanings": "now I understand"
  },
  {
@@ -8205,6 +9330,7 @@
   "reading": "なれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to grow accustomed to"
  },
  {
@@ -8214,6 +9340,7 @@
    "匂い"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "a smell"
  },
  {
@@ -8221,6 +9348,7 @@
   "reading": "にがい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "bitter"
  },
  {
@@ -8228,6 +9356,7 @@
   "reading": "にかいだて",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "two storied"
  },
  {
@@ -8235,6 +9364,7 @@
   "reading": "にげる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to escape"
  },
  {
@@ -8242,6 +9372,7 @@
   "reading": "にっき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "journal"
  },
  {
@@ -8249,6 +9380,7 @@
   "reading": "にゅういん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to hospitalise"
  },
  {
@@ -8256,6 +9388,7 @@
   "reading": "にゅうがく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "to enter school or university"
  },
  {
@@ -8263,6 +9396,7 @@
   "reading": "にる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to be similar"
  },
  {
@@ -8270,6 +9404,7 @@
   "reading": "にんぎょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "doll; figure"
  },
  {
@@ -8277,6 +9412,7 @@
   "reading": "ぬすむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vt",
   "meanings": "to steal"
  },
  {
@@ -8284,6 +9420,7 @@
   "reading": "ぬる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "to paint; to plaster"
  },
  {
@@ -8293,6 +9430,7 @@
    "濡れる"
   ],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to get wet"
  },
  {
@@ -8302,6 +9440,7 @@
    "値段"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "price"
  },
  {
@@ -8309,6 +9448,7 @@
   "reading": "ねつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "fever"
  },
  {
@@ -8318,6 +9458,7 @@
    "熱心"
   ],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "enthusiasm"
  },
  {
@@ -8325,6 +9466,7 @@
   "reading": "ねぼう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi; adj-na; adj-no",
   "meanings": "sleeping in late"
  },
  {
@@ -8332,6 +9474,7 @@
   "reading": "ねむい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "sleepy"
  },
  {
@@ -8339,6 +9482,7 @@
   "reading": "ねむる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to sleep"
  },
  {
@@ -8346,6 +9490,7 @@
   "reading": "のこる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to remain"
  },
  {
@@ -8355,6 +9500,7 @@
    "喉"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "throat"
  },
  {
@@ -8362,6 +9508,7 @@
   "reading": "のりかえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to change between buses or trains"
  },
  {
@@ -8369,6 +9516,7 @@
   "reading": "のりもの",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "vehicle"
  },
  {
@@ -8376,6 +9524,7 @@
   "reading": "は",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "leaf"
  },
  {
@@ -8383,6 +9532,7 @@
   "reading": "ばあい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "situation"
  },
  {
@@ -8390,6 +9540,7 @@
   "reading": "パート",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-no; n",
   "meanings": "part time"
  },
  {
@@ -8397,6 +9548,7 @@
   "reading": "ばい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "double"
  },
  {
@@ -8404,6 +9556,7 @@
   "reading": "はいけん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "(humble) to look at"
  },
  {
@@ -8411,6 +9564,7 @@
   "reading": "はいしゃ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "dentist"
  },
  {
@@ -8418,6 +9572,7 @@
   "reading": "はこぶ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5b; vt",
   "meanings": "to transport"
  },
  {
@@ -8425,6 +9580,7 @@
   "reading": "はじめる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to begin"
  },
  {
@@ -8432,6 +9588,7 @@
   "reading": "ばしょ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "location"
  },
  {
@@ -8441,6 +9598,7 @@
    "筈"
   ],
   "level": "N4",
+  "pos": "aux",
   "meanings": "it should be so"
  },
  {
@@ -8448,6 +9606,7 @@
   "reading": "はずかしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "embarrassed"
  },
  {
@@ -8455,6 +9614,7 @@
   "reading": "パソコン",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "personal computer"
  },
  {
@@ -8462,6 +9622,7 @@
   "reading": "はつおん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "pronunciation"
  },
  {
@@ -8469,6 +9630,7 @@
   "reading": "はっきり",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv; adv-to",
   "meanings": "clearly"
  },
  {
@@ -8476,6 +9638,7 @@
   "reading": "はなみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs",
   "meanings": "cherry-blossom viewing"
  },
  {
@@ -8483,6 +9646,7 @@
   "reading": "はやし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "woods; forester"
  },
  {
@@ -8490,6 +9654,7 @@
   "reading": "はらう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to pay"
  },
  {
@@ -8497,6 +9662,7 @@
   "reading": "ばんぐみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "television or radio program"
  },
  {
@@ -8504,6 +9670,7 @@
   "reading": "はんたい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi; adj-no; adj-na",
   "meanings": "opposition"
  },
  {
@@ -8511,6 +9678,7 @@
   "reading": "ハンドバッグ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "handbag"
  },
  {
@@ -8518,6 +9686,7 @@
   "reading": "ひ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "fire"
  },
  {
@@ -8525,6 +9694,7 @@
   "reading": "ひ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "day; sun"
  },
  {
@@ -8532,6 +9702,7 @@
   "reading": "ピアノ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "piano"
  },
  {
@@ -8539,6 +9710,7 @@
   "reading": "ひえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to grow cold"
  },
  {
@@ -8546,6 +9718,7 @@
   "reading": "ひかり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "light"
  },
  {
@@ -8553,6 +9726,7 @@
   "reading": "ひかる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to shine; to glitter"
  },
  {
@@ -8560,6 +9734,7 @@
   "reading": "ひきだし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "drawer; drawing out"
  },
  {
@@ -8567,6 +9742,7 @@
   "reading": "ひきだす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to withdraw"
  },
  {
@@ -8576,6 +9752,7 @@
    "髭"
   ],
   "level": "N4",
+  "pos": "n",
   "meanings": "beard"
  },
  {
@@ -8583,6 +9760,7 @@
   "reading": "ひこうじょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "airport"
  },
  {
@@ -8592,6 +9770,7 @@
    "久し振り"
   ],
   "level": "N4",
+  "pos": "adj-no; adj-na; n",
   "meanings": "after a long time"
  },
  {
@@ -8599,6 +9778,7 @@
   "reading": "びじゅつかん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "art gallery"
  },
  {
@@ -8606,6 +9786,7 @@
   "reading": "ひじょうに",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "extremely"
  },
  {
@@ -8613,6 +9794,7 @@
   "reading": "びっくりする",
   "other_forms": [],
   "level": "N4",
+  "pos": "vs; vi; adv",
   "meanings": "to be surprised"
  },
  {
@@ -8620,6 +9802,7 @@
   "reading": "ひっこす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vi",
   "meanings": "to move house"
  },
  {
@@ -8627,6 +9810,7 @@
   "reading": "ひつよう",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "necessary"
  },
  {
@@ -8636,6 +9820,7 @@
    "酷い"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "awful"
  },
  {
@@ -8643,6 +9828,7 @@
   "reading": "ひらく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi; vt",
   "meanings": "to open an event"
  },
  {
@@ -8650,6 +9836,7 @@
   "reading": "ビル",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "building or bill"
  },
  {
@@ -8657,6 +9844,7 @@
   "reading": "ひるま",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "daytime; during the day"
  },
  {
@@ -8664,6 +9852,7 @@
   "reading": "ひるやすみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "noon break"
  },
  {
@@ -8671,6 +9860,7 @@
   "reading": "ひろう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to pick up; to gather"
  },
  {
@@ -8678,6 +9868,7 @@
   "reading": "ファックス",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "fax"
  },
  {
@@ -8685,6 +9876,7 @@
   "reading": "ふえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to increase"
  },
  {
@@ -8692,6 +9884,7 @@
   "reading": "ふかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "deep"
  },
  {
@@ -8699,6 +9892,7 @@
   "reading": "ふくざつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "complexity; complication"
  },
  {
@@ -8706,6 +9900,7 @@
   "reading": "ふくしゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "revision"
  },
  {
@@ -8713,6 +9908,7 @@
   "reading": "ぶちょう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "head of a section"
  },
  {
@@ -8720,6 +9916,7 @@
   "reading": "ふつう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "usually; normally; ordinary; local train (stopping at every station)"
  },
  {
@@ -8727,6 +9924,7 @@
   "reading": "ぶどう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "grapes"
  },
  {
@@ -8734,6 +9932,7 @@
   "reading": "ふとる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to become fat"
  },
  {
@@ -8741,6 +9940,7 @@
   "reading": "ふとん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "Japanese bedding; futon"
  },
  {
@@ -8748,6 +9948,7 @@
   "reading": "ふね",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "ship"
  },
  {
@@ -8755,6 +9956,7 @@
   "reading": "ふべん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-na",
   "meanings": "inconvenience"
  },
  {
@@ -8762,6 +9964,7 @@
   "reading": "ふむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vt",
   "meanings": "to step on"
  },
  {
@@ -8769,6 +9972,7 @@
   "reading": "ふりだす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vi",
   "meanings": "to start to rain"
  },
  {
@@ -8776,6 +9980,7 @@
   "reading": "プレゼント",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "present"
  },
  {
@@ -8783,6 +9988,7 @@
   "reading": "ぶんか",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "culture"
  },
  {
@@ -8790,6 +9996,7 @@
   "reading": "ぶんがく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "literature"
  },
  {
@@ -8797,6 +10004,7 @@
   "reading": "ぶんぽう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "grammar"
  },
  {
@@ -8804,6 +10012,7 @@
   "reading": "べつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-no; adj-na; n",
   "meanings": "different"
  },
  {
@@ -8811,6 +10020,7 @@
   "reading": "ベル",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "bell"
  },
  {
@@ -8818,6 +10028,7 @@
   "reading": "へん",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na",
   "meanings": "strange"
  },
  {
@@ -8825,6 +10036,7 @@
   "reading": "へんじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "reply"
  },
  {
@@ -8832,6 +10044,7 @@
   "reading": "ぼうえき",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vi",
   "meanings": "trade"
  },
  {
@@ -8839,6 +10052,7 @@
   "reading": "ほうそう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to broadcast"
  },
  {
@@ -8846,6 +10060,7 @@
   "reading": "ほうりつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "law"
  },
  {
@@ -8853,6 +10068,7 @@
   "reading": "ぼく",
   "other_forms": [],
   "level": "N4",
+  "pos": "pn",
   "meanings": "I (used by males)"
  },
  {
@@ -8860,6 +10076,7 @@
   "reading": "ほし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "star"
  },
  {
@@ -8869,6 +10086,7 @@
    "程"
   ],
   "level": "N4",
+  "pos": "n; adv",
   "meanings": "extent"
  },
  {
@@ -8878,6 +10096,7 @@
    "殆ど"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "mostly"
  },
  {
@@ -8887,6 +10106,7 @@
    "褒める"
   ],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to praise"
  },
  {
@@ -8894,6 +10114,7 @@
   "reading": "ほんやく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "translation"
  },
  {
@@ -8901,6 +10122,7 @@
   "reading": "まいる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "(humble) to go; to come"
  },
  {
@@ -8908,6 +10130,7 @@
   "reading": "まける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to lose"
  },
  {
@@ -8917,6 +10140,7 @@
    "真面目"
   ],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "serious"
  },
  {
@@ -8926,6 +10150,7 @@
    "先ず"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "first of all"
  },
  {
@@ -8935,6 +10160,7 @@
    "又は"
   ],
   "level": "N4",
+  "pos": "conj",
   "meanings": "or; otherwise"
  },
  {
@@ -8942,6 +10168,7 @@
   "reading": "まちがえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to make a mistake"
  },
  {
@@ -8949,6 +10176,7 @@
   "reading": "まにあう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vi",
   "meanings": "to be in time for"
  },
  {
@@ -8956,6 +10184,7 @@
   "reading": "まわり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "surroundings"
  },
  {
@@ -8963,6 +10192,7 @@
   "reading": "まわる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to go around"
  },
  {
@@ -8970,6 +10200,7 @@
   "reading": "まんが",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "comic"
  },
  {
@@ -8977,6 +10208,7 @@
   "reading": "まんなか",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "middle"
  },
  {
@@ -8984,6 +10216,7 @@
   "reading": "みえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to be in sight"
  },
  {
@@ -8991,6 +10224,7 @@
   "reading": "みずうみ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "lake"
  },
  {
@@ -8998,6 +10232,7 @@
   "reading": "みそ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "bean paste"
  },
  {
@@ -9007,6 +10242,7 @@
    "見付かる"
   ],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to be discovered"
  },
  {
@@ -9016,6 +10252,7 @@
    "見付ける"
   ],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to discover"
  },
  {
@@ -9023,6 +10260,7 @@
   "reading": "みな",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; pn; adv",
   "meanings": "everybody"
  },
  {
@@ -9030,6 +10268,7 @@
   "reading": "みなと",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "harbour"
  },
  {
@@ -9039,6 +10278,7 @@
    "向う"
   ],
   "level": "N4",
+  "pos": "v5u; vi",
   "meanings": "to face"
  },
  {
@@ -9046,6 +10286,7 @@
   "reading": "むかえる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "to go out to meet"
  },
  {
@@ -9053,6 +10294,7 @@
   "reading": "むかし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no; adv",
   "meanings": "olden days; former"
  },
  {
@@ -9060,6 +10302,7 @@
   "reading": "むし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "insect"
  },
  {
@@ -9067,6 +10310,7 @@
   "reading": "むすこ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "(humble) son"
  },
  {
@@ -9074,6 +10318,7 @@
   "reading": "むすめ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "(humble) daughter"
  },
  {
@@ -9081,6 +10326,7 @@
   "reading": "むり",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-na; n",
   "meanings": "impossible"
  },
  {
@@ -9088,6 +10334,7 @@
   "reading": "めしあがる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vt",
   "meanings": "(polite) to eat"
  },
  {
@@ -9095,6 +10342,7 @@
   "reading": "めずらしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "rare"
  },
  {
@@ -9102,6 +10350,7 @@
   "reading": "もうしあげる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vt",
   "meanings": "(humble) to say; to tell"
  },
  {
@@ -9109,6 +10358,7 @@
   "reading": "もうす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "(humble) to be called; to say"
  },
  {
@@ -9116,6 +10366,7 @@
   "reading": "もうすぐ",
   "other_forms": [],
   "level": "N4",
+  "pos": "exp; adv",
   "meanings": "soon"
  },
  {
@@ -9125,6 +10376,7 @@
    "若し"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "if"
  },
  {
@@ -9134,6 +10386,7 @@
    "勿論"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "of course"
  },
  {
@@ -9143,6 +10396,7 @@
    "最も"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "extremely"
  },
  {
@@ -9150,6 +10404,7 @@
   "reading": "もどる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to turn back"
  },
  {
@@ -9157,6 +10412,7 @@
   "reading": "もめん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "cotton"
  },
  {
@@ -9166,6 +10422,7 @@
    "貰う"
   ],
   "level": "N4",
+  "pos": "v5u; vt",
   "meanings": "to receive"
  },
  {
@@ -9173,6 +10430,7 @@
   "reading": "もり",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "forest"
  },
  {
@@ -9180,6 +10438,7 @@
   "reading": "やく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vt",
   "meanings": "to bake; to grill"
  },
  {
@@ -9187,6 +10446,7 @@
   "reading": "やくそく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "promise"
  },
  {
@@ -9194,6 +10454,7 @@
   "reading": "やくにたつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "exp; v5t",
   "meanings": "to be helpful"
  },
  {
@@ -9201,6 +10462,7 @@
   "reading": "やける",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to burn; to be roasted"
  },
  {
@@ -9208,6 +10470,7 @@
   "reading": "やさしい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "kind"
  },
  {
@@ -9215,6 +10478,7 @@
   "reading": "やせる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to become thin"
  },
  {
@@ -9222,6 +10486,7 @@
   "reading": "やっと",
   "other_forms": [],
   "level": "N4",
+  "pos": "adv",
   "meanings": "at last"
  },
  {
@@ -9231,6 +10496,7 @@
    "やっぱり"
   ],
   "level": "N4",
+  "pos": "adv",
   "meanings": "as I thought; absolutely"
  },
  {
@@ -9238,6 +10504,7 @@
   "reading": "やむ",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5m; vi",
   "meanings": "to stop"
  },
  {
@@ -9245,6 +10512,7 @@
   "reading": "やわらかい",
   "other_forms": [],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "soft"
  },
  {
@@ -9252,6 +10520,7 @@
   "reading": "ゆ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "hot water"
  },
  {
@@ -9259,6 +10528,7 @@
   "reading": "ゆしゅつ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to export"
  },
  {
@@ -9266,6 +10536,7 @@
   "reading": "ゆにゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "to import"
  },
  {
@@ -9273,6 +10544,7 @@
   "reading": "ゆび",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "finger"
  },
  {
@@ -9280,6 +10552,7 @@
   "reading": "ゆびわ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "finger ring"
  },
  {
@@ -9287,6 +10560,7 @@
   "reading": "ゆめ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "dream"
  },
  {
@@ -9294,6 +10568,7 @@
   "reading": "ゆれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to shake; to sway"
  },
  {
@@ -9301,6 +10576,7 @@
   "reading": "よう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "use"
  },
  {
@@ -9308,6 +10584,7 @@
   "reading": "ようい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "preparation"
  },
  {
@@ -9315,6 +10592,7 @@
   "reading": "ようじ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "things to do"
  },
  {
@@ -9322,6 +10600,7 @@
   "reading": "よごれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to get dirty"
  },
  {
@@ -9329,6 +10608,7 @@
   "reading": "よしゅう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "preparation for a lesson"
  },
  {
@@ -9336,6 +10616,7 @@
   "reading": "よてい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "arrangement"
  },
  {
@@ -9343,6 +10624,7 @@
   "reading": "よやく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "reservation"
  },
  {
@@ -9350,6 +10632,7 @@
   "reading": "よる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5r; vi",
   "meanings": "to visit"
  },
  {
@@ -9359,6 +10642,7 @@
    "慶ぶ"
   ],
   "level": "N4",
+  "pos": "v5b; vt; vi",
   "meanings": "to be delighted"
  },
  {
@@ -9368,6 +10652,7 @@
    "宜しい"
   ],
   "level": "N4",
+  "pos": "adj-i",
   "meanings": "(respectful) OK; all right"
  },
  {
@@ -9375,6 +10660,7 @@
   "reading": "りゆう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "reason"
  },
  {
@@ -9382,6 +10668,7 @@
   "reading": "りよう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "utilization"
  },
  {
@@ -9389,6 +10676,7 @@
   "reading": "りょうほう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; adj-no",
   "meanings": "both sides"
  },
  {
@@ -9396,6 +10684,7 @@
   "reading": "りょかん",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "Japanese hotel"
  },
  {
@@ -9403,6 +10692,7 @@
   "reading": "るす",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt; vi; adj-no",
   "meanings": "absence"
  },
  {
@@ -9410,6 +10700,7 @@
   "reading": "れいぼう",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "air conditioning"
  },
  {
@@ -9417,6 +10708,7 @@
   "reading": "れきし",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "history"
  },
  {
@@ -9424,6 +10716,7 @@
   "reading": "レジ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "register"
  },
  {
@@ -9433,6 +10726,7 @@
    "リポート"
   ],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "report"
  },
  {
@@ -9440,6 +10734,7 @@
   "reading": "れんらく",
   "other_forms": [],
   "level": "N4",
+  "pos": "n; vs; vt",
   "meanings": "contact"
  },
  {
@@ -9447,6 +10742,7 @@
   "reading": "ワープロ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "word processor"
  },
  {
@@ -9454,6 +10750,7 @@
   "reading": "わかす",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5s; vt",
   "meanings": "to boil; to heat"
  },
  {
@@ -9461,6 +10758,7 @@
   "reading": "わかれる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to separate"
  },
  {
@@ -9468,6 +10766,7 @@
   "reading": "わく",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5k; vi",
   "meanings": "to boil; to grow hot; to get excited"
  },
  {
@@ -9475,6 +10774,7 @@
   "reading": "わけ",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "meaning; reason"
  },
  {
@@ -9482,6 +10782,7 @@
   "reading": "わすれもの",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "lost article"
  },
  {
@@ -9489,6 +10790,7 @@
   "reading": "わらう",
   "other_forms": [],
   "level": "N4",
+  "pos": "v5u; vi",
   "meanings": "to laugh; to smile"
  },
  {
@@ -9496,6 +10798,7 @@
   "reading": "わりあい",
   "other_forms": [],
   "level": "N4",
+  "pos": "n",
   "meanings": "rate; ratio; percentage"
  },
  {
@@ -9503,6 +10806,7 @@
   "reading": "われる",
   "other_forms": [],
   "level": "N4",
+  "pos": "v1; vi",
   "meanings": "to break"
  }
 ]

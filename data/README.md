@@ -2,6 +2,8 @@
 
 - `vocab-n4.json`: riječi JLPT N5 i N4
 - `grammar-n3.json`: gramatika JLPT N5, N4 i N3
+- `konjugator.json`: glagoli i pridjevi iz `vocab-n4.json` za konjugator, s hrvatskim značenjem
+  (napisao Claude, skripta `pipeline/conj-words.mjs`, `npm run konjugator-rijeci`)
 
 JLPT nema službene popise. Ovi su neslužbeni i preuzeti skriptom `pipeline/lists.mjs` (`npm run popisi`).
 

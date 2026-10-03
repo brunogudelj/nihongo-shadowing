@@ -14,7 +14,8 @@
     "popisi": "node pipeline/lists.mjs",
     "provjera": "node pipeline/check.mjs",
     "nova-prica": "node --env-file-if-exists=.env pipeline/new-story.mjs",
-    "doslovno": "node --env-file-if-exists=.env pipeline/literal.mjs"
+    "doslovno": "node --env-file-if-exists=.env pipeline/literal.mjs",
+    "konjugator-rijeci": "node --env-file-if-exists=.env pipeline/conj-words.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

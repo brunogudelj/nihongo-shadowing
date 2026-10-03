@@ -6,7 +6,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import kuromoji from 'kuromoji'
 import { parse } from 'yaml'
-import { toRomaji } from './romaji.mjs'
+import { toRomaji } from '../src/romaji.ts'
 
 const KANJI = /[㐀-䶿一-鿿々]/
 

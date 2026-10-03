@@ -57,6 +57,7 @@ for (const level of ['n5', 'n4']) {
       reading: r.reading,
       other_forms: r.other_forms ? r.other_forms.split(/[;；、,]\s*/).filter(Boolean) : [],
       level: r.level,
+      pos: r.pos,
       meanings: r.meanings,
     })
   }

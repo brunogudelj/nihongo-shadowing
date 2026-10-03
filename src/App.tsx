@@ -1,12 +1,15 @@
 import { useState } from 'react'
+import Conjugator from './Conjugator'
 import StoryPlayer from './StoryPlayer'
 import { stories } from './stories'
 
 function App() {
   const [storyId, setStoryId] = useState<string>()
+  const [conjugator, setConjugator] = useState(false)
   const story = stories.find((s) => s.id === storyId)
 
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
+  if (conjugator) return <Conjugator onBack={() => setConjugator(false)} />
 
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
@@ -28,6 +31,14 @@ function App() {
           </li>
         ))}
       </ul>
+
+      <button
+        onClick={() => setConjugator(true)}
+        className="mt-6 w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
+      >
+        <p className="text-xl font-semibold">🔄 Konjugator</p>
+        <p className="mt-1 text-stone-300">Nasumični oblici glagola i pridjeva</p>
+      </button>
     </main>
   )
 }
