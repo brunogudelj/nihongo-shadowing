@@ -56,7 +56,13 @@ export async function checkFond(story, themeId) {
       counted++
       if (allowed.has(lemma) || allowed.has(t.surface_form) || t.pos_detail_1 === '固有名詞' || t.pos_detail_1 === '数') {
         exceptions++
-      } else if (known.has(lemma) || known.has(t.surface_form) || (reading && known.has(reading))) {
+      } else if (
+        known.has(lemma) ||
+        known.has(t.surface_form) ||
+        (reading && known.has(reading)) ||
+        // Prilog s nastavkom ～に (本当に → 本当)
+        (lemma.endsWith('に') && known.has(lemma.slice(0, -1)))
+      ) {
         inList++
       } else {
         outside.push({ word: lemma, sentence: i + 1 })

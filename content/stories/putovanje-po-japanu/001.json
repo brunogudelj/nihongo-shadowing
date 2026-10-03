@@ -3,14 +3,10 @@
   "theme": "putovanje-po-japanu",
   "model": "claude-opus-5-5",
   "created": "2026-10-02",
-  "needs_review": [
-    "furigana: rečenica 1: 日本: rječnik kaže にっぽん, Claude kaže にほん"
-  ],
+  "needs_review": [],
   "fond": {
-    "pokrivenost": 97.3,
-    "izvan_popisa": [
-      "本当に (rečenica 8)"
-    ]
+    "pokrivenost": 100,
+    "izvan_popisa": []
   },
   "trosak_usd": 0.126,
   "title_ja": "京都の旅行",
@@ -92,7 +88,7 @@
           "furigana": [
             {
               "text": "日本",
-              "reading": "にっぽん"
+              "reading": "にほん"
             }
           ],
           "start_ms": 1725,

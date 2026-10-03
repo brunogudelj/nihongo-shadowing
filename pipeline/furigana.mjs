@@ -1,10 +1,11 @@
 // Dodaje furiganu u priču pomoću japanskog rječnika (Kuromoji).
 // Pokretanje: npm run furigana -- <tema>/<broj>   (npr. npm run furigana -- japanske-zeljeznice/001)
-// Čitanje iz rječnika uspoređuje se s Claudeovim. Ako se razlikuju, riječ ide na popis za ručnu provjeru.
+// Čitanje iz teme ima prednost; inače se čitanje iz rječnika uspoređuje s Claudeovim. Ako se razlikuju, riječ ide na popis za ručnu provjeru.
 // Besplatno je i smije se pokretati koliko god puta: svaki put ponovno izračuna furiganu.
 
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import kuromoji from 'kuromoji'
+import { parse } from 'yaml'
 
 const KANJI = /[㐀-䶿一-鿿々]/
 
@@ -37,6 +38,12 @@ const tokenizer = await new Promise((resolve, reject) =>
 )
 
 const story = JSON.parse(readFileSync(file, 'utf8'))
+
+// Čitanja iz teme (npr. 日本 → にほん) imaju prednost pred rječnikom.
+const theme = parse(readFileSync(`themes/${story.theme}.yaml`, 'utf8'))
+const themeReadings = new Map(
+  [...(theme.vlastita_imena ?? []), ...(theme.dodatni_rjecnik ?? [])].filter((x) => x.citanje).map((x) => [x.ja, x.citanje]),
+)
 const review = []
 
 story.sentences.forEach((sentence, si) => {
@@ -62,8 +69,11 @@ story.sentences.forEach((sentence, si) => {
     }
 
     // Prednost ima rječnik. Kad ga nema ili se ne slaže s Claudeom, riječ ide na provjeru.
-    const reading = dictReading ?? claudeReading
-    if (dictReading && dictReading !== claudeReading) {
+    const fromTheme = themeReadings.get(word.text)
+    const reading = fromTheme ?? dictReading ?? claudeReading
+    if (fromTheme) {
+      if (fromTheme !== claudeReading) review.push(`rečenica ${si + 1}: ${word.text}: tema kaže ${fromTheme}, Claude kaže ${claudeReading}`)
+    } else if (dictReading && dictReading !== claudeReading) {
       review.push(`rečenica ${si + 1}: ${word.text}: rječnik kaže ${dictReading}, Claude kaže ${claudeReading}`)
     } else if (!dictReading) {
       review.push(`rečenica ${si + 1}: ${word.text}: nema u rječniku, koristim Claudeovo ${claudeReading}`)
