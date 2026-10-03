@@ -62,13 +62,13 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 - Gruba podjela: uljudni završeci (ます, です) ostaju uz riječ, ali se **objašnjavaju** (npr. 行きます: glagol 行く + ます, uljudni oblik; です: kopula "je/jest", uljudno).
 - Uloge i objašnjenja generiraju se **unaprijed u pipelineu** i spremaju u JSON uz rečenicu. Aplikacija ih ne računa.
 
-### Mod postupnog slaganja
+## Potencijalni modovi (kasnije, samo ako korisnik zatraži)
+### Mod postupnog slaganja (odgođen)
 - Rečenica se uči kroz chunkove koji se nadograđuju, dok se ne dođe do cijele rečenice.
-- **Dva smjera:**
-  - od početka: 1 → 1+2 → 1+2+3 → …
-  - od kraja: zadnji → predzadnji+zadnji → …
+- **Dva smjera:** od početka (1 → 1+2 → 1+2+3 → …) i od kraja (zadnji → predzadnji+zadnji → …).
 - Smjer se mijenja gumbom koji je vidljiv kad je mod upaljen. Dizajn gumba: **kao UNO karta "obrni smjer"** (dvije zakrivljene strelice).
-- Ne treba dodatni audio: koristi se snimka cijele rečenice i **vremenske oznake po riječima** (Azure) da se pusti samo traženi raspon.
+- **Zašto je odgođen:** rezanje snimke cijele rečenice po vremenskim oznakama zvuči odsječeno (između riječi nema tišine), a korisniku je to više smetalo nego pomoglo. Zato je maknut i dodir na chunk koji pušta samo taj dio.
+- **Ideja ako se vrati:** Azure posebno izgovori svaki raspon (1, 1+2, …), prirodno i bez rezanja. Unutar besplatnog limita.
 
 ## Platforma: mobile-first PWA
 - **Ciljani uređaj: samo Android, preglednik Firefox.** iPhone i ostali preglednici se ne podržavaju i ne testiraju.
@@ -115,7 +115,7 @@ public/          # manifest, ikone, service worker
 3. Objava na GitHub Pages i test na mobitelu (PWA)
 4. Pipeline sadržaja za jednu temu (jedna priča, audio, furigana, vremenske oznake po riječima, uloge i objašnjenja za rendgen mod)
 5. Fond: popisi N4/N3 i provjera pokrivenosti
-6. Shadowing sučelje (chunkovi, petlja, isticanje riječi) + mod postupnog slaganja (oba smjera)
+6. Shadowing sučelje (chunkovi, petlja, isticanje riječi, boje blokova, doslovni prijevod, romaji)
 7. Rendgen mod
 8. FSRS kartice i izvoz/uvoz napretka
 9. Snimanje sebe

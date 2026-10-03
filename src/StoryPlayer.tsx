@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { audioUrl, type Story } from './stories'
+import { useMediaSession, useWakeLock } from './practice'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
@@ -173,6 +174,19 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
 
   const loaded = urls[sentence.audio] !== undefined
   const busy = playing === 'sentence' || waiting
+
+  // Zaslon se ne gasi dok vježbaš; Play/Pauza i prethodna/sljedeća rečenica
+  // rade i sa zaključanog zaslona, iz obavijesti i sa slušalica.
+  useWakeLock()
+  useMediaSession({
+    title: sentence.ja,
+    album: `${story.title_ja} · ${index + 1}/${story.sentences.length}`,
+    playing: playing !== null || waiting,
+    onPlay: () => (playing === 'full' ? undefined : playSentence()),
+    onPause: stop,
+    onNext: () => index < story.sentences.length - 1 && goTo(index + 1),
+    onPrevious: () => index > 0 && goTo(index - 1),
+  })
 
   return (
     <main className="flex min-h-dvh flex-col bg-stone-50 p-6 text-stone-900">
