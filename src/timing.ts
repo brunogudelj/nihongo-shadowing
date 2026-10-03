@@ -5,8 +5,7 @@ export type ChunkSpan = { from: number; to: number; startMs: number; endMs: numb
 
 // Za svaki chunk: koje riječi sadrži [from, to) i kad počinje i završava u mp3 rečenice.
 // Riječ pripada chunku u kojem počinje. Između riječi gotovo da nema tišine, pa chunk
-// završava točno gdje počinje idući (inače se čuje početak idućeg sloga).
-// Zadnji chunk smije malo dulje, jer iza njega je tišina.
+// završava točno gdje počinje idući; zadnji smije malo dulje, jer iza njega je tišina.
 export function chunkSpans(sentence: Sentence): ChunkSpan[] {
   const wordStarts: number[] = []
   let pos = 0

@@ -3,11 +3,8 @@ import { audioUrl, type Story } from './stories'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
-// Mekani početak i kraj chunka (ms u zvuku), da nema klika ni naglog reza.
-const FADE_IN_MS = 30
-const FADE_OUT_MS = 80
 
-type Mode = 'sentence' | 'chunk' | 'full'
+type Mode = 'sentence' | 'full'
 
 // mp3 se učitava cijeli u memoriju, da pouzdano svira i bez interneta.
 function useBlobUrls(names: string[]) {
@@ -41,17 +38,21 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [speed, setSpeed] = useState(1)
   const [playing, setPlaying] = useState<Mode | null>(null)
   const [showTranslation, setShowTranslation] = useState(false)
-  const [activeChunk, setActiveChunk] = useState(-1)
   const [currentWord, setCurrentWord] = useState(-1)
-  // Gdje zaustaviti zvuk (ms u mp3 rečenice); null = do kraja.
-  const stopAtRef = useRef<number | null>(null)
-  const startAtRef = useRef(0)
+  // Petlja: rečenica se ponavlja, sa stankom u kojoj korisnik ponavlja naglas.
+  const [loop, setLoop] = useState(false)
+  const [waiting, setWaiting] = useState(false)
+  const waitTimerRef = useRef<number | undefined>(undefined)
+  // Najnovije verzije funkcija, za pozive iz odgođenog ponavljanja
+  // (da ponavljanje koristi trenutnu brzinu, i ako je promijenjena u stanci).
+  const finishedRef = useRef<() => void>(() => {})
+  const replayRef = useRef<() => void>(() => {})
   const urls = useBlobUrls([...story.sentences.map((s) => s.audio), story.audio])
 
   const sentence = story.sentences[index]
   const spans = chunkSpans(sentence)
 
-  function play(name: string, mode: Mode, startMs = 0, stopAtMs: number | null = null) {
+  function play(name: string, mode: Mode, startMs = 0) {
     const audio = audioRef.current
     const src = urls[name]
     if (!audio || !src) return
@@ -59,41 +60,58 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
     audio.preservesPitch = true
     audio.defaultPlaybackRate = speed
     audio.playbackRate = speed
-    stopAtRef.current = stopAtMs
-    startAtRef.current = startMs
-    audio.volume = stopAtMs === null ? 1 : 0
-    // Skok na mjesto u zvuku tek kad se datoteka učita, pa tek onda sviranje.
-    if (startMs) {
-      audio.addEventListener(
-        'loadedmetadata',
-        () => {
-          audio.currentTime = startMs / 1000
-          audio.play()
-        },
-        { once: true },
-      )
-    } else {
-      audio.play()
-    }
+    // Skok na mjesto u zvuku tek kad se datoteka učita.
+    if (startMs) audio.addEventListener('loadedmetadata', () => (audio.currentTime = startMs / 1000), { once: true })
+    audio.play()
     setPlaying(mode)
   }
 
-  function playChunk(ci: number) {
-    const span = spans[ci]
-    setActiveChunk(ci)
-    play(sentence.audio, 'chunk', Math.max(0, span.startMs - 10), span.endMs)
+  function cancelWait() {
+    window.clearTimeout(waitTimerRef.current)
+    setWaiting(false)
+  }
+
+  function playSentence() {
+    cancelWait()
+    play(sentence.audio, 'sentence')
+  }
+
+  function playFull() {
+    cancelWait()
+    play(story.audio, 'full', sentence.full_start_ms)
   }
 
   function stop() {
+    cancelWait()
     audioRef.current?.pause()
     setPlaying(null)
-    setActiveChunk(-1)
+  }
+
+  // Rečenica je odsvirana. S petljom: stanka za ponavljanje naglas, pa ispočetka.
+  // Stanka traje koliko i rečenica (dulje na sporijoj brzini) plus pola sekunde.
+  function finished() {
+    setPlaying(null)
+    if (!loop) return
+    setWaiting(true)
+    waitTimerRef.current = window.setTimeout(() => replayRef.current(), sentence.duration_ms / speed + 500)
+  }
+
+  useEffect(() => {
+    finishedRef.current = finished
+    replayRef.current = playSentence
+  })
+
+  // Zaustavi čekanje ako se zaslon zatvori.
+  useEffect(() => () => window.clearTimeout(waitTimerRef.current), [])
+
+  function toggleLoop() {
+    if (loop) stop()
+    setLoop(!loop)
   }
 
   function goTo(i: number) {
     setIndex(i)
     setShowTranslation(false)
-    setActiveChunk(-1)
     // Tijekom cijele priče skoči na tu rečenicu, inače samo zaustavi.
     if (playing === 'full' && audioRef.current) {
       audioRef.current.currentTime = story.sentences[i].full_start_ms / 1000
@@ -110,8 +128,8 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
     audio.playbackRate = rate
   }
 
-  // Dok zvuk svira: isticanje riječi, zaustavljanje na kraju chunka i, tijekom
-  // cijele priče, praćenje rečenice koja se čuje. Provjera ~60 puta u sekundi.
+  // Dok zvuk svira: isticanje riječi i, tijekom cijele priče, praćenje rečenice
+  // koja se čuje. Provjera ~60 puta u sekundi.
   useEffect(() => {
     if (!playing) return
     let frame = 0
@@ -126,19 +144,8 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             setShowTranslation(false)
           }
           setCurrentWord(wordAtInFull(sentence, ms))
-        } else if (stopAtRef.current !== null && ms >= stopAtRef.current) {
-          audio.pause()
-          setPlaying(null)
-          setActiveChunk(-1)
-          return
         } else {
           setCurrentWord(wordAt(sentence, ms))
-          // Chunk: glasnoća raste na početku i pada prema kraju.
-          const stopAt = stopAtRef.current
-          if (stopAt !== null) {
-            const v = Math.min(1, (ms - startAtRef.current) / FADE_IN_MS, (stopAt - ms) / FADE_OUT_MS)
-            audio.volume = Math.max(0, v)
-          }
         }
       }
       frame = requestAnimationFrame(tick)
@@ -148,16 +155,11 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   }, [playing, index, sentence, story.sentences])
 
   const loaded = urls[sentence.audio] !== undefined
+  const busy = playing === 'sentence' || waiting
 
   return (
     <main className="flex min-h-dvh flex-col bg-stone-50 p-6 text-stone-900">
-      <audio
-        ref={audioRef}
-        onEnded={() => {
-          setPlaying(null)
-          setActiveChunk(-1)
-        }}
-      />
+      <audio ref={audioRef} onEnded={() => (playing === 'full' ? stop() : finishedRef.current())} />
 
       <header className="flex items-center justify-between gap-3">
         <button onClick={() => { stop(); onBack() }} className="rounded-full px-3 py-2 text-stone-500 active:bg-stone-200">
@@ -169,17 +171,10 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
       </header>
 
       <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
-        {/* Rečenica po chunkovima: dodir na chunk pušta samo taj dio. */}
+        {/* Rečenica po blokovima (chunkovima). */}
         <p lang="ja" className="flex flex-wrap justify-center gap-x-2 text-[2rem] leading-[2.2] font-medium">
           {spans.map((span, ci) => (
-            <button
-              key={ci}
-              onClick={() => playChunk(ci)}
-              disabled={!loaded}
-              className={`rounded-lg px-1 transition-colors active:bg-stone-200 ${
-                activeChunk === ci ? 'bg-red-100' : ''
-              }`}
-            >
+            <span key={ci} className="rounded-lg px-1">
               {sentence.words.slice(span.from, span.to).map((w, k) => {
                 const wi = span.from + k
                 return (
@@ -197,10 +192,10 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
                   </span>
                 )
               })}
-            </button>
+            </span>
           ))}
         </p>
-        <p className="-mt-4 text-xs text-stone-400">Dodirni dio rečenice da ga čuješ.</p>
+        {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
 
         <button
           onClick={() => setShowTranslation(!showTranslation)}
@@ -211,7 +206,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
       </div>
 
       <div className="flex flex-col gap-3 pb-4">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-4 gap-3">
           {SPEEDS.map((rate) => (
             <button
               key={rate}
@@ -223,6 +218,16 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
               {rate}×
             </button>
           ))}
+          <button
+            onClick={toggleLoop}
+            aria-pressed={loop}
+            aria-label="Ponavljaj"
+            className={`rounded-2xl py-3 text-lg font-semibold ${
+              loop ? 'bg-red-700 text-white' : 'bg-stone-200 text-stone-700'
+            }`}
+          >
+            🔁
+          </button>
         </div>
 
         <div className="grid grid-cols-[1fr_2fr_1fr] gap-3">
@@ -235,11 +240,11 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             ◀
           </button>
           <button
-            onClick={() => (playing === 'sentence' ? stop() : play(sentence.audio, 'sentence'))}
+            onClick={() => (busy ? stop() : playSentence())}
             disabled={!loaded}
             className="rounded-2xl bg-red-700 py-5 text-2xl font-bold text-white active:bg-red-800 disabled:opacity-50"
           >
-            {playing === 'sentence' ? '❚❚ Pauza' : '▶ Slušaj'}
+            {busy ? '■ Stani' : '▶ Slušaj'}
           </button>
           <button
             onClick={() => goTo(index + 1)}
@@ -252,7 +257,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
         </div>
 
         <button
-          onClick={() => (playing === 'full' ? stop() : play(story.audio, 'full', sentence.full_start_ms))}
+          onClick={() => (playing === 'full' ? stop() : playFull())}
           disabled={urls[story.audio] === undefined}
           className="rounded-2xl bg-stone-200 py-4 text-lg font-semibold text-stone-700 active:bg-stone-300 disabled:opacity-50"
         >
