@@ -171,19 +171,35 @@
       "chunk_info": [
         {
           "literal_hr": "ujutro",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "na stanici Sapporo",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kartu",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kupio sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -388,23 +404,43 @@
       "chunk_info": [
         {
           "literal_hr": "vlakom",
-          "role": "ostalo"
+          "role": "ostalo",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "do Hakodatea",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "otišao sam i",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "行く (いく, iku) → 行って (いって, itte)",
+          "formula_hr": "Veže dvije radnje redom: otišao sam do Hakodatea i onda presjeo.",
+          "grammar_hr": "te-oblik glagola",
+          "rule_hr": "行く je iznimka: く → って (ne いて)."
         },
         {
           "literal_hr": "na shinkansen",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "presjeo sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -631,23 +667,43 @@
       "chunk_info": [
         {
           "literal_hr": "u Sendaiju",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kroz prozor",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "zelene",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "planine",
-          "role": "subjekt"
+          "role": "subjekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "vidjele su se",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "見える (みえる, mieru) → 見えました (みえました, miemashita)",
+          "formula_hr": "Planine su se same od sebe vidjele kroz prozor (山が見えました).",
+          "grammar_hr": "glagol 見える: nešto se vidi",
+          "rule_hr": "見える znači 'biti vidljiv'; ono što se vidi dobiva が, ne を."
         }
       ],
       "chunk_audio": [
@@ -865,23 +921,43 @@
       "chunk_info": [
         {
           "literal_hr": "stanice Tokio",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "na peronu",
-          "role": "subjekt"
+          "role": "subjekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "ljudi",
-          "role": "subjekt"
+          "role": "subjekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "jako",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "bilo je puno",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "多い (おおい, ooi) → 多かったです (おおかったです, ookatta desu)",
+          "formula_hr": "Kaže da je tada bilo puno ljudi.",
+          "grammar_hr": "prošlo vrijeme i-pridjeva",
+          "rule_hr": "i-pridjev: zadnji い → かった, + です za uljudni oblik."
         }
       ],
       "chunk_audio": [
@@ -1113,27 +1189,51 @@
       "chunk_info": [
         {
           "literal_hr": "u Kanazawi",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kupljeni",
-          "role": "opis"
+          "role": "opis",
+          "formula": "買う (かう, kau) → 買った (かった, katta) + imenica",
+          "formula_hr": "金沢で買った弁当 = bento koji sam kupio u Kanazawi.",
+          "grammar_hr": "glagol opisuje imenicu",
+          "rule_hr": "Obični prošli oblik glagola stoji ispred imenice i opisuje je."
         },
         {
           "literal_hr": "bento",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "shinkansena",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "unutar",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "pojeo sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -1364,23 +1464,43 @@
       "chunk_info": [
         {
           "literal_hr": "u Fukuoki",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "na stanicu Hakata",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kad sam stigao",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "着く (つく, tsuku) → 着いたとき (ついたとき, tsuita toki)",
+          "formula_hr": "U trenutku kad sam stigao na stanicu Hakata.",
+          "grammar_hr": "kad: ～とき",
+          "rule_hr": "Obični prošli oblik (く → いた) + とき znači 'kad se to dogodilo'."
         },
         {
           "literal_hr": "kiša",
-          "role": "subjekt"
+          "role": "subjekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "padala je",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "降る (ふる, furu) → 降っていました (ふっていました, futte imashita)",
+          "formula_hr": "Kiša je baš tada padala (trajala je).",
+          "grammar_hr": "trajna radnja u prošlosti: ～ていました",
+          "rule_hr": "te-oblik (る → って) + いました."
         }
       ],
       "chunk_audio": [
@@ -1555,19 +1675,35 @@
       "chunk_info": [
         {
           "literal_hr": "na kraju",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "južni",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "u Nagasaki",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "stigao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -1764,23 +1900,43 @@
       "chunk_info": [
         {
           "literal_hr": "od sjevera",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "do juga",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "dugo i",
-          "role": "opis"
+          "role": "opis",
+          "formula": "長い (ながい, nagai) → 長くて (ながくて, nagakute)",
+          "formula_hr": "Veže dva pridjeva: dugo i zabavno.",
+          "grammar_hr": "te-oblik i-pridjeva",
+          "rule_hr": "i-pridjev: zadnji い → くて."
         },
         {
           "literal_hr": "zabavno",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "putovanje je bilo",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -1798,5 +1954,5 @@
     "pokrivenost": 100,
     "izvan_popisa": []
   },
-  "trosak_usd": 0.026
+  "trosak_usd": 0.101
 }

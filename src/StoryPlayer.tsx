@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { audioUrl, type Story } from './stories'
+import { audioUrl, type ChunkInfo, type Story } from './stories'
 import { useMediaSession, useWakeLock } from './practice'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
@@ -16,6 +16,13 @@ const ROLE_STYLE: Record<string, { bg: string; label: string }> = {
   ostalo: { bg: 'bg-stone-200', label: 'opis / ostalo' },
 }
 const LEGEND = ['vrijeme', 'mjesto', 'subjekt', 'objekt', 'glagol', 'opis']
+
+// Uloga riječi (rendgen), kako je zapisuje pipeline.
+const WORD_ROLE: Record<string, string> = {
+  vrijeme: 'vrijeme', mjesto: 'mjesto', subjekt: 'subjekt', objekt: 'objekt', glagol: 'glagol',
+  pridjev: 'pridjev', prilog: 'prilog', imenica: 'imenica', cestica: 'čestica', kopula: 'kopula',
+  veznik: 'veznik', interpunkcija: 'interpunkcija', ostalo: 'ostalo',
+}
 
 // Isticanje unutar bloka: čestice, kopula i nastavci za konjugaciju.
 const KIND_STYLE = {
@@ -61,6 +68,10 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [currentWord, setCurrentWord] = useState(-1)
   // Blok koji svira (ili se ponavlja u petlji); -1 = rečenica.
   const [activeChunk, setActiveChunk] = useState(-1)
+  // Rendgen: formule iznad blokova i objašnjenje riječi na dodir (umjesto zvuka).
+  const [xray, setXray] = useState(false)
+  // Odabrana riječ ili formula bloka u rendgenu (vrijedi samo za rečenicu u kojoj je odabrana).
+  const [selected, setSelected] = useState<{ sentence: number; word?: number; chunk?: number } | null>(null)
   // Petlja: rečenica se ponavlja, sa stankom u kojoj korisnik ponavlja naglas.
   const [loop, setLoop] = useState(false)
   const [waiting, setWaiting] = useState(false)
@@ -220,71 +231,171 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
         <button onClick={() => { stop(); onBack() }} className="rounded-full px-3 py-2 text-stone-500 active:bg-stone-200">
           ← Priče
         </button>
-        <p className="text-sm text-stone-400">
-          Rečenica {index + 1} / {story.sentences.length}
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="text-sm text-stone-400">
+            Rečenica {index + 1} / {story.sentences.length}
+          </p>
+          <button
+            onClick={() => {
+              setXray(!xray)
+              setSelected(null)
+            }}
+            aria-pressed={xray}
+            className={`rounded-full px-3 py-2 text-sm font-semibold ${
+              xray ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
+            }`}
+          >
+            🔍 Rendgen
+          </button>
+        </div>
       </header>
 
       <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
         {/* Rečenica po blokovima (chunkovima), obojenima prema ulozi.
-            Uz prijevod se ispod svakog bloka vidi doslovni prijevod, japanskim redom. */}
-        <div lang="ja" className="flex flex-wrap items-start justify-center gap-2">
+            Uz prijevod se ispod svakog bloka vidi romaji i doslovni prijevod, japanskim redom.
+            Formula (zanimljiva gramatika) je iznad bloka: na računalu na hover, u rendgenu uvijek.
+            U rendgenu dodir na riječ pokaže objašnjenje; inače dodir na blok pušta njegov zvuk. */}
+        <div lang="ja" className="flex flex-wrap items-end justify-center gap-2">
           {spans.map((span, ci) => {
             const info = sentence.chunk_info?.[ci]
+            const Block = xray ? 'div' : 'button'
             return (
-              <button
-                key={ci}
-                onClick={() => playChunk(ci)}
-                disabled={!sentence.chunk_audio || !urls[sentence.chunk_audio[ci]]}
-                className={`flex flex-col items-center rounded-xl px-1.5 ${ROLE_STYLE[info?.role ?? '']?.bg ?? ''} ${
-                  activeChunk === ci ? 'ring-2 ring-red-700' : ''
-                }`}
-              >
-                <span className="text-[2rem] leading-[2.2] font-medium">
-                  {sentence.words.slice(span.from, span.to).map((w, k) => {
-                    const wi = span.from + k
-                    // Riječ koja se upravo izgovara je cijela crvena; inače se ističu čestice i nastavci.
-                    const spoken = playing && wi === currentWord
-                    return (
-                      <span key={wi} className={spoken ? 'text-red-700' : ''}>
-                        {w.furigana.map((p, pi) =>
-                          p.reading ? (
-                            <ruby key={pi}>
-                              {p.text}
-                              <rt className="text-sm text-stone-500">{p.reading}</rt>
-                            </ruby>
-                          ) : (
-                            <span key={pi} className={!spoken && p.kind ? KIND_STYLE[p.kind].className : ''}>
-                              {p.text}
-                            </span>
-                          ),
-                        )}
-                      </span>
-                    )
-                  })}
-                </span>
-                {showTranslation && (
-                  <span lang="ja-Latn" className="-mt-1 text-sm text-stone-500 italic">
-                    {sentence.words
-                      .slice(span.from, span.to)
-                      .map((w) => w.romaji ?? '')
-                      .join(' ')
-                      .replace(/ ([,.])/g, '$1')}
-                  </span>
+              <div key={ci} className="group relative flex flex-col items-center">
+                {/* Rendgen: kratki naslov formule; dodir otvori cijelo objašnjenje ispod rečenice. */}
+                {info?.formula && xray && (
+                  <button
+                    onClick={() =>
+                      setSelected(selected?.sentence === index && selected.chunk === ci ? null : { sentence: index, chunk: ci })
+                    }
+                    className={`mb-1 rounded-full px-2 py-0.5 text-xs font-semibold ${
+                      selected?.sentence === index && selected.chunk === ci
+                        ? 'bg-stone-800 text-white'
+                        : 'bg-white text-stone-700 shadow'
+                    }`}
+                  >
+                    ✦ {info.grammar_hr}
+                  </button>
                 )}
-                {showTranslation && info && (
-                  <span lang="hr" className="pb-1 text-sm text-stone-700">
-                    {info.literal_hr}
-                  </span>
+                {/* Računalo: cijela formula na hover. */}
+                {info?.formula && !xray && (
+                  <div className="pointer-events-none absolute bottom-full z-10 mb-1 hidden w-max max-w-72 rounded-lg bg-white px-3 py-2 text-left shadow group-hover:block">
+                    <FormulaText info={info} />
+                  </div>
                 )}
-              </button>
+                <Block
+                  onClick={xray ? undefined : () => playChunk(ci)}
+                  disabled={xray ? undefined : !sentence.chunk_audio || !urls[sentence.chunk_audio[ci]]}
+                  className={`relative flex flex-col items-center rounded-xl px-1.5 ${
+                    ROLE_STYLE[info?.role ?? '']?.bg ?? ''
+                  } ${activeChunk === ci ? 'ring-2 ring-red-700' : ''}`}
+                >
+                  {info?.formula && !xray && (
+                    <span className="absolute top-0.5 right-1 text-xs text-stone-500" aria-hidden>
+                      ✦
+                    </span>
+                  )}
+                  <span className="text-[2rem] leading-[2.2] font-medium">
+                    {sentence.words.slice(span.from, span.to).map((w, k) => {
+                      const wi = span.from + k
+                      // Riječ koja se upravo izgovara je cijela crvena; inače se ističu čestice i nastavci.
+                      const spoken = playing && wi === currentWord
+                      const isSelected = selected?.sentence === index && selected.word === wi
+                      const parts = w.furigana.map((p, pi) =>
+                        p.reading ? (
+                          <ruby key={pi}>
+                            {p.text}
+                            <rt className="text-sm text-stone-500">{p.reading}</rt>
+                          </ruby>
+                        ) : (
+                          <span key={pi} className={!spoken && p.kind ? KIND_STYLE[p.kind].className : ''}>
+                            {p.text}
+                          </span>
+                        ),
+                      )
+                      return xray && w.role !== 'interpunkcija' ? (
+                        <button
+                          key={wi}
+                          onClick={() => setSelected(isSelected ? null : { sentence: index, word: wi })}
+                          className={`rounded-md ${spoken ? 'text-red-700' : ''} ${
+                            isSelected ? 'bg-white shadow' : 'underline decoration-stone-400 decoration-dotted underline-offset-8'
+                          }`}
+                        >
+                          {parts}
+                        </button>
+                      ) : (
+                        <span key={wi} className={spoken ? 'text-red-700' : ''}>
+                          {parts}
+                        </span>
+                      )
+                    })}
+                  </span>
+                  {showTranslation && (
+                    <span lang="ja-Latn" className="-mt-1 text-sm text-stone-500 italic">
+                      {sentence.words
+                        .slice(span.from, span.to)
+                        .map((w) => w.romaji ?? '')
+                        .join(' ')
+                        .replace(/ ([,.])/g, '$1')}
+                    </span>
+                  )}
+                  {showTranslation && info && (
+                    <span lang="hr" className="pb-1 text-sm text-stone-700">
+                      {info.literal_hr}
+                    </span>
+                  )}
+                </Block>
+              </div>
             )
           })}
         </div>
+
+        {/* Rendgen: objašnjenje odabrane riječi. */}
+        {xray &&
+          (() => {
+            const sel = selected?.sentence === index ? selected : null
+            const chunkInfo = sel?.chunk !== undefined ? sentence.chunk_info?.[sel.chunk] : undefined
+            if (chunkInfo)
+              return (
+                <div className="-mt-2 w-full max-w-sm rounded-2xl bg-white p-4 text-left shadow">
+                  <div className="flex justify-end">
+                    <button onClick={() => setSelected(null)} className="-mb-6 text-stone-400" aria-label="Zatvori">
+                      ✕
+                    </button>
+                  </div>
+                  <FormulaText info={chunkInfo} />
+                </div>
+              )
+            const w = sel?.word !== undefined ? sentence.words[sel.word] : undefined
+            if (!w) return <p className="-mt-3 text-xs text-stone-400">Dodirni riječ ili ✦ za objašnjenje.</p>
+            return (
+              <div className="-mt-2 w-full max-w-sm rounded-2xl bg-white p-4 text-left shadow">
+                <div className="flex items-baseline justify-between gap-3">
+                  <p lang="ja" className="text-2xl font-medium">
+                    {w.text}
+                  </p>
+                  <button onClick={() => setSelected(null)} className="text-stone-400" aria-label="Zatvori">
+                    ✕
+                  </button>
+                </div>
+                <p className="text-sm text-stone-500">
+                  <span lang="ja">{w.reading}</span>
+                  {w.romaji && <span className="italic"> · {w.romaji}</span>}
+                  {w.lemma !== w.text && (
+                    <>
+                      {' '}
+                      · osnovni oblik <span lang="ja">{w.lemma}</span>
+                    </>
+                  )}{' '}
+                  · {WORD_ROLE[w.role] ?? w.role}
+                </p>
+                <p className="mt-2 text-stone-800">{w.explanation_hr}</p>
+              </div>
+            )
+          })()}
         {waiting ? (
           <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>
         ) : (
-          sentence.chunk_audio && <p className="-mt-4 text-xs text-stone-400">Dodirni blok da ga čuješ.</p>
+          sentence.chunk_audio && !xray && <p className="-mt-4 text-xs text-stone-400">Dodirni blok da ga čuješ.</p>
         )}
 
         <button
@@ -369,5 +480,27 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
         </button>
       </div>
     </main>
+  )
+}
+
+// Gramatička formula bloka: naziv, formula s čitanjem, kako nastaje, što znači ovdje.
+function FormulaText({ info }: { info: ChunkInfo }) {
+  return (
+    <div lang="hr" className="text-sm leading-snug">
+      <p className="font-semibold text-stone-800">✦ {info.grammar_hr}</p>
+      <p lang="ja" className="mt-1 text-base text-stone-900">
+        {info.formula}
+      </p>
+      {info.rule_hr && (
+        <p className="mt-1 text-stone-600">
+          <span className="font-semibold">Kako nastaje:</span> {info.rule_hr}
+        </p>
+      )}
+      {info.formula_hr && (
+        <p className="mt-1 text-stone-600">
+          <span className="font-semibold">Ovdje:</span> {info.formula_hr}
+        </p>
+      )}
+    </div>
   )
 }

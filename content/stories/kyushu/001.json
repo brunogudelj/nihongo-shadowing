@@ -8,7 +8,7 @@
     "pokrivenost": 100,
     "izvan_popisa": []
   },
-  "trosak_usd": 0.131,
+  "trosak_usd": 0.183,
   "title_ja": "九州旅行",
   "title_hr": "Putovanje po Kyushuu",
   "sentences": [
@@ -131,15 +131,27 @@
       "chunk_info": [
         {
           "literal_hr": "za ljetne praznike",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "na Kyushu",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "otišao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -308,19 +320,35 @@
       "chunk_info": [
         {
           "literal_hr": "najprije",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "u Hakati",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "ramen",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "jeo sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -407,11 +435,19 @@
       "chunk_info": [
         {
           "literal_hr": "jako",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "bilo je ukusno",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "おいしい (oishii) → おいしかった (oishikatta) + です",
+          "formula_hr": "Kaže da je ramen bio jako ukusan (u prošlosti).",
+          "grammar_hr": "prošlo vrijeme i-pridjeva",
+          "rule_hr": "i-pridjev: zadnji い → かった; です ga čini uljudnim."
         }
       ],
       "chunk_audio": [
@@ -599,19 +635,35 @@
       "chunk_info": [
         {
           "literal_hr": "sljedeći dan",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "Beppuovo",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "u vruće vrelo",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "ušao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "入る (はいる, hairu) → 入りました (はいりました, hairimashita)",
+          "formula_hr": "Znači da se okupao u vrućem vrelu.",
+          "grammar_hr": "izraz: 温泉に入る",
+          "rule_hr": "温泉に入る (おんせんに はいる) doslovno znači \"ući u vrelo\"; ～ました je uljudno prošlo vrijeme."
         }
       ],
       "chunk_audio": [
@@ -810,23 +862,43 @@
       "chunk_info": [
         {
           "literal_hr": "zatim",
-          "role": "ostalo"
+          "role": "ostalo",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "Asoovu",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "planinu",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "vidjeti",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "見る (みる, miru) → 見に (みに, mini) + 行く (いく, iku)",
+          "formula_hr": "Kaže zašto je otišao: otišao je da vidi planinu.",
+          "grammar_hr": "svrha kretanja: ～に行く",
+          "rule_hr": "Osnova glagola (oblik ispred ～ます) + に + glagol kretanja (行く, 来る)."
         },
         {
           "literal_hr": "otišao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "行く (いく, iku) → 行きました (いきました, ikimashita)",
+          "formula_hr": "Otišao sam (da vidim planinu Aso).",
+          "grammar_hr": "svrha kretanja: ～に行く",
+          "rule_hr": "Glagol kretanja dolazi poslije 見に i stoji u uljudnom prošlom obliku."
         }
       ],
       "chunk_audio": [
@@ -1019,23 +1091,43 @@
       "chunk_info": [
         {
           "literal_hr": "na kraju",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "Nagasakijevog",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "iz grada",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "more",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "gledao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -1181,19 +1273,35 @@
       "chunk_info": [
         {
           "literal_hr": "ponovno",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "Kyushuov",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "na otok",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "želim doći",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "来る (くる, kuru) → 来たい (きたい, kitai) + です",
+          "formula_hr": "Izražava želju govornika: želim ponovno doći.",
+          "grammar_hr": "želja: ～たい",
+          "rule_hr": "Osnova glagola (来 = き) + たい; 来る je nepravilan glagol."
         }
       ],
       "chunk_audio": [

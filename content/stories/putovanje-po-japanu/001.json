@@ -8,7 +8,7 @@
     "pokrivenost": 100,
     "izvan_popisa": []
   },
-  "trosak_usd": 0.149,
+  "trosak_usd": 0.227,
   "title_ja": "京都の旅行",
   "title_hr": "Putovanje u Kyoto",
   "sentences": [
@@ -171,19 +171,35 @@
       "chunk_info": [
         {
           "literal_hr": "prošli tjedan",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "iz Hrvatske",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "u Japan",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "došao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "来る (くる, kuru) → 来ました (きました, kimashita)",
+          "formula_hr": "Znači \"došao sam\"; radnja je završena prošli tjedan.",
+          "grammar_hr": "nepravilni glagol 来る u prošlom vremenu",
+          "rule_hr": "来る je nepravilan glagol: u uljudnom obliku postaje き + ました."
         }
       ],
       "chunk_audio": [
@@ -346,19 +362,35 @@
       "chunk_info": [
         {
           "literal_hr": "sada",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "Kyotski",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "u hotelu",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "jesam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "いる (いる, iru) → います (imasu)",
+          "formula_hr": "Kaže gdje se osoba nalazi: \"sada sam u hotelu\".",
+          "grammar_hr": "biti negdje (za ljude): いる",
+          "rule_hr": "いる se koristi za ljude i životinje; uljudni oblik je います."
         }
       ],
       "chunk_audio": [
@@ -537,23 +569,43 @@
       "chunk_info": [
         {
           "literal_hr": "jutros",
-          "role": "vrijeme"
+          "role": "vrijeme",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kartu",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "držeći",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "持つ (もつ, motsu) → 持って (もって, motte)",
+          "formula_hr": "Veže dvije radnje: uzeo sam kartu i (s njom) tražio trgovinu.",
+          "grammar_hr": "te-oblik glagola",
+          "rule_hr": "Glagoli koji završavaju na -つ: つ → って."
         },
         {
           "literal_hr": "trgovinu",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "tražio sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -683,15 +735,27 @@
       "chunk_info": [
         {
           "literal_hr": "ali",
-          "role": "ostalo"
+          "role": "ostalo",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "put",
-          "role": "subjekt"
+          "role": "subjekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "nisam znao",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "わかる (wakaru) → わかりません (wakarimasen) → わかりませんでした (wakarimasen deshita)",
+          "formula_hr": "Znači \"nisam znao/razumio\" (put) u prošlosti.",
+          "grammar_hr": "prošlo niječno vrijeme (uljudni oblik)",
+          "rule_hr": "Na niječni uljudni oblik ～ません dodaje se でした."
         }
       ],
       "chunk_audio": [
@@ -928,19 +992,35 @@
       "chunk_info": [
         {
           "literal_hr": "ispred stanice",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "ženu",
-          "role": "ostalo"
+          "role": "ostalo",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "za put",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "pitao sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -1113,19 +1193,35 @@
       "chunk_info": [
         {
           "literal_hr": "ta osoba",
-          "role": "subjekt"
+          "role": "subjekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "vrlo",
-          "role": "opis"
+          "role": "opis",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "ljubazno",
-          "role": "opis"
+          "role": "opis",
+          "formula": "親切 (しんせつ, shinsetsu) → 親切に (しんせつに, shinsetsu ni)",
+          "formula_hr": "Kaže kako je objasnila: \"ljubazno\".",
+          "grammar_hr": "prilog od na-pridjeva",
+          "rule_hr": "Na na-pridjev dodaje se に i dobije se prilog."
         },
         {
           "literal_hr": "objasnila mi je",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "教える (おしえる, oshieru) → 教えて (おしえて, oshiete) + くれました (kuremashita)",
+          "formula_hr": "Žena je objasnila put meni, kao uslugu. Govornik je zahvalan.",
+          "grammar_hr": "netko učini nešto za mene: ～てくれる",
+          "rule_hr": "Te-oblik glagola + くれる: netko drugi čini nešto za govornika."
         }
       ],
       "chunk_audio": [
@@ -1352,27 +1448,51 @@
       "chunk_info": [
         {
           "literal_hr": "u trgovini",
-          "role": "mjesto"
+          "role": "mjesto",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "ukusnu",
-          "role": "opis"
+          "role": "opis",
+          "formula": "おいしい (oishii) + 食べ物 (たべもの, tabemono)",
+          "formula_hr": "\"Ukusna hrana\".",
+          "grammar_hr": "i-pridjev opisuje imenicu",
+          "rule_hr": "i-pridjev stoji ravno ispred imenice, bez promjene."
         },
         {
           "literal_hr": "hranu",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "kupio sam i",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "買う (かう, kau) → 買って (かって, katte)",
+          "formula_hr": "Veže dvije radnje: kupio sam hranu i (onda) fotografirao.",
+          "grammar_hr": "te-oblik glagola",
+          "rule_hr": "Glagoli koji završavaju na -う: う → って."
         },
         {
           "literal_hr": "i fotografije",
-          "role": "objekt"
+          "role": "objekt",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         },
         {
           "literal_hr": "snimio sam",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [
@@ -1489,15 +1609,27 @@
       "chunk_info": [
         {
           "literal_hr": "zaista",
-          "role": "opis"
+          "role": "opis",
+          "formula": "本当 (ほんとう, hontou) → 本当に (ほんとうに, hontou ni)",
+          "formula_hr": "Znači \"zaista\" i pojačava pridjev 楽しい.",
+          "grammar_hr": "prilog s に",
+          "rule_hr": "Na riječ 本当 dodaje se に i dobije se prilog."
         },
         {
           "literal_hr": "zabavno",
-          "role": "opis"
+          "role": "opis",
+          "formula": "楽しい (たのしい, tanoshii) + 旅行 (りょこう, ryokou)",
+          "formula_hr": "\"Zabavno putovanje\".",
+          "grammar_hr": "i-pridjev opisuje imenicu",
+          "rule_hr": "i-pridjev stoji ravno ispred imenice, bez promjene."
         },
         {
           "literal_hr": "putovanje je",
-          "role": "glagol"
+          "role": "glagol",
+          "formula": "",
+          "formula_hr": "",
+          "grammar_hr": "",
+          "rule_hr": ""
         }
       ],
       "chunk_audio": [

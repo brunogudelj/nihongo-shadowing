@@ -16,7 +16,16 @@ export type Word = {
   end_ms: number
 }
 
-export type ChunkInfo = { literal_hr: string; role: string }
+// Gramatička formula bloka (prazno ako nema ništa zanimljivo): naziv, formula s čitanjem,
+// kako nastaje i što znači u ovoj rečenici.
+export type ChunkInfo = {
+  literal_hr: string
+  role: string
+  grammar_hr?: string
+  formula?: string
+  rule_hr?: string
+  formula_hr?: string
+}
 
 export type Sentence = {
   ja: string
