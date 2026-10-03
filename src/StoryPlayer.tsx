@@ -3,6 +3,9 @@ import { audioUrl, type Story } from './stories'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
+// Mekani početak i kraj chunka (ms u zvuku), da nema klika ni naglog reza.
+const FADE_IN_MS = 30
+const FADE_OUT_MS = 80
 
 type Mode = 'sentence' | 'chunk' | 'full'
 
@@ -42,6 +45,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [currentWord, setCurrentWord] = useState(-1)
   // Gdje zaustaviti zvuk (ms u mp3 rečenice); null = do kraja.
   const stopAtRef = useRef<number | null>(null)
+  const startAtRef = useRef(0)
   const urls = useBlobUrls([...story.sentences.map((s) => s.audio), story.audio])
 
   const sentence = story.sentences[index]
@@ -56,6 +60,8 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
     audio.defaultPlaybackRate = speed
     audio.playbackRate = speed
     stopAtRef.current = stopAtMs
+    startAtRef.current = startMs
+    audio.volume = stopAtMs === null ? 1 : 0
     // Skok na mjesto u zvuku tek kad se datoteka učita, pa tek onda sviranje.
     if (startMs) {
       audio.addEventListener(
@@ -75,8 +81,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   function playChunk(ci: number) {
     const span = spans[ci]
     setActiveChunk(ci)
-    // Mala zaliha na početku i kraju, da se ne odreže početak ili kraj sloga.
-    play(sentence.audio, 'chunk', Math.max(0, span.startMs - 60), span.endMs + 120)
+    play(sentence.audio, 'chunk', Math.max(0, span.startMs - 10), span.endMs)
   }
 
   function stop() {
@@ -128,6 +133,12 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
           return
         } else {
           setCurrentWord(wordAt(sentence, ms))
+          // Chunk: glasnoća raste na početku i pada prema kraju.
+          const stopAt = stopAtRef.current
+          if (stopAt !== null) {
+            const v = Math.min(1, (ms - startAtRef.current) / FADE_IN_MS, (stopAt - ms) / FADE_OUT_MS)
+            audio.volume = Math.max(0, v)
+          }
         }
       }
       frame = requestAnimationFrame(tick)

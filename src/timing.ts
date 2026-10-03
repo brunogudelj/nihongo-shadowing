@@ -4,7 +4,9 @@ import type { Sentence } from './stories'
 export type ChunkSpan = { from: number; to: number; startMs: number; endMs: number }
 
 // Za svaki chunk: koje riječi sadrži [from, to) i kad počinje i završava u mp3 rečenice.
-// Riječ pripada chunku u kojem počinje.
+// Riječ pripada chunku u kojem počinje. Između riječi gotovo da nema tišine, pa chunk
+// završava točno gdje počinje idući (inače se čuje početak idućeg sloga).
+// Zadnji chunk smije malo dulje, jer iza njega je tišina.
 export function chunkSpans(sentence: Sentence): ChunkSpan[] {
   const wordStarts: number[] = []
   let pos = 0
@@ -14,14 +16,16 @@ export function chunkSpans(sentence: Sentence): ChunkSpan[] {
   }
   let chunkStart = 0
   let wi = 0
-  return sentence.chunks.map((chunk) => {
+  const spans = sentence.chunks.map((chunk) => {
     const chunkEnd = chunkStart + chunk.length
     const from = wi
     while (wi < wordStarts.length && wordStarts[wi] < chunkEnd) wi++
     chunkStart = chunkEnd
     const to = Math.max(wi, from + 1)
-    return { from, to, startMs: sentence.words[from].start_ms, endMs: sentence.words[to - 1].end_ms }
+    return { from, to, startMs: sentence.words[from].start_ms, endMs: sentence.words[to - 1].end_ms + 150 }
   })
+  for (let i = 0; i < spans.length - 1; i++) spans[i].endMs = spans[i + 1].startMs
+  return spans
 }
 
 // Riječ koja se izgovara u trenutku ms (u mp3 rečenice), ili -1.
