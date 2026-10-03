@@ -23,6 +23,7 @@ export type Sentence = {
   hr: string
   chunks: string[]
   chunk_info?: ChunkInfo[]
+  chunk_audio?: string[] // svaki blok izgovoren zasebno
   words: Word[]
   audio: string
   duration_ms: number

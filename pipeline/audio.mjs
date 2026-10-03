@@ -1,4 +1,4 @@
-// Izrađuje mp3 za priču (po rečenici i za cijelu priču) preko Azure TTS-a,
+// Izrađuje mp3 za priču (po rečenici, po bloku i za cijelu priču) preko Azure TTS-a,
 // i sprema vrijeme početka i kraja svake riječi (za isticanje i postupno slaganje).
 // Pokretanje: npm run audio -- <tema>/<broj>   (npr. npm run audio -- japanske-zeljeznice/001)
 // Ključ i regija čitaju se iz okoline (GitHub Codespaces Secrets ili .env).
@@ -104,7 +104,24 @@ for (const [i, s] of story.sentences.entries()) {
   console.log(`Izrađen ${name} (${(duration / 1000).toFixed(1)} s, ${boundaries.length} granica riječi)`)
 }
 
-// 2) Cijela priča u jednom mp3, s vremenom početka i kraja svake rečenice.
+// 2) Svaki blok (chunk) izgovoren zasebno: prirodan početak i kraj, bez rezanja snimke rečenice.
+for (const [i, s] of story.sentences.entries()) {
+  const names = s.chunks.map((_, k) => `${base}-${i + 1}-${k + 1}.mp3`)
+  if (s.chunk_audio?.join('|') === names.join('|') && names.every((n) => existsSync(`${AUDIO_DIR}/${n}`))) {
+    console.log(`Preskačem blokove rečenice ${i + 1} (već postoje).`)
+    continue
+  }
+  for (const [k, chunk] of s.chunks.entries()) {
+    if (existsSync(`${AUDIO_DIR}/${names[k]}`)) continue
+    const { audio } = await synthesize(chunk)
+    writeFileSync(`${AUDIO_DIR}/${names[k]}`, audio)
+    chars += chunk.length
+  }
+  s.chunk_audio = names
+  console.log(`Izrađeni blokovi rečenice ${i + 1} (${names.length})`)
+}
+
+// 3) Cijela priča u jednom mp3, s vremenom početka i kraja svake rečenice.
 const fullName = `${base}-cijela.mp3`
 if (existsSync(`${AUDIO_DIR}/${fullName}`) && story.audio === fullName && story.sentences.every((s) => 'full_start_ms' in s)) {
   console.log(`Preskačem ${fullName} (već postoji).`)

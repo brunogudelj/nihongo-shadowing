@@ -24,7 +24,7 @@ const KIND_STYLE = {
   nastavak: { className: 'text-orange-600', label: 'nastavak' },
 }
 
-type Mode = 'sentence' | 'full'
+type Mode = 'sentence' | 'chunk' | 'full'
 
 // mp3 se učitava cijeli u memoriju, da pouzdano svira i bez interneta.
 function useBlobUrls(names: string[]) {
@@ -59,6 +59,8 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [playing, setPlaying] = useState<Mode | null>(null)
   const [showTranslation, setShowTranslation] = useState(false)
   const [currentWord, setCurrentWord] = useState(-1)
+  // Blok koji svira (ili se ponavlja u petlji); -1 = rečenica.
+  const [activeChunk, setActiveChunk] = useState(-1)
   // Petlja: rečenica se ponavlja, sa stankom u kojoj korisnik ponavlja naglas.
   const [loop, setLoop] = useState(false)
   const [waiting, setWaiting] = useState(false)
@@ -66,8 +68,11 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   // Najnovije verzije funkcija, za pozive iz odgođenog ponavljanja
   // (da ponavljanje koristi trenutnu brzinu, i ako je promijenjena u stanci).
   const finishedRef = useRef<() => void>(() => {})
-  const replayRef = useRef<() => void>(() => {})
-  const urls = useBlobUrls([...story.sentences.map((s) => s.audio), story.audio])
+  const replayRef = useRef<(mode: Mode | null) => void>(() => {})
+  const urls = useBlobUrls([
+    ...story.sentences.flatMap((s) => [s.audio, ...(s.chunk_audio ?? [])]),
+    story.audio,
+  ])
 
   const sentence = story.sentences[index]
   const spans = chunkSpans(sentence)
@@ -93,11 +98,22 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
 
   function playSentence() {
     cancelWait()
+    setActiveChunk(-1)
     play(sentence.audio, 'sentence')
+  }
+
+  // Blok ima vlastitu snimku (izgovoren zasebno), pa se ništa ne reže.
+  function playChunk(ci: number) {
+    const name = sentence.chunk_audio?.[ci]
+    if (!name) return
+    cancelWait()
+    setActiveChunk(ci)
+    play(name, 'chunk')
   }
 
   function playFull() {
     cancelWait()
+    setActiveChunk(-1)
     play(story.audio, 'full', sentence.full_start_ms)
   }
 
@@ -105,20 +121,26 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
     cancelWait()
     audioRef.current?.pause()
     setPlaying(null)
+    setActiveChunk(-1)
   }
 
-  // Rečenica je odsvirana. S petljom: stanka za ponavljanje naglas, pa ispočetka.
-  // Stanka traje koliko i rečenica (dulje na sporijoj brzini) plus pola sekunde.
+  // Rečenica ili blok je odsviran. S petljom: stanka za ponavljanje naglas, pa ispočetka.
+  // Stanka traje koliko i odsvirani dio (dulje na sporijoj brzini) plus pola sekunde.
   function finished() {
+    const mode = playing
     setPlaying(null)
-    if (!loop) return
+    if (!loop) {
+      setActiveChunk(-1)
+      return
+    }
+    const partMs = (audioRef.current?.duration ?? sentence.duration_ms / 1000) * 1000
     setWaiting(true)
-    waitTimerRef.current = window.setTimeout(() => replayRef.current(), sentence.duration_ms / speed + 500)
+    waitTimerRef.current = window.setTimeout(() => replayRef.current(mode), partMs / speed + 500)
   }
 
   useEffect(() => {
     finishedRef.current = finished
-    replayRef.current = playSentence
+    replayRef.current = (mode) => (mode === 'chunk' ? playChunk(activeChunk) : playSentence())
   })
 
   // Zaustavi čekanje ako se zaslon zatvori.
@@ -162,8 +184,10 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             setIndex(current)
           }
           setCurrentWord(wordAtInFull(sentence, ms))
-        } else {
+        } else if (playing === 'sentence') {
           setCurrentWord(wordAt(sentence, ms))
+        } else {
+          setCurrentWord(-1) // blok: ističe se okvirom oko bloka
         }
       }
       frame = requestAnimationFrame(tick)
@@ -173,7 +197,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   }, [playing, index, sentence, story.sentences])
 
   const loaded = urls[sentence.audio] !== undefined
-  const busy = playing === 'sentence' || waiting
+  const busy = playing === 'sentence' || playing === 'chunk' || waiting
 
   // Zaslon se ne gasi dok vježbaš; Play/Pauza i prethodna/sljedeća rečenica
   // rade i sa zaključanog zaslona, iz obavijesti i sa slušalica.
@@ -208,9 +232,13 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
           {spans.map((span, ci) => {
             const info = sentence.chunk_info?.[ci]
             return (
-              <div
+              <button
                 key={ci}
-                className={`flex flex-col items-center rounded-xl px-1.5 ${ROLE_STYLE[info?.role ?? '']?.bg ?? ''}`}
+                onClick={() => playChunk(ci)}
+                disabled={!sentence.chunk_audio || !urls[sentence.chunk_audio[ci]]}
+                className={`flex flex-col items-center rounded-xl px-1.5 ${ROLE_STYLE[info?.role ?? '']?.bg ?? ''} ${
+                  activeChunk === ci ? 'ring-2 ring-red-700' : ''
+                }`}
               >
                 <span className="text-[2rem] leading-[2.2] font-medium">
                   {sentence.words.slice(span.from, span.to).map((w, k) => {
@@ -249,11 +277,15 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
                     {info.literal_hr}
                   </span>
                 )}
-              </div>
+              </button>
             )
           })}
         </div>
-        {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
+        {waiting ? (
+          <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>
+        ) : (
+          sentence.chunk_audio && <p className="-mt-4 text-xs text-stone-400">Dodirni blok da ga čuješ.</p>
+        )}
 
         <button
           onClick={() => setShowTranslation(!showTranslation)}
