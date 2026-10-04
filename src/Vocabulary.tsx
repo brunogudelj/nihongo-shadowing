@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import allWords from '../data/rijeci.json'
+import AddWord from './AddWord'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
 import { speak } from './speech'
@@ -69,10 +70,10 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
           {shown.map((w) => {
             const id = w.word + w.reading
             return (
-              <li key={id}>
+              <li key={id} className="flex items-center gap-2">
                 <button
                   onClick={() => play(w)}
-                  className={`flex w-full items-baseline gap-3 rounded-2xl bg-white px-4 py-3 text-left shadow-sm active:bg-stone-100 ${
+                  className={`flex min-w-0 flex-1 items-baseline gap-3 rounded-2xl bg-white px-4 py-3 text-left shadow-sm active:bg-stone-100 ${
                     playing === id ? 'ring-2 ring-red-700' : ''
                   }`}
                 >
@@ -90,6 +91,7 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
                   </span>
                   <span className="text-xs text-stone-400">{w.level}</span>
                 </button>
+                <AddWord word={w.word} reading={w.reading} hr={w.hr} source="rijeci" />
               </li>
             )
           })}

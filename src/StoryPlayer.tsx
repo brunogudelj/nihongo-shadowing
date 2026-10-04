@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { audioUrl, type ChunkInfo, type Story } from './stories'
+import AddStoryWord from './AddStoryWord'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { useMediaSession, useWakeLock } from './practice'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
@@ -431,6 +432,11 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
                       · {WORD_ROLE[w.role] ?? w.role}
                     </p>
                     <p className="mt-2 text-stone-800">{w.explanation_hr}</p>
+                    {w.role !== 'cestica' && w.role !== 'interpunkcija' && (
+                      <div className="mt-3">
+                        <AddStoryWord w={w} />
+                      </div>
+                    )}
                   </div>
                 )
               })()}

@@ -1,21 +1,27 @@
 import { lazy, Suspense, useState } from 'react'
+import { useLiveQuery } from 'dexie-react-hooks'
+import { db } from './db'
 import StoryPlayer from './StoryPlayer'
 
 // Riječi i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
 const Conjugator = lazy(() => import('./Conjugator'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
+const MyWords = lazy(() => import('./MyWords'))
 import { stories } from './stories'
 
 function App() {
   const [storyId, setStoryId] = useState<string>()
-  const [screen, setScreen] = useState<'konjugator' | 'rijeci' | null>(null)
+  const [screen, setScreen] = useState<'konjugator' | 'rijeci' | 'moje' | null>(null)
+  const myCount = useLiveQuery(() => db.myWords.count(), [])
   const story = stories.find((s) => s.id === storyId)
 
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
   if (screen)
     return (
       <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
-        {screen === 'konjugator' ? <Conjugator onBack={() => setScreen(null)} /> : <Vocabulary onBack={() => setScreen(null)} />}
+        {screen === 'konjugator' && <Conjugator onBack={() => setScreen(null)} />}
+        {screen === 'rijeci' && <Vocabulary onBack={() => setScreen(null)} />}
+        {screen === 'moje' && <MyWords onBack={() => setScreen(null)} />}
       </Suspense>
     )
 
@@ -41,6 +47,13 @@ function App() {
       </ul>
 
       <div className="mt-6 flex flex-col gap-3">
+        <button
+          onClick={() => setScreen('moje')}
+          className="w-full rounded-2xl bg-amber-400 p-5 text-left text-stone-900 active:bg-amber-500"
+        >
+          <p className="text-xl font-semibold">⭐ Moje riječi</p>
+          <p className="mt-1 text-stone-700">{myCount ? `${myCount} riječi` : 'Dodaj riječi sa ☆'}</p>
+        </button>
         <button
           onClick={() => setScreen('rijeci')}
           className="w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
