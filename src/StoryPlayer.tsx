@@ -8,6 +8,13 @@ import { useMediaSession, useWakeLock } from './practice'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
+
+type View = 'puno' | 'cisto' | 'sluh'
+const VIEWS: Record<View, { label: string; next: View }> = {
+  puno: { label: 'Puno', next: 'cisto' },
+  cisto: { label: 'Čisto', next: 'sluh' },
+  sluh: { label: '👂 Sluh', next: 'puno' },
+}
 // Stanka u petlji, kao dio duljine odsviranog dijela; 0 = preklapanje (ponavlja se odmah).
 const PAUSES = [0, 1, 1.5, 2]
 
@@ -96,21 +103,28 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [activeChunk, setActiveChunk] = useState(-1)
   // Rendgen: formule iznad blokova i objašnjenje riječi na dodir (umjesto zvuka).
   const [xray, setXray] = useState(false)
-  // Čisti način: samo japanska rečenica, bez furigane i svih dodataka. Pamti se u pregledniku.
-  const [clean, setClean] = useState(() => {
+  // Prikaz rečenice (pamti se u pregledniku): puno (sve pomoći), čisto (samo japanski tekst)
+  // ili sluh (tekst skriven dok ga ne otkriješ dodirom; na svakoj rečenici iznova).
+  const [view, setView] = useState<View>(() => {
     try {
-      return localStorage.getItem('cisto') === '1'
+      const v = localStorage.getItem('prikaz')
+      if (v === 'cisto' || v === 'sluh') return v
+      return localStorage.getItem('cisto') === '1' ? 'cisto' : 'puno'
     } catch {
-      return false
+      return 'puno'
     }
   })
-  function toggleClean() {
-    const v = !clean
-    setClean(v)
+  const [revealed, setRevealed] = useState(false)
+  const clean = view === 'cisto'
+  const hidden = view === 'sluh' && !revealed
+  function cycleView() {
+    const v = VIEWS[view].next
+    setView(v)
+    setRevealed(false)
     setXray(false)
     setSelected(null)
     try {
-      localStorage.setItem('cisto', v ? '1' : '0')
+      localStorage.setItem('prikaz', v)
     } catch {
       // bez pamćenja
     }
@@ -230,6 +244,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
 
   function goTo(i: number) {
     setIndex(i)
+    setRevealed(false)
     // Tijekom cijele priče skoči na tu rečenicu, inače samo zaustavi.
     if (playing === 'full' && audioRef.current) {
       audioRef.current.currentTime = story.sentences[i].full_start_ms / 1000
@@ -259,6 +274,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
           const current = story.sentences.findLastIndex((s) => s.full_start_ms <= ms)
           if (current >= 0 && current !== index) {
             setIndex(current)
+            setRevealed(false)
           }
           setCurrentWord(wordAtInFull(sentence, ms))
         } else if (playing === 'sentence') {
@@ -302,7 +318,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             <p className="text-sm text-stone-400" aria-label={`Rečenica ${index + 1} od ${story.sentences.length}`}>
               {index + 1} / {story.sentences.length}
             </p>
-            {!clean && (
+            {view === 'puno' && (
               <button
                 onClick={() => {
                   setXray(!xray)
@@ -317,13 +333,13 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
               </button>
             )}
             <button
-              onClick={toggleClean}
-              aria-pressed={clean}
+              onClick={cycleView}
+              aria-label={`Prikaz: ${VIEWS[view].label}. Dodirni za idući.`}
               className={`rounded-full px-3 py-2 text-sm font-semibold ${
-                clean ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
+                view !== 'puno' ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
               }`}
             >
-              Čisto
+              {VIEWS[view].label}
             </button>
           </div>
         </header>
@@ -349,7 +365,20 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
         </div>
 
         <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
-          {clean ? (
+          {hidden ? (
+            <>
+              {/* Slušni način: tekst skriven, dodir ga otkriva. */}
+              <button
+                onClick={() => setRevealed(true)}
+                className="w-full max-w-sm rounded-3xl border-2 border-dashed border-stone-300 px-6 py-12 text-stone-500 active:bg-stone-100"
+              >
+                <span className="block text-4xl">👂</span>
+                <span className="mt-2 block text-lg font-semibold">Slušaj</span>
+                <span className="block text-sm">dodirni za tekst</span>
+              </button>
+              {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
+            </>
+          ) : clean ? (
             <>
               {/* Čisti način: samo rečenica, kako bi je napisao Japanac. */}
               <p lang="ja" className="text-[2rem] leading-[1.6] font-medium">
