@@ -5,6 +5,7 @@ import AddStoryWord from './AddStoryWord'
 import { db, savePlace, setSentenceStatus, type SentenceStatus } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { useMediaSession, useWakeLock } from './practice'
+import { readSetting, writeSetting } from './settings'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
@@ -97,7 +98,11 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   useEffect(() => {
     if (placeLoaded.current) void savePlace(story.id, index)
   }, [story.id, index])
-  const [speed, setSpeed] = useState(1)
+  // Brzina se pamti (i ulazi u sigurnosnu kopiju).
+  const [speed, setSpeed] = useState(() => {
+    const raw = readSetting('brzina')
+    return raw !== null && SPEEDS.includes(Number(raw)) ? Number(raw) : 1
+  })
   const [playing, setPlaying] = useState<Mode | null>(null)
   const [showTranslation, setShowTranslation] = useState(false)
   const [currentWord, setCurrentWord] = useState(-1)
@@ -106,13 +111,9 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   // Razina pomoći (pamti se u pregledniku): rendgen (formule, objašnjenje riječi na dodir umjesto zvuka),
   // puno (sve pomoći), čisto (samo japanski tekst) ili sluh (tekst skriven dok ga ne otkriješ dodirom).
   const [view, setView] = useState<View>(() => {
-    try {
-      const v = localStorage.getItem('prikaz')
-      if (v === 'rendgen' || v === 'cisto' || v === 'sluh') return v
-      return localStorage.getItem('cisto') === '1' ? 'cisto' : 'puno'
-    } catch {
-      return 'puno'
-    }
+    const v = readSetting('prikaz')
+    if (v === 'rendgen' || v === 'cisto' || v === 'sluh') return v
+    return readSetting('cisto') === '1' ? 'cisto' : 'puno'
   })
   const [revealed, setRevealed] = useState(false)
   const clean = view === 'cisto'
@@ -123,31 +124,19 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
     setView(v)
     setRevealed(false)
     setSelected(null)
-    try {
-      localStorage.setItem('prikaz', v)
-    } catch {
-      // bez pamćenja
-    }
+    writeSetting('prikaz', v)
   }
   // Odabrana riječ ili formula bloka u rendgenu (vrijedi samo za rečenicu u kojoj je odabrana).
   const [selected, setSelected] = useState<{ sentence: number; word?: number; chunk?: number } | null>(null)
   // Petlja: rečenica se ponavlja, sa stankom u kojoj korisnik ponavlja naglas.
   const [loop, setLoop] = useState(false)
   const [pause, setPause] = useState(() => {
-    try {
-      const v = Number(localStorage.getItem('stanka'))
-      return PAUSES.includes(v) && localStorage.getItem('stanka') !== null ? v : 1
-    } catch {
-      return 1
-    }
+    const raw = readSetting('stanka')
+    return raw !== null && PAUSES.includes(Number(raw)) ? Number(raw) : 1
   })
   function choosePause(v: number) {
     setPause(v)
-    try {
-      localStorage.setItem('stanka', String(v))
-    } catch {
-      // bez pamćenja
-    }
+    writeSetting('stanka', String(v))
   }
   const [waiting, setWaiting] = useState(false)
   const waitTimerRef = useRef<number | undefined>(undefined)
@@ -255,6 +244,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
 
   function chooseSpeed(rate: number) {
     setSpeed(rate)
+    writeSetting('brzina', String(rate))
     const audio = audioRef.current
     if (!audio) return
     audio.defaultPlaybackRate = rate

@@ -5,6 +5,7 @@ import { conjugate, FORMS, kindOf, type ConjWord, type Form, type Kind } from '.
 import AddWord from './AddWord'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
+import { readSetting, writeSetting, type SettingKey } from './settings'
 import { speak } from './speech'
 import { stories } from './stories'
 
@@ -35,21 +36,17 @@ const KINDS: { kind: Kind; label: string }[] = [
 const STORY_LEMMAS = new Set(stories.flatMap((s) => s.sentences.flatMap((x) => x.words.map((w) => w.lemma))))
 const STORY_WORDS = WORDS.filter((w) => STORY_LEMMAS.has(w.word) || STORY_LEMMAS.has(w.word.replace(/する$/, '')))
 
-// Postavke se pamte u pregledniku (ako je dostupno).
-function load<T>(key: string, fallback: T): T {
+// Postavke se pamte u pregledniku (settings.ts) i ulaze u sigurnosnu kopiju.
+function load<T>(key: SettingKey, fallback: T): T {
   try {
-    const v = localStorage.getItem(key)
+    const v = readSetting(key)
     return v ? (JSON.parse(v) as T) : fallback
   } catch {
     return fallback
   }
 }
-function save(key: string, value: unknown) {
-  try {
-    localStorage.setItem(key, JSON.stringify(value))
-  } catch {
-    // bez pamćenja
-  }
+function save(key: SettingKey, value: unknown) {
+  writeSetting(key, JSON.stringify(value))
 }
 
 type Task = { word: ConjWord; form: Form }
