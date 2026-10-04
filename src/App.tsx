@@ -6,17 +6,17 @@ import StoryPlayer from './StoryPlayer'
 import Stories from './Stories'
 import { stories } from './stories'
 
-// Riječi, nova riječ i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
+// Riječi, moje riječi i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
 const Conjugator = lazy(() => import('./Conjugator'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
-const NewWord = lazy(() => import('./NewWord'))
+const MyWords = lazy(() => import('./MyWords'))
 
-type Screen = 'price' | 'rijeci' | 'nova' | 'konjugator'
+type Screen = 'price' | 'rijeci' | 'moje' | 'konjugator'
 
 const CARDS: { screen: Screen; title: string; text: string }[] = [
   { screen: 'price', title: '📚 Priče', text: `${stories.length} priče za shadowing` },
   { screen: 'rijeci', title: '📖 Riječi', text: 'Svih 1304 riječi N5 + N4, s izgovorom' },
-  { screen: 'nova', title: '➕ Nova riječ', text: 'Upiši riječ na koju si naišao' },
+  { screen: 'moje', title: '⭐ Moje riječi', text: 'Označene sa ☆ i one koje upišeš sam' },
   { screen: 'konjugator', title: '🔄 Konjugator', text: 'Nasumični oblici glagola i pridjeva' },
 ]
 
@@ -35,7 +35,7 @@ function App() {
       <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
         {screen === 'konjugator' && <Conjugator onBack={() => setScreen(null)} />}
         {screen === 'rijeci' && <Vocabulary onBack={() => setScreen(null)} />}
-        {screen === 'nova' && <NewWord onBack={() => setScreen(null)} />}
+        {screen === 'moje' && <MyWords onBack={() => setScreen(null)} />}
       </Suspense>
     )
 
