@@ -51,7 +51,6 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 
 ## Shadowing sučelje
 - Reprodukcija rečenice ili chunka, petlja (ponavljanje), prelazak na iduću.
-- Gumb za **snimanje sebe** (MediaRecorder) i preslušavanje uz original. Podržava se samo format koji daje Firefox na Androidu.
 - U prvoj verziji **nema automatskog ocjenjivanja izgovora**. Korisnik sam ocjenjuje. Automatsko ocjenjivanje (Whisper) je moguće proširenje kasnije.
 - Media Session API (kontrole na zaključanom zaslonu i slušalicama) i Screen Wake Lock tijekom vježbanja.
 
@@ -69,6 +68,10 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 - Smjer se mijenja gumbom koji je vidljiv kad je mod upaljen. Dizajn gumba: **kao UNO karta "obrni smjer"** (dvije zakrivljene strelice).
 - **Zašto je odgođen:** rezanje snimke cijele rečenice po vremenskim oznakama zvuči odsječeno (između riječi nema tišine), a korisniku je to više smetalo nego pomoglo. Zato je maknut i dodir na chunk koji pušta samo taj dio.
 - **Ideja ako se vrati:** Azure posebno izgovori svaki raspon (1, 1+2, …), prirodno i bez rezanja. Unutar besplatnog limita.
+
+### Snimanje sebe (odgođeno)
+- Gumb za **snimanje sebe** (MediaRecorder) i preslušavanje uz original. Podržava se samo format koji daje Firefox na Androidu.
+- **Zašto je odgođeno:** korisnik je odlučio da ga zasad preskačemo.
 
 ## Platforma: mobile-first PWA
 - **Ciljani uređaj: samo Android, preglednik Firefox.** iPhone i ostali preglednici se ne podržavaju i ne testiraju.
@@ -118,9 +121,8 @@ public/          # manifest, ikone, service worker
 6. Shadowing sučelje (chunkovi, petlja, isticanje riječi, boje blokova, doslovni prijevod, romaji)
 7. Rendgen mod
 8. FSRS kartice i izvoz/uvoz napretka
-9. Snimanje sebe
-10. Više tema, nestajanje furigane, kanji praćenje
-11. Opcionalno: automatsko ocjenjivanje izgovora, pitch accent
+9. Više tema, nestajanje furigane, kanji praćenje
+10. Opcionalno: snimanje sebe, automatsko ocjenjivanje izgovora, pitch accent
 
 ## Što NE radimo
 - Ne vježbamo pisanje (nema KanjiVG, crtanja znakova ni tipkanja odgovora na japanskom).
