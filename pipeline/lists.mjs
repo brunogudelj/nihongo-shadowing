@@ -1,4 +1,4 @@
-// Preuzima popise riječi (N5 + N4) i gramatike (N5 do N3) iz OpenJLPT-a
+// Preuzima popise riječi (N5 + N4), gramatike (N5 do N3) i kanjija (N5 do N1) iz OpenJLPT-a
 // i sprema ih u data/. Pokreće se jednom (ili kad želimo novu verziju popisa).
 // Pokretanje: npm run popisi
 
@@ -70,12 +70,23 @@ for (const level of ['n5', 'n4', 'n3']) {
   }
 }
 
+// Kanji: svi JLPT razine, da svaki kanji iz priča i riječi ima podatke (čitanja i značenje iz KANJIDIC2).
+const split = (v) => (v ? v.split(/;\s*/).filter(Boolean) : [])
+const kanji = {}
+for (const level of ['n5', 'n4', 'n3', 'n2', 'n1']) {
+  for (const r of await load(`kanji-${level}`)) {
+    kanji[r.character] = { level: r.level, on: split(r.onyomi), kun: split(r.kunyomi), meanings: r.meanings }
+  }
+}
+
 mkdirSync('data', { recursive: true })
 writeFileSync('data/vocab-n4.json', JSON.stringify(vocab, null, 1) + '\n')
 writeFileSync('data/grammar-n3.json', JSON.stringify(grammar, null, 1) + '\n')
+writeFileSync('data/kanji.json', JSON.stringify(kanji) + '\n')
 
 const count = (list, level) => list.filter((x) => x.level === level).length
 console.log(`Riječi: ${vocab.length} (N5 ${count(vocab, 'N5')}, N4 ${count(vocab, 'N4')}) → data/vocab-n4.json`)
+console.log(`Kanji: ${Object.keys(kanji).length} → data/kanji.json`)
 console.log(
   `Gramatika: ${grammar.length} (N5 ${count(grammar, 'N5')}, N4 ${count(grammar, 'N4')}, N3 ${count(grammar, 'N3')}) → data/grammar-n3.json`,
 )
