@@ -10,6 +10,7 @@ import { execFileSync, spawnSync } from 'node:child_process'
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import ffmpeg from 'ffmpeg-static'
 import sdk from 'microsoft-cognitiveservices-speech-sdk'
+import { conjugate, FORMS, kindOf } from '../src/conjugate.ts'
 import { speechId } from '../src/speech.ts'
 
 const VOICE = 'ja-JP-NanamiNeural'
@@ -30,9 +31,14 @@ if (!key || !region) {
 // Što treba izgovoriti. Riječi se izgovaraju iz čitanja (kana), da Azure ne pogriješi čitanje kanjija.
 const texts = new Set()
 for (const w of JSON.parse(readFileSync('data/rijeci.json', 'utf8'))) texts.add(w.reading)
+// Konjugator: osnovni oblik i svi oblici svake riječi.
+for (const w of JSON.parse(readFileSync('data/konjugator.json', 'utf8'))) {
+  texts.add(w.reading)
+  for (const f of FORMS.filter((f) => f.kind === kindOf(w))) texts.add(conjugate(w, f.id).reading)
+}
 
 mkdirSync(DIR, { recursive: true })
-const limit = Number(process.argv[2]) || Infinity
+const limit = process.argv[2] === undefined ? Infinity : Number(process.argv[2])
 const todo = [...texts].filter((t) => t && !existsSync(`${DIR}/${speechId(t)}.mp3`)).slice(0, limit)
 console.log(
   `Tekstova: ${texts.size}, treba izgovoriti: ${todo.length} (${Math.ceil(todo.length / GROUP)} zahtjeva, ~${Math.ceil(todo.length / GROUP / 15)} min)`,

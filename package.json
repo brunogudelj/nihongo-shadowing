@@ -17,7 +17,8 @@
     "doslovno": "node --env-file-if-exists=.env pipeline/literal.mjs",
     "konjugator-rijeci": "node --env-file-if-exists=.env pipeline/conj-words.mjs",
     "rijeci": "node --env-file-if-exists=.env pipeline/vocab-hr.mjs",
-    "izgovor": "node --env-file-if-exists=.env pipeline/speech.mjs"
+    "izgovor": "node --env-file-if-exists=.env pipeline/speech.mjs",
+    "konjugator-znacenja": "node --env-file-if-exists=.env pipeline/conj-meanings.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

@@ -1,10 +1,14 @@
 import { useMemo, useState } from 'react'
 import allWords from '../data/konjugator.json'
+import formMeanings from '../data/konjugator-oblici.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Form, type Kind } from './conjugate'
 import { toRomaji } from './romaji'
+import { speak } from './speech'
 import { stories } from './stories'
 
 const WORDS = allWords as ConjWord[]
+// Hrvatsko značenje svakog oblika: { 食べる: { masu: "jedem (uljudno)", … } }
+const MEANINGS = formMeanings as Record<string, Record<string, string>>
 
 const CLASS_LABEL: Record<string, string> = {
   godan: 'godan glagol',
@@ -167,13 +171,19 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
                 <p className="text-xs tracking-wide text-stone-400 uppercase">
                   {CLASS_LABEL[task.word.class]} · {task.word.level}
                 </p>
-                <p lang="ja" className="mt-2 text-5xl font-medium">
-                  {task.word.word}
-                </p>
-                <p className="mt-1 text-stone-500">
-                  <span lang="ja">{task.word.reading}</span>
-                  <span className="italic"> · {toRomaji(task.word.reading)}</span>
-                </p>
+                <button
+                  onClick={() => speak(task.word.reading)}
+                  className="mt-2 rounded-2xl px-3 py-1 active:bg-stone-200"
+                  aria-label="Poslušaj osnovni oblik"
+                >
+                  <span lang="ja" className="block text-5xl font-medium">
+                    {task.word.word} <span className="align-middle text-2xl">🔊</span>
+                  </span>
+                  <span className="mt-1 block text-stone-500">
+                    <span lang="ja">{task.word.reading}</span>
+                    <span className="italic"> · {toRomaji(task.word.reading)}</span>
+                  </span>
+                </button>
                 <p className="mt-1 text-lg">{task.word.hr}</p>
               </div>
 
@@ -186,13 +196,22 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
 
               {revealed ? (
                 <div className="w-full max-w-sm rounded-2xl bg-white p-5 shadow">
-                  <p lang="ja" className="text-4xl font-medium text-red-700">
-                    {answer.written}
-                  </p>
-                  <p className="mt-1 text-stone-500">
-                    <span lang="ja">{answer.reading}</span>
-                    <span className="italic"> · {toRomaji(answer.reading)}</span>
-                  </p>
+                  <button
+                    onClick={() => speak(answer.reading)}
+                    className="w-full rounded-2xl py-1 active:bg-stone-100"
+                    aria-label="Poslušaj oblik"
+                  >
+                    <span lang="ja" className="block text-4xl font-medium text-red-700">
+                      {answer.written} <span className="align-middle text-2xl">🔊</span>
+                    </span>
+                    <span className="mt-1 block text-stone-500">
+                      <span lang="ja">{answer.reading}</span>
+                      <span className="italic"> · {toRomaji(answer.reading)}</span>
+                    </span>
+                  </button>
+                  {MEANINGS[task.word.word]?.[task.form.id] && (
+                    <p className="mt-2 text-lg">„{MEANINGS[task.word.word][task.form.id]}"</p>
+                  )}
                   <p className="mt-3 text-left text-sm text-stone-700">{answer.rule}</p>
                 </div>
               ) : (

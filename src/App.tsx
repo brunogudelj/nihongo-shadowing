@@ -1,7 +1,9 @@
-import { useState } from 'react'
-import Conjugator from './Conjugator'
+import { lazy, Suspense, useState } from 'react'
 import StoryPlayer from './StoryPlayer'
-import Vocabulary from './Vocabulary'
+
+// Riječi i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
+const Conjugator = lazy(() => import('./Conjugator'))
+const Vocabulary = lazy(() => import('./Vocabulary'))
 import { stories } from './stories'
 
 function App() {
@@ -10,8 +12,12 @@ function App() {
   const story = stories.find((s) => s.id === storyId)
 
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
-  if (screen === 'konjugator') return <Conjugator onBack={() => setScreen(null)} />
-  if (screen === 'rijeci') return <Vocabulary onBack={() => setScreen(null)} />
+  if (screen)
+    return (
+      <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
+        {screen === 'konjugator' ? <Conjugator onBack={() => setScreen(null)} /> : <Vocabulary onBack={() => setScreen(null)} />}
+      </Suspense>
+    )
 
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
