@@ -1,6 +1,7 @@
 // Popis tvojih riječi (★): izgovor na dodir, micanje, i je li pohrana trajna.
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useState } from 'react'
+import AddWordField from './AddWordField'
 import { askPersist, db, removeMyWord } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
@@ -35,6 +36,8 @@ export default function MyWords({ onBack }: { onBack: () => void }) {
           </p>
         )}
 
+        <AddWordField />
+
         {words && words.length === 0 && (
           <p className="mt-8 text-center text-stone-400">Još nema riječi. Dodaj ih sa ☆.</p>
         )}
@@ -57,6 +60,7 @@ export default function MyWords({ onBack }: { onBack: () => void }) {
                   )}
                   <span className="text-sm text-stone-400 italic">{toRomaji(w.reading)}</span>
                   <span className="block text-stone-700">{w.hr}</span>
+                  {w.source === 'rucno' && <span className="text-xs text-stone-400">upisano ručno · zasad bez izgovora</span>}
                 </span>
               </button>
               <button

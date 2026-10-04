@@ -7,7 +7,7 @@ export type MyWord = {
   word: string
   reading: string
   hr: string
-  source: string // odakle je dodana: rijeci, prica, konjugator
+  source: string // odakle je dodana: rijeci, prica, konjugator, rucno (upisana sama, još bez izgovora)
   addedAt: number
 }
 
