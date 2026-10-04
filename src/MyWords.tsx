@@ -2,6 +2,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useState } from 'react'
 import AddWordField from './AddWordField'
+import BackupPanel from './BackupPanel'
 import { askPersist, db, removeMyWord } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
@@ -31,8 +32,8 @@ export default function MyWords({ onBack }: { onBack: () => void }) {
         </p>
         {persisted === false && (
           <p className="mt-2 rounded-xl bg-amber-100 p-3 text-sm text-amber-900">
-            Preglednik nije odobrio trajnu pohranu, pa bi mogao obrisati ove podatke kad mu treba mjesta. Uskoro će biti
-            gumb za izvoz (sigurnosnu kopiju).
+            Preglednik nije odobrio trajnu pohranu, pa bi mogao obrisati ove podatke kad mu treba mjesta. Zato redovito
+            izvezi sigurnosnu kopiju (dolje).
           </p>
         )}
 
@@ -73,6 +74,8 @@ export default function MyWords({ onBack }: { onBack: () => void }) {
             </li>
           ))}
         </ul>
+
+        <BackupPanel />
       </main>
     </KanjiMagnifier>
   )
