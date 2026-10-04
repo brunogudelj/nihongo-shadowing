@@ -1,7 +1,6 @@
-// Polje "Dodaj riječ": prijedlozi s popisa riječi (japanski, romaji ili hrvatski),
-// a ako riječi nema na popisu, ručni unos (pismo, čitanje, značenje). Ručno dodana riječ još nema izgovor.
+// Polje za novu riječ: dok tipkaš (japanski, romaji ili hrvatski), pokaže riječi koje već postoje na
+// popisu; ako je nema, ručni unos (pismo, čitanje, značenje). Ručno dodana riječ još nema izgovor.
 import { useEffect, useMemo, useState } from 'react'
-import AddWord from './AddWord'
 import { addMyWord } from './db'
 import { isLatin, toHiragana } from './kana'
 import { KanjiText } from './Kanji'
@@ -53,7 +52,7 @@ export default function AddWordField() {
 
   return (
     <section className="mt-4 rounded-2xl bg-white p-4 shadow-sm">
-      <p className="font-semibold">Dodaj riječ</p>
+      <p className="font-semibold">Upiši riječ</p>
       <input
         type="search"
         value={query}
@@ -68,7 +67,10 @@ export default function AddWordField() {
       {saved && <p className="mt-2 text-sm text-emerald-700">Dodano: {saved}</p>}
 
       {suggestions.length > 0 && (
-        <ul className="mt-2 flex flex-col gap-1">
+        <p className="mt-2 text-sm text-stone-500">Već na popisu riječi (dodir pušta izgovor):</p>
+      )}
+      {suggestions.length > 0 && (
+        <ul className="mt-1 flex flex-col gap-1">
           {suggestions.map((w) => (
             <li key={w.word + w.reading} className="flex items-center gap-2">
               <button
@@ -85,7 +87,6 @@ export default function AddWordField() {
                   <span className="italic text-stone-400">{w.romaji}</span> · {w.hr}
                 </span>
               </button>
-              <AddWord word={w.word} reading={w.reading} hr={w.hr} source="rijeci" />
             </li>
           ))}
         </ul>

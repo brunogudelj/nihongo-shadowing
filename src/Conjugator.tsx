@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react'
 import allWords from '../data/konjugator.json'
 import formMeanings from '../data/konjugator-oblici.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Form, type Kind } from './conjugate'
-import AddWord from './AddWord'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
 import { speak } from './speech'
@@ -187,10 +186,7 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
                       <span className="italic"> · {toRomaji(task.word.reading)}</span>
                     </span>
                   </button>
-                  <p className="mt-1 flex items-center justify-center gap-2 text-lg">
-                    {task.word.hr}
-                    <AddWord word={task.word.word} reading={task.word.reading} hr={task.word.hr} source="konjugator" />
-                  </p>
+                  <p className="mt-1 text-lg">{task.word.hr}</p>
                 </div>
 
                 <div className="rounded-2xl bg-amber-100 px-5 py-3">

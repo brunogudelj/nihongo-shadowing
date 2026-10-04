@@ -1,31 +1,41 @@
-import { lazy, Suspense, useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
+import { lazy, Suspense, useState } from 'react'
+import BackupPanel from './BackupPanel'
 import { db } from './db'
 import StoryPlayer from './StoryPlayer'
+import Stories from './Stories'
+import { stories } from './stories'
 
-// Riječi i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
+// Riječi, nova riječ i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
 const Conjugator = lazy(() => import('./Conjugator'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
-const MyWords = lazy(() => import('./MyWords'))
-import { stories } from './stories'
+const NewWord = lazy(() => import('./NewWord'))
+
+type Screen = 'price' | 'rijeci' | 'nova' | 'konjugator'
+
+const CARDS: { screen: Screen; title: string; text: string }[] = [
+  { screen: 'price', title: '📚 Priče', text: `${stories.length} priče za shadowing` },
+  { screen: 'rijeci', title: '📖 Riječi', text: 'Svih 1304 riječi N5 + N4, s izgovorom' },
+  { screen: 'nova', title: '➕ Nova riječ', text: 'Upiši riječ na koju si naišao' },
+  { screen: 'konjugator', title: '🔄 Konjugator', text: 'Nasumični oblici glagola i pridjeva' },
+]
 
 function App() {
   const [storyId, setStoryId] = useState<string>()
-  const [screen, setScreen] = useState<'konjugator' | 'rijeci' | 'moje' | null>(null)
-  const myCount = useLiveQuery(() => db.myWords.count(), [])
-  // Napredak: koliko je rečenica gotovo u svakoj priči, i gdje si zadnje stao.
-  const done = useLiveQuery(() => db.sentences.where('storyId').anyOf(stories.map((s) => s.id)).toArray(), [])
+  const [screen, setScreen] = useState<Screen | null>(null)
+  // Gdje si zadnje stao, za ▶ Nastavi.
   const lastPlace = useLiveQuery(() => db.places.orderBy('updatedAt').last(), [])
   const lastStory = stories.find((s) => s.id === lastPlace?.storyId)
   const story = stories.find((s) => s.id === storyId)
 
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
+  if (screen === 'price') return <Stories onOpen={setStoryId} onBack={() => setScreen(null)} />
   if (screen)
     return (
       <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
         {screen === 'konjugator' && <Conjugator onBack={() => setScreen(null)} />}
         {screen === 'rijeci' && <Vocabulary onBack={() => setScreen(null)} />}
-        {screen === 'moje' && <MyWords onBack={() => setScreen(null)} />}
+        {screen === 'nova' && <NewWord onBack={() => setScreen(null)} />}
       </Suspense>
     )
 
@@ -43,51 +53,25 @@ function App() {
           </p>
         </button>
       )}
-      <ul className="flex flex-col gap-3">
-        {stories.map((s) => (
-          <li key={s.id}>
-            <button
-              onClick={() => setStoryId(s.id)}
-              className="w-full rounded-2xl bg-white p-5 text-left shadow-sm active:bg-stone-100"
-            >
-              <p lang="ja" className="text-2xl font-medium">
-                {s.title_ja}
-              </p>
-              <p className="mt-1 text-stone-500">
-                {s.title_hr} · {s.sentences.length} rečenica
-                {(() => {
-                  const n = done?.filter((r) => r.storyId === s.id && r.status === 'gotova').length ?? 0
-                  return n > 0 ? ` · ${n} / ${s.sentences.length} gotovo` : ''
-                })()}
-              </p>
-            </button>
-          </li>
-        ))}
-      </ul>
 
-      <div className="mt-6 flex flex-col gap-3">
-        <button
-          onClick={() => setScreen('moje')}
-          className="w-full rounded-2xl bg-amber-400 p-5 text-left text-stone-900 active:bg-amber-500"
-        >
-          <p className="text-xl font-semibold">⭐ Moje riječi</p>
-          <p className="mt-1 text-stone-700">{myCount ? `${myCount} riječi` : 'Dodaj riječi sa ☆'}</p>
-        </button>
-        <button
-          onClick={() => setScreen('rijeci')}
-          className="w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
-        >
-          <p className="text-xl font-semibold">📖 Riječi</p>
-          <p className="mt-1 text-stone-300">Svih 1304 riječi N5 + N4, s izgovorom</p>
-        </button>
-        <button
-          onClick={() => setScreen('konjugator')}
-          className="w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
-        >
-          <p className="text-xl font-semibold">🔄 Konjugator</p>
-          <p className="mt-1 text-stone-300">Nasumični oblici glagola i pridjeva</p>
-        </button>
+      <div className="flex flex-col gap-3">
+        {CARDS.map((c) => (
+          <button
+            key={c.screen}
+            onClick={() => setScreen(c.screen)}
+            className="w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
+          >
+            <p className="text-xl font-semibold">{c.title}</p>
+            <p className="mt-1 text-stone-300">{c.text}</p>
+          </button>
+        ))}
       </div>
+
+      {/* Sigurnosna kopija napretka, na dnu (rijetko treba). */}
+      <details className="mt-8 text-stone-600">
+        <summary className="cursor-pointer text-sm">💾 Sigurnosna kopija napretka</summary>
+        <BackupPanel />
+      </details>
     </main>
   )
 }

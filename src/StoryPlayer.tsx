@@ -1,7 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useRef, useState } from 'react'
 import { audioUrl, type ChunkInfo, type Story } from './stories'
-import AddStoryWord from './AddStoryWord'
 import { db, savePlace, setSentenceStatus, type SentenceStatus } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { useMediaSession, useWakeLock } from './practice'
@@ -9,11 +8,13 @@ import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
 
-type View = 'puno' | 'cisto' | 'sluh'
+// Razina pomoći, od najviše prema najmanjoj; jedan gumb ih mijenja redom.
+type View = 'rendgen' | 'puno' | 'cisto' | 'sluh'
 const VIEWS: Record<View, { label: string; next: View }> = {
+  rendgen: { label: '🔍 Rendgen', next: 'puno' },
   puno: { label: 'Puno', next: 'cisto' },
   cisto: { label: 'Čisto', next: 'sluh' },
-  sluh: { label: '👂 Sluh', next: 'puno' },
+  sluh: { label: '👂 Sluh', next: 'rendgen' },
 }
 // Stanka u petlji, kao dio duljine odsviranog dijela; 0 = preklapanje (ponavlja se odmah).
 const PAUSES = [0, 1, 1.5, 2]
@@ -101,14 +102,12 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [currentWord, setCurrentWord] = useState(-1)
   // Blok koji svira (ili se ponavlja u petlji); -1 = rečenica.
   const [activeChunk, setActiveChunk] = useState(-1)
-  // Rendgen: formule iznad blokova i objašnjenje riječi na dodir (umjesto zvuka).
-  const [xray, setXray] = useState(false)
-  // Prikaz rečenice (pamti se u pregledniku): puno (sve pomoći), čisto (samo japanski tekst)
-  // ili sluh (tekst skriven dok ga ne otkriješ dodirom; na svakoj rečenici iznova).
+  // Razina pomoći (pamti se u pregledniku): rendgen (formule, objašnjenje riječi na dodir umjesto zvuka),
+  // puno (sve pomoći), čisto (samo japanski tekst) ili sluh (tekst skriven dok ga ne otkriješ dodirom).
   const [view, setView] = useState<View>(() => {
     try {
       const v = localStorage.getItem('prikaz')
-      if (v === 'cisto' || v === 'sluh') return v
+      if (v === 'rendgen' || v === 'cisto' || v === 'sluh') return v
       return localStorage.getItem('cisto') === '1' ? 'cisto' : 'puno'
     } catch {
       return 'puno'
@@ -116,12 +115,12 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   })
   const [revealed, setRevealed] = useState(false)
   const clean = view === 'cisto'
+  const xray = view === 'rendgen'
   const hidden = view === 'sluh' && !revealed
   function cycleView() {
     const v = VIEWS[view].next
     setView(v)
     setRevealed(false)
-    setXray(false)
     setSelected(null)
     try {
       localStorage.setItem('prikaz', v)
@@ -318,23 +317,9 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             <p className="text-sm text-stone-400" aria-label={`Rečenica ${index + 1} od ${story.sentences.length}`}>
               {index + 1} / {story.sentences.length}
             </p>
-            {view === 'puno' && (
-              <button
-                onClick={() => {
-                  setXray(!xray)
-                  setSelected(null)
-                }}
-                aria-pressed={xray}
-                className={`rounded-full px-3 py-2 text-sm font-semibold ${
-                  xray ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
-                }`}
-              >
-                🔍 Rendgen
-              </button>
-            )}
             <button
               onClick={cycleView}
-              aria-label={`Prikaz: ${VIEWS[view].label}. Dodirni za idući.`}
+              aria-label={`Razina pomoći: ${VIEWS[view].label}. Dodirni za iduću.`}
               className={`rounded-full px-3 py-2 text-sm font-semibold ${
                 view !== 'puno' ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
               }`}
@@ -382,7 +367,11 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             <>
               {/* Čisti način: samo rečenica, kako bi je napisao Japanac. */}
               <p lang="ja" className="text-[2rem] leading-[1.6] font-medium">
-                <KanjiText text={sentence.ja} />
+                {sentence.words.map((w, wi) => (
+                  <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
+                    <KanjiText text={w.text} />
+                  </span>
+                ))}
               </p>
               {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
             </>
@@ -526,11 +515,6 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
                       · {WORD_ROLE[w.role] ?? w.role}
                     </p>
                     <p className="mt-2 text-stone-800">{w.explanation_hr}</p>
-                    {w.role !== 'cestica' && w.role !== 'interpunkcija' && (
-                      <div className="mt-3">
-                        <AddStoryWord w={w} />
-                      </div>
-                    )}
                   </div>
                 )
               })()}
