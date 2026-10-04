@@ -165,10 +165,17 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
     setKinds(v)
     save('konj-vrste', v)
   }
-  function toggleForm(id: string) {
-    const v = formIds.includes(id) ? formIds.filter((f) => f !== id) : [...formIds, id]
+  function setForms(v: string[]) {
     setFormIds(v)
     save('konj-oblici', v)
+  }
+  function toggleForm(id: string) {
+    setForms(formIds.includes(id) ? formIds.filter((f) => f !== id) : [...formIds, id])
+  }
+  // Sve oblike jedne skupine (ili svih skupina) odjednom uključi ili isključi.
+  function setGroup(kind: Kind | null, on: boolean) {
+    const ids = FORMS.filter((f) => kind === null || f.kind === kind).map((f) => f.id)
+    setForms(on ? [...new Set([...formIds, ...ids])] : formIds.filter((id) => !ids.includes(id)))
   }
   function chooseSource(v: Source) {
     setSource(v)
@@ -237,9 +244,25 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
                 ))}
               </div>
             </div>
+            <div className="flex gap-2">
+              <button onClick={() => setGroup(null, false)} className="flex-1 rounded-xl bg-stone-200 py-2 font-semibold">
+                Isključi sve oblike
+              </button>
+              <button onClick={() => setGroup(null, true)} className="flex-1 rounded-xl bg-stone-200 py-2 font-semibold">
+                Uključi sve
+              </button>
+            </div>
             {KINDS.filter((k) => kinds.includes(k.kind)).map((k) => (
               <div key={k.kind}>
-                <p className="mb-2 font-semibold">Oblici: {k.label}</p>
+                <div className="mb-2 flex items-center gap-2">
+                  <p className="flex-1 font-semibold">Oblici: {k.label}</p>
+                  <button onClick={() => setGroup(k.kind, true)} className="rounded-full bg-stone-100 px-3 py-1 text-stone-600">
+                    sve
+                  </button>
+                  <button onClick={() => setGroup(k.kind, false)} className="rounded-full bg-stone-100 px-3 py-1 text-stone-600">
+                    ništa
+                  </button>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {FORMS.filter((f) => f.kind === k.kind).map((f) => (
                     <Chip key={f.id} on={formIds.includes(f.id)} onClick={() => toggleForm(f.id)}>
