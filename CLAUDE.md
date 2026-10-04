@@ -124,6 +124,8 @@ public/          # manifest, ikone, service worker
 9. Više tema, nestajanje furigane, kanji praćenje
 10. Opcionalno: snimanje sebe, automatsko ocjenjivanje izgovora, pitch accent
 
+**Od koraka 8 dalje vrijedi `docs/specifikacija-dorade.md`** (dorade s kriterijima "gotovo kada"), uz plan učenja `docs/japanski-plan-ucenja.md`. Dogovoreni redoslijed: 1 (izvoz/uvoz) → 1K (konjugator Znao/Nisam) → 1V (vodič, 75 min, u malim dijelovima) → ostalo redom iz specifikacije. Pravila vodiča pokrivena su testovima (Vitest).
+
 ## Što NE radimo
 - Ne vježbamo pisanje (nema KanjiVG, crtanja znakova ni tipkanja odgovora na japanskom).
 - Ne gradimo vlastiti server ni korisničke račune.
