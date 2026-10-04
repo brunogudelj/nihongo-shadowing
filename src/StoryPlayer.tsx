@@ -8,6 +8,8 @@ import { useMediaSession, useWakeLock } from './practice'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
+// Stanka u petlji, kao dio duljine odsviranog dijela; 0 = preklapanje (ponavlja se odmah).
+const PAUSES = [0, 1, 1.5, 2]
 
 // Status rečenice: kako se prikazuje i koji je idući na dodir.
 const STATUS: Record<SentenceStatus, { label: string; dot: string; chip: string; next: SentenceStatus }> = {
@@ -117,6 +119,22 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   const [selected, setSelected] = useState<{ sentence: number; word?: number; chunk?: number } | null>(null)
   // Petlja: rečenica se ponavlja, sa stankom u kojoj korisnik ponavlja naglas.
   const [loop, setLoop] = useState(false)
+  const [pause, setPause] = useState(() => {
+    try {
+      const v = Number(localStorage.getItem('stanka'))
+      return PAUSES.includes(v) && localStorage.getItem('stanka') !== null ? v : 1
+    } catch {
+      return 1
+    }
+  })
+  function choosePause(v: number) {
+    setPause(v)
+    try {
+      localStorage.setItem('stanka', String(v))
+    } catch {
+      // bez pamćenja
+    }
+  }
   const [waiting, setWaiting] = useState(false)
   const waitTimerRef = useRef<number | undefined>(undefined)
   // Najnovije verzije funkcija, za pozive iz odgođenog ponavljanja
@@ -187,9 +205,14 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
       setActiveChunk(-1)
       return
     }
+    // Preklapanje: odmah ispočetka, bez stanke "Ponovi".
+    if (pause === 0) {
+      waitTimerRef.current = window.setTimeout(() => replayRef.current(mode), 150)
+      return
+    }
     const partMs = (audioRef.current?.duration ?? sentence.duration_ms / 1000) * 1000
     setWaiting(true)
-    waitTimerRef.current = window.setTimeout(() => replayRef.current(mode), partMs / speed + 500)
+    waitTimerRef.current = window.setTimeout(() => replayRef.current(mode), (pause * partMs) / speed + 400)
   }
 
   useEffect(() => {
@@ -513,6 +536,23 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
         </div>
 
         <div className="flex flex-col gap-3 pb-4">
+          {loop && (
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-stone-500">Stanka:</span>
+              {PAUSES.map((v) => (
+                <button
+                  key={v}
+                  onClick={() => choosePause(v)}
+                  aria-pressed={pause === v}
+                  className={`flex-1 rounded-xl py-2 font-semibold ${
+                    pause === v ? 'bg-red-700 text-white' : 'bg-stone-200 text-stone-700'
+                  }`}
+                >
+                  {v === 0 ? '0 · uz glas' : `${String(v).replace('.', ',')}×`}
+                </button>
+              ))}
+            </div>
+          )}
           <div className="grid grid-cols-4 gap-3">
             {SPEEDS.map((rate) => (
               <button
