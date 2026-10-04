@@ -95,6 +95,31 @@ export const VODIC = {
   storyWordsDays: 3,
   // Prelazak na idući red: toliko sesija zaredom s barem 9/10 "Znao" u oblicima reda.
   konjugatorPassSessions: 2,
+
+  // Korak 1, ponavljanje riječi: zadnjih N dodanih, pa M nasumičnih starijih. Riječ s toliko "Nisam"
+  // zaredom ide sutra na početak.
+  wordReview: { recent: 25, older: 10, nisamStreakForTomorrow: 2 },
+  // Subota: priča je gotova ako padne najviše ovoliko rečenica; inače neuspjele idu na doradu.
+  storyTestMaxFails: 2,
+  // Traka "Naruči novu priču" kad u redu ostane manje od ovoliko neučenih rečenica.
+  orderStoryBelow: 10,
+  // Teme novih priča s gramatičkom metom (plan učenja), redom.
+  storyTopics: [
+    { tema: 'Kupnja karte za shinkansen na postaji', meta: '～たいです, ～をください, brojevi i sati' },
+    { tema: 'Dolazak u Nagasaki, traženje hotela', meta: '～ている (stanje i radnja u tijeku)' },
+    { tema: 'Ručak: 博多ラーメン, naručivanje', meta: '～てもいいですか, ～ないでください' },
+    { tema: 'Onsen u Beppuu', meta: '～たことがある, ～たり～たり' },
+    { tema: 'Vrijeme se mijenja, kišobran', meta: '～と思う, ～でしょう' },
+    { tema: 'Pitanje za put, izgubljen na postaji', meta: '～たら, ～と (uvjet), smjerovi' },
+    { tema: 'Suveniri i darovi', meta: 'あげる / くれる / もらう' },
+    { tema: 'Usporedba Kyota i Zagreba', meta: '～より, ～のほうが, ～がいちばん' },
+    { tema: 'Vlak kasni, promjena plana', meta: '～なければならない, ～てしまう' },
+    { tema: 'Razgovor s Japancem u vlaku', meta: '～そうだ, ～らしい, ～ようだ (N3)' },
+    { tema: 'Prenoćište kod obitelji, uljudnost', meta: 'osnove keigoa: いらっしゃる, いただく' },
+    { tema: 'Planiranje sljedećeg putovanja', meta: '～ようと思う, ～つもり, ～ようにする (N3)' },
+  ],
+  // Tjedni izvještaj: najviše ovoliko redaka.
+  reportMaxLines: 25,
 }
 
 export type VodicConfig = typeof VODIC

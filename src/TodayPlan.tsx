@@ -3,31 +3,13 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useState } from 'react'
 import { FORMS } from './conjugate'
 import { db } from './db'
+import { VODIC, type StepId } from './vodic-config'
+import { initialState, planDay, today, type Plan } from './vodic-plan'
+import { nextTopic, unlearnedLeft } from './vodic-rules'
+import { listOf, STEP_TITLE, STORY_INFO, titleOf } from './vodic-text'
 import { stories } from './stories'
-import type { StepId } from './vodic-config'
-import { initialState, planDay, today, type Plan, type SentenceRef } from './vodic-plan'
-
-const STEP_TITLE: Record<StepId, string> = {
-  rijeci: 'Ponavljanje riječi',
-  zagrijavanje: 'Zagrijavanje',
-  nove: 'Nove rečenice',
-  cisto: 'Čisto test',
-  konjugator: 'Konjugator',
-  'nove-rijeci': 'Nove riječi',
-  citanje: 'Čitanje',
-  dorada: 'Dorada rečenica u radu',
-  'test-price': 'Test cijele priče',
-}
 
 const DAY_NAMES = ['', 'ponedjeljak', 'utorak', 'srijeda', 'četvrtak', 'petak', 'subota', 'nedjelja']
-
-const titleOf = (id: string) => stories.find((s) => s.id === id)?.title_ja ?? id
-const listOf = (refs: SentenceRef[]) => {
-  if (!refs.length) return ''
-  const groups = new Map<string, number[]>()
-  for (const r of refs) groups.set(r.storyId, [...(groups.get(r.storyId) ?? []), r.index + 1])
-  return [...groups].map(([sid, xs]) => `${titleOf(sid)} ${xs.join(', ')}`).join(' · ')
-}
 
 // Kratki opis što korak danas sadrži.
 function detail(id: StepId, plan: Plan): string {
@@ -53,8 +35,9 @@ function detail(id: StepId, plan: Plan): string {
   }
 }
 
-export default function TodayPlan() {
+export default function TodayPlan({ onStart }: { onStart: (short: boolean) => void }) {
   const [short, setShort] = useState(false)
+  const date = today()
   const data = useLiveQuery(async () => ({
     state: (await db.vodic.get('stanje')) ?? initialState(),
     sentences: await db.sentences.toArray(),
@@ -62,20 +45,28 @@ export default function TodayPlan() {
   }))
   if (!data) return null
 
-  const plan = planDay({
-    date: today(),
-    ...data,
-    stories: stories.map((s) => ({ id: s.id, sentenceCount: s.sentences.length })),
-    short,
-  })
+  // Ako je današnji trening već pokrenut, prikazuje se zamrznuti plan.
+  const day = data.days.find((d) => d.date === date)
+  const started = day?.plan as Plan | undefined
+  const plan = started ?? planDay({ date, ...data, stories: STORY_INFO, short })
+  const stepIndex = day?.stepIndex ?? 0
+  const finished = !!started && stepIndex >= plan.steps.length
   const dow = new Date(plan.date + 'T12:00:00').getDay() || 7
+  const left = unlearnedLeft(data.state, STORY_INFO, data.sentences)
+  const topic = nextTopic(stories.length)
+
+  // "Kreni danas": vodič počinje danas umjesto u ponedjeljak (prvi dan je uvijek običan dan).
+  async function startToday() {
+    await db.vodic.put({ ...data!.state, startDate: date, storyStartedOn: date })
+    onStart(false)
+  }
 
   return (
     <section className="mb-4 rounded-2xl bg-white p-5 shadow-sm">
       <p className="text-xl font-semibold">🧭 Današnji trening ({plan.totalMinutes} min)</p>
       {plan.kind === 'prije-pocetka' && (
         <p className="mt-1 text-sm text-amber-800">
-          Vodič kreće u ponedjeljak {plan.date.slice(8, 10)}. {plan.date.slice(5, 7)}. Ovo je plan za taj dan.
+          Vodič kreće u ponedjeljak {plan.date.slice(8, 10)}. {plan.date.slice(5, 7)}. Ovo je plan za taj dan. Možeš i početi danas.
         </p>
       )}
       {plan.kind === 'povratak' && (
@@ -92,8 +83,8 @@ export default function TodayPlan() {
       <ol className="mt-3 flex flex-col gap-2">
         {plan.steps.map((s, i) => (
           <li key={s.id} className="flex gap-3">
-            <span className="w-6 shrink-0 text-right text-stone-400">{i + 1}.</span>
-            <span className="min-w-0 flex-1">
+            <span className="w-6 shrink-0 text-right text-stone-400">{started && i < stepIndex ? '✓' : `${i + 1}.`}</span>
+            <span className={`min-w-0 flex-1 ${started && i < stepIndex ? 'text-stone-400' : ''}`}>
               <span className="font-semibold">{STEP_TITLE[s.id]}</span>
               {detail(s.id, plan) && (
                 <span className="block text-sm text-stone-500" lang="ja">
@@ -106,16 +97,43 @@ export default function TodayPlan() {
         ))}
       </ol>
 
-      <button
-        onClick={() => setShort(!short)}
-        aria-pressed={short}
-        className={`mt-4 w-full rounded-xl py-2 text-sm font-semibold ${
-          short ? 'bg-stone-800 text-white' : 'bg-stone-100 text-stone-700'
-        }`}
-      >
-        {short ? '✕ Natrag na puni plan' : 'Imam samo 20 min'}
-      </button>
-      <p className="mt-2 text-center text-xs text-stone-400">Pokretanje koraka dolazi uskoro (vodič, dio 1V-b).</p>
+      {plan.kind === 'prije-pocetka' ? (
+        <button onClick={() => void startToday()} className="mt-4 w-full rounded-xl bg-red-700 py-3 text-lg font-semibold text-white active:bg-red-800">
+          ▶ Kreni danas
+        </button>
+      ) : finished ? (
+        <button onClick={() => onStart(false)} className="mt-4 w-full rounded-xl bg-emerald-600 py-3 font-semibold text-white">
+          ✓ Današnji trening je gotov
+        </button>
+      ) : (
+        <button
+          onClick={() => onStart(short)}
+          className="mt-4 w-full rounded-xl bg-red-700 py-3 text-lg font-semibold text-white active:bg-red-800"
+        >
+          {started ? `▶ Nastavi (korak ${stepIndex + 1}/${plan.steps.length})` : '▶ Kreni'}
+        </button>
+      )}
+      {!started && plan.kind !== 'prije-pocetka' && (
+        <button
+          onClick={() => setShort(!short)}
+          aria-pressed={short}
+          className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold ${
+            short ? 'bg-stone-800 text-white' : 'bg-stone-100 text-stone-700'
+          }`}
+        >
+          {short ? '✕ Natrag na puni plan' : 'Imam samo 20 min'}
+        </button>
+      )}
+
+      {/* Narudžba nove priče: u redu je ostalo malo neučenih rečenica. */}
+      {left < VODIC.orderStoryBelow && topic && (
+        <div className="mt-4 rounded-xl bg-sky-50 p-3 text-sm text-sky-900">
+          <p className="font-semibold">📝 Naruči novu priču (ostalo {left} neučenih rečenica)</p>
+          <p className="mt-1">
+            Tema: {topic.tema}. Gramatička meta: <span lang="ja">{topic.meta}</span>
+          </p>
+        </div>
+      )}
     </section>
   )
 }

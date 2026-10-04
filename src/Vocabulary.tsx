@@ -1,5 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { addMyWord, db, wordId } from './db'
 import allWords from '../data/rijeci.json'
 import AddWord from './AddWord'
@@ -14,7 +14,10 @@ const WORDS = (allWords as Entry[]).map((w) => ({ ...w, romaji: toRomaji(w.readi
 
 const LEVELS = ['N5', 'N4'] as const
 
-export default function Vocabulary({ onBack }: { onBack: () => void }) {
+// Vodič otvara popis s 🎯 Sljedećih 8, s prednošću riječima iz tekuće priče (`priority` = osnovni oblici).
+export type VocabPreset = { next8: true; priority: string[]; note?: string }
+
+export default function Vocabulary({ onBack, preset }: { onBack: () => void; preset?: VocabPreset }) {
   const [query, setQuery] = useState('')
   const [levels, setLevels] = useState<string[]>([...LEVELS])
   const [playing, setPlaying] = useState<string>()
@@ -24,13 +27,21 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
 
   async function nextEight() {
     const mine = new Set(await db.myWords.toCollection().primaryKeys())
-    const order = (l: string) => (l === 'N5' ? 0 : 1)
+    const priority = new Set(preset?.priority ?? [])
+    // Prvo riječi iz tekuće priče (ako ih vodič zada), pa N5, pa N4.
+    const order = (w: (typeof WORDS)[number]) => (priority.has(w.word) ? 0 : w.level === 'N5' ? 1 : 2)
     const next = WORDS.filter((w) => levels.includes(w.level) && !mine.has(wordId(w.word, w.reading)))
-      .sort((a, b) => order(a.level) - order(b.level))
+      .sort((a, b) => order(a) - order(b))
       .slice(0, 8)
     setBatch(next.map((w) => w.word + w.reading))
     setQuery('')
   }
+
+  // Vodič: odmah otvori Sljedećih 8.
+  useEffect(() => {
+    if (preset?.next8) void nextEight()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   async function addAll() {
     for (const w of WORDS.filter((w) => batch?.includes(w.word + w.reading))) {
@@ -72,7 +83,7 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
         <header className="sticky top-[env(safe-area-inset-top,0px)] z-10 -mx-6 -mt-6 flex flex-col gap-3 bg-stone-50 px-6 pt-6 pb-3">
           <div className="flex items-center justify-between">
             <button onClick={onBack} className="rounded-full px-3 py-2 text-stone-500 active:bg-stone-200">
-              ← Natrag
+              {preset ? '← Vodič' : '← Natrag'}
             </button>
             <p className="text-sm text-stone-400">{shown.length} riječi</p>
           </div>
@@ -122,6 +133,7 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
             </div>
           )}
           {!batch && <p className="-mt-1 text-xs text-stone-400">Dodirni riječ da je čuješ.</p>}
+          {preset?.note && <p className="rounded-xl bg-amber-100 px-3 py-2 text-sm text-amber-900">🧭 {preset.note}</p>}
         </header>
 
         <ul className="flex flex-col gap-2">

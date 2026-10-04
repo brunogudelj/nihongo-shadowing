@@ -61,10 +61,18 @@ type Focus = { kind: 'point'; point: string; label: string } | { kind: 'word'; w
 const pointOf = (w: ConjWord, formId: string) => `${formId}|${ruleOf(w, formId).key}`
 const randomOf = <T,>(xs: T[]): T | null => (xs.length ? xs[Math.floor(Math.random() * xs.length)] : null)
 
-export default function Conjugator({ onBack }: { onBack: () => void }) {
-  const [source, setSource] = useState<Source>(() => load('konj-izvor', 'sve'))
-  const [kinds, setKinds] = useState<Kind[]>(() => load('konj-vrste', ['glagol', 'i-pridjev', 'na-pridjev']))
-  const [formIds, setFormIds] = useState<string[]>(() => load('konj-oblici', FORMS.map((f) => f.id)))
+// Postavke s kojima vodič otvara konjugator: oblici tjedna (prazno = svi), izvor riječi,
+// pola zadataka iz slabih točaka. Odgovori se bilježe s izvorom "vodic".
+export type ConjPreset = { forms: string[]; source: 'price' | 'sve'; halfWeak?: boolean; note?: string }
+
+export default function Conjugator({ onBack, preset }: { onBack: () => void; preset?: ConjPreset }) {
+  const [source, setSource] = useState<Source>(() => preset?.source ?? load('konj-izvor', 'sve'))
+  const [kinds, setKinds] = useState<Kind[]>(() =>
+    preset ? KINDS.map((k) => k.kind) : load('konj-vrste', ['glagol', 'i-pridjev', 'na-pridjev']),
+  )
+  const [formIds, setFormIds] = useState<string[]>(() =>
+    preset ? (preset.forms.length ? preset.forms : FORMS.map((f) => f.id)) : load('konj-oblici', FORMS.map((f) => f.id)),
+  )
   const [view, setView] = useState<'vjezba' | 'postavke' | 'zapinjem'>('vjezba')
   const [revealed, setRevealed] = useState(false)
   const [focus, setFocus] = useState<Focus>(null)
@@ -85,6 +93,20 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
 
   const forms = useMemo(() => FORMS.filter((f) => formIds.includes(f.id) && kinds.includes(f.kind)), [formIds, kinds])
 
+  // Zadaci iz slabih točaka (unutar uključenih oblika) i slabih riječi.
+  const weakTasks = useMemo((): Task[] => {
+    const fromPoints = weak.flatMap((p) => {
+      const form = forms.find((f) => f.id === p.form)
+      if (!form) return []
+      return WORDS.filter((w) => kindOf(w) === form.kind && pointOf(w, form.id) === p.point).map((word) => ({ word, form }))
+    })
+    const fromWords = weakW.flatMap(({ word }) => {
+      const w = WORDS.find((x) => x.word === word)
+      return w ? forms.filter((f) => f.kind === kindOf(w)).map((form) => ({ word: w, form })) : []
+    })
+    return [...fromPoints, ...fromWords]
+  }, [weak, weakW, forms])
+
   // Svi mogući zadaci prema izvoru (ili prema odabranoj stavci iz "Gdje zapinjem").
   const tasks = useMemo((): Task[] => {
     if (focus?.kind === 'point') {
@@ -100,22 +122,10 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
       const on = own.filter((f) => formIds.includes(f.id))
       return (on.length ? on : own).map((form) => ({ word, form }))
     }
-    if (source === 'slabe') {
-      // Slabe točke (unutar uključenih oblika) i slabe riječi.
-      const fromPoints = weak.flatMap((p) => {
-        const form = forms.find((f) => f.id === p.form)
-        if (!form) return []
-        return WORDS.filter((w) => kindOf(w) === form.kind && pointOf(w, form.id) === p.point).map((word) => ({ word, form }))
-      })
-      const fromWords = weakW.flatMap(({ word }) => {
-        const w = WORDS.find((x) => x.word === word)
-        return w ? forms.filter((f) => f.kind === kindOf(w)).map((form) => ({ word: w, form })) : []
-      })
-      return [...fromPoints, ...fromWords]
-    }
+    if (source === 'slabe') return weakTasks
     const words = (source === 'price' ? STORY_WORDS : WORDS).filter((w) => kinds.includes(kindOf(w)))
     return words.flatMap((word) => forms.filter((f) => f.kind === kindOf(word)).map((form) => ({ word, form })))
-  }, [focus, source, weak, weakW, forms, formIds, kinds])
+  }, [focus, source, weakTasks, forms, formIds, kinds])
 
   // Riječ s "Nisam" vraća se nakon ~5 drugih zadataka.
   const answered = useRef(0)
@@ -130,6 +140,9 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
     const dueIndex = retries.current.findIndex((r) => r.due <= answered.current)
     if (dueIndex >= 0) {
       setTask(retries.current.splice(dueIndex, 1)[0].task)
+    } else if (preset?.halfWeak && !focus && weakTasks.length && Math.random() < 0.5) {
+      // Vodič: otprilike polovica zadataka iz slabih točaka.
+      setTask(randomOf(weakTasks))
     } else {
       setTask(randomOf(tasks))
     }
@@ -151,7 +164,7 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
       point: `${form.id}|${rule.key}`,
       rule: rule.label,
       direction: 'proizvodnja',
-      source: 'slobodno',
+      source: preset ? 'vodic' : 'slobodno',
       session,
       result,
     })
@@ -196,7 +209,7 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
       <main className="flex min-h-dvh flex-col bg-stone-50 p-6 text-stone-900">
         <header className="flex items-center justify-between gap-2">
           <button onClick={onBack} className="rounded-full px-3 py-2 text-stone-500 active:bg-stone-200">
-            ← Natrag
+            {preset ? '← Vodič' : '← Natrag'}
           </button>
           <div className="flex gap-2">
             <button
@@ -218,6 +231,10 @@ export default function Conjugator({ onBack }: { onBack: () => void }) {
             </button>
           </div>
         </header>
+
+        {preset?.note && view === 'vjezba' && (
+          <p className="mt-2 rounded-xl bg-amber-100 px-3 py-2 text-sm text-amber-900">🧭 {preset.note}</p>
+        )}
 
         {view === 'postavke' && (
           <section className="mt-4 flex flex-col gap-4 rounded-2xl bg-white p-4 text-sm shadow">

@@ -9,6 +9,7 @@ const NAMES: Record<string, string> = {
   conjAttempts: 'odgovora u konjugatoru',
   vodic: 'stanje vodiča',
   days: 'dana vodiča',
+  wordReviews: 'ponavljanja riječi',
   postavke: 'postavki',
 }
 const describe = (counts: Record<string, number>) =>

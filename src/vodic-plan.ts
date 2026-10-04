@@ -64,10 +64,11 @@ const ref = (s: SentenceState): SentenceRef => ({ storyId: s.storyId, index: s.i
 
 export function planDay(input: PlanInput): Plan {
   const config = input.config ?? VODIC
-  const beforeStart = input.date < config.startDate
-  // Prije početka vodič pokazuje plan za prvi dan.
-  const date = beforeStart ? config.startDate : input.date
   const { state } = input
+  const startDate = state.startDate ?? config.startDate
+  const beforeStart = input.date < startDate
+  // Prije početka vodič pokazuje plan za prvi dan.
+  const date = beforeStart ? startDate : input.date
   const storyId = config.storyOrder[Math.min(state.storyIndex, config.storyOrder.length - 1)]
   const story = input.stories.find((s) => s.id === storyId)
   const byId = new Map(input.sentences.map((s) => [s.id, s]))
@@ -78,7 +79,9 @@ export function planDay(input: PlanInput): Plan {
   const last = trained.sort().at(-1)
   const missedDays = last ? Math.max(0, daysBetween(last, date) - 1) : 0
 
-  const dow = dayOfWeek(date)
+  // Prvi dan vodiča je uvijek običan dan (i ako je pokrenut vikendom).
+  const firstDay = trained.length === 0
+  const dow = firstDay ? 1 : dayOfWeek(date)
   let kind: PlanKind = beforeStart ? 'prije-pocetka' : 'radni'
   let steps = config.day
   if (input.short) {

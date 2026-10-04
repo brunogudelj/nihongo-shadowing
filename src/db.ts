@@ -57,12 +57,41 @@ export type VodicState = {
   storyIndex: number
   storyStartedOn: string
   konjRow: number
+  konjRowSince?: number // od kad je tekući red konjugatora (ms), za brojanje sesija
   thirdFailStreak: number
   thirdBackoffUntil?: string
+  startDate?: string // prvi dan vodiča, ako je pokrenut ranije od zadanog ("Kreni danas")
 }
 
 // Dnevnik dana vodiča: plan, odrađeni koraci, skraćeni plan, vrijeme čitanja.
-export type DayLog = { date: string; v: 1; short: boolean; steps: string[]; done: string[]; readingSec?: number }
+export type DayLog = {
+  date: string
+  v: 1
+  short: boolean
+  steps: string[]
+  done: string[]
+  readingSec?: number
+  plan?: unknown // plan dana zamrznut pri pokretanju (vodic-plan.ts, Plan)
+  stepIndex?: number // gdje je trening stao (za Nastavi)
+  stepStartedAt?: number
+  extra?: { storyId: string; index: number }[] // treća rečenica, ako je uzeta
+  progress?: DayProgress // dokle se stiglo unutar tekućeg koraka (briše se na idućem koraku)
+}
+export type DayProgress = {
+  item?: number // redni broj stavke u koraku (riječ, rečenica, pitanje)
+  wordIds?: string[] // popis riječi za ponavljanje, zamrznut na početku koraka
+  phase?: 'A' | 'B' | 'C' | 'D'
+  dTries?: number // koliko je puta faza D već pala za tekuću rečenicu
+  asking?: boolean // pitanja na kraju faze D
+  q?: number // koje pitanje faze D
+  stopped?: boolean // rečenica je dvaput pala fazu D: danas nema drugih
+  fastPass?: boolean // obje nove prošle D unutar 15 min (nudi se treća)
+  failed?: number[] // subota: neuspjele rečenice
+  result?: string // poruka nakon odluke
+}
+
+// Ponavljanje riječi u vodiču (korak 1): koliko je puta zaredom i ukupno bilo "Nisam".
+export type WordReview = { id: string; v: 1; nisamStreak: number; nisamTotal: number; lastOn: string; priorityOn?: string }
 
 export const db = new Dexie('nihongo') as Dexie & {
   myWords: EntityTable<MyWord, 'id'>
@@ -71,6 +100,7 @@ export const db = new Dexie('nihongo') as Dexie & {
   conjAttempts: EntityTable<ConjAttempt, 'id'>
   vodic: EntityTable<VodicState, 'id'>
   days: EntityTable<DayLog, 'date'>
+  wordReviews: EntityTable<WordReview, 'id'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
@@ -87,6 +117,15 @@ db.version(4).stores({
   conjAttempts: 'id, at, point, word, session',
   vodic: 'id',
   days: 'date',
+})
+db.version(5).stores({
+  myWords: 'id, addedAt',
+  sentences: 'id, storyId',
+  places: 'storyId, updatedAt',
+  conjAttempts: 'id, at, point, word, session',
+  vodic: 'id',
+  days: 'date',
+  wordReviews: 'id',
 })
 
 export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`

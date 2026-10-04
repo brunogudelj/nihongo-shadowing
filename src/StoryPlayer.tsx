@@ -11,7 +11,7 @@ import { chunkSpans, wordAt, wordAtInFull } from './timing'
 const SPEEDS = [0.7, 0.85, 1]
 
 // Razina pomoći, od najviše prema najmanjoj; jedan gumb ih mijenja redom.
-type View = 'rendgen' | 'puno' | 'cisto' | 'sluh'
+export type View = 'rendgen' | 'puno' | 'cisto' | 'sluh'
 const VIEWS: Record<View, { label: string; next: View }> = {
   rendgen: { label: '🔍 Rendgen', next: 'puno' },
   puno: { label: 'Puno', next: 'cisto' },
@@ -82,35 +82,50 @@ function useBlobUrls(names: string[]) {
   return urls
 }
 
-export default function StoryPlayer({ story, onBack }: { story: Story; onBack: () => void }) {
+// Postavke s kojima vodič otvara priču (rečenica, razina pomoći, brzina, petlja) i uputa za korak.
+// Ne mijenjaju spremljene postavke, osim ako ih korisnik sam promijeni u priči.
+export type StoryPreset = {
+  index?: number
+  view?: View
+  speed?: number
+  loop?: boolean
+  pause?: number
+  translation?: boolean
+  note?: string
+}
+
+export default function StoryPlayer({ story, onBack, preset }: { story: Story; onBack: () => void; preset?: StoryPreset }) {
   const audioRef = useRef<HTMLAudioElement>(null)
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(preset?.index ?? 0)
   // Status svake rečenice (iz baze na mobitelu) i pamćenje gdje si stao.
   const statusRows = useLiveQuery(() => db.sentences.where('storyId').equals(story.id).toArray(), [story.id])
   const statusOf = (i: number): SentenceStatus => statusRows?.find((r) => r.index === i)?.status ?? 'nova'
-  const placeLoaded = useRef(false)
+  const placeLoaded = useRef(preset?.index !== undefined)
   useEffect(() => {
+    if (preset?.index !== undefined) return // vodič je zadao rečenicu
     void db.places.get(story.id).then((place) => {
       if (place && place.index < story.sentences.length) setIndex(place.index)
       placeLoaded.current = true
     })
-  }, [story.id, story.sentences.length])
+  }, [story.id, story.sentences.length, preset?.index])
   useEffect(() => {
     if (placeLoaded.current) void savePlace(story.id, index)
   }, [story.id, index])
   // Brzina se pamti (i ulazi u sigurnosnu kopiju).
   const [speed, setSpeed] = useState(() => {
+    if (preset?.speed) return preset.speed
     const raw = readSetting('brzina')
     return raw !== null && SPEEDS.includes(Number(raw)) ? Number(raw) : 1
   })
   const [playing, setPlaying] = useState<Mode | null>(null)
-  const [showTranslation, setShowTranslation] = useState(false)
+  const [showTranslation, setShowTranslation] = useState(preset?.translation ?? false)
   const [currentWord, setCurrentWord] = useState(-1)
   // Blok koji svira (ili se ponavlja u petlji); -1 = rečenica.
   const [activeChunk, setActiveChunk] = useState(-1)
   // Razina pomoći (pamti se u pregledniku): rendgen (formule, objašnjenje riječi na dodir umjesto zvuka),
   // puno (sve pomoći), čisto (samo japanski tekst) ili sluh (tekst skriven dok ga ne otkriješ dodirom).
   const [view, setView] = useState<View>(() => {
+    if (preset?.view) return preset.view
     const v = readSetting('prikaz')
     if (v === 'rendgen' || v === 'cisto' || v === 'sluh') return v
     return readSetting('cisto') === '1' ? 'cisto' : 'puno'
@@ -129,8 +144,9 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
   // Odabrana riječ ili formula bloka u rendgenu (vrijedi samo za rečenicu u kojoj je odabrana).
   const [selected, setSelected] = useState<{ sentence: number; word?: number; chunk?: number } | null>(null)
   // Petlja: rečenica se ponavlja, sa stankom u kojoj korisnik ponavlja naglas.
-  const [loop, setLoop] = useState(false)
+  const [loop, setLoop] = useState(preset?.loop ?? false)
   const [pause, setPause] = useState(() => {
+    if (preset?.pause !== undefined) return preset.pause
     const raw = readSetting('stanka')
     return raw !== null && PAUSES.includes(Number(raw)) ? Number(raw) : 1
   })
@@ -302,7 +318,7 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
 
         <header className="flex items-center justify-between gap-3">
           <button onClick={() => { stop(); onBack() }} className="rounded-full px-3 py-2 text-stone-500 active:bg-stone-200">
-            ← Priče
+            {preset ? '← Vodič' : '← Priče'}
           </button>
           <div className="flex items-center gap-2">
             <p className="text-sm text-stone-400" aria-label={`Rečenica ${index + 1} od ${story.sentences.length}`}>
@@ -319,6 +335,10 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             </button>
           </div>
         </header>
+
+        {preset?.note && (
+          <p className="mt-2 rounded-xl bg-amber-100 px-3 py-2 text-sm text-amber-900">🧭 {preset.note}</p>
+        )}
 
         {/* Napredak: točkica po rečenici (dodir = idi na nju) i status trenutne rečenice. */}
         <div className="mt-2 flex items-center justify-between gap-3">

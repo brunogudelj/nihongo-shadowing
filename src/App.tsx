@@ -11,10 +11,11 @@ import { stories } from './stories'
 const Conjugator = lazy(() => import('./Conjugator'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
 const MyWords = lazy(() => import('./MyWords'))
+const Training = lazy(() => import('./Training'))
 
-type Screen = 'price' | 'rijeci' | 'moje' | 'konjugator'
+type Screen = 'price' | 'rijeci' | 'moje' | 'konjugator' | 'trening' | 'trening-kratki'
 
-const CARDS: { screen: Screen; title: string; text: string }[] = [
+const CARDS: { screen: Exclude<Screen, 'trening' | 'trening-kratki'>; title: string; text: string }[] = [
   { screen: 'price', title: '📚 Priče', text: `${stories.length} priče za shadowing` },
   { screen: 'rijeci', title: '📖 Riječi', text: 'Svih 1304 riječi N5 + N4, s izgovorom' },
   { screen: 'moje', title: '⭐ Moje riječi', text: 'Označene sa ☆ i one koje upišeš sam' },
@@ -37,13 +38,16 @@ function App() {
         {screen === 'konjugator' && <Conjugator onBack={() => setScreen(null)} />}
         {screen === 'rijeci' && <Vocabulary onBack={() => setScreen(null)} />}
         {screen === 'moje' && <MyWords onBack={() => setScreen(null)} />}
+        {(screen === 'trening' || screen === 'trening-kratki') && (
+          <Training short={screen === 'trening-kratki'} onBack={() => setScreen(null)} />
+        )}
       </Suspense>
     )
 
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
       <h1 className="mb-6 text-center text-sm text-stone-400">Nihongo Shadowing</h1>
-      <TodayPlan />
+      <TodayPlan onStart={(short) => setScreen(short ? 'trening-kratki' : 'trening')} />
       {lastStory && lastPlace && (
         <button
           onClick={() => setStoryId(lastStory.id)}
