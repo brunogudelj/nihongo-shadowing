@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react'
 import { exportBackup, importBackup } from './backup'
 
-const NAMES: Record<string, string> = { myWords: 'riječi' }
+const NAMES: Record<string, string> = { myWords: 'riječi', sentences: 'statusa rečenica', places: 'mjesta u pričama' }
 const describe = (counts: Record<string, number>) =>
   Object.entries(counts)
     .map(([k, n]) => `${n} ${NAMES[k] ?? k}`)
@@ -17,7 +17,7 @@ export default function BackupPanel() {
       <p className="font-semibold">Sigurnosna kopija</p>
       <p className="mt-1 text-sm text-stone-500">
         Sve je spremljeno samo na ovom mobitelu. Izvezi kopiju (npr. jednom tjedno) i spremi je negdje sigurno (Google
-        Drive, mail sebi). Uvoz dodaje riječi iz kopije, a postojeće ne briše.
+        Drive, mail sebi). Uvoz dodaje i osvježava podatke iz kopije, a ništa ne briše.
       </p>
       <div className="mt-3 flex gap-2">
         <button

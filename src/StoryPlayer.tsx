@@ -1,11 +1,20 @@
+import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useRef, useState } from 'react'
 import { audioUrl, type ChunkInfo, type Story } from './stories'
 import AddStoryWord from './AddStoryWord'
+import { db, savePlace, setSentenceStatus, type SentenceStatus } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { useMediaSession, useWakeLock } from './practice'
 import { chunkSpans, wordAt, wordAtInFull } from './timing'
 
 const SPEEDS = [0.7, 0.85, 1]
+
+// Status rečenice: kako se prikazuje i koji je idući na dodir.
+const STATUS: Record<SentenceStatus, { label: string; dot: string; chip: string; next: SentenceStatus }> = {
+  nova: { label: '○ nova', dot: 'bg-stone-300', chip: 'bg-stone-200 text-stone-700', next: 'u-radu' },
+  'u-radu': { label: '◐ u radu', dot: 'bg-amber-400', chip: 'bg-amber-200 text-amber-900', next: 'gotova' },
+  gotova: { label: '● gotova', dot: 'bg-emerald-500', chip: 'bg-emerald-200 text-emerald-900', next: 'nova' },
+}
 
 // Boja bloka prema ulozi u rečenici (iz pipelinea, polje chunk_info).
 const ROLE_STYLE: Record<string, { bg: string; label: string }> = {
@@ -64,6 +73,19 @@ function useBlobUrls(names: string[]) {
 export default function StoryPlayer({ story, onBack }: { story: Story; onBack: () => void }) {
   const audioRef = useRef<HTMLAudioElement>(null)
   const [index, setIndex] = useState(0)
+  // Status svake rečenice (iz baze na mobitelu) i pamćenje gdje si stao.
+  const statusRows = useLiveQuery(() => db.sentences.where('storyId').equals(story.id).toArray(), [story.id])
+  const statusOf = (i: number): SentenceStatus => statusRows?.find((r) => r.index === i)?.status ?? 'nova'
+  const placeLoaded = useRef(false)
+  useEffect(() => {
+    void db.places.get(story.id).then((place) => {
+      if (place && place.index < story.sentences.length) setIndex(place.index)
+      placeLoaded.current = true
+    })
+  }, [story.id, story.sentences.length])
+  useEffect(() => {
+    if (placeLoaded.current) void savePlace(story.id, index)
+  }, [story.id, index])
   const [speed, setSpeed] = useState(1)
   const [playing, setPlaying] = useState<Mode | null>(null)
   const [showTranslation, setShowTranslation] = useState(false)
@@ -282,6 +304,26 @@ export default function StoryPlayer({ story, onBack }: { story: Story; onBack: (
             </button>
           </div>
         </header>
+
+        {/* Napredak: točkica po rečenici (dodir = idi na nju) i status trenutne rečenice. */}
+        <div className="mt-2 flex items-center justify-between gap-3">
+          <div className="flex flex-wrap gap-1.5">
+            {story.sentences.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                aria-label={`Rečenica ${i + 1}`}
+                className={`h-3 w-3 rounded-full ${STATUS[statusOf(i)].dot} ${i === index ? 'ring-2 ring-stone-800 ring-offset-1' : ''}`}
+              />
+            ))}
+          </div>
+          <button
+            onClick={() => setSentenceStatus(story.id, index, STATUS[statusOf(index)].next)}
+            className={`shrink-0 rounded-full px-3 py-1.5 text-sm font-semibold ${STATUS[statusOf(index)].chip}`}
+          >
+            {STATUS[statusOf(index)].label}
+          </button>
+        </div>
 
         <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
           {clean ? (

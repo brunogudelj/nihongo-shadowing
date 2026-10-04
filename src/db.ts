@@ -11,8 +11,31 @@ export type MyWord = {
   addedAt: number
 }
 
-export const db = new Dexie('nihongo') as Dexie & { myWords: EntityTable<MyWord, 'id'> }
+// Status rečenice u priči, koji korisnik sam označava.
+export type SentenceStatus = 'nova' | 'u-radu' | 'gotova'
+export type SentenceState = { id: string; storyId: string; index: number; status: SentenceStatus; updatedAt: number }
+
+// Gdje je korisnik stao u priči (zadnja otvorena rečenica).
+export type Place = { storyId: string; index: number; updatedAt: number }
+
+export const db = new Dexie('nihongo') as Dexie & {
+  myWords: EntityTable<MyWord, 'id'>
+  sentences: EntityTable<SentenceState, 'id'>
+  places: EntityTable<Place, 'storyId'>
+}
 db.version(1).stores({ myWords: 'id, addedAt' })
+db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
+
+export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`
+
+export async function setSentenceStatus(storyId: string, index: number, status: SentenceStatus) {
+  await db.sentences.put({ id: sentenceId(storyId, index), storyId, index, status, updatedAt: Date.now() })
+  void askPersist()
+}
+
+export async function savePlace(storyId: string, index: number) {
+  await db.places.put({ storyId, index, updatedAt: Date.now() })
+}
 
 export const wordId = (word: string, reading: string) => `${word}|${reading}`
 

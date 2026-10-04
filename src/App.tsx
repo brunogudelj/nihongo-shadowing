@@ -13,6 +13,10 @@ function App() {
   const [storyId, setStoryId] = useState<string>()
   const [screen, setScreen] = useState<'konjugator' | 'rijeci' | 'moje' | null>(null)
   const myCount = useLiveQuery(() => db.myWords.count(), [])
+  // Napredak: koliko je rečenica gotovo u svakoj priči, i gdje si zadnje stao.
+  const done = useLiveQuery(() => db.sentences.where('storyId').anyOf(stories.map((s) => s.id)).toArray(), [])
+  const lastPlace = useLiveQuery(() => db.places.orderBy('updatedAt').last(), [])
+  const lastStory = stories.find((s) => s.id === lastPlace?.storyId)
   const story = stories.find((s) => s.id === storyId)
 
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
@@ -28,6 +32,17 @@ function App() {
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
       <h1 className="mb-6 text-center text-sm text-stone-400">Nihongo Shadowing</h1>
+      {lastStory && lastPlace && (
+        <button
+          onClick={() => setStoryId(lastStory.id)}
+          className="mb-4 w-full rounded-2xl bg-red-700 p-5 text-left text-white active:bg-red-800"
+        >
+          <p className="text-xl font-semibold">▶ Nastavi</p>
+          <p className="mt-1 text-red-100">
+            <span lang="ja">{lastStory.title_ja}</span> · rečenica {lastPlace.index + 1} / {lastStory.sentences.length}
+          </p>
+        </button>
+      )}
       <ul className="flex flex-col gap-3">
         {stories.map((s) => (
           <li key={s.id}>
@@ -40,6 +55,10 @@ function App() {
               </p>
               <p className="mt-1 text-stone-500">
                 {s.title_hr} · {s.sentences.length} rečenica
+                {(() => {
+                  const n = done?.filter((r) => r.storyId === s.id && r.status === 'gotova').length ?? 0
+                  return n > 0 ? ` · ${n} / ${s.sentences.length} gotovo` : ''
+                })()}
               </p>
             </button>
           </li>
