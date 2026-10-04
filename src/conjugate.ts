@@ -238,3 +238,45 @@ export function conjugate(w: ConjWord, form: string): Result {
   if (kind === 'na-pridjev') return conjugateNa(w, form)
   return conjugateVerb(w, form)
 }
+
+// Vrsta riječi za bilježenje (dorada 1K): godan, ichidan, nepravilni, i-pridjev, na-pridjev.
+export function wordClassOf(w: ConjWord): string {
+  if (w.class === 'godan' || w.class === 'iku' || w.class === 'aru') return 'godan'
+  if (w.class === 'ichidan') return 'ichidan'
+  if (w.class === 'i-pridjev' || w.class === 'ii') return 'i-pridjev'
+  if (w.class === 'na-pridjev') return 'na-pridjev'
+  return 'nepravilni'
+}
+
+// Pravilo po kojem nastaje oblik: stabilna oznaka (za slabe točke) i kratki opis (za prikaz).
+// Oznaka ne ovisi o tekstu pravila, pa se tekst smije mijenjati, a povijest ostaje.
+// Primjeri: te + 書く → "godan-く" / "godan ～く → ～いて"; te + 行く → "iku" / "iznimka 行く → 行って".
+export function ruleOf(w: ConjWord, formId: string): { key: string; label: string } {
+  const r = conjugate(w, formId)
+  const last = w.reading.slice(-1)
+  const stem = w.reading.slice(0, -1)
+  const tail = r.reading.startsWith(stem) ? r.reading.slice(stem.length) : r.reading
+  switch (w.class) {
+    case 'iku':
+      if (formId === 'te' || formId === 'ta') return { key: 'iku', label: `iznimka 行く → ${r.written}` }
+      return { key: 'godan-く', label: `godan ～く → ～${tail}` }
+    case 'aru':
+      if (formId === 'nai' || formId === 'nakatta') return { key: 'aru', label: `iznimka ある → ${r.written}` }
+      return { key: 'godan-る', label: `godan ～る → ～${tail}` }
+    case 'godan':
+      return { key: `godan-${last}`, label: `godan ～${last} → ～${tail}` }
+    case 'ichidan':
+      return { key: 'ichidan', label: `ichidan ～る → ～${tail}` }
+    case 'kuru':
+      return { key: 'kuru', label: `nepravilni 来る → ${r.written} (${r.reading})` }
+    case 'suru':
+    case 'suru-imenica':
+      return { key: 'suru', label: `nepravilni する → ${r.reading.slice(w.reading.length - 2)}` }
+    case 'ii':
+      return { key: 'ii', label: `iznimka いい → ${r.written}` }
+    case 'i-pridjev':
+      return { key: 'i', label: `i-pridjev ～い → ～${tail}` }
+    default:
+      return { key: 'na', label: `na-pridjev + ${r.reading.slice(w.reading.length)}` }
+  }
+}

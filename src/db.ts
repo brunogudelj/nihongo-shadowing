@@ -18,13 +18,38 @@ export type SentenceState = { id: string; storyId: string; index: number; status
 // Gdje je korisnik stao u priči (zadnja otvorena rečenica).
 export type Place = { storyId: string; index: number; updatedAt: number }
 
+// Jedan odgovor u konjugatoru (dorada 1K). `v` je verzija zapisa, za buduće migracije.
+// `point` = oblik|oznaka pravila (npr. "te|godan-く"): po njemu se računaju slabe točke.
+export type ConjAttempt = {
+  id: string
+  v: 1
+  at: number
+  word: string
+  reading: string
+  wordClass: string // godan, ichidan, nepravilni, i-pridjev, na-pridjev
+  form: string
+  point: string
+  rule: string // kratki opis pravila, npr. "godan ～く → ～いて"
+  direction: 'proizvodnja' | 'obrnuto' | 'na-sluh'
+  source: 'slobodno' | 'vodic'
+  session: string
+  result: 'znao' | 'nisam'
+}
+
 export const db = new Dexie('nihongo') as Dexie & {
   myWords: EntityTable<MyWord, 'id'>
   sentences: EntityTable<SentenceState, 'id'>
   places: EntityTable<Place, 'storyId'>
+  conjAttempts: EntityTable<ConjAttempt, 'id'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
+db.version(3).stores({
+  myWords: 'id, addedAt',
+  sentences: 'id, storyId',
+  places: 'storyId, updatedAt',
+  conjAttempts: 'id, at, point, word, session',
+})
 
 export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`
 
