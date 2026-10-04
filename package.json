@@ -15,7 +15,9 @@
     "provjera": "node pipeline/check.mjs",
     "nova-prica": "node --env-file-if-exists=.env pipeline/new-story.mjs",
     "doslovno": "node --env-file-if-exists=.env pipeline/literal.mjs",
-    "konjugator-rijeci": "node --env-file-if-exists=.env pipeline/conj-words.mjs"
+    "konjugator-rijeci": "node --env-file-if-exists=.env pipeline/conj-words.mjs",
+    "rijeci": "node --env-file-if-exists=.env pipeline/vocab-hr.mjs",
+    "izgovor": "node --env-file-if-exists=.env pipeline/speech.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
@@ -28,6 +30,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
+    "ffmpeg-static": "^5.3.0",
     "kuromoji": "^0.1.2",
     "microsoft-cognitiveservices-speech-sdk": "^1.52.0",
     "oxlint": "^1.81.0",
@@ -36,5 +39,8 @@
     "vite": "^8.3.0",
     "vite-plugin-pwa": "^1.3.0",
     "yaml": "^2.9.1"
+  },
+  "allowScripts": {
+    "ffmpeg-static@5.3.0": true
   }
 }

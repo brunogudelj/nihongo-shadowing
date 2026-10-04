@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import Conjugator from './Conjugator'
 import StoryPlayer from './StoryPlayer'
+import Vocabulary from './Vocabulary'
 import { stories } from './stories'
 
 function App() {
   const [storyId, setStoryId] = useState<string>()
-  const [conjugator, setConjugator] = useState(false)
+  const [screen, setScreen] = useState<'konjugator' | 'rijeci' | null>(null)
   const story = stories.find((s) => s.id === storyId)
 
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
-  if (conjugator) return <Conjugator onBack={() => setConjugator(false)} />
+  if (screen === 'konjugator') return <Conjugator onBack={() => setScreen(null)} />
+  if (screen === 'rijeci') return <Vocabulary onBack={() => setScreen(null)} />
 
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
@@ -32,13 +34,22 @@ function App() {
         ))}
       </ul>
 
-      <button
-        onClick={() => setConjugator(true)}
-        className="mt-6 w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
-      >
-        <p className="text-xl font-semibold">🔄 Konjugator</p>
-        <p className="mt-1 text-stone-300">Nasumični oblici glagola i pridjeva</p>
-      </button>
+      <div className="mt-6 flex flex-col gap-3">
+        <button
+          onClick={() => setScreen('rijeci')}
+          className="w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
+        >
+          <p className="text-xl font-semibold">📖 Riječi</p>
+          <p className="mt-1 text-stone-300">Svih 1304 riječi N5 + N4, s izgovorom</p>
+        </button>
+        <button
+          onClick={() => setScreen('konjugator')}
+          className="w-full rounded-2xl bg-stone-800 p-5 text-left text-white active:bg-stone-900"
+        >
+          <p className="text-xl font-semibold">🔄 Konjugator</p>
+          <p className="mt-1 text-stone-300">Nasumični oblici glagola i pridjeva</p>
+        </button>
+      </div>
     </main>
   )
 }

@@ -31,6 +31,15 @@ export default defineConfig(({ command }) => ({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,mp3}'],
+        // Izgovor riječi i oblika (tisuće malih mp3) ne sprema se odmah, nego svaki kad se prvi put pusti.
+        globIgnores: ['**/izgovor/**'],
+        runtimeCaching: [
+          {
+            urlPattern: /\/izgovor\/.*\.mp3$/,
+            handler: 'CacheFirst',
+            options: { cacheName: 'izgovor', cacheableResponse: { statuses: [200] } },
+          },
+        ],
       },
     }),
   ],

@@ -1,0 +1,9130 @@
+[
+ {
+  "word": "会う",
+  "reading": "あう",
+  "level": "N5",
+  "pos": "v5u; vi",
+  "hr": "sresti"
+ },
+ {
+  "word": "青",
+  "reading": "あお",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "plava boja, plav"
+ },
+ {
+  "word": "青い",
+  "reading": "あおい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "plav"
+ },
+ {
+  "word": "赤",
+  "reading": "あか",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "crvena boja, crven"
+ },
+ {
+  "word": "赤い",
+  "reading": "あかい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "crven"
+ },
+ {
+  "word": "明るい",
+  "reading": "あかるい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "svijetao"
+ },
+ {
+  "word": "秋",
+  "reading": "あき",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "jesen"
+ },
+ {
+  "word": "開く",
+  "reading": "あく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "otvoriti se"
+ },
+ {
+  "word": "開ける",
+  "reading": "あける",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "otvoriti"
+ },
+ {
+  "word": "上げる",
+  "reading": "あげる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "dati, podići"
+ },
+ {
+  "word": "朝",
+  "reading": "あさ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "jutro"
+ },
+ {
+  "word": "朝ごはん",
+  "reading": "あさごはん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "doručak"
+ },
+ {
+  "word": "あさって",
+  "reading": "あさって",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "prekosutra"
+ },
+ {
+  "word": "足",
+  "reading": "あし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stopalo, noga"
+ },
+ {
+  "word": "明日",
+  "reading": "あした",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "sutra"
+ },
+ {
+  "word": "あそこ",
+  "reading": "あそこ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ondje"
+ },
+ {
+  "word": "遊ぶ",
+  "reading": "あそぶ",
+  "level": "N5",
+  "pos": "v5b; vi",
+  "hr": "igrati se, posjetiti"
+ },
+ {
+  "word": "暖かい",
+  "reading": "あたたかい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "topao"
+ },
+ {
+  "word": "頭",
+  "reading": "あたま",
+  "level": "N5",
+  "pos": "n",
+  "hr": "glava"
+ },
+ {
+  "word": "新しい",
+  "reading": "あたらしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "nov"
+ },
+ {
+  "word": "あちら",
+  "reading": "あちら",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "tamo"
+ },
+ {
+  "word": "厚い",
+  "reading": "あつい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "debeo, srdačan"
+ },
+ {
+  "word": "暑い",
+  "reading": "あつい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "vruć"
+ },
+ {
+  "word": "熱い",
+  "reading": "あつい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "vruć (na dodir)"
+ },
+ {
+  "word": "あっち",
+  "reading": "あっち",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ondje"
+ },
+ {
+  "word": "後",
+  "reading": "あと",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "poslije"
+ },
+ {
+  "word": "あなた",
+  "reading": "あなた",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ti"
+ },
+ {
+  "word": "兄",
+  "reading": "あに",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stariji brat"
+ },
+ {
+  "word": "姉",
+  "reading": "あね",
+  "level": "N5",
+  "pos": "n",
+  "hr": "starija sestra"
+ },
+ {
+  "word": "あの",
+  "reading": "あの",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "onaj"
+ },
+ {
+  "word": "アパート",
+  "reading": "アパート",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stan"
+ },
+ {
+  "word": "あびる",
+  "reading": "あびる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "kupati se, tuširati se"
+ },
+ {
+  "word": "危ない",
+  "reading": "あぶない",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "opasan"
+ },
+ {
+  "word": "甘い",
+  "reading": "あまい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "sladak"
+ },
+ {
+  "word": "あまり",
+  "reading": "あまり",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "ne baš"
+ },
+ {
+  "word": "飴",
+  "reading": "あめ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "bombon"
+ },
+ {
+  "word": "雨",
+  "reading": "あめ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kiša"
+ },
+ {
+  "word": "洗う",
+  "reading": "あらう",
+  "level": "N5",
+  "pos": "v5u; vt",
+  "hr": "prati"
+ },
+ {
+  "word": "ありがとう",
+  "reading": "ありがとう",
+  "level": "N5",
+  "pos": "int",
+  "hr": "hvala"
+ },
+ {
+  "word": "ある",
+  "reading": "ある",
+  "level": "N5",
+  "pos": "v5r-i; vi",
+  "hr": "biti, imati"
+ },
+ {
+  "word": "歩く",
+  "reading": "あるく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "hodati"
+ },
+ {
+  "word": "あれ",
+  "reading": "あれ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ono"
+ },
+ {
+  "word": "いい",
+  "reading": "いい",
+  "level": "N5",
+  "pos": "adj-ix",
+  "hr": "dobar"
+ },
+ {
+  "word": "いいえ",
+  "reading": "いいえ",
+  "level": "N5",
+  "pos": "int",
+  "hr": "ne"
+ },
+ {
+  "word": "言う",
+  "reading": "いう",
+  "level": "N5",
+  "pos": "v5u; vt",
+  "hr": "reći"
+ },
+ {
+  "word": "家",
+  "reading": "いえ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kuća"
+ },
+ {
+  "word": "いかが",
+  "reading": "いかが",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "kako"
+ },
+ {
+  "word": "行く",
+  "reading": "いく",
+  "level": "N5",
+  "pos": "v5k-s; vi",
+  "hr": "ići"
+ },
+ {
+  "word": "いくつ",
+  "reading": "いくつ",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "koliko, koliko godina"
+ },
+ {
+  "word": "いくら",
+  "reading": "いくら",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "koliko (košta)"
+ },
+ {
+  "word": "池",
+  "reading": "いけ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ribnjak"
+ },
+ {
+  "word": "医者",
+  "reading": "いしゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "liječnik"
+ },
+ {
+  "word": "いす",
+  "reading": "いす",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stolica"
+ },
+ {
+  "word": "忙しい",
+  "reading": "いそがしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "zaposlen"
+ },
+ {
+  "word": "痛い",
+  "reading": "いたい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "bolan"
+ },
+ {
+  "word": "いただきます",
+  "reading": "いただきます",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "dobar tek"
+ },
+ {
+  "word": "一",
+  "reading": "いち",
+  "level": "N5",
+  "pos": "num; pref",
+  "hr": "jedan"
+ },
+ {
+  "word": "一日",
+  "reading": "いちにち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "jedan dan"
+ },
+ {
+  "word": "いちばん",
+  "reading": "いちばん",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "najbolji, prvi"
+ },
+ {
+  "word": "いつ",
+  "reading": "いつ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "kada"
+ },
+ {
+  "word": "五日",
+  "reading": "いつか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pet dana, peti dan"
+ },
+ {
+  "word": "一緒",
+  "reading": "いっしょ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zajedno"
+ },
+ {
+  "word": "五つ",
+  "reading": "いつつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "pet"
+ },
+ {
+  "word": "いつも",
+  "reading": "いつも",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "uvijek"
+ },
+ {
+  "word": "犬",
+  "reading": "いぬ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pas"
+ },
+ {
+  "word": "今",
+  "reading": "いま",
+  "level": "N5",
+  "pos": "n; adj-no; adv",
+  "hr": "sada"
+ },
+ {
+  "word": "意味",
+  "reading": "いみ",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "značiti"
+ },
+ {
+  "word": "妹",
+  "reading": "いもうと",
+  "level": "N5",
+  "pos": "n",
+  "hr": "mlađa sestra"
+ },
+ {
+  "word": "嫌",
+  "reading": "いや",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "neugodan, mrzak"
+ },
+ {
+  "word": "入口",
+  "reading": "いりぐち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ulaz"
+ },
+ {
+  "word": "いる",
+  "reading": "いる",
+  "level": "N5",
+  "pos": "aux-v; v1",
+  "hr": "biti, nalaziti se"
+ },
+ {
+  "word": "要る",
+  "reading": "いる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "trebati"
+ },
+ {
+  "word": "入れる",
+  "reading": "いれる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "staviti unutra"
+ },
+ {
+  "word": "色",
+  "reading": "いろ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "boja"
+ },
+ {
+  "word": "いろいろ",
+  "reading": "いろいろ",
+  "level": "N5",
+  "pos": "adj-na; adj-no",
+  "hr": "razni"
+ },
+ {
+  "word": "上",
+  "reading": "うえ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "gore, na vrhu"
+ },
+ {
+  "word": "後ろ",
+  "reading": "うしろ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "iza"
+ },
+ {
+  "word": "薄い",
+  "reading": "うすい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "tanak, slab"
+ },
+ {
+  "word": "歌",
+  "reading": "うた",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pjesma"
+ },
+ {
+  "word": "歌う",
+  "reading": "うたう",
+  "level": "N5",
+  "pos": "v5u; vt; vi",
+  "hr": "pjevati"
+ },
+ {
+  "word": "生まれる",
+  "reading": "うまれる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "roditi se"
+ },
+ {
+  "word": "海",
+  "reading": "うみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "more"
+ },
+ {
+  "word": "売る",
+  "reading": "うる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "prodavati"
+ },
+ {
+  "word": "煩い",
+  "reading": "うるさい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "bučan, dosadan"
+ },
+ {
+  "word": "上着",
+  "reading": "うわぎ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "jakna"
+ },
+ {
+  "word": "絵",
+  "reading": "え",
+  "level": "N5",
+  "pos": "n",
+  "hr": "slika"
+ },
+ {
+  "word": "映画",
+  "reading": "えいが",
+  "level": "N5",
+  "pos": "n",
+  "hr": "film"
+ },
+ {
+  "word": "映画館",
+  "reading": "えいがかん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kino"
+ },
+ {
+  "word": "英語",
+  "reading": "えいご",
+  "level": "N5",
+  "pos": "n",
+  "hr": "engleski jezik"
+ },
+ {
+  "word": "ええ",
+  "reading": "ええ",
+  "level": "N5",
+  "pos": "int",
+  "hr": "da"
+ },
+ {
+  "word": "駅",
+  "reading": "えき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stanica"
+ },
+ {
+  "word": "エレベーター",
+  "reading": "エレベーター",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dizalo"
+ },
+ {
+  "word": "鉛筆",
+  "reading": "えんぴつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "olovka"
+ },
+ {
+  "word": "おいしい",
+  "reading": "おいしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "ukusan"
+ },
+ {
+  "word": "多い",
+  "reading": "おおい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "brojan"
+ },
+ {
+  "word": "大きい",
+  "reading": "おおきい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "velik"
+ },
+ {
+  "word": "大きな",
+  "reading": "おおきな",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "velik"
+ },
+ {
+  "word": "大勢",
+  "reading": "おおぜい",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "mnoštvo ljudi"
+ },
+ {
+  "word": "お母さん",
+  "reading": "おかあさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "majka"
+ },
+ {
+  "word": "お菓子",
+  "reading": "おかし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "slatkiši"
+ },
+ {
+  "word": "お金",
+  "reading": "おかね",
+  "level": "N5",
+  "pos": "n",
+  "hr": "novac"
+ },
+ {
+  "word": "起きる",
+  "reading": "おきる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "ustati"
+ },
+ {
+  "word": "置く",
+  "reading": "おく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "staviti"
+ },
+ {
+  "word": "奥さん",
+  "reading": "おくさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "supruga"
+ },
+ {
+  "word": "お酒",
+  "reading": "おさけ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "alkohol, sake"
+ },
+ {
+  "word": "お皿",
+  "reading": "おさら",
+  "level": "N5",
+  "pos": "n",
+  "hr": "tanjur"
+ },
+ {
+  "word": "お祖父さん",
+  "reading": "おじいさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "djed, starac"
+ },
+ {
+  "word": "教える",
+  "reading": "おしえる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "poučavati, reći"
+ },
+ {
+  "word": "押す",
+  "reading": "おす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "gurati, pritisnuti"
+ },
+ {
+  "word": "遅い",
+  "reading": "おそい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "kasan, spor"
+ },
+ {
+  "word": "お茶",
+  "reading": "おちゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zeleni čaj"
+ },
+ {
+  "word": "お手洗い",
+  "reading": "おてあらい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zahod"
+ },
+ {
+  "word": "お父さん",
+  "reading": "おとうさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "otac"
+ },
+ {
+  "word": "弟",
+  "reading": "おとうと",
+  "level": "N5",
+  "pos": "n",
+  "hr": "mlađi brat"
+ },
+ {
+  "word": "男",
+  "reading": "おとこ",
+  "level": "N5",
+  "pos": "n; n-pref",
+  "hr": "muškarac"
+ },
+ {
+  "word": "男の子",
+  "reading": "おとこのこ",
+  "level": "N5",
+  "pos": "exp; n",
+  "hr": "dječak"
+ },
+ {
+  "word": "一昨日",
+  "reading": "おととい",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "prekjučer"
+ },
+ {
+  "word": "一昨年",
+  "reading": "おととし",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "pretprošle godine"
+ },
+ {
+  "word": "大人",
+  "reading": "おとな",
+  "level": "N5",
+  "pos": "n; adj-no; adj-na",
+  "hr": "odrasla osoba"
+ },
+ {
+  "word": "おなか",
+  "reading": "おなか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "trbuh"
+ },
+ {
+  "word": "同じ",
+  "reading": "おなじ",
+  "level": "N5",
+  "pos": "adj-f; adj-na",
+  "hr": "isti"
+ },
+ {
+  "word": "お兄さん",
+  "reading": "おにいさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stariji brat"
+ },
+ {
+  "word": "お姉さん",
+  "reading": "おねえさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "starija sestra"
+ },
+ {
+  "word": "お願いします",
+  "reading": "おねがいします",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "molim"
+ },
+ {
+  "word": "おばあさん",
+  "reading": "おばあさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "baka, starica"
+ },
+ {
+  "word": "伯母さん",
+  "reading": "おばさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "teta"
+ },
+ {
+  "word": "おはよう",
+  "reading": "おはよう",
+  "level": "N5",
+  "pos": "int",
+  "hr": "dobro jutro"
+ },
+ {
+  "word": "お風呂",
+  "reading": "おふろ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kupka"
+ },
+ {
+  "word": "お弁当",
+  "reading": "おべんとう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kutija s ručkom"
+ },
+ {
+  "word": "覚える",
+  "reading": "おぼえる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "zapamtiti"
+ },
+ {
+  "word": "おまわりさん",
+  "reading": "おまわりさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "policajac"
+ },
+ {
+  "word": "重い",
+  "reading": "おもい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "težak"
+ },
+ {
+  "word": "おもしろい",
+  "reading": "おもしろい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "zanimljiv"
+ },
+ {
+  "word": "泳ぐ",
+  "reading": "およぐ",
+  "level": "N5",
+  "pos": "v5g; vi",
+  "hr": "plivati"
+ },
+ {
+  "word": "降りる",
+  "reading": "おりる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "sići, izaći"
+ },
+ {
+  "word": "終る",
+  "reading": "おわる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "završiti"
+ },
+ {
+  "word": "音楽",
+  "reading": "おんがく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "glazba"
+ },
+ {
+  "word": "女",
+  "reading": "おんな",
+  "level": "N5",
+  "pos": "n; n-pref",
+  "hr": "žena"
+ },
+ {
+  "word": "女の子",
+  "reading": "おんなのこ",
+  "level": "N5",
+  "pos": "exp; n",
+  "hr": "djevojčica"
+ },
+ {
+  "word": "外国",
+  "reading": "がいこく",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "inozemstvo"
+ },
+ {
+  "word": "外国人",
+  "reading": "がいこくじん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stranac"
+ },
+ {
+  "word": "会社",
+  "reading": "かいしゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "tvrtka"
+ },
+ {
+  "word": "階段",
+  "reading": "かいだん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stepenice"
+ },
+ {
+  "word": "買い物",
+  "reading": "かいもの",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "kupovati"
+ },
+ {
+  "word": "買う",
+  "reading": "かう",
+  "level": "N5",
+  "pos": "v5u; vt",
+  "hr": "kupiti"
+ },
+ {
+  "word": "返す",
+  "reading": "かえす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "vratiti"
+ },
+ {
+  "word": "帰る",
+  "reading": "かえる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "vratiti se"
+ },
+ {
+  "word": "かかる",
+  "reading": "かかる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "trajati, koštati"
+ },
+ {
+  "word": "かぎ",
+  "reading": "かぎ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ključ"
+ },
+ {
+  "word": "書く",
+  "reading": "かく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "pisati"
+ },
+ {
+  "word": "学生",
+  "reading": "がくせい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "student"
+ },
+ {
+  "word": "かける",
+  "reading": "かける",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "nazvati"
+ },
+ {
+  "word": "傘",
+  "reading": "かさ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kišobran"
+ },
+ {
+  "word": "貸す",
+  "reading": "かす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "posuditi (nekome)"
+ },
+ {
+  "word": "風",
+  "reading": "かぜ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vjetar"
+ },
+ {
+  "word": "風邪",
+  "reading": "かぜ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "prehlada"
+ },
+ {
+  "word": "家族",
+  "reading": "かぞく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "obitelj"
+ },
+ {
+  "word": "方",
+  "reading": "かた",
+  "level": "N5",
+  "pos": "n",
+  "hr": "osoba, način"
+ },
+ {
+  "word": "学校",
+  "reading": "がっこう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "škola"
+ },
+ {
+  "word": "カップ",
+  "reading": "カップ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "šalica"
+ },
+ {
+  "word": "家庭",
+  "reading": "かてい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kućanstvo"
+ },
+ {
+  "word": "角",
+  "reading": "かど",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ugao"
+ },
+ {
+  "word": "かばん",
+  "reading": "かばん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "torba"
+ },
+ {
+  "word": "花瓶",
+  "reading": "かびん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vaza"
+ },
+ {
+  "word": "紙",
+  "reading": "かみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "papir"
+ },
+ {
+  "word": "カメラ",
+  "reading": "カメラ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "fotoaparat"
+ },
+ {
+  "word": "火曜日",
+  "reading": "かようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "utorak"
+ },
+ {
+  "word": "辛い",
+  "reading": "からい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "ljut"
+ },
+ {
+  "word": "体",
+  "reading": "からだ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "tijelo"
+ },
+ {
+  "word": "借りる",
+  "reading": "かりる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "posuditi (od nekoga)"
+ },
+ {
+  "word": "軽い",
+  "reading": "かるい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "lagan"
+ },
+ {
+  "word": "カレー",
+  "reading": "カレー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "curry"
+ },
+ {
+  "word": "カレンダー",
+  "reading": "カレンダー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kalendar"
+ },
+ {
+  "word": "川",
+  "reading": "かわ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "rijeka"
+ },
+ {
+  "word": "かわいい",
+  "reading": "かわいい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "sladak"
+ },
+ {
+  "word": "漢字",
+  "reading": "かんじ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kineski znak"
+ },
+ {
+  "word": "木",
+  "reading": "き",
+  "level": "N5",
+  "pos": "n",
+  "hr": "drvo"
+ },
+ {
+  "word": "黄色",
+  "reading": "きいろ",
+  "level": "N5",
+  "pos": "n; adj-no; adj-na",
+  "hr": "žuta boja"
+ },
+ {
+  "word": "黄色い",
+  "reading": "きいろい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "žut"
+ },
+ {
+  "word": "消える",
+  "reading": "きえる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "nestati"
+ },
+ {
+  "word": "聞く",
+  "reading": "きく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "slušati, pitati"
+ },
+ {
+  "word": "北",
+  "reading": "きた",
+  "level": "N5",
+  "pos": "n",
+  "hr": "sjever"
+ },
+ {
+  "word": "ギター",
+  "reading": "ギター",
+  "level": "N5",
+  "pos": "n",
+  "hr": "gitara"
+ },
+ {
+  "word": "汚い",
+  "reading": "きたない",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "prljav"
+ },
+ {
+  "word": "喫茶店",
+  "reading": "きっさてん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kafić"
+ },
+ {
+  "word": "切手",
+  "reading": "きって",
+  "level": "N5",
+  "pos": "n",
+  "hr": "poštanska marka"
+ },
+ {
+  "word": "切符",
+  "reading": "きっぷ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "karta"
+ },
+ {
+  "word": "昨日",
+  "reading": "きのう",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "jučer"
+ },
+ {
+  "word": "九",
+  "reading": "きゅう",
+  "level": "N5",
+  "pos": "num",
+  "hr": "devet"
+ },
+ {
+  "word": "牛肉",
+  "reading": "ぎゅうにく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "govedina"
+ },
+ {
+  "word": "牛乳",
+  "reading": "ぎゅうにゅう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "mlijeko"
+ },
+ {
+  "word": "今日",
+  "reading": "きょう",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "danas"
+ },
+ {
+  "word": "教室",
+  "reading": "きょうしつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "učionica"
+ },
+ {
+  "word": "兄弟",
+  "reading": "きょうだい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "braća i sestre"
+ },
+ {
+  "word": "去年",
+  "reading": "きょねん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "prošle godine"
+ },
+ {
+  "word": "嫌い",
+  "reading": "きらい",
+  "level": "N5",
+  "pos": "adj-na; n",
+  "hr": "mrzak"
+ },
+ {
+  "word": "切る",
+  "reading": "きる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "rezati"
+ },
+ {
+  "word": "着る",
+  "reading": "きる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "obući"
+ },
+ {
+  "word": "きれい",
+  "reading": "きれい",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "lijep, čist"
+ },
+ {
+  "word": "キロ",
+  "reading": "キロ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kilometar, kilogram"
+ },
+ {
+  "word": "銀行",
+  "reading": "ぎんこう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "banka"
+ },
+ {
+  "word": "金曜日",
+  "reading": "きんようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "petak"
+ },
+ {
+  "word": "薬",
+  "reading": "くすり",
+  "level": "N5",
+  "pos": "n",
+  "hr": "lijek"
+ },
+ {
+  "word": "ください",
+  "reading": "ください",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "molim"
+ },
+ {
+  "word": "果物",
+  "reading": "くだもの",
+  "level": "N5",
+  "pos": "n",
+  "hr": "voće"
+ },
+ {
+  "word": "口",
+  "reading": "くち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "usta, otvor"
+ },
+ {
+  "word": "靴",
+  "reading": "くつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "cipele"
+ },
+ {
+  "word": "靴下",
+  "reading": "くつした",
+  "level": "N5",
+  "pos": "n",
+  "hr": "čarape"
+ },
+ {
+  "word": "国",
+  "reading": "くに",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zemlja, država"
+ },
+ {
+  "word": "曇り",
+  "reading": "くもり",
+  "level": "N5",
+  "pos": "n",
+  "hr": "oblačno vrijeme"
+ },
+ {
+  "word": "曇る",
+  "reading": "くもる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "naoblačiti se"
+ },
+ {
+  "word": "暗い",
+  "reading": "くらい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "mračan"
+ },
+ {
+  "word": "クラス",
+  "reading": "クラス",
+  "level": "N5",
+  "pos": "n",
+  "hr": "razred"
+ },
+ {
+  "word": "グラム",
+  "reading": "グラム",
+  "level": "N5",
+  "pos": "n",
+  "hr": "gram"
+ },
+ {
+  "word": "来る",
+  "reading": "くる",
+  "level": "N5",
+  "pos": "vk; vi",
+  "hr": "doći"
+ },
+ {
+  "word": "車",
+  "reading": "くるま",
+  "level": "N5",
+  "pos": "n",
+  "hr": "auto, vozilo"
+ },
+ {
+  "word": "黒",
+  "reading": "くろ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "crna boja, crn"
+ },
+ {
+  "word": "黒い",
+  "reading": "くろい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "crn"
+ },
+ {
+  "word": "警官",
+  "reading": "けいかん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "policajac"
+ },
+ {
+  "word": "今朝",
+  "reading": "けさ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "jutros"
+ },
+ {
+  "word": "消す",
+  "reading": "けす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "izbrisati, ugasiti"
+ },
+ {
+  "word": "結構",
+  "reading": "けっこう",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "izvrstan, dovoljan"
+ },
+ {
+  "word": "結婚",
+  "reading": "けっこん",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "vjenčati se"
+ },
+ {
+  "word": "月曜日",
+  "reading": "げつようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "ponedjeljak"
+ },
+ {
+  "word": "玄関",
+  "reading": "げんかん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "predsoblje"
+ },
+ {
+  "word": "元気",
+  "reading": "げんき",
+  "level": "N5",
+  "pos": "adj-na; n",
+  "hr": "zdrav, živahan"
+ },
+ {
+  "word": "五",
+  "reading": "ご",
+  "level": "N5",
+  "pos": "num",
+  "hr": "pet"
+ },
+ {
+  "word": "公園",
+  "reading": "こうえん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "park"
+ },
+ {
+  "word": "交差点",
+  "reading": "こうさてん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "raskrižje"
+ },
+ {
+  "word": "紅茶",
+  "reading": "こうちゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "crni čaj"
+ },
+ {
+  "word": "交番",
+  "reading": "こうばん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "policijska kućica"
+ },
+ {
+  "word": "声",
+  "reading": "こえ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "glas"
+ },
+ {
+  "word": "コート",
+  "reading": "コート",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kaput, teren"
+ },
+ {
+  "word": "コーヒー",
+  "reading": "コーヒー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kava"
+ },
+ {
+  "word": "ここ",
+  "reading": "ここ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ovdje"
+ },
+ {
+  "word": "午後",
+  "reading": "ごご",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "poslijepodne"
+ },
+ {
+  "word": "九日",
+  "reading": "ここのか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "devet dana, deveti dan"
+ },
+ {
+  "word": "九つ",
+  "reading": "ここのつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "devet"
+ },
+ {
+  "word": "午前",
+  "reading": "ごぜん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "prijepodne"
+ },
+ {
+  "word": "答える",
+  "reading": "こたえる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "odgovoriti"
+ },
+ {
+  "word": "ごちそうさま",
+  "reading": "ごちそうさま",
+  "level": "N5",
+  "pos": "int",
+  "hr": "hvala na obroku"
+ },
+ {
+  "word": "こちら",
+  "reading": "こちら",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ovuda, ova osoba"
+ },
+ {
+  "word": "こっち",
+  "reading": "こっち",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ovuda, ovaj"
+ },
+ {
+  "word": "コップ",
+  "reading": "コップ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "čaša"
+ },
+ {
+  "word": "今年",
+  "reading": "ことし",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "ove godine"
+ },
+ {
+  "word": "言葉",
+  "reading": "ことば",
+  "level": "N5",
+  "pos": "n",
+  "hr": "riječ, jezik"
+ },
+ {
+  "word": "子供",
+  "reading": "こども",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dijete"
+ },
+ {
+  "word": "この",
+  "reading": "この",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "ovaj"
+ },
+ {
+  "word": "御飯",
+  "reading": "ごはん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kuhana riža, obrok"
+ },
+ {
+  "word": "コピーする",
+  "reading": "コピーする",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "kopirati"
+ },
+ {
+  "word": "困る",
+  "reading": "こまる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "biti u nevolji"
+ },
+ {
+  "word": "ごめんなさい",
+  "reading": "ごめんなさい",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "oprostite"
+ },
+ {
+  "word": "これ",
+  "reading": "これ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ovo"
+ },
+ {
+  "word": "今月",
+  "reading": "こんげつ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "ovaj mjesec"
+ },
+ {
+  "word": "今週",
+  "reading": "こんしゅう",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "ovaj tjedan"
+ },
+ {
+  "word": "こんな",
+  "reading": "こんな",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "ovakav"
+ },
+ {
+  "word": "こんにちは",
+  "reading": "こんにちは",
+  "level": "N5",
+  "pos": "int",
+  "hr": "dobar dan"
+ },
+ {
+  "word": "今晩",
+  "reading": "こんばん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "večeras"
+ },
+ {
+  "word": "こんばんは",
+  "reading": "こんばんは",
+  "level": "N5",
+  "pos": "int",
+  "hr": "dobra večer"
+ },
+ {
+  "word": "さあ",
+  "reading": "さあ",
+  "level": "N5",
+  "pos": "int",
+  "hr": "pa, hajde"
+ },
+ {
+  "word": "財布",
+  "reading": "さいふ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "novčanik"
+ },
+ {
+  "word": "魚",
+  "reading": "さかな",
+  "level": "N5",
+  "pos": "n",
+  "hr": "riba"
+ },
+ {
+  "word": "先",
+  "reading": "さき",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "budućnost, prethodni"
+ },
+ {
+  "word": "咲く",
+  "reading": "さく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "cvjetati"
+ },
+ {
+  "word": "作文",
+  "reading": "さくぶん",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "pisati sastav"
+ },
+ {
+  "word": "差す",
+  "reading": "さす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "otvoriti kišobran"
+ },
+ {
+  "word": "雑誌",
+  "reading": "ざっし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "časopis"
+ },
+ {
+  "word": "砂糖",
+  "reading": "さとう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "šećer"
+ },
+ {
+  "word": "寒い",
+  "reading": "さむい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "hladan"
+ },
+ {
+  "word": "さようなら",
+  "reading": "さようなら",
+  "level": "N5",
+  "pos": "int",
+  "hr": "zbogom"
+ },
+ {
+  "word": "再来年",
+  "reading": "さらいねん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "preksljedeće godine"
+ },
+ {
+  "word": "三",
+  "reading": "さん",
+  "level": "N5",
+  "pos": "num",
+  "hr": "tri"
+ },
+ {
+  "word": "散歩",
+  "reading": "さんぽ",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "šetati"
+ },
+ {
+  "word": "四",
+  "reading": "し",
+  "level": "N5",
+  "pos": "num",
+  "hr": "četiri"
+ },
+ {
+  "word": "塩",
+  "reading": "しお",
+  "level": "N5",
+  "pos": "n",
+  "hr": "sol"
+ },
+ {
+  "word": "しかし",
+  "reading": "しかし",
+  "level": "N5",
+  "pos": "conj",
+  "hr": "međutim"
+ },
+ {
+  "word": "時間",
+  "reading": "じかん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vrijeme"
+ },
+ {
+  "word": "仕事",
+  "reading": "しごと",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "raditi"
+ },
+ {
+  "word": "辞書",
+  "reading": "じしょ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "rječnik"
+ },
+ {
+  "word": "静か",
+  "reading": "しずか",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "tih"
+ },
+ {
+  "word": "下",
+  "reading": "した",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ispod"
+ },
+ {
+  "word": "七",
+  "reading": "しち",
+  "level": "N5",
+  "pos": "num",
+  "hr": "sedam"
+ },
+ {
+  "word": "質問",
+  "reading": "しつもん",
+  "level": "N5",
+  "pos": "n; vs; vt; vi; adj-no",
+  "hr": "pitati"
+ },
+ {
+  "word": "自転車",
+  "reading": "じてんしゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "bicikl"
+ },
+ {
+  "word": "自動車",
+  "reading": "じどうしゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "automobil"
+ },
+ {
+  "word": "死ぬ",
+  "reading": "しぬ",
+  "level": "N5",
+  "pos": "v5n; vi",
+  "hr": "umrijeti"
+ },
+ {
+  "word": "字引",
+  "reading": "じびき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "rječnik"
+ },
+ {
+  "word": "自分",
+  "reading": "じぶん",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "sam, sebe"
+ },
+ {
+  "word": "閉まる",
+  "reading": "しまる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "zatvoriti se"
+ },
+ {
+  "word": "締める",
+  "reading": "しめる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "vezati"
+ },
+ {
+  "word": "閉める",
+  "reading": "しめる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "zatvoriti"
+ },
+ {
+  "word": "じゃ",
+  "reading": "じゃ",
+  "level": "N5",
+  "pos": "conj",
+  "hr": "pa onda"
+ },
+ {
+  "word": "写真",
+  "reading": "しゃしん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "fotografija"
+ },
+ {
+  "word": "シャツ",
+  "reading": "シャツ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "košulja"
+ },
+ {
+  "word": "シャワー",
+  "reading": "シャワー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "tuš"
+ },
+ {
+  "word": "十",
+  "reading": "じゅう",
+  "level": "N5",
+  "pos": "num",
+  "hr": "deset"
+ },
+ {
+  "word": "授業",
+  "reading": "じゅぎょう",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "predavati"
+ },
+ {
+  "word": "宿題",
+  "reading": "しゅくだい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "domaća zadaća"
+ },
+ {
+  "word": "上手",
+  "reading": "じょうず",
+  "level": "N5",
+  "pos": "adj-na; n",
+  "hr": "vješt"
+ },
+ {
+  "word": "丈夫",
+  "reading": "じょうぶ",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "čvrst, izdržljiv"
+ },
+ {
+  "word": "しょうゆ",
+  "reading": "しょうゆ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "umak od soje"
+ },
+ {
+  "word": "食堂",
+  "reading": "しょくどう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "blagovaonica, menza"
+ },
+ {
+  "word": "知る",
+  "reading": "しる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "znati"
+ },
+ {
+  "word": "白",
+  "reading": "しろ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "bijela boja"
+ },
+ {
+  "word": "白い",
+  "reading": "しろい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "bijel"
+ },
+ {
+  "word": "新聞",
+  "reading": "しんぶん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "novine"
+ },
+ {
+  "word": "水曜日",
+  "reading": "すいようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "srijeda"
+ },
+ {
+  "word": "吸う",
+  "reading": "すう",
+  "level": "N5",
+  "pos": "v5u; vt",
+  "hr": "pušiti, sisati"
+ },
+ {
+  "word": "スカート",
+  "reading": "スカート",
+  "level": "N5",
+  "pos": "n",
+  "hr": "suknja"
+ },
+ {
+  "word": "好き",
+  "reading": "すき",
+  "level": "N5",
+  "pos": "adj-na; n",
+  "hr": "drag"
+ },
+ {
+  "word": "すぐ",
+  "reading": "すぐ",
+  "level": "N5",
+  "pos": "adv; n",
+  "hr": "odmah, uskoro"
+ },
+ {
+  "word": "少ない",
+  "reading": "すくない",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "malobrojan"
+ },
+ {
+  "word": "すぐに",
+  "reading": "すぐに",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "smjesta"
+ },
+ {
+  "word": "少し",
+  "reading": "すこし",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "malo"
+ },
+ {
+  "word": "涼しい",
+  "reading": "すずしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "svjež"
+ },
+ {
+  "word": "ストーブ",
+  "reading": "ストーブ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "grijalica"
+ },
+ {
+  "word": "スプーン",
+  "reading": "スプーン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "žlica"
+ },
+ {
+  "word": "スポーツ",
+  "reading": "スポーツ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "sport"
+ },
+ {
+  "word": "ズボン",
+  "reading": "ズボン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "hlače"
+ },
+ {
+  "word": "すみません",
+  "reading": "すみません",
+  "level": "N5",
+  "pos": "exp; int",
+  "hr": "oprostite, ispričavam se"
+ },
+ {
+  "word": "住む",
+  "reading": "すむ",
+  "level": "N5",
+  "pos": "v5m; vi",
+  "hr": "stanovati"
+ },
+ {
+  "word": "スリッパ",
+  "reading": "スリッパ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "papuče"
+ },
+ {
+  "word": "する",
+  "reading": "する",
+  "level": "N5",
+  "pos": "vs-i",
+  "hr": "raditi"
+ },
+ {
+  "word": "座る",
+  "reading": "すわる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "sjesti"
+ },
+ {
+  "word": "背",
+  "reading": "せ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "visina, stas"
+ },
+ {
+  "word": "生徒",
+  "reading": "せいと",
+  "level": "N5",
+  "pos": "n",
+  "hr": "učenik"
+ },
+ {
+  "word": "セーター",
+  "reading": "セーター",
+  "level": "N5",
+  "pos": "n",
+  "hr": "džemper"
+ },
+ {
+  "word": "せっけん",
+  "reading": "せっけん",
+  "level": "N5",
+  "pos": "n; vs; vt; vi",
+  "hr": "štedjeti"
+ },
+ {
+  "word": "背広",
+  "reading": "せびろ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "muško odijelo"
+ },
+ {
+  "word": "狭い",
+  "reading": "せまい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "uzak"
+ },
+ {
+  "word": "ゼロ",
+  "reading": "ゼロ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "nula"
+ },
+ {
+  "word": "千",
+  "reading": "せん",
+  "level": "N5",
+  "pos": "num",
+  "hr": "tisuća"
+ },
+ {
+  "word": "先月",
+  "reading": "せんげつ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "prošli mjesec"
+ },
+ {
+  "word": "先週",
+  "reading": "せんしゅう",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "prošli tjedan"
+ },
+ {
+  "word": "先生",
+  "reading": "せんせい",
+  "level": "N5",
+  "pos": "n; n-suf",
+  "hr": "učitelj, liječnik"
+ },
+ {
+  "word": "洗濯",
+  "reading": "せんたく",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "prati rublje"
+ },
+ {
+  "word": "全部",
+  "reading": "ぜんぶ",
+  "level": "N5",
+  "pos": "n; adj-no; adv",
+  "hr": "sve"
+ },
+ {
+  "word": "掃除",
+  "reading": "そうじ",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "čistiti"
+ },
+ {
+  "word": "そうして",
+  "reading": "そうして",
+  "level": "N5",
+  "pos": "conj",
+  "hr": "i, zatim"
+ },
+ {
+  "word": "そこ",
+  "reading": "そこ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "tamo"
+ },
+ {
+  "word": "そちら",
+  "reading": "そちら",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "tamo, onuda"
+ },
+ {
+  "word": "そっち",
+  "reading": "そっち",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "tamo"
+ },
+ {
+  "word": "外",
+  "reading": "そと",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vani"
+ },
+ {
+  "word": "その",
+  "reading": "その",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "taj"
+ },
+ {
+  "word": "そば",
+  "reading": "そば",
+  "level": "N5",
+  "pos": "n",
+  "hr": "blizina, pokraj"
+ },
+ {
+  "word": "空",
+  "reading": "そら",
+  "level": "N5",
+  "pos": "n",
+  "hr": "nebo"
+ },
+ {
+  "word": "それ",
+  "reading": "それ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "to"
+ },
+ {
+  "word": "それから",
+  "reading": "それから",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "nakon toga"
+ },
+ {
+  "word": "それでは",
+  "reading": "それでは",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "u tom slučaju"
+ },
+ {
+  "word": "大学",
+  "reading": "だいがく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "sveučilište"
+ },
+ {
+  "word": "大使館",
+  "reading": "たいしかん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "veleposlanstvo"
+ },
+ {
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "u redu"
+ },
+ {
+  "word": "大好き",
+  "reading": "だいすき",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "jako drag"
+ },
+ {
+  "word": "大切",
+  "reading": "たいせつ",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "važan"
+ },
+ {
+  "word": "台所",
+  "reading": "だいどころ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kuhinja"
+ },
+ {
+  "word": "たいへん",
+  "reading": "たいへん",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "vrlo"
+ },
+ {
+  "word": "高い",
+  "reading": "たかい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "visok, skup"
+ },
+ {
+  "word": "たくさん",
+  "reading": "たくさん",
+  "level": "N5",
+  "pos": "adj-no; adj-na; n; adv",
+  "hr": "mnogo"
+ },
+ {
+  "word": "タクシー",
+  "reading": "タクシー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "taksi"
+ },
+ {
+  "word": "出す",
+  "reading": "だす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "izvaditi"
+ },
+ {
+  "word": "立つ",
+  "reading": "たつ",
+  "level": "N5",
+  "pos": "v5t; vi",
+  "hr": "stajati"
+ },
+ {
+  "word": "たて",
+  "reading": "たて",
+  "level": "N5",
+  "pos": "n",
+  "hr": "duljina, visina"
+ },
+ {
+  "word": "建物",
+  "reading": "たてもの",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zgrada"
+ },
+ {
+  "word": "楽しい",
+  "reading": "たのしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "zabavan"
+ },
+ {
+  "word": "頼む",
+  "reading": "たのむ",
+  "level": "N5",
+  "pos": "v5m; vt",
+  "hr": "zamoliti"
+ },
+ {
+  "word": "たばこ",
+  "reading": "たばこ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "duhan, cigarete"
+ },
+ {
+  "word": "たぶん",
+  "reading": "たぶん",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "vjerojatno"
+ },
+ {
+  "word": "食べ物",
+  "reading": "たべもの",
+  "level": "N5",
+  "pos": "n",
+  "hr": "hrana"
+ },
+ {
+  "word": "食べる",
+  "reading": "たべる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "jesti"
+ },
+ {
+  "word": "卵",
+  "reading": "たまご",
+  "level": "N5",
+  "pos": "n",
+  "hr": "jaje"
+ },
+ {
+  "word": "誰",
+  "reading": "だれ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "tko"
+ },
+ {
+  "word": "誕生日",
+  "reading": "たんじょうび",
+  "level": "N5",
+  "pos": "n",
+  "hr": "rođendan"
+ },
+ {
+  "word": "だんだん",
+  "reading": "だんだん",
+  "level": "N5",
+  "pos": "adv; adv-to",
+  "hr": "postupno"
+ },
+ {
+  "word": "小さい",
+  "reading": "ちいさい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "malen"
+ },
+ {
+  "word": "小さな",
+  "reading": "ちいさな",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "malen"
+ },
+ {
+  "word": "近い",
+  "reading": "ちかい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "blizak"
+ },
+ {
+  "word": "違う",
+  "reading": "ちがう",
+  "level": "N5",
+  "pos": "v5u; vi",
+  "hr": "razlikovati se"
+ },
+ {
+  "word": "近く",
+  "reading": "ちかく",
+  "level": "N5",
+  "pos": "n; adj-no; adv",
+  "hr": "blizina, blizu"
+ },
+ {
+  "word": "地下鉄",
+  "reading": "ちかてつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "podzemna željeznica"
+ },
+ {
+  "word": "地図",
+  "reading": "ちず",
+  "level": "N5",
+  "pos": "n",
+  "hr": "karta"
+ },
+ {
+  "word": "茶色",
+  "reading": "ちゃいろ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "smeđa boja"
+ },
+ {
+  "word": "ちゃわん",
+  "reading": "ちゃわん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zdjelica za rižu"
+ },
+ {
+  "word": "ちょうど",
+  "reading": "ちょうど",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "točno"
+ },
+ {
+  "word": "ちょっと",
+  "reading": "ちょっと",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "malo, pomalo"
+ },
+ {
+  "word": "使う",
+  "reading": "つかう",
+  "level": "N5",
+  "pos": "v5u; vt",
+  "hr": "koristiti"
+ },
+ {
+  "word": "疲れる",
+  "reading": "つかれる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "umoriti se"
+ },
+ {
+  "word": "次",
+  "reading": "つぎ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "sljedeći"
+ },
+ {
+  "word": "着く",
+  "reading": "つく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "stići"
+ },
+ {
+  "word": "机",
+  "reading": "つくえ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pisaći stol"
+ },
+ {
+  "word": "作る",
+  "reading": "つくる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "napraviti"
+ },
+ {
+  "word": "つける",
+  "reading": "つける",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "uključiti"
+ },
+ {
+  "word": "勤める",
+  "reading": "つとめる",
+  "level": "N5",
+  "pos": "v1; vt; vi",
+  "hr": "biti zaposlen"
+ },
+ {
+  "word": "つまらない",
+  "reading": "つまらない",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "dosadan"
+ },
+ {
+  "word": "冷たい",
+  "reading": "つめたい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "hladan (na dodir)"
+ },
+ {
+  "word": "強い",
+  "reading": "つよい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "jak"
+ },
+ {
+  "word": "手",
+  "reading": "て",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ruka, šaka"
+ },
+ {
+  "word": "テープ",
+  "reading": "テープ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "traka"
+ },
+ {
+  "word": "テーブル",
+  "reading": "テーブル",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stol"
+ },
+ {
+  "word": "テープレコーダー",
+  "reading": "テープレコーダー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kasetofon"
+ },
+ {
+  "word": "出かける",
+  "reading": "でかける",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "izaći"
+ },
+ {
+  "word": "手紙",
+  "reading": "てがみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pismo"
+ },
+ {
+  "word": "できる",
+  "reading": "できる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "moći"
+ },
+ {
+  "word": "出口",
+  "reading": "でぐち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "izlaz"
+ },
+ {
+  "word": "テスト",
+  "reading": "テスト",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "testirati"
+ },
+ {
+  "word": "では",
+  "reading": "では",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "dakle, onda"
+ },
+ {
+  "word": "デパート",
+  "reading": "デパート",
+  "level": "N5",
+  "pos": "n",
+  "hr": "robna kuća"
+ },
+ {
+  "word": "でも",
+  "reading": "でも",
+  "level": "N5",
+  "pos": "conj",
+  "hr": "ali"
+ },
+ {
+  "word": "出る",
+  "reading": "でる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "izaći, pojaviti se"
+ },
+ {
+  "word": "テレビ",
+  "reading": "テレビ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "televizija"
+ },
+ {
+  "word": "天気",
+  "reading": "てんき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vrijeme"
+ },
+ {
+  "word": "電気",
+  "reading": "でんき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "struja, svjetlo"
+ },
+ {
+  "word": "電車",
+  "reading": "でんしゃ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "električni vlak"
+ },
+ {
+  "word": "電話",
+  "reading": "でんわ",
+  "level": "N5",
+  "pos": "n; vs; vt; vi",
+  "hr": "telefonirati"
+ },
+ {
+  "word": "戸",
+  "reading": "と",
+  "level": "N5",
+  "pos": "n",
+  "hr": "japanska vrata"
+ },
+ {
+  "word": "ドア",
+  "reading": "ドア",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vrata"
+ },
+ {
+  "word": "トイレ",
+  "reading": "トイレ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zahod"
+ },
+ {
+  "word": "どう",
+  "reading": "どう",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "kako"
+ },
+ {
+  "word": "どうして",
+  "reading": "どうして",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "zašto"
+ },
+ {
+  "word": "どうぞ",
+  "reading": "どうぞ",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "izvolite, molim"
+ },
+ {
+  "word": "どうぞよろしく",
+  "reading": "どうぞよろしく",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "drago mi je"
+ },
+ {
+  "word": "動物",
+  "reading": "どうぶつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "životinja"
+ },
+ {
+  "word": "どうも",
+  "reading": "どうも",
+  "level": "N5",
+  "pos": "int",
+  "hr": "hvala"
+ },
+ {
+  "word": "遠い",
+  "reading": "とおい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "dalek"
+ },
+ {
+  "word": "十日",
+  "reading": "とおか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "deset dana, deseti dan"
+ },
+ {
+  "word": "時々",
+  "reading": "ときどき",
+  "level": "N5",
+  "pos": "adv; adj-no",
+  "hr": "ponekad"
+ },
+ {
+  "word": "時計",
+  "reading": "とけい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "sat"
+ },
+ {
+  "word": "どこ",
+  "reading": "どこ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "gdje"
+ },
+ {
+  "word": "所",
+  "reading": "ところ",
+  "level": "N5",
+  "pos": "n; adv; suf",
+  "hr": "mjesto"
+ },
+ {
+  "word": "年",
+  "reading": "とし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "godina"
+ },
+ {
+  "word": "図書館",
+  "reading": "としょかん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "knjižnica"
+ },
+ {
+  "word": "どちら",
+  "reading": "どちら",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "koji od dvaju"
+ },
+ {
+  "word": "どっち",
+  "reading": "どっち",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "koji"
+ },
+ {
+  "word": "とても",
+  "reading": "とても",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "vrlo"
+ },
+ {
+  "word": "どなた",
+  "reading": "どなた",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "tko"
+ },
+ {
+  "word": "隣",
+  "reading": "となり",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "susjedstvo, pored"
+ },
+ {
+  "word": "どの",
+  "reading": "どの",
+  "level": "N5",
+  "pos": "adj-pn",
+  "hr": "koji"
+ },
+ {
+  "word": "飛ぶ",
+  "reading": "とぶ",
+  "level": "N5",
+  "pos": "v5b; vi",
+  "hr": "letjeti, skakati"
+ },
+ {
+  "word": "止まる",
+  "reading": "とまる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "zaustaviti se"
+ },
+ {
+  "word": "友達",
+  "reading": "ともだち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "prijatelj"
+ },
+ {
+  "word": "土曜日",
+  "reading": "どようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "subota"
+ },
+ {
+  "word": "鳥",
+  "reading": "とり",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ptica"
+ },
+ {
+  "word": "鶏肉",
+  "reading": "とりにく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "piletina"
+ },
+ {
+  "word": "撮る",
+  "reading": "とる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "fotografirati, snimati"
+ },
+ {
+  "word": "取る",
+  "reading": "とる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "uzeti"
+ },
+ {
+  "word": "どれ",
+  "reading": "どれ",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "koji (od više)"
+ },
+ {
+  "word": "ナイフ",
+  "reading": "ナイフ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "nož"
+ },
+ {
+  "word": "中",
+  "reading": "なか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "unutrašnjost, sredina"
+ },
+ {
+  "word": "長い",
+  "reading": "ながい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "dug"
+ },
+ {
+  "word": "鳴く",
+  "reading": "なく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "glasati se, pjevati"
+ },
+ {
+  "word": "無くす",
+  "reading": "なくす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "izgubiti"
+ },
+ {
+  "word": "なぜ",
+  "reading": "なぜ",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "zašto"
+ },
+ {
+  "word": "夏",
+  "reading": "なつ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "ljeto"
+ },
+ {
+  "word": "夏休み",
+  "reading": "なつやすみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ljetni praznici"
+ },
+ {
+  "word": "など",
+  "reading": "など",
+  "level": "N5",
+  "pos": "prt",
+  "hr": "i tako dalje"
+ },
+ {
+  "word": "七つ",
+  "reading": "ななつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "sedam"
+ },
+ {
+  "word": "七日",
+  "reading": "なのか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "sedam dana, sedmi dan"
+ },
+ {
+  "word": "名前",
+  "reading": "なまえ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ime"
+ },
+ {
+  "word": "習う",
+  "reading": "ならう",
+  "level": "N5",
+  "pos": "v5u; vt",
+  "hr": "učiti"
+ },
+ {
+  "word": "並ぶ",
+  "reading": "ならぶ",
+  "level": "N5",
+  "pos": "v5b; vi",
+  "hr": "stati u red"
+ },
+ {
+  "word": "並べる",
+  "reading": "ならべる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "poredati"
+ },
+ {
+  "word": "なる",
+  "reading": "なる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "postati"
+ },
+ {
+  "word": "何",
+  "reading": "なん",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "što"
+ },
+ {
+  "word": "二",
+  "reading": "に",
+  "level": "N5",
+  "pos": "num",
+  "hr": "dva"
+ },
+ {
+  "word": "賑やか",
+  "reading": "にぎやか",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "živahan, užurban"
+ },
+ {
+  "word": "肉",
+  "reading": "にく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "meso"
+ },
+ {
+  "word": "西",
+  "reading": "にし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zapad"
+ },
+ {
+  "word": "日曜日",
+  "reading": "にちようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "nedjelja"
+ },
+ {
+  "word": "荷物",
+  "reading": "にもつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "prtljaga"
+ },
+ {
+  "word": "ニュース",
+  "reading": "ニュース",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vijesti"
+ },
+ {
+  "word": "庭",
+  "reading": "にわ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vrt"
+ },
+ {
+  "word": "脱ぐ",
+  "reading": "ぬぐ",
+  "level": "N5",
+  "pos": "v5g; vt",
+  "hr": "skinuti"
+ },
+ {
+  "word": "温い",
+  "reading": "ぬるい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "mlak"
+ },
+ {
+  "word": "ネクタイ",
+  "reading": "ネクタイ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kravata"
+ },
+ {
+  "word": "猫",
+  "reading": "ねこ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "mačka"
+ },
+ {
+  "word": "寝る",
+  "reading": "ねる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "leći, spavati"
+ },
+ {
+  "word": "ノート",
+  "reading": "ノート",
+  "level": "N5",
+  "pos": "n",
+  "hr": "bilježnica"
+ },
+ {
+  "word": "登る",
+  "reading": "のぼる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "penjati se"
+ },
+ {
+  "word": "飲み物",
+  "reading": "のみもの",
+  "level": "N5",
+  "pos": "n",
+  "hr": "piće"
+ },
+ {
+  "word": "飲む",
+  "reading": "のむ",
+  "level": "N5",
+  "pos": "v5m; vt",
+  "hr": "piti"
+ },
+ {
+  "word": "乗る",
+  "reading": "のる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "ukrcati se, voziti se"
+ },
+ {
+  "word": "歯",
+  "reading": "は",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zub"
+ },
+ {
+  "word": "パーティー",
+  "reading": "パーティー",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zabava"
+ },
+ {
+  "word": "はい",
+  "reading": "はい",
+  "level": "N5",
+  "pos": "int",
+  "hr": "da"
+ },
+ {
+  "word": "灰皿",
+  "reading": "はいざら",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pepeljara"
+ },
+ {
+  "word": "入る",
+  "reading": "はいる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "ući, sadržavati"
+ },
+ {
+  "word": "葉書",
+  "reading": "はがき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dopisnica"
+ },
+ {
+  "word": "はく",
+  "reading": "はく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "obući, obuti"
+ },
+ {
+  "word": "箱",
+  "reading": "はこ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kutija"
+ },
+ {
+  "word": "はし",
+  "reading": "はし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "štapići za jelo"
+ },
+ {
+  "word": "橋",
+  "reading": "はし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "most"
+ },
+ {
+  "word": "始まる",
+  "reading": "はじまる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "početi"
+ },
+ {
+  "word": "初め",
+  "reading": "はじめ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "početak"
+ },
+ {
+  "word": "初めて",
+  "reading": "はじめて",
+  "level": "N5",
+  "pos": "adv; adj-no",
+  "hr": "prvi put"
+ },
+ {
+  "word": "はじめまして",
+  "reading": "はじめまして",
+  "level": "N5",
+  "pos": "exp",
+  "hr": "drago mi je"
+ },
+ {
+  "word": "走る",
+  "reading": "はしる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "trčati"
+ },
+ {
+  "word": "バス",
+  "reading": "バス",
+  "level": "N5",
+  "pos": "n",
+  "hr": "autobus"
+ },
+ {
+  "word": "バター",
+  "reading": "バター",
+  "level": "N5",
+  "pos": "n",
+  "hr": "maslac"
+ },
+ {
+  "word": "二十歳",
+  "reading": "はたち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dvadeset godina starosti"
+ },
+ {
+  "word": "働く",
+  "reading": "はたらく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "raditi"
+ },
+ {
+  "word": "八",
+  "reading": "はち",
+  "level": "N5",
+  "pos": "num",
+  "hr": "osam"
+ },
+ {
+  "word": "二十日",
+  "reading": "はつか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dvadeset dana, dvadeseti dan"
+ },
+ {
+  "word": "花",
+  "reading": "はな",
+  "level": "N5",
+  "pos": "n",
+  "hr": "cvijet"
+ },
+ {
+  "word": "鼻",
+  "reading": "はな",
+  "level": "N5",
+  "pos": "n",
+  "hr": "nos"
+ },
+ {
+  "word": "話",
+  "reading": "はなし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "razgovor, priča"
+ },
+ {
+  "word": "話す",
+  "reading": "はなす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "govoriti"
+ },
+ {
+  "word": "早い",
+  "reading": "はやい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "ran"
+ },
+ {
+  "word": "速い",
+  "reading": "はやい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "brz"
+ },
+ {
+  "word": "春",
+  "reading": "はる",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "proljeće"
+ },
+ {
+  "word": "貼る",
+  "reading": "はる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "zalijepiti"
+ },
+ {
+  "word": "晴れ",
+  "reading": "はれ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "vedro vrijeme"
+ },
+ {
+  "word": "晴れる",
+  "reading": "はれる",
+  "level": "N5",
+  "pos": "v1; vi",
+  "hr": "razvedriti se"
+ },
+ {
+  "word": "半",
+  "reading": "はん",
+  "level": "N5",
+  "pos": "n-pref; n",
+  "hr": "pola"
+ },
+ {
+  "word": "晩",
+  "reading": "ばん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "večer"
+ },
+ {
+  "word": "パン",
+  "reading": "パン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kruh"
+ },
+ {
+  "word": "ハンカチ",
+  "reading": "ハンカチ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "rupčić"
+ },
+ {
+  "word": "番号",
+  "reading": "ばんごう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "broj"
+ },
+ {
+  "word": "晩御飯",
+  "reading": "ばんごはん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "večera"
+ },
+ {
+  "word": "半分",
+  "reading": "はんぶん",
+  "level": "N5",
+  "pos": "adv; n",
+  "hr": "polovica"
+ },
+ {
+  "word": "東",
+  "reading": "ひがし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "istok"
+ },
+ {
+  "word": "引く",
+  "reading": "ひく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "vući"
+ },
+ {
+  "word": "弾く",
+  "reading": "ひく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "svirati"
+ },
+ {
+  "word": "低い",
+  "reading": "ひくい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "nizak"
+ },
+ {
+  "word": "飛行機",
+  "reading": "ひこうき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zrakoplov"
+ },
+ {
+  "word": "左",
+  "reading": "ひだり",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "lijeva strana"
+ },
+ {
+  "word": "人",
+  "reading": "ひと",
+  "level": "N5",
+  "pos": "n",
+  "hr": "osoba, čovjek"
+ },
+ {
+  "word": "一つ",
+  "reading": "ひとつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "jedan"
+ },
+ {
+  "word": "一月",
+  "reading": "ひとつき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "jedan mjesec"
+ },
+ {
+  "word": "一人",
+  "reading": "ひとり",
+  "level": "N5",
+  "pos": "n",
+  "hr": "jedna osoba"
+ },
+ {
+  "word": "暇",
+  "reading": "ひま",
+  "level": "N5",
+  "pos": "n",
+  "hr": "slobodno vrijeme"
+ },
+ {
+  "word": "百",
+  "reading": "ひゃく",
+  "level": "N5",
+  "pos": "num",
+  "hr": "sto"
+ },
+ {
+  "word": "病院",
+  "reading": "びょういん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "bolnica"
+ },
+ {
+  "word": "病気",
+  "reading": "びょうき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "bolest"
+ },
+ {
+  "word": "昼",
+  "reading": "ひる",
+  "level": "N5",
+  "pos": "n",
+  "hr": "podne, dan"
+ },
+ {
+  "word": "昼御飯",
+  "reading": "ひるごはん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ručak"
+ },
+ {
+  "word": "広い",
+  "reading": "ひろい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "prostran, širok"
+ },
+ {
+  "word": "フィルム",
+  "reading": "フィルム",
+  "level": "N5",
+  "pos": "n",
+  "hr": "film (rola)"
+ },
+ {
+  "word": "封筒",
+  "reading": "ふうとう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "omotnica"
+ },
+ {
+  "word": "プール",
+  "reading": "プール",
+  "level": "N5",
+  "pos": "n",
+  "hr": "bazen"
+ },
+ {
+  "word": "フォーク",
+  "reading": "フォーク",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vilica"
+ },
+ {
+  "word": "吹く",
+  "reading": "ふく",
+  "level": "N5",
+  "pos": "v5k; vi",
+  "hr": "puhati"
+ },
+ {
+  "word": "服",
+  "reading": "ふく",
+  "level": "N5",
+  "pos": "n; n-suf",
+  "hr": "odjeća"
+ },
+ {
+  "word": "二つ",
+  "reading": "ふたつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "dva"
+ },
+ {
+  "word": "豚肉",
+  "reading": "ぶたにく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "svinjetina"
+ },
+ {
+  "word": "二人",
+  "reading": "ふたり",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dvije osobe"
+ },
+ {
+  "word": "二日",
+  "reading": "ふつか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "dva dana, drugi dan"
+ },
+ {
+  "word": "太い",
+  "reading": "ふとい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "debeo"
+ },
+ {
+  "word": "冬",
+  "reading": "ふゆ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "zima"
+ },
+ {
+  "word": "降る",
+  "reading": "ふる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "padati"
+ },
+ {
+  "word": "古い",
+  "reading": "ふるい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "star"
+ },
+ {
+  "word": "ふろ",
+  "reading": "ふろ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kupka"
+ },
+ {
+  "word": "文章",
+  "reading": "ぶんしょう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "rečenica, tekst"
+ },
+ {
+  "word": "ページ",
+  "reading": "ページ",
+  "level": "N5",
+  "pos": "n; ctr",
+  "hr": "stranica"
+ },
+ {
+  "word": "下手",
+  "reading": "へた",
+  "level": "N5",
+  "pos": "adj-na; n",
+  "hr": "nevješt"
+ },
+ {
+  "word": "ベッド",
+  "reading": "ベッド",
+  "level": "N5",
+  "pos": "n",
+  "hr": "krevet"
+ },
+ {
+  "word": "ペット",
+  "reading": "ペット",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kućni ljubimac"
+ },
+ {
+  "word": "部屋",
+  "reading": "へや",
+  "level": "N5",
+  "pos": "n",
+  "hr": "soba"
+ },
+ {
+  "word": "辺",
+  "reading": "へん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "okolica"
+ },
+ {
+  "word": "ペン",
+  "reading": "ペン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pero"
+ },
+ {
+  "word": "勉強",
+  "reading": "べんきょう",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "učiti"
+ },
+ {
+  "word": "便利",
+  "reading": "べんり",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "koristan, praktičan"
+ },
+ {
+  "word": "帽子",
+  "reading": "ぼうし",
+  "level": "N5",
+  "pos": "n",
+  "hr": "šešir, kapa"
+ },
+ {
+  "word": "ボールペン",
+  "reading": "ボールペン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "kemijska olovka"
+ },
+ {
+  "word": "ほか",
+  "reading": "ほか",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "drugi, ostalo"
+ },
+ {
+  "word": "ポケット",
+  "reading": "ポケット",
+  "level": "N5",
+  "pos": "n",
+  "hr": "džep"
+ },
+ {
+  "word": "欲しい",
+  "reading": "ほしい",
+  "level": "N5",
+  "pos": "adj-i; aux-adj",
+  "hr": "željen"
+ },
+ {
+  "word": "ポスト",
+  "reading": "ポスト",
+  "level": "N5",
+  "pos": "n",
+  "hr": "poštanski sandučić"
+ },
+ {
+  "word": "細い",
+  "reading": "ほそい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "tanak"
+ },
+ {
+  "word": "ボタン",
+  "reading": "ボタン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "gumb"
+ },
+ {
+  "word": "ホテル",
+  "reading": "ホテル",
+  "level": "N5",
+  "pos": "n",
+  "hr": "hotel"
+ },
+ {
+  "word": "本",
+  "reading": "ほん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "knjiga"
+ },
+ {
+  "word": "本棚",
+  "reading": "ほんだな",
+  "level": "N5",
+  "pos": "n",
+  "hr": "polica za knjige"
+ },
+ {
+  "word": "ほんとう",
+  "reading": "ほんとう",
+  "level": "N5",
+  "pos": "n; adj-no; adj-na",
+  "hr": "istina"
+ },
+ {
+  "word": "毎朝",
+  "reading": "まいあさ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "svako jutro"
+ },
+ {
+  "word": "毎月",
+  "reading": "まいげつ",
+  "level": "N5",
+  "pos": "adv; n",
+  "hr": "svaki mjesec"
+ },
+ {
+  "word": "毎週",
+  "reading": "まいしゅう",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "svaki tjedan"
+ },
+ {
+  "word": "毎日",
+  "reading": "まいにち",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "svaki dan"
+ },
+ {
+  "word": "毎年",
+  "reading": "まいねん",
+  "level": "N5",
+  "pos": "adv; n",
+  "hr": "svake godine"
+ },
+ {
+  "word": "毎晩",
+  "reading": "まいばん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "svaku večer"
+ },
+ {
+  "word": "前",
+  "reading": "まえ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "prije, ispred"
+ },
+ {
+  "word": "曲る",
+  "reading": "まがる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "skrenuti, saviti se"
+ },
+ {
+  "word": "まずい",
+  "reading": "まずい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "neukusan"
+ },
+ {
+  "word": "また",
+  "reading": "また",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "opet, i"
+ },
+ {
+  "word": "まだ",
+  "reading": "まだ",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "još"
+ },
+ {
+  "word": "町",
+  "reading": "まち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "grad, mjesto"
+ },
+ {
+  "word": "待つ",
+  "reading": "まつ",
+  "level": "N5",
+  "pos": "v5t; vt; vi",
+  "hr": "čekati"
+ },
+ {
+  "word": "まっすぐ",
+  "reading": "まっすぐ",
+  "level": "N5",
+  "pos": "adj-na; adv; n",
+  "hr": "ravno"
+ },
+ {
+  "word": "マッチ",
+  "reading": "マッチ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "šibica"
+ },
+ {
+  "word": "窓",
+  "reading": "まど",
+  "level": "N5",
+  "pos": "n",
+  "hr": "prozor"
+ },
+ {
+  "word": "丸い",
+  "reading": "まるい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "okrugao"
+ },
+ {
+  "word": "万",
+  "reading": "まん",
+  "level": "N5",
+  "pos": "num",
+  "hr": "deset tisuća"
+ },
+ {
+  "word": "万年筆",
+  "reading": "まんねんひつ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "nalivpero"
+ },
+ {
+  "word": "磨く",
+  "reading": "みがく",
+  "level": "N5",
+  "pos": "v5k; vt",
+  "hr": "četkati, polirati"
+ },
+ {
+  "word": "右",
+  "reading": "みぎ",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "desna strana"
+ },
+ {
+  "word": "短い",
+  "reading": "みじかい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "kratak"
+ },
+ {
+  "word": "水",
+  "reading": "みず",
+  "level": "N5",
+  "pos": "n",
+  "hr": "voda"
+ },
+ {
+  "word": "店",
+  "reading": "みせ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "trgovina"
+ },
+ {
+  "word": "見せる",
+  "reading": "みせる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "pokazati"
+ },
+ {
+  "word": "道",
+  "reading": "みち",
+  "level": "N5",
+  "pos": "n",
+  "hr": "put, ulica"
+ },
+ {
+  "word": "三日",
+  "reading": "みっか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "tri dana, treći dan"
+ },
+ {
+  "word": "三つ",
+  "reading": "みっつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "tri"
+ },
+ {
+  "word": "緑",
+  "reading": "みどり",
+  "level": "N5",
+  "pos": "n; adj-no",
+  "hr": "zelena boja"
+ },
+ {
+  "word": "皆さん",
+  "reading": "みなさん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "svi"
+ },
+ {
+  "word": "南",
+  "reading": "みなみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "jug"
+ },
+ {
+  "word": "耳",
+  "reading": "みみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "uho"
+ },
+ {
+  "word": "見る",
+  "reading": "みる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "vidjeti, gledati"
+ },
+ {
+  "word": "みんな",
+  "reading": "みんな",
+  "level": "N5",
+  "pos": "n; pn; adv",
+  "hr": "svi"
+ },
+ {
+  "word": "六日",
+  "reading": "むいか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "šest dana, šesti dan"
+ },
+ {
+  "word": "向こう",
+  "reading": "むこう",
+  "level": "N5",
+  "pos": "n",
+  "hr": "tamo, druga strana"
+ },
+ {
+  "word": "難しい",
+  "reading": "むずかしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "težak"
+ },
+ {
+  "word": "六つ",
+  "reading": "むっつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "šest"
+ },
+ {
+  "word": "村",
+  "reading": "むら",
+  "level": "N5",
+  "pos": "n",
+  "hr": "selo"
+ },
+ {
+  "word": "目",
+  "reading": "め",
+  "level": "N5",
+  "pos": "n",
+  "hr": "oko"
+ },
+ {
+  "word": "メートル",
+  "reading": "メートル",
+  "level": "N5",
+  "pos": "n",
+  "hr": "metar"
+ },
+ {
+  "word": "眼鏡",
+  "reading": "めがね",
+  "level": "N5",
+  "pos": "n",
+  "hr": "naočale"
+ },
+ {
+  "word": "もう",
+  "reading": "もう",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "već"
+ },
+ {
+  "word": "もう一度",
+  "reading": "もういちど",
+  "level": "N5",
+  "pos": "exp; adv",
+  "hr": "još jednom"
+ },
+ {
+  "word": "木曜日",
+  "reading": "もくようび",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "četvrtak"
+ },
+ {
+  "word": "持つ",
+  "reading": "もつ",
+  "level": "N5",
+  "pos": "v5t; vt",
+  "hr": "držati"
+ },
+ {
+  "word": "もっと",
+  "reading": "もっと",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "više"
+ },
+ {
+  "word": "物",
+  "reading": "もの",
+  "level": "N5",
+  "pos": "n",
+  "hr": "stvar"
+ },
+ {
+  "word": "門",
+  "reading": "もん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "vrata, kapija"
+ },
+ {
+  "word": "問題",
+  "reading": "もんだい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "problem, zadatak"
+ },
+ {
+  "word": "八百屋",
+  "reading": "やおや",
+  "level": "N5",
+  "pos": "n",
+  "hr": "prodavač povrća"
+ },
+ {
+  "word": "野菜",
+  "reading": "やさい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "povrće"
+ },
+ {
+  "word": "易しい",
+  "reading": "やさしい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "lak, jednostavan"
+ },
+ {
+  "word": "安い",
+  "reading": "やすい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "jeftin"
+ },
+ {
+  "word": "休み",
+  "reading": "やすみ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "odmor, praznik"
+ },
+ {
+  "word": "休む",
+  "reading": "やすむ",
+  "level": "N5",
+  "pos": "v5m; vi",
+  "hr": "odmarati se"
+ },
+ {
+  "word": "八つ",
+  "reading": "やっつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "osam"
+ },
+ {
+  "word": "山",
+  "reading": "やま",
+  "level": "N5",
+  "pos": "n; ctr",
+  "hr": "planina"
+ },
+ {
+  "word": "やる",
+  "reading": "やる",
+  "level": "N5",
+  "pos": "v5r; vt",
+  "hr": "raditi"
+ },
+ {
+  "word": "夕方",
+  "reading": "ゆうがた",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "večer"
+ },
+ {
+  "word": "夕飯",
+  "reading": "ゆうはん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "večera"
+ },
+ {
+  "word": "郵便局",
+  "reading": "ゆうびんきょく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "pošta"
+ },
+ {
+  "word": "昨夜",
+  "reading": "ゆうべ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "sinoć"
+ },
+ {
+  "word": "有名",
+  "reading": "ゆうめい",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "poznat"
+ },
+ {
+  "word": "雪",
+  "reading": "ゆき",
+  "level": "N5",
+  "pos": "n",
+  "hr": "snijeg"
+ },
+ {
+  "word": "ゆっくりと",
+  "reading": "ゆっくりと",
+  "level": "N5",
+  "pos": "adv; adv-to; vs",
+  "hr": "opuštati se"
+ },
+ {
+  "word": "八日",
+  "reading": "ようか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "osam dana, osmi dan"
+ },
+ {
+  "word": "洋服",
+  "reading": "ようふく",
+  "level": "N5",
+  "pos": "n",
+  "hr": "zapadnjačka odjeća"
+ },
+ {
+  "word": "よく",
+  "reading": "よく",
+  "level": "N5",
+  "pos": "adv",
+  "hr": "često, dobro"
+ },
+ {
+  "word": "横",
+  "reading": "よこ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "strana, širina"
+ },
+ {
+  "word": "四日",
+  "reading": "よっか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "četiri dana, četvrti dan"
+ },
+ {
+  "word": "四つ",
+  "reading": "よっつ",
+  "level": "N5",
+  "pos": "num",
+  "hr": "četiri"
+ },
+ {
+  "word": "呼ぶ",
+  "reading": "よぶ",
+  "level": "N5",
+  "pos": "v5b; vt",
+  "hr": "zvati, pozvati"
+ },
+ {
+  "word": "読む",
+  "reading": "よむ",
+  "level": "N5",
+  "pos": "v5m; vt",
+  "hr": "čitati"
+ },
+ {
+  "word": "より",
+  "reading": "より",
+  "level": "N5",
+  "pos": "prt",
+  "hr": "nego, od"
+ },
+ {
+  "word": "夜",
+  "reading": "よる",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "noć, večer"
+ },
+ {
+  "word": "弱い",
+  "reading": "よわい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "slab"
+ },
+ {
+  "word": "来月",
+  "reading": "らいげつ",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "sljedeći mjesec"
+ },
+ {
+  "word": "来週",
+  "reading": "らいしゅう",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "sljedeći tjedan"
+ },
+ {
+  "word": "来年",
+  "reading": "らいねん",
+  "level": "N5",
+  "pos": "n; adv",
+  "hr": "sljedeća godina"
+ },
+ {
+  "word": "ラジオ",
+  "reading": "ラジオ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "radio"
+ },
+ {
+  "word": "ラジカセ",
+  "reading": "ラジカセ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "radiokasetofon"
+ },
+ {
+  "word": "りっぱ",
+  "reading": "りっぱ",
+  "level": "N5",
+  "pos": "adj-na",
+  "hr": "sjajan"
+ },
+ {
+  "word": "留学生",
+  "reading": "りゅうがくせい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "strani student"
+ },
+ {
+  "word": "両親",
+  "reading": "りょうしん",
+  "level": "N5",
+  "pos": "n",
+  "hr": "roditelji"
+ },
+ {
+  "word": "料理",
+  "reading": "りょうり",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "kuhati"
+ },
+ {
+  "word": "旅行",
+  "reading": "りょこう",
+  "level": "N5",
+  "pos": "n; vs; vi",
+  "hr": "putovati"
+ },
+ {
+  "word": "零",
+  "reading": "れい",
+  "level": "N5",
+  "pos": "n",
+  "hr": "nula"
+ },
+ {
+  "word": "冷蔵庫",
+  "reading": "れいぞうこ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "hladnjak"
+ },
+ {
+  "word": "レコード",
+  "reading": "レコード",
+  "level": "N5",
+  "pos": "n",
+  "hr": "ploča"
+ },
+ {
+  "word": "レストラン",
+  "reading": "レストラン",
+  "level": "N5",
+  "pos": "n",
+  "hr": "restoran"
+ },
+ {
+  "word": "練習",
+  "reading": "れんしゅう",
+  "level": "N5",
+  "pos": "n; vs; vt",
+  "hr": "vježbati"
+ },
+ {
+  "word": "廊下",
+  "reading": "ろうか",
+  "level": "N5",
+  "pos": "n",
+  "hr": "hodnik"
+ },
+ {
+  "word": "六",
+  "reading": "ろく",
+  "level": "N5",
+  "pos": "num",
+  "hr": "šest"
+ },
+ {
+  "word": "ワイシャツ",
+  "reading": "ワイシャツ",
+  "level": "N5",
+  "pos": "n",
+  "hr": "košulja"
+ },
+ {
+  "word": "若い",
+  "reading": "わかい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "mlad"
+ },
+ {
+  "word": "分かる",
+  "reading": "わかる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "razumjeti"
+ },
+ {
+  "word": "忘れる",
+  "reading": "わすれる",
+  "level": "N5",
+  "pos": "v1; vt",
+  "hr": "zaboraviti"
+ },
+ {
+  "word": "私",
+  "reading": "わたくし",
+  "level": "N5",
+  "pos": "pn",
+  "hr": "ja (skromno)"
+ },
+ {
+  "word": "渡す",
+  "reading": "わたす",
+  "level": "N5",
+  "pos": "v5s; vt",
+  "hr": "predati"
+ },
+ {
+  "word": "渡る",
+  "reading": "わたる",
+  "level": "N5",
+  "pos": "v5r; vi",
+  "hr": "prijeći"
+ },
+ {
+  "word": "悪い",
+  "reading": "わるい",
+  "level": "N5",
+  "pos": "adj-i",
+  "hr": "loš"
+ },
+ {
+  "word": "あ",
+  "reading": "あ",
+  "level": "N4",
+  "pos": "int",
+  "hr": "ah"
+ },
+ {
+  "word": "ああ",
+  "reading": "ああ",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "tako"
+ },
+ {
+  "word": "あいさつする",
+  "reading": "あいさつする",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "pozdraviti"
+ },
+ {
+  "word": "間",
+  "reading": "あいだ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "razmak, između"
+ },
+ {
+  "word": "合う",
+  "reading": "あう",
+  "level": "N4",
+  "pos": "v5u; vi",
+  "hr": "odgovarati, pristajati"
+ },
+ {
+  "word": "あかちゃん",
+  "reading": "あかちゃん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "beba"
+ },
+ {
+  "word": "上がる",
+  "reading": "あがる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "dići se"
+ },
+ {
+  "word": "赤ん坊",
+  "reading": "あかんぼう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "beba"
+ },
+ {
+  "word": "空く",
+  "reading": "あく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "isprazniti se"
+ },
+ {
+  "word": "アクセサリー",
+  "reading": "アクセサリー",
+  "level": "N4",
+  "pos": "n",
+  "hr": "modni dodatak"
+ },
+ {
+  "word": "浅い",
+  "reading": "あさい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "plitak, površan"
+ },
+ {
+  "word": "味",
+  "reading": "あじ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "okus"
+ },
+ {
+  "word": "アジア",
+  "reading": "アジア",
+  "level": "N4",
+  "pos": "n",
+  "hr": "Azija"
+ },
+ {
+  "word": "明日",
+  "reading": "あす",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "sutra"
+ },
+ {
+  "word": "遊び",
+  "reading": "あそび",
+  "level": "N4",
+  "pos": "n",
+  "hr": "igra"
+ },
+ {
+  "word": "集まる",
+  "reading": "あつまる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "okupiti se"
+ },
+ {
+  "word": "集める",
+  "reading": "あつめる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "skupljati"
+ },
+ {
+  "word": "アナウンサー",
+  "reading": "アナウンサー",
+  "level": "N4",
+  "pos": "n",
+  "hr": "spiker"
+ },
+ {
+  "word": "アフリカ",
+  "reading": "アフリカ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "Afrika"
+ },
+ {
+  "word": "アメリカ",
+  "reading": "アメリカ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "Amerika"
+ },
+ {
+  "word": "謝る",
+  "reading": "あやまる",
+  "level": "N4",
+  "pos": "v5r; vt; vi",
+  "hr": "ispričati se"
+ },
+ {
+  "word": "アルコール",
+  "reading": "アルコール",
+  "level": "N4",
+  "pos": "n",
+  "hr": "alkohol"
+ },
+ {
+  "word": "アルバイト",
+  "reading": "アルバイト",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "honorarno raditi"
+ },
+ {
+  "word": "安心",
+  "reading": "あんしん",
+  "level": "N4",
+  "pos": "n; adj-na; vs; vi",
+  "hr": "olakšanje"
+ },
+ {
+  "word": "安全",
+  "reading": "あんぜん",
+  "level": "N4",
+  "pos": "n; adj-na",
+  "hr": "siguran"
+ },
+ {
+  "word": "あんな",
+  "reading": "あんな",
+  "level": "N4",
+  "pos": "adj-pn",
+  "hr": "takav"
+ },
+ {
+  "word": "案内",
+  "reading": "あんない",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "voditi, pokazati put"
+ },
+ {
+  "word": "以下",
+  "reading": "いか",
+  "level": "N4",
+  "pos": "n-suf",
+  "hr": "manje od, ispod"
+ },
+ {
+  "word": "以外",
+  "reading": "いがい",
+  "level": "N4",
+  "pos": "n-suf",
+  "hr": "osim"
+ },
+ {
+  "word": "医学",
+  "reading": "いがく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "medicina"
+ },
+ {
+  "word": "生きる",
+  "reading": "いきる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "živjeti"
+ },
+ {
+  "word": "意見",
+  "reading": "いけん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "mišljenje"
+ },
+ {
+  "word": "石",
+  "reading": "いし",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kamen"
+ },
+ {
+  "word": "いじめる",
+  "reading": "いじめる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "zadirkivati, maltretirati"
+ },
+ {
+  "word": "以上",
+  "reading": "いじょう",
+  "level": "N4",
+  "pos": "n-suf",
+  "hr": "više od, to je sve"
+ },
+ {
+  "word": "急ぐ",
+  "reading": "いそぐ",
+  "level": "N4",
+  "pos": "v5g; vi; vt",
+  "hr": "žuriti"
+ },
+ {
+  "word": "致す",
+  "reading": "いたす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "činiti (ponizno)"
+ },
+ {
+  "word": "いただく",
+  "reading": "いただく",
+  "level": "N4",
+  "pos": "v5k; vt",
+  "hr": "primiti (ponizno)"
+ },
+ {
+  "word": "一度",
+  "reading": "いちど",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "jednom"
+ },
+ {
+  "word": "一生懸命",
+  "reading": "いっしょうけんめい",
+  "level": "N4",
+  "pos": "adv; adj-na; n",
+  "hr": "svim snagama"
+ },
+ {
+  "word": "いっぱい",
+  "reading": "いっぱい",
+  "level": "N4",
+  "pos": "adj-na; adj-no; n-suf",
+  "hr": "pun"
+ },
+ {
+  "word": "糸",
+  "reading": "いと",
+  "level": "N4",
+  "pos": "n; n-suf",
+  "hr": "konac"
+ },
+ {
+  "word": "以内",
+  "reading": "いない",
+  "level": "N4",
+  "pos": "n; n-suf; adv",
+  "hr": "unutar"
+ },
+ {
+  "word": "田舎",
+  "reading": "いなか",
+  "level": "N4",
+  "pos": "n",
+  "hr": "selo, provincija"
+ },
+ {
+  "word": "祈る",
+  "reading": "いのる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "moliti se"
+ },
+ {
+  "word": "いらっしゃる",
+  "reading": "いらっしゃる",
+  "level": "N4",
+  "pos": "v5aru; vi",
+  "hr": "biti, doći (pristojno)"
+ },
+ {
+  "word": "植える",
+  "reading": "うえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "saditi"
+ },
+ {
+  "word": "うかがう",
+  "reading": "うかがう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "posjetiti"
+ },
+ {
+  "word": "受付",
+  "reading": "うけつけ",
+  "level": "N4",
+  "pos": "n; vs; vt; vi",
+  "hr": "zaprimiti"
+ },
+ {
+  "word": "受ける",
+  "reading": "うける",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "polagati, pohađati"
+ },
+ {
+  "word": "動く",
+  "reading": "うごく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "kretati se"
+ },
+ {
+  "word": "うそ",
+  "reading": "うそ",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "laž"
+ },
+ {
+  "word": "うち",
+  "reading": "うち",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "unutar, kuća"
+ },
+ {
+  "word": "打つ",
+  "reading": "うつ",
+  "level": "N4",
+  "pos": "v5t; vt",
+  "hr": "udariti"
+ },
+ {
+  "word": "美しい",
+  "reading": "うつくしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "lijep"
+ },
+ {
+  "word": "写す",
+  "reading": "うつす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "kopirati, fotografirati"
+ },
+ {
+  "word": "移る",
+  "reading": "うつる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "preseliti se"
+ },
+ {
+  "word": "腕",
+  "reading": "うで",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ruka"
+ },
+ {
+  "word": "うまい",
+  "reading": "うまい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "ukusan"
+ },
+ {
+  "word": "裏",
+  "reading": "うら",
+  "level": "N4",
+  "pos": "n",
+  "hr": "poleđina"
+ },
+ {
+  "word": "売り場",
+  "reading": "うりば",
+  "level": "N4",
+  "pos": "n",
+  "hr": "prodajni odjel"
+ },
+ {
+  "word": "うれしい",
+  "reading": "うれしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "sretan"
+ },
+ {
+  "word": "うん",
+  "reading": "うん",
+  "level": "N4",
+  "pos": "int",
+  "hr": "da (neformalno)"
+ },
+ {
+  "word": "運転",
+  "reading": "うんてん",
+  "level": "N4",
+  "pos": "n; vs; vt; vi",
+  "hr": "voziti"
+ },
+ {
+  "word": "運転手",
+  "reading": "うんてんしゅ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vozač"
+ },
+ {
+  "word": "運動",
+  "reading": "うんどう",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "vježbati"
+ },
+ {
+  "word": "エスカレーター",
+  "reading": "エスカレーター",
+  "level": "N4",
+  "pos": "n",
+  "hr": "pokretne stepenice"
+ },
+ {
+  "word": "枝",
+  "reading": "えだ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "grana, grančica"
+ },
+ {
+  "word": "選ぶ",
+  "reading": "えらぶ",
+  "level": "N4",
+  "pos": "v5b; vt",
+  "hr": "izabrati"
+ },
+ {
+  "word": "遠慮",
+  "reading": "えんりょ",
+  "level": "N4",
+  "pos": "n; vs; vt; vi",
+  "hr": "suzdržavati se"
+ },
+ {
+  "word": "おいでになる",
+  "reading": "おいでになる",
+  "level": "N4",
+  "pos": "exp; v5r",
+  "hr": "biti (počasno)"
+ },
+ {
+  "word": "お祝い",
+  "reading": "おいわい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "čestitka, proslava"
+ },
+ {
+  "word": "オートバイ",
+  "reading": "オートバイ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "motocikl"
+ },
+ {
+  "word": "おかげ",
+  "reading": "おかげ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zahvaljujući"
+ },
+ {
+  "word": "おかしい",
+  "reading": "おかしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "čudan, smiješan"
+ },
+ {
+  "word": "お金持ち",
+  "reading": "おかねもち",
+  "level": "N4",
+  "pos": "n",
+  "hr": "bogataš"
+ },
+ {
+  "word": "億",
+  "reading": "おく",
+  "level": "N4",
+  "pos": "num",
+  "hr": "sto milijuna"
+ },
+ {
+  "word": "屋上",
+  "reading": "おくじょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "krov"
+ },
+ {
+  "word": "贈り物",
+  "reading": "おくりもの",
+  "level": "N4",
+  "pos": "n",
+  "hr": "poklon"
+ },
+ {
+  "word": "送る",
+  "reading": "おくる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "poslati"
+ },
+ {
+  "word": "遅れる",
+  "reading": "おくれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "zakasniti"
+ },
+ {
+  "word": "起す",
+  "reading": "おこす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "probuditi"
+ },
+ {
+  "word": "行う",
+  "reading": "おこなう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "izvršiti"
+ },
+ {
+  "word": "怒る",
+  "reading": "おこる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "ljutiti se"
+ },
+ {
+  "word": "押し入れ",
+  "reading": "おしいれ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ormar"
+ },
+ {
+  "word": "お嬢さん",
+  "reading": "おじょうさん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "gospođica"
+ },
+ {
+  "word": "お宅",
+  "reading": "おたく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vaš dom"
+ },
+ {
+  "word": "落ちる",
+  "reading": "おちる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "pasti"
+ },
+ {
+  "word": "おっしゃる",
+  "reading": "おっしゃる",
+  "level": "N4",
+  "pos": "v5aru; vt",
+  "hr": "reći (pristojno)"
+ },
+ {
+  "word": "夫",
+  "reading": "おっと",
+  "level": "N4",
+  "pos": "n",
+  "hr": "muž"
+ },
+ {
+  "word": "おつり",
+  "reading": "おつり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ostatak novca"
+ },
+ {
+  "word": "音",
+  "reading": "おと",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zvuk, ton"
+ },
+ {
+  "word": "落す",
+  "reading": "おとす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "ispustiti"
+ },
+ {
+  "word": "踊り",
+  "reading": "おどり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ples"
+ },
+ {
+  "word": "踊る",
+  "reading": "おどる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "plesati"
+ },
+ {
+  "word": "驚く",
+  "reading": "おどろく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "iznenaditi se"
+ },
+ {
+  "word": "お祭り",
+  "reading": "おまつり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "festival"
+ },
+ {
+  "word": "お見舞い",
+  "reading": "おみまい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "posjet bolesniku"
+ },
+ {
+  "word": "お土産",
+  "reading": "おみやげ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "suvenir"
+ },
+ {
+  "word": "思い出す",
+  "reading": "おもいだす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "sjetiti se"
+ },
+ {
+  "word": "思う",
+  "reading": "おもう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "misliti, osjećati"
+ },
+ {
+  "word": "おもちゃ",
+  "reading": "おもちゃ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "igračka"
+ },
+ {
+  "word": "表",
+  "reading": "おもて",
+  "level": "N4",
+  "pos": "n",
+  "hr": "prednja strana"
+ },
+ {
+  "word": "親",
+  "reading": "おや",
+  "level": "N4",
+  "pos": "n",
+  "hr": "roditelj"
+ },
+ {
+  "word": "泳ぎ方",
+  "reading": "およぎかた",
+  "level": "N4",
+  "pos": "n",
+  "hr": "način plivanja"
+ },
+ {
+  "word": "下りる",
+  "reading": "おりる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "sići"
+ },
+ {
+  "word": "折る",
+  "reading": "おる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "slomiti, saviti"
+ },
+ {
+  "word": "お礼",
+  "reading": "おれい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zahvala"
+ },
+ {
+  "word": "折れる",
+  "reading": "おれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "slomiti se"
+ },
+ {
+  "word": "終わり",
+  "reading": "おわり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kraj"
+ },
+ {
+  "word": "カーテン",
+  "reading": "カーテン",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zavjesa"
+ },
+ {
+  "word": "海岸",
+  "reading": "かいがん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "obala"
+ },
+ {
+  "word": "会議",
+  "reading": "かいぎ",
+  "level": "N4",
+  "pos": "n; vs; vi; vt",
+  "hr": "sastančiti"
+ },
+ {
+  "word": "会議室",
+  "reading": "かいぎしつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "sala za sastanke"
+ },
+ {
+  "word": "会場",
+  "reading": "かいじょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "dvorana, mjesto okupljanja"
+ },
+ {
+  "word": "会話",
+  "reading": "かいわ",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "razgovarati"
+ },
+ {
+  "word": "帰り",
+  "reading": "かえり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "povratak"
+ },
+ {
+  "word": "変える",
+  "reading": "かえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "promijeniti"
+ },
+ {
+  "word": "科学",
+  "reading": "かがく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "znanost"
+ },
+ {
+  "word": "鏡",
+  "reading": "かがみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ogledalo"
+ },
+ {
+  "word": "飾る",
+  "reading": "かざる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "ukrasiti"
+ },
+ {
+  "word": "火事",
+  "reading": "かじ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "požar"
+ },
+ {
+  "word": "ガス",
+  "reading": "ガス",
+  "level": "N4",
+  "pos": "n",
+  "hr": "plin"
+ },
+ {
+  "word": "ガソリン",
+  "reading": "ガソリン",
+  "level": "N4",
+  "pos": "n",
+  "hr": "benzin"
+ },
+ {
+  "word": "ガソリンスタンド",
+  "reading": "ガソリンスタンド",
+  "level": "N4",
+  "pos": "n",
+  "hr": "benzinska postaja"
+ },
+ {
+  "word": "堅い",
+  "reading": "かたい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "tvrd"
+ },
+ {
+  "word": "形",
+  "reading": "かたち",
+  "level": "N4",
+  "pos": "n",
+  "hr": "oblik"
+ },
+ {
+  "word": "片付ける",
+  "reading": "かたづける",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "pospremiti"
+ },
+ {
+  "word": "課長",
+  "reading": "かちょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "šef odjela"
+ },
+ {
+  "word": "勝つ",
+  "reading": "かつ",
+  "level": "N4",
+  "pos": "v5t; vi",
+  "hr": "pobijediti"
+ },
+ {
+  "word": "かっこう",
+  "reading": "かっこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "izgled"
+ },
+ {
+  "word": "家内",
+  "reading": "かない",
+  "level": "N4",
+  "pos": "n",
+  "hr": "supruga"
+ },
+ {
+  "word": "悲しい",
+  "reading": "かなしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "tužan"
+ },
+ {
+  "word": "必ず",
+  "reading": "かならず",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "sigurno, obavezno"
+ },
+ {
+  "word": "彼女",
+  "reading": "かのじょ",
+  "level": "N4",
+  "pos": "pn",
+  "hr": "ona, djevojka"
+ },
+ {
+  "word": "壁",
+  "reading": "かべ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zid"
+ },
+ {
+  "word": "かまう",
+  "reading": "かまう",
+  "level": "N4",
+  "pos": "v5u; vi",
+  "hr": "mariti"
+ },
+ {
+  "word": "髪",
+  "reading": "かみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kosa"
+ },
+ {
+  "word": "噛む",
+  "reading": "かむ",
+  "level": "N4",
+  "pos": "v5m; vt",
+  "hr": "gristi, žvakati"
+ },
+ {
+  "word": "通う",
+  "reading": "かよう",
+  "level": "N4",
+  "pos": "v5u; vi",
+  "hr": "redovito putovati"
+ },
+ {
+  "word": "ガラス",
+  "reading": "ガラス",
+  "level": "N4",
+  "pos": "n",
+  "hr": "staklo"
+ },
+ {
+  "word": "彼",
+  "reading": "かれ",
+  "level": "N4",
+  "pos": "pn",
+  "hr": "on, dečko"
+ },
+ {
+  "word": "彼ら",
+  "reading": "かれら",
+  "level": "N4",
+  "pos": "pn",
+  "hr": "oni"
+ },
+ {
+  "word": "乾く",
+  "reading": "かわく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "osušiti se"
+ },
+ {
+  "word": "代わり",
+  "reading": "かわり",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "zamjena"
+ },
+ {
+  "word": "変わる",
+  "reading": "かわる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "promijeniti se"
+ },
+ {
+  "word": "考える",
+  "reading": "かんがえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "razmišljati"
+ },
+ {
+  "word": "関係",
+  "reading": "かんけい",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "biti povezan"
+ },
+ {
+  "word": "看護婦",
+  "reading": "かんごふ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "medicinska sestra"
+ },
+ {
+  "word": "簡単",
+  "reading": "かんたん",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "jednostavan"
+ },
+ {
+  "word": "気",
+  "reading": "き",
+  "level": "N4",
+  "pos": "n",
+  "hr": "duh, raspoloženje"
+ },
+ {
+  "word": "機会",
+  "reading": "きかい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "prilika"
+ },
+ {
+  "word": "危険",
+  "reading": "きけん",
+  "level": "N4",
+  "pos": "n; adj-na",
+  "hr": "opasan"
+ },
+ {
+  "word": "聞こえる",
+  "reading": "きこえる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "čuti se"
+ },
+ {
+  "word": "汽車",
+  "reading": "きしゃ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "parni vlak"
+ },
+ {
+  "word": "技術",
+  "reading": "ぎじゅつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tehnologija, vještina"
+ },
+ {
+  "word": "季節",
+  "reading": "きせつ",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "godišnje doba"
+ },
+ {
+  "word": "規則",
+  "reading": "きそく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "pravilo"
+ },
+ {
+  "word": "きっと",
+  "reading": "きっと",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "sigurno"
+ },
+ {
+  "word": "絹",
+  "reading": "きぬ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "svila"
+ },
+ {
+  "word": "厳しい",
+  "reading": "きびしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "strog"
+ },
+ {
+  "word": "気分",
+  "reading": "きぶん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "raspoloženje"
+ },
+ {
+  "word": "決まる",
+  "reading": "きまる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "biti odlučen"
+ },
+ {
+  "word": "君",
+  "reading": "きみ",
+  "level": "N4",
+  "pos": "pn",
+  "hr": "ti (neformalno)"
+ },
+ {
+  "word": "決める",
+  "reading": "きめる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "odlučiti"
+ },
+ {
+  "word": "気持ち",
+  "reading": "きもち",
+  "level": "N4",
+  "pos": "n",
+  "hr": "osjećaj"
+ },
+ {
+  "word": "着物",
+  "reading": "きもの",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kimono"
+ },
+ {
+  "word": "客",
+  "reading": "きゃく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "gost, kupac"
+ },
+ {
+  "word": "急",
+  "reading": "きゅう",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "hitan, strm"
+ },
+ {
+  "word": "急行",
+  "reading": "きゅうこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "brzi vlak"
+ },
+ {
+  "word": "教育",
+  "reading": "きょういく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "obrazovati"
+ },
+ {
+  "word": "教会",
+  "reading": "きょうかい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "crkva"
+ },
+ {
+  "word": "競争",
+  "reading": "きょうそう",
+  "level": "N4",
+  "pos": "n; vs; vt; vi",
+  "hr": "natjecati se"
+ },
+ {
+  "word": "興味",
+  "reading": "きょうみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "interes"
+ },
+ {
+  "word": "近所",
+  "reading": "きんじょ",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "susjedstvo"
+ },
+ {
+  "word": "具合",
+  "reading": "ぐあい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "stanje, zdravlje"
+ },
+ {
+  "word": "空気",
+  "reading": "くうき",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zrak, atmosfera"
+ },
+ {
+  "word": "空港",
+  "reading": "くうこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zračna luka"
+ },
+ {
+  "word": "草",
+  "reading": "くさ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "trava"
+ },
+ {
+  "word": "くださる",
+  "reading": "くださる",
+  "level": "N4",
+  "pos": "v5aru; vt",
+  "hr": "dati (pristojno)"
+ },
+ {
+  "word": "首",
+  "reading": "くび",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vrat"
+ },
+ {
+  "word": "雲",
+  "reading": "くも",
+  "level": "N4",
+  "pos": "n",
+  "hr": "oblak"
+ },
+ {
+  "word": "比べる",
+  "reading": "くらべる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "usporediti"
+ },
+ {
+  "word": "くれる",
+  "reading": "くれる",
+  "level": "N4",
+  "pos": "v1-s; vt",
+  "hr": "dati (meni)"
+ },
+ {
+  "word": "暮れる",
+  "reading": "くれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "smračiti se, završiti"
+ },
+ {
+  "word": "毛",
+  "reading": "け",
+  "level": "N4",
+  "pos": "n",
+  "hr": "dlaka, krzno"
+ },
+ {
+  "word": "計画",
+  "reading": "けいかく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "planirati"
+ },
+ {
+  "word": "経験",
+  "reading": "けいけん",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "iskusiti"
+ },
+ {
+  "word": "経済",
+  "reading": "けいざい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ekonomija"
+ },
+ {
+  "word": "警察",
+  "reading": "けいさつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "policija"
+ },
+ {
+  "word": "ケーキ",
+  "reading": "ケーキ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kolač"
+ },
+ {
+  "word": "けがする",
+  "reading": "けがする",
+  "level": "N4",
+  "pos": "n; vs; vt; vi",
+  "hr": "ozlijediti se"
+ },
+ {
+  "word": "景色",
+  "reading": "けしき",
+  "level": "N4",
+  "pos": "n",
+  "hr": "krajolik"
+ },
+ {
+  "word": "消しゴム",
+  "reading": "けしゴム",
+  "level": "N4",
+  "pos": "n",
+  "hr": "gumica"
+ },
+ {
+  "word": "下宿",
+  "reading": "げしゅく",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "stanovati kao podstanar"
+ },
+ {
+  "word": "決して",
+  "reading": "けっして",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "nikad"
+ },
+ {
+  "word": "けれど",
+  "reading": "けれど",
+  "level": "N4",
+  "pos": "conj; prt",
+  "hr": "međutim"
+ },
+ {
+  "word": "原因",
+  "reading": "げんいん",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "uzrokovati"
+ },
+ {
+  "word": "けんかする",
+  "reading": "けんかする",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "svađati se"
+ },
+ {
+  "word": "研究",
+  "reading": "けんきゅう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "istraživati"
+ },
+ {
+  "word": "研究室",
+  "reading": "けんきゅうしつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "laboratorij"
+ },
+ {
+  "word": "見物",
+  "reading": "けんぶつ",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "razgledavati"
+ },
+ {
+  "word": "子",
+  "reading": "こ",
+  "level": "N4",
+  "pos": "n; n-suf",
+  "hr": "dijete"
+ },
+ {
+  "word": "こう",
+  "reading": "こう",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "ovako"
+ },
+ {
+  "word": "郊外",
+  "reading": "こうがい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "predgrađe"
+ },
+ {
+  "word": "講義",
+  "reading": "こうぎ",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "predavati"
+ },
+ {
+  "word": "工業",
+  "reading": "こうぎょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "industrija"
+ },
+ {
+  "word": "高校",
+  "reading": "こうこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "srednja škola"
+ },
+ {
+  "word": "高校生",
+  "reading": "こうこうせい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "srednjoškolac"
+ },
+ {
+  "word": "工場",
+  "reading": "こうじょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tvornica"
+ },
+ {
+  "word": "校長",
+  "reading": "こうちょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ravnatelj"
+ },
+ {
+  "word": "交通",
+  "reading": "こうつう",
+  "level": "N4",
+  "pos": "n; vs",
+  "hr": "prometovati"
+ },
+ {
+  "word": "講堂",
+  "reading": "こうどう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "auditorij"
+ },
+ {
+  "word": "高等学校",
+  "reading": "こうとうがっこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "srednja škola"
+ },
+ {
+  "word": "公務員",
+  "reading": "こうむいん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "državni službenik"
+ },
+ {
+  "word": "国際",
+  "reading": "こくさい",
+  "level": "N4",
+  "pos": "adj-no; n",
+  "hr": "međunarodni"
+ },
+ {
+  "word": "心",
+  "reading": "こころ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "srce, duša"
+ },
+ {
+  "word": "御主人",
+  "reading": "ごしゅじん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vaš muž"
+ },
+ {
+  "word": "故障",
+  "reading": "こしょう",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "pokvariti se"
+ },
+ {
+  "word": "ご存じ",
+  "reading": "ごぞんじ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "znanje (pristojno)"
+ },
+ {
+  "word": "答",
+  "reading": "こたえ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "odgovor"
+ },
+ {
+  "word": "ごちそう",
+  "reading": "ごちそう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "gozba"
+ },
+ {
+  "word": "こと",
+  "reading": "こと",
+  "level": "N4",
+  "pos": "n",
+  "hr": "stvar, pitanje"
+ },
+ {
+  "word": "小鳥",
+  "reading": "ことり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ptičica"
+ },
+ {
+  "word": "このあいだ",
+  "reading": "このあいだ",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "nedavno"
+ },
+ {
+  "word": "このごろ",
+  "reading": "このごろ",
+  "level": "N4",
+  "pos": "adv; n",
+  "hr": "ovih dana"
+ },
+ {
+  "word": "細かい",
+  "reading": "こまかい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "sitan"
+ },
+ {
+  "word": "ごみ",
+  "reading": "ごみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "smeće"
+ },
+ {
+  "word": "込む",
+  "reading": "こむ",
+  "level": "N4",
+  "pos": "v5m; vi",
+  "hr": "biti krcat"
+ },
+ {
+  "word": "米",
+  "reading": "こめ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "riža"
+ },
+ {
+  "word": "ごらんになる",
+  "reading": "ごらんになる",
+  "level": "N4",
+  "pos": "exp; v5r",
+  "hr": "vidjeti (počasno)"
+ },
+ {
+  "word": "これから",
+  "reading": "これから",
+  "level": "N4",
+  "pos": "exp",
+  "hr": "od sada"
+ },
+ {
+  "word": "怖い",
+  "reading": "こわい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "strašan"
+ },
+ {
+  "word": "壊す",
+  "reading": "こわす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "slomiti, pokvariti"
+ },
+ {
+  "word": "壊れる",
+  "reading": "こわれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "pokvariti se"
+ },
+ {
+  "word": "コンサート",
+  "reading": "コンサート",
+  "level": "N4",
+  "pos": "n",
+  "hr": "koncert"
+ },
+ {
+  "word": "今度",
+  "reading": "こんど",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "ovaj put, sljedeći put"
+ },
+ {
+  "word": "コンピュータ",
+  "reading": "コンピュータ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "računalo"
+ },
+ {
+  "word": "今夜",
+  "reading": "こんや",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "večeras"
+ },
+ {
+  "word": "最近",
+  "reading": "さいきん",
+  "level": "N4",
+  "pos": "n; adj-no; adv",
+  "hr": "nedavno, ovih dana"
+ },
+ {
+  "word": "最後",
+  "reading": "さいご",
+  "level": "N4",
+  "pos": "n",
+  "hr": "posljednji, kraj"
+ },
+ {
+  "word": "最初",
+  "reading": "さいしょ",
+  "level": "N4",
+  "pos": "adj-no; n; adv",
+  "hr": "početak, prvi"
+ },
+ {
+  "word": "坂",
+  "reading": "さか",
+  "level": "N4",
+  "pos": "n",
+  "hr": "padina, uzbrdica"
+ },
+ {
+  "word": "探す",
+  "reading": "さがす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "tražiti"
+ },
+ {
+  "word": "下がる",
+  "reading": "さがる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "spustiti se"
+ },
+ {
+  "word": "盛ん",
+  "reading": "さかん",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "popularan, uspješan"
+ },
+ {
+  "word": "下げる",
+  "reading": "さげる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "spustiti, objesiti"
+ },
+ {
+  "word": "差し上げる",
+  "reading": "さしあげる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "dati (pristojno)"
+ },
+ {
+  "word": "さっき",
+  "reading": "さっき",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "maloprije"
+ },
+ {
+  "word": "寂しい",
+  "reading": "さびしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "usamljen"
+ },
+ {
+  "word": "再来月",
+  "reading": "さらいげつ",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "za dva mjeseca"
+ },
+ {
+  "word": "再来週",
+  "reading": "さらいしゅう",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "za dva tjedna"
+ },
+ {
+  "word": "サラダ",
+  "reading": "サラダ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "salata"
+ },
+ {
+  "word": "騒ぐ",
+  "reading": "さわぐ",
+  "level": "N4",
+  "pos": "v5g; vi",
+  "hr": "bučiti"
+ },
+ {
+  "word": "触る",
+  "reading": "さわる",
+  "level": "N4",
+  "pos": "v5r; vi; vt",
+  "hr": "dodirnuti"
+ },
+ {
+  "word": "産業",
+  "reading": "さんぎょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "industrija"
+ },
+ {
+  "word": "サンダル",
+  "reading": "サンダル",
+  "level": "N4",
+  "pos": "n",
+  "hr": "sandala"
+ },
+ {
+  "word": "サンドイッチ",
+  "reading": "サンドイッチ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "sendvič"
+ },
+ {
+  "word": "残念",
+  "reading": "ざんねん",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "šteta"
+ },
+ {
+  "word": "市",
+  "reading": "し",
+  "level": "N4",
+  "pos": "n; n-suf",
+  "hr": "grad"
+ },
+ {
+  "word": "字",
+  "reading": "じ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "znak, slovo"
+ },
+ {
+  "word": "試合",
+  "reading": "しあい",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "igrati utakmicu"
+ },
+ {
+  "word": "仕方",
+  "reading": "しかた",
+  "level": "N4",
+  "pos": "n",
+  "hr": "način"
+ },
+ {
+  "word": "しかる",
+  "reading": "しかる",
+  "level": "N4",
+  "pos": "adj-pn",
+  "hr": "određeni"
+ },
+ {
+  "word": "試験",
+  "reading": "しけん",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "ispitivati"
+ },
+ {
+  "word": "事故",
+  "reading": "じこ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "nesreća"
+ },
+ {
+  "word": "地震",
+  "reading": "じしん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "potres"
+ },
+ {
+  "word": "時代",
+  "reading": "じだい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "doba, era"
+ },
+ {
+  "word": "下着",
+  "reading": "したぎ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "donje rublje"
+ },
+ {
+  "word": "支度",
+  "reading": "したく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pripremiti se"
+ },
+ {
+  "word": "しっかり",
+  "reading": "しっかり",
+  "level": "N4",
+  "pos": "adv; adv-to; vs",
+  "hr": "biti čvrst"
+ },
+ {
+  "word": "失敗",
+  "reading": "しっぱい",
+  "level": "N4",
+  "pos": "n; vs; vt; vi",
+  "hr": "ne uspjeti, pogriješiti"
+ },
+ {
+  "word": "辞典",
+  "reading": "じてん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "rječnik"
+ },
+ {
+  "word": "品物",
+  "reading": "しなもの",
+  "level": "N4",
+  "pos": "n",
+  "hr": "roba"
+ },
+ {
+  "word": "しばらく",
+  "reading": "しばらく",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "neko vrijeme"
+ },
+ {
+  "word": "島",
+  "reading": "しま",
+  "level": "N4",
+  "pos": "n",
+  "hr": "otok"
+ },
+ {
+  "word": "市民",
+  "reading": "しみん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "građanin"
+ },
+ {
+  "word": "事務所",
+  "reading": "じむしょ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ured"
+ },
+ {
+  "word": "社会",
+  "reading": "しゃかい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "društvo, javnost"
+ },
+ {
+  "word": "社長",
+  "reading": "しゃちょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "direktor tvrtke"
+ },
+ {
+  "word": "じゃま",
+  "reading": "じゃま",
+  "level": "N4",
+  "pos": "n; adj-na; vs; vt",
+  "hr": "smetnja"
+ },
+ {
+  "word": "ジャム",
+  "reading": "ジャム",
+  "level": "N4",
+  "pos": "n",
+  "hr": "džem"
+ },
+ {
+  "word": "自由",
+  "reading": "じゆう",
+  "level": "N4",
+  "pos": "n; adj-na",
+  "hr": "slobodan"
+ },
+ {
+  "word": "習慣",
+  "reading": "しゅうかん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "običaj, navika"
+ },
+ {
+  "word": "住所",
+  "reading": "じゅうしょ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "adresa, prebivalište"
+ },
+ {
+  "word": "柔道",
+  "reading": "じゅうどう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "judo"
+ },
+ {
+  "word": "十分",
+  "reading": "じゅうぶん",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "dovoljan"
+ },
+ {
+  "word": "出席",
+  "reading": "しゅっせき",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "prisustvovati"
+ },
+ {
+  "word": "出発",
+  "reading": "しゅっぱつ",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "krenuti"
+ },
+ {
+  "word": "趣味",
+  "reading": "しゅみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "hobi"
+ },
+ {
+  "word": "準備",
+  "reading": "じゅんび",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pripremiti"
+ },
+ {
+  "word": "紹介",
+  "reading": "しょうかい",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "predstaviti"
+ },
+ {
+  "word": "小学校",
+  "reading": "しょうがっこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "osnovna škola"
+ },
+ {
+  "word": "小説",
+  "reading": "しょうせつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "roman"
+ },
+ {
+  "word": "招待",
+  "reading": "しょうたい",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pozvati"
+ },
+ {
+  "word": "承知",
+  "reading": "しょうち",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pristati"
+ },
+ {
+  "word": "将来",
+  "reading": "しょうらい",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "budućnost"
+ },
+ {
+  "word": "食事",
+  "reading": "しょくじ",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "objedovati"
+ },
+ {
+  "word": "食料品",
+  "reading": "しょくりょうひん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "namirnice"
+ },
+ {
+  "word": "女性",
+  "reading": "じょせい",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "žena"
+ },
+ {
+  "word": "知らせる",
+  "reading": "しらせる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "obavijestiti"
+ },
+ {
+  "word": "調べる",
+  "reading": "しらべる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "istražiti"
+ },
+ {
+  "word": "人口",
+  "reading": "じんこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "stanovništvo"
+ },
+ {
+  "word": "神社",
+  "reading": "じんじゃ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "šintoističko svetište"
+ },
+ {
+  "word": "親切",
+  "reading": "しんせつ",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "ljubazan"
+ },
+ {
+  "word": "心配",
+  "reading": "しんぱい",
+  "level": "N4",
+  "pos": "n; vs; vt; adj-na",
+  "hr": "brinuti se"
+ },
+ {
+  "word": "新聞社",
+  "reading": "しんぶんしゃ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "novinska kuća"
+ },
+ {
+  "word": "水泳",
+  "reading": "すいえい",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "plivati"
+ },
+ {
+  "word": "水道",
+  "reading": "すいどう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vodovod"
+ },
+ {
+  "word": "ずいぶん",
+  "reading": "ずいぶん",
+  "level": "N4",
+  "pos": "adv; adv-to",
+  "hr": "jako, prilično"
+ },
+ {
+  "word": "数学",
+  "reading": "すうがく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "matematika"
+ },
+ {
+  "word": "スーツ",
+  "reading": "スーツ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "odijelo"
+ },
+ {
+  "word": "スーツケース",
+  "reading": "スーツケース",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kofer"
+ },
+ {
+  "word": "過ぎる",
+  "reading": "すぎる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "proći, premašiti"
+ },
+ {
+  "word": "すく",
+  "reading": "すく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "isprazniti se"
+ },
+ {
+  "word": "スクリーン",
+  "reading": "スクリーン",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ekran, platno"
+ },
+ {
+  "word": "凄い",
+  "reading": "すごい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "sjajan"
+ },
+ {
+  "word": "進む",
+  "reading": "すすむ",
+  "level": "N4",
+  "pos": "v5m; vi",
+  "hr": "napredovati"
+ },
+ {
+  "word": "すっかり",
+  "reading": "すっかり",
+  "level": "N4",
+  "pos": "adv; adv-to",
+  "hr": "potpuno"
+ },
+ {
+  "word": "すっと",
+  "reading": "すっと",
+  "level": "N4",
+  "pos": "adv; vs",
+  "hr": "osjetiti olakšanje"
+ },
+ {
+  "word": "ステーキ",
+  "reading": "ステーキ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "odrezak"
+ },
+ {
+  "word": "捨てる",
+  "reading": "すてる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "baciti"
+ },
+ {
+  "word": "ステレオ",
+  "reading": "ステレオ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "stereo"
+ },
+ {
+  "word": "砂",
+  "reading": "すな",
+  "level": "N4",
+  "pos": "n",
+  "hr": "pijesak"
+ },
+ {
+  "word": "すばらしい",
+  "reading": "すばらしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "divan"
+ },
+ {
+  "word": "滑る",
+  "reading": "すべる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "kliziti, poskliznuti se"
+ },
+ {
+  "word": "隅",
+  "reading": "すみ",
+  "level": "N4",
+  "pos": "n; n-suf",
+  "hr": "kut"
+ },
+ {
+  "word": "済む",
+  "reading": "すむ",
+  "level": "N4",
+  "pos": "v5m; vi",
+  "hr": "završiti se"
+ },
+ {
+  "word": "すり",
+  "reading": "すり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "džeparoš"
+ },
+ {
+  "word": "すると",
+  "reading": "すると",
+  "level": "N4",
+  "pos": "conj",
+  "hr": "tada, nakon toga"
+ },
+ {
+  "word": "生活",
+  "reading": "せいかつ",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "živjeti"
+ },
+ {
+  "word": "生産",
+  "reading": "せいさん",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "proizvoditi"
+ },
+ {
+  "word": "政治",
+  "reading": "せいじ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "politika"
+ },
+ {
+  "word": "西洋",
+  "reading": "せいよう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "Zapad"
+ },
+ {
+  "word": "世界",
+  "reading": "せかい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "svijet"
+ },
+ {
+  "word": "席",
+  "reading": "せき",
+  "level": "N4",
+  "pos": "n",
+  "hr": "sjedalo, mjesto"
+ },
+ {
+  "word": "説明",
+  "reading": "せつめい",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "objasniti"
+ },
+ {
+  "word": "背中",
+  "reading": "せなか",
+  "level": "N4",
+  "pos": "n",
+  "hr": "leđa"
+ },
+ {
+  "word": "ぜひ",
+  "reading": "ぜひ",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "svakako"
+ },
+ {
+  "word": "世話",
+  "reading": "せわ",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "brinuti se o"
+ },
+ {
+  "word": "線",
+  "reading": "せん",
+  "level": "N4",
+  "pos": "n; n-suf",
+  "hr": "linija"
+ },
+ {
+  "word": "ぜんぜん",
+  "reading": "ぜんぜん",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "nimalo"
+ },
+ {
+  "word": "戦争",
+  "reading": "せんそう",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "ratovati"
+ },
+ {
+  "word": "先輩",
+  "reading": "せんぱい",
+  "level": "N4",
+  "pos": "n; suf",
+  "hr": "stariji kolega"
+ },
+ {
+  "word": "そう",
+  "reading": "そう",
+  "level": "N4",
+  "pos": "aux; adj-na",
+  "hr": "tako"
+ },
+ {
+  "word": "相談",
+  "reading": "そうだん",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "savjetovati se"
+ },
+ {
+  "word": "育てる",
+  "reading": "そだてる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "odgojiti"
+ },
+ {
+  "word": "卒業",
+  "reading": "そつぎょう",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "diplomirati"
+ },
+ {
+  "word": "祖父",
+  "reading": "そふ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "djed"
+ },
+ {
+  "word": "ソフト",
+  "reading": "ソフト",
+  "level": "N4",
+  "pos": "adj-na; adj-no",
+  "hr": "mekan"
+ },
+ {
+  "word": "祖母",
+  "reading": "そぼ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "baka"
+ },
+ {
+  "word": "それで",
+  "reading": "それで",
+  "level": "N4",
+  "pos": "conj",
+  "hr": "zato, stoga"
+ },
+ {
+  "word": "それに",
+  "reading": "それに",
+  "level": "N4",
+  "pos": "conj",
+  "hr": "osim toga"
+ },
+ {
+  "word": "それほど",
+  "reading": "それほど",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "toliko"
+ },
+ {
+  "word": "そろそろ",
+  "reading": "そろそろ",
+  "level": "N4",
+  "pos": "adv; adv-to",
+  "hr": "polako, uskoro"
+ },
+ {
+  "word": "そんな",
+  "reading": "そんな",
+  "level": "N4",
+  "pos": "adj-pn",
+  "hr": "takav"
+ },
+ {
+  "word": "そんなに",
+  "reading": "そんなに",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "toliko, tako"
+ },
+ {
+  "word": "退院",
+  "reading": "たいいん",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "izaći iz bolnice"
+ },
+ {
+  "word": "大学生",
+  "reading": "だいがくせい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "student"
+ },
+ {
+  "word": "大事",
+  "reading": "だいじ",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "važan, dragocjen"
+ },
+ {
+  "word": "大体",
+  "reading": "だいたい",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "uglavnom"
+ },
+ {
+  "word": "たいてい",
+  "reading": "たいてい",
+  "level": "N4",
+  "pos": "adj-na; adv; n",
+  "hr": "obično"
+ },
+ {
+  "word": "タイプ",
+  "reading": "タイプ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tip, stil"
+ },
+ {
+  "word": "大分",
+  "reading": "だいぶ",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "znatno"
+ },
+ {
+  "word": "台風",
+  "reading": "たいふう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tajfun"
+ },
+ {
+  "word": "倒れる",
+  "reading": "たおれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "srušiti se"
+ },
+ {
+  "word": "だから",
+  "reading": "だから",
+  "level": "N4",
+  "pos": "conj",
+  "hr": "zato, stoga"
+ },
+ {
+  "word": "確か",
+  "reading": "たしか",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "siguran"
+ },
+ {
+  "word": "足す",
+  "reading": "たす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "zbrojiti, dodati"
+ },
+ {
+  "word": "尋ねる",
+  "reading": "たずねる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "pitati"
+ },
+ {
+  "word": "訪ねる",
+  "reading": "たずねる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "posjetiti"
+ },
+ {
+  "word": "正しい",
+  "reading": "ただしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "ispravan"
+ },
+ {
+  "word": "畳",
+  "reading": "たたみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tatami"
+ },
+ {
+  "word": "建てる",
+  "reading": "たてる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "graditi"
+ },
+ {
+  "word": "立てる",
+  "reading": "たてる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "uspraviti"
+ },
+ {
+  "word": "例えば",
+  "reading": "たとえば",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "na primjer"
+ },
+ {
+  "word": "棚",
+  "reading": "たな",
+  "level": "N4",
+  "pos": "n",
+  "hr": "polica"
+ },
+ {
+  "word": "楽しみ",
+  "reading": "たのしみ",
+  "level": "N4",
+  "pos": "n; adj-na",
+  "hr": "radost"
+ },
+ {
+  "word": "楽しむ",
+  "reading": "たのしむ",
+  "level": "N4",
+  "pos": "v5m; vt",
+  "hr": "uživati"
+ },
+ {
+  "word": "たまに",
+  "reading": "たまに",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "povremeno"
+ },
+ {
+  "word": "為",
+  "reading": "ため",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "radi, zbog"
+ },
+ {
+  "word": "だめ",
+  "reading": "だめ",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "ne valja"
+ },
+ {
+  "word": "足りる",
+  "reading": "たりる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "biti dovoljan"
+ },
+ {
+  "word": "男性",
+  "reading": "だんせい",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "muškarac"
+ },
+ {
+  "word": "暖房",
+  "reading": "だんぼう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "grijati"
+ },
+ {
+  "word": "血",
+  "reading": "ち",
+  "level": "N4",
+  "pos": "n",
+  "hr": "krv"
+ },
+ {
+  "word": "チェックする",
+  "reading": "チェックする",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "provjeriti"
+ },
+ {
+  "word": "力",
+  "reading": "ちから",
+  "level": "N4",
+  "pos": "n",
+  "hr": "snaga, moć"
+ },
+ {
+  "word": "ちっとも",
+  "reading": "ちっとも",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "nimalo"
+ },
+ {
+  "word": "ちゃん",
+  "reading": "ちゃん",
+  "level": "N4",
+  "pos": "suf",
+  "hr": "umanjeni nastavak"
+ },
+ {
+  "word": "注意",
+  "reading": "ちゅうい",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "paziti, upozoriti"
+ },
+ {
+  "word": "中学校",
+  "reading": "ちゅうがっこう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "niža srednja škola"
+ },
+ {
+  "word": "注射",
+  "reading": "ちゅうしゃ",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "dati injekciju"
+ },
+ {
+  "word": "駐車場",
+  "reading": "ちゅうしゃじょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "parkiralište"
+ },
+ {
+  "word": "地理",
+  "reading": "ちり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "geografija"
+ },
+ {
+  "word": "捕まえる",
+  "reading": "つかまえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "uhvatiti"
+ },
+ {
+  "word": "つき",
+  "reading": "つき",
+  "level": "N4",
+  "pos": "n",
+  "hr": "mjesec"
+ },
+ {
+  "word": "付く",
+  "reading": "つく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "biti pričvršćen"
+ },
+ {
+  "word": "漬ける",
+  "reading": "つける",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "namakati, kiseliti"
+ },
+ {
+  "word": "都合",
+  "reading": "つごう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "okolnosti, prikladnost"
+ },
+ {
+  "word": "伝える",
+  "reading": "つたえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "prenijeti"
+ },
+ {
+  "word": "続く",
+  "reading": "つづく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "nastaviti se"
+ },
+ {
+  "word": "続ける",
+  "reading": "つづける",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "nastaviti"
+ },
+ {
+  "word": "包む",
+  "reading": "つつむ",
+  "level": "N4",
+  "pos": "v5m; vt",
+  "hr": "zamotati"
+ },
+ {
+  "word": "妻",
+  "reading": "つま",
+  "level": "N4",
+  "pos": "n",
+  "hr": "supruga"
+ },
+ {
+  "word": "つもり",
+  "reading": "つもり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "namjera"
+ },
+ {
+  "word": "釣る",
+  "reading": "つる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "pecati"
+ },
+ {
+  "word": "連れる",
+  "reading": "つれる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "povesti"
+ },
+ {
+  "word": "丁寧",
+  "reading": "ていねい",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "pristojan"
+ },
+ {
+  "word": "テキスト",
+  "reading": "テキスト",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tekst, udžbenik"
+ },
+ {
+  "word": "適当",
+  "reading": "てきとう",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "prikladan"
+ },
+ {
+  "word": "できるだけ",
+  "reading": "できるだけ",
+  "level": "N4",
+  "pos": "exp; adv; adj-no",
+  "hr": "što je više moguće"
+ },
+ {
+  "word": "手伝う",
+  "reading": "てつだう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "pomoći"
+ },
+ {
+  "word": "テニス",
+  "reading": "テニス",
+  "level": "N4",
+  "pos": "n",
+  "hr": "tenis"
+ },
+ {
+  "word": "手袋",
+  "reading": "てぶくろ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "rukavica"
+ },
+ {
+  "word": "寺",
+  "reading": "てら",
+  "level": "N4",
+  "pos": "n",
+  "hr": "hram"
+ },
+ {
+  "word": "点",
+  "reading": "てん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "bod, točka"
+ },
+ {
+  "word": "店員",
+  "reading": "てんいん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "prodavač"
+ },
+ {
+  "word": "天気予報",
+  "reading": "てんきよほう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vremenska prognoza"
+ },
+ {
+  "word": "電灯",
+  "reading": "でんとう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "električno svjetlo"
+ },
+ {
+  "word": "電報",
+  "reading": "でんぽう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "brzojav"
+ },
+ {
+  "word": "展覧会",
+  "reading": "てんらんかい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "izložba"
+ },
+ {
+  "word": "都",
+  "reading": "と",
+  "level": "N4",
+  "pos": "n",
+  "hr": "metropola"
+ },
+ {
+  "word": "道具",
+  "reading": "どうぐ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "alat, sredstvo"
+ },
+ {
+  "word": "とうとう",
+  "reading": "とうとう",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "konačno"
+ },
+ {
+  "word": "動物園",
+  "reading": "どうぶつえん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zoološki vrt"
+ },
+ {
+  "word": "遠く",
+  "reading": "とおく",
+  "level": "N4",
+  "pos": "n; adv; adj-no",
+  "hr": "daleko, daljina"
+ },
+ {
+  "word": "通る",
+  "reading": "とおる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "proći"
+ },
+ {
+  "word": "特に",
+  "reading": "とくに",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "osobito, posebno"
+ },
+ {
+  "word": "特別",
+  "reading": "とくべつ",
+  "level": "N4",
+  "pos": "adj-na; adj-no; adv; n",
+  "hr": "poseban"
+ },
+ {
+  "word": "とこや",
+  "reading": "とこや",
+  "level": "N4",
+  "pos": "n",
+  "hr": "brijač"
+ },
+ {
+  "word": "途中",
+  "reading": "とちゅう",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "usput, na putu"
+ },
+ {
+  "word": "特急",
+  "reading": "とっきゅう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "brzi vlak"
+ },
+ {
+  "word": "届ける",
+  "reading": "とどける",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "dostaviti"
+ },
+ {
+  "word": "泊まる",
+  "reading": "とまる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "odsjesti"
+ },
+ {
+  "word": "止める",
+  "reading": "とめる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "zaustaviti"
+ },
+ {
+  "word": "取り替える",
+  "reading": "とりかえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "zamijeniti"
+ },
+ {
+  "word": "泥棒",
+  "reading": "どろぼう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "lopov"
+ },
+ {
+  "word": "どんどん",
+  "reading": "どんどん",
+  "level": "N4",
+  "pos": "adv; adv-to",
+  "hr": "sve više"
+ },
+ {
+  "word": "直す",
+  "reading": "なおす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "popraviti"
+ },
+ {
+  "word": "治る",
+  "reading": "なおる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "ozdraviti"
+ },
+ {
+  "word": "直る",
+  "reading": "なおる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "biti popravljen"
+ },
+ {
+  "word": "中々",
+  "reading": "なかなか",
+  "level": "N4",
+  "pos": "adv; adj-na",
+  "hr": "prilično"
+ },
+ {
+  "word": "泣く",
+  "reading": "なく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "plakati"
+ },
+ {
+  "word": "亡くなる",
+  "reading": "なくなる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "preminuti"
+ },
+ {
+  "word": "無くなる",
+  "reading": "なくなる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "nestati, izgubiti se"
+ },
+ {
+  "word": "投げる",
+  "reading": "なげる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "baciti"
+ },
+ {
+  "word": "なさる",
+  "reading": "なさる",
+  "level": "N4",
+  "pos": "v5aru; vt",
+  "hr": "činiti (uljudno)"
+ },
+ {
+  "word": "鳴る",
+  "reading": "なる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "zvoniti"
+ },
+ {
+  "word": "なるべく",
+  "reading": "なるべく",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "što je više moguće"
+ },
+ {
+  "word": "なるほど",
+  "reading": "なるほど",
+  "level": "N4",
+  "pos": "int; adv",
+  "hr": "aha, razumijem"
+ },
+ {
+  "word": "慣れる",
+  "reading": "なれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "naviknuti se"
+ },
+ {
+  "word": "におい",
+  "reading": "におい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "miris"
+ },
+ {
+  "word": "苦い",
+  "reading": "にがい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "gorak"
+ },
+ {
+  "word": "二階建て",
+  "reading": "にかいだて",
+  "level": "N4",
+  "pos": "n",
+  "hr": "dvokatnica"
+ },
+ {
+  "word": "逃げる",
+  "reading": "にげる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "pobjeći"
+ },
+ {
+  "word": "日記",
+  "reading": "にっき",
+  "level": "N4",
+  "pos": "n",
+  "hr": "dnevnik"
+ },
+ {
+  "word": "入院",
+  "reading": "にゅういん",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "biti hospitaliziran"
+ },
+ {
+  "word": "入学",
+  "reading": "にゅうがく",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "upisati školu"
+ },
+ {
+  "word": "似る",
+  "reading": "にる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "sličiti"
+ },
+ {
+  "word": "人形",
+  "reading": "にんぎょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "lutka, figura"
+ },
+ {
+  "word": "盗む",
+  "reading": "ぬすむ",
+  "level": "N4",
+  "pos": "v5m; vt",
+  "hr": "ukrasti"
+ },
+ {
+  "word": "塗る",
+  "reading": "ぬる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "bojati, mazati"
+ },
+ {
+  "word": "ぬれる",
+  "reading": "ぬれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "smočiti se"
+ },
+ {
+  "word": "ねだん",
+  "reading": "ねだん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "cijena"
+ },
+ {
+  "word": "熱",
+  "reading": "ねつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vrućica"
+ },
+ {
+  "word": "ねっしん",
+  "reading": "ねっしん",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "revan"
+ },
+ {
+  "word": "寝坊",
+  "reading": "ねぼう",
+  "level": "N4",
+  "pos": "n; vs; vi; adj-na; adj-no",
+  "hr": "uspavati se"
+ },
+ {
+  "word": "眠い",
+  "reading": "ねむい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "pospan"
+ },
+ {
+  "word": "眠る",
+  "reading": "ねむる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "spavati"
+ },
+ {
+  "word": "残る",
+  "reading": "のこる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "ostati"
+ },
+ {
+  "word": "のど",
+  "reading": "のど",
+  "level": "N4",
+  "pos": "n",
+  "hr": "grlo"
+ },
+ {
+  "word": "乗り換える",
+  "reading": "のりかえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "presjesti"
+ },
+ {
+  "word": "乗り物",
+  "reading": "のりもの",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vozilo"
+ },
+ {
+  "word": "葉",
+  "reading": "は",
+  "level": "N4",
+  "pos": "n",
+  "hr": "list"
+ },
+ {
+  "word": "場合",
+  "reading": "ばあい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "slučaj, situacija"
+ },
+ {
+  "word": "パート",
+  "reading": "パート",
+  "level": "N4",
+  "pos": "adj-no; n",
+  "hr": "skraćeno radno vrijeme"
+ },
+ {
+  "word": "倍",
+  "reading": "ばい",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "dvostruko"
+ },
+ {
+  "word": "拝見",
+  "reading": "はいけん",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pogledati (ponizno)"
+ },
+ {
+  "word": "歯医者",
+  "reading": "はいしゃ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zubar"
+ },
+ {
+  "word": "運ぶ",
+  "reading": "はこぶ",
+  "level": "N4",
+  "pos": "v5b; vt",
+  "hr": "prenositi"
+ },
+ {
+  "word": "始める",
+  "reading": "はじめる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "početi"
+ },
+ {
+  "word": "場所",
+  "reading": "ばしょ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "mjesto"
+ },
+ {
+  "word": "はず",
+  "reading": "はず",
+  "level": "N4",
+  "pos": "aux",
+  "hr": "trebalo bi"
+ },
+ {
+  "word": "恥ずかしい",
+  "reading": "はずかしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "posramljen"
+ },
+ {
+  "word": "パソコン",
+  "reading": "パソコン",
+  "level": "N4",
+  "pos": "n",
+  "hr": "osobno računalo"
+ },
+ {
+  "word": "発音",
+  "reading": "はつおん",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "izgovarati"
+ },
+ {
+  "word": "はっきり",
+  "reading": "はっきり",
+  "level": "N4",
+  "pos": "adv; adv-to",
+  "hr": "jasno"
+ },
+ {
+  "word": "花見",
+  "reading": "はなみ",
+  "level": "N4",
+  "pos": "n; vs",
+  "hr": "gledati cvjetove trešnje"
+ },
+ {
+  "word": "林",
+  "reading": "はやし",
+  "level": "N4",
+  "pos": "n",
+  "hr": "šumarak"
+ },
+ {
+  "word": "払う",
+  "reading": "はらう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "platiti"
+ },
+ {
+  "word": "番組",
+  "reading": "ばんぐみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "emisija"
+ },
+ {
+  "word": "反対",
+  "reading": "はんたい",
+  "level": "N4",
+  "pos": "n; vs; vi; adj-no; adj-na",
+  "hr": "protiviti se"
+ },
+ {
+  "word": "ハンドバッグ",
+  "reading": "ハンドバッグ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ručna torbica"
+ },
+ {
+  "word": "火",
+  "reading": "ひ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vatra"
+ },
+ {
+  "word": "日",
+  "reading": "ひ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "dan, sunce"
+ },
+ {
+  "word": "ピアノ",
+  "reading": "ピアノ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "klavir"
+ },
+ {
+  "word": "冷える",
+  "reading": "ひえる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "ohladiti se"
+ },
+ {
+  "word": "光",
+  "reading": "ひかり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "svjetlost"
+ },
+ {
+  "word": "光る",
+  "reading": "ひかる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "sjati"
+ },
+ {
+  "word": "引き出し",
+  "reading": "ひきだし",
+  "level": "N4",
+  "pos": "n",
+  "hr": "ladica, podizanje"
+ },
+ {
+  "word": "引き出す",
+  "reading": "ひきだす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "podići (novac)"
+ },
+ {
+  "word": "ひげ",
+  "reading": "ひげ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "brada"
+ },
+ {
+  "word": "飛行場",
+  "reading": "ひこうじょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zračna luka"
+ },
+ {
+  "word": "久しぶり",
+  "reading": "ひさしぶり",
+  "level": "N4",
+  "pos": "adj-no; adj-na; n",
+  "hr": "nakon dugo vremena"
+ },
+ {
+  "word": "美術館",
+  "reading": "びじゅつかん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "umjetnička galerija"
+ },
+ {
+  "word": "非常に",
+  "reading": "ひじょうに",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "iznimno"
+ },
+ {
+  "word": "びっくりする",
+  "reading": "びっくりする",
+  "level": "N4",
+  "pos": "vs; vi; adv",
+  "hr": "iznenaditi se"
+ },
+ {
+  "word": "引っ越す",
+  "reading": "ひっこす",
+  "level": "N4",
+  "pos": "v5s; vi",
+  "hr": "preseliti se"
+ },
+ {
+  "word": "必要",
+  "reading": "ひつよう",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "potreban"
+ },
+ {
+  "word": "ひどい",
+  "reading": "ひどい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "užasan"
+ },
+ {
+  "word": "開く",
+  "reading": "ひらく",
+  "level": "N4",
+  "pos": "v5k; vi; vt",
+  "hr": "otvoriti, održati"
+ },
+ {
+  "word": "ビル",
+  "reading": "ビル",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zgrada, račun"
+ },
+ {
+  "word": "昼間",
+  "reading": "ひるま",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "danju"
+ },
+ {
+  "word": "昼休み",
+  "reading": "ひるやすみ",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "podnevna pauza"
+ },
+ {
+  "word": "拾う",
+  "reading": "ひろう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "podići, skupiti"
+ },
+ {
+  "word": "ファックス",
+  "reading": "ファックス",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "faksirati"
+ },
+ {
+  "word": "増える",
+  "reading": "ふえる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "povećati se"
+ },
+ {
+  "word": "深い",
+  "reading": "ふかい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "dubok"
+ },
+ {
+  "word": "複雑",
+  "reading": "ふくざつ",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "složen"
+ },
+ {
+  "word": "復習",
+  "reading": "ふくしゅう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "ponavljati gradivo"
+ },
+ {
+  "word": "部長",
+  "reading": "ぶちょう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "šef odjela"
+ },
+ {
+  "word": "普通",
+  "reading": "ふつう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "obično, običan"
+ },
+ {
+  "word": "ぶどう",
+  "reading": "ぶどう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "grožđe"
+ },
+ {
+  "word": "太る",
+  "reading": "ふとる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "udebljati se"
+ },
+ {
+  "word": "布団",
+  "reading": "ふとん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "futon"
+ },
+ {
+  "word": "舟",
+  "reading": "ふね",
+  "level": "N4",
+  "pos": "n",
+  "hr": "brod, čamac"
+ },
+ {
+  "word": "不便",
+  "reading": "ふべん",
+  "level": "N4",
+  "pos": "n; adj-na",
+  "hr": "nepraktičan"
+ },
+ {
+  "word": "踏む",
+  "reading": "ふむ",
+  "level": "N4",
+  "pos": "v5m; vt",
+  "hr": "stati na"
+ },
+ {
+  "word": "降り出す",
+  "reading": "ふりだす",
+  "level": "N4",
+  "pos": "v5s; vi",
+  "hr": "početi padati"
+ },
+ {
+  "word": "プレゼント",
+  "reading": "プレゼント",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "darovati"
+ },
+ {
+  "word": "文化",
+  "reading": "ぶんか",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kultura"
+ },
+ {
+  "word": "文学",
+  "reading": "ぶんがく",
+  "level": "N4",
+  "pos": "n",
+  "hr": "književnost"
+ },
+ {
+  "word": "文法",
+  "reading": "ぶんぽう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "gramatika"
+ },
+ {
+  "word": "別",
+  "reading": "べつ",
+  "level": "N4",
+  "pos": "adj-no; adj-na; n",
+  "hr": "drugačiji"
+ },
+ {
+  "word": "ベル",
+  "reading": "ベル",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zvono"
+ },
+ {
+  "word": "変",
+  "reading": "へん",
+  "level": "N4",
+  "pos": "adj-na",
+  "hr": "čudan"
+ },
+ {
+  "word": "返事",
+  "reading": "へんじ",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "odgovoriti"
+ },
+ {
+  "word": "貿易",
+  "reading": "ぼうえき",
+  "level": "N4",
+  "pos": "n; vs; vi",
+  "hr": "trgovati"
+ },
+ {
+  "word": "放送",
+  "reading": "ほうそう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "emitirati"
+ },
+ {
+  "word": "法律",
+  "reading": "ほうりつ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zakon"
+ },
+ {
+  "word": "僕",
+  "reading": "ぼく",
+  "level": "N4",
+  "pos": "pn",
+  "hr": "ja (muški)"
+ },
+ {
+  "word": "星",
+  "reading": "ほし",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zvijezda"
+ },
+ {
+  "word": "ほど",
+  "reading": "ほど",
+  "level": "N4",
+  "pos": "n; adv",
+  "hr": "mjera, opseg"
+ },
+ {
+  "word": "ほとんど",
+  "reading": "ほとんど",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "gotovo, uglavnom"
+ },
+ {
+  "word": "ほめる",
+  "reading": "ほめる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "hvaliti"
+ },
+ {
+  "word": "翻訳",
+  "reading": "ほんやく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "prevoditi"
+ },
+ {
+  "word": "参る",
+  "reading": "まいる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "ići, doći (ponizno)"
+ },
+ {
+  "word": "負ける",
+  "reading": "まける",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "izgubiti"
+ },
+ {
+  "word": "まじめ",
+  "reading": "まじめ",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "ozbiljan"
+ },
+ {
+  "word": "まず",
+  "reading": "まず",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "prije svega"
+ },
+ {
+  "word": "または",
+  "reading": "または",
+  "level": "N4",
+  "pos": "conj",
+  "hr": "ili"
+ },
+ {
+  "word": "間違える",
+  "reading": "まちがえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "pogriješiti"
+ },
+ {
+  "word": "間に合う",
+  "reading": "まにあう",
+  "level": "N4",
+  "pos": "v5u; vi",
+  "hr": "stići na vrijeme"
+ },
+ {
+  "word": "周り",
+  "reading": "まわり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "okolina"
+ },
+ {
+  "word": "回る",
+  "reading": "まわる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "kružiti"
+ },
+ {
+  "word": "漫画",
+  "reading": "まんが",
+  "level": "N4",
+  "pos": "n",
+  "hr": "strip"
+ },
+ {
+  "word": "真ん中",
+  "reading": "まんなか",
+  "level": "N4",
+  "pos": "n",
+  "hr": "sredina"
+ },
+ {
+  "word": "見える",
+  "reading": "みえる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "biti vidljiv"
+ },
+ {
+  "word": "湖",
+  "reading": "みずうみ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "jezero"
+ },
+ {
+  "word": "味噌",
+  "reading": "みそ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "miso pasta"
+ },
+ {
+  "word": "見つかる",
+  "reading": "みつかる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "biti pronađen"
+ },
+ {
+  "word": "見つける",
+  "reading": "みつける",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "pronaći"
+ },
+ {
+  "word": "皆",
+  "reading": "みな",
+  "level": "N4",
+  "pos": "n; pn; adv",
+  "hr": "svi"
+ },
+ {
+  "word": "港",
+  "reading": "みなと",
+  "level": "N4",
+  "pos": "n",
+  "hr": "luka"
+ },
+ {
+  "word": "向かう",
+  "reading": "むかう",
+  "level": "N4",
+  "pos": "v5u; vi",
+  "hr": "biti okrenut prema"
+ },
+ {
+  "word": "迎える",
+  "reading": "むかえる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "dočekati"
+ },
+ {
+  "word": "昔",
+  "reading": "むかし",
+  "level": "N4",
+  "pos": "n; adj-no; adv",
+  "hr": "stara vremena, nekoć"
+ },
+ {
+  "word": "虫",
+  "reading": "むし",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kukac"
+ },
+ {
+  "word": "息子",
+  "reading": "むすこ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "sin"
+ },
+ {
+  "word": "娘",
+  "reading": "むすめ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "kći"
+ },
+ {
+  "word": "無理",
+  "reading": "むり",
+  "level": "N4",
+  "pos": "adj-na; n",
+  "hr": "nemoguć"
+ },
+ {
+  "word": "召し上がる",
+  "reading": "めしあがる",
+  "level": "N4",
+  "pos": "v5r; vt",
+  "hr": "jesti (počasno)"
+ },
+ {
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "rijedak"
+ },
+ {
+  "word": "申し上げる",
+  "reading": "もうしあげる",
+  "level": "N4",
+  "pos": "v1; vt",
+  "hr": "reći (ponizno)"
+ },
+ {
+  "word": "申す",
+  "reading": "もうす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "zvati se (ponizno)"
+ },
+ {
+  "word": "もうすぐ",
+  "reading": "もうすぐ",
+  "level": "N4",
+  "pos": "exp; adv",
+  "hr": "uskoro"
+ },
+ {
+  "word": "もし",
+  "reading": "もし",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "ako"
+ },
+ {
+  "word": "もちろん",
+  "reading": "もちろん",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "naravno"
+ },
+ {
+  "word": "もっとも",
+  "reading": "もっとも",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "najviše, krajnje"
+ },
+ {
+  "word": "戻る",
+  "reading": "もどる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "vratiti se"
+ },
+ {
+  "word": "木綿",
+  "reading": "もめん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "pamuk"
+ },
+ {
+  "word": "もらう",
+  "reading": "もらう",
+  "level": "N4",
+  "pos": "v5u; vt",
+  "hr": "primiti"
+ },
+ {
+  "word": "森",
+  "reading": "もり",
+  "level": "N4",
+  "pos": "n",
+  "hr": "šuma"
+ },
+ {
+  "word": "焼く",
+  "reading": "やく",
+  "level": "N4",
+  "pos": "v5k; vt",
+  "hr": "peći"
+ },
+ {
+  "word": "約束",
+  "reading": "やくそく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "obećati"
+ },
+ {
+  "word": "役に立つ",
+  "reading": "やくにたつ",
+  "level": "N4",
+  "pos": "exp; v5t",
+  "hr": "biti koristan"
+ },
+ {
+  "word": "焼ける",
+  "reading": "やける",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "izgorjeti, ispeći se"
+ },
+ {
+  "word": "優しい",
+  "reading": "やさしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "ljubazan"
+ },
+ {
+  "word": "痩せる",
+  "reading": "やせる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "smršaviti"
+ },
+ {
+  "word": "やっと",
+  "reading": "やっと",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "napokon"
+ },
+ {
+  "word": "やはり",
+  "reading": "やはり",
+  "level": "N4",
+  "pos": "adv",
+  "hr": "ipak, kao što sam mislio"
+ },
+ {
+  "word": "止む",
+  "reading": "やむ",
+  "level": "N4",
+  "pos": "v5m; vi",
+  "hr": "prestati"
+ },
+ {
+  "word": "柔らかい",
+  "reading": "やわらかい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "mekan"
+ },
+ {
+  "word": "湯",
+  "reading": "ゆ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "vruća voda"
+ },
+ {
+  "word": "輸出",
+  "reading": "ゆしゅつ",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "izvoziti"
+ },
+ {
+  "word": "輸入",
+  "reading": "ゆにゅう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "uvoziti"
+ },
+ {
+  "word": "指",
+  "reading": "ゆび",
+  "level": "N4",
+  "pos": "n",
+  "hr": "prst"
+ },
+ {
+  "word": "指輪",
+  "reading": "ゆびわ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "prsten"
+ },
+ {
+  "word": "夢",
+  "reading": "ゆめ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "san"
+ },
+ {
+  "word": "揺れる",
+  "reading": "ゆれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "tresti se, njihati se"
+ },
+ {
+  "word": "用",
+  "reading": "よう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "upotreba, posao"
+ },
+ {
+  "word": "用意",
+  "reading": "ようい",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pripremiti"
+ },
+ {
+  "word": "用事",
+  "reading": "ようじ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "obveza, posao"
+ },
+ {
+  "word": "汚れる",
+  "reading": "よごれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "zaprljati se"
+ },
+ {
+  "word": "予習",
+  "reading": "よしゅう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "pripremiti lekciju"
+ },
+ {
+  "word": "予定",
+  "reading": "よてい",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "planirati"
+ },
+ {
+  "word": "予約",
+  "reading": "よやく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "rezervirati"
+ },
+ {
+  "word": "寄る",
+  "reading": "よる",
+  "level": "N4",
+  "pos": "v5r; vi",
+  "hr": "svratiti"
+ },
+ {
+  "word": "喜ぶ",
+  "reading": "よろこぶ",
+  "level": "N4",
+  "pos": "v5b; vt; vi",
+  "hr": "radovati se"
+ },
+ {
+  "word": "よろしい",
+  "reading": "よろしい",
+  "level": "N4",
+  "pos": "adj-i",
+  "hr": "u redu"
+ },
+ {
+  "word": "理由",
+  "reading": "りゆう",
+  "level": "N4",
+  "pos": "n",
+  "hr": "razlog"
+ },
+ {
+  "word": "利用",
+  "reading": "りよう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "koristiti"
+ },
+ {
+  "word": "両方",
+  "reading": "りょうほう",
+  "level": "N4",
+  "pos": "n; adj-no",
+  "hr": "obje strane, oboje"
+ },
+ {
+  "word": "旅館",
+  "reading": "りょかん",
+  "level": "N4",
+  "pos": "n",
+  "hr": "japanski hotel"
+ },
+ {
+  "word": "留守",
+  "reading": "るす",
+  "level": "N4",
+  "pos": "n; vs; vt; vi; adj-no",
+  "hr": "biti odsutan"
+ },
+ {
+  "word": "冷房",
+  "reading": "れいぼう",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "klimatizirati"
+ },
+ {
+  "word": "歴史",
+  "reading": "れきし",
+  "level": "N4",
+  "pos": "n",
+  "hr": "povijest"
+ },
+ {
+  "word": "レジ",
+  "reading": "レジ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "blagajna"
+ },
+ {
+  "word": "レポート",
+  "reading": "レポート",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "izvijestiti"
+ },
+ {
+  "word": "連絡",
+  "reading": "れんらく",
+  "level": "N4",
+  "pos": "n; vs; vt",
+  "hr": "kontaktirati"
+ },
+ {
+  "word": "ワープロ",
+  "reading": "ワープロ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "program za obradu teksta"
+ },
+ {
+  "word": "沸かす",
+  "reading": "わかす",
+  "level": "N4",
+  "pos": "v5s; vt",
+  "hr": "zakuhati, zagrijati"
+ },
+ {
+  "word": "別れる",
+  "reading": "わかれる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "rastati se"
+ },
+ {
+  "word": "沸く",
+  "reading": "わく",
+  "level": "N4",
+  "pos": "v5k; vi",
+  "hr": "kipjeti"
+ },
+ {
+  "word": "訳",
+  "reading": "わけ",
+  "level": "N4",
+  "pos": "n",
+  "hr": "značenje, razlog"
+ },
+ {
+  "word": "忘れ物",
+  "reading": "わすれもの",
+  "level": "N4",
+  "pos": "n",
+  "hr": "zaboravljena stvar"
+ },
+ {
+  "word": "笑う",
+  "reading": "わらう",
+  "level": "N4",
+  "pos": "v5u; vi",
+  "hr": "smijati se, smiješiti se"
+ },
+ {
+  "word": "割合",
+  "reading": "わりあい",
+  "level": "N4",
+  "pos": "n",
+  "hr": "omjer, postotak"
+ },
+ {
+  "word": "割れる",
+  "reading": "われる",
+  "level": "N4",
+  "pos": "v1; vi",
+  "hr": "razbiti se"
+ }
+]
