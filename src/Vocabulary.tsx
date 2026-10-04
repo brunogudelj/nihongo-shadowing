@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { addMyWord, db, wordId } from './db'
 import allWords from '../data/rijeci.json'
 import AddWord from './AddWord'
 import { KanjiMagnifier, KanjiText } from './Kanji'
@@ -16,15 +17,35 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
   const [query, setQuery] = useState('')
   const [levels, setLevels] = useState<string[]>([...LEVELS])
   const [playing, setPlaying] = useState<string>()
+  // "Sljedećih 8": prvih 8 riječi (N5 pa N4) koje još nisu u mojim riječima. Popis se zamrzne
+  // dok ga ne zatvoriš, da riječi ne nestaju dok ih označavaš.
+  const [batch, setBatch] = useState<string[] | null>(null)
+
+  async function nextEight() {
+    const mine = new Set(await db.myWords.toCollection().primaryKeys())
+    const order = (l: string) => (l === 'N5' ? 0 : 1)
+    const next = WORDS.filter((w) => levels.includes(w.level) && !mine.has(wordId(w.word, w.reading)))
+      .sort((a, b) => order(a.level) - order(b.level))
+      .slice(0, 8)
+    setBatch(next.map((w) => w.word + w.reading))
+    setQuery('')
+  }
+
+  async function addAll() {
+    for (const w of WORDS.filter((w) => batch?.includes(w.word + w.reading))) {
+      await addMyWord({ word: w.word, reading: w.reading, hr: w.hr, source: 'rijeci' })
+    }
+  }
 
   const shown = useMemo(() => {
+    if (batch) return WORDS.filter((w) => batch.includes(w.word + w.reading))
     const q = query.trim().toLowerCase()
     return WORDS.filter(
       (w) =>
         levels.includes(w.level) &&
         (!q || w.word.includes(q) || w.reading.includes(q) || w.romaji.includes(q) || w.hr.toLowerCase().includes(q)),
     )
-  }, [query, levels])
+  }, [query, levels, batch])
 
   async function play(w: (typeof WORDS)[number]) {
     setPlaying(w.word + w.reading)
@@ -45,7 +66,10 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
           <input
             type="search"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value)
+              setBatch(null)
+            }}
             placeholder="Traži: japanski, romaji ili hrvatski"
             className="w-full rounded-2xl bg-white px-4 py-3 text-lg shadow-sm outline-none"
           />
@@ -62,8 +86,29 @@ export default function Vocabulary({ onBack }: { onBack: () => void }) {
                 {l}
               </button>
             ))}
-            <p className="ml-auto self-center text-xs text-stone-400">Dodirni riječ da je čuješ.</p>
+            <button
+              onClick={() => (batch ? setBatch(null) : nextEight())}
+              aria-pressed={!!batch}
+              className={`ml-auto rounded-full px-4 py-1.5 text-sm font-semibold ${
+                batch ? 'bg-amber-400 text-stone-900' : 'bg-stone-200 text-stone-700'
+              }`}
+            >
+              {batch ? '✕ Svi' : '🎯 Sljedećih 8'}
+            </button>
           </div>
+          {batch && (
+            <div className="flex items-center gap-2 text-sm">
+              <p className="flex-1 text-stone-500">
+                {batch.length ? 'Poslušaj, ponovi naglas, pa ☆ (ili sve odjednom).' : 'Sve riječi su već u mojim riječima. 🎉'}
+              </p>
+              {batch.length > 0 && (
+                <button onClick={addAll} className="rounded-full bg-amber-400 px-3 py-1.5 font-semibold text-stone-900">
+                  ★ Dodaj svih {batch.length}
+                </button>
+              )}
+            </div>
+          )}
+          {!batch && <p className="-mt-1 text-xs text-stone-400">Dodirni riječ da je čuješ.</p>}
         </header>
 
         <ul className="flex flex-col gap-2">
