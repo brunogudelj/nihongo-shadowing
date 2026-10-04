@@ -19,3 +19,82 @@ export const KONJUGATOR = {
   // Koliko stavki pokazuje zaslon "Gdje zapinjem".
   listMax: 10,
 }
+
+// Vodič "Današnji trening" (dorada 1V). Minute, rokovi, redoslijed priča i tablica konjugatora.
+export type StepId =
+  | 'rijeci' // ponavljanje riječi
+  | 'zagrijavanje' // rečenice kojima je danas rok ponavljanja
+  | 'nove' // nove rečenice, faze A–D
+  | 'cisto' // Čisto test jučerašnjih novih
+  | 'konjugator'
+  | 'nove-rijeci' // Sljedećih 8
+  | 'citanje'
+  | 'dorada' // rečenice u radu, bez novih (skraćeni plan, petak)
+  | 'test-price' // subota: test cijele priče
+
+export const VODIC = {
+  // Prvi dan vodiča (ponedjeljak). Prije toga vodič samo pokazuje plan za taj dan.
+  startDate: '2026-10-05',
+  // Redoslijed priča (id iz content/stories).
+  storyOrder: ['kyushu-001', 'putovanje-po-japanu-001', 'japanske-zeljeznice-001'],
+
+  // Koraci običnog dana (75 min) i skraćenog plana (20 min).
+  day: [
+    { id: 'rijeci', minutes: 7 },
+    { id: 'zagrijavanje', minutes: 7 },
+    { id: 'nove', minutes: 25 },
+    { id: 'cisto', minutes: 3 },
+    { id: 'konjugator', minutes: 10 },
+    { id: 'nove-rijeci', minutes: 8 },
+    { id: 'citanje', minutes: 15 },
+  ] as { id: StepId; minutes: number }[],
+  short: [
+    { id: 'rijeci', minutes: 5 },
+    { id: 'zagrijavanje', minutes: 5 },
+    { id: 'dorada', minutes: 10 },
+  ] as { id: StepId; minutes: number }[],
+  // Nedjelja: samo ponavljanje (sve gotove priče kojima je rok, konjugator 15 min, mjerenje čitanja).
+  sunday: [
+    { id: 'rijeci', minutes: 10 },
+    { id: 'zagrijavanje', minutes: 25 },
+    { id: 'cisto', minutes: 3 },
+    { id: 'konjugator', minutes: 15 },
+    { id: 'citanje', minutes: 15 },
+  ] as { id: StepId; minutes: number }[],
+  // Subota: test cijele priče umjesto novih rečenica.
+  saturdayReplaces: { nove: 'test-price' } as Partial<Record<StepId, StepId>>,
+
+  // Nove rečenice dnevno, i pravilo za treću.
+  newPerDay: 2,
+  third: { withinMinutes: 15, failStreakDays: 3, backoffDays: 7 },
+  // Rokovi ponavljanja gotove rečenice (dani), zatim svakih zadnji. Neuspjeh vraća na prvi.
+  reviewIntervals: [1, 3, 7, 14, 30],
+  // Nakon toliko propuštenih dana, prvi dan je samo ponavljanje (bez novih rečenica i riječi).
+  missedDaysForReviewOnly: 3,
+
+  // Konjugator: redovi tablice iz plana (novo + za mix). Vodič kreće od reda `konjugatorStartRow` (0 = prvi).
+  // Prvih `storyWordsDays` dana priče izvor su riječi iz priča, zatim svih 495.
+  konjugatorRows: [
+    { new: ['masu', 'masen'], mix: [] },
+    { new: ['mashita', 'masendeshita'], mix: ['masu', 'masen'] },
+    { new: ['te'], mix: ['masu', 'masen', 'mashita', 'masendeshita'] },
+    { new: ['ta'], mix: ['te', 'mashita'] },
+    { new: ['nai', 'nakatta'], mix: ['te', 'ta'] },
+    { new: ['i-desu', 'i-nai', 'i-ta', 'i-nakatta', 'na-desu', 'na-nai', 'na-ta', 'na-nakatta'], mix: ['nai', 'ta'] },
+    {
+      new: ['i-te', 'i-adv', 'na-te', 'na-adv', 'na-noun'],
+      mix: ['masu', 'masen', 'mashita', 'masendeshita', 'te', 'ta', 'nai', 'nakatta'],
+    },
+    { new: ['tai', 'potential'], mix: ['te', 'nai'] },
+    { new: ['volitional', 'ba', 'i-ba'], mix: ['tai', 'potential'] },
+    { new: ['passive'], mix: ['ba', 'nai'] },
+    { new: ['causative'], mix: ['passive'] },
+    { new: [], mix: [], all: true },
+  ] as { new: string[]; mix: string[]; all?: boolean }[],
+  konjugatorStartRow: 2, // ～て (uljudne oblike već znam)
+  storyWordsDays: 3,
+  // Prelazak na idući red: toliko sesija zaredom s barem 9/10 "Znao" u oblicima reda.
+  konjugatorPassSessions: 2,
+}
+
+export type VodicConfig = typeof VODIC

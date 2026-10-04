@@ -13,7 +13,21 @@ export type MyWord = {
 
 // Status rečenice u priči, koji korisnik sam označava.
 export type SentenceStatus = 'nova' | 'u-radu' | 'gotova'
-export type SentenceState = { id: string; storyId: string; index: number; status: SentenceStatus; updatedAt: number }
+export type SentenceState = {
+  id: string
+  storyId: string
+  index: number
+  status: SentenceStatus
+  updatedAt: number
+  // Vodič (1V): dan kad je prošla fazu D, dan kad je postala gotova, rok i korak ponavljanja,
+  // broj neuspjeha i treba li sutra prva (dvaput pala fazu D).
+  dPassedOn?: string
+  doneOn?: string
+  due?: string
+  intervalIdx?: number
+  fails?: number
+  retryFirst?: boolean
+}
 
 // Gdje je korisnik stao u priči (zadnja otvorena rečenica).
 export type Place = { storyId: string; index: number; updatedAt: number }
@@ -36,11 +50,27 @@ export type ConjAttempt = {
   result: 'znao' | 'nisam'
 }
 
+// Stanje vodiča (1V): tekuća priča, red konjugatora, pravilo treće rečenice.
+export type VodicState = {
+  id: 'stanje'
+  v: 1
+  storyIndex: number
+  storyStartedOn: string
+  konjRow: number
+  thirdFailStreak: number
+  thirdBackoffUntil?: string
+}
+
+// Dnevnik dana vodiča: plan, odrađeni koraci, skraćeni plan, vrijeme čitanja.
+export type DayLog = { date: string; v: 1; short: boolean; steps: string[]; done: string[]; readingSec?: number }
+
 export const db = new Dexie('nihongo') as Dexie & {
   myWords: EntityTable<MyWord, 'id'>
   sentences: EntityTable<SentenceState, 'id'>
   places: EntityTable<Place, 'storyId'>
   conjAttempts: EntityTable<ConjAttempt, 'id'>
+  vodic: EntityTable<VodicState, 'id'>
+  days: EntityTable<DayLog, 'date'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
@@ -49,6 +79,14 @@ db.version(3).stores({
   sentences: 'id, storyId',
   places: 'storyId, updatedAt',
   conjAttempts: 'id, at, point, word, session',
+})
+db.version(4).stores({
+  myWords: 'id, addedAt',
+  sentences: 'id, storyId',
+  places: 'storyId, updatedAt',
+  conjAttempts: 'id, at, point, word, session',
+  vodic: 'id',
+  days: 'date',
 })
 
 export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`

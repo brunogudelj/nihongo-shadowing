@@ -4,6 +4,7 @@ import BackupPanel from './BackupPanel'
 import { db } from './db'
 import StoryPlayer from './StoryPlayer'
 import Stories from './Stories'
+import TodayPlan from './TodayPlan'
 import { stories } from './stories'
 
 // Riječi, moje riječi i konjugator nose velike popise, pa se učitavaju tek kad se otvore.
@@ -42,6 +43,7 @@ function App() {
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
       <h1 className="mb-6 text-center text-sm text-stone-400">Nihongo Shadowing</h1>
+      <TodayPlan />
       {lastStory && lastPlace && (
         <button
           onClick={() => setStoryId(lastStory.id)}
