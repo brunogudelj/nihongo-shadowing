@@ -50,6 +50,20 @@ export type ConjAttempt = {
   result: 'znao' | 'nisam'
 }
 
+// Jedan odgovor u ponavljanju riječi (radi kao konjugator). Smjer: japanski → hrvatski,
+// hrvatski → japanski ili na sluh.
+export type WordAttempt = {
+  id: string
+  v: 1
+  at: number
+  word: string
+  reading: string
+  direction: 'jp-hr' | 'hr-jp' | 'na-sluh'
+  source: 'slobodno' | 'vodic'
+  session: string
+  result: 'znao' | 'nisam'
+}
+
 // Stanje vodiča (1V): tekuća priča, red konjugatora, pravilo treće rečenice.
 export type VodicState = {
   id: 'stanje'
@@ -101,6 +115,7 @@ export const db = new Dexie('nihongo') as Dexie & {
   vodic: EntityTable<VodicState, 'id'>
   days: EntityTable<DayLog, 'date'>
   wordReviews: EntityTable<WordReview, 'id'>
+  wordAttempts: EntityTable<WordAttempt, 'id'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
@@ -126,6 +141,16 @@ db.version(5).stores({
   vodic: 'id',
   days: 'date',
   wordReviews: 'id',
+})
+db.version(6).stores({
+  myWords: 'id, addedAt',
+  sentences: 'id, storyId',
+  places: 'storyId, updatedAt',
+  conjAttempts: 'id, at, point, word, session',
+  vodic: 'id',
+  days: 'date',
+  wordReviews: 'id',
+  wordAttempts: 'id, at, word, session',
 })
 
 export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`

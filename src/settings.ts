@@ -9,6 +9,7 @@ export const SETTING_KEYS = [
   'konj-izvor', // konjugator: price / sve
   'konj-vrste', // konjugator: vrste riječi (JSON)
   'konj-oblici', // konjugator: uključeni oblici (JSON)
+  'rij-izvor', // ponavljanje riječi: moje / price / sve
 ] as const
 
 export type SettingKey = (typeof SETTING_KEYS)[number]
