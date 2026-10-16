@@ -13,6 +13,7 @@ const Vocabulary = lazy(() => import('./Vocabulary'))
 const MyWords = lazy(() => import('./MyWords'))
 const Training = lazy(() => import('./Training'))
 const WordDrill = lazy(() => import('./WordDrill'))
+const SessionRun = lazy(() => import('./Training').then((m) => ({ default: m.SessionRun })))
 
 type Screen = 'price' | 'rijeci' | 'moje' | 'ponavljanje' | 'konjugator' | 'trening' | 'trening-kratki'
 
@@ -27,11 +28,18 @@ const CARDS: { screen: Exclude<Screen, 'trening' | 'trening-kratki'>; title: str
 function App() {
   const [storyId, setStoryId] = useState<string>()
   const [screen, setScreen] = useState<Screen | null>(null)
+  const [sessionId, setSessionId] = useState<string>()
   // Gdje si zadnje stao, za ▶ Nastavi.
   const lastPlace = useLiveQuery(() => db.places.orderBy('updatedAt').last(), [])
   const lastStory = stories.find((s) => s.id === lastPlace?.storyId)
   const story = stories.find((s) => s.id === storyId)
 
+  if (sessionId)
+    return (
+      <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
+        <SessionRun id={sessionId} onBack={() => setSessionId(undefined)} />
+      </Suspense>
+    )
   if (story) return <StoryPlayer story={story} onBack={() => setStoryId(undefined)} />
   if (screen === 'price') return <Stories onOpen={setStoryId} onBack={() => setScreen(null)} />
   if (screen)
@@ -50,7 +58,7 @@ function App() {
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
       <h1 className="mb-6 text-center text-sm text-stone-400">Nihongo Shadowing</h1>
-      <TodayPlan />
+      <TodayPlan onOpen={setSessionId} />
       {lastStory && lastPlace && (
         <button
           onClick={() => setStoryId(lastStory.id)}

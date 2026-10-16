@@ -22,13 +22,10 @@ function loadGoal(): number {
   return v >= GOAL_MIN && v <= GOAL_MAX ? v : SESIJA.defaultGoal
 }
 
-// Privremeno (do zaslona sesije): završi sesiju sa stvarnim proteklim vremenom.
-const finishSession = (id: string) => db.sessionLogs.update(id, { endedAt: Date.now() })
-
 // 1 sesija, 2–4 sesije, 5 sesija, 22 sesije…
 const sesija = (n: number) => (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'sesije' : 'sesija')
 
-export default function TodayPlan() {
+export default function TodayPlan({ onOpen }: { onOpen: (sessionId: string) => void }) {
   const [minutes, setMinutes] = useState(loadMinutes)
   const [goal, setGoal] = useState(loadGoal)
   const data = useLiveQuery(async () => ({
@@ -75,14 +72,19 @@ export default function TodayPlan() {
       vocabLeft: vocab.filter((w) => !mine.has(wordId(w.word, w.reading))).length,
     })
     const startedAt = Date.now()
+    const id = `sesija-${startedAt}`
     await db.sessionLogs.put({
-      id: `sesija-${startedAt}`,
+      id,
       v: 1,
       startedAt,
       minutes,
       blocks: session.blocks.map((b) => b.id),
       storyId: session.storyId,
+      blockIndex: 0,
+      blockStartedAt: startedAt,
+      progress: {},
     })
+    onOpen(id)
   }
 
 
@@ -94,28 +96,25 @@ export default function TodayPlan() {
       {active ? (
         <>
           <p className="mt-2 text-sm text-stone-500">
-            Sesija od {active.minutes} min · <span lang="ja">{titleOf(active.storyId)}</span>
+            Započeta sesija od {active.minutes} min · <span lang="ja">{titleOf(active.storyId)}</span>
           </p>
           <ol className="mt-2 flex flex-col gap-2">
             {active.blocks.map((b, i) => (
-              <li key={b} className="flex gap-3">
-                <span className="w-6 shrink-0 text-right text-stone-400">{i + 1}.</span>
+              <li key={b} className={`flex gap-3 ${i < (active.blockIndex ?? 0) ? 'text-stone-400' : ''}`}>
+                <span className="w-6 shrink-0 text-right text-stone-400">{i < (active.blockIndex ?? 0) ? '✓' : `${i + 1}.`}</span>
                 <span className="min-w-0 flex-1 font-semibold">{BLOCK_TITLE[b as BlockId] ?? b}</span>
                 <span className="shrink-0 text-sm text-stone-500">{SESIJA.blocks[b as BlockId]} min</span>
               </li>
             ))}
           </ol>
-          <p className="mt-3 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-900">
-            Izvođenje blokova (tajmer, Znao / Nisam, sažetak) dolazi u idućem koraku. Zasad možeš sesiju završiti ručno.
-          </p>
           <button
-            onClick={() => void finishSession(active.id)}
-            className={`${btn} mt-3 w-full bg-emerald-600 py-3 text-lg text-white active:bg-emerald-700`}
+            onClick={() => onOpen(active.id)}
+            className={`${btn} mt-3 w-full bg-red-700 py-4 text-lg text-white active:bg-red-800`}
           >
-            ✓ Završi sesiju
+            ▶ Nastavi sesiju (blok {Math.min((active.blockIndex ?? 0) + 1, active.blocks.length)} / {active.blocks.length})
           </button>
           <button onClick={() => void db.sessionLogs.delete(active.id)} className="mt-2 w-full py-2 text-sm text-stone-500">
-            Odustani (ne broji se)
+            Odustani od sesije (ne broji se; ocjene kartica ostaju)
           </button>
         </>
       ) : (

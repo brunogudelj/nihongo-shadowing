@@ -4,25 +4,33 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react'
 import type { ConjPreset } from './Conjugator'
 import { FORMS } from './conjugate'
-import { db, type DayLog, type DayProgress, type SentenceState, type VodicState } from './db'
+import { cardId, dueCards, saveRating } from './cards'
+import { db, type DayLog, type DayProgress, type SentenceState, type SessionLog, type SessionProgress, type VodicState } from './db'
 import { speak } from './speech'
 import StoryPlayer, { type StoryPreset } from './StoryPlayer'
 import { stories } from './stories'
 import type { VocabPreset } from './Vocabulary'
-import { VODIC } from './vodic-config'
+import { SESIJA, VODIC, type BlockId } from './vodic-config'
 import {
   afterCleanTest,
   afterDFailedTwice,
   afterDPassed,
   afterWarmup,
+  currentStory,
+  formatMinutes,
+  formatWhen,
   initialState,
   planDay,
+  sessionStats,
+  sessionSummary,
   today,
+  wordQueue,
   type Plan,
   type SentenceRef,
 } from './vodic-plan'
-import { afterStoryTest, afterThird, afterWordReview, konjugatorAdvance, weeklyReport, wordsForReview } from './vodic-rules'
-import { listOf, sentenceJa, STEP_TITLE, STORY_INFO, titleOf } from './vodic-text'
+import { readSetting } from './settings'
+import { afterStoryTest, afterThird, afterWordReview, konjugatorAdvance, rowForms, weeklyReport, wordsForReview } from './vodic-rules'
+import { BLOCK_TITLE, listOf, sentenceJa, STEP_TITLE, STORY_INFO, titleOf } from './vodic-text'
 
 const Conjugator = lazy(() => import('./Conjugator'))
 const Vocabulary = lazy(() => import('./Vocabulary'))
@@ -696,6 +704,481 @@ export default function Training({ short, onBack }: { short: boolean; onBack: ()
           </button>
           <button onClick={() => void endStep(false)} className="text-sm text-stone-500">
             Preskoči korak
+          </button>
+        </div>
+      )}
+    </main>
+  )
+}
+
+// ===================== Kratka sesija =====================
+// Svaka sesija je za sebe: blokovi koje je složio sastavljač (vodic-plan.ts, planSession), jedan za drugim.
+// Veza s drugim sesijama su samo FSRS kartice (cards.ts): svaka ocjena Znao / Nisam odmah se sprema.
+
+type SCtx = {
+  log: SessionLog
+  progress: SessionProgress
+  setProgress: (p: SessionProgress) => Promise<unknown>
+  open: (t: Tool) => void
+  minutes: number // trajanje tekućeg bloka
+}
+
+// Je li vrijeme tekućeg bloka isteklo (poziva se iz dodira, ne pri crtanju).
+const blockTimeUp = (log: SessionLog, minutes: number) => Date.now() > (log.blockStartedAt ?? log.startedAt) + minutes * 60_000
+
+// "kyushu-001:3" → { storyId, index }
+const refOf = (ref: string): SentenceRef => ({ storyId: ref.slice(0, ref.lastIndexOf(':')), index: Number(ref.slice(ref.lastIndexOf(':') + 1)) })
+
+// Tri kruga (Nova rečenica i Priča): svaki skida jednu pomoć.
+const ROUNDS: { title: string; preset: StoryPreset }[] = [
+  { title: 'Upoznaj rečenicu', preset: { view: 'rendgen', translation: true, speed: 0.85, loop: false } },
+  { title: 'Krug 1: sporo, s tekstom (0.7×)', preset: { view: 'puno', translation: true, speed: 0.7, loop: true, pause: 1 } },
+  { title: 'Krug 2: normalno, s tekstom (1×)', preset: { view: 'puno', translation: false, speed: 1, loop: true, pause: 1 } },
+  { title: 'Krug 3: normalno, bez teksta (1×)', preset: { view: 'sluh', translation: false, speed: 1, loop: true, pause: 1 } },
+]
+const SENTENCE_TEXT = [
+  'Pročitaj prijevod, u 🔍 Rendgenu dodirni riječi koje ne znaš, pa jednom poslušaj rečenicu.',
+  'Petlja je uključena. Prvi krug samo slušaj, zatim ponavljaj naglas u stanci, 3–4 puta.',
+  'Ponavljaj u stanci, a zadnja 2–3 puta govori istovremeno s Nanami.',
+  'Tekst je skriven. Govori uz Nanami, pola sloga iza nje. Dodirni rečenicu ako moraš provjeriti.',
+]
+
+// --- Blok Riječi ---
+function WordBlock({ s }: { s: SCtx }) {
+  const { log, progress, setProgress } = s
+  const data = useLiveQuery(async () => ({
+    cards: await db.cards.toArray(),
+    logs: await db.cardLogs.toArray(),
+    words: await db.myWords.toArray(),
+  }))
+  // Popis se složi jednom na početku bloka, da se ne mijenja dok odgovaraš.
+  useEffect(() => {
+    if (data && !progress.queue) void setProgress({ queue: wordQueue(data.cards, data.words, data.logs, Date.now()), item: 0 })
+  }, [data, progress.queue, setProgress])
+  if (!data || !progress.queue) return null
+  const list = progress.queue
+  const item = progress.item ?? 0
+  if (!list.length) return <Done>Nema riječi na redu ni novih za danas. Dodirni „Blok gotov”.</Done>
+  if (item >= list.length) return <Done>Sve riječi na redu su ponovljene ({list.length}). Dodirni „Blok gotov”.</Done>
+  if (progress.timeUp) return <Done>Vrijeme bloka je isteklo. Ponovljeno: {item} od {list.length}. Dodirni „Blok gotov”.</Done>
+  const ref = list[item]
+  const [word, reading] = ref.split('|')
+  const hr = data.words.find((w) => w.id === ref)?.hr
+  const isNew = !data.cards.some((c) => c.id === cardId('rijec', ref))
+  async function answer(ok: boolean) {
+    await saveRating('rijec', ref, ok, log.id)
+    await setProgress({ item: item + 1, shown: false, timeUp: blockTimeUp(log, s.minutes) })
+  }
+  return (
+    <>
+      <Note>Poslušaj i reci značenje naglas, pa dodirni Pokaži.</Note>
+      <p className="mt-2 text-sm text-stone-400">
+        Riječ {item + 1} / {list.length}
+        {isNew && ' · nova'}
+      </p>
+      <div className="mt-2 rounded-2xl bg-white p-6 text-center shadow-sm">
+        <span className="block text-4xl" lang="ja">
+          {word}
+        </span>
+        {reading !== word && (
+          <span className="mt-1 block text-lg text-stone-500" lang="ja">
+            {reading}
+          </span>
+        )}
+        {progress.shown && <span className="mt-4 block text-lg">{hr || '(bez prijevoda)'}</span>}
+      </div>
+      <button onClick={() => void speak(reading)} className={`${secondary} mt-3 w-full`}>
+        🔊 Poslušaj
+      </button>
+      {!progress.shown ? (
+        <button onClick={() => void setProgress({ shown: true })} className={`${primary} mt-3 w-full`}>
+          Pokaži
+        </button>
+      ) : (
+        <div className="mt-3 grid grid-cols-2 gap-3">
+          <button onClick={() => void answer(true)} className={`${btn} bg-emerald-600 text-white active:bg-emerald-700`}>
+            Znao
+          </button>
+          <button onClick={() => void answer(false)} className={`${btn} bg-stone-700 text-white active:bg-stone-800`}>
+            Nisam
+          </button>
+        </div>
+      )}
+    </>
+  )
+}
+
+// --- Blok Fraze: rečenice kojima je rok ---
+function PhraseBlock({ s }: { s: SCtx }) {
+  const { log, progress, setProgress } = s
+  const cards = useLiveQuery(() => db.cards.toArray())
+  useEffect(() => {
+    if (cards && !progress.queue) void setProgress({ queue: dueCards(cards, 'fraza', Date.now()).map((c) => c.ref), item: 0 })
+  }, [cards, progress.queue, setProgress])
+  if (!cards || !progress.queue) return null
+  const list = progress.queue
+  const item = progress.item ?? 0
+  if (!list.length) return <Done>Nema fraza na redu. Dodirni „Blok gotov”.</Done>
+  if (item >= list.length) return <Done>Sve fraze na redu su ponovljene ({list.length}). Dodirni „Blok gotov”.</Done>
+  if (progress.timeUp) return <Done>Vrijeme bloka je isteklo. Ponovljeno: {item} od {list.length}. Dodirni „Blok gotov”.</Done>
+  const ref = list[item]
+  const r = refOf(ref)
+  const instruction = 'Shadowing uz Nanami na 1×, petlja na rečenici.'
+  async function answer(ok: boolean) {
+    await saveRating('fraza', ref, ok, log.id)
+    await setProgress({ item: item + 1, timeUp: blockTimeUp(log, s.minutes) })
+  }
+  return (
+    <>
+      <Note>{instruction}</Note>
+      <SentenceBox r={r} label={`${item + 1} / ${list.length}`} />
+      <button
+        onClick={() =>
+          s.open({ kind: 'story', storyId: r.storyId, preset: { view: 'puno', speed: 1, loop: true, pause: 1, index: r.index, note: instruction } })
+        }
+        className={`${primary} mt-3 w-full`}
+      >
+        ▶ Otvori rečenicu
+      </button>
+      <YesNo question="Uz Nanami na 1× bez zastajanja?" onAnswer={(ok) => void answer(ok)} />
+    </>
+  )
+}
+
+// --- Blok Nova rečenica: upoznaj, tri kruga, tri pitanja → nova kartica ---
+function NewSentenceBlock({ s }: { s: SCtx }) {
+  const { log, progress, setProgress } = s
+  const cards = useLiveQuery(() => db.cards.toArray())
+  useEffect(() => {
+    if (!cards || progress.queue) return
+    const next = currentStory(cards, STORY_INFO).newSentence
+    void setProgress({ queue: next ? [`${next.storyId}:${next.index}`] : [], round: 0, q: 0 })
+  }, [cards, progress.queue, setProgress])
+  if (!cards || !progress.queue) return null
+  if (!progress.queue.length) return <Done>Sve rečenice iz priča već učiš. Dodirni „Blok gotov”.</Done>
+  const ref = progress.queue[0]
+  const r = refOf(ref)
+  const round = progress.round ?? 0
+  if (progress.result) return <Done>{progress.result}</Done>
+
+  async function answer(ok: boolean) {
+    const q = progress.q ?? 0
+    if (ok && q < D_QUESTIONS.length - 1) return setProgress({ q: q + 1 })
+    const card = await saveRating('fraza', ref, ok, log.id)
+    const when = formatWhen(card.due, card.last_review ?? card.due)
+    await setProgress({
+      result: ok
+        ? `Rečenica je dobila karticu. Ponovit ćeš je ${when} u bloku Fraze.`
+        : `Nije još sjela, i to je u redu. Vraća se ${when} u bloku Fraze.`,
+    })
+  }
+
+  return (
+    <>
+      <SentenceBox r={r} label="nova" />
+      {round < ROUNDS.length ? (
+        <>
+          <p className="mt-4 font-semibold">{ROUNDS[round].title}</p>
+          <Note>{SENTENCE_TEXT[round]}</Note>
+          <button
+            onClick={() =>
+              s.open({ kind: 'story', storyId: r.storyId, preset: { ...ROUNDS[round].preset, index: r.index, note: ROUNDS[round].title } })
+            }
+            className={`${primary} mt-3 w-full`}
+          >
+            ▶ Otvori rečenicu
+          </button>
+          <button onClick={() => void setProgress({ round: round + 1 })} className={`${secondary} mt-3 w-full`}>
+            {round < ROUNDS.length - 1 ? `Gotovo → ${ROUNDS[round + 1].title.split(':')[0]}` : 'Gotovo → pitanja'}
+          </button>
+        </>
+      ) : (
+        <YesNo question={`${(progress.q ?? 0) + 1}/3 · ${D_QUESTIONS[progress.q ?? 0]}`} onAnswer={(ok) => void answer(ok)} />
+      )}
+    </>
+  )
+}
+
+// --- Blok Priča: cijela tekuća priča u tri kruga ---
+function StoryBlock({ s }: { s: SCtx }) {
+  const { log, progress, setProgress } = s
+  const round = Math.max(1, progress.round ?? 1)
+  if (round > 3) return <Done>Sva tri kruga su gotova. Dodirni „Blok gotov”.</Done>
+  const r = ROUNDS[round]
+  return (
+    <>
+      <p className="mt-3 text-stone-500" lang="ja">
+        {titleOf(log.storyId)}
+      </p>
+      <p className="mt-2 font-semibold">{r.title}</p>
+      <Note>
+        Dodirni ▶ Cijela priča od ove rečenice i govori uz Nanami.
+        {round === 3 ? ' Tekst je skriven; dodirni rečenicu samo ako moraš provjeriti.' : ''}
+      </Note>
+      <button
+        onClick={() => s.open({ kind: 'story', storyId: log.storyId, preset: { ...r.preset, loop: false, index: 0, note: r.title } })}
+        className={`${primary} mt-3 w-full`}
+      >
+        ▶ Otvori priču
+      </button>
+      <button onClick={() => void setProgress({ round: round + 1 })} className={`${secondary} mt-3 w-full`}>
+        {round < 3 ? `Krug ${round} gotov → krug ${round + 1}` : 'Krug 3 gotov'}
+      </button>
+    </>
+  )
+}
+
+// --- Blokovi koji otvaraju postojeće alate ---
+function KonjBlock({ s }: { s: SCtx }) {
+  const state = useLiveQuery(async () => (await db.vodic.get('stanje')) ?? initialState())
+  if (!state) return null
+  const forms = rowForms(state.konjRow)
+  const names = forms.length ? forms.map((f) => FORMS.find((x) => x.id === f)?.ending ?? f).join(', ') : 'svi oblici'
+  return (
+    <>
+      <Note>
+        Red {state.konjRow + 1}: {names}. Pola zadataka je iz tvojih slabih točaka. Nakon svakog „Pokaži” odgovori Znao (točno i
+        bez dugog razmišljanja) ili Nisam.
+      </Note>
+      <button
+        onClick={() => s.open({ kind: 'konj', preset: { forms, source: 'sve', halfWeak: true, note: `Red ${state.konjRow + 1}: ${names}` } })}
+        className={`${primary} mt-3 w-full`}
+      >
+        ▶ Otvori konjugator
+      </button>
+      {s.progress.result && <Done>{s.progress.result}</Done>}
+    </>
+  )
+}
+
+function ReadingBlock({ s }: { s: SCtx }) {
+  const note = 'Čitaj naglas rečenice koje već učiš, bez zvuka. Nakon svake ▶ za provjeru.'
+  return (
+    <>
+      <Note>{note} Ako zapneš, pročitaj rečenicu još jednom.</Note>
+      <button
+        onClick={() => s.open({ kind: 'story', storyId: s.log.storyId, preset: { index: 0, view: 'cisto', speed: 1, loop: false, note } })}
+        className={`${primary} mt-3 w-full`}
+      >
+        ▶ Otvori priču u Čistom
+      </button>
+    </>
+  )
+}
+
+function NewWordsBlock({ s }: { s: SCtx }) {
+  const story = stories.find((x) => x.id === s.log.storyId)
+  const priority = [...new Set(story?.sentences.flatMap((x) => x.words.map((w) => w.lemma)) ?? [])]
+  return (
+    <>
+      <Note>Otvara se 🎯 Sljedećih 8 (prvo riječi iz tekuće priče). Za svaku: poslušaj, ponovi naglas 3×, pa ☆. Riječi zatim dolaze u blok Riječi.</Note>
+      <button
+        onClick={() => s.open({ kind: 'vocab', preset: { next8: true, priority, note: 'Za svaku riječ: poslušaj, ponovi 3×, pa ☆.' } })}
+        className={`${primary} mt-3 w-full`}
+      >
+        ▶ Otvori Sljedećih 8
+      </button>
+    </>
+  )
+}
+
+function BlockBody({ id, s }: { id: BlockId; s: SCtx }) {
+  switch (id) {
+    case 'rijeci':
+      return <WordBlock s={s} />
+    case 'fraze':
+      return <PhraseBlock s={s} />
+    case 'nova-recenica':
+      return <NewSentenceBlock s={s} />
+    case 'prica':
+      return <StoryBlock s={s} />
+    case 'konjugator':
+      return <KonjBlock s={s} />
+    case 'citanje':
+      return <ReadingBlock s={s} />
+    case 'nove-rijeci':
+      return <NewWordsBlock s={s} />
+  }
+}
+
+// Preostalo vrijeme cijele sesije (malo, uz vrijeme bloka).
+function SessionClock({ log }: { log: SessionLog }) {
+  const [now, setNow] = useState(() => Date.now())
+  useEffect(() => {
+    const t = window.setInterval(() => setNow(Date.now()), 1000)
+    return () => window.clearInterval(t)
+  }, [])
+  const left = Math.round(log.minutes * 60 - (now - log.startedAt) / 1000)
+  const abs = Math.abs(left)
+  return (
+    <span className="text-sm text-stone-500">
+      sesija {left < 0 ? '+' : ''}
+      {Math.floor(abs / 60)}:{String(abs % 60).padStart(2, '0')}
+    </span>
+  )
+}
+
+// --- Sažetak na kraju sesije ---
+function SessionSummary({ log, onBack }: { log: SessionLog; onBack: () => void }) {
+  const data = useLiveQuery(async () => ({
+    logs: await db.cardLogs.where('at').aboveOrEqual(log.startedAt).toArray(),
+    cards: await db.cards.toArray(),
+    sessions: await db.sessionLogs.toArray(),
+    now: Date.now(),
+  }))
+  if (!data) return null
+  const sum = sessionSummary(log.id, data.logs, data.cards, data.now)
+  const stats = sessionStats(data.sessions, data.now)
+  const goal = Number(readSetting('sesija-cilj')) || SESIJA.defaultGoal
+  const took = Math.round(((log.endedAt ?? data.now) - log.startedAt) / 60_000)
+  const line = (label: string, done: number, fresh: number) =>
+    done + fresh > 0 && (
+      <p>
+        {label}: {done > 0 && `ponovljeno ${done}`}
+        {done > 0 && fresh > 0 && ', '}
+        {fresh > 0 && `novih ${fresh}`}
+      </p>
+    )
+  return (
+    <>
+      <Done>
+        🎉 Sesija je gotova ({took} min). Ovo ti je {stats.todayCount}. sesija danas.
+      </Done>
+      <div className="mt-4 flex flex-col gap-1 rounded-2xl bg-white p-4 shadow-sm">
+        <p className="font-semibold">Odrađeno</p>
+        {log.blocks.map((b) => (
+          <p key={b} className="text-stone-600">
+            {BLOCK_TITLE[b as BlockId] ?? b}
+          </p>
+        ))}
+        {line('Riječi', sum.words, sum.newWords)}
+        {line('Fraze', sum.fraze, sum.newFraze)}
+      </div>
+      <div className="mt-3 rounded-2xl bg-white p-4 shadow-sm">
+        <p className="font-semibold">Iduće ponavljanje</p>
+        <p className="text-stone-600">
+          {sum.nextDue === undefined
+            ? 'Još nema kartica za ponavljanje.'
+            : sum.nextDue <= data.now
+              ? 'Neke kartice su već na redu, idu u iduću sesiju.'
+              : `${formatWhen(sum.nextDue, data.now)} (${sum.nextCount} ${sum.nextCount === 1 ? 'kartica' : sum.nextCount <= 4 ? 'kartice' : 'kartica'})`}
+        </p>
+      </div>
+      <div className="mt-3 rounded-2xl bg-white p-4 text-sm shadow-sm">
+        <p>
+          <span className="inline-block w-16 text-stone-500">Danas:</span>
+          <span className={`font-semibold ${stats.todayCount >= goal ? 'text-emerald-700' : ''}`}>
+            {stats.todayCount} / {goal}
+          </span>
+          <span className="text-stone-500"> · {formatMinutes(stats.todayMinutes)}</span>
+          {stats.todayCount >= goal && ' ✓ dnevni cilj'}
+        </p>
+        <p>
+          <span className="inline-block w-16 text-stone-500">Ukupno:</span>
+          <span className="font-semibold">{stats.totalCount}</span>
+          <span className="text-stone-500"> · {formatMinutes(stats.totalMinutes)}</span>
+        </p>
+      </div>
+      <button onClick={onBack} className={`${primary} mt-4 w-full py-4 text-lg`}>
+        ← Početna
+      </button>
+    </>
+  )
+}
+
+function ToolView({ tool, onBack }: { tool: Tool; onBack: () => void }) {
+  if (tool.kind === 'story') {
+    const story = stories.find((s) => s.id === tool.storyId)!
+    return <StoryPlayer key={JSON.stringify(tool.preset)} story={story} preset={tool.preset} onBack={onBack} />
+  }
+  return (
+    <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
+      {tool.kind === 'konj' && <Conjugator preset={tool.preset} onBack={onBack} />}
+      {tool.kind === 'vocab' && <Vocabulary preset={tool.preset} onBack={onBack} />}
+      {tool.kind === 'moje' && <MyWords onBack={onBack} />}
+    </Suspense>
+  )
+}
+
+export function SessionRun({ id: sessionId, onBack }: { id: string; onBack: () => void }) {
+  const [tool, setTool] = useState<Tool | null>(null)
+  const log = useLiveQuery(() => db.sessionLogs.get(sessionId), [sessionId])
+  const blockIndex = log?.blockIndex ?? 0
+  const finished = !!log && blockIndex >= log.blocks.length
+  // Sesija se broji kad stigneš do sažetka.
+  useEffect(() => {
+    if (log && finished && log.endedAt === undefined) void db.sessionLogs.update(log.id, { endedAt: Date.now() })
+  }, [log, finished])
+
+  if (!log) return <p className="p-6 text-center text-stone-400">Učitavam sesiju…</p>
+  const progress = log.progress ?? {}
+  const setProgress = (p: SessionProgress) => db.sessionLogs.update(sessionId, { progress: { ...progress, ...p } })
+
+  async function closeTool() {
+    const was = tool
+    setTool(null)
+    // Nakon konjugatora: provjeri prelazi li se na idući red tablice.
+    if (was?.kind === 'konj') {
+      const fresh = (await db.vodic.get('stanje')) ?? initialState()
+      const next = konjugatorAdvance(fresh, await db.conjAttempts.toArray())
+      if (next.konjRow !== fresh.konjRow) {
+        await db.vodic.put(next)
+        await setProgress({ result: `Dvije sesije zaredom s 9/10: konjugator prelazi na red ${next.konjRow + 1}.` })
+      }
+    }
+  }
+  if (tool) return <ToolView tool={tool} onBack={() => void closeTool()} />
+
+  const block = log.blocks[Math.min(blockIndex, log.blocks.length - 1)] as BlockId
+  const minutes = SESIJA.blocks[block] ?? 5
+  const s: SCtx = { log, progress, setProgress, open: setTool, minutes }
+
+  async function endBlock() {
+    await db.sessionLogs.update(sessionId, { blockIndex: blockIndex + 1, blockStartedAt: Date.now(), progress: {} })
+    window.scrollTo(0, 0)
+  }
+
+  return (
+    <main className="min-h-dvh bg-stone-50 p-6 pb-40 text-stone-900">
+      <div className="flex items-center justify-between gap-2">
+        <button onClick={onBack} className="rounded-full px-3 py-2 text-stone-500 active:bg-stone-200">
+          ← Početna
+        </button>
+        {!finished && (
+          <span className="flex flex-col items-end">
+            <Countdown key={blockIndex} startedAt={log.blockStartedAt ?? log.startedAt} minutes={minutes} />
+            {log.blocks.length > 1 && <SessionClock log={log} />}
+          </span>
+        )}
+      </div>
+
+      {/* Napredak kroz blokove */}
+      <div className="mt-3 flex gap-1">
+        {log.blocks.map((b, i) => (
+          <span
+            key={b}
+            style={{ flexGrow: SESIJA.blocks[b as BlockId] ?? 5 }}
+            className={`h-2 rounded-full ${i < blockIndex ? 'bg-emerald-500' : i === blockIndex && !finished ? 'bg-red-700' : 'bg-stone-200'}`}
+          />
+        ))}
+      </div>
+
+      {finished ? (
+        <SessionSummary log={log} onBack={onBack} />
+      ) : (
+        <>
+          <p className="mt-4 text-sm text-stone-500">
+            Blok {blockIndex + 1} / {log.blocks.length} · {minutes} min
+          </p>
+          <h1 className="text-2xl font-semibold">{BLOCK_TITLE[block]}</h1>
+          <BlockBody key={blockIndex} id={block} s={s} />
+        </>
+      )}
+
+      {!finished && (
+        <div className="fixed inset-x-0 bottom-0 bg-stone-50/95 p-4 shadow-[0_-2px_8px_rgba(0,0,0,0.06)]">
+          <button onClick={() => void endBlock()} className={`${btn} w-full bg-emerald-600 py-4 text-lg text-white active:bg-emerald-700`}>
+            {blockIndex < log.blocks.length - 1 ? '✓ Blok gotov' : '✓ Blok gotov → sažetak'}
           </button>
         </div>
       )}

@@ -140,6 +140,18 @@ export type SessionLog = {
   minutes: number // izabrano trajanje (5, 10, 15)
   blocks: string[] // blokovi sesije redom (vodic-config.ts, BlockId)
   storyId: string
+  blockIndex?: number // gdje je sesija stala (za Nastavi)
+  blockStartedAt?: number
+  progress?: SessionProgress // dokle se stiglo unutar tekućeg bloka (briše se na idućem bloku)
+}
+export type SessionProgress = {
+  queue?: string[] // kartice bloka (riječ|čitanje ili priča:rečenica), zamrznute na početku bloka
+  item?: number // redni broj u popisu
+  shown?: boolean // značenje riječi je otkriveno
+  round?: number // Nova rečenica / Priča: 0 upoznaj, 1–3 krugovi, 4 pitanja
+  q?: number // pitanje na kraju Nove rečenice
+  timeUp?: boolean // vrijeme bloka je isteklo: nove stavke se više ne nude
+  result?: string // poruka nakon odluke
 }
 
 export const db = new Dexie('nihongo') as Dexie & {
@@ -216,7 +228,17 @@ db.version(8).stores({
   sessionLogs: 'id, startedAt',
 })
 
-export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`
+// Jednokratno: brišu se probne sesije s početnog zaslona prije zaslona sesije (nemaju blockStartedAt).
+db.version(9)
+  .stores({})
+  .upgrade((tx) =>
+    tx
+      .table('sessionLogs')
+      .filter((s: SessionLog) => s.blockStartedAt === undefined)
+      .delete(),
+  )
+
+export const sentenceId =(storyId: string, index: number) => `${storyId}:${index}`
 
 export async function setSentenceStatus(storyId: string, index: number, status: SentenceStatus) {
   await db.sentences.put({ id: sentenceId(storyId, index), storyId, index, status, updatedAt: Date.now() })

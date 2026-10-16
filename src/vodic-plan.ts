@@ -2,7 +2,7 @@
 // po pravilima iz vodic-config.ts. Na dnu: sastavljač kratke sesije (planSession).
 // Čiste funkcije, bez baze i bez zaslona, pa se mogu testirati.
 import { cardId, dayStart, dueCards, newLeftToday } from './cards'
-import type { CardLog, CardRow, DayLog, SentenceState, SessionLog, VodicState } from './db'
+import type { CardLog, CardRow, DayLog, MyWord, SentenceState, SessionLog, VodicState } from './db'
 import { SESIJA, VODIC, type BlockId, type StepId, type VodicConfig } from './vodic-config'
 
 // --- Datumi (lokalni dan kao 'YYYY-MM-DD'; računanje u UTC da ljetno vrijeme ne smeta) ---
@@ -293,3 +293,43 @@ export function sessionStats(logs: SessionLog[], now: number) {
 
 // "9 h 20 min", "45 min"
 export const formatMinutes = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} h ${m % 60} min` : `${m} min`)
+
+// --- Blokovi sesije ---
+
+// Blok Riječi: prvo kartice na redu (od one koja najviše kasni), pa nove (tvoje riječi bez kartice,
+// zadnje dodane prve) do dnevnog ograničenja.
+export function wordQueue(cards: CardRow[], myWords: MyWord[], logs: CardLog[], now: number): string[] {
+  const has = new Set(cards.map((c) => c.id))
+  const fresh = myWords
+    .filter((w) => !has.has(cardId('rijec', w.id)))
+    .sort((a, b) => b.addedAt - a.addedAt)
+    .slice(0, newLeftToday(logs, 'rijec', now))
+  return [...dueCards(cards, 'rijec', now).map((c) => c.ref), ...fresh.map((w) => w.id)]
+}
+
+// Sažetak sesije: koliko je kartica ponovljeno i uvedeno, i kad je iduća na redu.
+export function sessionSummary(sessionId: string, logs: CardLog[], cards: CardRow[], now: number) {
+  const mine = logs.filter((l) => l.session === sessionId)
+  const count = (kind: 'rijec' | 'fraza', isNew: boolean) =>
+    new Set(mine.filter((l) => l.kind === kind && l.wasNew === isNew).map((l) => l.cardId)).size
+  const upcoming = cards.filter((c) => c.due > now).sort((a, b) => a.due - b.due)
+  const next = upcoming[0]?.due
+  return {
+    words: count('rijec', false),
+    newWords: count('rijec', true),
+    fraze: count('fraza', false),
+    newFraze: count('fraza', true),
+    nextDue: next,
+    // Kartice koje dolaze na red u satu nakon iduće.
+    nextCount: next === undefined ? 0 : upcoming.filter((c) => c.due <= next + 3_600_000).length,
+  }
+}
+
+// "za 10 min", "za 3 h", "sutra", "za 4 dana"
+export function formatWhen(due: number, now: number): string {
+  const min = Math.max(1, Math.round((due - now) / 60_000))
+  if (min < 60) return `za ${min} min`
+  if (min < 24 * 60) return `za ${Math.round(min / 60)} h`
+  const days = daysBetween(today(new Date(now)), today(new Date(due)))
+  return days <= 1 ? 'sutra' : `za ${days} dana`
+}

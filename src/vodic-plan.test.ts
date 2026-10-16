@@ -13,8 +13,11 @@ import {
   initialState,
   planDay,
   formatMinutes,
+  formatWhen,
   planSession,
   sessionStats,
+  sessionSummary,
+  wordQueue,
   type PlanInput,
   type SessionInput,
 } from './vodic-plan'
@@ -303,5 +306,42 @@ describe('brojač sesija', () => {
   it('minute u satima', () => {
     expect(formatMinutes(45)).toBe('45 min')
     expect(formatMinutes(560)).toBe('9 h 20 min')
+  })
+})
+
+describe('blokovi sesije', () => {
+  const NOW = new Date(2026, 9, 16, 10, 0).getTime()
+  const MIN = 60_000
+  const w = (word: string, addedAt: number) => ({ id: `${word}|${word}`, word, reading: word, hr: '', source: 'rijeci', addedAt })
+
+  it('Riječi: prvo na redu (najstarije prve), pa nove do kvote, zadnje dodane prve', () => {
+    const cards = [
+      rateCard(undefined, 'rijec', 'b|b', false, NOW - 30 * MIN).card, // na redu od prije 20 min
+      rateCard(undefined, 'rijec', 'a|a', false, NOW - 60 * MIN).card, // na redu od prije 50 min
+      rateCard(undefined, 'rijec', 'c|c', true, NOW).card, // nije na redu
+    ]
+    const words = [w('a', 1), w('b', 2), w('c', 3), w('x', 4), w('y', 5)]
+    expect(wordQueue(cards, words, [], NOW)).toEqual(['a|a', 'b|b', 'y|y', 'x|x'])
+    // Kvota novih potrošena (10 danas): samo one na redu.
+    const logs = Array.from({ length: 10 }, (_, i) => ({ id: `${i}`, v: 1 as const, cardId: 'z', kind: 'rijec' as const, at: NOW - i * MIN, ok: true, wasNew: true }))
+    expect(wordQueue(cards, words, logs, NOW)).toEqual(['a|a', 'b|b'])
+  })
+
+  it('sažetak: ponovljene i nove kartice ove sesije, i kad je iduća na redu', () => {
+    const r1 = rateCard(undefined, 'rijec', 'a|a', true, NOW, 's1')
+    const r2 = rateCard(r1.card, 'rijec', 'a|a', false, NOW + MIN, 's1')
+    const r3 = rateCard(undefined, 'fraza', 'kyushu-001:0', false, NOW, 's1')
+    const other = rateCard(undefined, 'rijec', 'b|b', true, NOW, 's2')
+    const s = sessionSummary('s1', [r1.log, r2.log, r3.log, other.log], [r2.card, r3.card, other.card], NOW + 2 * MIN)
+    expect(s).toMatchObject({ words: 1, newWords: 1, fraze: 0, newFraze: 1 })
+    expect(s.nextDue).toBe(NOW + 10 * MIN) // fraza s Nisam
+    expect(s.nextCount).toBe(3) // i riječ a (za 10 min od NOW+1) i b (za 1 h) u satu nakon toga
+  })
+
+  it('kad je iduće ponavljanje', () => {
+    expect(formatWhen(NOW + 10 * MIN, NOW)).toBe('za 10 min')
+    expect(formatWhen(NOW + 3 * 60 * MIN, NOW)).toBe('za 3 h')
+    expect(formatWhen(NOW + 24 * 60 * MIN, NOW)).toBe('sutra')
+    expect(formatWhen(NOW + 4 * 24 * 60 * MIN, NOW)).toBe('za 4 dana')
   })
 })
