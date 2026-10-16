@@ -1,6 +1,6 @@
 // Nazivi koraka i kratki opisi rečenica za vodič (početni zaslon i zaslon treninga).
 import { stories } from './stories'
-import type { StepId } from './vodic-config'
+import type { BlockId, StepId } from './vodic-config'
 import type { SentenceRef, StoryInfo } from './vodic-plan'
 
 export const STEP_TITLE: Record<StepId, string> = {
@@ -13,6 +13,17 @@ export const STEP_TITLE: Record<StepId, string> = {
   citanje: 'Čitanje',
   dorada: 'Dorada rečenica u radu',
   'test-price': 'Test cijele priče',
+}
+
+// Blokovi kratke sesije.
+export const BLOCK_TITLE: Record<BlockId, string> = {
+  rijeci: '🔁 Riječi',
+  fraze: '🗣️ Fraze',
+  'nova-recenica': '✨ Nova rečenica',
+  prica: '📚 Priča u 3 kruga',
+  konjugator: '🔄 Konjugator',
+  citanje: '👀 Čitanje',
+  'nove-rijeci': '🎯 Nove riječi',
 }
 
 export const STORY_INFO: StoryInfo[] = stories.map((s) => ({ id: s.id, sentenceCount: s.sentences.length }))

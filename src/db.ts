@@ -131,6 +131,17 @@ export type CardRow = {
 // Jedna ocjena kartice. `wasNew` = kartica je tom ocjenom uvedena (za dnevno ograničenje novih).
 export type CardLog = { id: string; v: 1; cardId: string; kind: CardKind; at: number; ok: boolean; wasNew: boolean; session?: string }
 
+// Jedna kratka sesija. Broji se tek kad ima `endedAt` (stigao si do sažetka); minute = stvarno vrijeme.
+export type SessionLog = {
+  id: string
+  v: 1
+  startedAt: number
+  endedAt?: number
+  minutes: number // izabrano trajanje (5, 10, 15)
+  blocks: string[] // blokovi sesije redom (vodic-config.ts, BlockId)
+  storyId: string
+}
+
 export const db = new Dexie('nihongo') as Dexie & {
   myWords: EntityTable<MyWord, 'id'>
   sentences: EntityTable<SentenceState, 'id'>
@@ -142,6 +153,7 @@ export const db = new Dexie('nihongo') as Dexie & {
   wordAttempts: EntityTable<WordAttempt, 'id'>
   cards: EntityTable<CardRow, 'id'>
   cardLogs: EntityTable<CardLog, 'id'>
+  sessionLogs: EntityTable<SessionLog, 'id'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
@@ -189,6 +201,19 @@ db.version(7).stores({
   wordAttempts: 'id, at, word, session',
   cards: 'id, kind, due',
   cardLogs: 'id, at, cardId',
+})
+db.version(8).stores({
+  myWords: 'id, addedAt',
+  sentences: 'id, storyId',
+  places: 'storyId, updatedAt',
+  conjAttempts: 'id, at, point, word, session',
+  vodic: 'id',
+  days: 'date',
+  wordReviews: 'id',
+  wordAttempts: 'id, at, word, session',
+  cards: 'id, kind, due',
+  cardLogs: 'id, at, cardId',
+  sessionLogs: 'id, startedAt',
 })
 
 export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`

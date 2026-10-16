@@ -1,7 +1,9 @@
 // Planer vodiča (dorada 1V): iz stanja, statusa rečenica i dnevnika dana složi današnji trening
-// po pravilima iz vodic-config.ts. Čiste funkcije, bez baze i bez zaslona, pa se mogu testirati.
-import type { DayLog, SentenceState, VodicState } from './db'
-import { VODIC, type StepId, type VodicConfig } from './vodic-config'
+// po pravilima iz vodic-config.ts. Na dnu: sastavljač kratke sesije (planSession).
+// Čiste funkcije, bez baze i bez zaslona, pa se mogu testirati.
+import { cardId, dayStart, dueCards, newLeftToday } from './cards'
+import type { CardLog, CardRow, DayLog, SentenceState, SessionLog, VodicState } from './db'
+import { SESIJA, VODIC, type BlockId, type StepId, type VodicConfig } from './vodic-config'
 
 // --- Datumi (lokalni dan kao 'YYYY-MM-DD'; računanje u UTC da ljetno vrijeme ne smeta) ---
 
@@ -180,3 +182,114 @@ export function afterWarmup(s: SentenceState, ok: boolean, date: string, config:
   const idx = Math.min((s.intervalIdx ?? 0) + 1, iv.length - 1)
   return { ...s, intervalIdx: idx, due: addDays(date, iv[idx]), updatedAt: Date.now() }
 }
+
+// --- Kratka sesija: nasumični blokovi, zbroj točno izabrano trajanje (5, 10 ili 15 min) ---
+
+export type SessionInput = {
+  minutes: number
+  now: number
+  cards: CardRow[]
+  logs: CardLog[] // ocjene kartica (za dnevno ograničenje novih)
+  stories: StoryInfo[]
+  storyOrder?: string[]
+  newWordCandidates: number // tvoje riječi koje još nemaju karticu
+  vocabLeft: number // riječi s popisa koje još nisu u tvojim riječima (za Sljedećih 8)
+  random?: () => number
+  config?: typeof SESIJA
+}
+
+export type Session = {
+  minutes: number
+  blocks: { id: BlockId; minutes: number }[]
+  storyId: string // tekuća priča (za blokove Priča i Nova rečenica)
+  newSentence: SentenceRef | null // sljedeća rečenica bez kartice
+  dueWords: number
+  dueFraze: number
+}
+
+// Tekuća priča: prva iz reda koja ima rečenicu bez kartice (ako je sve naučeno, zadnja).
+export function currentStory(cards: CardRow[], stories: StoryInfo[], storyOrder: string[] = VODIC.storyOrder) {
+  const has = new Set(cards.map((c) => c.id))
+  for (const id of storyOrder) {
+    const count = stories.find((s) => s.id === id)?.sentenceCount ?? 0
+    for (let index = 0; index < count; index++) {
+      if (!has.has(cardId('fraza', `${id}:${index}`))) return { storyId: id, newSentence: { storyId: id, index } }
+    }
+  }
+  return { storyId: storyOrder[storyOrder.length - 1], newSentence: null }
+}
+
+// Koji su blokovi ponuđeni (imaju sadržaja) i koji moraju ući zbog zaostatka.
+export function availableBlocks(input: SessionInput) {
+  const config = input.config ?? SESIJA
+  const { cards, logs, now } = input
+  const { storyId, newSentence } = currentStory(cards, input.stories, input.storyOrder)
+  const dueWords = dueCards(cards, 'rijec', now).length
+  const dueFraze = dueCards(cards, 'fraza', now).length
+  const storyStarted = cards.some((c) => c.kind === 'fraza' && c.ref.startsWith(`${storyId}:`))
+  const offered: Record<BlockId, boolean> = {
+    rijeci: dueWords > 0 || (input.newWordCandidates > 0 && newLeftToday(logs, 'rijec', now) > 0),
+    fraze: dueFraze > 0,
+    'nova-recenica': !!newSentence && newLeftToday(logs, 'fraza', now) > 0,
+    prica: storyStarted,
+    konjugator: true,
+    citanje: true,
+    'nove-rijeci': input.vocabLeft > 0,
+  }
+  const due: Partial<Record<BlockId, number>> = { rijeci: dueWords, fraze: dueFraze }
+  const ids = (Object.keys(config.blocks) as BlockId[]).filter((id) => offered[id])
+  const forced = ids.filter((id) => config.backlog[id] !== undefined && (due[id] ?? 0) > config.backlog[id]!)
+  return { ids, forced, storyId, newSentence, dueWords, dueFraze }
+}
+
+// Složi sesiju: od svih skupova različitih ponuđenih blokova čiji je zbroj točno `minutes` (i koji sadrže
+// blokove sa zaostatkom) nasumično izaberi jedan, pa mu nasumično posloži redoslijed.
+// Ako takvog skupa nema, uzmi one s najvećim zbrojem ispod trajanja.
+export function planSession(input: SessionInput): Session {
+  const config = input.config ?? SESIJA
+  const random = input.random ?? Math.random
+  const a = availableBlocks(input)
+  const len = (id: BlockId) => config.blocks[id]
+
+  // Blokovi sa zaostatkom koji stanu (prvo riječi, pa fraze).
+  const forced: BlockId[] = []
+  for (const id of a.forced) if (forced.reduce((n, f) => n + len(f), 0) + len(id) <= input.minutes) forced.push(id)
+  const rest = a.ids.filter((id) => !forced.includes(id))
+
+  const combos: BlockId[][] = []
+  for (let mask = 0; mask < 1 << rest.length; mask++) {
+    const combo = [...forced, ...rest.filter((_, i) => mask & (1 << i))]
+    if (combo.reduce((n, id) => n + len(id), 0) <= input.minutes) combos.push(combo)
+  }
+  const best = Math.max(...combos.map((c) => c.reduce((n, id) => n + len(id), 0)))
+  const fitting = combos.filter((c) => c.reduce((n, id) => n + len(id), 0) === best)
+  const picked = [...fitting[Math.floor(random() * fitting.length)]]
+
+  // Nasumični redoslijed (Fisher–Yates).
+  for (let i = picked.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1))
+    ;[picked[i], picked[j]] = [picked[j], picked[i]]
+  }
+  return {
+    minutes: input.minutes,
+    blocks: picked.map((id) => ({ id, minutes: len(id) })),
+    storyId: a.storyId,
+    newSentence: a.newSentence,
+    dueWords: a.dueWords,
+    dueFraze: a.dueFraze,
+  }
+}
+
+// --- Brojač sesija i minuta ---
+
+// Završene sesije (one sa sažetkom): danas i ukupno. Minute su stvarno vrijeme, zaokruženo na cijelu minutu.
+export function sessionStats(logs: SessionLog[], now: number) {
+  const from = dayStart(now)
+  const done = logs.filter((l) => l.endedAt !== undefined)
+  const mins = (ls: SessionLog[]) => Math.round(ls.reduce((n, l) => n + (l.endedAt! - l.startedAt), 0) / 60_000)
+  const today = done.filter((l) => l.startedAt >= from && l.startedAt < from + 86_400_000)
+  return { todayCount: today.length, todayMinutes: mins(today), totalCount: done.length, totalMinutes: mins(done) }
+}
+
+// "9 h 20 min", "45 min"
+export const formatMinutes = (m: number) => (m >= 60 ? `${Math.floor(m / 60)} h ${m % 60} min` : `${m} min`)

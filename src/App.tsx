@@ -50,7 +50,7 @@ function App() {
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
       <h1 className="mb-6 text-center text-sm text-stone-400">Nihongo Shadowing</h1>
-      <TodayPlan onStart={(short) => setScreen(short ? 'trening-kratki' : 'trening')} />
+      <TodayPlan />
       {lastStory && lastPlace && (
         <button
           onClick={() => setStoryId(lastStory.id)}

@@ -35,6 +35,34 @@ export const KARTICE = {
   seedWordStabilityDays: 2,
 }
 
+// Kratke sesije: svaka je za sebe, složena od nasumičnih blokova; veza među sesijama su samo kartice.
+export type BlockId =
+  | 'rijeci' // FSRS riječi na redu, pa nove
+  | 'fraze' // FSRS fraze na redu
+  | 'nova-recenica' // upoznaj novu rečenicu + 3 kruga + pitanja
+  | 'prica' // cijela tekuća priča u 3 kruga
+  | 'konjugator'
+  | 'citanje'
+  | 'nove-rijeci' // Sljedećih 8
+
+export const SESIJA = {
+  durations: [5, 10, 15],
+  defaultGoal: 3, // dnevni cilj (broj sesija), dok ga ne promijeniš
+  goalRange: [1, 6],
+  // Trajanje bloka u minutama. Zbroj blokova u sesiji je točno izabrano trajanje.
+  blocks: {
+    rijeci: 5,
+    fraze: 5,
+    'nova-recenica': 10,
+    prica: 10,
+    konjugator: 5,
+    citanje: 5,
+    'nove-rijeci': 5,
+  } as Record<BlockId, number>,
+  // Zaostatak: kad je na redu više od ovoliko kartica, blok sigurno ulazi u sesiju.
+  backlog: { rijeci: 20, fraze: 5 } as Partial<Record<BlockId, number>>,
+}
+
 // Vodič "Današnji trening" (dorada 1V). Minute, rokovi, redoslijed priča i tablica konjugatora.
 export type StepId =
   | 'rijeci' // ponavljanje riječi
