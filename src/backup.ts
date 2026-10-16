@@ -1,14 +1,16 @@
 // Sigurnosna kopija napretka (dorada 1): sve tablice iz baze (moje riječi, statusi rečenica, mjesta
-// u pričama, a kasnije i kartice) i postavke, u jednu JSON datoteku, i natrag.
+// u pričama, FSRS kartice) i postavke, u jednu JSON datoteku, i natrag.
 //
 // Format je verzioniran (formatVersion). Starije datoteke se migriraju, novije se odbijaju.
 // Uvoz: "spoji" dodaje samo ono čega nema (postojeće ne dira), "zamijeni" briše trenutno i stavlja kopiju.
 // Neispravna datoteka ne mijenja ništa: prvo se cijela provjeri, a zatim se primijeni u jednoj transakciji.
+import { syncCards } from './cards'
 import { db } from './db'
 import { allSettings, applySettings } from './settings'
 
 export const APP = 'nihongo-shadowing'
-export const FORMAT_VERSION = 2
+// 3: dodane FSRS kartice (cards, cardLogs). Starije kopije ih nemaju; nakon uvoza se slože iz napretka.
+export const FORMAT_VERSION = 3
 
 export type Backup = {
   app: string
@@ -97,6 +99,8 @@ export async function applyBackup(backup: Backup, mode: ImportMode): Promise<Rec
     }
   })
   counts.postavke = applySettings(backup.settings, mode)
+  // Kopija bez kartica (ili s dijelom): kartice za stari napredak slože se iz statusa rečenica i riječi.
+  await syncCards()
   return counts
 }
 

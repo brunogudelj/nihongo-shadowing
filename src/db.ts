@@ -1,4 +1,4 @@
-// Baza u pregledniku (IndexedDB, preko Dexie): tvoje riječi, a kasnije i FSRS kartice.
+// Baza u pregledniku (IndexedDB, preko Dexie): tvoje riječi, napredak i FSRS kartice.
 // Sve ostaje na mobitelu; ništa ne ide na internet.
 import { Dexie, type EntityTable } from 'dexie'
 
@@ -107,6 +107,30 @@ export type DayProgress = {
 // Ponavljanje riječi u vodiču (korak 1): koliko je puta zaredom i ukupno bilo "Nisam".
 export type WordReview = { id: string; v: 1; nisamStreak: number; nisamTotal: number; lastOn: string; priorityOn?: string }
 
+// FSRS kartica (ts-fsrs). Riječ: id "rijec:<riječ|čitanje>"; fraza: id "fraza:<priča:rečenica>".
+// Datumi su u milisekundama (ne Date), da se izvoz u JSON vrati u isti oblik.
+export type CardKind = 'rijec' | 'fraza'
+export type CardRow = {
+  id: string
+  v: 1
+  kind: CardKind
+  ref: string // riječ|čitanje ili priča:rečenica
+  due: number
+  stability: number
+  difficulty: number
+  scheduled_days: number
+  learning_steps: number
+  reps: number
+  lapses: number
+  state: number // 0 nova, 1 učenje, 2 ponavljanje, 3 ponovno učenje
+  last_review?: number
+  createdAt: number
+  seeded?: boolean // nastala iz starog napretka (statusi rečenica, ponavljanje riječi), ne iz ocjene
+}
+
+// Jedna ocjena kartice. `wasNew` = kartica je tom ocjenom uvedena (za dnevno ograničenje novih).
+export type CardLog = { id: string; v: 1; cardId: string; kind: CardKind; at: number; ok: boolean; wasNew: boolean; session?: string }
+
 export const db = new Dexie('nihongo') as Dexie & {
   myWords: EntityTable<MyWord, 'id'>
   sentences: EntityTable<SentenceState, 'id'>
@@ -116,6 +140,8 @@ export const db = new Dexie('nihongo') as Dexie & {
   days: EntityTable<DayLog, 'date'>
   wordReviews: EntityTable<WordReview, 'id'>
   wordAttempts: EntityTable<WordAttempt, 'id'>
+  cards: EntityTable<CardRow, 'id'>
+  cardLogs: EntityTable<CardLog, 'id'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
@@ -151,6 +177,18 @@ db.version(6).stores({
   days: 'date',
   wordReviews: 'id',
   wordAttempts: 'id, at, word, session',
+})
+db.version(7).stores({
+  myWords: 'id, addedAt',
+  sentences: 'id, storyId',
+  places: 'storyId, updatedAt',
+  conjAttempts: 'id, at, point, word, session',
+  vodic: 'id',
+  days: 'date',
+  wordReviews: 'id',
+  wordAttempts: 'id, at, word, session',
+  cards: 'id, kind, due',
+  cardLogs: 'id, at, cardId',
 })
 
 export const sentenceId = (storyId: string, index: number) => `${storyId}:${index}`

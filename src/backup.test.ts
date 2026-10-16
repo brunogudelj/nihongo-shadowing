@@ -2,7 +2,7 @@
 // Testovi za sigurnosnu kopiju (dorada 1). Pokretanje: npm test
 import 'fake-indexeddb/auto'
 import { beforeEach, describe, expect, it } from 'vitest'
-import { APP, applyBackup, buildBackup, parseBackup, type Backup } from './backup'
+import { APP, applyBackup, buildBackup, FORMAT_VERSION, parseBackup, type Backup } from './backup'
 import { db, type SentenceStatus } from './db'
 import { readSetting, writeSetting } from './settings'
 
@@ -15,11 +15,11 @@ beforeEach(async () => {
 })
 
 describe('format', () => {
-  it('izvoz ima formatVersion 2, tablice i postavke', async () => {
+  it('izvoz ima formatVersion 3, tablice i postavke', async () => {
     await db.myWords.put(word('駅', 'えき'))
     writeSetting('brzina', '0.85')
     const b = await buildBackup()
-    expect(b.formatVersion).toBe(2)
+    expect(b.formatVersion).toBe(FORMAT_VERSION)
     expect(b.tables.myWords).toHaveLength(1)
     expect(b.settings.brzina).toBe('0.85')
   })
@@ -27,7 +27,7 @@ describe('format', () => {
   it('stara datoteka (verzija 1, bez formatVersion) se migrira', () => {
     const v1 = { app: APP, version: 2, exportedAt: '2026-10-04T10:00:00Z', tables: { myWords: [word('駅', 'えき')] } }
     const b = parseBackup(JSON.stringify(v1))
-    expect(b.formatVersion).toBe(2)
+    expect(b.formatVersion).toBe(FORMAT_VERSION)
     expect(b.tables.myWords).toHaveLength(1)
     expect(b.settings).toEqual({})
   })

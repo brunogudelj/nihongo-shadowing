@@ -20,6 +20,21 @@ export const KONJUGATOR = {
   listMax: 10,
 }
 
+// FSRS kartice (ts-fsrs): riječi i fraze. Jedina veza među sesijama, uz dnevno ograničenje novih.
+export const KARTICE = {
+  // Najviše ovoliko novih kartica dnevno (uvedenih prvom ocjenom).
+  newPerDay: { rijec: 10, fraza: 3 },
+  // Znao = Good, Nisam = Again. Nova kartica: "Znao" → opet za 1 h, "Nisam" → za 10 min;
+  // nakon toga prelazi na dane. Zaboravljena kartica se vraća za 10 min.
+  learningSteps: ['10m', '1h'] as const,
+  relearningSteps: ['10m'] as const,
+  retention: 0.9, // željena vjerojatnost da se kartica zna na dan ponavljanja
+  maxIntervalDays: 365,
+  // Prijenos starog napretka: gotova rečenica dobiva stabilnost iz svog koraka rasporeda (reviewIntervals),
+  // a riječ koju si već ponavljao i zadnji put znao ovoliko dana.
+  seedWordStabilityDays: 2,
+}
+
 // Vodič "Današnji trening" (dorada 1V). Minute, rokovi, redoslijed priča i tablica konjugatora.
 export type StepId =
   | 'rijeci' // ponavljanje riječi
