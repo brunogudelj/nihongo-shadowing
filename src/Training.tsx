@@ -5,6 +5,7 @@ import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react'
 import type { ConjPreset } from './Conjugator'
 import { FORMS } from './conjugate'
 import { cardId, dueCards, saveRating } from './cards'
+import ContextSentence from './ContextSentence'
 import { db, type DayLog, type DayProgress, type SentenceState, type SessionLog, type SessionProgress, type VodicState } from './db'
 import { speak } from './speech'
 import StoryPlayer, { type StoryPreset } from './StoryPlayer'
@@ -787,6 +788,7 @@ function WordBlock({ s }: { s: SCtx }) {
         )}
         {progress.shown && <span className="mt-4 block text-lg">{hr || '(bez prijevoda)'}</span>}
       </div>
+      {progress.shown && <ContextSentence key={`${ref}-${item}`} lemma={word} />}
       <button onClick={() => void speak(reading)} className={`${secondary} mt-3 w-full`}>
         🔊 Poslušaj
       </button>
