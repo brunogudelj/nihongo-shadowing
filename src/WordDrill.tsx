@@ -150,7 +150,7 @@ export default function WordDrill({ onBack }: { onBack: () => void }) {
                     aria-label="Poslušaj riječ"
                   >
                     <span lang="ja" className="block text-5xl font-medium">
-                      <KanjiText text={current.word} /> <span className="align-middle text-2xl">🔊</span>
+                      <KanjiText text={current.word} word={{ text: current.word, reading: current.reading, meaning: current.hr }} /> <span className="align-middle text-2xl">🔊</span>
                     </span>
                     {revealed && (
                       <span className="mt-1 block text-stone-500">

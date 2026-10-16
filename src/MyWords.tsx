@@ -50,7 +50,7 @@ export default function MyWords({ onBack }: { onBack: () => void }) {
                 className="flex min-w-0 flex-1 items-baseline gap-3 rounded-2xl bg-white px-4 py-3 text-left shadow-sm active:bg-stone-100"
               >
                 <span lang="ja" className="text-2xl font-medium">
-                  <KanjiText text={w.word} />
+                  <KanjiText text={w.word} word={{ text: w.word, reading: w.reading, meaning: w.hr }} />
                 </span>
                 <span className="min-w-0 flex-1">
                   {w.reading !== w.word && (

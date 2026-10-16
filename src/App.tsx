@@ -1,7 +1,5 @@
-import { useLiveQuery } from 'dexie-react-hooks'
 import { lazy, Suspense, useState } from 'react'
 import BackupPanel from './BackupPanel'
-import { db } from './db'
 import StoryPlayer from './StoryPlayer'
 import Stories from './Stories'
 import TodayPlan from './TodayPlan'
@@ -29,9 +27,6 @@ function App() {
   const [storyId, setStoryId] = useState<string>()
   const [screen, setScreen] = useState<Screen | null>(null)
   const [sessionId, setSessionId] = useState<string>()
-  // Gdje si zadnje stao, za ▶ Nastavi.
-  const lastPlace = useLiveQuery(() => db.places.orderBy('updatedAt').last(), [])
-  const lastStory = stories.find((s) => s.id === lastPlace?.storyId)
   const story = stories.find((s) => s.id === storyId)
 
   if (sessionId)
@@ -59,18 +54,6 @@ function App() {
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
       <h1 className="mb-6 text-center text-sm text-stone-400">Nihongo Shadowing</h1>
       <TodayPlan onOpen={setSessionId} />
-      {lastStory && lastPlace && (
-        <button
-          onClick={() => setStoryId(lastStory.id)}
-          className="mb-4 w-full rounded-2xl bg-red-700 p-5 text-left text-white active:bg-red-800"
-        >
-          <p className="text-xl font-semibold">▶ Nastavi</p>
-          <p className="mt-1 text-red-100">
-            <span lang="ja">{lastStory.title_ja}</span> · rečenica {lastPlace.index + 1} / {lastStory.sentences.length}
-          </p>
-        </button>
-      )}
-
       <div className="flex flex-col gap-3">
         {CARDS.map((c) => (
           <button

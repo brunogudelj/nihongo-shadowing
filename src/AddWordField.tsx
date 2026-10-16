@@ -79,7 +79,7 @@ export default function AddWordField() {
                 className="flex min-w-0 flex-1 items-baseline gap-2 rounded-xl px-2 py-2 text-left active:bg-stone-100"
               >
                 <span lang="ja" className="text-xl">
-                  <KanjiText text={w.word} />
+                  <KanjiText text={w.word} word={{ text: w.word, reading: w.reading, meaning: w.hr }} />
                 </span>
                 <span lang="ja" className="text-stone-500">
                   {w.reading !== w.word ? w.reading : ''}

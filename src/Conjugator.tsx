@@ -384,7 +384,7 @@ export default function Conjugator({ onBack, preset }: { onBack: () => void; pre
                     aria-label="Poslušaj osnovni oblik"
                   >
                     <span lang="ja" className="block text-5xl font-medium">
-                      <KanjiText text={current.word.word} /> <span className="align-middle text-2xl">🔊</span>
+                      <KanjiText text={current.word.word} word={{ text: current.word.word, reading: current.word.reading, meaning: current.word.hr }} /> <span className="align-middle text-2xl">🔊</span>
                     </span>
                     <span className="mt-1 block text-stone-500">
                       <span lang="ja">{current.word.reading}</span>
@@ -412,7 +412,10 @@ export default function Conjugator({ onBack, preset }: { onBack: () => void; pre
                       aria-label="Poslušaj oblik"
                     >
                       <span lang="ja" className="block text-4xl font-medium text-red-700">
-                        <KanjiText text={answer.written} /> <span className="align-middle text-2xl">🔊</span>
+                        <KanjiText
+                          text={answer.written}
+                          word={{ text: answer.written, reading: answer.reading, meaning: `${current.word.hr} (oblik od ${current.word.word})` }}
+                        /> <span className="align-middle text-2xl">🔊</span>
                       </span>
                       <span className="mt-1 block text-stone-500">
                         <span lang="ja">{answer.reading}</span>

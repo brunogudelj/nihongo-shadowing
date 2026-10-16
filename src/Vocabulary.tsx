@@ -148,7 +148,7 @@ export default function Vocabulary({ onBack, preset }: { onBack: () => void; pre
                   }`}
                 >
                   <span lang="ja" className="text-2xl font-medium">
-                    <KanjiText text={w.word} />
+                    <KanjiText text={w.word} word={{ text: w.word, reading: w.reading, meaning: w.hr }} />
                   </span>
                   <span className="min-w-0 flex-1">
                     {w.reading !== w.word && (

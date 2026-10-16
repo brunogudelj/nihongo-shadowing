@@ -380,7 +380,7 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
               <p lang="ja" className="text-[2rem] leading-[1.6] font-medium">
                 {sentence.words.map((w, wi) => (
                   <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
-                    <KanjiText text={w.text} />
+                    <KanjiText text={w.text} word={{ text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }} />
                   </span>
                 ))}
               </p>
@@ -440,7 +440,7 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
                           const parts = w.furigana.map((p, pi) =>
                             p.reading ? (
                               <ruby key={pi}>
-                                <KanjiText text={p.text} />
+                                <KanjiText text={p.text} word={{ text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }} />
                                 <rt className="text-sm text-stone-500">{p.reading}</rt>
                               </ruby>
                             ) : (

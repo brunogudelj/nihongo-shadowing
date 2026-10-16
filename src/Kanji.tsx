@@ -1,5 +1,6 @@
-// Kartica kanjija: veliki znak, čitanja (on/kun) s romajijem, značenje i riječi u kojima se pojavljuje.
-// Na računalu se pokaže na hover, na mobitelu na dugi pritisak (ostaje otvorena dok se ne dodirne).
+// Kartica riječi s kanjijima: gore cijela riječ (čitanje, romaji, značenje u kontekstu), ispod njeni kanjiji.
+// Dodir na kanji pokaže njegova čitanja (on/kun) s romajijem, značenje i riječi u kojima se pojavljuje.
+// Na računalu se pokaže na hover, na mobitelu na dugi pritisak (ostaje otvorena dok se ne dodirne izvan nje).
 // Podaci (data/kanji.json, data/rijeci.json) učitavaju se tek kad zatrebaju.
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { toRomaji } from './romaji'
@@ -20,8 +21,11 @@ function loadData(): Promise<Data> {
   return dataPromise
 }
 
-// Kartica: gdje (pokraj kanjija na računalu, ili na sredini na mobitelu) i koji znak.
-type Shown = { char: string; sticky: boolean; x?: number; y?: number }
+// Riječ u kojoj je kanji: tekst, čitanje i značenje (u priči: značenje u toj rečenici).
+export type WordContext = { text: string; reading?: string; romaji?: string; meaning?: string }
+
+// Kartica: gdje (pokraj kanjija na računalu, ili na sredini na mobitelu), koji znak i u kojoj riječi.
+type Shown = { char: string; word?: WordContext; sticky: boolean; x?: number; y?: number }
 type Magnify = { show: (s: Shown) => void; hide: (onlyHover?: boolean) => void; wasLongPress: () => boolean }
 const MagnifyContext = createContext<Magnify | null>(null)
 
@@ -59,7 +63,9 @@ export function KanjiMagnifier({ children }: { children: ReactNode }) {
           className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/30 p-6"
           onClick={() => setShown(null)}
         >
-          <KanjiCard char={shown.char} />
+          <div onClick={(e) => e.stopPropagation()} className="max-h-full w-80 max-w-full overflow-y-auto rounded-3xl bg-white shadow-2xl">
+            <WordCard key={shown.char + (shown.word?.text ?? '')} shown={shown} />
+          </div>
         </div>
       )}
       {shown && !shown.sticky && (
@@ -67,18 +73,88 @@ export function KanjiMagnifier({ children }: { children: ReactNode }) {
           className="pointer-events-none fixed z-50"
           style={{ left: Math.max(8, Math.min((shown.x ?? 0) - 160, window.innerWidth - 328)), top: Math.max(8, (shown.y ?? 0) - 12), transform: 'translateY(-100%)' }}
         >
-          <KanjiCard char={shown.char} />
+          <div className="w-80 max-w-full rounded-3xl bg-white shadow-2xl">
+            <WordCard key={shown.char + (shown.word?.text ?? '')} shown={shown} />
+          </div>
         </div>
       )}
     </MagnifyContext.Provider>
   )
 }
 
-function KanjiCard({ char }: { char: string }) {
+function useData() {
   const [data, setData] = useState<Data | null>(null)
   useEffect(() => {
     void loadData().then(setData)
   }, [])
+  return data
+}
+
+// Prvo značenje kanjija (kratko, za gumb).
+const shortMeaning = (info?: KanjiInfo) => info?.meanings.split(';')[0].trim() ?? ''
+
+// Kartica riječi: riječ gore, njeni kanjiji ispod; kod riječi s jednim kanjijem odmah i detalji.
+function WordCard({ shown }: { shown: Shown }) {
+  const data = useData()
+  const word = shown.word ?? { text: shown.char }
+  const chars = [...new Set([...word.text].filter((c) => KANJI.test(c)))]
+  const [open, setOpen] = useState<string | null>(chars.length === 1 ? chars[0] : null)
+  const meaning = word.meaning ?? data?.words.find((w) => w.word === word.text)?.hr
+  const reading = word.reading ?? data?.words.find((w) => w.word === word.text)?.reading
+  return (
+    <div className="p-5 text-left" lang="hr">
+      {shown.word ? (
+        <>
+          <div className="flex flex-wrap items-baseline gap-x-3">
+            <span lang="ja" className="text-5xl leading-tight font-medium">
+              {word.text}
+            </span>
+            {reading && reading !== word.text && (
+              <span>
+                <span lang="ja" className="text-xl text-stone-600">
+                  {reading}
+                </span>{' '}
+                <span className="text-stone-500 italic">{word.romaji ?? toRomaji(reading)}</span>
+              </span>
+            )}
+          </div>
+          {meaning && <p className="mt-2 text-lg">{meaning}</p>}
+          {chars.length > 1 && (
+            <>
+              <p className="mt-4 border-t pt-3 text-sm font-semibold text-stone-500">Kanjiji u riječi:</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {chars.map((c) => (
+                  <button
+                    key={c}
+                    onClick={() => setOpen(open === c ? null : c)}
+                    className={`rounded-xl px-3 py-2 text-left ${open === c ? 'bg-stone-800 text-white' : 'bg-stone-100 active:bg-stone-200'}`}
+                  >
+                    <span lang="ja" className="text-2xl">
+                      {c}
+                    </span>{' '}
+                    <span lang="en" className="text-sm">
+                      {c === '々' ? 'ponavljanje' : shortMeaning(data?.kanji[c])}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+          {open && (
+            <div className={chars.length > 1 ? 'mt-3' : 'mt-4 border-t pt-3'}>
+              <KanjiDetails char={open} data={data} />
+            </div>
+          )}
+        </>
+      ) : (
+        <KanjiDetails char={shown.char} data={data} />
+      )}
+    </div>
+  )
+}
+
+// Detalji jednog kanjija: znak, razina, čitanja, značenje, riječi.
+function KanjiDetails({ char, data }: { char: string; data: Data | null }) {
   const info = data?.kanji[char]
   const words = data ? data.words.filter((w) => w.word.includes(char)).slice(0, 5) : []
   const reading = (r: string) => (
@@ -87,9 +163,9 @@ function KanjiCard({ char }: { char: string }) {
     </span>
   )
   return (
-    <div className="w-80 max-w-full rounded-3xl bg-white p-5 text-left shadow-2xl" lang="hr">
+    <>
       <div className="flex items-start justify-between">
-        <span lang="ja" className="text-7xl leading-none font-medium">
+        <span lang="ja" className="text-6xl leading-none font-medium">
           {char}
         </span>
         {info && <span className="rounded-full bg-stone-800 px-3 py-1 text-xs font-semibold text-white">{info.level}</span>}
@@ -137,12 +213,12 @@ function KanjiCard({ char }: { char: string }) {
           )}
         </>
       )}
-    </div>
+    </>
   )
 }
 
-// Tekst u kojem svaki kanji ima karticu.
-export function KanjiText({ text }: { text: string }) {
+// Tekst u kojem svaki kanji ima karticu. `word` = riječ kojoj tekst pripada (kartica tad pokaže cijelu riječ).
+export function KanjiText({ text, word }: { text: string; word?: WordContext }) {
   const magnify = useContext(MagnifyContext)
   const timer = useRef<number | undefined>(undefined)
   if (!magnify) return <>{text}</>
@@ -157,7 +233,7 @@ export function KanjiText({ text }: { text: string }) {
             onPointerEnter={(e) => {
               if (e.pointerType !== 'mouse') return
               const r = e.currentTarget.getBoundingClientRect()
-              magnify.show({ char: ch, sticky: false, x: r.left + r.width / 2, y: r.top })
+              magnify.show({ char: ch, word, sticky: false, x: r.left + r.width / 2, y: r.top })
             }}
             onPointerLeave={(e) => {
               window.clearTimeout(timer.current)
@@ -165,7 +241,7 @@ export function KanjiText({ text }: { text: string }) {
             }}
             onPointerDown={(e) => {
               if (e.pointerType !== 'touch') return
-              timer.current = window.setTimeout(() => magnify.show({ char: ch, sticky: true }), LONG_PRESS_MS)
+              timer.current = window.setTimeout(() => magnify.show({ char: ch, word, sticky: true }), LONG_PRESS_MS)
             }}
             onPointerUp={() => window.clearTimeout(timer.current)}
             onPointerCancel={() => window.clearTimeout(timer.current)}
