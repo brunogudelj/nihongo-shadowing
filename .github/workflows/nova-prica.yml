@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       tema:
-        description: 'Tema: naziv datoteke iz mape themes/ bez .yaml (npr. kyushu)'
+        description: 'Tema ili više tema odvojenih zarezom: naziv datoteke iz themes/ bez .yaml (npr. kyushu, ramen)'
         required: true
         type: string
 
@@ -37,7 +37,13 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
-        run: npm run nova-prica -- "$TEMA"
+        # Više tema odvojenih zarezom: redom, jedna po jedna. Ako jedna padne, ostale se ipak rade.
+        run: |
+          failed=""
+          for t in $(echo "$TEMA" | tr ',' ' '); do
+            npm run nova-prica -- "$t" || failed="$failed $t"
+          done
+          if [ -n "$failed" ]; then echo "::error::Nije uspjelo za:$failed"; echo "FAILED=1" >> "$GITHUB_ENV"; fi
       - name: Spremi u repo
         env:
           TEMA: ${{ inputs.tema }}
@@ -45,11 +51,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content
-          git commit -m "Nova priča: $TEMA"
+          git diff --cached --quiet || git commit -m "Nova priča: $TEMA"
           git pull --rebase
           git push
+          if [ -n "$FAILED" ]; then exit 1; fi
 
   # Objava aplikacije s novom pričom.
   deploy:
     needs: story
+    if: ${{ !cancelled() }} # i kad je jedna od više tema pala, ostale se objave
     uses: ./.github/workflows/deploy.yml
