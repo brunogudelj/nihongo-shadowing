@@ -6,6 +6,7 @@ import AddWord from './AddWord'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
 import { speak } from './speech'
+import { emojiFor } from './emoji'
 
 type Entry = { word: string; reading: string; level: string; pos: string; hr: string; mine?: boolean }
 
@@ -157,7 +158,10 @@ export default function Vocabulary({ onBack, preset }: { onBack: () => void; pre
                       </span>
                     )}
                     <span className="text-sm text-stone-400 italic">{w.romaji}</span>
-                    <span className="block text-stone-700">{w.hr}</span>
+                    <span className="block text-stone-700">
+                      {emojiFor(w.word, w.reading) && <span aria-hidden>{emojiFor(w.word, w.reading)} </span>}
+                      {w.hr}
+                    </span>
                   </span>
                   <span className={`text-xs ${w.mine ? 'rounded-full bg-amber-200 px-2 text-amber-900' : 'text-stone-400'}`}>
                     {w.level}

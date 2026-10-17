@@ -6,6 +6,7 @@ import type { ConjPreset } from './Conjugator'
 import { FORMS } from './conjugate'
 import { cardId, dueCards, saveRating } from './cards'
 import ContextSentence from './ContextSentence'
+import EmojiBackdrop from './EmojiBackdrop'
 import { db, type DayLog, type DayProgress, type SentenceState, type SessionLog, type SessionProgress, type VodicState } from './db'
 import { speak } from './speech'
 import StoryPlayer, { type StoryPreset } from './StoryPlayer'
@@ -777,16 +778,17 @@ function WordBlock({ s }: { s: SCtx }) {
         Riječ {item + 1} / {list.length}
         {isNew && ' · nova'}
       </p>
-      <div className="mt-2 rounded-2xl bg-white p-6 text-center shadow-sm">
-        <span className="block text-4xl" lang="ja">
+      <div className="relative mt-2 overflow-hidden rounded-2xl bg-white p-6 text-center shadow-sm">
+        {progress.shown && <EmojiBackdrop word={word} reading={reading} />}
+        <span className="relative block text-4xl" lang="ja">
           {word}
         </span>
         {reading !== word && (
-          <span className="mt-1 block text-lg text-stone-500" lang="ja">
+          <span className="relative mt-1 block text-lg text-stone-500" lang="ja">
             {reading}
           </span>
         )}
-        {progress.shown && <span className="mt-4 block text-lg">{hr || '(bez prijevoda)'}</span>}
+        {progress.shown && <span className="relative mt-4 block text-lg">{hr || '(bez prijevoda)'}</span>}
       </div>
       {progress.shown && <ContextSentence key={`${ref}-${item}`} lemma={word} />}
       <button onClick={() => void speak(reading)} className={`${secondary} mt-3 w-full`}>

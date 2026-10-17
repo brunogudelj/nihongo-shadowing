@@ -2,6 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo, useRef, useState } from 'react'
 import allWords from '../data/rijeci.json'
 import ContextSentence from './ContextSentence'
+import EmojiBackdrop from './EmojiBackdrop'
 import { db, wordId } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
@@ -168,8 +169,9 @@ export default function WordDrill({ onBack }: { onBack: () => void }) {
 
                 {revealed ? (
                   <div className="w-full max-w-sm">
-                    <div className="rounded-2xl bg-white p-5 shadow">
-                      <p className="text-2xl font-semibold text-red-700">{current.hr}</p>
+                    <div className="relative overflow-hidden rounded-2xl bg-white px-5 py-9 shadow">
+                      <EmojiBackdrop word={current.word} reading={current.reading} />
+                      <p className="relative text-2xl font-semibold text-red-700">{current.hr}</p>
                     </div>
                     <ContextSentence key={keyOf(current)} lemma={current.word} />
                   </div>
