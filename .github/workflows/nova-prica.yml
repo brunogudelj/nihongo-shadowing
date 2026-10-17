@@ -10,6 +10,11 @@ on:
         description: 'Tema ili više tema odvojenih zarezom: naziv datoteke iz themes/ bez .yaml (npr. kyushu, ramen)'
         required: true
         type: string
+      razina:
+        description: 'Razina: light (kratke rečenice) ili fat (5 duljih, gradi se na light priči teme)'
+        type: choice
+        options: [light, fat]
+        default: light
 
 permissions:
   contents: write
@@ -34,6 +39,7 @@ jobs:
       - name: Priča, furigana i zvuk
         env:
           TEMA: ${{ inputs.tema }}
+          RAZINA: ${{ inputs.razina }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
@@ -41,7 +47,7 @@ jobs:
         run: |
           failed=""
           for t in $(echo "$TEMA" | tr ',' ' '); do
-            npm run nova-prica -- "$t" || failed="$failed $t"
+            npm run nova-prica -- "$t" "$RAZINA" || failed="$failed $t"
           done
           if [ -n "$failed" ]; then echo "::error::Nije uspjelo za:$failed"; echo "FAILED=1" >> "$GITHUB_ENV"; fi
       - name: Spremi u repo

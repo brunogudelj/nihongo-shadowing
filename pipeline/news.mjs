@@ -78,6 +78,7 @@ if (existsSync(DIR)) {
 
 const theme = {
   naziv: 'Vijest dana',
+  razina: 'fat',
   opis:
     'Kratka vijest iz Hrvatske za učenje japanskog. Izaberi JEDNU vijest s popisa naslova koja je ' +
     'zanimljiva i razumljiva (vrijeme, sport, kultura, turizam, znanost, gospodarstvo, svakodnevni život). ' +

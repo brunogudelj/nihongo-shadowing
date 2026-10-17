@@ -370,3 +370,19 @@ describe('vijest dana', () => {
     expect(latestNews(info('kyushu-001'))).toBeNull()
   })
 })
+
+describe('light i fat', () => {
+  const s = (id: string, level: 'light' | 'fat' = 'light') => ({ id, sentenceCount: 2, theme: id.replace(/-\d{3}$/, ''), level })
+  it('tema po tema: light pa fat, teme iz postavki prve', () => {
+    const list = [s('ramen-002', 'fat'), s('incheon-001'), s('ramen-001'), s('kyushu-002', 'fat'), s('kyushu-001'), s('incheon-002', 'fat')]
+    expect(storyQueue(list, ['kyushu-001'])).toEqual(['kyushu-001', 'kyushu-002', 'incheon-001', 'incheon-002', 'ramen-001', 'ramen-002'])
+  })
+  it('fat dolazi na red tek kad su sve rečenice light priče upoznate', () => {
+    const list = [s('ramen-001'), s('ramen-002', 'fat'), s('vlak-001')]
+    const now = Date.now()
+    const one = [rateCard(undefined, 'fraza', 'ramen-001:0', true, now).card]
+    expect(currentStory(one, list, []).newSentence).toEqual({ storyId: 'ramen-001', index: 1 })
+    const both = [...one, rateCard(undefined, 'fraza', 'ramen-001:1', true, now).card]
+    expect(currentStory(both, list, []).newSentence).toEqual({ storyId: 'ramen-002', index: 0 })
+  })
+})
