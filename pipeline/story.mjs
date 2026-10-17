@@ -65,7 +65,17 @@ const SCHEMA = {
   additionalProperties: false,
 }
 
-const SYSTEM = `You write short Japanese stories for a Croatian learner who practises shadowing (listening and repeating aloud).
+// Pravila priče ovise o razini: light (kratke rečenice) ili fat (5 duljih, povezanih rečenica).
+const LEVEL_RULES = {
+  light: `- 5 to 8 sentences that form one coherent little story with a beginning and an end.
+- Each sentence short enough to shadow comfortably (about 10 to 30 characters).`,
+  fat: `- EXACTLY 5 sentences that form one coherent little story with a beginning and an end.
+- Make the sentences richer rather than short: about 25 to 45 characters, joining two or three ideas with
+  ～て, ～から, ～ので, ～けど, ～たら, ～とき, ～ながら, ～前に/～後で or a relative clause.
+  Each sentence should say why, when or how something happens and connect to the sentence before it.`,
+}
+
+const system = (level) => `You write short Japanese stories for a Croatian learner who practises shadowing (listening and repeating aloud).
 
 Language limits:
 - Vocabulary: JLPT N5 and N4 only. Grammar: up to JLPT N3.
@@ -76,8 +86,7 @@ Language limits:
 - If the theme gives "upute" (instructions), follow them; they override the story rules below.
 
 Story:
-- 5 to 8 sentences that form one coherent little story with a beginning and an end.
-- Each sentence short enough to shadow comfortably (about 10 to 30 characters).
+${LEVEL_RULES[level]}
 
 For every sentence give:
 - "ja": the sentence in normal Japanese writing (kanji where a native would use them).
@@ -110,6 +119,12 @@ if (!process.env.ANTHROPIC_API_KEY) {
 }
 
 const theme = parse(readFileSync(themeFile, 'utf8'))
+// Razina: drugi argument (npm run story -- ramen fat), inače iz teme (razina: fat), inače light.
+const level = process.argv[3] || theme.razina || 'light'
+if (!LEVEL_RULES[level]) {
+  console.error(`Razina mora biti light ili fat, a ne "${level}".`)
+  process.exit(1)
+}
 const outDir = `content/stories/${themeId}`
 mkdirSync(outDir, { recursive: true })
 // Najveći postojeći broj + 1 (stare vijesti se brišu, pa brojanje datoteka ne bi bilo sigurno).
@@ -128,6 +143,16 @@ process.on('exit', () => rmSync(lock, { force: true }))
 process.on('SIGINT', () => process.exit(130))
 
 const themeYaml = readFileSync(themeFile, 'utf8')
+
+// Najnovija light priča ove teme (priče bez oznake razine su light).
+function latestLight() {
+  const files = readdirSync(outDir).filter((f) => /^\d{3}\.json$/.test(f)).sort().reverse()
+  for (const f of files) {
+    const st = JSON.parse(readFileSync(`${outDir}/${f}`, 'utf8'))
+    if ((st.level ?? 'light') === 'light') return st
+  }
+  return null
+}
 const client = new Anthropic()
 let totalIn = 0
 let totalOut = 0
@@ -140,7 +165,7 @@ async function ask(content) {
       max_tokens: 32000,
       ...(MODEL.includes('haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' }),
       output_config: { effort: 'high', format: { type: 'json_schema', schema: SCHEMA } },
-      system: SYSTEM,
+      system: system(level),
       messages: [{ role: 'user', content }],
     })
     .finalMessage()
@@ -159,8 +184,15 @@ async function ask(content) {
   return { story: JSON.parse(text), model: response.model }
 }
 
-console.log(`Claude piše priču ${id} za temu "${theme.naziv}"... (traje 1 do 3 minute)`)
-let { story, model } = await ask(`Theme (YAML):\n\n${themeYaml}`)
+console.log(`Claude piše priču ${id} (${level}) za temu "${theme.naziv}"... (traje 1 do 3 minute)`)
+// Fat priča se gradi na light priči iste teme (učenik je već zna): ista scena, više konteksta.
+const lightBase = level === 'fat' ? latestLight() : null
+const basePrompt = lightBase
+  ? `\n\nThe learner already knows this light version of the theme:\n${lightBase.sentences.map((x) => x.ja).join('\n')}\n` +
+    'Write the fat version: the same scene and characters, reusing its words, with more context ' +
+    '(why, when, how) and a few new N4 words and N3 grammar points.'
+  : ''
+let { story, model } = await ask(`Theme (YAML):\n\n${themeYaml}${basePrompt}`)
 
 // Provjera fonda. Ako je ispod cilja, Claude jednom prepravi priču.
 let fond = await checkFond(story, themeId)
@@ -170,7 +202,7 @@ if (!fond.ok) {
   const words = [...new Set(fond.outside.map((o) => o.word))].join('、')
   console.log(`\nClaude prepravlja priču da izbaci riječi izvan fonda... (jednom, oko 0,15 $)`)
   ;({ story, model } = await ask(
-    `Theme (YAML):\n\n${themeYaml}\n\n` +
+    `Theme (YAML):\n\n${themeYaml}${basePrompt}\n\n` +
       `Here is a story you wrote for this theme:\n\n${JSON.stringify(story)}\n\n` +
       `These words are outside the JLPT N5/N4 vocabulary list: ${words}\n` +
       'Rewrite only the sentences that use them, replacing each with N5/N4 vocabulary or rephrasing ' +
@@ -199,6 +231,7 @@ writeFileSync(
     {
       id: `${themeId}-${id}`,
       theme: themeId,
+      level,
       model,
       created: new Date().toISOString().slice(0, 10),
       needs_review: problems,

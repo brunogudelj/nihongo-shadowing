@@ -43,6 +43,7 @@ export type Sentence = {
 export type Story = {
   id: string
   theme: string
+  level?: 'light' | 'fat' // bez oznake = light (sve starije priče)
   title_ja: string
   title_hr: string
   audio: string

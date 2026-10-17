@@ -6,9 +6,14 @@
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { stringify } from 'yaml'
 
+// HRT-ova adresa nije poznata sigurno; probaju se redom, prva koja radi se koristi.
 const FEEDS = [
   { name: 'HRT', url: 'https://vijesti.hrt.hr/rss' },
   { name: 'HRT', url: 'https://www.hrt.hr/rss' },
+  { name: 'HRT', url: 'https://vijesti.hrt.hr/rss/vijesti' },
+  { name: 'HRT', url: 'https://www.hrt.hr/rss/vijesti' },
+  { name: 'HRT', url: 'https://vijesti.hrt.hr/feed' },
+  { name: 'HRT', url: 'https://www.hrt.hr/feed' },
   { name: 'Index', url: 'https://www.index.hr/rss' },
 ]
 const KEEP_DAYS = 30
@@ -73,15 +78,17 @@ if (existsSync(DIR)) {
 
 const theme = {
   naziv: 'Vijest dana',
+  razina: 'fat',
   opis:
     'Kratka vijest iz Hrvatske za učenje japanskog. Izaberi JEDNU vijest s popisa naslova koja je ' +
     'zanimljiva i razumljiva (vrijeme, sport, kultura, turizam, znanost, gospodarstvo, svakodnevni život). ' +
     'Preskoči zločine, nesreće sa žrtvama, rat i političke sukobe.',
   upute: [
-    'Write EXACTLY 5 sentences: a short, simple news report about the chosen headline, in polite form, third person.',
+    'Write EXACTLY 5 sentences: a short news report about the chosen headline, in polite form, third person. Richer sentences (25 to 45 characters) that give context: who, where, why, what happens next.',
     'Retell it in your own words. Do not translate or copy the article text.',
     'Use only facts from the headline and summary. Do not invent numbers, names or quotes.',
     'Croatian place and person names in katakana (ザグレブ, スプリト).',
+    'Avoid katakana loanwords that are not N5/N4 words (e.g. use 試合 and 選手, not チーム or ビデオ).',
     'title_hr: the Croatian headline you chose (shortened if long). title_ja: its short Japanese title.',
   ],
   vec_obradjeno: recent.length ? recent : undefined,

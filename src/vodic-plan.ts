@@ -22,7 +22,7 @@ export const dayOfWeek = (date: string) => ((new Date(toUtc(date)).getUTCDay() +
 // --- Ulaz i izlaz planera ---
 
 export type SentenceRef = { storyId: string; index: number }
-export type StoryInfo = { id: string; sentenceCount: number }
+export type StoryInfo = { id: string; sentenceCount: number; theme?: string; level?: 'light' | 'fat' }
 
 export type PlanInput = {
   date: string
@@ -212,10 +212,28 @@ export type Session = {
 export const isNews = (id: string) => id.startsWith('vijesti-')
 export const latestNews = (stories: StoryInfo[]) => stories.map((s) => s.id).filter(isNews).sort().at(-1) ?? null
 
+// Tema po tema: unutar teme prvo light priče, zatim fat (fat se gradi na light, pa dolazi tek kad je light naučena).
+// Teme idu redom iz vodic-config.ts, zatim ostale po imenu.
 export function storyQueue(stories: StoryInfo[], storyOrder: string[] = VODIC.storyOrder): string[] {
-  const ids = new Set(stories.map((s) => s.id).filter((id) => !isNews(id)))
-  const first = storyOrder.filter((id) => ids.has(id))
-  return [...first, ...[...ids].filter((id) => !first.includes(id)).sort()]
+  const list = stories.filter((s) => !isNews(s.id))
+  const themeOf = (s: StoryInfo) => s.theme ?? s.id.replace(/-\d{3}$/, '')
+  const rank = (s: StoryInfo) => {
+    const i = storyOrder.indexOf(s.id)
+    return i >= 0 ? i : storyOrder.length
+  }
+  // Mjesto teme: najranija njezina priča iz postavki, inače iza njih po imenu teme.
+  const themeRank = new Map<string, number>()
+  for (const s of list) themeRank.set(themeOf(s), Math.min(themeRank.get(themeOf(s)) ?? Infinity, rank(s)))
+  const level = (s: StoryInfo) => (s.level === 'fat' ? 1 : 0)
+  return [...list]
+    .sort(
+      (a, b) =>
+        themeRank.get(themeOf(a))! - themeRank.get(themeOf(b))! ||
+        themeOf(a).localeCompare(themeOf(b)) ||
+        level(a) - level(b) ||
+        a.id.localeCompare(b.id),
+    )
+    .map((s) => s.id)
 }
 
 // Tekuća priča: prva iz reda koja ima rečenicu bez kartice (ako je sve naučeno, zadnja).

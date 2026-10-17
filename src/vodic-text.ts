@@ -27,7 +27,12 @@ export const BLOCK_TITLE: Record<BlockId, string> = {
   vijesti: '📰 Vijest dana',
 }
 
-export const STORY_INFO: StoryInfo[] = stories.map((s) => ({ id: s.id, sentenceCount: s.sentences.length }))
+export const STORY_INFO: StoryInfo[] = stories.map((s) => ({
+  id: s.id,
+  sentenceCount: s.sentences.length,
+  theme: s.theme,
+  level: s.level ?? 'light',
+}))
 
 export const titleOf = (id: string) => stories.find((s) => s.id === id)?.title_ja ?? id
 export const sentenceJa = (storyId: string, index: number) =>

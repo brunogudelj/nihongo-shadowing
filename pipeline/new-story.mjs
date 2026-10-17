@@ -1,5 +1,5 @@
 // Nova priča od početka do kraja: priča (Claude, s provjerom fonda) → furigana → zvuk (Azure).
-// Pokretanje: npm run nova-prica -- <tema>   (npr. npm run nova-prica -- kyushu)
+// Pokretanje: npm run nova-prica -- <tema> [light|fat]   (npr. npm run nova-prica -- kyushu fat)
 // Ako neki korak padne, staje. Ono što je napravljeno ostaje spremljeno, pa se može
 // nastaviti pojedinačno: npm run furigana -- <tema>/<broj>, npm run audio -- <tema>/<broj>.
 
@@ -19,9 +19,9 @@ const dir = `content/stories/${themeId}`
 const existing = existsSync(dir) ? Math.max(0, ...readdirSync(dir).filter((f) => /^\d{3}\.json$/.test(f)).map((f) => parseInt(f))) : 0
 const storyArg = `${themeId}/${String(existing + 1).padStart(3, '0')}`
 
-function step(title, script, arg) {
+function step(title, script, ...args) {
   console.log(`\n=== ${title} ===`)
-  const result = spawnSync(process.execPath, [`pipeline/${script}`, arg], { stdio: 'inherit' })
+  const result = spawnSync(process.execPath, [`pipeline/${script}`, ...args], { stdio: 'inherit' })
   if (result.status !== 0) {
     console.error(`\n✗ Stalo na koraku "${title}".`)
     if (script !== 'story.mjs') console.error(`Nastavi kad popraviš: npm run ${script.replace('.mjs', '')} -- ${storyArg}`)
@@ -29,7 +29,7 @@ function step(title, script, arg) {
   }
 }
 
-step('1/3 Priča (Claude)', 'story.mjs', themeId)
+step('1/3 Priča (Claude)', 'story.mjs', themeId, ...process.argv.slice(3))
 step('2/3 Furigana', 'furigana.mjs', storyArg)
 step('3/3 Zvuk (Azure)', 'audio.mjs', storyArg)
 

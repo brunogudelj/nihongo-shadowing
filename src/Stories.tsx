@@ -24,8 +24,17 @@ export default function Stories({ onOpen, onBack }: { onOpen: (id: string) => vo
                 onClick={() => onOpen(s.id)}
                 className="w-full rounded-2xl bg-white p-5 text-left shadow-sm active:bg-stone-100"
               >
-                <p lang="ja" className="text-2xl font-medium">
-                  {s.title_ja}
+                <p className="flex items-center gap-2">
+                  <span lang="ja" className="text-2xl font-medium">
+                    {s.title_ja}
+                  </span>
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
+                      s.level === 'fat' ? 'bg-amber-200 text-amber-900' : 'bg-stone-100 text-stone-500'
+                    }`}
+                  >
+                    {s.level ?? 'light'}
+                  </span>
                 </p>
                 <p className="mt-1 text-stone-500">
                   {s.title_hr} · {s.sentences.length} rečenica{n > 0 ? ` · ${n} / ${s.sentences.length} gotovo` : ''}
