@@ -8,7 +8,27 @@ upute:
   - Use only facts from the headline and summary. Do not invent numbers, names or quotes.
   - Croatian place and person names in katakana (ザグレブ, スプリト).
   - "title_hr: the Croatian headline you chose (shortened if long). title_ja: its short Japanese title."
+vec_obradjeno:
+  - Dinamo objavio filmić o utakmici s Anderlechtom
 naslovi:
+  - izvor: Index
+    naslov: "PSV izgubio, a Perišić nije igrao. Trener: Za Hrvatsku stalno igra 90 minuta"
+    sazetak: IVAN PERIŠIĆ odlukom trenera nije igrao u porazu PSV-a od ADO Den Haaga (2:1).
+  - izvor: Index
+    naslov: Imamo nove detalje o uhićenim torcidašima, idu u zatvor. Javili se njihovi odvjetnici
+    sazetak: POLICIJA nastavlja potragu za pripadnicima Torcide osumnjičenima za nacističke i antisemitske povike tijekom kortea uoči utakmice Hajduka i Ajaxa u Splitu. U državnom odvjetništvu ispitana su trojica uhićenih.
+  - izvor: Index
+    naslov: VIDEO Hrgović stigao u London na veliki spektakl i borbu za pojas teške kategorije
+    sazetak: GLEDAT će meč Wardleyja i Duboisa iz prvih redova.
+  - izvor: Index
+    naslov: Emiliano Martinez u gadnom sudaru slomio kost u licu. Mora na operaciju
+    sazetak: PREMA informacijama iz više britanskih medija, Emiliano Martinez ima slomljenu jagodičnu kost i morat će na operaciju.
+  - izvor: Index
+    naslov: Ljevica u Berlinu želi nacionalizirati 160.000 stanova i ograničiti stanarine
+    sazetak: BERLINSKA koalicija ljevice planira izvlastiti 160.000 stanova velikih tvrtki i ograničiti stanarine.
+  - izvor: Index
+    naslov: "Talijani: Fabregas bi Baturini mogao dati potpuno novu ulogu"
+    sazetak: FABREGAS mora improvizirati zbog ozljeda.
   - izvor: Index
     naslov: Francuski gradovi u plamenu, spaljena povijesna građevina. Reagirao Macron
     sazetak: VELIKI prosvjedi prerasli su u nasilne nerede diljem Francuske. U gradu Limogesu zapaljena je povijesna gradska vijećnica. U Parizu, Lyonu, Marseilleu i drugim gradovima izbili su sukobi s policijom, zapaljeni su automobili i javne zgrade, a trgovine su opljačkane.
@@ -21,21 +41,3 @@ naslovi:
   - izvor: Index
     naslov: "Ivica Puljak: Snimke su otišle po Europi. Split je osramoćen"
     sazetak: BIVŠI splitski gradonačelnik Ivica Puljak osudio je ekstremističke parole Torcide.
-  - izvor: Index
-    naslov: VIDEO Džeko prokrvario nakon udarca u glavu. Morao je izaći iz igre
-    sazetak: NEUGODNA situacija.
-  - izvor: Index
-    naslov: "Odvjetnik torcidaša: Krivi je kontekst, shvatite da oni nemaju ništa protiv nikoga"
-    sazetak: ODVJETNIK Toni Marinković, koji zastupa jednog od torcidaša osumnjičenih za nacističke i antisemitske povike tijekom kortea u Splitu, izjavio je da Torcida nema ništa protiv nikoga te da se događaji pogrešno prikazuju u medijima.
-  - izvor: Index
-    naslov: Probali smo novi Kinder Bueno sladoled u čaši, 455 ml košta gotovo 8 eura
-    sazetak: NOVI Kinder Bueno sladoled u čaši nudi autentičan okus, no cijena nas je neugodno iznenadila.
-  - izvor: Index
-    naslov: "Tomašević o stupićima u Savskoj: To je nužno zlo"
-    sazetak: GRADONAČELNIK Tomašević brani barijere u Savskoj kao "nužno zlo za zaštitu žute trake".
-  - izvor: Index
-    naslov: "Dinamo objavio filmić o utakmici s Anderlechtom: Zaustavite sve kaj radite i uživajte"
-    sazetak: DINAMO je pobjedom protiv belgijske momčadi stigao na četiri boda nakon dva kola ligaške faze Europa lige.
-  - izvor: Index
-    naslov: Kći nogometaša i glumice mjesečno zaradi preko 100 tisuća eura na Only Fansu
-    sazetak: MIA WINWARD-DUNN (21), kći bivšeg nogometaša Davida Dunna i glumice Sammy Winward, zarađuje oko 100.000 eura mjesečno na OnlyFansu, unatoč protivljenju roditelja. Tim je novcem kupila nekretninu.
