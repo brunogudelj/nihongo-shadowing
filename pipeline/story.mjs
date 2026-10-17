@@ -76,8 +76,10 @@ Language limits:
 - If the theme gives "upute" (instructions), follow them; they override the story rules below.
 
 Story:
-- 5 to 8 sentences that form one coherent little story with a beginning and an end.
-- Each sentence short enough to shadow comfortably (about 10 to 30 characters).
+- EXACTLY 5 sentences that form one coherent little story with a beginning and an end.
+- Make the sentences richer rather than short: about 25 to 45 characters, joining two or three ideas with
+  ～て, ～から, ～ので, ～けど, ～たら, ～とき, ～ながら, ～前に/～後で or a relative clause.
+  Each sentence should say why, when or how something happens and connect to the sentence before it.
 
 For every sentence give:
 - "ja": the sentence in normal Japanese writing (kanji where a native would use them).

@@ -83,7 +83,7 @@ const theme = {
     'zanimljiva i razumljiva (vrijeme, sport, kultura, turizam, znanost, gospodarstvo, svakodnevni život). ' +
     'Preskoči zločine, nesreće sa žrtvama, rat i političke sukobe.',
   upute: [
-    'Write EXACTLY 5 sentences: a short, simple news report about the chosen headline, in polite form, third person.',
+    'Write EXACTLY 5 sentences: a short news report about the chosen headline, in polite form, third person. Richer sentences (25 to 45 characters) that give context: who, where, why, what happens next.',
     'Retell it in your own words. Do not translate or copy the article text.',
     'Use only facts from the headline and summary. Do not invent numbers, names or quotes.',
     'Croatian place and person names in katakana (ザグレブ, スプリト).',

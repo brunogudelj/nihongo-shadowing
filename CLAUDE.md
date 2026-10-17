@@ -23,7 +23,7 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 ## Sadržaj: teme i chunking
 - Sadržaj se organizira u **teme** (npr. putovanje po Japanu, Kyushu, japanske željeznice, Hrvatska, prijatelji i obitelj). Teme se dodaju tijekom vremena.
 - **Nova tema = nova datoteka** u `themes/` (YAML ili JSON): naziv, opis, ključne riječi, vlastita imena, eventualni dodatni rječnik. Dodavanje teme ne smije zahtijevati izmjenu koda aplikacije.
-- Za svaku temu generiraju se **kratke priče i fraze** (npr. 5 do 8 rečenica) koje imaju smisla kao cjelina.
+- Za svaku temu generiraju se **kratke priče i fraze** (**5 rečenica**, malo duljih i povezanih: razlog, vrijeme, kontekst) koje imaju smisla kao cjelina.
 - **Chunking:** svaka rečenica je podijeljena na smislene dijelove (bunsetsu), za shadowing dio po dio. Svaka rečenica ima i hrvatski prijevod.
 - Tekst generira Claude API, a rezultat se sprema kao gotova datoteka u repo (aplikacija ne poziva API u runtimeu).
 
