@@ -1,0 +1,36 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Aerodrom Incheon
+opis: >
+  Presjedanje na aerodromu Incheon kod Seula na putu u Japan, u prvom licu.
+  Imam nekoliko sati: šetnja aerodromom, duty free, korejska hrana,
+  odmor, tuš, besplatni izlet u grad ili pogled na avione. Zatim let za Fukuoku.
+
+gramatika: ～かもしれない, ～ので
+
+kljucne_rijeci:
+  - 空港      # aerodrom
+  - 時間      # vrijeme, sat
+  - 乗り換え  # presjedanje
+  - 休む      # odmarati se
+  - 広い      # prostran
+
+vlastita_imena:
+  - ja: 仁川
+    citanje: インチョン
+    hr: Incheon
+  - ja: 韓国
+    citanje: かんこく
+    hr: Koreja
+  - ja: ソウル
+    hr: Seul
+  - ja: 福岡
+    citanje: ふくおか
+    hr: Fukuoka
+
+dodatni_rjecnik:
+  - ja: 免税店
+    citanje: めんぜいてん
+    hr: duty free trgovina
+  - ja: シャワー
+    hr: tuš

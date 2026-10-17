@@ -1,0 +1,40 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Hrvatska hrana
+opis: >
+  Japanskom prijatelju pričam o hrvatskoj hrani, u prvom licu.
+  Ćevapi, sarma zimi, burek za doručak, pršut i sir, tartufi u Istri,
+  riba i maslinovo ulje u Dalmaciji. Što bih mu preporučio i gdje.
+
+gramatika: ～と思う, ～より～のほうが
+
+kljucne_rijeci:
+  - 料理      # jelo, kuhinja
+  - 魚        # riba
+  - 肉        # meso
+  - 冬        # zima
+  - 朝ご飯    # doručak
+
+vlastita_imena:
+  - ja: クロアチア
+    hr: Hrvatska
+  - ja: ザグレブ
+    hr: Zagreb
+  - ja: ダルマチア
+    hr: Dalmacija
+  - ja: イストリア
+    hr: Istra
+
+dodatni_rjecnik:
+  - ja: チェバピ
+    hr: ćevapi
+  - ja: サルマ
+    hr: sarma
+  - ja: ブレク
+    hr: burek
+  - ja: プルシュート
+    hr: pršut
+  - ja: トリュフ
+    hr: tartufi
+  - ja: オリーブオイル
+    hr: maslinovo ulje

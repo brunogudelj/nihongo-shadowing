@@ -14,7 +14,9 @@ import {
   planDay,
   formatMinutes,
   formatWhen,
+  currentStory,
   planSession,
+  storyQueue,
   sessionStats,
   sessionSummary,
   wordQueue,
@@ -343,5 +345,17 @@ describe('blokovi sesije', () => {
     expect(formatWhen(NOW + 3 * 60 * MIN, NOW)).toBe('za 3 h')
     expect(formatWhen(NOW + 24 * 60 * MIN, NOW)).toBe('sutra')
     expect(formatWhen(NOW + 4 * 24 * 60 * MIN, NOW)).toBe('za 4 dana')
+  })
+})
+
+describe('red priča', () => {
+  const info = (...ids: string[]) => ids.map((id) => ({ id, sentenceCount: 2 }))
+  it('nova priča uđe u red sama, iza onih iz postavki', () => {
+    expect(storyQueue(info('ramen-001', 'kyushu-001', 'avion-001'), ['kyushu-001'])).toEqual(['kyushu-001', 'avion-001', 'ramen-001'])
+  })
+  it('kad su priče iz postavki naučene, na red dolazi nova', () => {
+    const now = Date.now()
+    const learned = [0, 1].map((i) => rateCard(undefined, 'fraza', `kyushu-001:${i}`, true, now).card)
+    expect(currentStory(learned, info('kyushu-001', 'ramen-001'), ['kyushu-001']).newSentence).toEqual({ storyId: 'ramen-001', index: 0 })
   })
 })

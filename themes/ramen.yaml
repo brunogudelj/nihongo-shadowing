@@ -1,0 +1,43 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Priča o ramenu
+opis: >
+  Prvi put jedem pravi ramen u Japanu, u prvom licu.
+  Red ispred malog restorana, automat za narudžbu, vrste juhe
+  (shoyu, miso, tonkotsu), rezanci, kako se ramen jede (srkanje je u redu),
+  usporedba Hakate i Sappora.
+
+gramatika: ～てみる, ～ほうがいい
+
+kljucne_rijeci:
+  - 店        # restoran, trgovina
+  - 食べる    # jesti
+  - 熱い      # vruć
+  - 味        # okus
+  - 有名      # poznat
+
+vlastita_imena:
+  - ja: 博多
+    citanje: はかた
+    hr: Hakata
+  - ja: 札幌
+    citanje: さっぽろ
+    hr: Sapporo
+
+dodatni_rjecnik:
+  - ja: ラーメン
+    hr: ramen
+  - ja: スープ
+    hr: juha
+  - ja: 麺
+    citanje: めん
+    hr: rezanci
+  - ja: 醤油
+    citanje: しょうゆ
+    hr: soja umak (shoyu)
+  - ja: 味噌
+    citanje: みそ
+    hr: miso
+  - ja: 豚骨
+    citanje: とんこつ
+    hr: juha od svinjskih kostiju (tonkotsu)

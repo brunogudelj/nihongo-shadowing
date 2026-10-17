@@ -66,6 +66,8 @@ Language limits:
 - Vocabulary: JLPT N5 and N4 only. Grammar: up to JLPT N3.
 - Exceptions: the proper names and the extra vocabulary listed in the theme may be used freely.
 - Natural, everyday spoken Japanese in polite form (です/ます), first person.
+- If the theme lists "gramatika", use those grammar points naturally in a few sentences.
+- Real people: only well-known public facts, respectful, no politics or private life.
 
 Story:
 - 5 to 8 sentences that form one coherent little story with a beginning and an end.

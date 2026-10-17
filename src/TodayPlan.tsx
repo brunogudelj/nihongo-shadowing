@@ -7,7 +7,7 @@ import { db, wordId } from './db'
 import { readSetting, writeSetting } from './settings'
 import { stories } from './stories'
 import { SESIJA, VODIC, type BlockId } from './vodic-config'
-import { formatMinutes, planSession, sessionStats } from './vodic-plan'
+import { formatMinutes, planSession, sessionStats, storyQueue } from './vodic-plan'
 import { nextTopic } from './vodic-rules'
 import { BLOCK_TITLE, STORY_INFO, titleOf } from './vodic-text'
 
@@ -42,7 +42,7 @@ export default function TodayPlan({ onOpen }: { onOpen: (sessionId: string) => v
   const active = data.sessions.filter((s) => s.endedAt === undefined).sort((a, b) => b.startedAt - a.startedAt)[0]
   const hasCard = new Set(data.cards.map((c) => c.id))
   // Neučene rečenice (bez kartice) u redu priča, za traku "Naruči novu priču".
-  const left = VODIC.storyOrder.reduce((n, id) => {
+  const left = storyQueue(STORY_INFO).reduce((n, id) => {
     const count = STORY_INFO.find((s) => s.id === id)?.sentenceCount ?? 0
     return n + Array.from({ length: count }, (_, i) => i).filter((i) => !hasCard.has(cardId('fraza', `${id}:${i}`))).length
   }, 0)
