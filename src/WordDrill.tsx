@@ -1,6 +1,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useMemo, useRef, useState } from 'react'
 import allWords from '../data/rijeci.json'
+import ContextSentence from './ContextSentence'
 import { db, wordId } from './db'
 import { KanjiMagnifier, KanjiText } from './Kanji'
 import { toRomaji } from './romaji'
@@ -166,8 +167,11 @@ export default function WordDrill({ onBack }: { onBack: () => void }) {
                 </div>
 
                 {revealed ? (
-                  <div className="w-full max-w-sm rounded-2xl bg-white p-5 shadow">
-                    <p className="text-2xl font-semibold text-red-700">{current.hr}</p>
+                  <div className="w-full max-w-sm">
+                    <div className="rounded-2xl bg-white p-5 shadow">
+                      <p className="text-2xl font-semibold text-red-700">{current.hr}</p>
+                    </div>
+                    <ContextSentence key={keyOf(current)} lemma={current.word} />
                   </div>
                 ) : (
                   <p className="text-sm text-stone-400">Razmisli ili reci naglas, pa dodirni Pokaži.</p>
