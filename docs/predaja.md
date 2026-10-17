@@ -1,25 +1,32 @@
-# Predaja: gdje smo stali (16. 10. 2026.)
+# Predaja: gdje smo stali (17. 10. 2026.)
 
-Ovaj dokument služi da sutra nastaviš bez prepričavanja. U novom razgovoru s Claudeom napiši:
+Ovaj dokument služi da nastaviš bez prepričavanja. U novom razgovoru s Claudeom napiši:
 
 > Pročitaj docs/predaja.md i nastavi.
 
-Sve je spremljeno i poslano na GitHub (zadnji commit `e822c0d`).
+Sve je spremljeno i poslano na GitHub. Rad ide i **s mobitela**: Claude aplikacija (Claude piše kod i otvara pull request) → GitHub aplikacija (spoji PR) → aplikacija se objavi za 2 do 3 minute. Codespace je rezerva; ako radiš u njemu, prvo `git checkout main` i `git pull`.
 
 ---
 
-## 1. Što je napravljeno danas
+## 1. Što je napravljeno 17. 10.
 
-Aplikacija je prešla s velikog dnevnog plana (75 min) na **kratke, neovisne sesije**.
-
-| Commit | Što |
+| PR | Što |
 |---|---|
-| `69d845c` | **FSRS kartice** (biblioteka `ts-fsrs`): kartice riječi i fraza. Stari napredak je prenesen sam (na mobitelu je nastalo 23 kartice). Kartice su u izvozu i uvozu. |
-| `7810f86` | **Sastavljač sesije** i **početni zaslon**: Započni sesiju, izbor 5 / 10 / 15 min, brojač sesija i minuta (danas i ukupno), dnevni cilj (− / +). |
-| `54590fb` | **Zaslon sesije**: tajmer bloka i sesije, traka napretka, svih 7 blokova, nastavak prekinute sesije, sažetak. Probne sesije su obrisane. |
-| `e822c0d` | **Kartica kanjija** sad prvo pokazuje cijelu riječ (npr. 九州 i značenje iz rečenice), a kanjiji su ispod. Maknut je „▶ Nastavi” s početnog zaslona. |
+| #1 | Nakon „Pokaži” (Ponavljanje riječi, blok Riječi) rečenica iz priča s tom riječju: furigana, 🔊, prijevod na dodir. |
+| #2 | 5 novih tema (avion, ramen, hrvatska hrana, Mirko Filipović, Incheon); nove priče same ulaze u sesije. **Emoji uz riječi** (1199 od 1304). **📰 Vijest dana** (blok u sesiji, bez kartica, brisanje nakon 30 dana). |
+| #3 | „Nova priča” prima više tema odjednom (odvojenih zarezom). |
+| #4 | **Light i fat priče**; Vijest dana svako jutro (Haiku); furigana 日本 = にほん; strana imena u katakani ne ruše fond. |
 
-Testova ima 81 i svi prolaze (`npm test`).
+Sadržaj: 5 novih light priča (Opus, ukupno 2,08 $), ramen fat (0,62 $), dvije probne vijesti (Haiku 0,02 $, Opus 0,30 $). Testova: 92.
+
+### Razine priča (dogovoreno)
+- **light**: 5 do 8 kratkih rečenica (10 do 30 znakova), N5/N4. Sve starije priče.
+- **fat**: točno 5 duljih, povezanih rečenica (25 do 45 znakova), uglavnom N4; piše se na temelju light priče iste teme.
+- U sesijama tema po tema: light → fat; fat dolazi tek kad su sve rečenice light priče upoznate.
+- Vijesti su uvijek fat. Pokretanje: Actions → Nova priča → tema(e) → razina.
+
+### Vijest dana
+- Svako jutro u 6:43 (zimi 5:43), Haiku, oko 0,02 $. Naslovi samo s **Indexa**: HRT-ove RSS adrese javljaju 404 (pipeline ih proba šest; vidi zapis prvog jutarnjeg pokretanja).
 
 ## 2. Kako sesije rade (dogovoreno)
 
@@ -46,42 +53,23 @@ Testova ima 81 i svi prolaze (`npm test`).
 
 Sve brojke se mijenjaju na jednom mjestu: `src/vodic-config.ts` (`KARTICE` i `SESIJA`).
 
-## 3. Što je otvoreno (redom)
+## 3. Što je otvoreno
 
-### A) Testiranje na mobitelu (čeka tvoj povratni dojam)
-- **Sesije** (5 i 15 min, prekid i Nastavi sesiju, sažetak).
-- **Nova kartica kanjija:** dugi pritisak na 州 u 九州, dodir na gumb kanjija, zatvaranje dodirom izvan kartice.
-- Javi što bi promijenio: trajanje blokova, tekstove, koliko često dolazi koji blok.
+### A) Prijedlozi za kasnije (korisnik je odlučio: ne sada)
+- **3. razina priče** (iznad fat): 5 duljih rečenica s **2 do 3 namjerne N3 konstrukcije**, nasumično s N3 popisa (`data/grammar-n3.json`, 101 točka), pisana na temelju fat priče. Sesije: light → fat → 3. razina. Ime još nije izabrano (prijedlozi: extra, pro, N3). Oko 0,60 $ po priči (Opus).
+- **Slika u Ponavljanju riječi**: emoji u pozadini nije dovoljno dobar; naći bolje rješenje. U popisu riječi emoji je dobar.
+- **Sesije od 30 i 60 min**: odgođeno; zasad više sesija od 15 min (bolje za pamćenje).
+- **💰 Potrošnja u aplikaciji**: pipeline zapisuje trošak (Anthropic, Azure znakovi), zaslon po mjesecima.
 
-### B) Rečenice za kontekst kod „Pokaži” (glavna iduća dorada, plan dogovoren u načelu)
-**Ideja:** u Ponavljanju riječi, bloku Riječi i Konjugatoru, nakon „Pokaži” pojavi se jedna rečenica s tom riječju ili baš tim oblikom: furigana, 🔊 i hrvatski prijevod na dodir. Svaki put je druga, nasumično.
+### B) Iduće (redom)
+- Fat verzije ostalih tema (oko 0,60 $ po temi, Opus): Actions → Nova priča → npr. `incheon, hrvatska-hrana, mirko-filipovic, putovanje-avionom, kyushu, putovanje-po-japanu, japanske-zeljeznice` → razina fat.
+- **Rečenice za kontekst u Konjugatoru** (kao kod riječi; besplatno iz priča).
+- Rečenice za kontekst koje piše Claude (vidi stari plan: 2 rečenice po riječi, model po izboru).
 
-- **Izvor rečenica:** nove rečenice koje napiše Claude, plus rečenice iz tvojih priča u kojima se riječ pojavljuje.
-- **Fond:** vokabular N4 provjerava se automatski (ista provjera kao za priče). Gramatika do N3 drži se samo uputom Claudeu i kratkim rečenicama, pa nije 100% zajamčena.
-- **Redoslijed:** prvo riječi (2 rečenice po riječi, oko 2600 rečenica), pa konjugator (1 rečenica po obliku, oko 5000 rečenica).
-- **Okvirna cijena** (grupna obrada, namjerno procijenjena više):
-
-| | Opus 5.5 | Haiku 5.5 |
-|---|---|---|
-| Riječi | 5–10 $ | ispod 0,50 $ |
-| Konjugator | 10–20 $ | ispod 1 $ |
-
-- **Zvuk** (Azure, Nanami): besplatno unutar mjesečnog limita (oko 15% za riječi, oko 25% za konjugator). Postojeći audio se nikad ne radi ponovno.
-
-**Tvoje odluke koje još fale:**
-1. **Model:** prijedlog je proba na 20 riječi s oba modela (par centi), pa izabereš.
-2. **Redoslijed:** prvo riječi, pa konjugator?
-3. **Krediti:** Anthropic račun treba dopuniti (krediti su potrošeni 4. 10.).
-
-**Što se može odmah, besplatno, bez kredita:** skripta za generiranje, provjera fonda i prikaz rečenice u aplikaciji. Za početak bi prikaz koristio samo rečenice iz tvojih priča.
-
-### C) Korak 7 (manje hitno)
-- Tjedni izvještaj za Claudea prilagođen sesijama: sesije i minute po danu, kartice koje stalno padaju, slabe točke konjugatora.
-- Čišćenje starog dnevnog vodiča iz koda (`planDay`, stari dijelovi u `Training.tsx` i `vodic-rules.ts`). To se ne vidi, ali pojednostavljuje daljnje izmjene.
-
-### D) Čeka kredite (od prije)
-- Značenja oblika u konjugatoru za zadnjih 55 riječi (`npm run konjugator-znacenja`, preskače gotove), pa maknuti ženske nastavke „/la”.
-- Zaslon s popisom gramatike (280 točaka, objašnjenja na hrvatskom, audio primjera).
+### C) Od prije
+- Tjedni izvještaj za Claudea prilagođen sesijama; čišćenje starog dnevnog vodiča (`planDay`, `Training.tsx`, `vodic-rules.ts`).
+- Značenja oblika u konjugatoru za zadnjih 55 riječi (`npm run konjugator-znacenja`), pa maknuti „/la”.
+- Zaslon s popisom gramatike (280 točaka).
 
 ## 4. Važne datoteke
 
@@ -95,6 +83,10 @@ Sve brojke se mijenjaju na jednom mjestu: `src/vodic-config.ts` (`KARTICE` i `SE
 | `src/Kanji.tsx` | kartica riječi i kanjija (dugi pritisak) |
 | `src/db.ts` | baza u mobitelu (verzija 9): kartice, ocjene, sesije |
 | `docs/specifikacija-dorade.md` | stara specifikacija dorada; dio o dnevnom vodiču je zamijenjen sesijama |
+| `pipeline/story.mjs` | piše priču; razina light/fat (`LEVEL_RULES`), model (`STORY_MODEL`) |
+| `pipeline/news.mjs` | naslovi vijesti → `themes/vijesti.yaml`, brisanje starih vijesti |
+| `src/context.ts`, `src/ContextSentence.tsx` | rečenica iz priča nakon „Pokaži” |
+| `data/emoji.json`, `src/emoji.ts` | emoji uz riječi |
 
 ## 5. Podsjetnici
 
