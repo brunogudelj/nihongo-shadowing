@@ -1,0 +1,1278 @@
+{
+  "id": "vijesti-001",
+  "theme": "vijesti",
+  "model": "claude-haiku-5-5",
+  "created": "2026-10-17",
+  "needs_review": [
+    "fond: pokrivenost 81.5% je ispod 95%",
+    "furigana: rečenica 2: 二試合: rječnik kaže にしあい, Claude kaže にじあい"
+  ],
+  "fond": {
+    "pokrivenost": 81.5,
+    "izvan_popisa": [
+      "チーム (rečenica 1)",
+      "チーム (rečenica 1)",
+      "チーム (rečenica 3)",
+      "ビデオ (rečenica 3)",
+      "ビデオ (rečenica 4)"
+    ]
+  },
+  "trosak_usd": 0.019,
+  "title_ja": "クロアチアのチーム、試合のビデオを出しました",
+  "title_hr": "Dinamo objavio filmić o utakmici s Anderlechtom",
+  "sentences": [
+    {
+      "ja": "クロアチアのチームは、ベルギーのチームに勝ちました。",
+      "hr": "Hrvatski klub pobijedio je belgijski klub.",
+      "chunks": [
+        "クロアチアのチームは、",
+        "ベルギーのチームに",
+        "勝ちました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "hrvatski klub",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "protiv belgijskog tima",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "pobijedio je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "クロアチア",
+          "lemma": "クロアチア",
+          "reading": "クロアチア",
+          "role": "imenica",
+          "explanation_hr": "Hrvatska, zemlja kluba o kojem je vijest.",
+          "romaji": "kuroachia",
+          "furigana": [
+            {
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ア"
+            },
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ア"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 700
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: hrvatski tim.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 713,
+          "end_ms": 813
+        },
+        {
+          "text": "チーム",
+          "lemma": "チーム",
+          "reading": "チーム",
+          "role": "subjekt",
+          "explanation_hr": "Tim, klub o kojem je vijest (subjekt rečenice).",
+          "romaji": "chīmu",
+          "furigana": [
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ム"
+            }
+          ],
+          "start_ms": 825,
+          "end_ms": 1200
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "わ",
+          "role": "cestica",
+          "explanation_hr": "Oznaka teme: govorimo o hrvatskom timu.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1213,
+          "end_ms": 1463
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1575,
+          "end_ms": 1788
+        },
+        {
+          "text": "ベルギー",
+          "lemma": "ベルギー",
+          "reading": "ベルギー",
+          "role": "imenica",
+          "explanation_hr": "Belgija, zemlja protivničkog tima.",
+          "romaji": "berugī",
+          "furigana": [
+            {
+              "text": "ベ"
+            },
+            {
+              "text": "ル"
+            },
+            {
+              "text": "ギ"
+            },
+            {
+              "text": "ー"
+            }
+          ],
+          "start_ms": 1800,
+          "end_ms": 2238
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Pokazuje pripadnost: belgijski tim.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2250,
+          "end_ms": 2350
+        },
+        {
+          "text": "チーム",
+          "lemma": "チーム",
+          "reading": "チーム",
+          "role": "objekt",
+          "explanation_hr": "Belgijski tim, protivnik u pobjedi.",
+          "romaji": "chīmu",
+          "furigana": [
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ム"
+            }
+          ],
+          "start_ms": 2363,
+          "end_ms": 2750
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava protivnika u pobjedi (nad kim).",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2763,
+          "end_ms": 2900
+        },
+        {
+          "text": "勝ちました",
+          "lemma": "勝つ",
+          "reading": "かちました",
+          "role": "glagol",
+          "explanation_hr": "勝つ (かつ, pobijediti) + ました, uljudni oblik prošlog vremena.",
+          "romaji": "kachimashita",
+          "furigana": [
+            {
+              "text": "勝",
+              "reading": "か"
+            },
+            {
+              "text": "ちました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2913,
+          "end_ms": 3650
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3663,
+          "end_ms": 3763
+        }
+      ],
+      "audio": "vijesti-001-1.mp3",
+      "duration_ms": 4463,
+      "chunk_audio": [
+        "vijesti-001-1-1.mp3",
+        "vijesti-001-1-2.mp3",
+        "vijesti-001-1-3.mp3"
+      ],
+      "full_start_ms": 75,
+      "full_end_ms": 3763
+    },
+    {
+      "ja": "ヨーロッパの二試合のあと、四点になりました。",
+      "hr": "Nakon dviju utakmica u Europskoj ligi, klub ima četiri boda.",
+      "chunks": [
+        "ヨーロッパの",
+        "二試合の",
+        "あと、",
+        "四点に",
+        "なりました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "europskih",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "dviju utakmica",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "nakon",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "na četiri boda",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "postao je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "ヨーロッパ",
+          "lemma": "ヨーロッパ",
+          "reading": "ヨーロッパ",
+          "role": "imenica",
+          "explanation_hr": "Europa, natjecanje u kojem klub igra.",
+          "romaji": "yōroppa",
+          "furigana": [
+            {
+              "text": "ヨ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ッ"
+            },
+            {
+              "text": "パ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 650
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: europske utakmice.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 663,
+          "end_ms": 788
+        },
+        {
+          "text": "二試合",
+          "lemma": "二試合",
+          "reading": "にじあい",
+          "role": "vrijeme",
+          "explanation_hr": "Dvije utakmice, vremenski razmak nakon kojeg se rezultat mijenja.",
+          "romaji": "nishiai",
+          "furigana": [
+            {
+              "text": "二試合",
+              "reading": "にしあい"
+            }
+          ],
+          "start_ms": 800,
+          "end_ms": 1388
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Pokazuje vremenski razmak: nakon dviju utakmica.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1400,
+          "end_ms": 1488
+        },
+        {
+          "text": "あと",
+          "lemma": "あと",
+          "reading": "あと",
+          "role": "ostalo",
+          "explanation_hr": "Poslije, nakon toga.",
+          "romaji": "ato",
+          "furigana": [
+            {
+              "text": "あ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 1500,
+          "end_ms": 1875
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1975,
+          "end_ms": 2175
+        },
+        {
+          "text": "四",
+          "lemma": "四",
+          "reading": "よん",
+          "role": "pridjev",
+          "explanation_hr": "Broj četiri, koji opisuje 点.",
+          "romaji": "yon",
+          "furigana": [
+            {
+              "text": "四",
+              "reading": "よん"
+            }
+          ],
+          "start_ms": 2188,
+          "end_ms": 2625
+        },
+        {
+          "text": "点",
+          "lemma": "点",
+          "reading": "てん",
+          "role": "imenica",
+          "explanation_hr": "Bod, broj bodova u ligi.",
+          "romaji": "ten",
+          "furigana": [
+            {
+              "text": "点",
+              "reading": "てん"
+            }
+          ],
+          "start_ms": 2188,
+          "end_ms": 2625
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava promjenu stanja: došlo je do četiri boda.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2638,
+          "end_ms": 2763
+        },
+        {
+          "text": "なりました",
+          "lemma": "なる",
+          "reading": "なりました",
+          "role": "glagol",
+          "explanation_hr": "なる (postati) + ました, uljudni oblik prošlog vremena.",
+          "romaji": "narimashita",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2775,
+          "end_ms": 3450
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3463,
+          "end_ms": 3563
+        }
+      ],
+      "audio": "vijesti-001-2.mp3",
+      "duration_ms": 4263,
+      "chunk_audio": [
+        "vijesti-001-2-1.mp3",
+        "vijesti-001-2-2.mp3",
+        "vijesti-001-2-3.mp3",
+        "vijesti-001-2-4.mp3",
+        "vijesti-001-2-5.mp3"
+      ],
+      "full_start_ms": 4538,
+      "full_end_ms": 8025
+    },
+    {
+      "ja": "チームは、その試合の短いビデオを出しました。",
+      "hr": "Klub je objavio kratki video s te utakmice.",
+      "chunks": [
+        "チームは、",
+        "その試合の",
+        "短い",
+        "ビデオを",
+        "出しました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "klub",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "te utakmice",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "kratki",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "video",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "objavio je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "チーム",
+          "lemma": "チーム",
+          "reading": "チーム",
+          "role": "subjekt",
+          "explanation_hr": "Klub o kojem je vijest, subjekt rečenice.",
+          "romaji": "chīmu",
+          "furigana": [
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ム"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 450
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "わ",
+          "role": "cestica",
+          "explanation_hr": "Oznaka teme rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 463,
+          "end_ms": 750
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 863,
+          "end_ms": 988
+        },
+        {
+          "text": "その",
+          "lemma": "その",
+          "reading": "その",
+          "role": "pridjev",
+          "explanation_hr": "Taj, pokazuje na utakmicu o kojoj je riječ.",
+          "romaji": "sono",
+          "furigana": [
+            {
+              "text": "そ"
+            },
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 1000,
+          "end_ms": 1288
+        },
+        {
+          "text": "試合",
+          "lemma": "試合",
+          "reading": "しあい",
+          "role": "imenica",
+          "explanation_hr": "Utakmica.",
+          "romaji": "shiai",
+          "furigana": [
+            {
+              "text": "試合",
+              "reading": "しあい"
+            }
+          ],
+          "start_ms": 1300,
+          "end_ms": 1675
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje utakmicu s videom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1688,
+          "end_ms": 1800
+        },
+        {
+          "text": "短い",
+          "lemma": "短い",
+          "reading": "みじかい",
+          "role": "pridjev",
+          "explanation_hr": "Kratak, opisuje video.",
+          "romaji": "mijikai",
+          "furigana": [
+            {
+              "text": "短",
+              "reading": "みじか"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 1813,
+          "end_ms": 2288
+        },
+        {
+          "text": "ビデオ",
+          "lemma": "ビデオ",
+          "reading": "ビデオ",
+          "role": "objekt",
+          "explanation_hr": "Video, ovdje kratki video kluba.",
+          "romaji": "bideo",
+          "furigana": [
+            {
+              "text": "ビ"
+            },
+            {
+              "text": "デ"
+            },
+            {
+              "text": "オ"
+            }
+          ],
+          "start_ms": 2300,
+          "end_ms": 2625
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava predmet radnje: objavio je video.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2638,
+          "end_ms": 2725
+        },
+        {
+          "text": "出しました",
+          "lemma": "出す",
+          "reading": "だしました",
+          "role": "glagol",
+          "explanation_hr": "出す (objaviti, izbaciti) + ました, uljudni oblik prošlog vremena.",
+          "romaji": "dashimashita",
+          "furigana": [
+            {
+              "text": "出",
+              "reading": "だ"
+            },
+            {
+              "text": "しました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2738,
+          "end_ms": 3450
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3463,
+          "end_ms": 3563
+        }
+      ],
+      "audio": "vijesti-001-3.mp3",
+      "duration_ms": 4263,
+      "chunk_audio": [
+        "vijesti-001-3-1.mp3",
+        "vijesti-001-3-2.mp3",
+        "vijesti-001-3-3.mp3",
+        "vijesti-001-3-4.mp3",
+        "vijesti-001-3-5.mp3"
+      ],
+      "full_start_ms": 8800,
+      "full_end_ms": 12288
+    },
+    {
+      "ja": "ビデオの名前は「仕事を止めて、楽しんでください」です。",
+      "hr": "Naslov videa glasi: „Zaustavite sve što radite i uživajte.“",
+      "chunks": [
+        "ビデオの名前は",
+        "「仕事を",
+        "止めて、",
+        "楽しんで",
+        "ください」",
+        "です。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "naslov videa",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "„posao“",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "zaustavi i",
+          "role": "glagol",
+          "grammar_hr": "te-oblik glagola",
+          "formula": "止める (とめる, tomeru) → 止めて (とめて, tomete)",
+          "rule_hr": "Glagoli druge skupine (-る): る se mijenja u て.",
+          "formula_hr": "Spaja dvije radnje: zaustavi i uživaj."
+        },
+        {
+          "literal_hr": "uživajte",
+          "role": "glagol",
+          "grammar_hr": "te-oblik + ください: uljudna molba",
+          "formula": "楽しむ (たのしむ, tanoshimu) → 楽しんでください (たのしんでください, tanoshinde kudasai)",
+          "rule_hr": "Glagoli na -む: む → んで; ください dodaje uljudnu molbu.",
+          "formula_hr": "Uljudna molba: uživajte, molim."
+        },
+        {
+          "literal_hr": "molim",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "je.",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "ビデオ",
+          "lemma": "ビデオ",
+          "reading": "ビデオ",
+          "role": "imenica",
+          "explanation_hr": "Video, o kojem je riječ.",
+          "romaji": "bideo",
+          "furigana": [
+            {
+              "text": "ビ"
+            },
+            {
+              "text": "デ"
+            },
+            {
+              "text": "オ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 463
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje video s naslovom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 475,
+          "end_ms": 588
+        },
+        {
+          "text": "名前",
+          "lemma": "名前",
+          "reading": "なまえ",
+          "role": "imenica",
+          "explanation_hr": "Naziv, naslov videa.",
+          "romaji": "namae",
+          "furigana": [
+            {
+              "text": "名前",
+              "reading": "なまえ"
+            }
+          ],
+          "start_ms": 600,
+          "end_ms": 938
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "わ",
+          "role": "cestica",
+          "explanation_hr": "Oznaka teme: naslov videa.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 950,
+          "end_ms": 1238
+        },
+        {
+          "text": "「",
+          "lemma": "「",
+          "reading": "「",
+          "role": "interpunkcija",
+          "explanation_hr": "Početak citata naslova.",
+          "romaji": "「",
+          "furigana": [
+            {
+              "text": "「"
+            }
+          ],
+          "start_ms": 1375,
+          "end_ms": 1488
+        },
+        {
+          "text": "仕事",
+          "lemma": "仕事",
+          "reading": "しごと",
+          "role": "objekt",
+          "explanation_hr": "Posao, rad koji se treba zaustaviti.",
+          "romaji": "shigoto",
+          "furigana": [
+            {
+              "text": "仕事",
+              "reading": "しごと"
+            }
+          ],
+          "start_ms": 1488,
+          "end_ms": 1900
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava predmet radnje: zaustaviti posao.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1913,
+          "end_ms": 2000
+        },
+        {
+          "text": "止めて",
+          "lemma": "止める",
+          "reading": "とめて",
+          "role": "glagol",
+          "explanation_hr": "止める (zaustaviti) u te-obliku: zaustavi i.",
+          "romaji": "tomete",
+          "furigana": [
+            {
+              "text": "止",
+              "reading": "と"
+            },
+            {
+              "text": "め"
+            },
+            {
+              "text": "て",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2013,
+          "end_ms": 2513
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez, spaja dvije radnje.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2613,
+          "end_ms": 2800
+        },
+        {
+          "text": "楽しんで",
+          "lemma": "楽しむ",
+          "reading": "たのしんで",
+          "role": "glagol",
+          "explanation_hr": "楽しむ (uživati) u te-obliku, spojeno s ください.",
+          "romaji": "tanoshinde",
+          "furigana": [
+            {
+              "text": "楽",
+              "reading": "たの"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "んで",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2813,
+          "end_ms": 3438
+        },
+        {
+          "text": "ください",
+          "lemma": "くださる",
+          "reading": "ください",
+          "role": "glagol",
+          "explanation_hr": "Uljudna molba: molim, uživajte.",
+          "romaji": "kudasai",
+          "furigana": [
+            {
+              "text": "ください",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3450,
+          "end_ms": 3950
+        },
+        {
+          "text": "」",
+          "lemma": "」",
+          "reading": "」",
+          "role": "interpunkcija",
+          "explanation_hr": "Kraj citata naslova.",
+          "romaji": "」",
+          "furigana": [
+            {
+              "text": "」"
+            }
+          ],
+          "start_ms": 3963,
+          "end_ms": 4013
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Uljudni završetak rečenice, glagol biti.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 4025,
+          "end_ms": 4400
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4413,
+          "end_ms": 4513
+        }
+      ],
+      "audio": "vijesti-001-4.mp3",
+      "duration_ms": 5213,
+      "chunk_audio": [
+        "vijesti-001-4-1.mp3",
+        "vijesti-001-4-2.mp3",
+        "vijesti-001-4-3.mp3",
+        "vijesti-001-4-4.mp3",
+        "vijesti-001-4-5.mp3",
+        "vijesti-001-4-6.mp3"
+      ],
+      "full_start_ms": 13063,
+      "full_end_ms": 17500
+    },
+    {
+      "ja": "次の試合も、楽しみです。",
+      "hr": "I na sljedeću utakmicu čeka se s nestrpljenjem.",
+      "chunks": [
+        "次の試合も、",
+        "楽しみです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "i sljedeća utakmica",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "iščekivanje je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "次",
+          "lemma": "次",
+          "reading": "つぎ",
+          "role": "pridjev",
+          "explanation_hr": "Sljedeći, opisuje utakmicu.",
+          "romaji": "tsugi",
+          "furigana": [
+            {
+              "text": "次",
+              "reading": "つぎ"
+            }
+          ],
+          "start_ms": 2738,
+          "end_ms": 3038
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: sljedeća utakmica.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3050,
+          "end_ms": 3163
+        },
+        {
+          "text": "試合",
+          "lemma": "試合",
+          "reading": "しあい",
+          "role": "imenica",
+          "explanation_hr": "Utakmica.",
+          "romaji": "shiai",
+          "furigana": [
+            {
+              "text": "試合",
+              "reading": "しあい"
+            }
+          ],
+          "start_ms": 3175,
+          "end_ms": 3550
+        },
+        {
+          "text": "も",
+          "lemma": "も",
+          "reading": "も",
+          "role": "cestica",
+          "explanation_hr": "I sljedeća utakmica, dodaje je temi.",
+          "romaji": "mo",
+          "furigana": [
+            {
+              "text": "も",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3563,
+          "end_ms": 3775
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 3875,
+          "end_ms": 4050
+        },
+        {
+          "text": "楽しみ",
+          "lemma": "楽しみ",
+          "reading": "たのしみ",
+          "role": "imenica",
+          "explanation_hr": "Iščekivanje, nešto čemu se veselimo.",
+          "romaji": "tanoshimi",
+          "furigana": [
+            {
+              "text": "楽",
+              "reading": "たの"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "み"
+            }
+          ],
+          "start_ms": 4063,
+          "end_ms": 4588
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Uljudni završetak rečenice, glagol biti.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 4600,
+          "end_ms": 4950
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4963,
+          "end_ms": 5063
+        }
+      ],
+      "audio": "vijesti-001-5.mp3",
+      "duration_ms": 3100,
+      "chunk_audio": [
+        "vijesti-001-5-1.mp3",
+        "vijesti-001-5-2.mp3"
+      ],
+      "full_start_ms": 18275,
+      "full_end_ms": 20600
+    }
+  ],
+  "audio": "vijesti-001-cijela.mp3",
+  "duration_ms": 21300
+}
