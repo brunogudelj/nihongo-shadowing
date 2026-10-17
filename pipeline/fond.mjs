@@ -1,5 +1,5 @@
 // Zajednička provjera fonda riječi (JLPT N5 + N4), koriste je check.mjs i story.mjs.
-// Ne broje se čestice, pomoćni glagoli i interpunkcija. Dopušteni su vlastita imena,
+// Ne broje se čestice, pomoćni glagoli i interpunkcija. Dopušteni su vlastita imena (i nepoznate katakana riječi),
 // dodatni rječnik iz teme i riječi iz gramatičkih uzoraka do N3 (npr. ～とき).
 
 import { readFileSync } from 'node:fs'
@@ -54,7 +54,9 @@ export async function checkFond(story, themeId) {
       const lemma = t.basic_form && t.basic_form !== '*' ? t.basic_form : t.surface_form
       const reading = t.reading && t.reading !== '*' ? toHiragana(t.reading) : null
       counted++
-      if (allowed.has(lemma) || allowed.has(t.surface_form) || t.pos_detail_1 === '固有名詞' || t.pos_detail_1 === '数') {
+      // Katakana riječ koju rječnik ne poznaje je gotovo uvijek strano ime (フルゴビッチ, ディナモ).
+      const foreignName = t.word_type === 'UNKNOWN' && /^[ァ-ヶー・]+$/.test(t.surface_form)
+      if (allowed.has(lemma) || allowed.has(t.surface_form) || t.pos_detail_1 === '固有名詞' || t.pos_detail_1 === '数' || foreignName) {
         exceptions++
       } else if (
         known.has(lemma) ||
