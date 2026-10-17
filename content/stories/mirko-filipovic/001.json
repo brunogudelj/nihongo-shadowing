@@ -1,0 +1,2070 @@
+{
+  "id": "mirko-filipovic-001",
+  "theme": "mirko-filipovic",
+  "model": "claude-opus-5-5",
+  "created": "2026-10-17",
+  "needs_review": [
+    "furigana: rečenica 5: 2006年: rječnik kaže 2006ねん, Claude kaže にせんろくねん"
+  ],
+  "fond": {
+    "pokrivenost": 100,
+    "izvan_popisa": []
+  },
+  "trosak_usd": 0.449,
+  "title_ja": "ミルコ・クロコップ",
+  "title_hr": "Mirko Cro Cop",
+  "sentences": [
+    {
+      "ja": "ミルコ・クロコップはクロアチアの有名な選手です。",
+      "hr": "Mirko Cro Cop je poznati hrvatski sportaš.",
+      "chunks": [
+        "ミルコ・クロコップは",
+        "クロアチアの",
+        "有名な",
+        "選手です。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "Mirko Cro Cop",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "hrvatski",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "poznati",
+          "role": "opis",
+          "grammar_hr": "na-pridjev opisuje imenicu",
+          "formula": "有名 (ゆうめい, yuumei) → 有名な (ゆうめいな, yuumei na) + imenica",
+          "rule_hr": "Na-pridjev dobiva な kada stoji ispred imenice.",
+          "formula_hr": "Opisuje riječ 選手: poznati sportaš."
+        },
+        {
+          "literal_hr": "sportaš je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "ミルコ・クロコップ",
+          "lemma": "ミルコ・クロコップ",
+          "reading": "ミルコ・クロコップ",
+          "role": "subjekt",
+          "explanation_hr": "Mirko Cro Cop, ime borca.",
+          "romaji": "miruko・kurokoppu",
+          "furigana": [
+            {
+              "text": "ミ"
+            },
+            {
+              "text": "ル"
+            },
+            {
+              "text": "コ"
+            },
+            {
+              "text": "・"
+            },
+            {
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "コ"
+            },
+            {
+              "text": "ッ"
+            },
+            {
+              "text": "プ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 1488
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1500,
+          "end_ms": 1725
+        },
+        {
+          "text": "クロアチア",
+          "lemma": "クロアチア",
+          "reading": "クロアチア",
+          "role": "imenica",
+          "explanation_hr": "Hrvatska.",
+          "romaji": "kuroachia",
+          "furigana": [
+            {
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ア"
+            },
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ア"
+            }
+          ],
+          "start_ms": 1788,
+          "end_ms": 2413
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje dvije imenice: Hrvatske, hrvatski.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2425,
+          "end_ms": 2538
+        },
+        {
+          "text": "有名な",
+          "lemma": "有名",
+          "reading": "ゆうめいな",
+          "role": "pridjev",
+          "explanation_hr": "Poznat; na-pridjev s な ispred imenice.",
+          "romaji": "yūmeina",
+          "furigana": [
+            {
+              "text": "有名",
+              "reading": "ゆうめい"
+            },
+            {
+              "text": "な",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 2550,
+          "end_ms": 3125
+        },
+        {
+          "text": "選手",
+          "lemma": "選手",
+          "reading": "せんしゅ",
+          "role": "imenica",
+          "explanation_hr": "Sportaš, natjecatelj.",
+          "romaji": "senshu",
+          "furigana": [
+            {
+              "text": "選手",
+              "reading": "せんしゅ"
+            }
+          ],
+          "start_ms": 3138,
+          "end_ms": 3525
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Uljudni oblik za 'jest'.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 3538,
+          "end_ms": 3900
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3913,
+          "end_ms": 4013
+        }
+      ],
+      "audio": "mirko-filipovic-001-1.mp3",
+      "duration_ms": 4713,
+      "chunk_audio": [
+        "mirko-filipovic-001-1-1.mp3",
+        "mirko-filipovic-001-1-2.mp3",
+        "mirko-filipovic-001-1-3.mp3",
+        "mirko-filipovic-001-1-4.mp3"
+      ],
+      "full_start_ms": 75,
+      "full_end_ms": 4013
+    },
+    {
+      "ja": "彼はヴィンコヴツィで生まれました。",
+      "hr": "Rođen je u Vinkovcima.",
+      "chunks": [
+        "彼は",
+        "ヴィンコヴツィで",
+        "生まれました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "on",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u Vinkovcima",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "rodio se",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "彼",
+          "lemma": "彼",
+          "reading": "かれ",
+          "role": "subjekt",
+          "explanation_hr": "On.",
+          "romaji": "kare",
+          "furigana": [
+            {
+              "text": "彼",
+              "reading": "かれ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 325
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 338,
+          "end_ms": 463
+        },
+        {
+          "text": "ヴィンコヴツィ",
+          "lemma": "ヴィンコヴツィ",
+          "reading": "ヴィンコヴツィ",
+          "role": "mjesto",
+          "explanation_hr": "Vinkovci, grad u Hrvatskoj.",
+          "romaji": "vinkovutsui",
+          "furigana": [
+            {
+              "text": "ヴ"
+            },
+            {
+              "text": "ィ"
+            },
+            {
+              "text": "ン"
+            },
+            {
+              "text": "コ"
+            },
+            {
+              "text": "ヴ"
+            },
+            {
+              "text": "ツ"
+            },
+            {
+              "text": "ィ"
+            }
+          ],
+          "start_ms": 475,
+          "end_ms": 1175
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto gdje se nešto dogodilo.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1188,
+          "end_ms": 1275
+        },
+        {
+          "text": "生まれました",
+          "lemma": "生まれる",
+          "reading": "うまれました",
+          "role": "glagol",
+          "explanation_hr": "生まれる (roditi se) + ました, uljudno prošlo vrijeme.",
+          "romaji": "umaremashita",
+          "furigana": [
+            {
+              "text": "生",
+              "reading": "う"
+            },
+            {
+              "text": "ま"
+            },
+            {
+              "text": "れ"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1288,
+          "end_ms": 2075
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2088,
+          "end_ms": 2188
+        }
+      ],
+      "audio": "mirko-filipovic-001-2.mp3",
+      "duration_ms": 2888,
+      "chunk_audio": [
+        "mirko-filipovic-001-2-1.mp3",
+        "mirko-filipovic-001-2-2.mp3",
+        "mirko-filipovic-001-2-3.mp3"
+      ],
+      "full_start_ms": 4788,
+      "full_end_ms": 6900
+    },
+    {
+      "ja": "若いときは、警察で働いていました。",
+      "hr": "Kad je bio mlad, radio je u policiji.",
+      "chunks": [
+        "若いときは、",
+        "警察で",
+        "働いていました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "kad je bio mlad",
+          "role": "vrijeme",
+          "grammar_hr": "vrijeme: ～とき",
+          "formula": "若い (わかい, wakai) → 若いとき (わかいとき, wakai toki)",
+          "rule_hr": "Pridjev ili glagol u običnom obliku + とき = kada.",
+          "formula_hr": "Govori kada se radnja događala: u vrijeme kad je bio mlad."
+        },
+        {
+          "literal_hr": "u policiji",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "radio je",
+          "role": "glagol",
+          "grammar_hr": "trajna radnja: ～ている (prošlo)",
+          "formula": "働く (はたらく, hataraku) → 働いて (はたらいて, hataraite) → 働いていました (はたらいていました, hataraite imashita)",
+          "rule_hr": "Glagoli na -く: く → いて, zatim dodaj いました.",
+          "formula_hr": "Radnja je trajala neko vrijeme u prošlosti: dugo je radio u policiji."
+        }
+      ],
+      "words": [
+        {
+          "text": "若い",
+          "lemma": "若い",
+          "reading": "わかい",
+          "role": "pridjev",
+          "explanation_hr": "Mlad; i-pridjev.",
+          "romaji": "wakai",
+          "furigana": [
+            {
+              "text": "若",
+              "reading": "わか"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 500
+        },
+        {
+          "text": "とき",
+          "lemma": "とき",
+          "reading": "とき",
+          "role": "vrijeme",
+          "explanation_hr": "Vrijeme, kada.",
+          "romaji": "toki",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "き"
+            }
+          ],
+          "start_ms": 513,
+          "end_ms": 738
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Ističe vrijeme kao temu.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 750,
+          "end_ms": 975
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1088,
+          "end_ms": 1263
+        },
+        {
+          "text": "警察",
+          "lemma": "警察",
+          "reading": "けいさつ",
+          "role": "mjesto",
+          "explanation_hr": "Policija.",
+          "romaji": "keisatsu",
+          "furigana": [
+            {
+              "text": "警察",
+              "reading": "けいさつ"
+            }
+          ],
+          "start_ms": 1263,
+          "end_ms": 1788
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto radnje: u policiji.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1800,
+          "end_ms": 1913
+        },
+        {
+          "text": "働いていました",
+          "lemma": "働く",
+          "reading": "はたらいていました",
+          "role": "glagol",
+          "explanation_hr": "働く (raditi) u obliku ～ていました: radio je (dulje vrijeme).",
+          "romaji": "hataraiteimashita",
+          "furigana": [
+            {
+              "text": "働",
+              "reading": "はたら"
+            },
+            {
+              "text": "いていました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1925,
+          "end_ms": 3088
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3100,
+          "end_ms": 3200
+        }
+      ],
+      "audio": "mirko-filipovic-001-3.mp3",
+      "duration_ms": 3900,
+      "chunk_audio": [
+        "mirko-filipovic-001-3-1.mp3",
+        "mirko-filipovic-001-3-2.mp3",
+        "mirko-filipovic-001-3-3.mp3"
+      ],
+      "full_start_ms": 7675,
+      "full_end_ms": 10800
+    },
+    {
+      "ja": "日本の試合で、左の足の蹴りが有名になりました。",
+      "hr": "U mečevima u Japanu postao je poznat njegov udarac lijevom nogom.",
+      "chunks": [
+        "日本の",
+        "試合で、",
+        "左の足の",
+        "蹴りが",
+        "有名になりました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "japanskim",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u mečevima",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "lijeve noge",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "udarac",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "postao je poznat",
+          "role": "glagol",
+          "grammar_hr": "postati: na-pridjev + になる",
+          "formula": "有名 (ゆうめい, yuumei) → 有名になる (ゆうめいになる, yuumei ni naru) → 有名になりました (ゆうめいになりました, yuumei ni narimashita)",
+          "rule_hr": "Na-pridjev + に + なる = postati takav.",
+          "formula_hr": "Udarac lijevom nogom postao je poznat."
+        }
+      ],
+      "words": [
+        {
+          "text": "日本",
+          "lemma": "日本",
+          "reading": "にほん",
+          "role": "imenica",
+          "explanation_hr": "Japan.",
+          "romaji": "nihon",
+          "furigana": [
+            {
+              "text": "日本",
+              "reading": "にほん"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 450
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: mečevi u Japanu.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 463,
+          "end_ms": 563
+        },
+        {
+          "text": "試合",
+          "lemma": "試合",
+          "reading": "しあい",
+          "role": "imenica",
+          "explanation_hr": "Meč, borba.",
+          "romaji": "shiai",
+          "furigana": [
+            {
+              "text": "試合",
+              "reading": "しあい"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 925
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava gdje se nešto događa: u mečevima.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 938,
+          "end_ms": 1213
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1313,
+          "end_ms": 1488
+        },
+        {
+          "text": "左",
+          "lemma": "左",
+          "reading": "ひだり",
+          "role": "imenica",
+          "explanation_hr": "Lijevo, lijeva strana.",
+          "romaji": "hidari",
+          "furigana": [
+            {
+              "text": "左",
+              "reading": "ひだり"
+            }
+          ],
+          "start_ms": 1500,
+          "end_ms": 1888
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: lijeva noga.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1900,
+          "end_ms": 1988
+        },
+        {
+          "text": "足",
+          "lemma": "足",
+          "reading": "あし",
+          "role": "imenica",
+          "explanation_hr": "Noga.",
+          "romaji": "ashi",
+          "furigana": [
+            {
+              "text": "足",
+              "reading": "あし"
+            }
+          ],
+          "start_ms": 2000,
+          "end_ms": 2250
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: udarac noge.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2263,
+          "end_ms": 2375
+        },
+        {
+          "text": "蹴り",
+          "lemma": "蹴り",
+          "reading": "けり",
+          "role": "subjekt",
+          "explanation_hr": "Udarac nogom.",
+          "romaji": "keri",
+          "furigana": [
+            {
+              "text": "蹴",
+              "reading": "け"
+            },
+            {
+              "text": "り",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2388,
+          "end_ms": 2638
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: udarac.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2650,
+          "end_ms": 2750
+        },
+        {
+          "text": "有名",
+          "lemma": "有名",
+          "reading": "ゆうめい",
+          "role": "pridjev",
+          "explanation_hr": "Poznat; na-pridjev.",
+          "romaji": "yūmei",
+          "furigana": [
+            {
+              "text": "有名",
+              "reading": "ゆうめい"
+            }
+          ],
+          "start_ms": 2763,
+          "end_ms": 3250
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "S なる znači 'postati' nešto.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3263,
+          "end_ms": 3363
+        },
+        {
+          "text": "なりました",
+          "lemma": "なる",
+          "reading": "なりました",
+          "role": "glagol",
+          "explanation_hr": "なる (postati) + ました, uljudno prošlo vrijeme.",
+          "romaji": "narimashita",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3375,
+          "end_ms": 4038
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4050,
+          "end_ms": 4150
+        }
+      ],
+      "audio": "mirko-filipovic-001-4.mp3",
+      "duration_ms": 4850,
+      "chunk_audio": [
+        "mirko-filipovic-001-4-1.mp3",
+        "mirko-filipovic-001-4-2.mp3",
+        "mirko-filipovic-001-4-3.mp3",
+        "mirko-filipovic-001-4-4.mp3",
+        "mirko-filipovic-001-4-5.mp3"
+      ],
+      "full_start_ms": 11575,
+      "full_end_ms": 15650
+    },
+    {
+      "ja": "2006年に、大きな試合で勝ちました。",
+      "hr": "Godine 2006. pobijedio je na velikom turniru.",
+      "chunks": [
+        "2006年に、",
+        "大きな",
+        "試合で",
+        "勝ちました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "2006. godine",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "velikom",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "na meču",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "pobijedio je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "2006年",
+          "lemma": "2006年",
+          "reading": "にせんろくねん",
+          "role": "vrijeme",
+          "explanation_hr": "Godina 2006.",
+          "romaji": "2006nen",
+          "furigana": [
+            {
+              "text": "2"
+            },
+            {
+              "text": "0"
+            },
+            {
+              "text": "0"
+            },
+            {
+              "text": "6"
+            },
+            {
+              "text": "年",
+              "reading": "ねん"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 950
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava vrijeme: u godini.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 963,
+          "end_ms": 1238
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1350,
+          "end_ms": 1388
+        },
+        {
+          "text": "大きな",
+          "lemma": "大きな",
+          "reading": "おおきな",
+          "role": "pridjev",
+          "explanation_hr": "Velik; stoji samo ispred imenice.",
+          "romaji": "ōkina",
+          "furigana": [
+            {
+              "text": "大",
+              "reading": "おお"
+            },
+            {
+              "text": "き"
+            },
+            {
+              "text": "な"
+            }
+          ],
+          "start_ms": 1400,
+          "end_ms": 1863
+        },
+        {
+          "text": "試合",
+          "lemma": "試合",
+          "reading": "しあい",
+          "role": "imenica",
+          "explanation_hr": "Meč, natjecanje.",
+          "romaji": "shiai",
+          "furigana": [
+            {
+              "text": "試合",
+              "reading": "しあい"
+            }
+          ],
+          "start_ms": 1875,
+          "end_ms": 2238
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava gdje se pobjeda dogodila.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2250,
+          "end_ms": 2363
+        },
+        {
+          "text": "勝ちました",
+          "lemma": "勝つ",
+          "reading": "かちました",
+          "role": "glagol",
+          "explanation_hr": "勝つ (pobijediti) + ました, uljudno prošlo vrijeme.",
+          "romaji": "kachimashita",
+          "furigana": [
+            {
+              "text": "勝",
+              "reading": "か"
+            },
+            {
+              "text": "ちました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2375,
+          "end_ms": 3113
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3125,
+          "end_ms": 3225
+        }
+      ],
+      "audio": "mirko-filipovic-001-5.mp3",
+      "duration_ms": 3925,
+      "chunk_audio": [
+        "mirko-filipovic-001-5-1.mp3",
+        "mirko-filipovic-001-5-2.mp3",
+        "mirko-filipovic-001-5-3.mp3",
+        "mirko-filipovic-001-5-4.mp3"
+      ],
+      "full_start_ms": 16425,
+      "full_end_ms": 19575
+    },
+    {
+      "ja": "日本では「右の足で病院、左の足で墓場」と言われました。",
+      "hr": "U Japanu se o njemu govorilo: „Desnom nogom u bolnicu, lijevom na groblje.“",
+      "chunks": [
+        "日本では",
+        "「右の足で",
+        "病院、",
+        "左の足で",
+        "墓場」と",
+        "言われました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "u Japanu",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "desnom nogom",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "bolnica",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "lijevom nogom",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "groblje, tako",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "govorilo se",
+          "role": "glagol",
+          "grammar_hr": "pasiv: ～られる",
+          "formula": "言う (いう, iu) → 言われる (いわれる, iwareru) → 言われました (いわれました, iwaremashita)",
+          "rule_hr": "Glagoli na -う: う → われる (pasiv), zatim ました.",
+          "formula_hr": "Pasiv: ljudi su to govorili o njemu, 'tako se govorilo'."
+        }
+      ],
+      "words": [
+        {
+          "text": "日本",
+          "lemma": "日本",
+          "reading": "にほん",
+          "role": "mjesto",
+          "explanation_hr": "Japan.",
+          "romaji": "nihon",
+          "furigana": [
+            {
+              "text": "日本",
+              "reading": "にほん"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 463
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: u Japanu.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 475,
+          "end_ms": 588
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Ističe mjesto kao temu.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 600,
+          "end_ms": 863
+        },
+        {
+          "text": "「",
+          "lemma": "「",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Početak navoda.",
+          "romaji": "「",
+          "furigana": [
+            {
+              "text": "「"
+            }
+          ],
+          "start_ms": 988,
+          "end_ms": 1125
+        },
+        {
+          "text": "右",
+          "lemma": "右",
+          "reading": "みぎ",
+          "role": "imenica",
+          "explanation_hr": "Desno, desna strana.",
+          "romaji": "migi",
+          "furigana": [
+            {
+              "text": "右",
+              "reading": "みぎ"
+            }
+          ],
+          "start_ms": 1125,
+          "end_ms": 1388
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: desna noga.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1400,
+          "end_ms": 1500
+        },
+        {
+          "text": "足",
+          "lemma": "足",
+          "reading": "あし",
+          "role": "imenica",
+          "explanation_hr": "Noga.",
+          "romaji": "ashi",
+          "furigana": [
+            {
+              "text": "足",
+              "reading": "あし"
+            }
+          ],
+          "start_ms": 1513,
+          "end_ms": 1763
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava sredstvo: nogom.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1775,
+          "end_ms": 1888
+        },
+        {
+          "text": "病院",
+          "lemma": "病院",
+          "reading": "びょういん",
+          "role": "imenica",
+          "explanation_hr": "Bolnica.",
+          "romaji": "byōin",
+          "furigana": [
+            {
+              "text": "病院",
+              "reading": "びょういん"
+            }
+          ],
+          "start_ms": 1900,
+          "end_ms": 2388
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2488,
+          "end_ms": 2675
+        },
+        {
+          "text": "左",
+          "lemma": "左",
+          "reading": "ひだり",
+          "role": "imenica",
+          "explanation_hr": "Lijevo, lijeva strana.",
+          "romaji": "hidari",
+          "furigana": [
+            {
+              "text": "左",
+              "reading": "ひだり"
+            }
+          ],
+          "start_ms": 2675,
+          "end_ms": 3063
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: lijeva noga.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3075,
+          "end_ms": 3175
+        },
+        {
+          "text": "足",
+          "lemma": "足",
+          "reading": "あし",
+          "role": "imenica",
+          "explanation_hr": "Noga.",
+          "romaji": "ashi",
+          "furigana": [
+            {
+              "text": "足",
+              "reading": "あし"
+            }
+          ],
+          "start_ms": 3188,
+          "end_ms": 3438
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava sredstvo: nogom.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3450,
+          "end_ms": 3550
+        },
+        {
+          "text": "墓場",
+          "lemma": "墓場",
+          "reading": "はかば",
+          "role": "imenica",
+          "explanation_hr": "Groblje.",
+          "romaji": "hakaba",
+          "furigana": [
+            {
+              "text": "墓場",
+              "reading": "はかば"
+            }
+          ],
+          "start_ms": 3563,
+          "end_ms": 4063
+        },
+        {
+          "text": "」",
+          "lemma": "」",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Kraj navoda.",
+          "romaji": "」",
+          "furigana": [
+            {
+              "text": "」"
+            }
+          ],
+          "start_ms": 4138,
+          "end_ms": 4288
+        },
+        {
+          "text": "と",
+          "lemma": "と",
+          "reading": "と",
+          "role": "cestica",
+          "explanation_hr": "Označava navod: tako, ovako.",
+          "romaji": "to",
+          "furigana": [
+            {
+              "text": "と",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4288,
+          "end_ms": 4400
+        },
+        {
+          "text": "言われました",
+          "lemma": "言う",
+          "reading": "いわれました",
+          "role": "glagol",
+          "explanation_hr": "Pasiv od 言う (reći): govorilo se, rečeno je.",
+          "romaji": "iwaremashita",
+          "furigana": [
+            {
+              "text": "言",
+              "reading": "い"
+            },
+            {
+              "text": "われました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 4413,
+          "end_ms": 5225
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 5238,
+          "end_ms": 5338
+        }
+      ],
+      "audio": "mirko-filipovic-001-6.mp3",
+      "duration_ms": 6038,
+      "chunk_audio": [
+        "mirko-filipovic-001-6-1.mp3",
+        "mirko-filipovic-001-6-2.mp3",
+        "mirko-filipovic-001-6-3.mp3",
+        "mirko-filipovic-001-6-4.mp3",
+        "mirko-filipovic-001-6-5.mp3",
+        "mirko-filipovic-001-6-6.mp3"
+      ],
+      "full_start_ms": 20350,
+      "full_end_ms": 25613
+    },
+    {
+      "ja": "今は家で、古い試合を見ることができます。",
+      "hr": "Danas kod kuće mogu gledati stare mečeve.",
+      "chunks": [
+        "今は",
+        "家で、",
+        "古い試合を",
+        "見ることができます。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "sada",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "kod kuće",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "stare mečeve",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "mogu gledati",
+          "role": "glagol",
+          "grammar_hr": "mogućnost: ～ことができる",
+          "formula": "見る (みる, miru) → 見ることができる (みることができる, miru koto ga dekiru) → 見ることができます (みることができます, miru koto ga dekimasu)",
+          "rule_hr": "Rječnički oblik glagola + ことができる = moći nešto učiniti.",
+          "formula_hr": "Kaže da mogu gledati stare mečeve."
+        }
+      ],
+      "words": [
+        {
+          "text": "今",
+          "lemma": "今",
+          "reading": "いま",
+          "role": "vrijeme",
+          "explanation_hr": "Sada, danas.",
+          "romaji": "ima",
+          "furigana": [
+            {
+              "text": "今",
+              "reading": "いま"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 338
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Ističe vrijeme kao temu.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 350,
+          "end_ms": 463
+        },
+        {
+          "text": "家",
+          "lemma": "家",
+          "reading": "いえ",
+          "role": "mjesto",
+          "explanation_hr": "Kuća, dom.",
+          "romaji": "ie",
+          "furigana": [
+            {
+              "text": "家",
+              "reading": "いえ"
+            }
+          ],
+          "start_ms": 475,
+          "end_ms": 700
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto radnje: kod kuće.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 713,
+          "end_ms": 988
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1088,
+          "end_ms": 1288
+        },
+        {
+          "text": "古い",
+          "lemma": "古い",
+          "reading": "ふるい",
+          "role": "pridjev",
+          "explanation_hr": "Star; i-pridjev ispred imenice.",
+          "romaji": "furui",
+          "furigana": [
+            {
+              "text": "古",
+              "reading": "ふる"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 1300,
+          "end_ms": 1675
+        },
+        {
+          "text": "試合",
+          "lemma": "試合",
+          "reading": "しあい",
+          "role": "objekt",
+          "explanation_hr": "Meč, borba.",
+          "romaji": "shiai",
+          "furigana": [
+            {
+              "text": "試合",
+              "reading": "しあい"
+            }
+          ],
+          "start_ms": 1688,
+          "end_ms": 2063
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt: mečeve.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2075,
+          "end_ms": 2175
+        },
+        {
+          "text": "見る",
+          "lemma": "見る",
+          "reading": "みる",
+          "role": "glagol",
+          "explanation_hr": "Gledati; rječnički oblik ispred こと.",
+          "romaji": "miru",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 2188,
+          "end_ms": 2450
+        },
+        {
+          "text": "こと",
+          "lemma": "こと",
+          "reading": "こと",
+          "role": "imenica",
+          "explanation_hr": "Stvar; od glagola pravi imenicu (gledanje).",
+          "romaji": "koto",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 2463,
+          "end_ms": 2700
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava ono što se može.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2713,
+          "end_ms": 2825
+        },
+        {
+          "text": "できます",
+          "lemma": "できる",
+          "reading": "できます",
+          "role": "glagol",
+          "explanation_hr": "できる (moći) + ます, uljudni oblik.",
+          "romaji": "dekimasu",
+          "furigana": [
+            {
+              "text": "で"
+            },
+            {
+              "text": "き"
+            },
+            {
+              "text": "ます",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2838,
+          "end_ms": 3450
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3463,
+          "end_ms": 3563
+        }
+      ],
+      "audio": "mirko-filipovic-001-7.mp3",
+      "duration_ms": 4263,
+      "chunk_audio": [
+        "mirko-filipovic-001-7-1.mp3",
+        "mirko-filipovic-001-7-2.mp3",
+        "mirko-filipovic-001-7-3.mp3",
+        "mirko-filipovic-001-7-4.mp3"
+      ],
+      "full_start_ms": 26425,
+      "full_end_ms": 29875
+    },
+    {
+      "ja": "彼の試合を見ると、私はいつも元気になります。",
+      "hr": "Kad gledam njegove mečeve, uvijek dobijem energiju.",
+      "chunks": [
+        "彼の",
+        "試合を",
+        "見ると、",
+        "私は",
+        "いつも",
+        "元気になります。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "njegove",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "mečeve",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "kad gledam",
+          "role": "glagol",
+          "grammar_hr": "uvjet: ～と (kad god)",
+          "formula": "見る (みる, miru) → 見ると (みると, miru to)",
+          "rule_hr": "Rječnički oblik glagola + と = kad god se to dogodi.",
+          "formula_hr": "Svaki put kad gledam njegove mečeve, dogodi se ono što slijedi."
+        },
+        {
+          "literal_hr": "ja",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "uvijek",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "postanem pun energije",
+          "role": "glagol",
+          "grammar_hr": "postati: na-pridjev + になる",
+          "formula": "元気 (げんき, genki) → 元気になる (げんきになる, genki ni naru) → 元気になります (げんきになります, genki ni narimasu)",
+          "rule_hr": "Na-pridjev + に + なる = postati takav.",
+          "formula_hr": "Postanem veseo i pun energije."
+        }
+      ],
+      "words": [
+        {
+          "text": "彼",
+          "lemma": "彼",
+          "reading": "かれ",
+          "role": "imenica",
+          "explanation_hr": "On.",
+          "romaji": "kare",
+          "furigana": [
+            {
+              "text": "彼",
+              "reading": "かれ"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 313
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Pokazuje pripadanje: njegov.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 325,
+          "end_ms": 450
+        },
+        {
+          "text": "試合",
+          "lemma": "試合",
+          "reading": "しあい",
+          "role": "objekt",
+          "explanation_hr": "Meč, borba.",
+          "romaji": "shiai",
+          "furigana": [
+            {
+              "text": "試合",
+              "reading": "しあい"
+            }
+          ],
+          "start_ms": 463,
+          "end_ms": 850
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt: mečeve.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 863,
+          "end_ms": 963
+        },
+        {
+          "text": "見る",
+          "lemma": "見る",
+          "reading": "みる",
+          "role": "glagol",
+          "explanation_hr": "Gledati; rječnički oblik.",
+          "romaji": "miru",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 975,
+          "end_ms": 1238
+        },
+        {
+          "text": "と",
+          "lemma": "と",
+          "reading": "と",
+          "role": "veznik",
+          "explanation_hr": "Kad god, kada.",
+          "romaji": "to",
+          "furigana": [
+            {
+              "text": "と",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1250,
+          "end_ms": 1413
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1488,
+          "end_ms": 1763
+        },
+        {
+          "text": "私",
+          "lemma": "私",
+          "reading": "わたし",
+          "role": "subjekt",
+          "explanation_hr": "Ja.",
+          "romaji": "watashi",
+          "furigana": [
+            {
+              "text": "私",
+              "reading": "わたし"
+            }
+          ],
+          "start_ms": 1775,
+          "end_ms": 2150
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2163,
+          "end_ms": 2350
+        },
+        {
+          "text": "いつも",
+          "lemma": "いつも",
+          "reading": "いつも",
+          "role": "prilog",
+          "explanation_hr": "Uvijek.",
+          "romaji": "itsumo",
+          "furigana": [
+            {
+              "text": "い"
+            },
+            {
+              "text": "つ"
+            },
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 2388,
+          "end_ms": 2775
+        },
+        {
+          "text": "元気",
+          "lemma": "元気",
+          "reading": "げんき",
+          "role": "pridjev",
+          "explanation_hr": "Pun energije, veseo; na-pridjev.",
+          "romaji": "genki",
+          "furigana": [
+            {
+              "text": "元気",
+              "reading": "げんき"
+            }
+          ],
+          "start_ms": 2788,
+          "end_ms": 3175
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "S なる znači 'postati' nešto.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3188,
+          "end_ms": 3288
+        },
+        {
+          "text": "なります",
+          "lemma": "なる",
+          "reading": "なります",
+          "role": "glagol",
+          "explanation_hr": "なる (postati) + ます, uljudni oblik.",
+          "romaji": "narimasu",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "ります",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3300,
+          "end_ms": 3913
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3925,
+          "end_ms": 4025
+        }
+      ],
+      "audio": "mirko-filipovic-001-8.mp3",
+      "duration_ms": 4725,
+      "chunk_audio": [
+        "mirko-filipovic-001-8-1.mp3",
+        "mirko-filipovic-001-8-2.mp3",
+        "mirko-filipovic-001-8-3.mp3",
+        "mirko-filipovic-001-8-4.mp3",
+        "mirko-filipovic-001-8-5.mp3",
+        "mirko-filipovic-001-8-6.mp3"
+      ],
+      "full_start_ms": 30688,
+      "full_end_ms": 34600
+    }
+  ],
+  "audio": "mirko-filipovic-001-cijela.mp3",
+  "duration_ms": 35300
+}

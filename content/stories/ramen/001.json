@@ -1,0 +1,2096 @@
+{
+  "id": "ramen-001",
+  "theme": "ramen",
+  "model": "claude-opus-5-5",
+  "created": "2026-10-17",
+  "needs_review": [
+    "furigana: rečenica 6: 日本: rječnik kaže にっぽん, Claude kaže にほん"
+  ],
+  "fond": {
+    "pokrivenost": 100,
+    "izvan_popisa": []
+  },
+  "trosak_usd": 0.536,
+  "title_ja": "ラーメンの話",
+  "title_hr": "Priča o ramenu",
+  "sentences": [
+    {
+      "ja": "初めて、博多でラーメンを食べに行きました。",
+      "hr": "Prvi put sam u Hakati otišao jesti ramen.",
+      "chunks": [
+        "初めて、",
+        "博多で",
+        "ラーメンを",
+        "食べに行きました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "prvi put",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u Hakati",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ramen",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "otišao sam jesti",
+          "role": "glagol",
+          "grammar_hr": "svrha kretanja: ～に行く",
+          "formula": "食べる (たべる, taberu) → 食べに行く (たべにいく, tabe ni iku)",
+          "rule_hr": "Glagolu se makne ます i doda に行く.",
+          "formula_hr": "Otišao sam s ciljem da jedem ramen."
+        }
+      ],
+      "words": [
+        {
+          "text": "初めて",
+          "lemma": "初めて",
+          "reading": "はじめて",
+          "role": "prilog",
+          "explanation_hr": "Prvi put.",
+          "romaji": "hajimete",
+          "furigana": [
+            {
+              "text": "初",
+              "reading": "はじ"
+            },
+            {
+              "text": "め"
+            },
+            {
+              "text": "て"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 750
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 850,
+          "end_ms": 1063
+        },
+        {
+          "text": "博多",
+          "lemma": "博多",
+          "reading": "はかた",
+          "role": "mjesto",
+          "explanation_hr": "Hakata, grad na Kyushuu.",
+          "romaji": "hakata",
+          "furigana": [
+            {
+              "text": "博多",
+              "reading": "はかた"
+            }
+          ],
+          "start_ms": 1063,
+          "end_ms": 1463
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto gdje se radnja događa: u Hakati.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1475,
+          "end_ms": 1600
+        },
+        {
+          "text": "ラーメン",
+          "lemma": "ラーメン",
+          "reading": "ラーメン",
+          "role": "objekt",
+          "explanation_hr": "Ramen, japanska juha s rezancima.",
+          "romaji": "rāmen",
+          "furigana": [
+            {
+              "text": "ラ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "メ"
+            },
+            {
+              "text": "ン"
+            }
+          ],
+          "start_ms": 1613,
+          "end_ms": 2050
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt radnje.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2063,
+          "end_ms": 2163
+        },
+        {
+          "text": "食べ",
+          "lemma": "食べる",
+          "reading": "たべ",
+          "role": "glagol",
+          "explanation_hr": "食べる (jesti) bez ます, ispred に za svrhu.",
+          "romaji": "tabe",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べ"
+            }
+          ],
+          "start_ms": 2175,
+          "end_ms": 2425
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava svrhu odlaska: (da) jedem.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2438,
+          "end_ms": 2575
+        },
+        {
+          "text": "行きました",
+          "lemma": "行く",
+          "reading": "いきました",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) + ました, uljudni prošli oblik: otišao sam.",
+          "romaji": "ikimashita",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2588,
+          "end_ms": 3288
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3300,
+          "end_ms": 3400
+        }
+      ],
+      "audio": "ramen-001-1.mp3",
+      "duration_ms": 4100,
+      "chunk_audio": [
+        "ramen-001-1-1.mp3",
+        "ramen-001-1-2.mp3",
+        "ramen-001-1-3.mp3",
+        "ramen-001-1-4.mp3"
+      ],
+      "full_start_ms": 75,
+      "full_end_ms": 3400
+    },
+    {
+      "ja": "小さい店の前に、人がたくさん並んでいました。",
+      "hr": "Ispred malog restorana mnogo je ljudi stajalo u redu.",
+      "chunks": [
+        "小さい店の",
+        "前に、",
+        "人が",
+        "たくさん",
+        "並んでいました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "malog restorana",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ispred",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ljudi",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "mnogo",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "stajali su u redu",
+          "role": "glagol",
+          "grammar_hr": "trajna radnja u prošlosti: ～ていました",
+          "formula": "並ぶ (ならぶ, narabu) → 並んでいました (ならんでいました, narande imashita)",
+          "rule_hr": "Glagoli na -ぶ: ぶ → んで, zatim いました.",
+          "formula_hr": "Ljudi su u tom trenutku stajali u redu."
+        }
+      ],
+      "words": [
+        {
+          "text": "小さい",
+          "lemma": "小さい",
+          "reading": "ちいさい",
+          "role": "pridjev",
+          "explanation_hr": "Mali, i-pridjev ispred imenice.",
+          "romaji": "chīsai",
+          "furigana": [
+            {
+              "text": "小",
+              "reading": "ちい"
+            },
+            {
+              "text": "さ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 563
+        },
+        {
+          "text": "店",
+          "lemma": "店",
+          "reading": "みせ",
+          "role": "imenica",
+          "explanation_hr": "Restoran, trgovina.",
+          "romaji": "mise",
+          "furigana": [
+            {
+              "text": "店",
+              "reading": "みせ"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 825
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje dvije imenice: ispred restorana.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 838,
+          "end_ms": 963
+        },
+        {
+          "text": "前",
+          "lemma": "前",
+          "reading": "まえ",
+          "role": "mjesto",
+          "explanation_hr": "Prednja strana, ispred.",
+          "romaji": "mae",
+          "furigana": [
+            {
+              "text": "前",
+              "reading": "まえ"
+            }
+          ],
+          "start_ms": 975,
+          "end_ms": 1188
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto gdje netko jest.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1200,
+          "end_ms": 1463
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1575,
+          "end_ms": 1788
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "subjekt",
+          "explanation_hr": "Ljudi, osobe.",
+          "romaji": "hito",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "start_ms": 1800,
+          "end_ms": 1963
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: ljudi.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1975,
+          "end_ms": 2113
+        },
+        {
+          "text": "たくさん",
+          "lemma": "たくさん",
+          "reading": "たくさん",
+          "role": "prilog",
+          "explanation_hr": "Mnogo.",
+          "romaji": "takusan",
+          "furigana": [
+            {
+              "text": "た"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "さ"
+            },
+            {
+              "text": "ん"
+            }
+          ],
+          "start_ms": 2125,
+          "end_ms": 2588
+        },
+        {
+          "text": "並んでいました",
+          "lemma": "並ぶ",
+          "reading": "ならんでいました",
+          "role": "glagol",
+          "explanation_hr": "並ぶ (stajati u redu) u obliku ～ていました: stajali su u redu.",
+          "romaji": "narandeimashita",
+          "furigana": [
+            {
+              "text": "並",
+              "reading": "なら"
+            },
+            {
+              "text": "んでいました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2600,
+          "end_ms": 3625
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3638,
+          "end_ms": 3738
+        }
+      ],
+      "audio": "ramen-001-2.mp3",
+      "duration_ms": 4438,
+      "chunk_audio": [
+        "ramen-001-2-1.mp3",
+        "ramen-001-2-2.mp3",
+        "ramen-001-2-3.mp3",
+        "ramen-001-2-4.mp3",
+        "ramen-001-2-5.mp3"
+      ],
+      "full_start_ms": 4175,
+      "full_end_ms": 7838
+    },
+    {
+      "ja": "入口の機械で、醤油や味噌など、いろいろな味から選びます。",
+      "hr": "Na automatu kod ulaza biraš između raznih okusa, kao što su shoyu i miso.",
+      "chunks": [
+        "入口の",
+        "機械で、",
+        "醤油や",
+        "味噌など、",
+        "いろいろな",
+        "味から",
+        "選びます。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "kod ulaza",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "na automatu",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "shoyu i",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "miso i slično",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "razni",
+          "role": "opis",
+          "grammar_hr": "na-pridjev ispred imenice",
+          "formula": "いろいろ (いろいろ, iroiro) → いろいろな (いろいろな, iroiro na) + imenica",
+          "rule_hr": "Na-pridjev dobiva な kad stoji ispred imenice.",
+          "formula_hr": "Opisuje okuse: razni okusi."
+        },
+        {
+          "literal_hr": "između okusa",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "biraš",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "入口",
+          "lemma": "入口",
+          "reading": "いりぐち",
+          "role": "mjesto",
+          "explanation_hr": "Ulaz.",
+          "romaji": "iriguchi",
+          "furigana": [
+            {
+              "text": "入口",
+              "reading": "いりぐち"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 550
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: automat kod ulaza.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 563,
+          "end_ms": 675
+        },
+        {
+          "text": "機械",
+          "lemma": "機械",
+          "reading": "きかい",
+          "role": "mjesto",
+          "explanation_hr": "Stroj, ovdje automat za narudžbu.",
+          "romaji": "kikai",
+          "furigana": [
+            {
+              "text": "機械",
+              "reading": "きかい"
+            }
+          ],
+          "start_ms": 688,
+          "end_ms": 1063
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava sredstvo ili mjesto: na automatu.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1300
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1413,
+          "end_ms": 1600
+        },
+        {
+          "text": "醤油",
+          "lemma": "醤油",
+          "reading": "しょうゆ",
+          "role": "imenica",
+          "explanation_hr": "Soja umak, ovdje juha shoyu.",
+          "romaji": "shōyu",
+          "furigana": [
+            {
+              "text": "醤油",
+              "reading": "しょうゆ"
+            }
+          ],
+          "start_ms": 1600,
+          "end_ms": 2000
+        },
+        {
+          "text": "や",
+          "lemma": "や",
+          "reading": "や",
+          "role": "cestica",
+          "explanation_hr": "Nabrajanje: i, te (i još nešto).",
+          "romaji": "ya",
+          "furigana": [
+            {
+              "text": "や",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2013,
+          "end_ms": 2163
+        },
+        {
+          "text": "味噌",
+          "lemma": "味噌",
+          "reading": "みそ",
+          "role": "imenica",
+          "explanation_hr": "Miso, juha s miso pastom.",
+          "romaji": "miso",
+          "furigana": [
+            {
+              "text": "味噌",
+              "reading": "みそ"
+            }
+          ],
+          "start_ms": 2175,
+          "end_ms": 2463
+        },
+        {
+          "text": "など",
+          "lemma": "など",
+          "reading": "など",
+          "role": "cestica",
+          "explanation_hr": "I slično, i tako dalje.",
+          "romaji": "nado",
+          "furigana": [
+            {
+              "text": "など",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2475,
+          "end_ms": 2763
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2863,
+          "end_ms": 3050
+        },
+        {
+          "text": "いろいろな",
+          "lemma": "いろいろ",
+          "reading": "いろいろな",
+          "role": "pridjev",
+          "explanation_hr": "Razni, različiti; na-pridjev s な ispred imenice.",
+          "romaji": "iroirona",
+          "furigana": [
+            {
+              "text": "い"
+            },
+            {
+              "text": "ろ"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "ろ"
+            },
+            {
+              "text": "な",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 3063,
+          "end_ms": 3650
+        },
+        {
+          "text": "味",
+          "lemma": "味",
+          "reading": "あじ",
+          "role": "objekt",
+          "explanation_hr": "Okus.",
+          "romaji": "aji",
+          "furigana": [
+            {
+              "text": "味",
+              "reading": "あじ"
+            }
+          ],
+          "start_ms": 3663,
+          "end_ms": 3888
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Ovdje: birati iz (između) toga.",
+          "romaji": "kara",
+          "furigana": [
+            {
+              "text": "から",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3900,
+          "end_ms": 4075
+        },
+        {
+          "text": "選びます",
+          "lemma": "選ぶ",
+          "reading": "えらびます",
+          "role": "glagol",
+          "explanation_hr": "選ぶ (birati) + ます, uljudni oblik.",
+          "romaji": "erabimasu",
+          "furigana": [
+            {
+              "text": "選",
+              "reading": "えら"
+            },
+            {
+              "text": "びます",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 4088,
+          "end_ms": 4825
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4838,
+          "end_ms": 4938
+        }
+      ],
+      "audio": "ramen-001-3.mp3",
+      "duration_ms": 5638,
+      "chunk_audio": [
+        "ramen-001-3-1.mp3",
+        "ramen-001-3-2.mp3",
+        "ramen-001-3-3.mp3",
+        "ramen-001-3-4.mp3",
+        "ramen-001-3-5.mp3",
+        "ramen-001-3-6.mp3",
+        "ramen-001-3-7.mp3"
+      ],
+      "full_start_ms": 8650,
+      "full_end_ms": 13475
+    },
+    {
+      "ja": "博多は白いスープのラーメンが有名なので、それにしてみました。",
+      "hr": "Hakata je poznata po ramenu s bijelom juhom, pa sam probao uzeti njega.",
+      "chunks": [
+        "博多は",
+        "白いスープの",
+        "ラーメンが",
+        "有名なので、",
+        "それに",
+        "してみました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "Hakata",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "s bijelom juhom",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ramen",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "jer je poznat",
+          "role": "glagol",
+          "grammar_hr": "razlog: na-pridjev + なので",
+          "formula": "有名 (ゆうめい, yūmei) → 有名なので (ゆうめいなので, yūmei na node)",
+          "rule_hr": "Na-pridjev + なので znači 'jer je…'.",
+          "formula_hr": "Taj ramen je poznat u Hakati, i zato sam ga izabrao."
+        },
+        {
+          "literal_hr": "za to",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "probao sam odlučiti",
+          "role": "glagol",
+          "grammar_hr": "pokušaj: ～てみる",
+          "formula": "する (する, suru) → してみる (してみる, shite miru) → してみました (してみました, shite mimashita)",
+          "rule_hr": "te-oblik glagola + みる znači 'probati nešto učiniti'.",
+          "formula_hr": "～にする znači 'odlučiti se za'. Zajedno: probao sam uzeti taj ramen."
+        }
+      ],
+      "words": [
+        {
+          "text": "博多",
+          "lemma": "博多",
+          "reading": "はかた",
+          "role": "subjekt",
+          "explanation_hr": "Hakata, tema rečenice.",
+          "romaji": "hakata",
+          "furigana": [
+            {
+              "text": "博多",
+              "reading": "はかた"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 475
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: što se tiče Hakate.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 488,
+          "end_ms": 613
+        },
+        {
+          "text": "白い",
+          "lemma": "白い",
+          "reading": "しろい",
+          "role": "pridjev",
+          "explanation_hr": "Bijel, i-pridjev ispred imenice.",
+          "romaji": "shiroi",
+          "furigana": [
+            {
+              "text": "白",
+              "reading": "しろ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 625,
+          "end_ms": 1013
+        },
+        {
+          "text": "スープ",
+          "lemma": "スープ",
+          "reading": "スープ",
+          "role": "imenica",
+          "explanation_hr": "Juha.",
+          "romaji": "sūpu",
+          "furigana": [
+            {
+              "text": "ス"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "プ"
+            }
+          ],
+          "start_ms": 1025,
+          "end_ms": 1400
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: ramen s bijelom juhom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1413,
+          "end_ms": 1538
+        },
+        {
+          "text": "ラーメン",
+          "lemma": "ラーメン",
+          "reading": "ラーメン",
+          "role": "subjekt",
+          "explanation_hr": "Ramen.",
+          "romaji": "rāmen",
+          "furigana": [
+            {
+              "text": "ラ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "メ"
+            },
+            {
+              "text": "ン"
+            }
+          ],
+          "start_ms": 1550,
+          "end_ms": 1950
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava ono što je poznato.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1963,
+          "end_ms": 2063
+        },
+        {
+          "text": "有名",
+          "lemma": "有名",
+          "reading": "ゆうめい",
+          "role": "pridjev",
+          "explanation_hr": "Poznat, na-pridjev.",
+          "romaji": "yūmei",
+          "furigana": [
+            {
+              "text": "有名",
+              "reading": "ゆうめい"
+            }
+          ],
+          "start_ms": 2075,
+          "end_ms": 2550
+        },
+        {
+          "text": "なので",
+          "lemma": "なので",
+          "reading": "なので",
+          "role": "veznik",
+          "explanation_hr": "Jer, zato što (iza na-pridjeva).",
+          "romaji": "nanode",
+          "furigana": [
+            {
+              "text": "な",
+              "kind": "kopula"
+            },
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2563,
+          "end_ms": 3038
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 3138,
+          "end_ms": 3350
+        },
+        {
+          "text": "それ",
+          "lemma": "それ",
+          "reading": "それ",
+          "role": "objekt",
+          "explanation_hr": "To; ovdje taj ramen.",
+          "romaji": "sore",
+          "furigana": [
+            {
+              "text": "そ"
+            },
+            {
+              "text": "れ"
+            }
+          ],
+          "start_ms": 3363,
+          "end_ms": 3600
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "S にする: odlučiti se za nešto.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3613,
+          "end_ms": 3763
+        },
+        {
+          "text": "してみました",
+          "lemma": "してみる",
+          "reading": "してみました",
+          "role": "glagol",
+          "explanation_hr": "する u te-obliku + みました: probao sam (uzeti).",
+          "romaji": "shitemimashita",
+          "furigana": [
+            {
+              "text": "してみました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3775,
+          "end_ms": 4575
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4588,
+          "end_ms": 4688
+        }
+      ],
+      "audio": "ramen-001-4.mp3",
+      "duration_ms": 5388,
+      "chunk_audio": [
+        "ramen-001-4-1.mp3",
+        "ramen-001-4-2.mp3",
+        "ramen-001-4-3.mp3",
+        "ramen-001-4-4.mp3",
+        "ramen-001-4-5.mp3",
+        "ramen-001-4-6.mp3"
+      ],
+      "full_start_ms": 14250,
+      "full_end_ms": 18863
+    },
+    {
+      "ja": "スープはとても熱くて、麺は細かったです。",
+      "hr": "Juha je bila jako vruća, a rezanci tanki.",
+      "chunks": [
+        "スープは",
+        "とても",
+        "熱くて、",
+        "麺は",
+        "細かったです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "juha",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "jako",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "vruća i",
+          "role": "glagol",
+          "grammar_hr": "te-oblik i-pridjeva",
+          "formula": "熱い (あつい, atsui) → 熱くて (あつくて, atsukute)",
+          "rule_hr": "i-pridjev: zadnji い → くて.",
+          "formula_hr": "Povezuje dva opisa: juha je bila vruća, a rezanci tanki."
+        },
+        {
+          "literal_hr": "rezanci",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "bili su tanki",
+          "role": "glagol",
+          "grammar_hr": "prošlo vrijeme i-pridjeva",
+          "formula": "細い (ほそい, hosoi) → 細かった (ほそかった, hosokatta)",
+          "rule_hr": "i-pridjev: zadnji い → かった, です za uljudnost.",
+          "formula_hr": "Rezanci su bili tanki."
+        }
+      ],
+      "words": [
+        {
+          "text": "スープ",
+          "lemma": "スープ",
+          "reading": "スープ",
+          "role": "subjekt",
+          "explanation_hr": "Juha.",
+          "romaji": "sūpu",
+          "furigana": [
+            {
+              "text": "ス"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "プ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 500
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: juha.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 513,
+          "end_ms": 663
+        },
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "prilog",
+          "explanation_hr": "Jako, vrlo.",
+          "romaji": "totemo",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 675,
+          "end_ms": 1063
+        },
+        {
+          "text": "熱くて",
+          "lemma": "熱い",
+          "reading": "あつくて",
+          "role": "pridjev",
+          "explanation_hr": "熱い (vruć) u te-obliku: vruća i…",
+          "romaji": "atsukute",
+          "furigana": [
+            {
+              "text": "熱",
+              "reading": "あつ"
+            },
+            {
+              "text": "くて",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1663
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1763,
+          "end_ms": 1975
+        },
+        {
+          "text": "麺",
+          "lemma": "麺",
+          "reading": "めん",
+          "role": "subjekt",
+          "explanation_hr": "Rezanci.",
+          "romaji": "men",
+          "furigana": [
+            {
+              "text": "麺",
+              "reading": "めん"
+            }
+          ],
+          "start_ms": 1988,
+          "end_ms": 2213
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: rezanci.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2225,
+          "end_ms": 2350
+        },
+        {
+          "text": "細かったです",
+          "lemma": "細い",
+          "reading": "ほそかったです",
+          "role": "pridjev",
+          "explanation_hr": "細い (tanak) u prošlom vremenu + です: bili su tanki.",
+          "romaji": "hosokatta desu",
+          "furigana": [
+            {
+              "text": "細",
+              "reading": "ほそ"
+            },
+            {
+              "text": "かったです",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2363,
+          "end_ms": 3375
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3388,
+          "end_ms": 3488
+        }
+      ],
+      "audio": "ramen-001-5.mp3",
+      "duration_ms": 4188,
+      "chunk_audio": [
+        "ramen-001-5-1.mp3",
+        "ramen-001-5-2.mp3",
+        "ramen-001-5-3.mp3",
+        "ramen-001-5-4.mp3",
+        "ramen-001-5-5.mp3"
+      ],
+      "full_start_ms": 19638,
+      "full_end_ms": 23050
+    },
+    {
+      "ja": "日本では、音を出して食べてもいいです。",
+      "hr": "U Japanu smiješ srkati dok jedeš.",
+      "chunks": [
+        "日本では、",
+        "音を",
+        "出して",
+        "食べてもいいです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "u Japanu",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "zvuk",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ispuštajući",
+          "role": "glagol",
+          "grammar_hr": "te-oblik glagola",
+          "formula": "出す (だす, dasu) → 出して (だして, dashite)",
+          "rule_hr": "Glagoli na -す: す → して.",
+          "formula_hr": "Opisuje način jedenja: uz zvuk, to jest srkajući."
+        },
+        {
+          "literal_hr": "smije se jesti",
+          "role": "glagol",
+          "grammar_hr": "dopuštenje: ～てもいい",
+          "formula": "食べる (たべる, taberu) → 食べてもいい (たべてもいい, tabete mo ii)",
+          "rule_hr": "te-oblik + もいい znači 'smije se, u redu je'.",
+          "formula_hr": "U Japanu je u redu srkati ramen."
+        }
+      ],
+      "words": [
+        {
+          "text": "日本",
+          "lemma": "日本",
+          "reading": "にほん",
+          "role": "mjesto",
+          "explanation_hr": "Japan.",
+          "romaji": "nippon",
+          "furigana": [
+            {
+              "text": "日本",
+              "reading": "にっぽん"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 500
+        },
+        {
+          "text": "では",
+          "lemma": "では",
+          "reading": "では",
+          "role": "cestica",
+          "explanation_hr": "で (u) + は (tema): što se tiče Japana.",
+          "romaji": "dewa",
+          "furigana": [
+            {
+              "text": "では",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 513,
+          "end_ms": 913
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1025,
+          "end_ms": 1150
+        },
+        {
+          "text": "音",
+          "lemma": "音",
+          "reading": "おと",
+          "role": "objekt",
+          "explanation_hr": "Zvuk.",
+          "romaji": "oto",
+          "furigana": [
+            {
+              "text": "音",
+              "reading": "おと"
+            }
+          ],
+          "start_ms": 1163,
+          "end_ms": 1463
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt: zvuk.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1475,
+          "end_ms": 1575
+        },
+        {
+          "text": "出して",
+          "lemma": "出す",
+          "reading": "だして",
+          "role": "glagol",
+          "explanation_hr": "出す (ispustiti, proizvesti) u te-obliku.",
+          "romaji": "dashite",
+          "furigana": [
+            {
+              "text": "出",
+              "reading": "だ"
+            },
+            {
+              "text": "して",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1588,
+          "end_ms": 1975
+        },
+        {
+          "text": "食べてもいいです",
+          "lemma": "食べる",
+          "reading": "たべてもいいです",
+          "role": "glagol",
+          "explanation_hr": "食べる (jesti) + てもいいです: smije se jesti.",
+          "romaji": "tabetemoii desu",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べ"
+            },
+            {
+              "text": "て",
+              "kind": "nastavak"
+            },
+            {
+              "text": "も",
+              "kind": "cestica"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "です",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1988,
+          "end_ms": 3075
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3088,
+          "end_ms": 3188
+        }
+      ],
+      "audio": "ramen-001-6.mp3",
+      "duration_ms": 3888,
+      "chunk_audio": [
+        "ramen-001-6-1.mp3",
+        "ramen-001-6-2.mp3",
+        "ramen-001-6-3.mp3",
+        "ramen-001-6-4.mp3"
+      ],
+      "full_start_ms": 23825,
+      "full_end_ms": 26938
+    },
+    {
+      "ja": "店の人は、札幌の味噌も食べた方がいいと言いました。",
+      "hr": "Radnik u restoranu rekao je da bih trebao probati i miso iz Sappora.",
+      "chunks": [
+        "店の人は、",
+        "札幌の",
+        "味噌も",
+        "食べた方がいいと",
+        "言いました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "radnik restorana",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "iz Sappora",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "i miso",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "da je bolje pojesti",
+          "role": "glagol",
+          "grammar_hr": "savjet: ～た方がいい",
+          "formula": "食べる (たべる, taberu) → 食べた方がいい (たべたほうがいい, tabeta hō ga ii)",
+          "rule_hr": "Obični prošli oblik + 方がいい znači 'bolje je, trebao bi'.",
+          "formula_hr": "Savjet: bilo bi dobro pojesti i miso ramen. と označava što je rečeno."
+        },
+        {
+          "literal_hr": "rekao je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "店",
+          "lemma": "店",
+          "reading": "みせ",
+          "role": "imenica",
+          "explanation_hr": "Restoran.",
+          "romaji": "mise",
+          "furigana": [
+            {
+              "text": "店",
+              "reading": "みせ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 363
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: čovjek iz restorana.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 375,
+          "end_ms": 488
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "subjekt",
+          "explanation_hr": "Osoba; 店の人 = radnik u restoranu.",
+          "romaji": "hito",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "start_ms": 500,
+          "end_ms": 763
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: radnik.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 775,
+          "end_ms": 1063
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1175,
+          "end_ms": 1363
+        },
+        {
+          "text": "札幌",
+          "lemma": "札幌",
+          "reading": "さっぽろ",
+          "role": "imenica",
+          "explanation_hr": "Sapporo, grad na Hokkaidu.",
+          "romaji": "sapporo",
+          "furigana": [
+            {
+              "text": "札幌",
+              "reading": "さっぽろ"
+            }
+          ],
+          "start_ms": 1375,
+          "end_ms": 1850
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: miso iz Sappora.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1863,
+          "end_ms": 1975
+        },
+        {
+          "text": "味噌",
+          "lemma": "味噌",
+          "reading": "みそ",
+          "role": "objekt",
+          "explanation_hr": "Miso, ovdje miso ramen.",
+          "romaji": "miso",
+          "furigana": [
+            {
+              "text": "味噌",
+              "reading": "みそ"
+            }
+          ],
+          "start_ms": 1988,
+          "end_ms": 2250
+        },
+        {
+          "text": "も",
+          "lemma": "も",
+          "reading": "も",
+          "role": "cestica",
+          "explanation_hr": "Također, i.",
+          "romaji": "mo",
+          "furigana": [
+            {
+              "text": "も",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2263,
+          "end_ms": 2400
+        },
+        {
+          "text": "食べた",
+          "lemma": "食べる",
+          "reading": "たべた",
+          "role": "glagol",
+          "explanation_hr": "食べる (jesti) u običnom prošlom obliku, ispred 方がいい.",
+          "romaji": "tabeta",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べ"
+            },
+            {
+              "text": "た",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2413,
+          "end_ms": 2788
+        },
+        {
+          "text": "方",
+          "lemma": "方",
+          "reading": "ほう",
+          "role": "imenica",
+          "explanation_hr": "Strana, mogućnost; dio izraza 方がいい.",
+          "romaji": "hō",
+          "furigana": [
+            {
+              "text": "方",
+              "reading": "ほう"
+            }
+          ],
+          "start_ms": 2800,
+          "end_ms": 3013
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Dio izraza 方がいい.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3025,
+          "end_ms": 3150
+        },
+        {
+          "text": "いい",
+          "lemma": "いい",
+          "reading": "いい",
+          "role": "pridjev",
+          "explanation_hr": "Dobar; 方がいい = bolje je.",
+          "romaji": "ii",
+          "furigana": [
+            {
+              "text": "い"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 3163,
+          "end_ms": 3388
+        },
+        {
+          "text": "と",
+          "lemma": "と",
+          "reading": "と",
+          "role": "cestica",
+          "explanation_hr": "Označava ono što je rečeno.",
+          "romaji": "to",
+          "furigana": [
+            {
+              "text": "と",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3400,
+          "end_ms": 3500
+        },
+        {
+          "text": "言いました",
+          "lemma": "言う",
+          "reading": "いいました",
+          "role": "glagol",
+          "explanation_hr": "言う (reći) + ました, uljudni prošli oblik.",
+          "romaji": "iimashita",
+          "furigana": [
+            {
+              "text": "言",
+              "reading": "い"
+            },
+            {
+              "text": "いました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3513,
+          "end_ms": 4175
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4188,
+          "end_ms": 4288
+        }
+      ],
+      "audio": "ramen-001-7.mp3",
+      "duration_ms": 4988,
+      "chunk_audio": [
+        "ramen-001-7-1.mp3",
+        "ramen-001-7-2.mp3",
+        "ramen-001-7-3.mp3",
+        "ramen-001-7-4.mp3",
+        "ramen-001-7-5.mp3"
+      ],
+      "full_start_ms": 27713,
+      "full_end_ms": 31925
+    },
+    {
+      "ja": "次は札幌へ行ってみたいです。",
+      "hr": "Sljedeći put želim probati otići u Sapporo.",
+      "chunks": [
+        "次は",
+        "札幌へ",
+        "行ってみたいです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "sljedeći put",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u Sapporo",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "želim probati otići",
+          "role": "glagol",
+          "grammar_hr": "pokušaj i želja: ～てみたい",
+          "formula": "行く (いく, iku) → 行って (いって, itte) → 行ってみたい (いってみたい, itte mitai)",
+          "rule_hr": "行く ima poseban te-oblik 行って; みる → みたい znači 'želim probati'.",
+          "formula_hr": "Želim probati otići u Sapporo i jesti tamo ramen."
+        }
+      ],
+      "words": [
+        {
+          "text": "次",
+          "lemma": "次",
+          "reading": "つぎ",
+          "role": "vrijeme",
+          "explanation_hr": "Sljedeći (put).",
+          "romaji": "tsugi",
+          "furigana": [
+            {
+              "text": "次",
+              "reading": "つぎ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 363
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: sljedeći put.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 375,
+          "end_ms": 550
+        },
+        {
+          "text": "札幌",
+          "lemma": "札幌",
+          "reading": "さっぽろ",
+          "role": "mjesto",
+          "explanation_hr": "Sapporo.",
+          "romaji": "sapporo",
+          "furigana": [
+            {
+              "text": "札幌",
+              "reading": "さっぽろ"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 1050
+        },
+        {
+          "text": "へ",
+          "lemma": "へ",
+          "reading": "へ",
+          "role": "cestica",
+          "explanation_hr": "Označava smjer: u Sapporo.",
+          "romaji": "e",
+          "furigana": [
+            {
+              "text": "へ",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1063,
+          "end_ms": 1188
+        },
+        {
+          "text": "行ってみたいです",
+          "lemma": "行く",
+          "reading": "いってみたいです",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) u te-obliku + みたいです: želim probati otići.",
+          "romaji": "ittemitai desu",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "って",
+              "kind": "nastavak"
+            },
+            {
+              "text": "み"
+            },
+            {
+              "text": "た"
+            },
+            {
+              "text": "い"
+            },
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 1200,
+          "end_ms": 2238
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2250,
+          "end_ms": 2350
+        }
+      ],
+      "audio": "ramen-001-8.mp3",
+      "duration_ms": 3050,
+      "chunk_audio": [
+        "ramen-001-8-1.mp3",
+        "ramen-001-8-2.mp3",
+        "ramen-001-8-3.mp3"
+      ],
+      "full_start_ms": 32700,
+      "full_end_ms": 34975
+    }
+  ],
+  "audio": "ramen-001-cijela.mp3",
+  "duration_ms": 35675
+}

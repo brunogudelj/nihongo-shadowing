@@ -1,0 +1,1735 @@
+{
+  "id": "incheon-001",
+  "theme": "incheon",
+  "model": "claude-opus-5-5",
+  "created": "2026-10-17",
+  "needs_review": [
+    "furigana: rečenica 1: 日本: rječnik kaže にっぽん, Claude kaže にほん",
+    "furigana: rečenica 1: 仁川: tema kaže インチョン, Claude kaže いんちょん"
+  ],
+  "fond": {
+    "pokrivenost": 100,
+    "izvan_popisa": []
+  },
+  "trosak_usd": 0.403,
+  "title_ja": "仁川空港での五時間",
+  "title_hr": "Pet sati na aerodromu Incheon",
+  "sentences": [
+    {
+      "ja": "日本へ行く前に、仁川空港に寄りました。",
+      "hr": "Prije nego što sam otišao u Japan, svratio sam na aerodrom Incheon.",
+      "chunks": [
+        "日本へ",
+        "行く前に、",
+        "仁川空港に",
+        "寄りました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "u Japan",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "prije odlaska",
+          "role": "vrijeme",
+          "grammar_hr": "prije nego što: ～前に",
+          "formula": "行く (いく, iku) → 行く前に (いくまえに, iku mae ni)",
+          "rule_hr": "Rječnički oblik glagola + 前に.",
+          "formula_hr": "Prije nego što sam stigao u Japan, svratio sam na Incheon."
+        },
+        {
+          "literal_hr": "na aerodrom Incheon",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "svratio sam",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "日本",
+          "lemma": "日本",
+          "reading": "にほん",
+          "role": "mjesto",
+          "explanation_hr": "Japan.",
+          "romaji": "nippon",
+          "furigana": [
+            {
+              "text": "日本",
+              "reading": "にっぽん"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 400
+        },
+        {
+          "text": "へ",
+          "lemma": "へ",
+          "reading": "え",
+          "role": "cestica",
+          "explanation_hr": "Označava smjer: u, prema.",
+          "romaji": "e",
+          "furigana": [
+            {
+              "text": "へ",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 413,
+          "end_ms": 575
+        },
+        {
+          "text": "行く",
+          "lemma": "行く",
+          "reading": "いく",
+          "role": "glagol",
+          "explanation_hr": "Ići; rječnički oblik ispred 前に.",
+          "romaji": "iku",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "start_ms": 588,
+          "end_ms": 850
+        },
+        {
+          "text": "前",
+          "lemma": "前",
+          "reading": "まえ",
+          "role": "vrijeme",
+          "explanation_hr": "Prije.",
+          "romaji": "mae",
+          "furigana": [
+            {
+              "text": "前",
+              "reading": "まえ"
+            }
+          ],
+          "start_ms": 863,
+          "end_ms": 1063
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava trenutak: prije toga.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1325
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1438,
+          "end_ms": 1650
+        },
+        {
+          "text": "仁川",
+          "lemma": "仁川",
+          "reading": "いんちょん",
+          "role": "mjesto",
+          "explanation_hr": "Incheon, grad kod Seula s velikim aerodromom.",
+          "romaji": "inchon",
+          "furigana": [
+            {
+              "text": "仁川",
+              "reading": "インチョン"
+            }
+          ],
+          "start_ms": 1663,
+          "end_ms": 2050
+        },
+        {
+          "text": "空港",
+          "lemma": "空港",
+          "reading": "くうこう",
+          "role": "mjesto",
+          "explanation_hr": "Aerodrom.",
+          "romaji": "kūkō",
+          "furigana": [
+            {
+              "text": "空港",
+              "reading": "くうこう"
+            }
+          ],
+          "start_ms": 2063,
+          "end_ms": 2563
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto na koje se svraća.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2575,
+          "end_ms": 2663
+        },
+        {
+          "text": "寄りました",
+          "lemma": "寄る",
+          "reading": "よりました",
+          "role": "glagol",
+          "explanation_hr": "寄る (svratiti) + ました, uljudni prošli oblik.",
+          "romaji": "yorimashita",
+          "furigana": [
+            {
+              "text": "寄",
+              "reading": "よ"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2675,
+          "end_ms": 3375
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3388,
+          "end_ms": 3488
+        }
+      ],
+      "audio": "incheon-001-1.mp3",
+      "duration_ms": 4188,
+      "chunk_audio": [
+        "incheon-001-1-1.mp3",
+        "incheon-001-1-2.mp3",
+        "incheon-001-1-3.mp3",
+        "incheon-001-1-4.mp3"
+      ],
+      "full_start_ms": 75,
+      "full_end_ms": 3488
+    },
+    {
+      "ja": "次の飛行機まで五時間ありました。",
+      "hr": "Do sljedećeg aviona imao sam pet sati.",
+      "chunks": [
+        "次の",
+        "飛行機まで",
+        "五時間",
+        "ありました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "sljedećeg",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "do aviona",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "pet sati",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "bilo je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "次",
+          "lemma": "次",
+          "reading": "つぎ",
+          "role": "imenica",
+          "explanation_hr": "Sljedeći.",
+          "romaji": "tsugi",
+          "furigana": [
+            {
+              "text": "次",
+              "reading": "つぎ"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 375
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje 次 s imenicom 飛行機.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 388,
+          "end_ms": 463
+        },
+        {
+          "text": "飛行機",
+          "lemma": "飛行機",
+          "reading": "ひこうき",
+          "role": "imenica",
+          "explanation_hr": "Avion.",
+          "romaji": "hikōki",
+          "furigana": [
+            {
+              "text": "飛行機",
+              "reading": "ひこうき"
+            }
+          ],
+          "start_ms": 475,
+          "end_ms": 963
+        },
+        {
+          "text": "まで",
+          "lemma": "まで",
+          "reading": "まで",
+          "role": "cestica",
+          "explanation_hr": "Do (vremenska granica).",
+          "romaji": "made",
+          "furigana": [
+            {
+              "text": "まで",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 975,
+          "end_ms": 1200
+        },
+        {
+          "text": "五時間",
+          "lemma": "五時間",
+          "reading": "ごじかん",
+          "role": "subjekt",
+          "explanation_hr": "Pet sati (trajanje).",
+          "romaji": "gojikan",
+          "furigana": [
+            {
+              "text": "五時間",
+              "reading": "ごじかん"
+            }
+          ],
+          "start_ms": 1213,
+          "end_ms": 1700
+        },
+        {
+          "text": "ありました",
+          "lemma": "ある",
+          "reading": "ありました",
+          "role": "glagol",
+          "explanation_hr": "ある (postojati, imati) + ました, uljudni prošli oblik.",
+          "romaji": "arimashita",
+          "furigana": [
+            {
+              "text": "あ"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1713,
+          "end_ms": 2400
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2413,
+          "end_ms": 2513
+        }
+      ],
+      "audio": "incheon-001-2.mp3",
+      "duration_ms": 3213,
+      "chunk_audio": [
+        "incheon-001-2-1.mp3",
+        "incheon-001-2-2.mp3",
+        "incheon-001-2-3.mp3",
+        "incheon-001-2-4.mp3"
+      ],
+      "full_start_ms": 4263,
+      "full_end_ms": 6700
+    },
+    {
+      "ja": "空港はとても広いので、たくさん歩きました。",
+      "hr": "Aerodrom je vrlo prostran, pa sam puno hodao.",
+      "chunks": [
+        "空港は",
+        "とても",
+        "広いので、",
+        "たくさん",
+        "歩きました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "aerodrom",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "vrlo",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "jer je prostran",
+          "role": "glagol",
+          "grammar_hr": "razlog: ～ので",
+          "formula": "広い (ひろい, hiroi) → 広いので (ひろいので, hiroi node)",
+          "rule_hr": "i-pridjev u običnom obliku + ので.",
+          "formula_hr": "Daje razlog: aerodrom je vrlo prostran, zato sam puno hodao."
+        },
+        {
+          "literal_hr": "puno",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "hodao sam",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "空港",
+          "lemma": "空港",
+          "reading": "くうこう",
+          "role": "subjekt",
+          "explanation_hr": "Aerodrom.",
+          "romaji": "kūkō",
+          "furigana": [
+            {
+              "text": "空港",
+              "reading": "くうこう"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 563
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 700
+        },
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "prilog",
+          "explanation_hr": "Vrlo, jako.",
+          "romaji": "totemo",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 713,
+          "end_ms": 1088
+        },
+        {
+          "text": "広い",
+          "lemma": "広い",
+          "reading": "ひろい",
+          "role": "pridjev",
+          "explanation_hr": "Prostran, širok; i-pridjev.",
+          "romaji": "hiroi",
+          "furigana": [
+            {
+              "text": "広",
+              "reading": "ひろ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 1100,
+          "end_ms": 1475
+        },
+        {
+          "text": "ので",
+          "lemma": "ので",
+          "reading": "ので",
+          "role": "veznik",
+          "explanation_hr": "Jer, zato što; daje razlog.",
+          "romaji": "node",
+          "furigana": [
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1488,
+          "end_ms": 1813
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1913,
+          "end_ms": 2100
+        },
+        {
+          "text": "たくさん",
+          "lemma": "たくさん",
+          "reading": "たくさん",
+          "role": "prilog",
+          "explanation_hr": "Puno, mnogo.",
+          "romaji": "takusan",
+          "furigana": [
+            {
+              "text": "た"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "さ"
+            },
+            {
+              "text": "ん"
+            }
+          ],
+          "start_ms": 2100,
+          "end_ms": 2525
+        },
+        {
+          "text": "歩きました",
+          "lemma": "歩く",
+          "reading": "あるきました",
+          "role": "glagol",
+          "explanation_hr": "歩く (hodati) + ました, uljudni prošli oblik.",
+          "romaji": "arukimashita",
+          "furigana": [
+            {
+              "text": "歩",
+              "reading": "ある"
+            },
+            {
+              "text": "きました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2538,
+          "end_ms": 3363
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3375,
+          "end_ms": 3475
+        }
+      ],
+      "audio": "incheon-001-3.mp3",
+      "duration_ms": 4175,
+      "chunk_audio": [
+        "incheon-001-3-1.mp3",
+        "incheon-001-3-2.mp3",
+        "incheon-001-3-3.mp3",
+        "incheon-001-3-4.mp3",
+        "incheon-001-3-5.mp3"
+      ],
+      "full_start_ms": 7513,
+      "full_end_ms": 10875
+    },
+    {
+      "ja": "空港の店を見てから、韓国の料理を食べました。",
+      "hr": "Nakon što sam razgledao trgovine na aerodromu, jeo sam korejsku hranu.",
+      "chunks": [
+        "空港の",
+        "店を",
+        "見てから、",
+        "韓国の",
+        "料理を",
+        "食べました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "aerodromske",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "trgovine",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "nakon razgledanja",
+          "role": "glagol",
+          "grammar_hr": "nakon što: ～てから",
+          "formula": "見る (みる, miru) → 見てから (みてから, mite kara)",
+          "rule_hr": "te-oblik glagola + から.",
+          "formula_hr": "Prvo sam razgledao trgovine, a nakon toga jeo."
+        },
+        {
+          "literal_hr": "korejsku",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "hranu",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "jeo sam",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "空港",
+          "lemma": "空港",
+          "reading": "くうこう",
+          "role": "imenica",
+          "explanation_hr": "Aerodrom.",
+          "romaji": "kūkō",
+          "furigana": [
+            {
+              "text": "空港",
+              "reading": "くうこう"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 563
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: trgovine na aerodromu.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 675
+        },
+        {
+          "text": "店",
+          "lemma": "店",
+          "reading": "みせ",
+          "role": "objekt",
+          "explanation_hr": "Trgovina, dućan.",
+          "romaji": "mise",
+          "furigana": [
+            {
+              "text": "店",
+              "reading": "みせ"
+            }
+          ],
+          "start_ms": 688,
+          "end_ms": 938
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt radnje.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 950,
+          "end_ms": 1063
+        },
+        {
+          "text": "見て",
+          "lemma": "見る",
+          "reading": "みて",
+          "role": "glagol",
+          "explanation_hr": "見る (gledati) u te-obliku.",
+          "romaji": "mite",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "て",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1313
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Iza te-oblika znači: nakon što.",
+          "romaji": "kara",
+          "furigana": [
+            {
+              "text": "から",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1325,
+          "end_ms": 1650
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1750,
+          "end_ms": 1938
+        },
+        {
+          "text": "韓国",
+          "lemma": "韓国",
+          "reading": "かんこく",
+          "role": "imenica",
+          "explanation_hr": "Koreja (Južna Koreja).",
+          "romaji": "kankoku",
+          "furigana": [
+            {
+              "text": "韓国",
+              "reading": "かんこく"
+            }
+          ],
+          "start_ms": 1950,
+          "end_ms": 2475
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: korejska hrana.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2488,
+          "end_ms": 2588
+        },
+        {
+          "text": "料理",
+          "lemma": "料理",
+          "reading": "りょうり",
+          "role": "objekt",
+          "explanation_hr": "Hrana, jelo.",
+          "romaji": "ryōri",
+          "furigana": [
+            {
+              "text": "料理",
+              "reading": "りょうり"
+            }
+          ],
+          "start_ms": 2600,
+          "end_ms": 2925
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt radnje.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2938,
+          "end_ms": 3050
+        },
+        {
+          "text": "食べました",
+          "lemma": "食べる",
+          "reading": "たべました",
+          "role": "glagol",
+          "explanation_hr": "食べる (jesti) + ました, uljudni prošli oblik.",
+          "romaji": "tabemashita",
+          "furigana": [
+            {
+              "text": "食",
+              "reading": "た"
+            },
+            {
+              "text": "べ"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3063,
+          "end_ms": 3850
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3863,
+          "end_ms": 3963
+        }
+      ],
+      "audio": "incheon-001-4.mp3",
+      "duration_ms": 4663,
+      "chunk_audio": [
+        "incheon-001-4-1.mp3",
+        "incheon-001-4-2.mp3",
+        "incheon-001-4-3.mp3",
+        "incheon-001-4-4.mp3",
+        "incheon-001-4-5.mp3",
+        "incheon-001-4-6.mp3"
+      ],
+      "full_start_ms": 11688,
+      "full_end_ms": 15538
+    },
+    {
+      "ja": "それから、シャワーを浴びて、少し休みました。",
+      "hr": "Zatim sam se istuširao i malo odmorio.",
+      "chunks": [
+        "それから、",
+        "シャワーを",
+        "浴びて、",
+        "少し",
+        "休みました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "zatim",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "tuš",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "istuširao sam se",
+          "role": "glagol",
+          "grammar_hr": "te-oblik glagola",
+          "formula": "浴びる (あびる, abiru) → 浴びて (あびて, abite)",
+          "rule_hr": "Glagoli na -る (ru-glagoli): る → て.",
+          "formula_hr": "Veže dvije radnje: istuširao sam se i (onda) se odmorio."
+        },
+        {
+          "literal_hr": "malo",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "odmorio sam se",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "それから",
+          "lemma": "それから",
+          "reading": "それから",
+          "role": "veznik",
+          "explanation_hr": "Zatim, nakon toga.",
+          "romaji": "sorekara",
+          "furigana": [
+            {
+              "text": "そ"
+            },
+            {
+              "text": "れ"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "ら"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 700
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 813,
+          "end_ms": 950
+        },
+        {
+          "text": "シャワー",
+          "lemma": "シャワー",
+          "reading": "シャワー",
+          "role": "objekt",
+          "explanation_hr": "Tuš.",
+          "romaji": "shawā",
+          "furigana": [
+            {
+              "text": "シ"
+            },
+            {
+              "text": "ャ"
+            },
+            {
+              "text": "ワ"
+            },
+            {
+              "text": "ー"
+            }
+          ],
+          "start_ms": 963,
+          "end_ms": 1363
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt radnje.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1375,
+          "end_ms": 1488
+        },
+        {
+          "text": "浴びて",
+          "lemma": "浴びる",
+          "reading": "あびて",
+          "role": "glagol",
+          "explanation_hr": "浴びる (polijevati se) u te-obliku; シャワーを浴びる = tuširati se.",
+          "romaji": "abite",
+          "furigana": [
+            {
+              "text": "浴",
+              "reading": "あ"
+            },
+            {
+              "text": "び"
+            },
+            {
+              "text": "て",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1500,
+          "end_ms": 2025
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2125,
+          "end_ms": 2250
+        },
+        {
+          "text": "少し",
+          "lemma": "少し",
+          "reading": "すこし",
+          "role": "prilog",
+          "explanation_hr": "Malo.",
+          "romaji": "sukoshi",
+          "furigana": [
+            {
+              "text": "少",
+              "reading": "すこ"
+            },
+            {
+              "text": "し"
+            }
+          ],
+          "start_ms": 2263,
+          "end_ms": 2638
+        },
+        {
+          "text": "休みました",
+          "lemma": "休む",
+          "reading": "やすみました",
+          "role": "glagol",
+          "explanation_hr": "休む (odmarati se) + ました, uljudni prošli oblik.",
+          "romaji": "yasumimashita",
+          "furigana": [
+            {
+              "text": "休",
+              "reading": "やす"
+            },
+            {
+              "text": "みました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2650,
+          "end_ms": 3513
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3525,
+          "end_ms": 3625
+        }
+      ],
+      "audio": "incheon-001-5.mp3",
+      "duration_ms": 4325,
+      "chunk_audio": [
+        "incheon-001-5-1.mp3",
+        "incheon-001-5-2.mp3",
+        "incheon-001-5-3.mp3",
+        "incheon-001-5-4.mp3",
+        "incheon-001-5-5.mp3"
+      ],
+      "full_start_ms": 16313,
+      "full_end_ms": 19863
+    },
+    {
+      "ja": "ソウルの町も見たかったです。",
+      "hr": "Htio sam vidjeti i grad Seul.",
+      "chunks": [
+        "ソウルの",
+        "町も",
+        "見たかったです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "Seula",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "i grad",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "htio sam vidjeti",
+          "role": "glagol",
+          "grammar_hr": "prošla želja: ～たかった",
+          "formula": "見る (みる, miru) → 見たかった (みたかった, mitakatta)",
+          "rule_hr": "Osnova glagola + たい; たい se mijenja kao i-pridjev: い → かった.",
+          "formula_hr": "Htio sam (tada) vidjeti i grad Seul."
+        }
+      ],
+      "words": [
+        {
+          "text": "ソウル",
+          "lemma": "ソウル",
+          "reading": "ソウル",
+          "role": "imenica",
+          "explanation_hr": "Seul, glavni grad Koreje.",
+          "romaji": "souru",
+          "furigana": [
+            {
+              "text": "ソ"
+            },
+            {
+              "text": "ウ"
+            },
+            {
+              "text": "ル"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 475
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje imenice: grad Seul.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 488,
+          "end_ms": 575
+        },
+        {
+          "text": "町",
+          "lemma": "町",
+          "reading": "まち",
+          "role": "objekt",
+          "explanation_hr": "Grad.",
+          "romaji": "machi",
+          "furigana": [
+            {
+              "text": "町",
+              "reading": "まち"
+            }
+          ],
+          "start_ms": 588,
+          "end_ms": 863
+        },
+        {
+          "text": "も",
+          "lemma": "も",
+          "reading": "も",
+          "role": "cestica",
+          "explanation_hr": "I, također.",
+          "romaji": "mo",
+          "furigana": [
+            {
+              "text": "も",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 875,
+          "end_ms": 1000
+        },
+        {
+          "text": "見たかったです",
+          "lemma": "見る",
+          "reading": "みたかったです",
+          "role": "glagol",
+          "explanation_hr": "見る (vidjeti) + たかった (htio sam) + です, uljudni oblik.",
+          "romaji": "mitakatta desu",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "たかったです",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1013,
+          "end_ms": 1988
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2000,
+          "end_ms": 2100
+        }
+      ],
+      "audio": "incheon-001-6.mp3",
+      "duration_ms": 2800,
+      "chunk_audio": [
+        "incheon-001-6-1.mp3",
+        "incheon-001-6-2.mp3",
+        "incheon-001-6-3.mp3"
+      ],
+      "full_start_ms": 20638,
+      "full_end_ms": 22663
+    },
+    {
+      "ja": "でも、遅れたら困るので、行きませんでした。",
+      "hr": "Ali da sam zakasnio, bio bi problem, pa nisam otišao.",
+      "chunks": [
+        "でも、",
+        "遅れたら",
+        "困るので、",
+        "行きませんでした。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "ali",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ako zakasnim",
+          "role": "ostalo",
+          "grammar_hr": "uvjet: ～たら",
+          "formula": "遅れる (おくれる, okureru) → 遅れたら (おくれたら, okuretara)",
+          "rule_hr": "Obični prošli oblik glagola + ら: 遅れた → 遅れたら.",
+          "formula_hr": "Znači: ako bih zakasnio (na let)."
+        },
+        {
+          "literal_hr": "jer bi bio problem",
+          "role": "glagol",
+          "grammar_hr": "razlog: ～ので",
+          "formula": "困る (こまる, komaru) → 困るので (こまるので, komaru node)",
+          "rule_hr": "Obični oblik glagola + ので.",
+          "formula_hr": "Daje razlog: to bi bio problem, zato nisam otišao."
+        },
+        {
+          "literal_hr": "nisam otišao",
+          "role": "glagol",
+          "grammar_hr": "uljudni niječni prošli oblik",
+          "formula": "行く (いく, iku) → 行きませんでした (いきませんでした, ikimasen deshita)",
+          "rule_hr": "Uljudni niječni oblik ～ません + でした.",
+          "formula_hr": "Nisam otišao u grad."
+        }
+      ],
+      "words": [
+        {
+          "text": "でも",
+          "lemma": "でも",
+          "reading": "でも",
+          "role": "veznik",
+          "explanation_hr": "Ali.",
+          "romaji": "demo",
+          "furigana": [
+            {
+              "text": "で"
+            },
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 388
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 463,
+          "end_ms": 488
+        },
+        {
+          "text": "遅れたら",
+          "lemma": "遅れる",
+          "reading": "おくれたら",
+          "role": "glagol",
+          "explanation_hr": "遅れる (zakasniti) + たら: ako zakasnim.",
+          "romaji": "okuretara",
+          "furigana": [
+            {
+              "text": "遅",
+              "reading": "おく"
+            },
+            {
+              "text": "れ"
+            },
+            {
+              "text": "たら",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 500,
+          "end_ms": 1175
+        },
+        {
+          "text": "困る",
+          "lemma": "困る",
+          "reading": "こまる",
+          "role": "glagol",
+          "explanation_hr": "Biti u nevolji, imati problem; obični oblik.",
+          "romaji": "komaru",
+          "furigana": [
+            {
+              "text": "困",
+              "reading": "こま"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 1188,
+          "end_ms": 1588
+        },
+        {
+          "text": "ので",
+          "lemma": "ので",
+          "reading": "ので",
+          "role": "veznik",
+          "explanation_hr": "Jer, zato što; daje razlog.",
+          "romaji": "node",
+          "furigana": [
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1600,
+          "end_ms": 1925
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2000,
+          "end_ms": 2125
+        },
+        {
+          "text": "行きませんでした",
+          "lemma": "行く",
+          "reading": "いきませんでした",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) + ませんでした, uljudni niječni prošli oblik: nisam otišao.",
+          "romaji": "ikimasen deshita",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きませんでした",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2138,
+          "end_ms": 3175
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3188,
+          "end_ms": 3288
+        }
+      ],
+      "audio": "incheon-001-7.mp3",
+      "duration_ms": 3988,
+      "chunk_audio": [
+        "incheon-001-7-1.mp3",
+        "incheon-001-7-2.mp3",
+        "incheon-001-7-3.mp3",
+        "incheon-001-7-4.mp3"
+      ],
+      "full_start_ms": 23438,
+      "full_end_ms": 26650
+    },
+    {
+      "ja": "夜、福岡への飛行機に乗りました。",
+      "hr": "Navečer sam ušao u avion za Fukuoku.",
+      "chunks": [
+        "夜、",
+        "福岡への",
+        "飛行機に",
+        "乗りました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "navečer",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "za Fukuoku",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u avion",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ušao sam",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "夜",
+          "lemma": "夜",
+          "reading": "よる",
+          "role": "vrijeme",
+          "explanation_hr": "Noć, večer.",
+          "romaji": "yoru",
+          "furigana": [
+            {
+              "text": "夜",
+              "reading": "よる"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 450
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 525,
+          "end_ms": 738
+        },
+        {
+          "text": "福岡",
+          "lemma": "福岡",
+          "reading": "ふくおか",
+          "role": "mjesto",
+          "explanation_hr": "Fukuoka, grad u Japanu.",
+          "romaji": "fukuoka",
+          "furigana": [
+            {
+              "text": "福岡",
+              "reading": "ふくおか"
+            }
+          ],
+          "start_ms": 750,
+          "end_ms": 1213
+        },
+        {
+          "text": "へ",
+          "lemma": "へ",
+          "reading": "え",
+          "role": "cestica",
+          "explanation_hr": "Označava smjer: prema, u.",
+          "romaji": "e",
+          "furigana": [
+            {
+              "text": "へ",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1225,
+          "end_ms": 1325
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: avion za Fukuoku.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1338,
+          "end_ms": 1438
+        },
+        {
+          "text": "飛行機",
+          "lemma": "飛行機",
+          "reading": "ひこうき",
+          "role": "imenica",
+          "explanation_hr": "Avion.",
+          "romaji": "hikōki",
+          "furigana": [
+            {
+              "text": "飛行機",
+              "reading": "ひこうき"
+            }
+          ],
+          "start_ms": 1450,
+          "end_ms": 1975
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava u što se ulazi.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1988,
+          "end_ms": 2100
+        },
+        {
+          "text": "乗りました",
+          "lemma": "乗る",
+          "reading": "のりました",
+          "role": "glagol",
+          "explanation_hr": "乗る (ukrcati se, voziti se) + ました, uljudni prošli oblik.",
+          "romaji": "norimashita",
+          "furigana": [
+            {
+              "text": "乗",
+              "reading": "の"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2113,
+          "end_ms": 2825
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 2838,
+          "end_ms": 2938
+        }
+      ],
+      "audio": "incheon-001-8.mp3",
+      "duration_ms": 3638,
+      "chunk_audio": [
+        "incheon-001-8-1.mp3",
+        "incheon-001-8-2.mp3",
+        "incheon-001-8-3.mp3",
+        "incheon-001-8-4.mp3"
+      ],
+      "full_start_ms": 27425,
+      "full_end_ms": 30288
+    }
+  ],
+  "audio": "incheon-001-cijela.mp3",
+  "duration_ms": 30988
+}
