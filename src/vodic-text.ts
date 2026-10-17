@@ -24,6 +24,7 @@ export const BLOCK_TITLE: Record<BlockId, string> = {
   konjugator: '🔄 Konjugator',
   citanje: '👀 Čitanje',
   'nove-rijeci': '🎯 Nove riječi',
+  vijesti: '📰 Vijest dana',
 }
 
 export const STORY_INFO: StoryInfo[] = stories.map((s) => ({ id: s.id, sentenceCount: s.sentences.length }))

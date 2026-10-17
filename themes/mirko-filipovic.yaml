@@ -1,0 +1,47 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Mirko Filipović (Cro Cop)
+opis: >
+  Kratka priča o Mirku Filipoviću, hrvatskom borcu poznatom u Japanu
+  kao "Mirko Cro Cop". Samo javno poznate činjenice iz sportske karijere:
+  rođen u Vinkovcima, bio policajac, kickboks, borbe u Japanu (PRIDE),
+  pobjeda na velikom turniru 2006., poznati udarac lijevom nogom (high kick)
+  i izreka koju japanski navijači znaju: 右足で病院、左足で墓場.
+  Pripovjedač je navijač iz Hrvatske. Bez politike i osobnog života.
+
+gramatika: ～ことができる, pasiv ～られる
+
+kljucne_rijeci:
+  - 試合      # meč, borba
+  - 強い      # jak
+  - 足        # noga
+  - 有名      # poznat
+  - 警察      # policija
+
+vlastita_imena:
+  - ja: ミルコ・クロコップ
+    hr: Mirko Cro Cop
+  - ja: ヴィンコヴツィ
+    hr: Vinkovci
+  - ja: クロアチア
+    hr: Hrvatska
+  - ja: 日本
+    citanje: にほん
+    hr: Japan
+
+dodatni_rjecnik:
+  - ja: 選手
+    citanje: せんしゅ
+    hr: sportaš
+  - ja: 格闘技
+    citanje: かくとうぎ
+    hr: borilački sportovi
+  - ja: 蹴り
+    citanje: けり
+    hr: udarac nogom
+  - ja: 病院
+    citanje: びょういん
+    hr: bolnica
+  - ja: 墓場
+    citanje: はかば
+    hr: groblje

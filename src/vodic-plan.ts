@@ -207,16 +207,28 @@ export type Session = {
   dueFraze: number
 }
 
+// Red priča: prvo one iz vodic-config.ts, zatim sve ostale po imenu (nova priča uđe u red sama).
+// Dnevne vijesti nisu u redu priča (nemaju kartice, brišu se nakon 30 dana); imaju svoj blok.
+export const isNews = (id: string) => id.startsWith('vijesti-')
+export const latestNews = (stories: StoryInfo[]) => stories.map((s) => s.id).filter(isNews).sort().at(-1) ?? null
+
+export function storyQueue(stories: StoryInfo[], storyOrder: string[] = VODIC.storyOrder): string[] {
+  const ids = new Set(stories.map((s) => s.id).filter((id) => !isNews(id)))
+  const first = storyOrder.filter((id) => ids.has(id))
+  return [...first, ...[...ids].filter((id) => !first.includes(id)).sort()]
+}
+
 // Tekuća priča: prva iz reda koja ima rečenicu bez kartice (ako je sve naučeno, zadnja).
 export function currentStory(cards: CardRow[], stories: StoryInfo[], storyOrder: string[] = VODIC.storyOrder) {
   const has = new Set(cards.map((c) => c.id))
-  for (const id of storyOrder) {
+  const queue = storyQueue(stories, storyOrder)
+  for (const id of queue) {
     const count = stories.find((s) => s.id === id)?.sentenceCount ?? 0
     for (let index = 0; index < count; index++) {
       if (!has.has(cardId('fraza', `${id}:${index}`))) return { storyId: id, newSentence: { storyId: id, index } }
     }
   }
-  return { storyId: storyOrder[storyOrder.length - 1], newSentence: null }
+  return { storyId: queue[queue.length - 1] ?? storyOrder[storyOrder.length - 1], newSentence: null }
 }
 
 // Koji su blokovi ponuđeni (imaju sadržaja) i koji moraju ući zbog zaostatka.
@@ -235,6 +247,7 @@ export function availableBlocks(input: SessionInput) {
     konjugator: true,
     citanje: true,
     'nove-rijeci': input.vocabLeft > 0,
+    vijesti: latestNews(input.stories) !== null,
   }
   const due: Partial<Record<BlockId, number>> = { rijeci: dueWords, fraze: dueFraze }
   const ids = (Object.keys(config.blocks) as BlockId[]).filter((id) => offered[id])

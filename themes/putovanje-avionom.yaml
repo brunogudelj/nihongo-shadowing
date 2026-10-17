@@ -1,0 +1,34 @@
+# Tema: jedna datoteka = jedna tema. Slobodno mijenjaj tekst.
+
+naziv: Putovanje avionom
+opis: >
+  Let iz Zagreba u Tokio s presjedanjem, u prvom licu.
+  Pakiranje prtljage, dolazak na aerodrom, prijava i kontrola putovnice,
+  sjedalo do prozora, hrana u avionu, spavanje, slijetanje na Narita.
+
+gramatika: ～前に, ～てから, ～ながら
+
+kljucne_rijeci:
+  - 飛行機    # avion
+  - 空港      # aerodrom
+  - 荷物      # prtljaga
+  - 席        # sjedalo
+  - 窓        # prozor
+  - 出発      # polazak
+
+vlastita_imena:
+  - ja: ザグレブ
+    hr: Zagreb
+  - ja: 東京
+    citanje: とうきょう
+    hr: Tokio
+  - ja: 成田
+    citanje: なりた
+    hr: Narita (aerodrom)
+
+dodatni_rjecnik:
+  - ja: パスポート
+    hr: putovnica
+  - ja: 到着
+    citanje: とうちゃく
+    hr: dolazak, slijetanje
