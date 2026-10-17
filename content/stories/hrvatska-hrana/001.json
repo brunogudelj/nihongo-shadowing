@@ -3,9 +3,7 @@
   "theme": "hrvatska-hrana",
   "model": "claude-opus-5-5",
   "created": "2026-10-17",
-  "needs_review": [
-    "furigana: rečenica 1: 日本: rječnik kaže にっぽん, Claude kaže にほん"
-  ],
+  "needs_review": [],
   "fond": {
     "pokrivenost": 100,
     "izvan_popisa": []
@@ -73,11 +71,11 @@
           "reading": "にほん",
           "role": "imenica",
           "explanation_hr": "Japan.",
-          "romaji": "nippon",
+          "romaji": "nihon",
           "furigana": [
             {
               "text": "日本",
-              "reading": "にっぽん"
+              "reading": "にほん"
             }
           ],
           "start_ms": 75,

@@ -91,9 +91,12 @@ const story = JSON.parse(readFileSync(file, 'utf8'))
 
 // Čitanja iz teme (npr. 日本 → にほん) imaju prednost pred rječnikom.
 const theme = parse(readFileSync(`themes/${story.theme}.yaml`, 'utf8'))
-const themeReadings = new Map(
-  [...(theme.vlastita_imena ?? []), ...(theme.dodatni_rjecnik ?? [])].filter((x) => x.citanje).map((x) => [x.ja, x.citanje]),
-)
+// Uobičajena čitanja gdje rječnik daje rjeđe (日本 → にっぽん); tema ih može promijeniti.
+const COMMON_READINGS = [['日本', 'にほん']]
+const themeReadings = new Map([
+  ...COMMON_READINGS,
+  ...[...(theme.vlastita_imena ?? []), ...(theme.dodatni_rjecnik ?? [])].filter((x) => x.citanje).map((x) => [x.ja, x.citanje]),
+])
 const review = []
 
 story.sentences.forEach((sentence, si) => {
@@ -134,7 +137,7 @@ story.sentences.forEach((sentence, si) => {
     const fromTheme = themeReadings.get(word.text)
     const reading = fromTheme ?? dictReading ?? claudeReading
     if (fromTheme) {
-      if (fromTheme !== claudeReading) review.push(`rečenica ${si + 1}: ${word.text}: tema kaže ${fromTheme}, Claude kaže ${claudeReading}`)
+      if (toHiragana(fromTheme) !== claudeReading) review.push(`rečenica ${si + 1}: ${word.text}: tema kaže ${fromTheme}, Claude kaže ${claudeReading}`)
     } else if (dictReading && dictReading !== claudeReading) {
       review.push(`rečenica ${si + 1}: ${word.text}: rječnik kaže ${dictReading}, Claude kaže ${claudeReading}`)
     } else if (!dictReading) {

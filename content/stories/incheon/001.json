@@ -3,10 +3,7 @@
   "theme": "incheon",
   "model": "claude-opus-5-5",
   "created": "2026-10-17",
-  "needs_review": [
-    "furigana: rečenica 1: 日本: rječnik kaže にっぽん, Claude kaže にほん",
-    "furigana: rečenica 1: 仁川: tema kaže インチョン, Claude kaže いんちょん"
-  ],
+  "needs_review": [],
   "fond": {
     "pokrivenost": 100,
     "izvan_popisa": []
@@ -65,11 +62,11 @@
           "reading": "にほん",
           "role": "mjesto",
           "explanation_hr": "Japan.",
-          "romaji": "nippon",
+          "romaji": "nihon",
           "furigana": [
             {
               "text": "日本",
-              "reading": "にっぽん"
+              "reading": "にほん"
             }
           ],
           "start_ms": 75,
