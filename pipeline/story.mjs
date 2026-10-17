@@ -10,10 +10,15 @@ import { parse } from 'yaml'
 import { CHUNK_INFO_RULES, CHUNK_INFO_SCHEMA } from './chunk-info.mjs'
 import { checkFond, fondRecord, printFond, TARGET } from './fond.mjs'
 
-const MODEL = 'claude-opus-5-5'
+// Model se može promijeniti varijablom STORY_MODEL (npr. za probu s Haikuom).
+const MODEL = process.env.STORY_MODEL || 'claude-opus-5-5'
 // Cijena po milijunu tokena (USD), za ispis troška.
-const PRICE_IN = 4
-const PRICE_OUT = 20
+const PRICES = { 'claude-opus-5-5': [4, 20], 'claude-sonnet-5-5': [2, 10], 'claude-haiku-5-5': [0.1, 0.5] }
+if (!PRICES[MODEL]) {
+  console.error(`Nepoznat model ${MODEL}. Mogući: ${Object.keys(PRICES).join(', ')}`)
+  process.exit(1)
+}
+const [PRICE_IN, PRICE_OUT] = PRICES[MODEL]
 
 const ROLES = [
   'vrijeme', 'mjesto', 'subjekt', 'objekt', 'glagol', 'pridjev', 'prilog',
@@ -68,6 +73,7 @@ Language limits:
 - Natural, everyday spoken Japanese in polite form (です/ます), first person.
 - If the theme lists "gramatika", use those grammar points naturally in a few sentences.
 - Real people: only well-known public facts, respectful, no politics or private life.
+- If the theme gives "upute" (instructions), follow them; they override the story rules below.
 
 Story:
 - 5 to 8 sentences that form one coherent little story with a beginning and an end.
@@ -106,7 +112,8 @@ if (!process.env.ANTHROPIC_API_KEY) {
 const theme = parse(readFileSync(themeFile, 'utf8'))
 const outDir = `content/stories/${themeId}`
 mkdirSync(outDir, { recursive: true })
-const next = readdirSync(outDir).filter((f) => /^\d{3}\.json$/.test(f)).length + 1
+// Najveći postojeći broj + 1 (stare vijesti se brišu, pa brojanje datoteka ne bi bilo sigurno).
+const next = Math.max(0, ...readdirSync(outDir).filter((f) => /^\d{3}\.json$/.test(f)).map((f) => parseInt(f))) + 1
 const id = String(next).padStart(3, '0')
 
 // Rezerviraj broj priče, da dvije naredbe u isto vrijeme ne pišu istu priču (i ne troše dvaput).
@@ -131,8 +138,7 @@ async function ask(content) {
     .stream({
       model: MODEL,
       max_tokens: 32000,
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default',
+      ...(MODEL.includes('haiku') ? {} : { betas: ['server-side-fallback-2026-07-01'], fallbacks: 'default' }),
       output_config: { effort: 'high', format: { type: 'json_schema', schema: SCHEMA } },
       system: SYSTEM,
       messages: [{ role: 'user', content }],

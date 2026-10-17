@@ -16,7 +16,7 @@ if (!themeId || !/^[a-z0-9-]+$/.test(themeId) || !existsSync(`themes/${themeId}.
 
 // Broj nove priče (isto kao u story.mjs).
 const dir = `content/stories/${themeId}`
-const existing = existsSync(dir) ? readdirSync(dir).filter((f) => /^\d{3}\.json$/.test(f)).length : 0
+const existing = existsSync(dir) ? Math.max(0, ...readdirSync(dir).filter((f) => /^\d{3}\.json$/.test(f)).map((f) => parseInt(f))) : 0
 const storyArg = `${themeId}/${String(existing + 1).padStart(3, '0')}`
 
 function step(title, script, arg) {

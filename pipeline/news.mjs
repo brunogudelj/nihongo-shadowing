@@ -1,0 +1,95 @@
+// Priprema dnevne vijesti: skine naslove s hrvatskih RSS izvora (HRT, Index), zapiše ih u
+// themes/vijesti.yaml (Claude bira jednu vijest i prepričava je u 5 rečenica) i obriše vijesti
+// starije od 30 dana (priča + zvuk). Zatim ide obična nova priča: npm run nova-prica -- vijesti
+// Pokretanje: node pipeline/news.mjs
+
+import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { stringify } from 'yaml'
+
+const FEEDS = [
+  { name: 'HRT', url: 'https://vijesti.hrt.hr/rss' },
+  { name: 'HRT', url: 'https://www.hrt.hr/rss' },
+  { name: 'Index', url: 'https://www.index.hr/rss' },
+]
+const KEEP_DAYS = 30
+const MAX_HEADLINES = 20
+const DIR = 'content/stories/vijesti'
+
+// Tekst iz RSS-a: makni CDATA, HTML oznake i najčešće znakovne entitete.
+function clean(s) {
+  return s
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function parseRss(xml) {
+  return [...xml.matchAll(/<item[\s>][\s\S]*?<\/item>/g)].map(([item]) => {
+    const tag = (t) => clean(item.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)</${t}>`))?.[1] ?? '')
+    return { naslov: tag('title'), sazetak: tag('description').slice(0, 300) }
+  })
+}
+
+const headlines = []
+for (const feed of FEEDS) {
+  if (headlines.some((h) => h.izvor === feed.name)) continue // isti izvor s druge adrese ne treba
+  try {
+    const res = await fetch(feed.url, { headers: { 'user-agent': 'nihongo-shadowing (GitHub Actions)' } })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const items = parseRss(await res.text()).filter((x) => x.naslov)
+    console.log(`${feed.name} (${feed.url}): ${items.length} naslova`)
+    headlines.push(...items.slice(0, MAX_HEADLINES / 2).map((x) => ({ izvor: feed.name, ...x })))
+  } catch (e) {
+    console.log(`${feed.name} (${feed.url}): nije uspjelo (${e.message})`)
+  }
+}
+if (!headlines.length) {
+  console.error('Nijedan izvor vijesti nije dostupan. Ništa nije napravljeno (ništa nije potrošeno).')
+  process.exit(1)
+}
+
+// Stare vijesti: priča i njezin zvuk (ime počinje s vijesti-NNN-).
+const today = new Date().toISOString().slice(0, 10)
+const cutoff = new Date(Date.now() - KEEP_DAYS * 86_400_000).toISOString().slice(0, 10)
+const recent = []
+if (existsSync(DIR)) {
+  for (const f of readdirSync(DIR).filter((f) => /^\d{3}\.json$/.test(f))) {
+    const story = JSON.parse(readFileSync(`${DIR}/${f}`, 'utf8'))
+    if ((story.created ?? today) < cutoff) {
+      rmSync(`${DIR}/${f}`)
+      for (const a of readdirSync('content/audio').filter((a) => a.startsWith(`${story.id}-`))) rmSync(`content/audio/${a}`)
+      console.log(`Obrisana stara vijest ${story.id} (${story.created})`)
+    } else {
+      recent.push(story.title_hr)
+    }
+  }
+}
+
+const theme = {
+  naziv: 'Vijest dana',
+  opis:
+    'Kratka vijest iz Hrvatske za učenje japanskog. Izaberi JEDNU vijest s popisa naslova koja je ' +
+    'zanimljiva i razumljiva (vrijeme, sport, kultura, turizam, znanost, gospodarstvo, svakodnevni život). ' +
+    'Preskoči zločine, nesreće sa žrtvama, rat i političke sukobe.',
+  upute: [
+    'Write EXACTLY 5 sentences: a short, simple news report about the chosen headline, in polite form, third person.',
+    'Retell it in your own words. Do not translate or copy the article text.',
+    'Use only facts from the headline and summary. Do not invent numbers, names or quotes.',
+    'Croatian place and person names in katakana (ザグレブ, スプリト).',
+    'title_hr: the Croatian headline you chose (shortened if long). title_ja: its short Japanese title.',
+  ],
+  vec_obradjeno: recent.length ? recent : undefined,
+  naslovi: headlines,
+}
+writeFileSync(
+  'themes/vijesti.yaml',
+  '# Tema za dnevnu vijest. Ovu datoteku svaki dan iznova piše pipeline/news.mjs; ne mijenjaj je ručno.\n\n' +
+    stringify(theme, { lineWidth: 0 }),
+)
+console.log(`Spremljeno themes/vijesti.yaml (${headlines.length} naslova).`)

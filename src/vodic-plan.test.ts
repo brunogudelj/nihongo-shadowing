@@ -17,6 +17,7 @@ import {
   currentStory,
   planSession,
   storyQueue,
+  latestNews,
   sessionStats,
   sessionSummary,
   wordQueue,
@@ -357,5 +358,15 @@ describe('red priča', () => {
     const now = Date.now()
     const learned = [0, 1].map((i) => rateCard(undefined, 'fraza', `kyushu-001:${i}`, true, now).card)
     expect(currentStory(learned, info('kyushu-001', 'ramen-001'), ['kyushu-001']).newSentence).toEqual({ storyId: 'ramen-001', index: 0 })
+  })
+})
+
+describe('vijest dana', () => {
+  const info = (...ids: string[]) => ids.map((id) => ({ id, sentenceCount: 5 }))
+  it('vijesti nisu u redu priča, a najnovija je ona s najvećim brojem', () => {
+    const list = info('kyushu-001', 'vijesti-002', 'vijesti-010', 'ramen-001')
+    expect(storyQueue(list, ['kyushu-001'])).toEqual(['kyushu-001', 'ramen-001'])
+    expect(latestNews(list)).toBe('vijesti-010')
+    expect(latestNews(info('kyushu-001'))).toBeNull()
   })
 })

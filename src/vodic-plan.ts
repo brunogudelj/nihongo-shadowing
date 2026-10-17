@@ -208,8 +208,12 @@ export type Session = {
 }
 
 // Red priča: prvo one iz vodic-config.ts, zatim sve ostale po imenu (nova priča uđe u red sama).
+// Dnevne vijesti nisu u redu priča (nemaju kartice, brišu se nakon 30 dana); imaju svoj blok.
+export const isNews = (id: string) => id.startsWith('vijesti-')
+export const latestNews = (stories: StoryInfo[]) => stories.map((s) => s.id).filter(isNews).sort().at(-1) ?? null
+
 export function storyQueue(stories: StoryInfo[], storyOrder: string[] = VODIC.storyOrder): string[] {
-  const ids = new Set(stories.map((s) => s.id))
+  const ids = new Set(stories.map((s) => s.id).filter((id) => !isNews(id)))
   const first = storyOrder.filter((id) => ids.has(id))
   return [...first, ...[...ids].filter((id) => !first.includes(id)).sort()]
 }
@@ -243,6 +247,7 @@ export function availableBlocks(input: SessionInput) {
     konjugator: true,
     citanje: true,
     'nove-rijeci': input.vocabLeft > 0,
+    vijesti: latestNews(input.stories) !== null,
   }
   const due: Partial<Record<BlockId, number>> = { rijeci: dueWords, fraze: dueFraze }
   const ids = (Object.keys(config.blocks) as BlockId[]).filter((id) => offered[id])
