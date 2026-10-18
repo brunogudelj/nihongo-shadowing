@@ -20,7 +20,7 @@ export default defineConfig(({ command }) => ({
         description: 'Učenje japanskog govora kroz shadowing',
         lang: 'hr',
         display: 'standalone',
-        orientation: 'portrait',
+        orientation: 'any',
         theme_color: '#fafaf9',
         background_color: '#fafaf9',
         icons: [

@@ -75,7 +75,7 @@ Mobilna web aplikacija (PWA) za učenje japanskog govora kroz **shadowing** (slu
 
 ## Platforma: mobile-first PWA
 - **Ciljani uređaj: samo Android, preglednik Firefox.** iPhone i ostali preglednici se ne podržavaju i ne testiraju.
-- **Glavni uređaj je mobitel**, uspravni položaj. Dizajniraj prvo za mobitel.
+- **Glavni uređaj je mobitel**, **vodoravni položaj** (uspravni mora i dalje raditi). Kontrole kompaktne, kao u glazbenom playeru: jedan tanki red na dnu, rečenica dobiva sav ostali prostor.
 - Veliki gumbi, sve dohvatljivo jednom rukom, rečenica velikim slovima u sredini zaslona.
 - Instalira se na početni zaslon (manifest, service worker), radi **offline** nakon prvog učitavanja.
 - Audio se pokreće tek nakon dodira korisnika, pa je "Play" uvijek gumb.
