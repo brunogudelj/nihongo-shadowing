@@ -1,43 +1,76 @@
 # Tema za dnevnu vijest. Ovu datoteku svaki dan iznova piše pipeline/news.mjs; ne mijenjaj je ručno.
 
 naziv: Vijest dana
+razina: fat
 opis: Kratka vijest iz Hrvatske za učenje japanskog. Izaberi JEDNU vijest s popisa naslova koja je zanimljiva i razumljiva (vrijeme, sport, kultura, turizam, znanost, gospodarstvo, svakodnevni život). Preskoči zločine, nesreće sa žrtvama, rat i političke sukobe.
 upute:
-  - "Write EXACTLY 5 sentences: a short, simple news report about the chosen headline, in polite form, third person."
+  - "Write EXACTLY 5 sentences: a short news report about the chosen headline, in polite form, third person. Richer sentences (25 to 45 characters) that give context: who, where, why, what happens next."
   - Retell it in your own words. Do not translate or copy the article text.
   - Use only facts from the headline and summary. Do not invent numbers, names or quotes.
   - Croatian place and person names in katakana (ザグレブ, スプリト).
+  - Avoid katakana loanwords that are not N5/N4 words (e.g. use 試合 and 選手, not チーム or ビデオ).
   - "title_hr: the Croatian headline you chose (shortened if long). title_ja: its short Japanese title."
 vec_obradjeno:
   - Dinamo objavio filmić o utakmici s Anderlechtom
+  - Hrgović stigao u London na borbu za pojas teške kategorije
 naslovi:
+  - izvor: HRT
+    naslov: Dalmatinski gradovi i općine traže rješenja za otpad, Lećevica se čeka do 2028.
+    sazetak: Gradovi i općine Splitsko-dalmatinske županije zbog nedostatka kapaciteta za zbrinjavanje komunalnog otpada i kašnjenja izgradnje regionalnog centra Lećevica moraju tražiti alternativna rješenja, što im povećava troškove, dok se probni rad centra očekuje tek 2028. godine.
+  - izvor: HRT
+    naslov: Zatvorski sustav i dalje prenapučen, do 2028. planirano 700 novih mjesta
+    sazetak: Unatoč neznatnom padu broja zatvorenika, zatvorski sustav i dalje je prenapučen, a izazov predstavljaju i kadrovski deficit te nedostatak psihijatrijskog smještaja, proizlazi iz izvješća o zatvorskom sustavu za 2025., a država najavljuje proširenje zatvorske infrastrukture.
+  - izvor: HRT
+    naslov: U jednom automobilu vozi se manje od 1,5 osoba
+    sazetak: U jednom automobilu, prema podacima Europske agencije za okoliš, prosječeno se vozi manje od 1,5 osoba, a povećanje prosječne popunjenosti vozila može povećati protočnost ključnih gradskih raskrižja, iako zajedničko putovanje automobilom ima i nekoliko praktičnih problema.
+  - izvor: HRT
+    naslov: Kamionet se zaletio na dječju utakmicu u Kansasu, dvoje poginulih
+    sazetak: Kamionet se zaletio na dječju nogometnu utakmicu u Wichiti, u saveznoj državi Kansasu, pri čemu su poginuli šestogodišnji dječak i 35-godišnji muškarac, dok je još deset osoba s traumatskim ozljedama prevezeno u bolnicu, priopćila je policija u subotu.
+  - izvor: HRT
+    naslov: Nedjelja uz obilje sunca, ali promjena vremena je na vidiku
+    sazetak: Prvi dan vikenda omogućio je boravak na otvorenom, a ako je nekome zasmetala povećana naoblaka dobra je vijest da je sutra neće biti jer ponovno jača utjecaj ogranka anticiklone nad Hrvatskom. No nazire se kraj suhim i sunčanim danima.
+  - izvor: HRT
+    naslov: '"Samo želimo normalno disati"'
+    sazetak: ""
+  - izvor: HRT
+    naslov: Trump zamrznuo sankcije Rusiji
+    sazetak: ""
+  - izvor: HRT
+    naslov: Zdravstvena skrb na otocima
+    sazetak: ""
+  - izvor: HRT
+    naslov: 17. Dubrovačka trpeza
+    sazetak: ""
+  - izvor: HRT
+    naslov: "Đapić: Ljevica širi antisemitizam; Orešković: Pričate notorne gluposti"
+    sazetak: Dalija Orešković smatra da su za sramotne scene iz Splita krive dvostruke konotacije koje posljednjih godinu dana dolaze iz vladajućih redova, dok Ante Đapić ističe da je atmosferu antisemitizma u Hrvatskoj stvorila ljevica na čelu s predsjednikom Milanovićem.
   - izvor: Index
-    naslov: "PSV izgubio, a Perišić nije igrao. Trener: Za Hrvatsku stalno igra 90 minuta"
-    sazetak: IVAN PERIŠIĆ odlukom trenera nije igrao u porazu PSV-a od ADO Den Haaga (2:1).
+    naslov: Stolnotenisačica (63) je hit na EP-u. Pobjeđivala 40 godina mlađe protivnice
+    sazetak: NA EP-U u stolnom tenisu susrele su se 63-godišnja Ni Xia Lian i 43 godine mlađa Annett Kaufmann. Iako je Kaufmann pobijedila, Ni je ponovno oduševila sportsku javnost svojom dugovječnom karijerom.
   - izvor: Index
-    naslov: Imamo nove detalje o uhićenim torcidašima, idu u zatvor. Javili se njihovi odvjetnici
-    sazetak: POLICIJA nastavlja potragu za pripadnicima Torcide osumnjičenima za nacističke i antisemitske povike tijekom kortea uoči utakmice Hajduka i Ajaxa u Splitu. U državnom odvjetništvu ispitana su trojica uhićenih.
+    naslov: Mate Bulić objavio fotografiju s Thompsonom, napisao je samo jednu riječ
+    sazetak: PJEVAČI Mate Bulić i Marko Perković Thompson dugogodišnji su prijatelji i trostruki kumovi. Njihov odnos, dug preko 30 godina, obilježen je međusobnom podrškom u privatnom i poslovnom životu.
   - izvor: Index
-    naslov: VIDEO Hrgović stigao u London na veliki spektakl i borbu za pojas teške kategorije
-    sazetak: GLEDAT će meč Wardleyja i Duboisa iz prvih redova.
+    naslov: Floxa u skloništu opisuju kao pravu dobricu, sada traži svoj zauvijek dom
+    sazetak: KRIŽANI ovčar Flox (6) se oporavio od zdravstvenih problema i viška kilograma.
   - izvor: Index
-    naslov: Emiliano Martinez u gadnom sudaru slomio kost u licu. Mora na operaciju
-    sazetak: PREMA informacijama iz više britanskih medija, Emiliano Martinez ima slomljenu jagodičnu kost i morat će na operaciju.
+    naslov: BMW radnicima nudi i više od 650.000 eura da odu
+    sazetak: NJEMAČKI automobilski div BMW pojedinim zaposlenicima nudi otpremnine veće od 650.000 eura kako bi dobrovoljno napustili kompaniju. Interes za odlazak toliko je velik da je interni portal na kojem zaposlenici mogu provjeriti svoje ponude privremeno prestao raditi. BMW je u međuvremenu privremeno zau
   - izvor: Index
-    naslov: Ljevica u Berlinu želi nacionalizirati 160.000 stanova i ograničiti stanarine
-    sazetak: BERLINSKA koalicija ljevice planira izvlastiti 160.000 stanova velikih tvrtki i ograničiti stanarine.
+    naslov: Tko je tip koji je Veldinu Kariću slomio nos? Ranije je pljunuo i udario suca
+    sazetak: DARIO Jurević osumnjičen je za fizički napad na Veldina Karića, trenera Marsonije i bivšeg hrvatskog reprezentativca.
   - izvor: Index
-    naslov: "Talijani: Fabregas bi Baturini mogao dati potpuno novu ulogu"
-    sazetak: FABREGAS mora improvizirati zbog ozljeda.
+    naslov: VIDEO Ovo je Pariz jutros. Kao da je bio rat
+    sazetak: FRANCUSKA jutros zbraja štetu nakon velikih nereda koji su sinoć zahvatili brojne gradove. Nove fotografije prikazuju razorene trgovine, spaljena vozila i ulice prekrivene krhotinama.
   - izvor: Index
-    naslov: Francuski gradovi u plamenu, spaljena povijesna građevina. Reagirao Macron
-    sazetak: VELIKI prosvjedi prerasli su u nasilne nerede diljem Francuske. U gradu Limogesu zapaljena je povijesna gradska vijećnica. U Parizu, Lyonu, Marseilleu i drugim gradovima izbili su sukobi s policijom, zapaljeni su automobili i javne zgrade, a trgovine su opljačkane.
+    naslov: Brački kamen krasi ovu vilu s bazenom u Supetru. Pogledajte za koliko se prodaje
+    sazetak: BACILI smo oko na Index Oglase, evo što se nudi.
   - izvor: Index
-    naslov: Lautaro prozvao Brozovića? "Neki su više razmišljali o SP-u nego o Interu"
-    sazetak: LAUTARO MARTINEZ kritizirao je bivše suigrače.
+    naslov: "Letica o Torcidi: Samo kažnjavanje ne postiže ništa"
+    sazetak: SPECIJALIST za sigurnost Ante Letica komentirao je ispade u Splitu, ocijenivši ih očekivanima.
   - izvor: Index
-    naslov: Moguć je novi štrajk ZET-a. Oglasio se profesor s prava
-    sazetak: ARBITRAŽOM je odlučeno da u slučaju štrajka u ZET-u mora raditi 25% zaposlenih. Pravnik Viktor Gotovac upozorava da bi bez preciznog definiranja linija moglo doći do kaosa.
+    naslov: 'VIDEO Matthew se preselio u Hrvatsku i otkrio: "U Americi to nikada nisam mogao"'
+    sazetak: AMERIKANAC koji se prije dvije i pol godine preselio u Hrvatsku objavio je na društvenim mrežama svoju priču o životnoj promjeni.
   - izvor: Index
-    naslov: "Ivica Puljak: Snimke su otišle po Europi. Split je osramoćen"
-    sazetak: BIVŠI splitski gradonačelnik Ivica Puljak osudio je ekstremističke parole Torcide.
+    naslov: Demi Moore privukla pozornost na crvenom tepihu, njezin izgled pokrenuo raspravu
+    sazetak: POJAVLJIVANJE Demi Moore na svečanosti Academy Museuma izazvalo je zabrinutost na društvenim mrežama.
