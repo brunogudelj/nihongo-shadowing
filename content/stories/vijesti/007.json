@@ -1,0 +1,1495 @@
+{
+  "id": "vijesti-007",
+  "theme": "vijesti",
+  "level": "fat",
+  "model": "claude-haiku-5-5",
+  "created": "2026-10-22",
+  "needs_review": [
+    "fond: pokrivenost 92.5% je ispod 95%",
+    "furigana: rečenica 1: 降りました: rječnik kaže おりました, Claude kaže ふりました"
+  ],
+  "fond": {
+    "pokrivenost": 92.5,
+    "izvan_popisa": [
+      "か所 (rečenica 3)",
+      "助け (rečenica 3)",
+      "結果 (rečenica 5)"
+    ]
+  },
+  "trosak_usd": 0.023,
+  "title_ja": "スプリトの雨",
+  "title_hr": "Jaka kiša na splitskom području",
+  "sentences": [
+    {
+      "ja": "水曜日の午後、スプリトで雨がとても強く降りました。",
+      "hr": "U srijedu poslijepodne u Splitu je kiša padala vrlo jako.",
+      "chunks": [
+        "水曜日の午後、",
+        "スプリトで",
+        "雨が",
+        "とても強く",
+        "降りました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "u srijedu poslijepodne,",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u Splitu",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "kiša",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "vrlo jako",
+          "role": "opis",
+          "grammar_hr": "prilog od i-pridjeva: ～く",
+          "formula": "強い (つよい, tsuyoi) → 強く (つよく, tsuyoku)",
+          "rule_hr": "i-pridjev: zadnji い se mijenja u く kad opisuje glagol.",
+          "formula_hr": "Kiša je padala na jak način, vrlo jako."
+        },
+        {
+          "literal_hr": "padala je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "水曜日",
+          "lemma": "水曜日",
+          "reading": "すいようび",
+          "role": "vrijeme",
+          "explanation_hr": "Srijeda, dan u tjednu kada se događaj zbio.",
+          "romaji": "suiyōbi",
+          "furigana": [
+            {
+              "text": "水曜日",
+              "reading": "すいようび"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 738
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje srijedu s dijelom dana.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 750,
+          "end_ms": 875
+        },
+        {
+          "text": "午後",
+          "lemma": "午後",
+          "reading": "ごご",
+          "role": "vrijeme",
+          "explanation_hr": "Poslijepodne.",
+          "romaji": "gogo",
+          "furigana": [
+            {
+              "text": "午後",
+              "reading": "ごご"
+            }
+          ],
+          "start_ms": 888,
+          "end_ms": 1288
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez nakon vremena.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1400,
+          "end_ms": 1575
+        },
+        {
+          "text": "スプリト",
+          "lemma": "スプリト",
+          "reading": "スプリト",
+          "role": "mjesto",
+          "explanation_hr": "Split, hrvatski grad u kojem se događaj zbio.",
+          "romaji": "supurito",
+          "furigana": [
+            {
+              "text": "ス"
+            },
+            {
+              "text": "プ"
+            },
+            {
+              "text": "リ"
+            },
+            {
+              "text": "ト"
+            }
+          ],
+          "start_ms": 1588,
+          "end_ms": 2038
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto gdje se nešto događa.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2050,
+          "end_ms": 2163
+        },
+        {
+          "text": "雨",
+          "lemma": "雨",
+          "reading": "あめ",
+          "role": "subjekt",
+          "explanation_hr": "Kiša, subjekt rečenice.",
+          "romaji": "ame",
+          "furigana": [
+            {
+              "text": "雨",
+              "reading": "あめ"
+            }
+          ],
+          "start_ms": 2175,
+          "end_ms": 2450
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: kiša je padala.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2463,
+          "end_ms": 2600
+        },
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "ostalo",
+          "explanation_hr": "Vrlo, jako.",
+          "romaji": "totemo",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 2613,
+          "end_ms": 3013
+        },
+        {
+          "text": "強く",
+          "lemma": "強い",
+          "reading": "つよく",
+          "role": "ostalo",
+          "explanation_hr": "Jako, snažno: prilog od 強い, opisuje kako kiša pada.",
+          "romaji": "tsuyoku",
+          "furigana": [
+            {
+              "text": "強",
+              "reading": "つよ"
+            },
+            {
+              "text": "く",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3025,
+          "end_ms": 3400
+        },
+        {
+          "text": "降りました",
+          "lemma": "降る",
+          "reading": "ふりました",
+          "role": "glagol",
+          "explanation_hr": "降る (padati) + ました, uljudni prošli oblik: padala je.",
+          "romaji": "orimashita",
+          "furigana": [
+            {
+              "text": "降",
+              "reading": "お"
+            },
+            {
+              "text": "り"
+            },
+            {
+              "text": "ました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3413,
+          "end_ms": 4113
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka na kraju rečenice.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4125,
+          "end_ms": 4225
+        }
+      ],
+      "audio": "vijesti-007-1.mp3",
+      "duration_ms": 4925,
+      "chunk_audio": [
+        "vijesti-007-1-1.mp3",
+        "vijesti-007-1-2.mp3",
+        "vijesti-007-1-3.mp3",
+        "vijesti-007-1-4.mp3",
+        "vijesti-007-1-5.mp3"
+      ],
+      "full_start_ms": 75,
+      "full_end_ms": 4225
+    },
+    {
+      "ja": "その雨のため、いくつかの道と家が水でいっぱいになりました。",
+      "hr": "Zbog te kiše nekoliko ulica i kuća bilo je pod vodom.",
+      "chunks": [
+        "その雨のため、",
+        "いくつかの道と家が",
+        "水でいっぱいに",
+        "なりました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "zbog te kiše,",
+          "role": "ostalo",
+          "grammar_hr": "uzrok: ～ため",
+          "formula": "雨 (あめ, ame) + の + ため (ため, tame)",
+          "rule_hr": "Imenica + の + ため znači zbog i uvodi uzrok.",
+          "formula_hr": "Kiša je razlog što su ulice i kuće poplavljene."
+        },
+        {
+          "literal_hr": "ulice i kuće",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "pune vode",
+          "role": "opis",
+          "grammar_hr": "promjena stanja: ～になる",
+          "formula": "いっぱい (いっぱい, ippai) → いっぱいに (いっぱいに, ippai ni) + なる",
+          "rule_hr": "Imenica ili prilog + に + なる znači postati nečim.",
+          "formula_hr": "Ulice i kuće postale su pune vode."
+        },
+        {
+          "literal_hr": "postale su",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "その",
+          "lemma": "その",
+          "reading": "その",
+          "role": "ostalo",
+          "explanation_hr": "Ta, ta kiša o kojoj se već govori.",
+          "romaji": "sono",
+          "furigana": [
+            {
+              "text": "そ"
+            },
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 388
+        },
+        {
+          "text": "雨",
+          "lemma": "雨",
+          "reading": "あめ",
+          "role": "imenica",
+          "explanation_hr": "Kiša.",
+          "romaji": "ame",
+          "furigana": [
+            {
+              "text": "雨",
+              "reading": "あめ"
+            }
+          ],
+          "start_ms": 400,
+          "end_ms": 675
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje kišu s razlogom ispred.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 688,
+          "end_ms": 813
+        },
+        {
+          "text": "ため",
+          "lemma": "ため",
+          "reading": "ため",
+          "role": "ostalo",
+          "explanation_hr": "Zbog, zato što: uvodi uzrok.",
+          "romaji": "tame",
+          "furigana": [
+            {
+              "text": "た"
+            },
+            {
+              "text": "め"
+            }
+          ],
+          "start_ms": 825,
+          "end_ms": 1138
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1263,
+          "end_ms": 1475
+        },
+        {
+          "text": "いくつか",
+          "lemma": "いくつか",
+          "reading": "いくつか",
+          "role": "ostalo",
+          "explanation_hr": "Nekoliko.",
+          "romaji": "ikutsuka",
+          "furigana": [
+            {
+              "text": "い"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "つ"
+            },
+            {
+              "text": "か",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1488,
+          "end_ms": 1950
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje broj s imenicom ispred.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1963,
+          "end_ms": 2075
+        },
+        {
+          "text": "道",
+          "lemma": "道",
+          "reading": "みち",
+          "role": "imenica",
+          "explanation_hr": "Ulica, cesta.",
+          "romaji": "michi",
+          "furigana": [
+            {
+              "text": "道",
+              "reading": "みち"
+            }
+          ],
+          "start_ms": 2088,
+          "end_ms": 2350
+        },
+        {
+          "text": "と",
+          "lemma": "と",
+          "reading": "と",
+          "role": "veznik",
+          "explanation_hr": "I, povezuje dvije imenice.",
+          "romaji": "to",
+          "furigana": [
+            {
+              "text": "と",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2363,
+          "end_ms": 2463
+        },
+        {
+          "text": "家",
+          "lemma": "家",
+          "reading": "いえ",
+          "role": "subjekt",
+          "explanation_hr": "Kuća, subjekt rečenice.",
+          "romaji": "ie",
+          "furigana": [
+            {
+              "text": "家",
+              "reading": "いえ"
+            }
+          ],
+          "start_ms": 2475,
+          "end_ms": 2688
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt koji je poplavljen.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2700,
+          "end_ms": 2825
+        },
+        {
+          "text": "水",
+          "lemma": "水",
+          "reading": "みず",
+          "role": "imenica",
+          "explanation_hr": "Voda.",
+          "romaji": "mizu",
+          "furigana": [
+            {
+              "text": "水",
+              "reading": "みず"
+            }
+          ],
+          "start_ms": 2838,
+          "end_ms": 3113
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava sadržaj: pun vode.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3125,
+          "end_ms": 3188
+        },
+        {
+          "text": "いっぱい",
+          "lemma": "いっぱい",
+          "reading": "いっぱい",
+          "role": "prilog",
+          "explanation_hr": "Pun, prepun.",
+          "romaji": "ippai",
+          "furigana": [
+            {
+              "text": "い"
+            },
+            {
+              "text": "っ"
+            },
+            {
+              "text": "ぱ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 3200,
+          "end_ms": 3700
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Pretvara riječ u priloški oblik uz なる.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3713,
+          "end_ms": 3825
+        },
+        {
+          "text": "なりました",
+          "lemma": "なる",
+          "reading": "なりました",
+          "role": "glagol",
+          "explanation_hr": "なる (postati) + ました, uljudni prošli oblik: postale su.",
+          "romaji": "narimashita",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3838,
+          "end_ms": 4525
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4538,
+          "end_ms": 4638
+        }
+      ],
+      "audio": "vijesti-007-2.mp3",
+      "duration_ms": 5338,
+      "chunk_audio": [
+        "vijesti-007-2-1.mp3",
+        "vijesti-007-2-2.mp3",
+        "vijesti-007-2-3.mp3",
+        "vijesti-007-2-4.mp3"
+      ],
+      "full_start_ms": 5000,
+      "full_end_ms": 9563
+    },
+    {
+      "ja": "水を外へ出す仕事の人は、二十か所ほど助けに行きました。",
+      "hr": "Ljudi koji izbacuju vodu otišli su pomoći na dvadesetak mjesta.",
+      "chunks": [
+        "水を外へ出す仕事の人は、",
+        "二十か所ほど",
+        "助けに行きました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "ljudi koji izbacuju vodu,",
+          "role": "subjekt",
+          "grammar_hr": "glagol opisuje imenicu",
+          "formula": "出す (だす, dasu) + 仕事の人 (しごとのひと, shigoto no hito)",
+          "rule_hr": "Rječnički oblik glagola ispred imenice opisuje je.",
+          "formula_hr": "Ljudi čiji je posao izbacivati vodu van."
+        },
+        {
+          "literal_hr": "na dvadesetak mjesta",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "otišli su pomoći",
+          "role": "glagol",
+          "grammar_hr": "svrha: ～に行く",
+          "formula": "助ける (たすける, tasukeru) → 助けに行く (たすけにいく, tasuke ni iku)",
+          "rule_hr": "Osnova glagola + に行く znači otići nešto učiniti.",
+          "formula_hr": "Otišli su pomoći na mnogo mjesta."
+        }
+      ],
+      "words": [
+        {
+          "text": "水",
+          "lemma": "水",
+          "reading": "みず",
+          "role": "objekt",
+          "explanation_hr": "Voda, predmet radnje.",
+          "romaji": "mizu",
+          "furigana": [
+            {
+              "text": "水",
+              "reading": "みず"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 338
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava predmet: vodu.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 350,
+          "end_ms": 450
+        },
+        {
+          "text": "外",
+          "lemma": "外",
+          "reading": "そと",
+          "role": "mjesto",
+          "explanation_hr": "Van, vanjska strana.",
+          "romaji": "soto",
+          "furigana": [
+            {
+              "text": "外",
+              "reading": "そと"
+            }
+          ],
+          "start_ms": 463,
+          "end_ms": 738
+        },
+        {
+          "text": "へ",
+          "lemma": "へ",
+          "reading": "へ",
+          "role": "cestica",
+          "explanation_hr": "Označava smjer: van.",
+          "romaji": "e",
+          "furigana": [
+            {
+              "text": "へ",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 750,
+          "end_ms": 888
+        },
+        {
+          "text": "出す",
+          "lemma": "出す",
+          "reading": "だす",
+          "role": "glagol",
+          "explanation_hr": "Izbaciti, izvući, opisuje ljude.",
+          "romaji": "dasu",
+          "furigana": [
+            {
+              "text": "出",
+              "reading": "だ"
+            },
+            {
+              "text": "す"
+            }
+          ],
+          "start_ms": 900,
+          "end_ms": 1175
+        },
+        {
+          "text": "仕事",
+          "lemma": "仕事",
+          "reading": "しごと",
+          "role": "imenica",
+          "explanation_hr": "Posao, zadatak.",
+          "romaji": "shigoto",
+          "furigana": [
+            {
+              "text": "仕事",
+              "reading": "しごと"
+            }
+          ],
+          "start_ms": 1188,
+          "end_ms": 1588
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje posao s osobom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1600,
+          "end_ms": 1700
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "subjekt",
+          "explanation_hr": "Osoba, subjekt rečenice.",
+          "romaji": "hito",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "start_ms": 1713,
+          "end_ms": 1963
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1975,
+          "end_ms": 2213
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2325,
+          "end_ms": 2538
+        },
+        {
+          "text": "二十",
+          "lemma": "二十",
+          "reading": "にじゅう",
+          "role": "ostalo",
+          "explanation_hr": "Broj dvadeset.",
+          "romaji": "nijū",
+          "furigana": [
+            {
+              "text": "二十",
+              "reading": "にじゅう"
+            }
+          ],
+          "start_ms": 2550,
+          "end_ms": 2863
+        },
+        {
+          "text": "か所",
+          "lemma": "か所",
+          "reading": "かしょ",
+          "role": "ostalo",
+          "explanation_hr": "Mjesto, brojač za mjesta.",
+          "romaji": "kasho",
+          "furigana": [
+            {
+              "text": "か"
+            },
+            {
+              "text": "所",
+              "reading": "しょ"
+            }
+          ],
+          "start_ms": 2900,
+          "end_ms": 3175
+        },
+        {
+          "text": "ほど",
+          "lemma": "ほど",
+          "reading": "ほど",
+          "role": "ostalo",
+          "explanation_hr": "Oko, otprilike.",
+          "romaji": "hodo",
+          "furigana": [
+            {
+              "text": "ほど",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3188,
+          "end_ms": 3438
+        },
+        {
+          "text": "助け",
+          "lemma": "助ける",
+          "reading": "たすけ",
+          "role": "glagol",
+          "explanation_hr": "Pomoći, osnova glagola 助ける.",
+          "romaji": "tasuke",
+          "furigana": [
+            {
+              "text": "助",
+              "reading": "たす"
+            },
+            {
+              "text": "け"
+            }
+          ],
+          "start_ms": 3450,
+          "end_ms": 3838
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava svrhu uz 行く.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3850,
+          "end_ms": 3963
+        },
+        {
+          "text": "行きました",
+          "lemma": "行く",
+          "reading": "いきました",
+          "role": "glagol",
+          "explanation_hr": "行く (ići) + ました, uljudni prošli oblik: otišli su.",
+          "romaji": "ikimashita",
+          "furigana": [
+            {
+              "text": "行",
+              "reading": "い"
+            },
+            {
+              "text": "きました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3975,
+          "end_ms": 4675
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4688,
+          "end_ms": 4788
+        }
+      ],
+      "audio": "vijesti-007-3.mp3",
+      "duration_ms": 5488,
+      "chunk_audio": [
+        "vijesti-007-3-1.mp3",
+        "vijesti-007-3-2.mp3",
+        "vijesti-007-3-3.mp3"
+      ],
+      "full_start_ms": 10338,
+      "full_end_ms": 15050
+    },
+    {
+      "ja": "この話は、スプリトの事務所から伝えられました。",
+      "hr": "Ta vijest priopćena je iz splitskog ureda.",
+      "chunks": [
+        "この話は、",
+        "スプリトの事務所から",
+        "伝えられました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "ova vijest,",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "iz splitskog ureda",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "priopćeno je",
+          "role": "glagol",
+          "grammar_hr": "pasiv: ～られる",
+          "formula": "伝える (つたえる, tsutaeru) → 伝えられました (つたえられました, tsutaeraremashita)",
+          "rule_hr": "Glagoli na -える dobivaju -られる za pasiv: 伝え + られる.",
+          "formula_hr": "Vijest je bila priopćena, tj. netko ju je objavio."
+        }
+      ],
+      "words": [
+        {
+          "text": "この",
+          "lemma": "この",
+          "reading": "この",
+          "role": "ostalo",
+          "explanation_hr": "Ova, ova vijest.",
+          "romaji": "kono",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 313
+        },
+        {
+          "text": "話",
+          "lemma": "話",
+          "reading": "はなし",
+          "role": "subjekt",
+          "explanation_hr": "Vijest, priča, subjekt rečenice.",
+          "romaji": "hanashi",
+          "furigana": [
+            {
+              "text": "話",
+              "reading": "はなし"
+            }
+          ],
+          "start_ms": 325,
+          "end_ms": 725
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 738,
+          "end_ms": 1000
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1113,
+          "end_ms": 1238
+        },
+        {
+          "text": "スプリト",
+          "lemma": "スプリト",
+          "reading": "スプリト",
+          "role": "mjesto",
+          "explanation_hr": "Split, mjesto odakle je vijest.",
+          "romaji": "supurito",
+          "furigana": [
+            {
+              "text": "ス"
+            },
+            {
+              "text": "プ"
+            },
+            {
+              "text": "リ"
+            },
+            {
+              "text": "ト"
+            }
+          ],
+          "start_ms": 1250,
+          "end_ms": 1700
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje grad s uredom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1713,
+          "end_ms": 1838
+        },
+        {
+          "text": "事務所",
+          "lemma": "事務所",
+          "reading": "じむしょ",
+          "role": "mjesto",
+          "explanation_hr": "Ured, uprava.",
+          "romaji": "jimusho",
+          "furigana": [
+            {
+              "text": "事務所",
+              "reading": "じむしょ"
+            }
+          ],
+          "start_ms": 1850,
+          "end_ms": 2250
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Od, iz: označava izvor informacije.",
+          "romaji": "kara",
+          "furigana": [
+            {
+              "text": "から",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2263,
+          "end_ms": 2475
+        },
+        {
+          "text": "伝えられました",
+          "lemma": "伝える",
+          "reading": "つたえられました",
+          "role": "glagol",
+          "explanation_hr": "伝える (priopćiti) u pasivu + ました: bilo je priopćeno.",
+          "romaji": "tsutaeraremashita",
+          "furigana": [
+            {
+              "text": "伝",
+              "reading": "つた"
+            },
+            {
+              "text": "え"
+            },
+            {
+              "text": "られました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2488,
+          "end_ms": 3513
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3525,
+          "end_ms": 3625
+        }
+      ],
+      "audio": "vijesti-007-4.mp3",
+      "duration_ms": 4325,
+      "chunk_audio": [
+        "vijesti-007-4-1.mp3",
+        "vijesti-007-4-2.mp3",
+        "vijesti-007-4-3.mp3"
+      ],
+      "full_start_ms": 15863,
+      "full_end_ms": 19375
+    },
+    {
+      "ja": "その結果、町の道や家が大変なことになりました。",
+      "hr": "Kao rezultat, ulice i kuće u gradu našle su se u velikim problemima.",
+      "chunks": [
+        "その結果、",
+        "町の道や家が",
+        "大変なことに",
+        "なりました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "kao rezultat,",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ulice i kuće",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u ozbiljnu situaciju",
+          "role": "opis",
+          "grammar_hr": "promjena stanja: ～になる",
+          "formula": "大変 (たいへん, taihen) → 大変な (たいへんな, taihen na) + こと + に",
+          "rule_hr": "Na-pridjev dobiva な ispred こと, a zatim に + なる znači postati nečim.",
+          "formula_hr": "Ulice i kuće došle su u ozbiljno stanje."
+        },
+        {
+          "literal_hr": "postale su",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "その",
+          "lemma": "その",
+          "reading": "その",
+          "role": "ostalo",
+          "explanation_hr": "Taj, to: pokazuje na prethodnu situaciju.",
+          "romaji": "sono",
+          "furigana": [
+            {
+              "text": "そ"
+            },
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 388
+        },
+        {
+          "text": "結果",
+          "lemma": "結果",
+          "reading": "けっか",
+          "role": "ostalo",
+          "explanation_hr": "Rezultat, posljedica.",
+          "romaji": "kekka",
+          "furigana": [
+            {
+              "text": "結果",
+              "reading": "けっか"
+            }
+          ],
+          "start_ms": 400,
+          "end_ms": 850
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 938,
+          "end_ms": 1050
+        },
+        {
+          "text": "町",
+          "lemma": "町",
+          "reading": "まち",
+          "role": "mjesto",
+          "explanation_hr": "Grad, gradsko područje.",
+          "romaji": "machi",
+          "furigana": [
+            {
+              "text": "町",
+              "reading": "まち"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1363
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje grad s ulicom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1375,
+          "end_ms": 1475
+        },
+        {
+          "text": "道",
+          "lemma": "道",
+          "reading": "みち",
+          "role": "mjesto",
+          "explanation_hr": "Ulica, cesta.",
+          "romaji": "michi",
+          "furigana": [
+            {
+              "text": "道",
+              "reading": "みち"
+            }
+          ],
+          "start_ms": 1488,
+          "end_ms": 1763
+        },
+        {
+          "text": "や",
+          "lemma": "や",
+          "reading": "や",
+          "role": "veznik",
+          "explanation_hr": "I, i tako dalje: nabraja mjesta.",
+          "romaji": "ya",
+          "furigana": [
+            {
+              "text": "や",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1775,
+          "end_ms": 1888
+        },
+        {
+          "text": "家",
+          "lemma": "家",
+          "reading": "いえ",
+          "role": "subjekt",
+          "explanation_hr": "Kuća, subjekt rečenice.",
+          "romaji": "ie",
+          "furigana": [
+            {
+              "text": "家",
+              "reading": "いえ"
+            }
+          ],
+          "start_ms": 1900,
+          "end_ms": 2125
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt rečenice.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2138,
+          "end_ms": 2300
+        },
+        {
+          "text": "大変な",
+          "lemma": "大変",
+          "reading": "たいへんな",
+          "role": "ostalo",
+          "explanation_hr": "Ozbiljan, težak: na-pridjev ispred こと.",
+          "romaji": "taihenna",
+          "furigana": [
+            {
+              "text": "大変",
+              "reading": "たいへん"
+            },
+            {
+              "text": "な",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 2325,
+          "end_ms": 2863
+        },
+        {
+          "text": "こと",
+          "lemma": "こと",
+          "reading": "こと",
+          "role": "imenica",
+          "explanation_hr": "Stvar, situacija.",
+          "romaji": "koto",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 2875,
+          "end_ms": 3075
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Pretvara u oblik uz なる: postati.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3088,
+          "end_ms": 3213
+        },
+        {
+          "text": "なりました",
+          "lemma": "なる",
+          "reading": "なりました",
+          "role": "glagol",
+          "explanation_hr": "なる (postati) + ました, uljudni prošli oblik: postale su.",
+          "romaji": "narimashita",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3225,
+          "end_ms": 3900
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 3913,
+          "end_ms": 4013
+        }
+      ],
+      "audio": "vijesti-007-5.mp3",
+      "duration_ms": 4713,
+      "chunk_audio": [
+        "vijesti-007-5-1.mp3",
+        "vijesti-007-5-2.mp3",
+        "vijesti-007-5-3.mp3",
+        "vijesti-007-5-4.mp3"
+      ],
+      "full_start_ms": 20150,
+      "full_end_ms": 24088
+    }
+  ],
+  "audio": "vijesti-007-cijela.mp3",
+  "duration_ms": 24788
+}
