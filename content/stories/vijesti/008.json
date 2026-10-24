@@ -1,0 +1,1963 @@
+{
+  "id": "vijesti-008",
+  "theme": "vijesti",
+  "level": "fat",
+  "model": "claude-haiku-5-5",
+  "created": "2026-10-24",
+  "needs_review": [
+    "furigana: rečenica 1: 2025年: rječnik kaže 2025ねん, Claude kaže にせんにじゅうごねん",
+    "furigana: rečenica 1: 黒海: rječnik kaže こっかい, Claude kaže くろうみ",
+    "furigana: rečenica 4: 黒海: rječnik kaže こっかい, Claude kaže くろうみ"
+  ],
+  "fond": {
+    "pokrivenost": 97.9,
+    "izvan_popisa": [
+      "多く (rečenica 4)"
+    ]
+  },
+  "trosak_usd": 0.031,
+  "title_ja": "クロアチアの船、EUの魚を多くとる",
+  "title_hr": "Hrvatski ribari: 14 posto ulova EU-a",
+  "sentences": [
+    {
+      "ja": "2025年に、クロアチアの船は地中海と黒海で、EUの魚の百のうち十四をとりました。",
+      "hr": "U 2025. hrvatski ribarski brodovi ostvarili su 14 posto ulova EU-a u Sredozemnom i Crnom moru.",
+      "chunks": [
+        "2025年に、",
+        "クロアチアの船は",
+        "地中海と黒海で、",
+        "EUの魚の百のうち十四を",
+        "とりました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "2025. godine",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "hrvatski brodovi",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "u Sredozemlju i Crnom moru",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "14 od sto ulova",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ulovili su",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "2025年",
+          "lemma": "2025年",
+          "reading": "にせんにじゅうごねん",
+          "role": "vrijeme",
+          "explanation_hr": "Godina 2025, vrijeme kada se to dogodilo.",
+          "romaji": "2025nen",
+          "furigana": [
+            {
+              "text": "2"
+            },
+            {
+              "text": "0"
+            },
+            {
+              "text": "2"
+            },
+            {
+              "text": "5"
+            },
+            {
+              "text": "年",
+              "reading": "ねん"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 1250
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava vrijeme: u 2025. godini.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1263,
+          "end_ms": 1525
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez nakon uvodnog vremena.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1625,
+          "end_ms": 1775
+        },
+        {
+          "text": "クロアチア",
+          "lemma": "クロアチア",
+          "reading": "くろあちあ",
+          "role": "imenica",
+          "explanation_hr": "Hrvatska, zemlja čija se ribarska flota spominje.",
+          "romaji": "kuroachia",
+          "furigana": [
+            {
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ア"
+            },
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ア"
+            }
+          ],
+          "start_ms": 1775,
+          "end_ms": 2375
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje Hrvatsku s njezinim brodovima.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2388,
+          "end_ms": 2488
+        },
+        {
+          "text": "船",
+          "lemma": "船",
+          "reading": "ふね",
+          "role": "subjekt",
+          "explanation_hr": "Brodovi, subjekt rečenice.",
+          "romaji": "fune",
+          "furigana": [
+            {
+              "text": "船",
+              "reading": "ふね"
+            }
+          ],
+          "start_ms": 2500,
+          "end_ms": 2763
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2775,
+          "end_ms": 3025
+        },
+        {
+          "text": "地中海",
+          "lemma": "地中海",
+          "reading": "ちちゅうかい",
+          "role": "mjesto",
+          "explanation_hr": "Sredozemno more, jedno od mjesta ribolova.",
+          "romaji": "chichūkai",
+          "furigana": [
+            {
+              "text": "地中海",
+              "reading": "ちちゅうかい"
+            }
+          ],
+          "start_ms": 3150,
+          "end_ms": 3800
+        },
+        {
+          "text": "と",
+          "lemma": "と",
+          "reading": "と",
+          "role": "cestica",
+          "explanation_hr": "Spaja dva mora: i.",
+          "romaji": "to",
+          "furigana": [
+            {
+              "text": "と",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3813,
+          "end_ms": 3950
+        },
+        {
+          "text": "黒海",
+          "lemma": "黒海",
+          "reading": "くろうみ",
+          "role": "mjesto",
+          "explanation_hr": "Crno more, drugo mjesto ribolova.",
+          "romaji": "kokkai",
+          "furigana": [
+            {
+              "text": "黒海",
+              "reading": "こっかい"
+            }
+          ],
+          "start_ms": 3963,
+          "end_ms": 4463
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: u tim morima.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4475,
+          "end_ms": 4688
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 4700,
+          "end_ms": 4800
+        },
+        {
+          "text": "EU",
+          "lemma": "EU",
+          "reading": "イーユー",
+          "role": "imenica",
+          "explanation_hr": "Europska unija, čiji ulov se uspoređuje.",
+          "romaji": "EU",
+          "furigana": [
+            {
+              "text": "E"
+            },
+            {
+              "text": "U"
+            }
+          ],
+          "start_ms": 4875,
+          "end_ms": 5338
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje EU s ribom.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 5350,
+          "end_ms": 5438
+        },
+        {
+          "text": "魚",
+          "lemma": "魚",
+          "reading": "さかな",
+          "role": "imenica",
+          "explanation_hr": "Riba, ono što se lovi.",
+          "romaji": "sakana",
+          "furigana": [
+            {
+              "text": "魚",
+              "reading": "さかな"
+            }
+          ],
+          "start_ms": 5450,
+          "end_ms": 5850
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje ribu s dijelom ulova.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 5863,
+          "end_ms": 6038
+        },
+        {
+          "text": "百",
+          "lemma": "百",
+          "reading": "ひゃく",
+          "role": "imenica",
+          "explanation_hr": "Sto, cijeli ulov kao 100.",
+          "romaji": "hyaku",
+          "furigana": [
+            {
+              "text": "百",
+              "reading": "ひゃく"
+            }
+          ],
+          "start_ms": 6063,
+          "end_ms": 6375
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje sto s dijelom koji se računa.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 6388,
+          "end_ms": 6475
+        },
+        {
+          "text": "うち",
+          "lemma": "うち",
+          "reading": "うち",
+          "role": "imenica",
+          "explanation_hr": "Od ukupnog, 14 od sto.",
+          "romaji": "uchi",
+          "furigana": [
+            {
+              "text": "う"
+            },
+            {
+              "text": "ち"
+            }
+          ],
+          "start_ms": 6488,
+          "end_ms": 6750
+        },
+        {
+          "text": "十四",
+          "lemma": "十四",
+          "reading": "じゅうよん",
+          "role": "imenica",
+          "explanation_hr": "Broj 14, dio ukupnog ulova.",
+          "romaji": "jūyon",
+          "furigana": [
+            {
+              "text": "十四",
+              "reading": "じゅうよん"
+            }
+          ],
+          "start_ms": 6763,
+          "end_ms": 7200
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt radnje: ulov.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 7213,
+          "end_ms": 7325
+        },
+        {
+          "text": "とりました",
+          "lemma": "とる",
+          "reading": "とりました",
+          "role": "glagol",
+          "explanation_hr": "とる (uloviti, uzeti) + ました, uljudni prošli oblik.",
+          "romaji": "torimashita",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 7338,
+          "end_ms": 8050
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 8063,
+          "end_ms": 8163
+        }
+      ],
+      "audio": "vijesti-008-1.mp3",
+      "duration_ms": 8863,
+      "chunk_audio": [
+        "vijesti-008-1-1.mp3",
+        "vijesti-008-1-2.mp3",
+        "vijesti-008-1-3.mp3",
+        "vijesti-008-1-4.mp3",
+        "vijesti-008-1-5.mp3"
+      ],
+      "full_start_ms": 113,
+      "full_end_ms": 8163
+    },
+    {
+      "ja": "このおかげで、クロアチアはEUの中で上から四つ目までに入りました。",
+      "hr": "Zahvaljujući tome, Hrvatska se u EU-u svrstala među prve četiri zemlje.",
+      "chunks": [
+        "このおかげで、",
+        "クロアチアは",
+        "EUの中で",
+        "上から四つ目までに",
+        "入りました。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "zahvaljujući tome",
+          "role": "ostalo",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "Hrvatska",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "unutar EU-a",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "do četvrtog mjesta",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ušla je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "この",
+          "lemma": "この",
+          "reading": "この",
+          "role": "ostalo",
+          "explanation_hr": "Ovaj, odnosi se na prethodnu rečenicu.",
+          "romaji": "kono",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 325
+        },
+        {
+          "text": "おかげ",
+          "lemma": "おかげ",
+          "reading": "おかげ",
+          "role": "imenica",
+          "explanation_hr": "Zahvaljujući, zbog toga što je tako.",
+          "romaji": "okage",
+          "furigana": [
+            {
+              "text": "お"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "げ"
+            }
+          ],
+          "start_ms": 338,
+          "end_ms": 688
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava uzrok: zahvaljujući tome.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 700,
+          "end_ms": 925
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1025,
+          "end_ms": 1250
+        },
+        {
+          "text": "クロアチア",
+          "lemma": "クロアチア",
+          "reading": "くろあちあ",
+          "role": "imenica",
+          "explanation_hr": "Hrvatska, subjekt ove rečenice.",
+          "romaji": "kuroachia",
+          "furigana": [
+            {
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ア"
+            },
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ア"
+            }
+          ],
+          "start_ms": 1263,
+          "end_ms": 1925
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1938,
+          "end_ms": 2163
+        },
+        {
+          "text": "EU",
+          "lemma": "EU",
+          "reading": "イーユー",
+          "role": "imenica",
+          "explanation_hr": "Europska unija.",
+          "romaji": "EU",
+          "furigana": [
+            {
+              "text": "E"
+            },
+            {
+              "text": "U"
+            }
+          ],
+          "start_ms": 2313,
+          "end_ms": 2725
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje EU s mjestom: u EU-u.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2738,
+          "end_ms": 2838
+        },
+        {
+          "text": "中",
+          "lemma": "中",
+          "reading": "なか",
+          "role": "imenica",
+          "explanation_hr": "Unutrašnjost, među.",
+          "romaji": "naka",
+          "furigana": [
+            {
+              "text": "中",
+              "reading": "なか"
+            }
+          ],
+          "start_ms": 2850,
+          "end_ms": 3088
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: unutar EU-a.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3100,
+          "end_ms": 3213
+        },
+        {
+          "text": "上",
+          "lemma": "上",
+          "reading": "うえ",
+          "role": "imenica",
+          "explanation_hr": "Vrh, početak ljestvice.",
+          "romaji": "ue",
+          "furigana": [
+            {
+              "text": "上",
+              "reading": "うえ"
+            }
+          ],
+          "start_ms": 3225,
+          "end_ms": 3463
+        },
+        {
+          "text": "から",
+          "lemma": "から",
+          "reading": "から",
+          "role": "cestica",
+          "explanation_hr": "Označava polazište: odozgo.",
+          "romaji": "kara",
+          "furigana": [
+            {
+              "text": "から",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3475,
+          "end_ms": 3750
+        },
+        {
+          "text": "四つ目",
+          "lemma": "四つ目",
+          "reading": "よっつめ",
+          "role": "imenica",
+          "explanation_hr": "Četvrto mjesto na ljestvici.",
+          "romaji": "yottsume",
+          "furigana": [
+            {
+              "text": "四",
+              "reading": "よっ"
+            },
+            {
+              "text": "つ"
+            },
+            {
+              "text": "目",
+              "reading": "め"
+            }
+          ],
+          "start_ms": 3800,
+          "end_ms": 4300
+        },
+        {
+          "text": "まで",
+          "lemma": "まで",
+          "reading": "まで",
+          "role": "cestica",
+          "explanation_hr": "Označava granicu: do.",
+          "romaji": "made",
+          "furigana": [
+            {
+              "text": "まで",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4313,
+          "end_ms": 4513
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava cilj ulaska: među.",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4525,
+          "end_ms": 4638
+        },
+        {
+          "text": "入りました",
+          "lemma": "入る",
+          "reading": "はいりました",
+          "role": "glagol",
+          "explanation_hr": "入る (ući, ući među) + ました, uljudni prošli oblik.",
+          "romaji": "hairimashita",
+          "furigana": [
+            {
+              "text": "入",
+              "reading": "はい"
+            },
+            {
+              "text": "りました",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 4650,
+          "end_ms": 5475
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 5488,
+          "end_ms": 5588
+        }
+      ],
+      "audio": "vijesti-008-2.mp3",
+      "duration_ms": 6288,
+      "chunk_audio": [
+        "vijesti-008-2-1.mp3",
+        "vijesti-008-2-2.mp3",
+        "vijesti-008-2-3.mp3",
+        "vijesti-008-2-4.mp3",
+        "vijesti-008-2-5.mp3"
+      ],
+      "full_start_ms": 8975,
+      "full_end_ms": 14450
+    },
+    {
+      "ja": "ユーロスタットが新しく調べたことを聞くと、はっきり分かります。",
+      "hr": "Kad čujemo što je Eurostat nedavno istražio, to se jasno vidi.",
+      "chunks": [
+        "ユーロスタットが",
+        "新しく",
+        "調べたことを",
+        "聞くと、",
+        "はっきり",
+        "分かります。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "Eurostat",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "nedavno",
+          "role": "opis",
+          "grammar_hr": "prilog od i-pridjeva: ～く",
+          "formula": "新しい (あたらしい, atarashii) → 新しく (あたらしく, atarashiku)",
+          "rule_hr": "i-pridjev: い → く kad modificira glagol.",
+          "formula_hr": "Eurostat je nedavno nešto istražio."
+        },
+        {
+          "literal_hr": "što je istražio",
+          "role": "objekt",
+          "grammar_hr": "glagol opisuje imenicu",
+          "formula": "調べる (しらべる, shiraberu) → 調べた (しらべた, shirabeta) + こと",
+          "rule_hr": "Obični prošli oblik glagola stoji ispred imenice i opisuje je.",
+          "formula_hr": "Ono što je Eurostat istražio."
+        },
+        {
+          "literal_hr": "kad čujemo",
+          "role": "glagol",
+          "grammar_hr": "uvjet: ～と (kad se nešto dogodi)",
+          "formula": "聞く (きく, kiku) → 聞くと (きくと, kiku to)",
+          "rule_hr": "Glagol u rječničkom obliku + と znači kad se to dogodi ili čim.",
+          "formula_hr": "Kad se to čuje, rezultat je jasan."
+        },
+        {
+          "literal_hr": "jasno",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "vidi se",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "ユーロスタット",
+          "lemma": "ユーロスタット",
+          "reading": "ゆーろすたっと",
+          "role": "imenica",
+          "explanation_hr": "Eurostat, statistički ured EU-a.",
+          "romaji": "yūrosutatto",
+          "furigana": [
+            {
+              "text": "ユ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ス"
+            },
+            {
+              "text": "タ"
+            },
+            {
+              "text": "ッ"
+            },
+            {
+              "text": "ト"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 913
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt relativne rečenice: Eurostat je istražio.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 925,
+          "end_ms": 1063
+        },
+        {
+          "text": "新しく",
+          "lemma": "新しい",
+          "reading": "あたらしく",
+          "role": "prilog",
+          "explanation_hr": "Nedavno, novo (新しい + く, prilog).",
+          "romaji": "atarashiku",
+          "furigana": [
+            {
+              "text": "新",
+              "reading": "あたら"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "く",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1075,
+          "end_ms": 1675
+        },
+        {
+          "text": "調べた",
+          "lemma": "調べる",
+          "reading": "しらべた",
+          "role": "glagol",
+          "explanation_hr": "調べる (istraživati) + た, obični prošli oblik koji opisuje 'stvar'.",
+          "romaji": "shirabeta",
+          "furigana": [
+            {
+              "text": "調",
+              "reading": "しら"
+            },
+            {
+              "text": "べ"
+            },
+            {
+              "text": "た",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1688,
+          "end_ms": 2188
+        },
+        {
+          "text": "こと",
+          "lemma": "こと",
+          "reading": "こと",
+          "role": "imenica",
+          "explanation_hr": "Stvar, ono što je istraženo.",
+          "romaji": "koto",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 2200,
+          "end_ms": 2450
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt glagola slušanja.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2463,
+          "end_ms": 2538
+        },
+        {
+          "text": "聞くと",
+          "lemma": "聞く",
+          "reading": "きくと",
+          "role": "glagol",
+          "explanation_hr": "聞く (čuti) + と: kad se čuje.",
+          "romaji": "kikuto",
+          "furigana": [
+            {
+              "text": "聞",
+              "reading": "き"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "と",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2550,
+          "end_ms": 3088
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 3188,
+          "end_ms": 3375
+        },
+        {
+          "text": "はっきり",
+          "lemma": "はっきり",
+          "reading": "はっきり",
+          "role": "prilog",
+          "explanation_hr": "Jasno, očito.",
+          "romaji": "hakkiri",
+          "furigana": [
+            {
+              "text": "は"
+            },
+            {
+              "text": "っ"
+            },
+            {
+              "text": "き"
+            },
+            {
+              "text": "り"
+            }
+          ],
+          "start_ms": 3388,
+          "end_ms": 3850
+        },
+        {
+          "text": "分かります",
+          "lemma": "分かる",
+          "reading": "わかります",
+          "role": "glagol",
+          "explanation_hr": "分かる (biti jasno) + ます, uljudni oblik.",
+          "romaji": "wakarimasu",
+          "furigana": [
+            {
+              "text": "分",
+              "reading": "わ"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "ります",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3863,
+          "end_ms": 4563
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4575,
+          "end_ms": 4675
+        }
+      ],
+      "audio": "vijesti-008-3.mp3",
+      "duration_ms": 5375,
+      "chunk_audio": [
+        "vijesti-008-3-1.mp3",
+        "vijesti-008-3-2.mp3",
+        "vijesti-008-3-3.mp3",
+        "vijesti-008-3-4.mp3",
+        "vijesti-008-3-5.mp3",
+        "vijesti-008-3-6.mp3"
+      ],
+      "full_start_ms": 15225,
+      "full_end_ms": 19825
+    },
+    {
+      "ja": "地中海と黒海は、EUの多くの国が魚をとる海なので、このことは大きなニュースです。",
+      "hr": "Sredozemno i Crno more važna su mora na kojima ribu love mnoge zemlje EU-a, pa je to velika vijest.",
+      "chunks": [
+        "地中海と黒海は、",
+        "EUの多くの国が",
+        "魚をとる",
+        "海なので、",
+        "このことは",
+        "大きなニュースです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "Sredozemno i Crno more",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "mnoge države EU-a",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "love ribu",
+          "role": "opis",
+          "grammar_hr": "glagol opisuje imenicu",
+          "formula": "とる (とる, toru) + 海 (うみ, umi)",
+          "rule_hr": "Obični oblik glagola stoji ispred imenice i opisuje je.",
+          "formula_hr": "More na kojem se lovi riba."
+        },
+        {
+          "literal_hr": "jer je to more",
+          "role": "ostalo",
+          "grammar_hr": "razlog: ～ので (zato što)",
+          "formula": "海 (うみ, umi) + なので (なので, nanode)",
+          "rule_hr": "Iza imenice ili pridjeva-na stavi なので za razlog.",
+          "formula_hr": "Zato što je to more važno za ribare, vijest je velika."
+        },
+        {
+          "literal_hr": "ovo",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "velika vijest je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "地中海",
+          "lemma": "地中海",
+          "reading": "ちちゅうかい",
+          "role": "imenica",
+          "explanation_hr": "Sredozemno more, tema rečenice.",
+          "romaji": "chichūkai",
+          "furigana": [
+            {
+              "text": "地中海",
+              "reading": "ちちゅうかい"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 725
+        },
+        {
+          "text": "と",
+          "lemma": "と",
+          "reading": "と",
+          "role": "cestica",
+          "explanation_hr": "Spaja dva mora: i.",
+          "romaji": "to",
+          "furigana": [
+            {
+              "text": "と",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 738,
+          "end_ms": 863
+        },
+        {
+          "text": "黒海",
+          "lemma": "黒海",
+          "reading": "くろうみ",
+          "role": "imenica",
+          "explanation_hr": "Crno more.",
+          "romaji": "kokkai",
+          "furigana": [
+            {
+              "text": "黒海",
+              "reading": "こっかい"
+            }
+          ],
+          "start_ms": 875,
+          "end_ms": 1338
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1350,
+          "end_ms": 1650
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1750,
+          "end_ms": 1913
+        },
+        {
+          "text": "EU",
+          "lemma": "EU",
+          "reading": "イーユー",
+          "role": "imenica",
+          "explanation_hr": "Europska unija.",
+          "romaji": "EU",
+          "furigana": [
+            {
+              "text": "E"
+            },
+            {
+              "text": "U"
+            }
+          ],
+          "start_ms": 1913,
+          "end_ms": 2350
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje EU s državama.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2363,
+          "end_ms": 2463
+        },
+        {
+          "text": "多く",
+          "lemma": "多い",
+          "reading": "おおく",
+          "role": "pridjev",
+          "explanation_hr": "Mnogo, mnoge (oblik od 多い uz imenicu).",
+          "romaji": "ōku",
+          "furigana": [
+            {
+              "text": "多",
+              "reading": "おお"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "start_ms": 2475,
+          "end_ms": 2838
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje broj s državama.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2850,
+          "end_ms": 2975
+        },
+        {
+          "text": "国",
+          "lemma": "国",
+          "reading": "くに",
+          "role": "imenica",
+          "explanation_hr": "Država, zemlja.",
+          "romaji": "kuni",
+          "furigana": [
+            {
+              "text": "国",
+              "reading": "くに"
+            }
+          ],
+          "start_ms": 2988,
+          "end_ms": 3225
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Subjekt uz glagol u relativnoj rečenici.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3238,
+          "end_ms": 3375
+        },
+        {
+          "text": "魚",
+          "lemma": "魚",
+          "reading": "さかな",
+          "role": "imenica",
+          "explanation_hr": "Riba.",
+          "romaji": "sakana",
+          "furigana": [
+            {
+              "text": "魚",
+              "reading": "さかな"
+            }
+          ],
+          "start_ms": 3413,
+          "end_ms": 3800
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Objekt glagola lovljenja.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3813,
+          "end_ms": 3913
+        },
+        {
+          "text": "とる",
+          "lemma": "とる",
+          "reading": "とる",
+          "role": "glagol",
+          "explanation_hr": "Loviti, uloviti; obični oblik koji opisuje more.",
+          "romaji": "toru",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 3925,
+          "end_ms": 4175
+        },
+        {
+          "text": "海",
+          "lemma": "海",
+          "reading": "うみ",
+          "role": "imenica",
+          "explanation_hr": "More.",
+          "romaji": "umi",
+          "furigana": [
+            {
+              "text": "海",
+              "reading": "うみ"
+            }
+          ],
+          "start_ms": 4188,
+          "end_ms": 4413
+        },
+        {
+          "text": "なので",
+          "lemma": "なので",
+          "reading": "なので",
+          "role": "veznik",
+          "explanation_hr": "Zato što je tako: uzročna veza.",
+          "romaji": "nanode",
+          "furigana": [
+            {
+              "text": "な",
+              "kind": "kopula"
+            },
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 4425,
+          "end_ms": 4900
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 4913,
+          "end_ms": 5013
+        },
+        {
+          "text": "この",
+          "lemma": "この",
+          "reading": "この",
+          "role": "ostalo",
+          "explanation_hr": "Ovaj, odnosi se na ulov.",
+          "romaji": "kono",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "の"
+            }
+          ],
+          "start_ms": 5088,
+          "end_ms": 5350
+        },
+        {
+          "text": "こと",
+          "lemma": "こと",
+          "reading": "こと",
+          "role": "imenica",
+          "explanation_hr": "Stvar, činjenica.",
+          "romaji": "koto",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 5363,
+          "end_ms": 5613
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 5625,
+          "end_ms": 5813
+        },
+        {
+          "text": "大きな",
+          "lemma": "大きい",
+          "reading": "おおきな",
+          "role": "pridjev",
+          "explanation_hr": "Velik, važan (uz imenicu).",
+          "romaji": "ōkina",
+          "furigana": [
+            {
+              "text": "大",
+              "reading": "おお"
+            },
+            {
+              "text": "き"
+            },
+            {
+              "text": "な"
+            }
+          ],
+          "start_ms": 5838,
+          "end_ms": 6388
+        },
+        {
+          "text": "ニュース",
+          "lemma": "ニュース",
+          "reading": "にゅーす",
+          "role": "imenica",
+          "explanation_hr": "Vijest.",
+          "romaji": "nyūsu",
+          "furigana": [
+            {
+              "text": "ニ"
+            },
+            {
+              "text": "ュ"
+            },
+            {
+              "text": "ー"
+            },
+            {
+              "text": "ス"
+            }
+          ],
+          "start_ms": 6400,
+          "end_ms": 6788
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Je, uljudni oblik.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 6800,
+          "end_ms": 7175
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 7188,
+          "end_ms": 7288
+        }
+      ],
+      "audio": "vijesti-008-4.mp3",
+      "duration_ms": 7988,
+      "chunk_audio": [
+        "vijesti-008-4-1.mp3",
+        "vijesti-008-4-2.mp3",
+        "vijesti-008-4-3.mp3",
+        "vijesti-008-4-4.mp3",
+        "vijesti-008-4-5.mp3",
+        "vijesti-008-4-6.mp3"
+      ],
+      "full_start_ms": 20600,
+      "full_end_ms": 27813
+    },
+    {
+      "ja": "これは、クロアチアの海で働く人にとって、うれしいことです。",
+      "hr": "To je radosna vijest za one koji u Hrvatskoj rade na moru.",
+      "chunks": [
+        "これは、",
+        "クロアチアの海で",
+        "働く人にとって、",
+        "うれしいことです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "ovo je",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "na hrvatskom moru",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "za ljude koji rade",
+          "role": "ostalo",
+          "grammar_hr": "glagol opisuje imenicu",
+          "formula": "働く (はたらく, hataraku) + 人 (ひと, hito)",
+          "rule_hr": "Obični oblik glagola stoji ispred imenice i opisuje je.",
+          "formula_hr": "Ljudi koji rade na moru: za njih je to dobra vijest."
+        },
+        {
+          "literal_hr": "radosna stvar je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "これ",
+          "lemma": "これ",
+          "reading": "これ",
+          "role": "subjekt",
+          "explanation_hr": "Ovo, cijela ova vijest.",
+          "romaji": "kore",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "れ"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 313
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 325,
+          "end_ms": 550
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 638,
+          "end_ms": 813
+        },
+        {
+          "text": "クロアチア",
+          "lemma": "クロアチア",
+          "reading": "くろあちあ",
+          "role": "imenica",
+          "explanation_hr": "Hrvatska.",
+          "romaji": "kuroachia",
+          "furigana": [
+            {
+              "text": "ク"
+            },
+            {
+              "text": "ロ"
+            },
+            {
+              "text": "ア"
+            },
+            {
+              "text": "チ"
+            },
+            {
+              "text": "ア"
+            }
+          ],
+          "start_ms": 825,
+          "end_ms": 1475
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje Hrvatsku s morem.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1488,
+          "end_ms": 1588
+        },
+        {
+          "text": "海",
+          "lemma": "海",
+          "reading": "うみ",
+          "role": "imenica",
+          "explanation_hr": "More, mjesto rada.",
+          "romaji": "umi",
+          "furigana": [
+            {
+              "text": "海",
+              "reading": "うみ"
+            }
+          ],
+          "start_ms": 1600,
+          "end_ms": 1838
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: na moru.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1850,
+          "end_ms": 1938
+        },
+        {
+          "text": "働く",
+          "lemma": "働く",
+          "reading": "はたらく",
+          "role": "glagol",
+          "explanation_hr": "Raditi; obični oblik koji opisuje 人.",
+          "romaji": "hataraku",
+          "furigana": [
+            {
+              "text": "働",
+              "reading": "はたら"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "start_ms": 1950,
+          "end_ms": 2438
+        },
+        {
+          "text": "人",
+          "lemma": "人",
+          "reading": "ひと",
+          "role": "imenica",
+          "explanation_hr": "Osoba, ljudi.",
+          "romaji": "hito",
+          "furigana": [
+            {
+              "text": "人",
+              "reading": "ひと"
+            }
+          ],
+          "start_ms": 2450,
+          "end_ms": 2663
+        },
+        {
+          "text": "にとって",
+          "lemma": "にとって",
+          "reading": "にとって",
+          "role": "ostalo",
+          "explanation_hr": "Za njih, iz njihove perspektive.",
+          "romaji": "nitotte",
+          "furigana": [
+            {
+              "text": "にとって",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2675,
+          "end_ms": 3225
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 3338,
+          "end_ms": 3538
+        },
+        {
+          "text": "うれしい",
+          "lemma": "うれしい",
+          "reading": "うれしい",
+          "role": "pridjev",
+          "explanation_hr": "Radostan, drago.",
+          "romaji": "ureshii",
+          "furigana": [
+            {
+              "text": "う"
+            },
+            {
+              "text": "れ"
+            },
+            {
+              "text": "し"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 3538,
+          "end_ms": 4025
+        },
+        {
+          "text": "こと",
+          "lemma": "こと",
+          "reading": "こと",
+          "role": "imenica",
+          "explanation_hr": "Stvar, činjenica.",
+          "romaji": "koto",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 4038,
+          "end_ms": 4275
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Je, uljudni oblik.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 4288,
+          "end_ms": 4650
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4663,
+          "end_ms": 4763
+        }
+      ],
+      "audio": "vijesti-008-5.mp3",
+      "duration_ms": 5463,
+      "chunk_audio": [
+        "vijesti-008-5-1.mp3",
+        "vijesti-008-5-2.mp3",
+        "vijesti-008-5-3.mp3",
+        "vijesti-008-5-4.mp3"
+      ],
+      "full_start_ms": 28625,
+      "full_end_ms": 33275
+    }
+  ],
+  "audio": "vijesti-008-cijela.mp3",
+  "duration_ms": 33975
+}
