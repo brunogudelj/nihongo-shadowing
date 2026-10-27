@@ -76,6 +76,22 @@ if (existsSync(DIR)) {
   }
 }
 
+// Već obrađene teme se izbacuju prije Claudea (inače isti naslov, koji danima stoji na popisu, dolazi
+// opet). Usporedba po korijenima riječi (prvih 4 slova), da Hrgović i Hrgovića budu isto.
+const stems = (t) => new Set((t.toLowerCase().match(/[\p{L}\d]{4,}/gu) ?? []).map((w) => w.slice(0, 4)))
+export function sameTopic(a, b) {
+  const x = stems(a)
+  const y = stems(b)
+  const shared = [...x].filter((w) => y.has(w)).length
+  return shared >= 2 && shared >= 0.3 * Math.min(x.size, y.size)
+}
+const fresh = headlines.filter((h) => !recent.some((r) => sameTopic(h.naslov, r)))
+console.log(`Izbačeno već obrađenih: ${headlines.length - fresh.length}, ostaje ${fresh.length} naslova.`)
+if (!fresh.length) {
+  console.error('Svi naslovi su već obrađeni. Danas nema nove vijesti (ništa nije potrošeno).')
+  process.exit(1)
+}
+
 const theme = {
   naziv: 'Vijest dana',
   razina: 'fat',
@@ -91,12 +107,12 @@ const theme = {
     'Avoid katakana loanwords that are not N5/N4 words (e.g. use 試合 and 選手, not チーム or ビデオ).',
     'title_hr: the Croatian headline you chose (shortened if long). title_ja: its short Japanese title.',
   ],
-  vec_obradjeno: recent.length ? recent : undefined,
-  naslovi: headlines,
+  vec_obradjeno: recent.length ? [...new Set(recent)] : undefined,
+  naslovi: fresh,
 }
 writeFileSync(
   'themes/vijesti.yaml',
   '# Tema za dnevnu vijest. Ovu datoteku svaki dan iznova piše pipeline/news.mjs; ne mijenjaj je ručno.\n\n' +
     stringify(theme, { lineWidth: 0 }),
 )
-console.log(`Spremljeno themes/vijesti.yaml (${headlines.length} naslova).`)
+console.log(`Spremljeno themes/vijesti.yaml (${fresh.length} naslova).`)
