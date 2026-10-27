@@ -61,6 +61,7 @@ Sve brojke se mijenjaju na jednom mjestu: `src/vodic-config.ts` (`KARTICE` i `SE
 - **Sesije od 30 i 45 min**: gumbi 5/10/15/30/45; ako ostane vremena, drugi krug blokova koji se smiju ponoviti (Riječi, Konjugator, Čitanje, Nove riječi), nikad isti blok zaredom.
 - **📐 Gramatika sesije** (novi blok, 10 min, u sesijama od 30/45): jedna točka po sesiji. Kratko objašnjenje na hrvatskom s formulom, 4–6 primjera (furigana, zvuk, prijevod, ponovi naglas), mini kviz od 4 pitanja, Znao/Nisam → FSRS kartica (vrsta „gramatika”). Prvi skup: parovi prijelazni/neprijelazni glagoli (開ける/開く, 閉める/閉まる, つける/つく, 消す/消える, 始める/始まる, 止める/止まる, 入れる/入る, 出す/出る, 落とす/落ちる, 壊す/壊れる). Sadržaj piše Claude u pipelineu (10 točaka: ~1,5 $ Opus ili ~0,10 $ Haiku), zvuk Azure besplatno. Otvoreno: i u sesijama od 15 min? model?
 - **Čisti način: dodir na riječ je izgovori.** Sada se u Čistom mora slušati cijela rečenica. Izvedba: pipeline izgovori svaku riječ priče zasebno (Azure, unutar besplatnog limita; rezanje snimke rečenice zvuči odsječeno), a dodir pusti taj mp3. Za riječi s popisa već postoji izgovor u `public/izgovor/`.
+- **Fraze s glagolima** (📐 Oblici): koje čestice glagol traži, npr. AのBを手伝う (pomoći nekome s nečim), AにBを教える, AとBを比べる. Nema ih u pričama; Claude bi jednom prošao glagole iz priča (~150) i napisao frazu + primjer (~0,50 $ Haiku / ~3 $ Opus), zvuk besplatno.
 - **💰 Potrošnja u aplikaciji**: pipeline zapisuje trošak (Anthropic, Azure znakovi), zaslon po mjesecima.
 
 ### B) Iduće (redom)
