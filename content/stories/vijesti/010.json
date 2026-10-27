@@ -1,0 +1,1850 @@
+{
+  "id": "vijesti-010",
+  "theme": "vijesti",
+  "level": "fat",
+  "model": "claude-haiku-5-5",
+  "created": "2026-10-27",
+  "needs_review": [
+    "furigana: rečenica 4: 日中: rječnik kaže にちちゅう, Claude kaže にっちゅう",
+    "furigana: rečenica 5: 海: nema u rječniku, koristim Claudeovo うみ"
+  ],
+  "fond": {
+    "pokrivenost": 97.8,
+    "izvan_popisa": [
+      "見にくい (rečenica 2)"
+    ]
+  },
+  "trosak_usd": 0.026,
+  "title_ja": "火曜日の天気",
+  "title_hr": "Utorak sunčan, u gorju moguć mraz, na Jadranu jaka bura",
+  "sentences": [
+    {
+      "ja": "月曜日はほとんど晴れだったので、火曜日も似た天気になるそうです。",
+      "hr": "Ponedjeljak je bio većinom sunčan, pa se prema izvješćima i utorak očekuje sličnog vremena.",
+      "chunks": [
+        "月曜日は",
+        "ほとんど",
+        "晴れだったので、",
+        "火曜日も",
+        "似た天気に",
+        "なるそうです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "ponedjeljak",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "gotovo",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "bio sunčan, pa",
+          "role": "glagol",
+          "grammar_hr": "prošlo vrijeme na-pridjeva i ～ので",
+          "formula": "晴れ (はれ, hare) → 晴れだった (はれだった, haredatta) + ので (ので, node)",
+          "rule_hr": "Na-pridjev u prošlom obliku: だ → だった; ので dolazi iza običnog oblika i znači 'zato što'.",
+          "formula_hr": "Ponedjeljak je bio sunčan, pa je razlog za sljedeću rečenicu."
+        },
+        {
+          "literal_hr": "i utorak",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "sličnim vremenom",
+          "role": "opis",
+          "grammar_hr": "glagol opisuje imenicu",
+          "formula": "似る (にる, niru) → 似た (にた, nita) + imenica",
+          "rule_hr": "Obični prošli oblik glagola stoji ispred imenice i opisuje je.",
+          "formula_hr": "Vrijeme je slično onome iz ponedjeljka."
+        },
+        {
+          "literal_hr": "kažu da će biti",
+          "role": "glagol",
+          "grammar_hr": "prenošenje tuđih riječi: ～そうです",
+          "formula": "なる (なる, naru) → なるそうです (なるそうです, naru sō desu)",
+          "rule_hr": "Ispred そうです dolazi obični oblik glagola; znači 'čuje se da'.",
+          "formula_hr": "Vijest prenosi što se prema izvoru očekuje."
+        }
+      ],
+      "words": [
+        {
+          "text": "月曜日",
+          "lemma": "月曜日",
+          "reading": "げつようび",
+          "role": "vrijeme",
+          "explanation_hr": "Ponedjeljak; vrijeme o kojem se govori.",
+          "romaji": "getsuyōbi",
+          "furigana": [
+            {
+              "text": "月曜日",
+              "reading": "げつようび"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 725
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu rečenice: ponedjeljak.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 738,
+          "end_ms": 863
+        },
+        {
+          "text": "ほとんど",
+          "lemma": "ほとんど",
+          "reading": "ほとんど",
+          "role": "ostalo",
+          "explanation_hr": "Gotovo, većinom.",
+          "romaji": "hotondo",
+          "furigana": [
+            {
+              "text": "ほ"
+            },
+            {
+              "text": "と"
+            },
+            {
+              "text": "ん"
+            },
+            {
+              "text": "ど"
+            }
+          ],
+          "start_ms": 875,
+          "end_ms": 1400
+        },
+        {
+          "text": "晴れだった",
+          "lemma": "晴れ",
+          "reading": "はれだった",
+          "role": "glagol",
+          "explanation_hr": "晴れ (はれ, sunčano) + だった, prošlo vrijeme: bio je sunčan.",
+          "romaji": "haredatta",
+          "furigana": [
+            {
+              "text": "晴",
+              "reading": "は"
+            },
+            {
+              "text": "れ"
+            },
+            {
+              "text": "だった",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 1413,
+          "end_ms": 1988
+        },
+        {
+          "text": "ので",
+          "lemma": "ので",
+          "reading": "ので",
+          "role": "ostalo",
+          "explanation_hr": "Zato što, pa; uvodi posljedicu.",
+          "romaji": "node",
+          "furigana": [
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2000,
+          "end_ms": 2338
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2438,
+          "end_ms": 2663
+        },
+        {
+          "text": "火曜日",
+          "lemma": "火曜日",
+          "reading": "かようび",
+          "role": "vrijeme",
+          "explanation_hr": "Utorak.",
+          "romaji": "kayōbi",
+          "furigana": [
+            {
+              "text": "火曜日",
+              "reading": "かようび"
+            }
+          ],
+          "start_ms": 2663,
+          "end_ms": 3175
+        },
+        {
+          "text": "も",
+          "lemma": "も",
+          "reading": "も",
+          "role": "cestica",
+          "explanation_hr": "I, također: i utorak.",
+          "romaji": "mo",
+          "furigana": [
+            {
+              "text": "も",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3188,
+          "end_ms": 3300
+        },
+        {
+          "text": "似た",
+          "lemma": "似る",
+          "reading": "にた",
+          "role": "pridjev",
+          "explanation_hr": "似る (にる, biti sličan) u prošlom obliku koji opisuje sljedeću imenicu.",
+          "romaji": "nita",
+          "furigana": [
+            {
+              "text": "似",
+              "reading": "に"
+            },
+            {
+              "text": "た",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3313,
+          "end_ms": 3600
+        },
+        {
+          "text": "天気",
+          "lemma": "天気",
+          "reading": "てんき",
+          "role": "imenica",
+          "explanation_hr": "Vrijeme (vremenski uvjeti).",
+          "romaji": "tenki",
+          "furigana": [
+            {
+              "text": "天気",
+              "reading": "てんき"
+            }
+          ],
+          "start_ms": 3613,
+          "end_ms": 3988
+        },
+        {
+          "text": "に",
+          "lemma": "に",
+          "reading": "に",
+          "role": "cestica",
+          "explanation_hr": "Označava ishod: u (sličnom vremenu).",
+          "romaji": "ni",
+          "furigana": [
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4000,
+          "end_ms": 4100
+        },
+        {
+          "text": "なる",
+          "lemma": "なる",
+          "reading": "なる",
+          "role": "glagol",
+          "explanation_hr": "なる (biti, postati) u običnom obliku ispred そうです.",
+          "romaji": "naru",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 4113,
+          "end_ms": 4325
+        },
+        {
+          "text": "そうです",
+          "lemma": "そうです",
+          "reading": "そうです",
+          "role": "glagol",
+          "explanation_hr": "Prenosi tuđu informaciju: čuje se da, kažu da.",
+          "romaji": "sō desu",
+          "furigana": [
+            {
+              "text": "そ"
+            },
+            {
+              "text": "う"
+            },
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 4338,
+          "end_ms": 4925
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4938,
+          "end_ms": 5038
+        }
+      ],
+      "audio": "vijesti-010-1.mp3",
+      "duration_ms": 5738,
+      "chunk_audio": [
+        "vijesti-010-1-1.mp3",
+        "vijesti-010-1-2.mp3",
+        "vijesti-010-1-3.mp3",
+        "vijesti-010-1-4.mp3",
+        "vijesti-010-1-5.mp3",
+        "vijesti-010-1-6.mp3"
+      ],
+      "full_start_ms": 75,
+      "full_end_ms": 5038
+    },
+    {
+      "ja": "朝は見にくいところがあるので、運転するときは注意が必要です。",
+      "hr": "Ujutro na nekim mjestima slabo se vidi, pa je pri vožnji potrebna pozornost.",
+      "chunks": [
+        "朝は",
+        "見にくいところが",
+        "あるので、",
+        "運転するときは",
+        "注意が必要です。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "ujutro",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "slabo vidljiva mjesta",
+          "role": "subjekt",
+          "grammar_hr": "teškoća: ～にくい",
+          "formula": "見る (みる, miru) → 見にくい (みにくい, mi nikui)",
+          "rule_hr": "Osnova glagola + にくい znači 'teško je'.",
+          "formula_hr": "Na nekim mjestima je teško vidjeti, pa treba biti oprezan."
+        },
+        {
+          "literal_hr": "postoje, pa",
+          "role": "glagol",
+          "grammar_hr": "uzrok: ～ので",
+          "formula": "ある (ある, aru) → あるので (あるので, aru node)",
+          "rule_hr": "Obični oblik glagola ispred ので znači 'zato što'.",
+          "formula_hr": "Postoje mjesta koja su slabo vidljiva, pa treba biti oprezan."
+        },
+        {
+          "literal_hr": "pri vožnji",
+          "role": "vrijeme",
+          "grammar_hr": "vrijeme: ～とき",
+          "formula": "運転する (うんてんする, unten suru) → 運転するとき (うんてんするとき, unten suru toki)",
+          "rule_hr": "Obični oblik glagola ispred とき znači 'kad'.",
+          "formula_hr": "Kad netko vozi, treba biti pažljiv."
+        },
+        {
+          "literal_hr": "potrebna je pozornost",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "朝",
+          "lemma": "朝",
+          "reading": "あさ",
+          "role": "vrijeme",
+          "explanation_hr": "Jutro.",
+          "romaji": "asa",
+          "furigana": [
+            {
+              "text": "朝",
+              "reading": "あさ"
+            }
+          ],
+          "start_ms": 113,
+          "end_ms": 363
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: jutro.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 375,
+          "end_ms": 500
+        },
+        {
+          "text": "見にくい",
+          "lemma": "見にくい",
+          "reading": "みにくい",
+          "role": "pridjev",
+          "explanation_hr": "見る (gledati) + にくい: teško je vidjeti, slabo se vidi.",
+          "romaji": "minikui",
+          "furigana": [
+            {
+              "text": "見",
+              "reading": "み"
+            },
+            {
+              "text": "に"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 513,
+          "end_ms": 1050
+        },
+        {
+          "text": "ところ",
+          "lemma": "ところ",
+          "reading": "ところ",
+          "role": "mjesto",
+          "explanation_hr": "Mjesto, dio područja.",
+          "romaji": "tokoro",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "こ"
+            },
+            {
+              "text": "ろ"
+            }
+          ],
+          "start_ms": 1063,
+          "end_ms": 1388
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: mjesta su slabo vidljiva.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1400,
+          "end_ms": 1525
+        },
+        {
+          "text": "ある",
+          "lemma": "ある",
+          "reading": "ある",
+          "role": "glagol",
+          "explanation_hr": "ある (postojati) u običnom obliku ispred ので.",
+          "romaji": "aru",
+          "furigana": [
+            {
+              "text": "あ"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 1538,
+          "end_ms": 1750
+        },
+        {
+          "text": "ので",
+          "lemma": "ので",
+          "reading": "ので",
+          "role": "ostalo",
+          "explanation_hr": "Zato što, pa; uvodi razlog.",
+          "romaji": "node",
+          "furigana": [
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1763,
+          "end_ms": 2050
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2163,
+          "end_ms": 2363
+        },
+        {
+          "text": "運転する",
+          "lemma": "運転する",
+          "reading": "うんてんする",
+          "role": "glagol",
+          "explanation_hr": "運転する (voziti) u običnom obliku ispred とき.",
+          "romaji": "untensuru",
+          "furigana": [
+            {
+              "text": "運転",
+              "reading": "うんてん"
+            },
+            {
+              "text": "す"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 2375,
+          "end_ms": 3050
+        },
+        {
+          "text": "とき",
+          "lemma": "とき",
+          "reading": "とき",
+          "role": "vrijeme",
+          "explanation_hr": "Kad, u trenutku kad.",
+          "romaji": "toki",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "き"
+            }
+          ],
+          "start_ms": 3063,
+          "end_ms": 3288
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: vožnja.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3300,
+          "end_ms": 3575
+        },
+        {
+          "text": "注意",
+          "lemma": "注意",
+          "reading": "ちゅうい",
+          "role": "imenica",
+          "explanation_hr": "Pozornost, oprez.",
+          "romaji": "chūi",
+          "furigana": [
+            {
+              "text": "注意",
+              "reading": "ちゅうい"
+            }
+          ],
+          "start_ms": 3688,
+          "end_ms": 4100
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: potrebna je pozornost.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4113,
+          "end_ms": 4200
+        },
+        {
+          "text": "必要",
+          "lemma": "必要",
+          "reading": "ひつよう",
+          "role": "pridjev",
+          "explanation_hr": "Potrebno.",
+          "romaji": "hitsuyō",
+          "furigana": [
+            {
+              "text": "必要",
+              "reading": "ひつよう"
+            }
+          ],
+          "start_ms": 4213,
+          "end_ms": 4700
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Glagol biti, uljudni oblik.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 4713,
+          "end_ms": 5063
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 5075,
+          "end_ms": 5175
+        }
+      ],
+      "audio": "vijesti-010-2.mp3",
+      "duration_ms": 5875,
+      "chunk_audio": [
+        "vijesti-010-2-1.mp3",
+        "vijesti-010-2-2.mp3",
+        "vijesti-010-2-3.mp3",
+        "vijesti-010-2-4.mp3",
+        "vijesti-010-2-5.mp3"
+      ],
+      "full_start_ms": 5850,
+      "full_end_ms": 10913
+    },
+    {
+      "ja": "山の方では、朝はとても寒くなることもあるでしょう。",
+      "hr": "U gorju može ujutro biti i vrlo hladno.",
+      "chunks": [
+        "山の方では、",
+        "朝は",
+        "とても",
+        "寒くなることも",
+        "あるでしょう。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "u gorju",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "ujutro",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "vrlo",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "postane hladno, i",
+          "role": "glagol",
+          "grammar_hr": "i-pridjev u priložnom obliku: ～く",
+          "formula": "寒い (さむい, samui) → 寒く (さむく, samuku) + なる",
+          "rule_hr": "Zadnje い mijenja se u く, a なる znači 'postati'.",
+          "formula_hr": "Jutro u gorju može postati vrlo hladno."
+        },
+        {
+          "literal_hr": "može biti",
+          "role": "glagol",
+          "grammar_hr": "mogućnost: ～でしょう",
+          "formula": "ある (ある, aru) → あるでしょう (あるでしょう, aru deshō)",
+          "rule_hr": "Obični oblik glagola + でしょう znači 'vjerojatno'.",
+          "formula_hr": "Riječ je o vjerojatnosti, ne o sigurnosti."
+        }
+      ],
+      "words": [
+        {
+          "text": "山",
+          "lemma": "山",
+          "reading": "やま",
+          "role": "mjesto",
+          "explanation_hr": "Planina.",
+          "romaji": "yama",
+          "furigana": [
+            {
+              "text": "山",
+              "reading": "やま"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 375
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: planinski dio.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 388,
+          "end_ms": 513
+        },
+        {
+          "text": "方",
+          "lemma": "方",
+          "reading": "ほう",
+          "role": "mjesto",
+          "explanation_hr": "Strana, dio: planinski kraj.",
+          "romaji": "hō",
+          "furigana": [
+            {
+              "text": "方",
+              "reading": "ほう"
+            }
+          ],
+          "start_ms": 525,
+          "end_ms": 750
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: u.",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 763,
+          "end_ms": 875
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: planinski kraj.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 888,
+          "end_ms": 1150
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 1250,
+          "end_ms": 1463
+        },
+        {
+          "text": "朝",
+          "lemma": "朝",
+          "reading": "あさ",
+          "role": "vrijeme",
+          "explanation_hr": "Jutro.",
+          "romaji": "asa",
+          "furigana": [
+            {
+              "text": "朝",
+              "reading": "あさ"
+            }
+          ],
+          "start_ms": 1475,
+          "end_ms": 1775
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: jutro.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1788,
+          "end_ms": 1975
+        },
+        {
+          "text": "とても",
+          "lemma": "とても",
+          "reading": "とても",
+          "role": "ostalo",
+          "explanation_hr": "Vrlo.",
+          "romaji": "totemo",
+          "furigana": [
+            {
+              "text": "と"
+            },
+            {
+              "text": "て"
+            },
+            {
+              "text": "も"
+            }
+          ],
+          "start_ms": 2025,
+          "end_ms": 2425
+        },
+        {
+          "text": "寒く",
+          "lemma": "寒い",
+          "reading": "さむく",
+          "role": "pridjev",
+          "explanation_hr": "寒い (hladan) u priložnom obliku, uz なる: postaje hladno.",
+          "romaji": "samuku",
+          "furigana": [
+            {
+              "text": "寒",
+              "reading": "さむ"
+            },
+            {
+              "text": "く",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2438,
+          "end_ms": 2850
+        },
+        {
+          "text": "なる",
+          "lemma": "なる",
+          "reading": "なる",
+          "role": "glagol",
+          "explanation_hr": "Postati; uz 寒く znači postati hladno.",
+          "romaji": "naru",
+          "furigana": [
+            {
+              "text": "な"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 2863,
+          "end_ms": 3088
+        },
+        {
+          "text": "こと",
+          "lemma": "こと",
+          "reading": "こと",
+          "role": "ostalo",
+          "explanation_hr": "Pretvara radnju u pojam: slučaj kad se nešto dogodi.",
+          "romaji": "koto",
+          "furigana": [
+            {
+              "text": "こ"
+            },
+            {
+              "text": "と"
+            }
+          ],
+          "start_ms": 3100,
+          "end_ms": 3325
+        },
+        {
+          "text": "も",
+          "lemma": "も",
+          "reading": "も",
+          "role": "cestica",
+          "explanation_hr": "I, također.",
+          "romaji": "mo",
+          "furigana": [
+            {
+              "text": "も",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3338,
+          "end_ms": 3425
+        },
+        {
+          "text": "あるでしょう",
+          "lemma": "ある",
+          "reading": "あるでしょう",
+          "role": "glagol",
+          "explanation_hr": "ある + でしょう: vjerojatno će biti.",
+          "romaji": "arudeshou",
+          "furigana": [
+            {
+              "text": "あ"
+            },
+            {
+              "text": "る"
+            },
+            {
+              "text": "でしょう",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 3438,
+          "end_ms": 4163
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 4175,
+          "end_ms": 4275
+        }
+      ],
+      "audio": "vijesti-010-3.mp3",
+      "duration_ms": 4975,
+      "chunk_audio": [
+        "vijesti-010-3-1.mp3",
+        "vijesti-010-3-2.mp3",
+        "vijesti-010-3-3.mp3",
+        "vijesti-010-3-4.mp3",
+        "vijesti-010-3-5.mp3"
+      ],
+      "full_start_ms": 11688,
+      "full_end_ms": 15888
+    },
+    {
+      "ja": "日中は日がたくさん出ますが、東の方では少し雲が増えるようです。",
+      "hr": "Dan će biti pun sunca, ali na krajnjem istoku čini se da će biti malo više oblaka.",
+      "chunks": [
+        "日中は",
+        "日が",
+        "たくさん",
+        "出ますが、",
+        "東の方では",
+        "少し",
+        "雲が",
+        "増えるようです。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "tijekom dana",
+          "role": "vrijeme",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "sunce",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "puno",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "izlazi, ali",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "na istoku",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "malo",
+          "role": "opis",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "oblaci",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "čini se da rastu",
+          "role": "glagol",
+          "grammar_hr": "čini se: ～ようです",
+          "formula": "増える (ふえる, fueru) → 増えるようです (ふえるようです, fueru yō desu)",
+          "rule_hr": "Obični oblik glagola + ようです znači 'čini se da'.",
+          "formula_hr": "Prema prognozi, na istoku će biti više oblaka."
+        }
+      ],
+      "words": [
+        {
+          "text": "日中",
+          "lemma": "日中",
+          "reading": "にっちゅう",
+          "role": "vrijeme",
+          "explanation_hr": "Tijekom dana.",
+          "romaji": "nichichū",
+          "furigana": [
+            {
+              "text": "日中",
+              "reading": "にちちゅう"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 563
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: dan.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 675
+        },
+        {
+          "text": "日",
+          "lemma": "日",
+          "reading": "ひ",
+          "role": "imenica",
+          "explanation_hr": "Sunce, sunčeva svjetlost.",
+          "romaji": "hi",
+          "furigana": [
+            {
+              "text": "日",
+              "reading": "ひ"
+            }
+          ],
+          "start_ms": 688,
+          "end_ms": 863
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: sunce.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 875,
+          "end_ms": 1000
+        },
+        {
+          "text": "たくさん",
+          "lemma": "たくさん",
+          "reading": "たくさん",
+          "role": "ostalo",
+          "explanation_hr": "Puno.",
+          "romaji": "takusan",
+          "furigana": [
+            {
+              "text": "た"
+            },
+            {
+              "text": "く"
+            },
+            {
+              "text": "さ"
+            },
+            {
+              "text": "ん"
+            }
+          ],
+          "start_ms": 1013,
+          "end_ms": 1500
+        },
+        {
+          "text": "出ます",
+          "lemma": "出る",
+          "reading": "でます",
+          "role": "glagol",
+          "explanation_hr": "出る (pojaviti se) + ます, uljudni oblik.",
+          "romaji": "demasu",
+          "furigana": [
+            {
+              "text": "出",
+              "reading": "で"
+            },
+            {
+              "text": "ます",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1513,
+          "end_ms": 1888
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "ostalo",
+          "explanation_hr": "Ali, dok: suprotnost u rečenici.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 1900,
+          "end_ms": 2175
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2288,
+          "end_ms": 2438
+        },
+        {
+          "text": "東",
+          "lemma": "東",
+          "reading": "ひがし",
+          "role": "mjesto",
+          "explanation_hr": "Istok.",
+          "romaji": "higashi",
+          "furigana": [
+            {
+              "text": "東",
+              "reading": "ひがし"
+            }
+          ],
+          "start_ms": 2438,
+          "end_ms": 2850
+        },
+        {
+          "text": "の",
+          "lemma": "の",
+          "reading": "の",
+          "role": "cestica",
+          "explanation_hr": "Povezuje: istočni dio.",
+          "romaji": "no",
+          "furigana": [
+            {
+              "text": "の",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 2863,
+          "end_ms": 2975
+        },
+        {
+          "text": "方",
+          "lemma": "方",
+          "reading": "ほう",
+          "role": "mjesto",
+          "explanation_hr": "Strana, dio: istočni kraj.",
+          "romaji": "hō",
+          "furigana": [
+            {
+              "text": "方",
+              "reading": "ほう"
+            }
+          ],
+          "start_ms": 2988,
+          "end_ms": 3213
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: u (dijelu).",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 3225,
+          "end_ms": 3325
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: istočni dio.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3338,
+          "end_ms": 3588
+        },
+        {
+          "text": "少し",
+          "lemma": "少し",
+          "reading": "すこし",
+          "role": "ostalo",
+          "explanation_hr": "Malo.",
+          "romaji": "sukoshi",
+          "furigana": [
+            {
+              "text": "少",
+              "reading": "すこ"
+            },
+            {
+              "text": "し"
+            }
+          ],
+          "start_ms": 3675,
+          "end_ms": 4075
+        },
+        {
+          "text": "雲",
+          "lemma": "雲",
+          "reading": "くも",
+          "role": "imenica",
+          "explanation_hr": "Oblak.",
+          "romaji": "kumo",
+          "furigana": [
+            {
+              "text": "雲",
+              "reading": "くも"
+            }
+          ],
+          "start_ms": 4088,
+          "end_ms": 4338
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: oblaci.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4350,
+          "end_ms": 4475
+        },
+        {
+          "text": "増える",
+          "lemma": "増える",
+          "reading": "ふえる",
+          "role": "glagol",
+          "explanation_hr": "増える (povećati se) u običnom obliku ispred ようです.",
+          "romaji": "fueru",
+          "furigana": [
+            {
+              "text": "増",
+              "reading": "ふ"
+            },
+            {
+              "text": "え"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 4488,
+          "end_ms": 4850
+        },
+        {
+          "text": "ようです",
+          "lemma": "ようです",
+          "reading": "ようです",
+          "role": "glagol",
+          "explanation_hr": "Čini se da; izgleda da.",
+          "romaji": "yō desu",
+          "furigana": [
+            {
+              "text": "よ"
+            },
+            {
+              "text": "う"
+            },
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 4863,
+          "end_ms": 5450
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 5463,
+          "end_ms": 5563
+        }
+      ],
+      "audio": "vijesti-010-4.mp3",
+      "duration_ms": 6263,
+      "chunk_audio": [
+        "vijesti-010-4-1.mp3",
+        "vijesti-010-4-2.mp3",
+        "vijesti-010-4-3.mp3",
+        "vijesti-010-4-4.mp3",
+        "vijesti-010-4-5.mp3",
+        "vijesti-010-4-6.mp3",
+        "vijesti-010-4-7.mp3",
+        "vijesti-010-4-8.mp3"
+      ],
+      "full_start_ms": 16663,
+      "full_end_ms": 22150
+    },
+    {
+      "ja": "アドリア海では強い風が吹くので、出かける前に天気を調べると安心です。",
+      "hr": "Na Jadranu puše jaka bura, pa se isplati prije izlaska provjeriti vremensku prognozu.",
+      "chunks": [
+        "アドリア海では",
+        "強い風が",
+        "吹くので、",
+        "出かける前に",
+        "天気を",
+        "調べると",
+        "安心です。"
+      ],
+      "chunk_info": [
+        {
+          "literal_hr": "na Jadranu",
+          "role": "mjesto",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "jak vjetar",
+          "role": "subjekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "puše, pa",
+          "role": "glagol",
+          "grammar_hr": "uzrok: ～ので",
+          "formula": "吹く (ふく, fuku) → 吹くので (ふくので, fuku node)",
+          "rule_hr": "Obični oblik glagola ispred ので znači 'zato što'.",
+          "formula_hr": "Jaka bura je razlog za oprez i provjeru vremena."
+        },
+        {
+          "literal_hr": "prije izlaska",
+          "role": "vrijeme",
+          "grammar_hr": "vrijeme: ～前に",
+          "formula": "出かける (でかける, dekakeru) → 出かける前に (でかけるまえに, dekakeru mae ni)",
+          "rule_hr": "Obični oblik glagola + 前に znači 'prije nego'.",
+          "formula_hr": "Prije nego što izađete, provjerite vrijeme."
+        },
+        {
+          "literal_hr": "vremensku prognozu",
+          "role": "objekt",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        },
+        {
+          "literal_hr": "kad provjerite",
+          "role": "glagol",
+          "grammar_hr": "uvjet: ～と",
+          "formula": "調べる (しらべる, shiraberu) → 調べると (しらべると, shiraberu to)",
+          "rule_hr": "Obični oblik glagola + と znači 'kad / ako'.",
+          "formula_hr": "Kad se vrijeme provjeri, osjećate se sigurnije."
+        },
+        {
+          "literal_hr": "sigurno je",
+          "role": "glagol",
+          "grammar_hr": "",
+          "formula": "",
+          "rule_hr": "",
+          "formula_hr": ""
+        }
+      ],
+      "words": [
+        {
+          "text": "アドリア",
+          "lemma": "アドリア",
+          "reading": "アドリア",
+          "role": "mjesto",
+          "explanation_hr": "Jadran, ime mora.",
+          "romaji": "adoria",
+          "furigana": [
+            {
+              "text": "ア"
+            },
+            {
+              "text": "ド"
+            },
+            {
+              "text": "リ"
+            },
+            {
+              "text": "ア"
+            }
+          ],
+          "start_ms": 75,
+          "end_ms": 563
+        },
+        {
+          "text": "海",
+          "lemma": "海",
+          "reading": "うみ",
+          "role": "mjesto",
+          "explanation_hr": "More.",
+          "romaji": "umi",
+          "furigana": [
+            {
+              "text": "海",
+              "reading": "うみ"
+            }
+          ],
+          "start_ms": 575,
+          "end_ms": 813
+        },
+        {
+          "text": "で",
+          "lemma": "で",
+          "reading": "で",
+          "role": "cestica",
+          "explanation_hr": "Označava mjesto: na (moru).",
+          "romaji": "de",
+          "furigana": [
+            {
+              "text": "で",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 825,
+          "end_ms": 913
+        },
+        {
+          "text": "は",
+          "lemma": "は",
+          "reading": "は",
+          "role": "cestica",
+          "explanation_hr": "Označava temu: Jadran.",
+          "romaji": "wa",
+          "furigana": [
+            {
+              "text": "は",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 925,
+          "end_ms": 1050
+        },
+        {
+          "text": "強い",
+          "lemma": "強い",
+          "reading": "つよい",
+          "role": "pridjev",
+          "explanation_hr": "Jak.",
+          "romaji": "tsuyoi",
+          "furigana": [
+            {
+              "text": "強",
+              "reading": "つよ"
+            },
+            {
+              "text": "い"
+            }
+          ],
+          "start_ms": 1063,
+          "end_ms": 1488
+        },
+        {
+          "text": "風",
+          "lemma": "風",
+          "reading": "かぜ",
+          "role": "imenica",
+          "explanation_hr": "Vjetar; subjekt rečenice.",
+          "romaji": "kaze",
+          "furigana": [
+            {
+              "text": "風",
+              "reading": "かぜ"
+            }
+          ],
+          "start_ms": 1500,
+          "end_ms": 1738
+        },
+        {
+          "text": "が",
+          "lemma": "が",
+          "reading": "が",
+          "role": "cestica",
+          "explanation_hr": "Označava subjekt: jaki vjetar.",
+          "romaji": "ga",
+          "furigana": [
+            {
+              "text": "が",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 1750,
+          "end_ms": 1863
+        },
+        {
+          "text": "吹く",
+          "lemma": "吹く",
+          "reading": "ふく",
+          "role": "glagol",
+          "explanation_hr": "吹く (puhati) u običnom obliku ispred ので.",
+          "romaji": "fuku",
+          "furigana": [
+            {
+              "text": "吹",
+              "reading": "ふ"
+            },
+            {
+              "text": "く"
+            }
+          ],
+          "start_ms": 1875,
+          "end_ms": 2113
+        },
+        {
+          "text": "ので",
+          "lemma": "ので",
+          "reading": "ので",
+          "role": "ostalo",
+          "explanation_hr": "Zato što, pa; uvodi razlog.",
+          "romaji": "node",
+          "furigana": [
+            {
+              "text": "ので",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 2125,
+          "end_ms": 2450
+        },
+        {
+          "text": "、",
+          "lemma": "、",
+          "reading": "、",
+          "role": "interpunkcija",
+          "explanation_hr": "Zarez.",
+          "romaji": ",",
+          "furigana": [
+            {
+              "text": "、"
+            }
+          ],
+          "start_ms": 2550,
+          "end_ms": 2763
+        },
+        {
+          "text": "出かける",
+          "lemma": "出かける",
+          "reading": "でかける",
+          "role": "glagol",
+          "explanation_hr": "出かける (izaći) u običnom obliku ispred 前に.",
+          "romaji": "dekakeru",
+          "furigana": [
+            {
+              "text": "出",
+              "reading": "で"
+            },
+            {
+              "text": "か"
+            },
+            {
+              "text": "け"
+            },
+            {
+              "text": "る"
+            }
+          ],
+          "start_ms": 2775,
+          "end_ms": 3275
+        },
+        {
+          "text": "前に",
+          "lemma": "前",
+          "reading": "まえに",
+          "role": "vrijeme",
+          "explanation_hr": "Prije nego što.",
+          "romaji": "maeni",
+          "furigana": [
+            {
+              "text": "前",
+              "reading": "まえ"
+            },
+            {
+              "text": "に",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 3288,
+          "end_ms": 3700
+        },
+        {
+          "text": "天気",
+          "lemma": "天気",
+          "reading": "てんき",
+          "role": "imenica",
+          "explanation_hr": "Vrijeme (vremenski uvjeti).",
+          "romaji": "tenki",
+          "furigana": [
+            {
+              "text": "天気",
+              "reading": "てんき"
+            }
+          ],
+          "start_ms": 3725,
+          "end_ms": 4075
+        },
+        {
+          "text": "を",
+          "lemma": "を",
+          "reading": "を",
+          "role": "cestica",
+          "explanation_hr": "Označava objekt: vrijeme.",
+          "romaji": "o",
+          "furigana": [
+            {
+              "text": "を",
+              "kind": "cestica"
+            }
+          ],
+          "start_ms": 4088,
+          "end_ms": 4188
+        },
+        {
+          "text": "調べると",
+          "lemma": "調べる",
+          "reading": "しらべると",
+          "role": "glagol",
+          "explanation_hr": "調べる (provjeriti) + と: kad provjerite.",
+          "romaji": "shiraberuto",
+          "furigana": [
+            {
+              "text": "調",
+              "reading": "しら"
+            },
+            {
+              "text": "べ"
+            },
+            {
+              "text": "る"
+            },
+            {
+              "text": "と",
+              "kind": "nastavak"
+            }
+          ],
+          "start_ms": 4200,
+          "end_ms": 4850
+        },
+        {
+          "text": "安心",
+          "lemma": "安心",
+          "reading": "あんしん",
+          "role": "pridjev",
+          "explanation_hr": "Sigurnost, spokojstvo.",
+          "romaji": "anshin",
+          "furigana": [
+            {
+              "text": "安心",
+              "reading": "あんしん"
+            }
+          ],
+          "start_ms": 4863,
+          "end_ms": 5463
+        },
+        {
+          "text": "です",
+          "lemma": "です",
+          "reading": "です",
+          "role": "kopula",
+          "explanation_hr": "Glagol biti, uljudni oblik.",
+          "romaji": "desu",
+          "furigana": [
+            {
+              "text": "です",
+              "kind": "kopula"
+            }
+          ],
+          "start_ms": 5475,
+          "end_ms": 5813
+        },
+        {
+          "text": "。",
+          "lemma": "。",
+          "reading": "。",
+          "role": "interpunkcija",
+          "explanation_hr": "Točka.",
+          "romaji": ".",
+          "furigana": [
+            {
+              "text": "。"
+            }
+          ],
+          "start_ms": 5825,
+          "end_ms": 5925
+        }
+      ],
+      "audio": "vijesti-010-5.mp3",
+      "duration_ms": 6625,
+      "chunk_audio": [
+        "vijesti-010-5-1.mp3",
+        "vijesti-010-5-2.mp3",
+        "vijesti-010-5-3.mp3",
+        "vijesti-010-5-4.mp3",
+        "vijesti-010-5-5.mp3",
+        "vijesti-010-5-6.mp3",
+        "vijesti-010-5-7.mp3"
+      ],
+      "full_start_ms": 22925,
+      "full_end_ms": 28775
+    }
+  ],
+  "audio": "vijesti-010-cijela.mp3",
+  "duration_ms": 29475
+}
