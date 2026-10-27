@@ -1,10 +1,10 @@
-# Vijest dana: svako jutro uzme naslove s HRT-a i Indexa, Claude napiše 5 rečenica o jednoj vijesti,
+# Vijest dana: svako jutro uzme naslove s HRT-a i Indexa, Claude napiše jednu vijest u dvije razine (light pa fat),
 # napravi se furigana i zvuk (Azure), spremi u repo i objavi aplikaciju. Vijesti starije od 30 dana se brišu.
 # Ručno: Actions → Vijest dana → Run workflow (možeš izabrati model).
 name: Vijest dana
 
 on:
-  # Svako jutro, s Haikuom (jeftino, oko 0,02 $ po vijesti).
+  # Svako jutro, s Haikuom (jeftino, oko 0,04 $ za obje razine).
   schedule:
     - cron: '43 4 * * *' # oko 6:43 po hrvatskom vremenu (ljeti), 5:43 zimi
   workflow_dispatch:
@@ -43,7 +43,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
-        run: npm run nova-prica -- vijesti
+        # Prvo light, pa fat građena na njoj (ista vijest).
+        run: |
+          npm run nova-prica -- vijesti light
+          npm run nova-prica -- vijesti fat
       - name: Spremi u repo
         run: |
           git config user.name "github-actions[bot]"

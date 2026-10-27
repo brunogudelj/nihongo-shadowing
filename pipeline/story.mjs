@@ -232,6 +232,7 @@ writeFileSync(
       id: `${themeId}-${id}`,
       theme: themeId,
       level,
+      ...(lightBase ? { base: lightBase.id } : {}),
       model,
       created: new Date().toISOString().slice(0, 10),
       needs_review: problems,

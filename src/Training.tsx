@@ -22,7 +22,7 @@ import {
   formatMinutes,
   formatWhen,
   initialState,
-  latestNews,
+  newsPair,
   planDay,
   sessionStats,
   sessionSummary,
@@ -936,8 +936,10 @@ function StoryBlock({ s }: { s: SCtx }) {
 // --- Blok Vijest dana: najnovija vijest u tri kruga (bez kartica) ---
 function NewsBlock({ s }: { s: SCtx }) {
   const { progress, setProgress } = s
-  const newsId = latestNews(STORY_INFO)
+  // Krug 1 light (lakša verzija), krugovi 2 i 3 fat; ako postoji samo jedna, ona za sve krugove.
+  const pair = newsPair(STORY_INFO)
   const round = Math.max(1, progress.round ?? 1)
+  const newsId = round === 1 ? (pair.light ?? pair.fat) : (pair.fat ?? pair.light)
   if (!newsId) return <Done>Još nema vijesti. Dodirni „Blok gotov”.</Done>
   if (round > 3) return <Done>Sva tri kruga su gotova. Dodirni „Blok gotov”.</Done>
   const r = ROUNDS[round]
