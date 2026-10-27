@@ -5,6 +5,7 @@ import allWords from '../data/konjugator.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Kind } from './conjugate'
 import { readSetting, writeSetting } from './settings'
 import { speak } from './speech'
+import { BASES, baseFor, stemOf } from './stems'
 
 const WORDS = allWords as ConjWord[]
 const byWord = (w: string) => WORDS.find((x) => x.word === w)!
@@ -45,6 +46,21 @@ function Furi({ written, reading, on }: { written: string; reading: string; on: 
         <rt className="text-[0.55em] font-normal text-stone-500">{reading.slice(0, reading.length - n)}</rt>
       </ruby>
       {written.slice(written.length - n)}
+    </>
+  )
+}
+
+// Oblik razdvojen na osnovu i nastavak (crveno), ako oblik počinje osnovom.
+function Split({ word, formId, furigana }: { word: ConjWord; formId: string; furigana: boolean }) {
+  const r = conjugate(word, formId)
+  const base = BASES.find((b) => b.id === baseFor(word, formId))
+  const stem = base && base.id !== 'te' ? stemOf(word, base) : null
+  if (!stem || !r.written.startsWith(stem.written) || r.written === stem.written)
+    return <Furi written={r.written} reading={r.reading} on={furigana} />
+  return (
+    <>
+      <Furi written={stem.written} reading={stem.reading} on={furigana} />
+      <span className="text-red-700">{r.written.slice(stem.written.length)}</span>
     </>
   )
 }
@@ -204,6 +220,30 @@ export default function Forms({ onBack }: { onBack: () => void }) {
             </span>{' '}
             · {word.hr} · {KIND_TITLE[kind]} · {forms.length} oblika
           </p>
+          {kind === 'glagol' && (
+            <section className="mt-2 rounded-2xl bg-white p-3 shadow-sm">
+              <h2 className="text-sm font-semibold">Osnove glagola</h2>
+              {word.class === 'ichidan' && (
+                <p className="text-xs text-stone-500">Ichidan: osnova je uvijek ista (makni る), nastavci se samo dodaju.</p>
+              )}
+              <ul className="mt-1 grid gap-x-4 text-sm landscape:grid-cols-2">
+                {BASES.map((b) => {
+                  const st = b.id === 'te' ? conjugate(word, 'te') : stemOf(word, b)
+                  return (
+                    <li key={b.id} className="flex items-baseline gap-2 border-t border-stone-100 py-1">
+                      <span className="w-16 shrink-0 text-stone-500">{b.label}</span>
+                      <span lang="ja" className="w-20 shrink-0 text-lg leading-[2] font-medium">
+                        <Furi written={st.written} reading={st.reading} on={furigana} />
+                      </span>
+                      <span className="text-xs text-stone-500" lang="ja">
+                        {b.uses}
+                      </span>
+                    </li>
+                  )
+                })}
+              </ul>
+            </section>
+          )}
           <ul className="mt-2 grid gap-1.5 landscape:grid-cols-2">
             {forms.map((f) => {
               const r = conjugate(word, f.id)
@@ -221,8 +261,13 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </span>
                     <span className="min-w-0">
                       <span lang="ja" className="text-xl leading-[2] font-medium">
-                        <Furi written={r.written} reading={r.reading} on={furigana} />
+                        <Split word={word} formId={f.id} furigana={furigana} />
                       </span>
+                      {kind === 'glagol' && baseFor(word, f.id) && f.id !== 'te' && (
+                        <span className="ml-2 text-xs text-stone-400">
+                          od {BASES.find((b) => b.id === baseFor(word, f.id))!.label}
+                        </span>
+                      )}
                       <span className="block text-xs text-stone-500">{r.rule}</span>
                     </span>
                   </button>
