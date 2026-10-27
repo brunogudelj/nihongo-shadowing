@@ -340,7 +340,7 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
     onPrevious: () => index > 0 && goTo(index - 1),
   })
 
-  // Točkice rečenica, status, furigana (Čisto) i razina pomoći: uspravno gore, vodoravno dolje desno od playera.
+  // Točkice rečenica, status, furigana (Čisto) i razina pomoći: uspravno u redu iznad playera, vodoravno desno od njega.
   const sideControls = (
     <>
       <div className="flex shrink-0 items-center gap-1" aria-label={`Rečenica ${index + 1} od ${story.sentences.length}`}>
@@ -388,7 +388,7 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
       <main className="flex h-dvh flex-col bg-stone-50 px-4 pt-2 text-stone-900 landscape:px-6">
         <audio ref={audioRef} onEnded={() => (playing === 'full' ? stop() : finishedRef.current())} />
 
-        {/* Tanka gornja traka: natrag, naslov, točkice rečenica (dodir = idi na nju), status i razina pomoći. */}
+        {/* Tanka gornja traka: natrag i naslov. Ostale kontrole su dolje, uz player. */}
         <header className="flex items-center gap-2 text-sm">
           <button
             onClick={() => { stop(); onBack() }}
@@ -400,7 +400,6 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
           <p lang="ja" className="min-w-0 truncate text-stone-500">
             {story.title_ja}
           </p>
-          <div className="ml-auto flex items-center gap-2 landscape:hidden">{sideControls}</div>
         </header>
 
         {preset?.note && (
@@ -648,6 +647,8 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
               ))}
             </div>
           )}
+          {/* Uspravno: točkice, status, あ i razina u redu iznad playera (vodoravno su desno od njega). */}
+          <div className="mb-2 flex items-center justify-end gap-2 text-sm landscape:hidden">{sideControls}</div>
           <div className="h-1 overflow-hidden rounded-full bg-stone-200" aria-hidden>
             <div className="h-full bg-red-700" style={{ width: `${Math.round(progress * 100)}%` }} />
           </div>
