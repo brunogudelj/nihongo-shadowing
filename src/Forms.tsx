@@ -3,7 +3,9 @@
 import { useState } from 'react'
 import allWords from '../data/konjugator.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Kind } from './conjugate'
+import { readSetting, writeSetting } from './settings'
 import { speak } from './speech'
+import { BASES, baseFor, stemOf } from './stems'
 
 const WORDS = allWords as ConjWord[]
 const byWord = (w: string) => WORDS.find((x) => x.word === w)!
@@ -21,23 +23,149 @@ const TE_OTHER = [
   { label: 'iznimka', note: '行く → 行って (ne 行いて)', words: ['行く'] },
   { label: 'nepravilni', note: 'する → して, 来る → 来て', words: ['する', '来る'] },
 ]
-const TE_USES = [
-  { ja: '～てください', hr: 'molim te, napravi…', ex: '待ってください。', exHr: 'Pričekajte, molim.' },
-  { ja: '～ています', hr: 'radnja u tijeku ili stanje', ex: '雨が降っています。', exHr: 'Pada kiša.' },
-  { ja: '～てもいいです', hr: 'smije se…', ex: '写真を撮ってもいいですか。', exHr: 'Smijem li fotografirati?' },
-  { ja: '～てから', hr: 'nakon što…', ex: 'ご飯を食べてから、出かけます。', exHr: 'Nakon jela izlazim.' },
-  { ja: '～て、～', hr: 'veže radnje redom (i zatim)', ex: '駅へ行って、電車に乗りました。', exHr: 'Otišao sam na stanicu i ušao u vlak.' },
+// Primjeri po dijelovima: [tekst, čitanje] za kanji, [tekst] za kanu.
+const TE_USES: { ja: string; hr: string; ex: [string, string?][]; exHr: string }[] = [
+  { ja: '～てください', hr: 'molim te, napravi…', ex: [['待', 'ま'], ['ってください。']], exHr: 'Pričekajte, molim.' },
+  { ja: '～ています', hr: 'radnja u tijeku ili stanje', ex: [['雨', 'あめ'], ['が'], ['降', 'ふ'], ['っています。']], exHr: 'Pada kiša.' },
+  { ja: '～てもいいです', hr: 'smije se…', ex: [['写真', 'しゃしん'], ['を'], ['撮', 'と'], ['ってもいいですか。']], exHr: 'Smijem li fotografirati?' },
+  { ja: '～てから', hr: 'nakon što…', ex: [['ご'], ['飯', 'はん'], ['を'], ['食', 'た'], ['べてから、'], ['出', 'で'], ['かけます。']], exHr: 'Nakon jela izlazim.' },
+  { ja: '～て、～', hr: 'veže radnje redom (i zatim)', ex: [['駅', 'えき'], ['へ'], ['行', 'い'], ['って、'], ['電車', 'でんしゃ'], ['に'], ['乗', 'の'], ['りました。']], exHr: 'Otišao sam na stanicu i ušao u vlak.' },
 ]
+
+// Furigana iz pisanja i čitanja: zajednički kana-nastavak ostaje, kanji dio dobiva čitanje iznad
+// (食べます + たべます → 食[た]べます). Bez furigane samo pismo.
+function Furi({ written, reading, on }: { written: string; reading: string; on: boolean }) {
+  let n = 0
+  while (n < written.length && n < reading.length && written.at(-1 - n) === reading.at(-1 - n)) n++
+  const head = written.slice(0, written.length - n)
+  if (!on || !head || head === reading.slice(0, reading.length - n)) return <>{written}</>
+  return (
+    <>
+      <ruby>
+        {head}
+        <rt className="text-[0.55em] font-normal text-stone-500">{reading.slice(0, reading.length - n)}</rt>
+      </ruby>
+      {written.slice(written.length - n)}
+    </>
+  )
+}
+
+// Oblik razdvojen na osnovu i nastavak (crveno), ako oblik počinje osnovom.
+// Boja svake osnove (ista u mementu i u popisu oblika).
+const BASE_STYLE: Record<string, { box: string; text: string; vowel: string }> = {
+  a: { box: 'bg-amber-100', text: 'text-amber-800', vowel: 'a' },
+  i: { box: 'bg-sky-100', text: 'text-sky-800', vowel: 'i' },
+  u: { box: 'bg-stone-200', text: 'text-stone-700', vowel: 'u' },
+  e: { box: 'bg-emerald-100', text: 'text-emerald-800', vowel: 'e' },
+  o: { box: 'bg-violet-100', text: 'text-violet-800', vowel: 'o' },
+  te: { box: 'bg-rose-100', text: 'text-rose-800', vowel: 'te' },
+}
+
+// Memento: kako nastaju oblici glagola. Lijevo stupac kane (か き く け こ), u sredini osnova,
+// desno nastavci koji se na nju dodaju i oblik koji nastaje (dodir ga izgovori).
+function Memento({ word, furigana }: { word: ConjWord; furigana: boolean }) {
+  const godan = ['godan', 'iku', 'aru'].includes(word.class)
+  const dict = stemOf(word, BASES.find((b) => b.id === 'u')!)
+  const root = godan ? word.word.slice(0, -1) : word.class === 'ichidan' ? word.word.slice(0, -1) : ''
+  const verbForms = FORMS.filter((f) => f.kind === 'glagol')
+  const note =
+    word.class === 'ichidan'
+      ? 'ichidan: る otpada, osnova je uvijek ista'
+      : godan
+        ? `godan: mijenja se zadnji slog ${word.reading.slice(-1)}`
+        : `nepravilan glagol: osnove treba zapamtiti`
+  return (
+    <section className="mt-2 rounded-2xl bg-white p-3 shadow-sm">
+      <p className="text-sm">
+        <span lang="ja" className="text-xl leading-[2] font-semibold">
+          <Furi written={dict.written} reading={dict.reading} on={furigana} />
+        </span>
+        {root && (
+          <span lang="ja" className="ml-2 text-stone-500">
+            = {root} + <span className="font-semibold text-red-700">{word.word.slice(root.length)}</span>
+          </span>
+        )}
+        <span className="ml-2 text-xs text-stone-500">({note})</span>
+      </p>
+      <table className="mt-1 w-full border-separate border-spacing-y-1 text-sm">
+        <tbody>
+          {BASES.map((b) => {
+            const st = b.id === 'te' ? conjugate(word, 'te') : stemOf(word, b)
+            const style = BASE_STYLE[b.id]
+            const kana = godan && b.id !== 'te' ? st.reading.slice(-1) : ''
+            const built = verbForms.filter((f) => baseFor(word, f.id) === b.id && f.id !== 'te')
+            return (
+              <tr key={b.id}>
+                <td className={`w-8 rounded-l-lg text-center text-xs font-semibold ${style.box} ${style.text}`}>{style.vowel}</td>
+                <td lang="ja" className={`w-10 text-center text-2xl font-semibold ${style.box} ${style.text}`}>
+                  {kana || '·'}
+                </td>
+                <td lang="ja" className={`w-24 rounded-r-lg px-2 text-lg leading-[2] font-medium whitespace-nowrap ${style.box}`}>
+                  <Furi written={st.written} reading={st.reading} on={furigana} />
+                </td>
+                <td className="pl-2">
+                  <div className="flex flex-wrap items-center gap-1">
+                    {b.id === 'u' && <span className="text-xs text-stone-500">rječnički oblik</span>}
+                    {built.length > 0 && <span className="text-stone-400">→</span>}
+                    {built.map((f) => {
+                      const r = conjugate(word, f.id)
+                      // Isti oblik za dva značenja (来られる: mogućnost i pasiv): mali natpis koji je koji.
+                      const twin = built.some((g) => g.id !== f.id && conjugate(word, g.id).written === r.written)
+                      const ending = r.written.startsWith(st.written) ? r.written.slice(st.written.length) : ''
+                      return (
+                        <button
+                          key={f.id}
+                          onClick={() => void speak(r.reading)}
+                          title={f.label}
+                          className="rounded-lg bg-stone-50 px-1.5 py-0.5 ring-1 ring-stone-200 active:bg-stone-200"
+                        >
+                          <span lang="ja">
+                            {ending && <span className="text-red-700">＋{ending} </span>}
+                            <span className="text-stone-600">{r.written}</span>
+                          </span>
+                          {twin && <span className="ml-1 text-[10px] text-stone-400">{f.label}</span>}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+    </section>
+  )
+}
+
+function Split({ word, formId, furigana }: { word: ConjWord; formId: string; furigana: boolean }) {
+  const r = conjugate(word, formId)
+  const base = BASES.find((b) => b.id === baseFor(word, formId))
+  const stem = base && base.id !== 'te' ? stemOf(word, base) : null
+  if (!base || !stem || !r.written.startsWith(stem.written) || r.written === stem.written)
+    return <Furi written={r.written} reading={r.reading} on={furigana} />
+  return (
+    <>
+      <span className={`rounded px-0.5 ${BASE_STYLE[base.id].box}`}>
+        <Furi written={stem.written} reading={stem.reading} on={furigana} />
+      </span>
+      <span className="text-red-700">{r.written.slice(stem.written.length)}</span>
+    </>
+  )
+}
 
 const EXAMPLES = ['食べる', '行く', '飲む', '書く', '話す', 'する', '来る', '勉強する', '高い', 'いい', '静か']
 const KIND_TITLE: Record<Kind, string> = { glagol: 'glagol', 'i-pridjev': 'i-pridjev', 'na-pridjev': 'na-pridjev' }
 
-function Te({ word }: { word: string }) {
+function Te({ word, furigana }: { word: string; furigana: boolean }) {
   const w = byWord(word)
   const r = conjugate(w, 'te')
   return (
     <button onClick={() => void speak(r.reading)} className="rounded-lg bg-stone-100 px-2 py-1 active:bg-stone-200" lang="ja">
-      {w.word} → <span className="font-semibold text-red-700">{r.written}</span>
+      <Furi written={w.word} reading={w.reading} on={furigana} /> →{' '}
+      <span className="font-semibold text-red-700">
+        <Furi written={r.written} reading={r.reading} on={furigana} />
+      </span>
     </button>
   )
 }
@@ -45,6 +173,11 @@ function Te({ word }: { word: string }) {
 export default function Forms({ onBack }: { onBack: () => void }) {
   const [tab, setTab] = useState<'te' | 'svi'>('te')
   const [chosen, setChosen] = useState('食べる')
+  const [furigana, setFurigana] = useState(() => readSetting('oblici-furigana') !== '0')
+  function toggleFurigana() {
+    setFurigana(!furigana)
+    writeSetting('oblici-furigana', furigana ? '0' : '1')
+  }
   const word = byWord(chosen)
   const kind = kindOf(word)
   const forms = FORMS.filter((f) => f.kind === kind)
@@ -57,6 +190,14 @@ export default function Forms({ onBack }: { onBack: () => void }) {
         </button>
         <h1 className="font-semibold">📐 Oblici</h1>
         <div className="ml-auto flex gap-1 text-sm">
+          <button
+            onClick={toggleFurigana}
+            aria-pressed={furigana}
+            aria-label={furigana ? 'Sakrij furiganu' : 'Prikaži furiganu'}
+            className={`rounded-full px-3 py-1 font-semibold ${furigana ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'}`}
+          >
+            あ
+          </button>
           {(
             [
               ['te', 'te-oblik'],
@@ -91,7 +232,7 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </td>
                     <td className="flex flex-wrap gap-1 py-1.5">
                       {r.words.map((w) => (
-                        <Te key={w} word={w} />
+                        <Te key={w} word={w} furigana={furigana} />
                       ))}
                     </td>
                   </tr>
@@ -106,7 +247,7 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </td>
                     <td className="flex flex-wrap gap-1 py-1.5">
                       {r.words.map((w) => (
-                        <Te key={w} word={w} />
+                        <Te key={w} word={w} furigana={furigana} />
                       ))}
                     </td>
                   </tr>
@@ -127,8 +268,17 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </span>{' '}
                     <span className="text-stone-500">· {u.hr}</span>
                   </p>
-                  <p lang="ja" className="text-base">
-                    {u.ex}
+                  <p lang="ja" className="text-base leading-[2]">
+                    {u.ex.map(([t, r], i) =>
+                      r && furigana ? (
+                        <ruby key={i}>
+                          {t}
+                          <rt className="text-[0.6em] text-stone-500">{r}</rt>
+                        </ruby>
+                      ) : (
+                        <span key={i}>{t}</span>
+                      ),
+                    )}
                   </p>
                   <p className="text-xs text-stone-500">{u.exHr}</p>
                 </li>
@@ -149,16 +299,17 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                 aria-pressed={chosen === w}
                 className={`rounded-full px-3 py-1 ${chosen === w ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'}`}
               >
-                {w}
+                <Furi written={w} reading={byWord(w).reading} on={furigana} />
               </button>
             ))}
           </div>
           <p className="mt-2 text-sm text-stone-500">
             <span lang="ja" className="font-semibold text-stone-800">
-              {word.word}
+              <Furi written={word.word} reading={word.reading} on={furigana} />
             </span>{' '}
-            ({word.reading}) · {word.hr} · {KIND_TITLE[kind]} · {forms.length} oblika
+            · {word.hr} · {KIND_TITLE[kind]} · {forms.length} oblika
           </p>
+          {kind === 'glagol' && <Memento word={word} furigana={furigana} />}
           <ul className="mt-2 grid gap-1.5 landscape:grid-cols-2">
             {forms.map((f) => {
               const r = conjugate(word, f.id)
@@ -175,12 +326,12 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                       </span>
                     </span>
                     <span className="min-w-0">
-                      <span lang="ja" className="text-xl font-medium">
-                        {r.written}
+                      <span lang="ja" className="text-xl leading-[2] font-medium">
+                        <Split word={word} formId={f.id} furigana={furigana} />
                       </span>
-                      {r.reading !== r.written && (
-                        <span lang="ja" className="ml-2 text-sm text-stone-500">
-                          {r.reading}
+                      {kind === 'glagol' && baseFor(word, f.id) && f.id !== 'te' && (
+                        <span className={`ml-2 rounded px-1 text-xs ${BASE_STYLE[baseFor(word, f.id)!].box} ${BASE_STYLE[baseFor(word, f.id)!].text}`}>
+                          od {BASES.find((b) => b.id === baseFor(word, f.id))!.label}
                         </span>
                       )}
                       <span className="block text-xs text-stone-500">{r.rule}</span>
