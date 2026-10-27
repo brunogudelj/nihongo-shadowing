@@ -45,6 +45,7 @@ export type Story = {
   theme: string
   level?: 'light' | 'fat' // bez oznake = light (sve starije priče)
   base?: string // fat priča: id light priče na kojoj je građena
+  created?: string // datum nastanka (YYYY-MM-DD)
   title_ja: string
   title_hr: string
   audio: string

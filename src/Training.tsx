@@ -22,7 +22,6 @@ import {
   formatMinutes,
   formatWhen,
   initialState,
-  newsPair,
   planDay,
   sessionStats,
   sessionSummary,
@@ -933,37 +932,6 @@ function StoryBlock({ s }: { s: SCtx }) {
   )
 }
 
-// --- Blok Vijest dana: najnovija vijest u tri kruga (bez kartica) ---
-function NewsBlock({ s }: { s: SCtx }) {
-  const { progress, setProgress } = s
-  // Krug 1 light (lakša verzija), krugovi 2 i 3 fat; ako postoji samo jedna, ona za sve krugove.
-  const pair = newsPair(STORY_INFO)
-  const round = Math.max(1, progress.round ?? 1)
-  const newsId = round === 1 ? (pair.light ?? pair.fat) : (pair.fat ?? pair.light)
-  if (!newsId) return <Done>Još nema vijesti. Dodirni „Blok gotov”.</Done>
-  if (round > 3) return <Done>Sva tri kruga su gotova. Dodirni „Blok gotov”.</Done>
-  const r = ROUNDS[round]
-  const story = stories.find((x) => x.id === newsId)
-  return (
-    <>
-      <p className="mt-3 text-stone-500">
-        <span lang="ja">{story?.title_ja}</span> · {story?.title_hr}
-      </p>
-      <p className="mt-2 font-semibold">{r.title}</p>
-      <Note>Dodirni ▶ Cijela priča od ove rečenice i govori uz Nanami.</Note>
-      <button
-        onClick={() => s.open({ kind: 'story', storyId: newsId, preset: { ...r.preset, loop: false, index: 0, note: r.title } })}
-        className={`${primary} mt-3 w-full`}
-      >
-        ▶ Otvori vijest
-      </button>
-      <button onClick={() => void setProgress({ round: round + 1 })} className={`${secondary} mt-3 w-full`}>
-        {round < 3 ? `Krug ${round} gotov → krug ${round + 1}` : 'Krug 3 gotov'}
-      </button>
-    </>
-  )
-}
-
 // --- Blokovi koji otvaraju postojeće alate ---
 function KonjBlock({ s }: { s: SCtx }) {
   const state = useLiveQuery(async () => (await db.vodic.get('stanje')) ?? initialState())
@@ -1034,8 +1002,9 @@ function BlockBody({ id, s }: { id: BlockId; s: SCtx }) {
       return <ReadingBlock s={s} />
     case 'nove-rijeci':
       return <NewWordsBlock s={s} />
-    case 'vijesti':
-      return <NewsBlock s={s} />
+    default:
+      // Blok koji više ne postoji (npr. stari 📰 Vijest dana u nezavršenoj sesiji).
+      return <Done>Ovaj blok više ne postoji. Dodirni „Blok gotov”.</Done>
   }
 }
 

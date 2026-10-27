@@ -3,6 +3,9 @@
 import { useState } from 'react'
 import allWords from '../data/konjugator.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Kind } from './conjugate'
+import { CATEGORIES, constructionsByCategory, formExamples, type Example } from './grammar-index'
+import { audioUrl, stories } from './stories'
+import { chunkSpans } from './timing'
 import { readSetting, writeSetting } from './settings'
 import { speak } from './speech'
 import { BASES, baseFor, stemOf } from './stems'
@@ -154,7 +157,70 @@ function Split({ word, formId, furigana }: { word: ConjWord; formId: string; fur
   )
 }
 
-const EXAMPLES = ['食べる', '行く', '飲む', '書く', '話す', 'する', '来る', '勉強する', '高い', 'いい', '静か']
+// Primjeri iz priča (računaju se jednom).
+const FORM_EXAMPLES = formExamples(stories, WORDS)
+const CONSTRUCTIONS = constructionsByCategory(stories)
+const storyTitle = (id: string) => stories.find((x) => x.id === id)?.title_ja ?? id
+
+let playing: HTMLAudioElement | null = null
+const sentenceUrl = (s: Example['sentence']) => audioUrl(s.audio)
+function playSentence(url: string | undefined) {
+  if (!url) return
+  playing?.pause()
+  playing = new Audio(url)
+  playing.preservesPitch = true
+  void playing.play().catch(() => {})
+}
+
+// Rečenica iz priče s istaknutom riječju ili blokom; 🔊 pušta rečenicu, prijevod je ispod sitno.
+function ExampleLine({ ex, furigana }: { ex: Example; furigana: boolean }) {
+  const s = ex.sentence
+  const span = ex.chunk !== undefined ? chunkSpans(s)[ex.chunk] : null
+  const hit = (wi: number) => (span ? wi >= span.from && wi < span.to : wi === ex.word)
+  return (
+    <li className="flex items-start gap-2 border-t border-stone-100 py-1.5">
+      {sentenceUrl(s) ? (
+        <button onClick={() => playSentence(sentenceUrl(s))} aria-label="Poslušaj rečenicu" className="rounded-full px-1.5 text-stone-500 active:bg-stone-200">
+          🔊
+        </button>
+      ) : (
+        <span className="w-7 shrink-0" />
+      )}
+      <div className="min-w-0">
+        <p lang="ja" className="text-lg leading-[2]">
+          {s.words.map((w, wi) => (
+            <span key={wi} className={hit(wi) ? 'font-semibold text-red-700' : ''}>
+              {w.furigana.map((p, pi) =>
+                p.reading && furigana ? (
+                  <ruby key={pi}>
+                    {p.text}
+                    <rt className="text-[0.55em] font-normal text-stone-500">{p.reading}</rt>
+                  </ruby>
+                ) : (
+                  <span key={pi}>{p.text}</span>
+                ),
+              )}
+            </span>
+          ))}
+        </p>
+        <p className="text-xs text-stone-500">
+          {s.hr} · <span lang="ja">{storyTitle(ex.storyId)}</span>
+        </p>
+      </div>
+    </li>
+  )
+}
+
+// Primjer pretvorbe za objašnjenje oblika (godan, ichidan, nepravilni; ili pridjev).
+const SAMPLE: Record<Kind, string[]> = { glagol: ['飲む', '食べる', 'する', '来る'], 'i-pridjev': ['高い', 'いい'], 'na-pridjev': ['静か'] }
+
+// Riječi za memento: iz tvojih priča, od najčešće.
+const EXAMPLES = (() => {
+  const count = new Map<string, number>()
+  for (const list of FORM_EXAMPLES.values()) for (const e of list) count.set(e.lemma.word, (count.get(e.lemma.word) ?? 0) + 1)
+  const top = [...count.entries()].sort((a, b) => b[1] - a[1]).map(([w]) => w).slice(0, 14)
+  return top.length ? top : ['食べる']
+})()
 const KIND_TITLE: Record<Kind, string> = { glagol: 'glagol', 'i-pridjev': 'i-pridjev', 'na-pridjev': 'na-pridjev' }
 
 function Te({ word, furigana }: { word: string; furigana: boolean }) {
@@ -170,9 +236,84 @@ function Te({ word, furigana }: { word: string; furigana: boolean }) {
   )
 }
 
+// Lekcija o te-obliku (pravila po zadnjoj kani, iznimke, čemu služi).
+function TeLesson({ furigana }: { furigana: boolean }) {
+  return (
+    <div className="mx-auto mt-3 grid max-w-4xl gap-3 landscape:grid-cols-2">
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="font-semibold">Kako nastaje te-oblik</h2>
+        <p className="mt-1 text-sm text-stone-600">
+          Godan glagoli: odlučuje zadnja kana. Isto pravilo daje i prošli oblik (て → た, で → だ: 飲んで → 飲んだ).
+        </p>
+        <table className="mt-2 w-full text-sm">
+          <tbody>
+            {TE_GODAN.map((r) => (
+              <tr key={r.ends} className="border-t border-stone-100">
+                <td className="py-1.5 pr-2 whitespace-nowrap" lang="ja">
+                  ～{r.ends} → <span className="font-semibold text-red-700">{r.te}</span>
+                </td>
+                <td className="flex flex-wrap gap-1 py-1.5">
+                  {r.words.map((w) => (
+                    <Te key={w} word={w} furigana={furigana} />
+                  ))}
+                </td>
+              </tr>
+            ))}
+            {TE_OTHER.map((r) => (
+              <tr key={r.label} className="border-t border-stone-100">
+                <td className="py-1.5 pr-2">
+                  <span className="font-semibold">{r.label}</span>
+                  <span className="block text-xs text-stone-500" lang="ja">
+                    {r.note}
+                  </span>
+                </td>
+                <td className="flex flex-wrap gap-1 py-1.5">
+                  {r.words.map((w) => (
+                    <Te key={w} word={w} furigana={furigana} />
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="mt-2 text-xs text-stone-500">Pridjevi: 高い → 高くて, 静か → 静かで (i…, i…).</p>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="font-semibold">Čemu služi</h2>
+        <ul className="mt-2 flex flex-col gap-2 text-sm">
+          {TE_USES.map((u) => (
+            <li key={u.ja} className="border-t border-stone-100 pt-2">
+              <p>
+                <span lang="ja" className="font-semibold">
+                  {u.ja}
+                </span>{' '}
+                <span className="text-stone-500">· {u.hr}</span>
+              </p>
+              <p lang="ja" className="text-base leading-[2]">
+                {u.ex.map(([t, r], i) =>
+                  r && furigana ? (
+                    <ruby key={i}>
+                      {t}
+                      <rt className="text-[0.6em] text-stone-500">{r}</rt>
+                    </ruby>
+                  ) : (
+                    <span key={i}>{t}</span>
+                  ),
+                )}
+              </p>
+              <p className="text-xs text-stone-500">{u.exHr}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  )
+}
+
 export default function Forms({ onBack }: { onBack: () => void }) {
-  const [tab, setTab] = useState<'te' | 'svi'>('te')
-  const [chosen, setChosen] = useState('食べる')
+  const [tab, setTab] = useState<'oblici' | 'konstrukcije' | 'memento'>('oblici')
+  const [chosen, setChosen] = useState(EXAMPLES[0])
   const [furigana, setFurigana] = useState(() => readSetting('oblici-furigana') !== '0')
   function toggleFurigana() {
     setFurigana(!furigana)
@@ -200,8 +341,9 @@ export default function Forms({ onBack }: { onBack: () => void }) {
           </button>
           {(
             [
-              ['te', 'te-oblik'],
-              ['svi', 'svi oblici'],
+              ['oblici', 'oblici'],
+              ['konstrukcije', 'konstrukcije'],
+              ['memento', 'memento'],
             ] as const
           ).map(([v, label]) => (
             <button
@@ -216,79 +358,98 @@ export default function Forms({ onBack }: { onBack: () => void }) {
         </div>
       </header>
 
-      {tab === 'te' && (
-        <div className="mx-auto mt-3 grid max-w-4xl gap-3 landscape:grid-cols-2">
-          <section className="rounded-2xl bg-white p-4 shadow-sm">
-            <h2 className="font-semibold">Kako nastaje te-oblik</h2>
-            <p className="mt-1 text-sm text-stone-600">
-              Godan glagoli: odlučuje zadnja kana. Isto pravilo daje i prošli oblik (て → た, で → だ: 飲んで → 飲んだ).
-            </p>
-            <table className="mt-2 w-full text-sm">
-              <tbody>
-                {TE_GODAN.map((r) => (
-                  <tr key={r.ends} className="border-t border-stone-100">
-                    <td className="py-1.5 pr-2 whitespace-nowrap" lang="ja">
-                      ～{r.ends} → <span className="font-semibold text-red-700">{r.te}</span>
-                    </td>
-                    <td className="flex flex-wrap gap-1 py-1.5">
-                      {r.words.map((w) => (
-                        <Te key={w} word={w} furigana={furigana} />
-                      ))}
-                    </td>
-                  </tr>
-                ))}
-                {TE_OTHER.map((r) => (
-                  <tr key={r.label} className="border-t border-stone-100">
-                    <td className="py-1.5 pr-2">
-                      <span className="font-semibold">{r.label}</span>
-                      <span className="block text-xs text-stone-500" lang="ja">
-                        {r.note}
-                      </span>
-                    </td>
-                    <td className="flex flex-wrap gap-1 py-1.5">
-                      {r.words.map((w) => (
-                        <Te key={w} word={w} furigana={furigana} />
-                      ))}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-            <p className="mt-2 text-xs text-stone-500">Pridjevi: 高い → 高くて, 静か → 静かで (i…, i…).</p>
-          </section>
 
-          <section className="rounded-2xl bg-white p-4 shadow-sm">
-            <h2 className="font-semibold">Čemu služi</h2>
-            <ul className="mt-2 flex flex-col gap-2 text-sm">
-              {TE_USES.map((u) => (
-                <li key={u.ja} className="border-t border-stone-100 pt-2">
-                  <p>
-                    <span lang="ja" className="font-semibold">
-                      {u.ja}
-                    </span>{' '}
-                    <span className="text-stone-500">· {u.hr}</span>
-                  </p>
-                  <p lang="ja" className="text-base leading-[2]">
-                    {u.ex.map(([t, r], i) =>
-                      r && furigana ? (
-                        <ruby key={i}>
-                          {t}
-                          <rt className="text-[0.6em] text-stone-500">{r}</rt>
-                        </ruby>
-                      ) : (
-                        <span key={i}>{t}</span>
-                      ),
-                    )}
-                  </p>
-                  <p className="text-xs text-stone-500">{u.exHr}</p>
-                </li>
-              ))}
-            </ul>
-          </section>
+      {tab === 'oblici' && (
+        <div className="mx-auto mt-3 flex max-w-4xl flex-col gap-2">
+          <p className="text-sm text-stone-500">Svi oblici iz konjugatora, od onih koji su najčešći u tvojim pričama. Dodirni za pravilo i primjere.</p>
+          {[...FORMS]
+            .sort((x, y) => (FORM_EXAMPLES.get(y.id)?.length ?? 0) - (FORM_EXAMPLES.get(x.id)?.length ?? 0))
+            .map((f) => {
+              const ex = FORM_EXAMPLES.get(f.id) ?? []
+              return (
+                <details key={f.id} className="rounded-2xl bg-white px-3 py-2 shadow-sm">
+                  <summary className="cursor-pointer">
+                    <span className="font-semibold">{f.label}</span>{' '}
+                    <span lang="ja" className="text-stone-600">
+                      {f.ending}
+                    </span>
+                    <span className="ml-2 text-xs text-stone-400">
+                      {f.kind} · {f.level} · {ex.length ? `${ex.length}× u pričama` : 'nema u pričama'}
+                    </span>
+                  </summary>
+                  {f.id === 'te' ? (
+                    <TeLesson furigana={furigana} />
+                  ) : (
+                    <ul className="mt-1 text-sm">
+                      {SAMPLE[f.kind].map((w) => {
+                        const sample = byWord(w)
+                        const r = conjugate(sample, f.id)
+                        return (
+                          <li key={w} className="flex flex-wrap items-baseline gap-2 py-0.5">
+                            <button onClick={() => void speak(r.reading)} lang="ja" className="rounded bg-stone-100 px-1.5 active:bg-stone-200">
+                              <Furi written={sample.word} reading={sample.reading} on={furigana} /> →{' '}
+                              <span className="text-red-700">
+                                <Furi written={r.written} reading={r.reading} on={furigana} />
+                              </span>
+                            </button>
+                            <span className="text-xs text-stone-500">{r.rule}</span>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  )}
+                  {ex.length > 0 && (
+                    <>
+                      <p className="mt-2 text-xs font-semibold text-stone-500">Iz tvojih priča</p>
+                      <ul>
+                        {ex.slice(0, 12).map((e, i) => (
+                          <ExampleLine key={i} ex={e} furigana={furigana} />
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </details>
+              )
+            })}
         </div>
       )}
 
-      {tab === 'svi' && (
+      {tab === 'konstrukcije' && (
+        <div className="mx-auto mt-3 flex max-w-4xl flex-col gap-3">
+          <p className="text-sm text-stone-500">Konstrukcije iz tvojih priča (✦ u playeru), po onome što želiš reći. Nove priče same dodaju primjere.</p>
+          {CATEGORIES.filter((c) => CONSTRUCTIONS.has(c.id)).map((c) => (
+            <section key={c.id}>
+              <h2 className="mb-1 font-semibold">{c.title}</h2>
+              <div className="flex flex-col gap-1.5">
+                {CONSTRUCTIONS.get(c.id)!.map((k) => (
+                  <details key={k.key} className="rounded-2xl bg-white px-3 py-2 shadow-sm">
+                    <summary className="cursor-pointer">
+                      <span lang="ja" className="font-semibold">
+                        {k.key}
+                      </span>
+                      {k.key !== k.label && <span className="ml-2 text-sm text-stone-500">{k.label}</span>}
+                      <span className="ml-2 text-xs text-stone-400">{k.examples.length}×</span>
+                    </summary>
+                    {k.formula && (
+                      <p lang="ja" className="mt-1 text-sm">
+                        {k.formula}
+                      </p>
+                    )}
+                    {k.rule && <p className="text-xs text-stone-500">{k.rule}</p>}
+                    <ul className="mt-1">
+                      {k.examples.slice(0, 12).map((e, i) => (
+                        <ExampleLine key={i} ex={e} furigana={furigana} />
+                      ))}
+                    </ul>
+                  </details>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
+
+      {tab === 'memento' && (
         <div className="mx-auto mt-3 max-w-4xl">
           <div className="flex flex-wrap gap-1.5">
             {EXAMPLES.map((w) => (

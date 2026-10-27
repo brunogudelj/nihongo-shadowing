@@ -127,7 +127,7 @@ if (!LEVEL_RULES[level]) {
 }
 const outDir = `content/stories/${themeId}`
 mkdirSync(outDir, { recursive: true })
-// Najveći postojeći broj + 1 (stare vijesti se brišu, pa brojanje datoteka ne bi bilo sigurno).
+// Najveći postojeći broj + 1 (sigurno i ako je neka priča obrisana).
 const next = Math.max(0, ...readdirSync(outDir).filter((f) => /^\d{3}\.json$/.test(f)).map((f) => parseInt(f))) + 1
 const id = String(next).padStart(3, '0')
 
