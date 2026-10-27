@@ -147,6 +147,12 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
     return readSetting('cisto') === '1' ? 'cisto' : 'puno'
   })
   const [revealed, setRevealed] = useState(false)
+  // U Čistom načinu furigana se može upaliti gumbom あ (pamti se).
+  const [cleanFurigana, setCleanFurigana] = useState(() => readSetting('cisto-furigana') === '1')
+  function toggleCleanFurigana() {
+    setCleanFurigana(!cleanFurigana)
+    writeSetting('cisto-furigana', cleanFurigana ? '0' : '1')
+  }
   const clean = view === 'cisto'
   const xray = view === 'rendgen'
   const hidden = view === 'sluh' && !revealed
@@ -334,12 +340,55 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
     onPrevious: () => index > 0 && goTo(index - 1),
   })
 
+  // Točkice rečenica, status, furigana (Čisto) i razina pomoći: uspravno u redu iznad playera, vodoravno desno od njega.
+  const sideControls = (
+    <>
+      <div className="flex shrink-0 items-center gap-1" aria-label={`Rečenica ${index + 1} od ${story.sentences.length}`}>
+        {story.sentences.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => goTo(i)}
+            aria-label={`Rečenica ${i + 1}`}
+            className={`h-2.5 w-2.5 rounded-full ${STATUS[statusOf(i)].dot} ${i === index ? 'ring-2 ring-stone-800 ring-offset-1' : ''}`}
+          />
+        ))}
+      </div>
+      <button
+        onClick={() => setSentenceStatus(story.id, index, STATUS[statusOf(index)].next)}
+        className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${STATUS[statusOf(index)].chip}`}
+      >
+        {STATUS[statusOf(index)].label}
+      </button>
+      {clean && (
+        <button
+          onClick={toggleCleanFurigana}
+          aria-pressed={cleanFurigana}
+          aria-label={cleanFurigana ? 'Sakrij furiganu' : 'Prikaži furiganu'}
+          className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
+            cleanFurigana ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
+          }`}
+        >
+          あ
+        </button>
+      )}
+      <button
+        onClick={cycleView}
+        aria-label={`Razina pomoći: ${VIEWS[view].label}. Dodirni za iduću.`}
+        className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
+          view !== 'puno' ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
+        }`}
+      >
+        {VIEWS[view].label}
+      </button>
+    </>
+  )
+
   return (
     <KanjiMagnifier>
       <main className="flex h-dvh flex-col bg-stone-50 px-4 pt-2 text-stone-900 landscape:px-6">
         <audio ref={audioRef} onEnded={() => (playing === 'full' ? stop() : finishedRef.current())} />
 
-        {/* Tanka gornja traka: natrag, naslov, točkice rečenica (dodir = idi na nju), status i razina pomoći. */}
+        {/* Tanka gornja traka: natrag i naslov. Ostale kontrole su dolje, uz player. */}
         <header className="flex items-center gap-2 text-sm">
           <button
             onClick={() => { stop(); onBack() }}
@@ -351,31 +400,6 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
           <p lang="ja" className="min-w-0 truncate text-stone-500">
             {story.title_ja}
           </p>
-          <div className="ml-auto flex shrink-0 items-center gap-1" aria-label={`Rečenica ${index + 1} od ${story.sentences.length}`}>
-            {story.sentences.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => goTo(i)}
-                aria-label={`Rečenica ${i + 1}`}
-                className={`h-2.5 w-2.5 rounded-full ${STATUS[statusOf(i)].dot} ${i === index ? 'ring-2 ring-stone-800 ring-offset-1' : ''}`}
-              />
-            ))}
-          </div>
-          <button
-            onClick={() => setSentenceStatus(story.id, index, STATUS[statusOf(index)].next)}
-            className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${STATUS[statusOf(index)].chip}`}
-          >
-            {STATUS[statusOf(index)].label}
-          </button>
-          <button
-            onClick={cycleView}
-            aria-label={`Razina pomoći: ${VIEWS[view].label}. Dodirni za iduću.`}
-            className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
-              view !== 'puno' ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
-            }`}
-          >
-            {VIEWS[view].label}
-          </button>
         </header>
 
         {preset?.note && (
@@ -400,12 +424,28 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
           ) : clean ? (
             <>
               {/* Čisti način: samo rečenica, kako bi je napisao Japanac. */}
-              <p lang="ja" className="text-[2rem] leading-[1.6] font-medium landscape:text-[1.75rem]">
-                {sentence.words.map((w, wi) => (
-                  <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
-                    <KanjiText text={w.text} word={{ text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }} />
-                  </span>
-                ))}
+              <p lang="ja" className={`text-[2rem] font-medium landscape:text-[1.75rem] ${cleanFurigana ? 'leading-[2.2]' : 'leading-[1.6]'}`}>
+                {sentence.words.map((w, wi) => {
+                  const word = { text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }
+                  return (
+                    <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
+                      {cleanFurigana ? (
+                        w.furigana.map((p, pi) =>
+                          p.reading ? (
+                            <ruby key={pi}>
+                              <KanjiText text={p.text} word={word} />
+                              <rt className="text-sm text-stone-500">{p.reading}</rt>
+                            </ruby>
+                          ) : (
+                            <span key={pi}>{p.text}</span>
+                          ),
+                        )
+                      ) : (
+                        <KanjiText text={w.text} word={word} />
+                      )}
+                    </span>
+                  )
+                })}
               </p>
               {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
             </>
@@ -607,61 +647,66 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
               ))}
             </div>
           )}
+          {/* Uspravno: točkice, status, あ i razina u redu iznad playera (vodoravno su desno od njega). */}
+          <div className="mb-2 flex items-center justify-end gap-2 text-sm landscape:hidden">{sideControls}</div>
           <div className="h-1 overflow-hidden rounded-full bg-stone-200" aria-hidden>
             <div className="h-full bg-red-700" style={{ width: `${Math.round(progress * 100)}%` }} />
           </div>
-          <div className="mx-auto mt-1 flex max-w-xl items-center justify-between gap-1">
-            <button
-              onClick={cycleSpeed}
-              aria-label={`Brzina ${speed}×. Dodirni za iduću.`}
-              className={`w-14 rounded-full py-2 text-sm font-semibold ${
-                speed === 1 ? 'text-stone-600 active:bg-stone-200' : 'bg-stone-800 text-white'
-              }`}
-            >
-              {speed}×
-            </button>
-            <button
-              onClick={() => goTo(index - 1)}
-              disabled={index === 0}
-              aria-label="Prethodna rečenica"
-              className="rounded-full p-3 text-stone-700 active:bg-stone-200 disabled:opacity-30"
-            >
-              <Icon d={ICON.prev} />
-            </button>
-            <button
-              onClick={() => (busy ? stop() : playSentence())}
-              disabled={!loaded}
-              aria-label={busy ? 'Stani' : 'Slušaj rečenicu'}
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-2xl text-white shadow active:bg-red-800 disabled:opacity-50"
-            >
-              <Icon d={busy ? ICON.pause : ICON.play} className="h-7 w-7" />
-            </button>
-            <button
-              onClick={() => goTo(index + 1)}
-              disabled={index === story.sentences.length - 1}
-              aria-label="Sljedeća rečenica"
-              className="rounded-full p-3 text-stone-700 active:bg-stone-200 disabled:opacity-30"
-            >
-              <Icon d={ICON.next} />
-            </button>
-            <button
-              onClick={toggleLoop}
-              aria-pressed={loop}
-              aria-label="Ponavljaj"
-              className={`rounded-full p-2.5 ${loop ? 'bg-red-700 text-white' : 'text-stone-700 active:bg-stone-200'}`}
-            >
-              <Icon d={ICON.loop} className="h-5 w-5" />
-            </button>
-            <button
-              onClick={() => (playing === 'full' ? stop() : playFull())}
-              disabled={urls[story.audio] === undefined}
-              aria-label={playing === 'full' ? 'Zaustavi priču' : 'Cijela priča od ove rečenice'}
-              className={`rounded-full px-3 py-2 text-sm font-semibold disabled:opacity-50 ${
-                playing === 'full' ? 'bg-stone-800 text-white' : 'text-stone-600 active:bg-stone-200'
-              }`}
-            >
-              {playing === 'full' ? '❚❚ priča' : '▶▶ priča'}
-            </button>
+          <div className="mt-1 flex items-center gap-3">
+            <div className="mx-auto flex w-full max-w-xl items-center justify-between gap-1 landscape:mx-0 landscape:w-auto landscape:gap-2">
+              <button
+                onClick={cycleSpeed}
+                aria-label={`Brzina ${speed}×. Dodirni za iduću.`}
+                className={`w-14 rounded-full py-2 text-sm font-semibold ${
+                  speed === 1 ? 'text-stone-600 active:bg-stone-200' : 'bg-stone-800 text-white'
+                }`}
+              >
+                {speed}×
+              </button>
+              <button
+                onClick={() => goTo(index - 1)}
+                disabled={index === 0}
+                aria-label="Prethodna rečenica"
+                className="rounded-full p-3 text-stone-700 active:bg-stone-200 disabled:opacity-30"
+              >
+                <Icon d={ICON.prev} />
+              </button>
+              <button
+                onClick={() => (busy ? stop() : playSentence())}
+                disabled={!loaded}
+                aria-label={busy ? 'Stani' : 'Slušaj rečenicu'}
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-red-700 text-2xl text-white shadow active:bg-red-800 disabled:opacity-50"
+              >
+                <Icon d={busy ? ICON.pause : ICON.play} className="h-7 w-7" />
+              </button>
+              <button
+                onClick={() => goTo(index + 1)}
+                disabled={index === story.sentences.length - 1}
+                aria-label="Sljedeća rečenica"
+                className="rounded-full p-3 text-stone-700 active:bg-stone-200 disabled:opacity-30"
+              >
+                <Icon d={ICON.next} />
+              </button>
+              <button
+                onClick={toggleLoop}
+                aria-pressed={loop}
+                aria-label="Ponavljaj"
+                className={`rounded-full p-2.5 ${loop ? 'bg-red-700 text-white' : 'text-stone-700 active:bg-stone-200'}`}
+              >
+                <Icon d={ICON.loop} className="h-5 w-5" />
+              </button>
+              <button
+                onClick={() => (playing === 'full' ? stop() : playFull())}
+                disabled={urls[story.audio] === undefined}
+                aria-label={playing === 'full' ? 'Zaustavi priču' : 'Cijela priča od ove rečenice'}
+                className={`rounded-full px-3 py-2 text-sm font-semibold disabled:opacity-50 ${
+                  playing === 'full' ? 'bg-stone-800 text-white' : 'text-stone-600 active:bg-stone-200'
+                }`}
+              >
+                {playing === 'full' ? '❚❚ priča' : '▶▶ priča'}
+              </button>
+            </div>
+            <div className="ml-auto hidden items-center gap-2 text-sm landscape:flex">{sideControls}</div>
           </div>
         </div>
       </main>

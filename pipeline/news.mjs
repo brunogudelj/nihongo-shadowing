@@ -1,7 +1,7 @@
 // Priprema dnevne vijesti: skine naslove s hrvatskih RSS izvora (HRT, Index), zapiše ih u
 // themes/vijesti.yaml (Claude bira jednu vijest i prepričava je u 5 rečenica) i obriše vijesti
 // starije od 30 dana (priča + zvuk). Zatim ide obična nova priča: npm run nova-prica -- vijesti
-// Pokretanje: node pipeline/news.mjs
+// Pokretanje: node pipeline/news.mjs   (samo brisanje starih i dupliciranih: node pipeline/news.mjs --samo-ciscenje)
 
 import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { stringify } from 'yaml'
@@ -41,6 +41,45 @@ function parseRss(xml) {
   })
 }
 
+// Već obrađene teme se izbacuju prije Claudea (inače isti naslov, koji danima stoji na popisu, dolazi
+// opet). Usporedba po korijenima riječi (prvih 4 slova), da Hrgović i Hrgovića budu isto.
+const stems = (t) => new Set((t.toLowerCase().match(/[\p{L}\d]{4,}/gu) ?? []).map((w) => w.slice(0, 4)))
+export function sameTopic(a, b) {
+  const x = stems(a)
+  const y = stems(b)
+  const shared = [...x].filter((w) => y.has(w)).length
+  return shared >= 2 && shared >= 0.3 * Math.min(x.size, y.size)
+}
+
+// Spremljene vijesti: brišu se starije od 30 dana i one koje ponavljaju već obrađenu temu
+// (zajedno sa zvukom i s fat verzijom koja je na njima građena). Ostale daju popis obrađenih tema.
+const today = new Date().toISOString().slice(0, 10)
+const cutoff = new Date(Date.now() - KEEP_DAYS * 86_400_000).toISOString().slice(0, 10)
+const saved = existsSync(DIR)
+  ? readdirSync(DIR).filter((f) => /^\d{3}\.json$/.test(f)).sort().map((f) => ({ f, story: JSON.parse(readFileSync(`${DIR}/${f}`, 'utf8')) }))
+  : []
+function remove(story, why) {
+  rmSync(`${DIR}/${story.id.slice(-3)}.json`)
+  for (const a of readdirSync('content/audio').filter((a) => a.startsWith(`${story.id}-`))) rmSync(`content/audio/${a}`)
+  console.log(`Obrisana vijest ${story.id} (${why}): ${story.title_hr}`)
+}
+const recent = []
+const removed = new Set()
+for (const { story } of saved) {
+  if (story.base) continue // fat građena na light vijesti: ide zajedno sa svojom light
+  if ((story.created ?? today) < cutoff) {
+    remove(story, `starija od ${KEEP_DAYS} dana`)
+    removed.add(story.id)
+  } else if (recent.some((r) => sameTopic(story.title_hr, r))) {
+    remove(story, 'ponavlja već obrađenu temu')
+    removed.add(story.id)
+  } else {
+    recent.push(story.title_hr)
+  }
+}
+for (const { story } of saved) if (story.base && removed.has(story.base)) remove(story, `uz ${story.base}`)
+if (process.argv.includes('--samo-ciscenje')) process.exit(0)
+
 const headlines = []
 for (const feed of FEEDS) {
   if (headlines.some((h) => h.izvor === feed.name)) continue // isti izvor s druge adrese ne treba
@@ -59,21 +98,11 @@ if (!headlines.length) {
   process.exit(1)
 }
 
-// Stare vijesti: priča i njezin zvuk (ime počinje s vijesti-NNN-).
-const today = new Date().toISOString().slice(0, 10)
-const cutoff = new Date(Date.now() - KEEP_DAYS * 86_400_000).toISOString().slice(0, 10)
-const recent = []
-if (existsSync(DIR)) {
-  for (const f of readdirSync(DIR).filter((f) => /^\d{3}\.json$/.test(f))) {
-    const story = JSON.parse(readFileSync(`${DIR}/${f}`, 'utf8'))
-    if ((story.created ?? today) < cutoff) {
-      rmSync(`${DIR}/${f}`)
-      for (const a of readdirSync('content/audio').filter((a) => a.startsWith(`${story.id}-`))) rmSync(`content/audio/${a}`)
-      console.log(`Obrisana stara vijest ${story.id} (${story.created})`)
-    } else {
-      recent.push(story.title_hr)
-    }
-  }
+const fresh = headlines.filter((h) => !recent.some((r) => sameTopic(h.naslov, r)))
+console.log(`Izbačeno već obrađenih: ${headlines.length - fresh.length}, ostaje ${fresh.length} naslova.`)
+if (!fresh.length) {
+  console.error('Svi naslovi su već obrađeni. Danas nema nove vijesti (ništa nije potrošeno).')
+  process.exit(1)
 }
 
 const theme = {
@@ -84,19 +113,19 @@ const theme = {
     'zanimljiva i razumljiva (vrijeme, sport, kultura, turizam, znanost, gospodarstvo, svakodnevni život). ' +
     'Preskoči zločine, nesreće sa žrtvama, rat i političke sukobe.',
   upute: [
-    'Write EXACTLY 5 sentences: a short news report about the chosen headline, in polite form, third person. Richer sentences (25 to 45 characters) that give context: who, where, why, what happens next.',
+    'A short news report about the chosen headline, in polite form, third person, giving context: who, where, why, what happens next. The number and length of sentences follow the story rules for the level.',
     'Retell it in your own words. Do not translate or copy the article text.',
     'Use only facts from the headline and summary. Do not invent numbers, names or quotes.',
     'Croatian place and person names in katakana (ザグレブ, スプリト).',
     'Avoid katakana loanwords that are not N5/N4 words (e.g. use 試合 and 選手, not チーム or ビデオ).',
     'title_hr: the Croatian headline you chose (shortened if long). title_ja: its short Japanese title.',
   ],
-  vec_obradjeno: recent.length ? recent : undefined,
-  naslovi: headlines,
+  vec_obradjeno: recent.length ? [...new Set(recent)] : undefined,
+  naslovi: fresh,
 }
 writeFileSync(
   'themes/vijesti.yaml',
   '# Tema za dnevnu vijest. Ovu datoteku svaki dan iznova piše pipeline/news.mjs; ne mijenjaj je ručno.\n\n' +
     stringify(theme, { lineWidth: 0 }),
 )
-console.log(`Spremljeno themes/vijesti.yaml (${headlines.length} naslova).`)
+console.log(`Spremljeno themes/vijesti.yaml (${fresh.length} naslova).`)

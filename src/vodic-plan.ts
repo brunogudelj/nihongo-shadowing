@@ -22,7 +22,7 @@ export const dayOfWeek = (date: string) => ((new Date(toUtc(date)).getUTCDay() +
 // --- Ulaz i izlaz planera ---
 
 export type SentenceRef = { storyId: string; index: number }
-export type StoryInfo = { id: string; sentenceCount: number; theme?: string; level?: 'light' | 'fat' }
+export type StoryInfo = { id: string; sentenceCount: number; theme?: string; level?: 'light' | 'fat'; base?: string }
 
 export type PlanInput = {
   date: string
@@ -211,6 +211,14 @@ export type Session = {
 // Dnevne vijesti nisu u redu priča (nemaju kartice, brišu se nakon 30 dana); imaju svoj blok.
 export const isNews = (id: string) => id.startsWith('vijesti-')
 export const latestNews = (stories: StoryInfo[]) => stories.map((s) => s.id).filter(isNews).sort().at(-1) ?? null
+// Najnovija vijest u obje razine: fat građena na light (polje base). Starije vijesti imaju samo fat.
+export function newsPair(stories: StoryInfo[]): { light: string | null; fat: string | null } {
+  const id = latestNews(stories)
+  const latest = stories.find((s) => s.id === id)
+  if (!latest) return { light: null, fat: null }
+  if (latest.level === 'fat') return { light: latest.base ?? null, fat: latest.id }
+  return { light: latest.id, fat: null }
+}
 
 // Tema po tema: unutar teme prvo light priče, zatim fat (fat se gradi na light, pa dolazi tek kad je light naučena).
 // Teme idu redom iz vodic-config.ts, zatim ostale po imenu.

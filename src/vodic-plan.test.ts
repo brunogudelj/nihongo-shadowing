@@ -18,6 +18,7 @@ import {
   planSession,
   storyQueue,
   latestNews,
+  newsPair,
   sessionStats,
   sessionSummary,
   wordQueue,
@@ -384,5 +385,18 @@ describe('light i fat', () => {
     expect(currentStory(one, list, []).newSentence).toEqual({ storyId: 'ramen-001', index: 1 })
     const both = [...one, rateCard(undefined, 'fraza', 'ramen-001:1', true, now).card]
     expect(currentStory(both, list, []).newSentence).toEqual({ storyId: 'ramen-002', index: 0 })
+  })
+})
+
+describe('vijest u dvije razine', () => {
+  it('light pa fat iste vijesti; starija vijest samo fat', () => {
+    const list = [
+      { id: 'vijesti-002', sentenceCount: 5, level: 'fat' as const },
+      { id: 'vijesti-011', sentenceCount: 7, level: 'light' as const },
+      { id: 'vijesti-012', sentenceCount: 5, level: 'fat' as const, base: 'vijesti-011' },
+    ]
+    expect(newsPair(list)).toEqual({ light: 'vijesti-011', fat: 'vijesti-012' })
+    expect(newsPair(list.slice(0, 2))).toEqual({ light: 'vijesti-011', fat: null })
+    expect(newsPair(list.slice(0, 1))).toEqual({ light: null, fat: 'vijesti-002' })
   })
 })

@@ -12,6 +12,7 @@ export const SETTING_KEYS = [
   'rij-izvor', // ponavljanje riječi: moje / price / sve
   'sesija-trajanje', // zadnje izabrano trajanje sesije: 5, 10, 15
   'sesija-cilj', // dnevni cilj: broj sesija
+  'cisto-furigana', // furigana u Čistom načinu (1 = prikazana)
 ] as const
 
 export type SettingKey = (typeof SETTING_KEYS)[number]
