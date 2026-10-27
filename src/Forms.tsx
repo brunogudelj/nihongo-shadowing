@@ -167,8 +167,10 @@ const CONSTRUCTIONS = constructionsByCategory(ALL)
 const storyTitle = (id: string) => ALL.find((x) => x.id === id)?.title_ja ?? id
 
 let playing: HTMLAudioElement | null = null
-function playSentence(name: string) {
-  const url = audioUrl(name)
+// Zvuk rečenice: iz priče, ili (arhivirana vijest) iz public/arhiva/.
+const sentenceUrl = (s: Example['sentence']) =>
+  (s.audio && audioUrl(s.audio)) || (s.audio_arhiva ? `${import.meta.env.BASE_URL}${s.audio_arhiva}` : undefined)
+function playSentence(url: string | undefined) {
   if (!url) return
   playing?.pause()
   playing = new Audio(url)
@@ -183,8 +185,8 @@ function ExampleLine({ ex, furigana }: { ex: Example; furigana: boolean }) {
   const hit = (wi: number) => (span ? wi >= span.from && wi < span.to : wi === ex.word)
   return (
     <li className="flex items-start gap-2 border-t border-stone-100 py-1.5">
-      {s.audio && audioUrl(s.audio) ? (
-        <button onClick={() => playSentence(s.audio)} aria-label="Poslušaj rečenicu" className="rounded-full px-1.5 text-stone-500 active:bg-stone-200">
+      {sentenceUrl(s) ? (
+        <button onClick={() => playSentence(sentenceUrl(s))} aria-label="Poslušaj rečenicu" className="rounded-full px-1.5 text-stone-500 active:bg-stone-200">
           🔊
         </button>
       ) : (

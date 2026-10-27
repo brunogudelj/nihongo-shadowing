@@ -3,7 +3,7 @@
 // starije od 30 dana (priča + zvuk). Zatim ide obična nova priča: npm run nova-prica -- vijesti
 // Pokretanje: node pipeline/news.mjs   (samo brisanje starih i dupliciranih: node pipeline/news.mjs --samo-ciscenje)
 
-import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs'
 import { stringify } from 'yaml'
 
 // HRT-ova adresa nije poznata sigurno; probaju se redom, prva koja radi se koristi.
@@ -58,8 +58,8 @@ const cutoff = new Date(Date.now() - KEEP_DAYS * 86_400_000).toISOString().slice
 const saved = existsSync(DIR)
   ? readdirSync(DIR).filter((f) => /^\d{3}\.json$/.test(f)).sort().map((f) => ({ f, story: JSON.parse(readFileSync(`${DIR}/${f}`, 'utf8')) }))
   : []
-// Arhiva teksta vijesti starijih od 30 dana: zvuk se briše (mjesto na mobitelu), a rečenice ostaju
-// kao primjeri za 📐 Oblici. Spremaju se samo polja koja trebaju primjerima.
+// Arhiva vijesti starijih od 30 dana: rečenice ostaju kao primjeri za 📐 Oblici (samo polja koja
+// trebaju primjerima), uz zvuk rečenice u public/arhiva/.
 const ARCHIVE = 'content/vijesti-arhiva.json'
 const archive = existsSync(ARCHIVE) ? JSON.parse(readFileSync(ARCHIVE, 'utf8')) : []
 const slim = (story) => ({
@@ -75,10 +75,18 @@ const slim = (story) => ({
     chunks: x.chunks,
     chunk_info: x.chunk_info?.map((c) => ({ grammar_hr: c.grammar_hr, formula: c.formula, rule_hr: c.rule_hr })),
     words: x.words.map((w) => ({ text: w.text, lemma: w.lemma, furigana: w.furigana })),
+    audio_arhiva: `arhiva/${x.audio}`,
   })),
 })
+// Zvuk rečenica arhiviranih vijesti ide u public/arhiva/ (mobitel ga sprema tek kad se pusti);
+// zvuk blokova i cijele vijesti se briše.
+const ARCHIVE_AUDIO = 'public/arhiva'
 function remove(story, why, keep = false) {
-  if (keep && !archive.some((a) => a.id === story.id)) archive.push(slim(story))
+  if (keep) {
+    mkdirSync(ARCHIVE_AUDIO, { recursive: true })
+    for (const x of story.sentences) if (existsSync(`content/audio/${x.audio}`)) renameSync(`content/audio/${x.audio}`, `${ARCHIVE_AUDIO}/${x.audio}`)
+    if (!archive.some((a) => a.id === story.id)) archive.push(slim(story))
+  }
   rmSync(`${DIR}/${story.id.slice(-3)}.json`)
   for (const a of readdirSync('content/audio').filter((a) => a.startsWith(`${story.id}-`))) rmSync(`content/audio/${a}`)
   console.log(`Obrisana vijest ${story.id} (${why})${keep ? ', tekst ostaje u arhivi' : ''}: ${story.title_hr}`)
