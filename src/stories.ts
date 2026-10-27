@@ -35,7 +35,6 @@ export type Sentence = {
   chunk_audio?: string[] // svaki blok izgovoren zasebno
   words: Word[]
   audio: string
-  audio_arhiva?: string // arhivirana vijest: zvuk rečenice u public/arhiva/ (sprema se tek kad se pusti)
   duration_ms: number
   full_start_ms: number
   full_end_ms: number

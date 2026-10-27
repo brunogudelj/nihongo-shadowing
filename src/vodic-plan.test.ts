@@ -17,9 +17,6 @@ import {
   currentStory,
   planSession,
   storyQueue,
-  latestNews,
-  newsPair,
-  freshNews,
   sessionStats,
   sessionSummary,
   wordQueue,
@@ -363,16 +360,6 @@ describe('red priča', () => {
   })
 })
 
-describe('vijest dana', () => {
-  const info = (...ids: string[]) => ids.map((id) => ({ id, sentenceCount: 5 }))
-  it('vijesti nisu u redu priča, a najnovija je ona s najvećim brojem', () => {
-    const list = info('kyushu-001', 'vijesti-002', 'vijesti-010', 'ramen-001')
-    expect(storyQueue(list, ['kyushu-001'])).toEqual(['kyushu-001', 'ramen-001'])
-    expect(latestNews(list)).toBe('vijesti-010')
-    expect(latestNews(info('kyushu-001'))).toBeNull()
-  })
-})
-
 describe('light i fat', () => {
   const s = (id: string, level: 'light' | 'fat' = 'light') => ({ id, sentenceCount: 2, theme: id.replace(/-\d{3}$/, ''), level })
   it('tema po tema: light pa fat, teme iz postavki prve', () => {
@@ -389,26 +376,9 @@ describe('light i fat', () => {
   })
 })
 
-describe('vijest u dvije razine', () => {
-  it('light pa fat iste vijesti; starija vijest samo fat', () => {
-    const list = [
-      { id: 'vijesti-002', sentenceCount: 5, level: 'fat' as const },
-      { id: 'vijesti-011', sentenceCount: 7, level: 'light' as const },
-      { id: 'vijesti-012', sentenceCount: 5, level: 'fat' as const, base: 'vijesti-011' },
-    ]
-    expect(newsPair(list)).toEqual({ light: 'vijesti-011', fat: 'vijesti-012' })
-    expect(newsPair(list.slice(0, 2))).toEqual({ light: 'vijesti-011', fat: null })
-    expect(newsPair(list.slice(0, 1))).toEqual({ light: null, fat: 'vijesti-002' })
-  })
-})
-
-describe('svježa vijest', () => {
-  it('blok Vijest dana samo dok je vijest svježa', () => {
-    const now = new Date('2026-10-27T10:00:00').getTime()
-    const list = (created: string) => [{ id: 'vijesti-010', sentenceCount: 5, created }]
-    expect(freshNews(list('2026-10-26'), now, 3)).toBe(true)
-    expect(freshNews(list('2026-10-24'), now, 3)).toBe(true)
-    expect(freshNews(list('2026-10-20'), now, 3)).toBe(false)
-    expect(freshNews([], now, 3)).toBe(false)
+describe('vijesti kao priče', () => {
+  it('vijesti su u redu priča kao i ostale teme', () => {
+    const info = (...ids: string[]) => ids.map((id) => ({ id, sentenceCount: 5 }))
+    expect(storyQueue(info('vijesti-002', 'kyushu-001', 'vijesti-001'), ['kyushu-001'])).toEqual(['kyushu-001', 'vijesti-001', 'vijesti-002'])
   })
 })

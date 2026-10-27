@@ -25,9 +25,9 @@ Sadržaj: 5 novih light priča (Opus, ukupno 2,08 $), ramen fat (0,62 $), dvije 
 - U sesijama tema po tema: light → fat; fat dolazi tek kad su sve rečenice light priče upoznate.
 - Vijesti su uvijek fat. Pokretanje: Actions → Nova priča → tema(e) → razina.
 
-### Vijest dana
-- **Ugašeno 27. 10.** (korisnik: teme vijesti se ne mogu kontrolirati; nove priče se pokreću ručno iz vlastitih tema). Ostaje ručno pokretanje: Actions → Vijest dana. Blok 📰 Vijest dana nudi se samo ako je vijest stara najviše 3 dana (`SESIJA.newsDays`).
-- Postojeće vijesti ostaju; starije od 30 dana idu u arhivu (tekst + zvuk rečenica) kad se robot sljedeći put pokrene. Naslovi su bili samo s Indexa (HRT RSS 404).
+### Vijesti (ugašeno 27. 10.)
+- Automatske vijesti su maknute (teme se nisu mogle kontrolirati): nema robota, bloka 📰, arhive ni brisanja.
+- Već napisane vijesti (tema `vijesti`) su **obične priče**: u 📚 Pričama, u redu sesija (tema po tema, light pa fat), s karticama i primjerima u 📐 Oblici.
 - Ideja ako se vrati: 📅 Priča dana iz vlastitih tema (robot svako jutro piše iduću light/fat priču po redu tema).
 
 ## 2. Kako sesije rade (dogovoreno)

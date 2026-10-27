@@ -207,31 +207,10 @@ export type Session = {
   dueFraze: number
 }
 
-// Red priča: prvo one iz vodic-config.ts, zatim sve ostale po imenu (nova priča uđe u red sama).
-// Dnevne vijesti nisu u redu priča (nemaju kartice, brišu se nakon 30 dana); imaju svoj blok.
-export const isNews = (id: string) => id.startsWith('vijesti-')
-export const latestNews = (stories: StoryInfo[]) => stories.map((s) => s.id).filter(isNews).sort().at(-1) ?? null
-// Blok Vijest dana se nudi samo dok je najnovija vijest svježa (robot se pokreće ručno).
-export function freshNews(stories: StoryInfo[], now: number, days: number): boolean {
-  const latest = stories.find((s) => s.id === latestNews(stories))
-  if (!latest) return false
-  if (!latest.created) return false
-  return now - new Date(`${latest.created}T00:00:00`).getTime() <= (days + 1) * 86_400_000
-}
-
-// Najnovija vijest u obje razine: fat građena na light (polje base). Starije vijesti imaju samo fat.
-export function newsPair(stories: StoryInfo[]): { light: string | null; fat: string | null } {
-  const id = latestNews(stories)
-  const latest = stories.find((s) => s.id === id)
-  if (!latest) return { light: null, fat: null }
-  if (latest.level === 'fat') return { light: latest.base ?? null, fat: latest.id }
-  return { light: latest.id, fat: null }
-}
-
 // Tema po tema: unutar teme prvo light priče, zatim fat (fat se gradi na light, pa dolazi tek kad je light naučena).
 // Teme idu redom iz vodic-config.ts, zatim ostale po imenu.
 export function storyQueue(stories: StoryInfo[], storyOrder: string[] = VODIC.storyOrder): string[] {
-  const list = stories.filter((s) => !isNews(s.id))
+  const list = stories
   const themeOf = (s: StoryInfo) => s.theme ?? s.id.replace(/-\d{3}$/, '')
   const rank = (s: StoryInfo) => {
     const i = storyOrder.indexOf(s.id)
@@ -281,7 +260,6 @@ export function availableBlocks(input: SessionInput) {
     konjugator: true,
     citanje: true,
     'nove-rijeci': input.vocabLeft > 0,
-    vijesti: freshNews(input.stories, now, config.newsDays),
   }
   const due: Partial<Record<BlockId, number>> = { rijeci: dueWords, fraze: dueFraze }
   const ids = (Object.keys(config.blocks) as BlockId[]).filter((id) => offered[id])
