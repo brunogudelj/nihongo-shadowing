@@ -26,7 +26,9 @@ Sadržaj: 5 novih light priča (Opus, ukupno 2,08 $), ramen fat (0,62 $), dvije 
 - Vijesti su uvijek fat. Pokretanje: Actions → Nova priča → tema(e) → razina.
 
 ### Vijest dana
-- Svako jutro u 6:43 (zimi 5:43), Haiku, oko 0,02 $. Naslovi samo s **Indexa**: HRT-ove RSS adrese javljaju 404 (pipeline ih proba šest; vidi zapis prvog jutarnjeg pokretanja).
+- **Ugašeno 27. 10.** (korisnik: teme vijesti se ne mogu kontrolirati; nove priče se pokreću ručno iz vlastitih tema). Ostaje ručno pokretanje: Actions → Vijest dana. Blok 📰 Vijest dana nudi se samo ako je vijest stara najviše 3 dana (`SESIJA.newsDays`).
+- Postojeće vijesti ostaju; starije od 30 dana idu u arhivu (tekst + zvuk rečenica) kad se robot sljedeći put pokrene. Naslovi su bili samo s Indexa (HRT RSS 404).
+- Ideja ako se vrati: 📅 Priča dana iz vlastitih tema (robot svako jutro piše iduću light/fat priču po redu tema).
 
 ## 2. Kako sesije rade (dogovoreno)
 

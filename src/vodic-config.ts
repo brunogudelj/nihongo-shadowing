@@ -63,6 +63,8 @@ export const SESIJA = {
   } as Record<BlockId, number>,
   // Zaostatak: kad je na redu više od ovoliko kartica, blok sigurno ulazi u sesiju.
   backlog: { rijeci: 20, fraze: 5 } as Partial<Record<BlockId, number>>,
+  // Blok Vijest dana: samo ako je najnovija vijest stara najviše ovoliko dana.
+  newsDays: 3,
 }
 
 // Vodič "Današnji trening" (dorada 1V). Minute, rokovi, redoslijed priča i tablica konjugatora.

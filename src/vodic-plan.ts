@@ -22,7 +22,7 @@ export const dayOfWeek = (date: string) => ((new Date(toUtc(date)).getUTCDay() +
 // --- Ulaz i izlaz planera ---
 
 export type SentenceRef = { storyId: string; index: number }
-export type StoryInfo = { id: string; sentenceCount: number; theme?: string; level?: 'light' | 'fat'; base?: string }
+export type StoryInfo = { id: string; sentenceCount: number; theme?: string; level?: 'light' | 'fat'; base?: string; created?: string }
 
 export type PlanInput = {
   date: string
@@ -211,6 +211,14 @@ export type Session = {
 // Dnevne vijesti nisu u redu priča (nemaju kartice, brišu se nakon 30 dana); imaju svoj blok.
 export const isNews = (id: string) => id.startsWith('vijesti-')
 export const latestNews = (stories: StoryInfo[]) => stories.map((s) => s.id).filter(isNews).sort().at(-1) ?? null
+// Blok Vijest dana se nudi samo dok je najnovija vijest svježa (robot se pokreće ručno).
+export function freshNews(stories: StoryInfo[], now: number, days: number): boolean {
+  const latest = stories.find((s) => s.id === latestNews(stories))
+  if (!latest) return false
+  if (!latest.created) return false
+  return now - new Date(`${latest.created}T00:00:00`).getTime() <= (days + 1) * 86_400_000
+}
+
 // Najnovija vijest u obje razine: fat građena na light (polje base). Starije vijesti imaju samo fat.
 export function newsPair(stories: StoryInfo[]): { light: string | null; fat: string | null } {
   const id = latestNews(stories)
@@ -273,7 +281,7 @@ export function availableBlocks(input: SessionInput) {
     konjugator: true,
     citanje: true,
     'nove-rijeci': input.vocabLeft > 0,
-    vijesti: latestNews(input.stories) !== null,
+    vijesti: freshNews(input.stories, now, config.newsDays),
   }
   const due: Partial<Record<BlockId, number>> = { rijeci: dueWords, fraze: dueFraze }
   const ids = (Object.keys(config.blocks) as BlockId[]).filter((id) => offered[id])

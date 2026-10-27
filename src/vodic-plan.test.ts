@@ -19,6 +19,7 @@ import {
   storyQueue,
   latestNews,
   newsPair,
+  freshNews,
   sessionStats,
   sessionSummary,
   wordQueue,
@@ -398,5 +399,16 @@ describe('vijest u dvije razine', () => {
     expect(newsPair(list)).toEqual({ light: 'vijesti-011', fat: 'vijesti-012' })
     expect(newsPair(list.slice(0, 2))).toEqual({ light: 'vijesti-011', fat: null })
     expect(newsPair(list.slice(0, 1))).toEqual({ light: null, fat: 'vijesti-002' })
+  })
+})
+
+describe('svježa vijest', () => {
+  it('blok Vijest dana samo dok je vijest svježa', () => {
+    const now = new Date('2026-10-27T10:00:00').getTime()
+    const list = (created: string) => [{ id: 'vijesti-010', sentenceCount: 5, created }]
+    expect(freshNews(list('2026-10-26'), now, 3)).toBe(true)
+    expect(freshNews(list('2026-10-24'), now, 3)).toBe(true)
+    expect(freshNews(list('2026-10-20'), now, 3)).toBe(false)
+    expect(freshNews([], now, 3)).toBe(false)
   })
 })

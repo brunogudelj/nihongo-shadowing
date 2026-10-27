@@ -4,9 +4,9 @@
 name: Vijest dana
 
 on:
-  # Svako jutro, s Haikuom (jeftino, oko 0,04 $ za obje razine).
-  schedule:
-    - cron: '43 4 * * *' # oko 6:43 po hrvatskom vremenu (ljeti), 5:43 zimi
+  # Automatsko pokretanje svako jutro je ugašeno (korisnik bira teme sam). Za uključiti: makni # ispod.
+  # schedule:
+  #   - cron: '43 4 * * *' # oko 6:43 po hrvatskom vremenu (ljeti), 5:43 zimi
   workflow_dispatch:
     inputs:
       model:
