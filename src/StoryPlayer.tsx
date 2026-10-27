@@ -147,6 +147,12 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
     return readSetting('cisto') === '1' ? 'cisto' : 'puno'
   })
   const [revealed, setRevealed] = useState(false)
+  // U Čistom načinu furigana se može upaliti gumbom あ (pamti se).
+  const [cleanFurigana, setCleanFurigana] = useState(() => readSetting('cisto-furigana') === '1')
+  function toggleCleanFurigana() {
+    setCleanFurigana(!cleanFurigana)
+    writeSetting('cisto-furigana', cleanFurigana ? '0' : '1')
+  }
   const clean = view === 'cisto'
   const xray = view === 'rendgen'
   const hidden = view === 'sluh' && !revealed
@@ -367,6 +373,18 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
           >
             {STATUS[statusOf(index)].label}
           </button>
+          {clean && (
+            <button
+              onClick={toggleCleanFurigana}
+              aria-pressed={cleanFurigana}
+              aria-label={cleanFurigana ? 'Sakrij furiganu' : 'Prikaži furiganu'}
+              className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
+                cleanFurigana ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
+              }`}
+            >
+              あ
+            </button>
+          )}
           <button
             onClick={cycleView}
             aria-label={`Razina pomoći: ${VIEWS[view].label}. Dodirni za iduću.`}
@@ -400,12 +418,28 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
           ) : clean ? (
             <>
               {/* Čisti način: samo rečenica, kako bi je napisao Japanac. */}
-              <p lang="ja" className="text-[2rem] leading-[1.6] font-medium landscape:text-[1.75rem]">
-                {sentence.words.map((w, wi) => (
-                  <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
-                    <KanjiText text={w.text} word={{ text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }} />
-                  </span>
-                ))}
+              <p lang="ja" className={`text-[2rem] font-medium landscape:text-[1.75rem] ${cleanFurigana ? 'leading-[2.2]' : 'leading-[1.6]'}`}>
+                {sentence.words.map((w, wi) => {
+                  const word = { text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }
+                  return (
+                    <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
+                      {cleanFurigana ? (
+                        w.furigana.map((p, pi) =>
+                          p.reading ? (
+                            <ruby key={pi}>
+                              <KanjiText text={p.text} word={word} />
+                              <rt className="text-sm text-stone-500">{p.reading}</rt>
+                            </ruby>
+                          ) : (
+                            <span key={pi}>{p.text}</span>
+                          ),
+                        )
+                      ) : (
+                        <KanjiText text={w.text} word={word} />
+                      )}
+                    </span>
+                  )
+                })}
               </p>
               {waiting && <p className="-mt-4 text-lg font-semibold text-red-700">🗣️ Ponovi</p>}
             </>
