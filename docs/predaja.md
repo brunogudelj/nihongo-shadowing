@@ -1,4 +1,4 @@
-# Predaja: gdje smo stali (17. 10. 2026.)
+# Predaja: gdje smo stali (27. 10. 2026.)
 
 Ovaj dokument služi da nastaviš bez prepričavanja. U novom razgovoru s Claudeom napiši:
 
@@ -16,6 +16,17 @@ Sve je spremljeno i poslano na GitHub. Rad ide i **s mobitela**: Claude aplikaci
 | #2 | 5 novih tema (avion, ramen, hrvatska hrana, Mirko Filipović, Incheon); nove priče same ulaze u sesije. **Emoji uz riječi** (1199 od 1304). **📰 Vijest dana** (blok u sesiji, bez kartica, brisanje nakon 30 dana). |
 | #3 | „Nova priča” prima više tema odjednom (odvojenih zarezom). |
 | #4 | **Light i fat priče**; Vijest dana svako jutro (Haiku); furigana 日本 = にほん; strana imena u katakani ne ruše fond. |
+
+## 1a. Što je napravljeno 27. 10.
+
+| PR | Što |
+|---|---|
+| #6 | **Player kao glazbeni player**: tanka gornja traka (← i naslov), jedan red kontrola s ikonama, **jedan gumb za brzinu** (1 → 0.85 → 0.7), traka napretka. Vodoravni zaslon je glavni. |
+| #7 | Vodoravno: player lijevo, točkice/status/あ/razina desno; uspravno: te kontrole su red iznad playera. Gumb **あ** pali/gasi furiganu. Novi zaslon **📐 Oblici** (lekcija o te-obliku). |
+| #8 | あ u svim razinama pomoći (svaka pamti svoj izbor) i na zaslonu Oblici. **Memento**: stupac kane, osnova u boji (a/i/u/e/o, te), nastavak, gotov oblik (行き+ます). |
+| #9 | 📐 Oblici kreću od **oblika i konstrukcija iz tvojih priča**: kartice *oblici* (28 oblika po učestalosti, pravilo + rečenice iz priča s 🔊), *konstrukcije* (✦ iz priča, po značenju: mišljenje, usporedba, opis imenice, uzrok, promjena stanja…), *memento*. Vijesti su postale obične priče. Testova: 96. |
+
+Kod: `src/StoryPlayer.tsx` (player), `src/Forms.tsx` (zaslon Oblici), `src/grammar-index.ts` (konstrukcije i primjeri oblika), `src/stems.ts` (osnove glagola).
 
 Sadržaj: 5 novih light priča (Opus, ukupno 2,08 $), ramen fat (0,62 $), dvije probne vijesti (Haiku 0,02 $, Opus 0,30 $). Testova: 92.
 
@@ -89,13 +100,14 @@ Sve brojke se mijenjaju na jednom mjestu: `src/vodic-config.ts` (`KARTICE` i `SE
 | `src/db.ts` | baza u mobitelu (verzija 9): kartice, ocjene, sesije |
 | `docs/specifikacija-dorade.md` | stara specifikacija dorada; dio o dnevnom vodiču je zamijenjen sesijama |
 | `pipeline/story.mjs` | piše priču; razina light/fat (`LEVEL_RULES`), model (`STORY_MODEL`) |
-| `pipeline/news.mjs` | naslovi vijesti → `themes/vijesti.yaml`, brisanje starih vijesti |
+| `src/Forms.tsx`, `src/grammar-index.ts`, `src/stems.ts` | 📐 Oblici: oblici, konstrukcije, memento |
+| `src/StoryPlayer.tsx` | player priča (kontrole, brzina, あ furigana po razini) |
 | `src/context.ts`, `src/ContextSentence.tsx` | rečenica iz priča nakon „Pokaži” |
 | `data/emoji.json`, `src/emoji.ts` | emoji uz riječi |
 
 ## 5. Podsjetnici
 
-- Radi se samo u Codespaceu. API ključevi idu samo u GitHub Secrets ili `.env`, nikad u kod.
+- Radi se s mobitela (Claude aplikacija → PR → GitHub aplikacija) ili u Codespaceu. API ključevi idu samo u GitHub Secrets ili `.env`, nikad u kod.
 - Prije svake usluge koja se plaća, Claude mora napisati okvirnu cijenu.
 - Hrvatski prijevodi koriste muški rod (jeo sam).
 - **Kad završiš s radom, zaustavi Codespace.**
