@@ -12,7 +12,9 @@ export const SETTING_KEYS = [
   'rij-izvor', // ponavljanje riječi: moje / price / sve
   'sesija-trajanje', // zadnje izabrano trajanje sesije: 5, 10, 15
   'sesija-cilj', // dnevni cilj: broj sesija
-  'cisto-furigana', // furigana u Čistom načinu (1 = prikazana)
+  'cisto-furigana', // stari zapis: furigana u Čistom načinu (1 = prikazana), čita se samo radi prijelaza
+  'furigana', // furigana po razini pomoći (JSON: { rendgen, puno, cisto, sluh })
+  'oblici-furigana', // furigana na zaslonu Oblici (0 = skrivena)
 ] as const
 
 export type SettingKey = (typeof SETTING_KEYS)[number]

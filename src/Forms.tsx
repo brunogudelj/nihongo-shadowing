@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import allWords from '../data/konjugator.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Kind } from './conjugate'
+import { readSetting, writeSetting } from './settings'
 import { speak } from './speech'
 
 const WORDS = allWords as ConjWord[]
@@ -21,23 +22,45 @@ const TE_OTHER = [
   { label: 'iznimka', note: '行く → 行って (ne 行いて)', words: ['行く'] },
   { label: 'nepravilni', note: 'する → して, 来る → 来て', words: ['する', '来る'] },
 ]
-const TE_USES = [
-  { ja: '～てください', hr: 'molim te, napravi…', ex: '待ってください。', exHr: 'Pričekajte, molim.' },
-  { ja: '～ています', hr: 'radnja u tijeku ili stanje', ex: '雨が降っています。', exHr: 'Pada kiša.' },
-  { ja: '～てもいいです', hr: 'smije se…', ex: '写真を撮ってもいいですか。', exHr: 'Smijem li fotografirati?' },
-  { ja: '～てから', hr: 'nakon što…', ex: 'ご飯を食べてから、出かけます。', exHr: 'Nakon jela izlazim.' },
-  { ja: '～て、～', hr: 'veže radnje redom (i zatim)', ex: '駅へ行って、電車に乗りました。', exHr: 'Otišao sam na stanicu i ušao u vlak.' },
+// Primjeri po dijelovima: [tekst, čitanje] za kanji, [tekst] za kanu.
+const TE_USES: { ja: string; hr: string; ex: [string, string?][]; exHr: string }[] = [
+  { ja: '～てください', hr: 'molim te, napravi…', ex: [['待', 'ま'], ['ってください。']], exHr: 'Pričekajte, molim.' },
+  { ja: '～ています', hr: 'radnja u tijeku ili stanje', ex: [['雨', 'あめ'], ['が'], ['降', 'ふ'], ['っています。']], exHr: 'Pada kiša.' },
+  { ja: '～てもいいです', hr: 'smije se…', ex: [['写真', 'しゃしん'], ['を'], ['撮', 'と'], ['ってもいいですか。']], exHr: 'Smijem li fotografirati?' },
+  { ja: '～てから', hr: 'nakon što…', ex: [['ご'], ['飯', 'はん'], ['を'], ['食', 'た'], ['べてから、'], ['出', 'で'], ['かけます。']], exHr: 'Nakon jela izlazim.' },
+  { ja: '～て、～', hr: 'veže radnje redom (i zatim)', ex: [['駅', 'えき'], ['へ'], ['行', 'い'], ['って、'], ['電車', 'でんしゃ'], ['に'], ['乗', 'の'], ['りました。']], exHr: 'Otišao sam na stanicu i ušao u vlak.' },
 ]
+
+// Furigana iz pisanja i čitanja: zajednički kana-nastavak ostaje, kanji dio dobiva čitanje iznad
+// (食べます + たべます → 食[た]べます). Bez furigane samo pismo.
+function Furi({ written, reading, on }: { written: string; reading: string; on: boolean }) {
+  let n = 0
+  while (n < written.length && n < reading.length && written.at(-1 - n) === reading.at(-1 - n)) n++
+  const head = written.slice(0, written.length - n)
+  if (!on || !head || head === reading.slice(0, reading.length - n)) return <>{written}</>
+  return (
+    <>
+      <ruby>
+        {head}
+        <rt className="text-[0.55em] font-normal text-stone-500">{reading.slice(0, reading.length - n)}</rt>
+      </ruby>
+      {written.slice(written.length - n)}
+    </>
+  )
+}
 
 const EXAMPLES = ['食べる', '行く', '飲む', '書く', '話す', 'する', '来る', '勉強する', '高い', 'いい', '静か']
 const KIND_TITLE: Record<Kind, string> = { glagol: 'glagol', 'i-pridjev': 'i-pridjev', 'na-pridjev': 'na-pridjev' }
 
-function Te({ word }: { word: string }) {
+function Te({ word, furigana }: { word: string; furigana: boolean }) {
   const w = byWord(word)
   const r = conjugate(w, 'te')
   return (
     <button onClick={() => void speak(r.reading)} className="rounded-lg bg-stone-100 px-2 py-1 active:bg-stone-200" lang="ja">
-      {w.word} → <span className="font-semibold text-red-700">{r.written}</span>
+      <Furi written={w.word} reading={w.reading} on={furigana} /> →{' '}
+      <span className="font-semibold text-red-700">
+        <Furi written={r.written} reading={r.reading} on={furigana} />
+      </span>
     </button>
   )
 }
@@ -45,6 +68,11 @@ function Te({ word }: { word: string }) {
 export default function Forms({ onBack }: { onBack: () => void }) {
   const [tab, setTab] = useState<'te' | 'svi'>('te')
   const [chosen, setChosen] = useState('食べる')
+  const [furigana, setFurigana] = useState(() => readSetting('oblici-furigana') !== '0')
+  function toggleFurigana() {
+    setFurigana(!furigana)
+    writeSetting('oblici-furigana', furigana ? '0' : '1')
+  }
   const word = byWord(chosen)
   const kind = kindOf(word)
   const forms = FORMS.filter((f) => f.kind === kind)
@@ -57,6 +85,14 @@ export default function Forms({ onBack }: { onBack: () => void }) {
         </button>
         <h1 className="font-semibold">📐 Oblici</h1>
         <div className="ml-auto flex gap-1 text-sm">
+          <button
+            onClick={toggleFurigana}
+            aria-pressed={furigana}
+            aria-label={furigana ? 'Sakrij furiganu' : 'Prikaži furiganu'}
+            className={`rounded-full px-3 py-1 font-semibold ${furigana ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'}`}
+          >
+            あ
+          </button>
           {(
             [
               ['te', 'te-oblik'],
@@ -91,7 +127,7 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </td>
                     <td className="flex flex-wrap gap-1 py-1.5">
                       {r.words.map((w) => (
-                        <Te key={w} word={w} />
+                        <Te key={w} word={w} furigana={furigana} />
                       ))}
                     </td>
                   </tr>
@@ -106,7 +142,7 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </td>
                     <td className="flex flex-wrap gap-1 py-1.5">
                       {r.words.map((w) => (
-                        <Te key={w} word={w} />
+                        <Te key={w} word={w} furigana={furigana} />
                       ))}
                     </td>
                   </tr>
@@ -127,8 +163,17 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                     </span>{' '}
                     <span className="text-stone-500">· {u.hr}</span>
                   </p>
-                  <p lang="ja" className="text-base">
-                    {u.ex}
+                  <p lang="ja" className="text-base leading-[2]">
+                    {u.ex.map(([t, r], i) =>
+                      r && furigana ? (
+                        <ruby key={i}>
+                          {t}
+                          <rt className="text-[0.6em] text-stone-500">{r}</rt>
+                        </ruby>
+                      ) : (
+                        <span key={i}>{t}</span>
+                      ),
+                    )}
                   </p>
                   <p className="text-xs text-stone-500">{u.exHr}</p>
                 </li>
@@ -149,15 +194,15 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                 aria-pressed={chosen === w}
                 className={`rounded-full px-3 py-1 ${chosen === w ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'}`}
               >
-                {w}
+                <Furi written={w} reading={byWord(w).reading} on={furigana} />
               </button>
             ))}
           </div>
           <p className="mt-2 text-sm text-stone-500">
             <span lang="ja" className="font-semibold text-stone-800">
-              {word.word}
+              <Furi written={word.word} reading={word.reading} on={furigana} />
             </span>{' '}
-            ({word.reading}) · {word.hr} · {KIND_TITLE[kind]} · {forms.length} oblika
+            · {word.hr} · {KIND_TITLE[kind]} · {forms.length} oblika
           </p>
           <ul className="mt-2 grid gap-1.5 landscape:grid-cols-2">
             {forms.map((f) => {
@@ -175,14 +220,9 @@ export default function Forms({ onBack }: { onBack: () => void }) {
                       </span>
                     </span>
                     <span className="min-w-0">
-                      <span lang="ja" className="text-xl font-medium">
-                        {r.written}
+                      <span lang="ja" className="text-xl leading-[2] font-medium">
+                        <Furi written={r.written} reading={r.reading} on={furigana} />
                       </span>
-                      {r.reading !== r.written && (
-                        <span lang="ja" className="ml-2 text-sm text-stone-500">
-                          {r.reading}
-                        </span>
-                      )}
                       <span className="block text-xs text-stone-500">{r.rule}</span>
                     </span>
                   </button>

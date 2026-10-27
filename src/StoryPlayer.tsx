@@ -147,11 +147,21 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
     return readSetting('cisto') === '1' ? 'cisto' : 'puno'
   })
   const [revealed, setRevealed] = useState(false)
-  // U Čistom načinu furigana se može upaliti gumbom あ (pamti se).
-  const [cleanFurigana, setCleanFurigana] = useState(() => readSetting('cisto-furigana') === '1')
-  function toggleCleanFurigana() {
-    setCleanFurigana(!cleanFurigana)
-    writeSetting('cisto-furigana', cleanFurigana ? '0' : '1')
+  // Furigana se pali i gasi gumbom あ, posebno za svaku razinu pomoći (pamti se).
+  // Početno: u Čistom bez furigane, u ostalima s njom.
+  const [furiganaByView, setFuriganaByView] = useState<Record<View, boolean>>(() => {
+    const base = { rendgen: true, puno: true, cisto: readSetting('cisto-furigana') === '1', sluh: true }
+    try {
+      return { ...base, ...JSON.parse(readSetting('furigana') ?? '{}') }
+    } catch {
+      return base
+    }
+  })
+  const showFurigana = furiganaByView[view]
+  function toggleFurigana() {
+    const next = { ...furiganaByView, [view]: !showFurigana }
+    setFuriganaByView(next)
+    writeSetting('furigana', JSON.stringify(next))
   }
   const clean = view === 'cisto'
   const xray = view === 'rendgen'
@@ -359,18 +369,16 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
       >
         {STATUS[statusOf(index)].label}
       </button>
-      {clean && (
-        <button
-          onClick={toggleCleanFurigana}
-          aria-pressed={cleanFurigana}
-          aria-label={cleanFurigana ? 'Sakrij furiganu' : 'Prikaži furiganu'}
-          className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
-            cleanFurigana ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
-          }`}
-        >
-          あ
-        </button>
-      )}
+      <button
+        onClick={toggleFurigana}
+        aria-pressed={showFurigana}
+        aria-label={showFurigana ? 'Sakrij furiganu' : 'Prikaži furiganu'}
+        className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
+          showFurigana ? 'bg-stone-800 text-white' : 'bg-stone-200 text-stone-700'
+        }`}
+      >
+        あ
+      </button>
       <button
         onClick={cycleView}
         aria-label={`Razina pomoći: ${VIEWS[view].label}. Dodirni za iduću.`}
@@ -424,12 +432,12 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
           ) : clean ? (
             <>
               {/* Čisti način: samo rečenica, kako bi je napisao Japanac. */}
-              <p lang="ja" className={`text-[2rem] font-medium landscape:text-[1.75rem] ${cleanFurigana ? 'leading-[2.2]' : 'leading-[1.6]'}`}>
+              <p lang="ja" className={`text-[2rem] font-medium landscape:text-[1.75rem] ${showFurigana ? 'leading-[2.2]' : 'leading-[1.6]'}`}>
                 {sentence.words.map((w, wi) => {
                   const word = { text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }
                   return (
                     <span key={wi} className={playing && wi === currentWord ? 'text-red-700' : ''}>
-                      {cleanFurigana ? (
+                      {showFurigana ? (
                         w.furigana.map((p, pi) =>
                           p.reading ? (
                             <ruby key={pi}>
@@ -501,11 +509,13 @@ export default function StoryPlayer({ story, onBack, preset }: { story: Story; o
                           const spoken = playing && wi === currentWord
                           const isSelected = selected?.sentence === index && selected.word === wi
                           const parts = w.furigana.map((p, pi) =>
-                            p.reading ? (
+                            p.reading && showFurigana ? (
                               <ruby key={pi}>
                                 <KanjiText text={p.text} word={{ text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }} />
                                 <rt className="text-sm text-stone-500">{p.reading}</rt>
                               </ruby>
+                            ) : p.reading ? (
+                              <KanjiText key={pi} text={p.text} word={{ text: w.text, reading: w.reading, romaji: w.romaji, meaning: w.explanation_hr }} />
                             ) : (
                               <span key={pi} className={!spoken && p.kind ? KIND_STYLE[p.kind].className : ''}>
                                 {p.text}
