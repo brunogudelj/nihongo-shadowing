@@ -58,18 +58,40 @@ const cutoff = new Date(Date.now() - KEEP_DAYS * 86_400_000).toISOString().slice
 const saved = existsSync(DIR)
   ? readdirSync(DIR).filter((f) => /^\d{3}\.json$/.test(f)).sort().map((f) => ({ f, story: JSON.parse(readFileSync(`${DIR}/${f}`, 'utf8')) }))
   : []
-function remove(story, why) {
+// Arhiva teksta vijesti starijih od 30 dana: zvuk se briše (mjesto na mobitelu), a rečenice ostaju
+// kao primjeri za 📐 Oblici. Spremaju se samo polja koja trebaju primjerima.
+const ARCHIVE = 'content/vijesti-arhiva.json'
+const archive = existsSync(ARCHIVE) ? JSON.parse(readFileSync(ARCHIVE, 'utf8')) : []
+const slim = (story) => ({
+  id: story.id,
+  theme: story.theme,
+  level: story.level,
+  created: story.created,
+  title_ja: story.title_ja,
+  title_hr: story.title_hr,
+  sentences: story.sentences.map((x) => ({
+    ja: x.ja,
+    hr: x.hr,
+    chunks: x.chunks,
+    chunk_info: x.chunk_info?.map((c) => ({ grammar_hr: c.grammar_hr, formula: c.formula, rule_hr: c.rule_hr })),
+    words: x.words.map((w) => ({ text: w.text, lemma: w.lemma, furigana: w.furigana })),
+  })),
+})
+function remove(story, why, keep = false) {
+  if (keep && !archive.some((a) => a.id === story.id)) archive.push(slim(story))
   rmSync(`${DIR}/${story.id.slice(-3)}.json`)
   for (const a of readdirSync('content/audio').filter((a) => a.startsWith(`${story.id}-`))) rmSync(`content/audio/${a}`)
-  console.log(`Obrisana vijest ${story.id} (${why}): ${story.title_hr}`)
+  console.log(`Obrisana vijest ${story.id} (${why})${keep ? ', tekst ostaje u arhivi' : ''}: ${story.title_hr}`)
 }
 const recent = []
 const removed = new Set()
+const archived = new Set()
 for (const { story } of saved) {
   if (story.base) continue // fat građena na light vijesti: ide zajedno sa svojom light
   if ((story.created ?? today) < cutoff) {
-    remove(story, `starija od ${KEEP_DAYS} dana`)
+    remove(story, `starija od ${KEEP_DAYS} dana`, true)
     removed.add(story.id)
+    archived.add(story.id)
   } else if (recent.some((r) => sameTopic(story.title_hr, r))) {
     remove(story, 'ponavlja već obrađenu temu')
     removed.add(story.id)
@@ -77,7 +99,9 @@ for (const { story } of saved) {
     recent.push(story.title_hr)
   }
 }
-for (const { story } of saved) if (story.base && removed.has(story.base)) remove(story, `uz ${story.base}`)
+for (const { story } of saved) if (story.base && removed.has(story.base)) remove(story, `uz ${story.base}`, archived.has(story.base))
+// Starije vijesti bez para (prije light/fat) i same po sebi stare također u arhivu (gore, keep = true).
+if (archived.size) writeFileSync(ARCHIVE, JSON.stringify(archive) + '\n')
 if (process.argv.includes('--samo-ciscenje')) process.exit(0)
 
 const headlines = []

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import allWords from '../data/konjugator.json'
 import { conjugate, FORMS, kindOf, type ConjWord, type Kind } from './conjugate'
 import { CATEGORIES, constructionsByCategory, formExamples, type Example } from './grammar-index'
-import { audioUrl, stories } from './stories'
+import { audioUrl, stories, type Story } from './stories'
 import { chunkSpans } from './timing'
 import { readSetting, writeSetting } from './settings'
 import { speak } from './speech'
@@ -157,10 +157,14 @@ function Split({ word, formId, furigana }: { word: ConjWord; formId: string; fur
   )
 }
 
-// Primjeri iz priča (računaju se jednom).
-const FORM_EXAMPLES = formExamples(stories, WORDS)
-const CONSTRUCTIONS = constructionsByCategory(stories)
-const storyTitle = (id: string) => stories.find((x) => x.id === id)?.title_ja ?? id
+// Primjeri iz priča i iz arhive starih vijesti (tekst bez zvuka; pipeline/news.mjs). Računaju se jednom.
+const ARCHIVE = Object.values(
+  import.meta.glob<Story[]>('../content/vijesti-arhiva.json', { eager: true, import: 'default' }),
+).flat()
+const ALL = [...stories, ...ARCHIVE.filter((a) => !stories.some((x) => x.id === a.id))]
+const FORM_EXAMPLES = formExamples(ALL, WORDS)
+const CONSTRUCTIONS = constructionsByCategory(ALL)
+const storyTitle = (id: string) => ALL.find((x) => x.id === id)?.title_ja ?? id
 
 let playing: HTMLAudioElement | null = null
 function playSentence(name: string) {
@@ -179,9 +183,13 @@ function ExampleLine({ ex, furigana }: { ex: Example; furigana: boolean }) {
   const hit = (wi: number) => (span ? wi >= span.from && wi < span.to : wi === ex.word)
   return (
     <li className="flex items-start gap-2 border-t border-stone-100 py-1.5">
-      <button onClick={() => playSentence(s.audio)} aria-label="Poslušaj rečenicu" className="rounded-full px-1.5 text-stone-500 active:bg-stone-200">
-        🔊
-      </button>
+      {s.audio && audioUrl(s.audio) ? (
+        <button onClick={() => playSentence(s.audio)} aria-label="Poslušaj rečenicu" className="rounded-full px-1.5 text-stone-500 active:bg-stone-200">
+          🔊
+        </button>
+      ) : (
+        <span className="w-7 shrink-0" title="Arhiva: tekst bez zvuka" />
+      )}
       <div className="min-w-0">
         <p lang="ja" className="text-lg leading-[2]">
           {s.words.map((w, wi) => (
