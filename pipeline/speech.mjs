@@ -12,6 +12,7 @@ import ffmpeg from 'ffmpeg-static'
 import sdk from 'microsoft-cognitiveservices-speech-sdk'
 import { conjugate, FORMS, kindOf } from '../src/conjugate.ts'
 import { speechId } from '../src/speech.ts'
+import { speechTexts } from '../src/writing-speech.ts'
 
 const VOICE = 'ja-JP-NanamiNeural'
 const DIR = 'public/izgovor'
@@ -36,6 +37,9 @@ for (const w of JSON.parse(readFileSync('data/konjugator.json', 'utf8'))) {
   texts.add(w.reading)
   for (const f of FORMS.filter((f) => f.kind === kindOf(w))) texts.add(conjugate(w, f.id).reading)
 }
+
+// Plan pisanja kane (stranica Pisanje): slova, riječi, oblici, diktat i rečenice.
+for (const t of speechTexts(JSON.parse(readFileSync('data/pisanje-plan.json', 'utf8')))) texts.add(t)
 
 mkdirSync(DIR, { recursive: true })
 const limit = process.argv[2] === undefined ? Infinity : Number(process.argv[2])
