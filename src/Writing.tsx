@@ -1,5 +1,7 @@
+import { useLiveQuery } from 'dexie-react-hooks'
 import { useState } from 'react'
 import plan from '../data/pisanje-plan.json'
+import { db } from './db'
 import { speak } from './speech'
 import { hasSound, letterGroups, parts, sayable } from './writing-speech'
 
@@ -28,8 +30,11 @@ const TJEDNI = ['Hiragana', 'Katakana', 'Oblici i ponavljanje']
 
 export default function Writing({ onBack }: { onBack: () => void }) {
   const [dan, setDan] = useState<number>()
+  const doneRows = useLiveQuery(() => db.writingDays.toArray(), [])
+  const done = new Set((doneRows ?? []).map((r) => r.dan))
+  const next = DANI.find((x) => !done.has(x.dan))?.dan
   const d = DANI.find((x) => x.dan === dan)
-  if (d) return <DayView key={d.dan} d={d} onBack={() => setDan(undefined)} onOpen={setDan} />
+  if (d) return <DayView key={d.dan} d={d} done={done.has(d.dan)} onBack={() => setDan(undefined)} onOpen={setDan} />
 
   return (
     <main className="min-h-dvh bg-stone-50 p-6 text-stone-900">
@@ -39,7 +44,21 @@ export default function Writing({ onBack }: { onBack: () => void }) {
         </button>
         <p className="text-sm text-stone-400">30 min dnevno, na papiru</p>
       </header>
-      <h1 className="mb-4 text-2xl font-semibold">✍️ Pisanje kane</h1>
+      <h1 className="mb-1 text-2xl font-semibold">✍️ Pisanje kane</h1>
+      <p className="mb-4 text-stone-500">
+        Gotovo {done.size} / {DANI.length} dana
+      </p>
+      {next !== undefined && (
+        <button
+          onClick={() => setDan(next)}
+          className="mb-6 w-full rounded-2xl bg-stone-800 p-4 text-left text-white active:bg-stone-900"
+        >
+          <p className="text-lg font-semibold">▶ {done.size ? 'Nastavi' : 'Kreni'}: dan {next}</p>
+          <p lang="ja" className="text-stone-300">
+            {DANI[next - 1].naslov}
+          </p>
+        </button>
+      )}
       {[1, 2, 3].map((t) => (
         <section key={t} className="mb-6">
           <h2 className="mb-2 text-sm font-medium text-stone-500">
@@ -50,12 +69,15 @@ export default function Writing({ onBack }: { onBack: () => void }) {
               <button
                 key={x.dan}
                 onClick={() => setDan(x.dan)}
-                className="flex items-baseline gap-3 rounded-2xl bg-white px-4 py-3 text-left shadow-sm active:bg-stone-100"
+                className={`flex items-baseline gap-3 rounded-2xl px-4 py-3 text-left shadow-sm active:bg-stone-100 ${
+                  done.has(x.dan) ? 'bg-stone-100 text-stone-500' : 'bg-white'
+                } ${x.dan === next ? 'ring-2 ring-stone-800' : ''}`}
               >
                 <span className="w-14 shrink-0 text-stone-400">Dan {x.dan}</span>
-                <span lang="ja" className="text-lg font-medium">
+                <span lang="ja" className="flex-1 text-lg font-medium">
                   {x.naslov}
                 </span>
+                {done.has(x.dan) && <span className="text-green-700">✓</span>}
               </button>
             ))}
           </div>
@@ -148,7 +170,7 @@ function Letters({ text, big }: { text: string; big?: boolean }) {
   )
 }
 
-function DayView({ d, onBack, onOpen }: { d: Dan; onBack: () => void; onOpen: (n: number) => void }) {
+function DayView({ d, done, onBack, onOpen }: { d: Dan; done: boolean; onBack: () => void; onOpen: (n: number) => void }) {
   const steps = stepsOf(d)
   const [i, setI] = useState(0)
   const [shown, setShown] = useState<Set<string>>(new Set())
@@ -165,6 +187,10 @@ function DayView({ d, onBack, onOpen }: { d: Dan; onBack: () => void; onOpen: (n
   const prev = DANI.find((x) => x.dan === d.dan - 1)
   const odJucer = prev ? [1, 5, 9].map((n) => prev.rijeci[n]).filter(Boolean) : []
   const canHide = step.id !== 'rijeci' && step.id !== 'nova'
+  const finish = async () => {
+    await db.writingDays.put({ dan: d.dan, doneAt: Date.now() })
+    onBack()
+  }
 
   return (
     <main className="flex min-h-dvh flex-col bg-stone-50 text-stone-900">
@@ -176,6 +202,15 @@ function DayView({ d, onBack, onOpen }: { d: Dan; onBack: () => void; onOpen: (n
           <h1 className="min-w-0 flex-1 truncate text-lg font-semibold">
             Dan {d.dan}: <span lang="ja">{d.naslov}</span>
           </h1>
+          {done && (
+            <button
+              onClick={() => void db.writingDays.delete(d.dan)}
+              className="shrink-0 rounded-full px-3 py-1.5 text-sm text-green-700 active:bg-stone-200"
+              title="Dodirni da poništiš"
+            >
+              ✓ gotovo · poništi
+            </button>
+          )}
         </div>
         <nav className="mt-2 flex gap-2 overflow-x-auto">
           {steps.map((s, n) => (
@@ -317,13 +352,15 @@ function DayView({ d, onBack, onOpen }: { d: Dan; onBack: () => void; onOpen: (n
           <button onClick={() => go(i + 1)} className="rounded-full bg-stone-800 px-5 py-2 text-white active:bg-stone-900">
             Dalje ›
           </button>
-        ) : d.dan < DANI.length ? (
-          <button onClick={() => onOpen(d.dan + 1)} className="rounded-full bg-stone-800 px-5 py-2 text-white active:bg-stone-900">
-            Dan {d.dan + 1} ›
-          </button>
+        ) : done ? (
+          d.dan < DANI.length && (
+            <button onClick={() => onOpen(d.dan + 1)} className="rounded-full bg-stone-800 px-5 py-2 text-white active:bg-stone-900">
+              Dan {d.dan + 1} ›
+            </button>
+          )
         ) : (
-          <button onClick={onBack} className="rounded-full bg-stone-800 px-5 py-2 text-white active:bg-stone-900">
-            Kraj ✓
+          <button onClick={() => void finish()} className="rounded-full bg-green-700 px-5 py-2 text-white active:bg-green-800">
+            Gotovo ✓
           </button>
         )}
       </footer>

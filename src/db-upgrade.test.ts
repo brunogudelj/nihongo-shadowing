@@ -16,5 +16,5 @@ it('nadogradnja briše samo probne sesije', async () => {
   const { db } = await import('./db')
   expect((await db.sessionLogs.toArray()).map((s) => s.id)).toEqual(['prava'])
   expect(await db.myWords.count()).toBe(1)
-  expect(db.verno).toBe(9)
+  expect(db.verno).toBe(10)
 })

@@ -154,6 +154,9 @@ export type SessionProgress = {
   result?: string // poruka nakon odluke
 }
 
+// Plan pisanja kane (stranica Pisanje): koji su dani gotovi.
+export type WritingDay = { dan: number; doneAt: number }
+
 export const db = new Dexie('nihongo') as Dexie & {
   myWords: EntityTable<MyWord, 'id'>
   sentences: EntityTable<SentenceState, 'id'>
@@ -166,6 +169,7 @@ export const db = new Dexie('nihongo') as Dexie & {
   cards: EntityTable<CardRow, 'id'>
   cardLogs: EntityTable<CardLog, 'id'>
   sessionLogs: EntityTable<SessionLog, 'id'>
+  writingDays: EntityTable<WritingDay, 'dan'>
 }
 db.version(1).stores({ myWords: 'id, addedAt' })
 db.version(2).stores({ myWords: 'id, addedAt', sentences: 'id, storyId', places: 'storyId, updatedAt' })
@@ -269,3 +273,6 @@ export async function addMyWord(w: Omit<MyWord, 'id' | 'addedAt'>) {
 export async function removeMyWord(id: string) {
   await db.myWords.delete(id)
 }
+
+// 10: gotovi dani plana pisanja (stranica Pisanje).
+db.version(10).stores({ writingDays: 'dan' })
