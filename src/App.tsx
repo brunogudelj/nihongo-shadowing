@@ -12,9 +12,10 @@ const MyWords = lazy(() => import('./MyWords'))
 const Training = lazy(() => import('./Training'))
 const WordDrill = lazy(() => import('./WordDrill'))
 const Forms = lazy(() => import('./Forms'))
+const Writing = lazy(() => import('./Writing'))
 const SessionRun = lazy(() => import('./Training').then((m) => ({ default: m.SessionRun })))
 
-type Screen = 'price' | 'rijeci' | 'moje' | 'ponavljanje' | 'konjugator' | 'oblici' | 'trening' | 'trening-kratki'
+type Screen = 'price' | 'rijeci' | 'moje' | 'ponavljanje' | 'konjugator' | 'oblici' | 'pisanje' | 'trening' | 'trening-kratki'
 
 const CARDS: { screen: Exclude<Screen, 'trening' | 'trening-kratki'>; title: string; text: string }[] = [
   { screen: 'price', title: '📚 Priče', text: `${stories.length} priče za shadowing` },
@@ -23,6 +24,7 @@ const CARDS: { screen: Exclude<Screen, 'trening' | 'trening-kratki'>; title: str
   { screen: 'ponavljanje', title: '🔁 Ponavljanje riječi', text: 'Pokaži → Znao / Nisam, kao u konjugatoru' },
   { screen: 'konjugator', title: '🔄 Konjugator', text: 'Nasumični oblici glagola i pridjeva' },
   { screen: 'oblici', title: '📐 Oblici', text: 'Te-oblik i svi oblici glagola i pridjeva na jednom mjestu' },
+  { screen: 'pisanje', title: '✍️ Pisanje', text: 'Plan pisanja kane na papiru, 21 dan po 30 min' },
 ]
 
 function App() {
@@ -44,6 +46,7 @@ function App() {
       <Suspense fallback={<p className="p-6 text-center text-stone-400">Učitavam…</p>}>
         {screen === 'konjugator' && <Conjugator onBack={() => setScreen(null)} />}
         {screen === 'oblici' && <Forms onBack={() => setScreen(null)} />}
+        {screen === 'pisanje' && <Writing onBack={() => setScreen(null)} />}
         {screen === 'ponavljanje' && <WordDrill onBack={() => setScreen(null)} />}
         {screen === 'rijeci' && <Vocabulary onBack={() => setScreen(null)} />}
         {screen === 'moje' && <MyWords onBack={() => setScreen(null)} />}
