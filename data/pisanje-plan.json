@@ -1,0 +1,2373 @@
+{
+ "naziv": "Pisanje kane: plan za 3 tjedna",
+ "opis": "30 minuta dnevno, rukom na papiru. 1. tjedan hiragana, 2. tjedan katakana, 3. tjedan oblici, slova koja se miješaju i rečenice. Riječi su iz data/rijeci.json (N5/N4); svaki dan koristi samo slova prođena do tada.",
+ "koraci": [
+  {
+   "id": "tablica",
+   "naziv": "Tablica napamet",
+   "minuta": 5,
+   "opis": "Napiši sva slova iz opisa bez gledanja, pa provjeri. Pogrešna zaokruži i napiši još 3 puta."
+  },
+  {
+   "id": "nova",
+   "naziv": "Nova slova",
+   "minuta": 5,
+   "opis": "Svako novo slovo 5 puta, naglas, pazeći na redoslijed poteza."
+  },
+  {
+   "id": "rijeci",
+   "naziv": "Riječi dana",
+   "minuta": 12,
+   "opis": "Svaku riječ 3 puta, naglas. Prvi put gledaš, drugi i treći bez gledanja."
+  },
+  {
+   "id": "oblici",
+   "naziv": "Oblici",
+   "minuta": 4,
+   "opis": "Gledaš samo glagol, oblike pišeš napamet, pa otkriješ i provjeriš."
+  },
+  {
+   "id": "diktat",
+   "naziv": "Mini diktat",
+   "minuta": 4,
+   "opis": "Gledaš samo hrvatski i pišeš japanski. Danas 6 riječi, i 3 od jučer. Provjeri otkrivanjem."
+  }
+ ],
+ "pravila": [
+  "Ako dan nema riječi (3. tjedan), vrijeme koraka „Nova slova“ i „Riječi dana“ ide oblicima: oblici traju 17 min, diktat 8 min.",
+  "Ako dan nema popis „diktat“, diktat se radi iz riječi dana (i 3 riječi od prethodnog dana).",
+  "Kanji je samo za prepoznavanje riječi; piše se kana.",
+  "Duge samoglasnike piši onako kako se pišu (おう, えい, ー)."
+ ],
+ "dani": [
+  {
+   "dan": 1,
+   "tjedan": 1,
+   "naslov": "あ か さ",
+   "tablicaNapamet": null,
+   "novaSlova": "あいうえお かきくけこ さしすせそ",
+   "rijeci": [
+    {
+     "kana": "ここ",
+     "kanji": null,
+     "hr": "ovdje"
+    },
+    {
+     "kana": "そこ",
+     "kanji": null,
+     "hr": "tamo"
+    },
+    {
+     "kana": "あう",
+     "kanji": "会う",
+     "hr": "sresti"
+    },
+    {
+     "kana": "かく",
+     "kanji": "書く",
+     "hr": "pisati"
+    },
+    {
+     "kana": "さあ",
+     "kanji": null,
+     "hr": "hajde"
+    },
+    {
+     "kana": "おそい",
+     "kanji": "遅い",
+     "hr": "spor, kasan"
+    },
+    {
+     "kana": "いす",
+     "kanji": null,
+     "hr": "stolica"
+    },
+    {
+     "kana": "おかし",
+     "kanji": "お菓子",
+     "hr": "slatkiši"
+    },
+    {
+     "kana": "かさ",
+     "kanji": "傘",
+     "hr": "kišobran"
+    },
+    {
+     "kana": "かえす",
+     "kanji": "返す",
+     "hr": "vratiti"
+    },
+    {
+     "kana": "すこし",
+     "kanji": "少し",
+     "hr": "malo"
+    },
+    {
+     "kana": "えき",
+     "kanji": "駅",
+     "hr": "stanica"
+    }
+   ],
+   "oblici": null,
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Tablicu napamet danas preskoči (još nema naučenih slova). Umjesto oblika napiši nova slova još dvaput.",
+   "upute": null
+  },
+  {
+   "dan": 2,
+   "tjedan": 1,
+   "naslov": "た な",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "hiragana: あ, か, さ",
+    "slova": "あいうえお かきくけこ さしすせそ"
+   },
+   "novaSlova": "たちつてと なにぬねの",
+   "rijeci": [
+    {
+     "kana": "おなか",
+     "kanji": null,
+     "hr": "trbuh"
+    },
+    {
+     "kana": "あつい",
+     "kanji": "暑い / 熱い",
+     "hr": "vruć"
+    },
+    {
+     "kana": "この",
+     "kanji": null,
+     "hr": "ovaj"
+    },
+    {
+     "kana": "なに",
+     "kanji": "何",
+     "hr": "što"
+    },
+    {
+     "kana": "せいと",
+     "kanji": "生徒",
+     "hr": "učenik"
+    },
+    {
+     "kana": "かてい",
+     "kanji": "家庭",
+     "hr": "kućanstvo"
+    },
+    {
+     "kana": "いちにち",
+     "kanji": "一日",
+     "hr": "jedan dan"
+    },
+    {
+     "kana": "つくえ",
+     "kanji": "机",
+     "hr": "pisaći stol"
+    },
+    {
+     "kana": "あなた",
+     "kanji": null,
+     "hr": "ti"
+    },
+    {
+     "kana": "とけい",
+     "kanji": "時計",
+     "hr": "sat"
+    },
+    {
+     "kana": "にく",
+     "kanji": "肉",
+     "hr": "meso"
+    },
+    {
+     "kana": "かた",
+     "kanji": "方",
+     "hr": "osoba, način"
+    }
+   ],
+   "oblici": null,
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Oblika još nema: tablicu napamet napiši dvaput.",
+   "upute": null
+  },
+  {
+   "dan": 3,
+   "tjedan": 1,
+   "naslov": "は ま",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "hiragana: あ, か, さ, た, な",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの"
+   },
+   "novaSlova": "はひふへほ まみむめも",
+   "rijeci": [
+    {
+     "kana": "まいにち",
+     "kanji": "毎日",
+     "hr": "svaki dan"
+    },
+    {
+     "kana": "うみ",
+     "kanji": "海",
+     "hr": "more"
+    },
+    {
+     "kana": "いつも",
+     "kanji": null,
+     "hr": "uvijek"
+    },
+    {
+     "kana": "ふとい",
+     "kanji": "太い",
+     "hr": "debeo"
+    },
+    {
+     "kana": "ほそい",
+     "kanji": "細い",
+     "hr": "tanak"
+    },
+    {
+     "kana": "むこう",
+     "kanji": "向こう",
+     "hr": "tamo, druga strana"
+    },
+    {
+     "kana": "いもうと",
+     "kanji": "妹",
+     "hr": "mlađa sestra"
+    },
+    {
+     "kana": "はし",
+     "kanji": null,
+     "hr": "štapići za jelo"
+    },
+    {
+     "kana": "はなし",
+     "kanji": "話",
+     "hr": "priča, razgovor"
+    },
+    {
+     "kana": "ひとつ",
+     "kanji": "一つ",
+     "hr": "jedan"
+    },
+    {
+     "kana": "ひく",
+     "kanji": "引く",
+     "hr": "vući"
+    },
+    {
+     "kana": "はなす",
+     "kanji": "話す",
+     "hr": "govoriti"
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "かく",
+      "znacenje": "pisati",
+      "oblici": [
+       "かきます",
+       "かかない",
+       "かいた",
+       "かいて"
+      ]
+     },
+     {
+      "glagol": "はなす",
+      "znacenje": "govoriti",
+      "oblici": [
+       "はなします",
+       "はなさない",
+       "はなした",
+       "はなして"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": null,
+   "upute": null
+  },
+  {
+   "dan": 4,
+   "tjedan": 1,
+   "naslov": "や ら わ ん",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "hiragana: あ, か, さ, た, な, は, ま",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも"
+   },
+   "novaSlova": "やゆよ らりるれろ わをん",
+   "rijeci": [
+    {
+     "kana": "よる",
+     "kanji": "夜",
+     "hr": "noć, večer"
+    },
+    {
+     "kana": "きる",
+     "kanji": "切る",
+     "hr": "rezati"
+    },
+    {
+     "kana": "ようふく",
+     "kanji": "洋服",
+     "hr": "odjeća"
+    },
+    {
+     "kana": "のる",
+     "kanji": "乗る",
+     "hr": "voziti se"
+    },
+    {
+     "kana": "むら",
+     "kanji": "村",
+     "hr": "selo"
+    },
+    {
+     "kana": "へん",
+     "kanji": "辺",
+     "hr": "okolica"
+    },
+    {
+     "kana": "いろいろ",
+     "kanji": null,
+     "hr": "razni"
+    },
+    {
+     "kana": "わかい",
+     "kanji": "若い",
+     "hr": "mlad"
+    },
+    {
+     "kana": "きえる",
+     "kanji": "消える",
+     "hr": "nestati"
+    },
+    {
+     "kana": "いれる",
+     "kanji": "入れる",
+     "hr": "staviti unutra"
+    },
+    {
+     "kana": "わたる",
+     "kanji": "渡る",
+     "hr": "prijeći"
+    },
+    {
+     "kana": "まんねんひつ",
+     "kanji": "万年筆",
+     "hr": "nalivpero"
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "いれる",
+      "znacenje": "staviti unutra",
+      "oblici": [
+       "いれます",
+       "いれない",
+       "いれた",
+       "いれて"
+      ]
+     },
+     {
+      "glagol": "きえる",
+      "znacenje": "nestati",
+      "oblici": [
+       "きえます",
+       "きえない",
+       "きえた",
+       "きえて"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": null,
+   "upute": null
+  },
+  {
+   "dan": 5,
+   "tjedan": 1,
+   "naslov": "゛ i ゜",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "hiragana: あ, か, さ, た, な, は, ま, や, ら, わ",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん"
+   },
+   "novaSlova": "がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ",
+   "rijeci": [
+    {
+     "kana": "げんかん",
+     "kanji": "玄関",
+     "hr": "predsoblje"
+    },
+    {
+     "kana": "おばさん",
+     "kanji": "伯母さん",
+     "hr": "teta"
+    },
+    {
+     "kana": "おなじ",
+     "kanji": "同じ",
+     "hr": "isti"
+    },
+    {
+     "kana": "ぎんこう",
+     "kanji": "銀行",
+     "hr": "banka"
+    },
+    {
+     "kana": "ながい",
+     "kanji": "長い",
+     "hr": "dug"
+    },
+    {
+     "kana": "だす",
+     "kanji": "出す",
+     "hr": "izvaditi, poslati"
+    },
+    {
+     "kana": "ゆうがた",
+     "kanji": "夕方",
+     "hr": "predvečer"
+    },
+    {
+     "kana": "どうも",
+     "kanji": null,
+     "hr": "hvala"
+    },
+    {
+     "kana": "こうばん",
+     "kanji": "交番",
+     "hr": "policijska kućica"
+    },
+    {
+     "kana": "もういちど",
+     "kanji": "もう一度",
+     "hr": "još jednom"
+    },
+    {
+     "kana": "かようび",
+     "kanji": "火曜日",
+     "hr": "utorak"
+    },
+    {
+     "kana": "おんがく",
+     "kanji": "音楽",
+     "hr": "glazba"
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "だす",
+      "znacenje": "izvaditi, poslati",
+      "oblici": [
+       "だします",
+       "ださない",
+       "だした",
+       "だして"
+      ]
+     },
+     {
+      "glagol": "ながい",
+      "znacenje": "dug (pridjev)",
+      "oblici": [
+       null,
+       "ながくない",
+       "ながかった",
+       "ながくて"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": null,
+   "upute": null
+  },
+  {
+   "dan": 6,
+   "tjedan": 1,
+   "naslov": "ゃ ゅ ょ",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "hiragana: あ, か, さ, た, な, は, ま, や, ら, わ, ゛゜",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ"
+   },
+   "novaSlova": "きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ",
+   "rijeci": [
+    {
+     "kana": "びょういん",
+     "kanji": "病院",
+     "hr": "bolnica"
+    },
+    {
+     "kana": "ぎゅうにゅう",
+     "kanji": "牛乳",
+     "hr": "mlijeko"
+    },
+    {
+     "kana": "りょこう",
+     "kanji": "旅行",
+     "hr": "putovanje"
+    },
+    {
+     "kana": "ひゃく",
+     "kanji": "百",
+     "hr": "sto"
+    },
+    {
+     "kana": "べんきょう",
+     "kanji": "勉強",
+     "hr": "učenje"
+    },
+    {
+     "kana": "ゆうびんきょく",
+     "kanji": "郵便局",
+     "hr": "pošta"
+    },
+    {
+     "kana": "まいしゅう",
+     "kanji": "毎週",
+     "hr": "svaki tjedan"
+    },
+    {
+     "kana": "りょうしん",
+     "kanji": "両親",
+     "hr": "roditelji"
+    },
+    {
+     "kana": "としょかん",
+     "kanji": "図書館",
+     "hr": "knjižnica"
+    },
+    {
+     "kana": "しゅくだい",
+     "kanji": "宿題",
+     "hr": "domaća zadaća"
+    },
+    {
+     "kana": "きょねん",
+     "kanji": "去年",
+     "hr": "prošle godine"
+    },
+    {
+     "kana": "しょうゆ",
+     "kanji": null,
+     "hr": "umak od soje"
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "べんきょうする",
+      "znacenje": "učiti",
+      "oblici": [
+       "べんきょうします",
+       "べんきょうしない",
+       "べんきょうした",
+       "べんきょうして"
+      ]
+     },
+     {
+      "glagol": "りょこうする",
+      "znacenje": "putovati",
+      "oblici": [
+       "りょこうします",
+       "りょこうしない",
+       "りょこうした",
+       "りょこうして"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Malo slovo (ゃゅょ) piši upola manje, u donjem lijevom dijelu kvadratića.",
+   "upute": null
+  },
+  {
+   "dan": 7,
+   "tjedan": 1,
+   "naslov": "っ i ponavljanje",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "cijela hiragana (s ゛゜, ゃゅょ i っ)",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ っ"
+   },
+   "novaSlova": "っ",
+   "rijeci": [
+    {
+     "kana": "あさって",
+     "kanji": null,
+     "hr": "prekosutra"
+    },
+    {
+     "kana": "みっか",
+     "kanji": "三日",
+     "hr": "treći dan, tri dana"
+    },
+    {
+     "kana": "よっか",
+     "kanji": "四日",
+     "hr": "četvrti dan, četiri dana"
+    },
+    {
+     "kana": "みっつ",
+     "kanji": "三つ",
+     "hr": "tri (komada)"
+    },
+    {
+     "kana": "むっつ",
+     "kanji": "六つ",
+     "hr": "šest (komada)"
+    },
+    {
+     "kana": "こっち",
+     "kanji": null,
+     "hr": "ovuda"
+    },
+    {
+     "kana": "あっち",
+     "kanji": null,
+     "hr": "onuda"
+    },
+    {
+     "kana": "どっち",
+     "kanji": null,
+     "hr": "koji (od dva)"
+    },
+    {
+     "kana": "せっけん",
+     "kanji": null,
+     "hr": "sapun"
+    },
+    {
+     "kana": "ゆっくり",
+     "kanji": null,
+     "hr": "polako"
+    },
+    {
+     "kana": "りっぱ",
+     "kanji": null,
+     "hr": "sjajan, veličanstven"
+    },
+    {
+     "kana": "けっこう",
+     "kanji": "結構",
+     "hr": "dovoljno, izvrsno"
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "のる",
+      "znacenje": "voziti se",
+      "oblici": [
+       "のります",
+       "のらない",
+       "のった",
+       "のって"
+      ]
+     },
+     {
+      "glagol": "わたる",
+      "znacenje": "prijeći",
+      "oblici": [
+       "わたります",
+       "わたらない",
+       "わたった",
+       "わたって"
+      ]
+     },
+     {
+      "glagol": "おそい",
+      "znacenje": "spor, kasan (pridjev)",
+      "oblici": [
+       null,
+       "おそくない",
+       "おそかった",
+       "おそくて"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Malo っ udvostručuje sljedeći suglasnik. Danas tablicu napamet piši cijelu.",
+   "upute": null
+  },
+  {
+   "dan": 8,
+   "tjedan": 2,
+   "naslov": "ア カ サ + ー",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "cijela hiragana (s ゛゜, ゃゅょ i っ)",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ っ"
+   },
+   "novaSlova": "アイウエオ カキクケコ サシスセソ ー",
+   "rijeci": [
+    {
+     "kana": "ケーキ",
+     "kanji": null,
+     "hr": "kolač"
+    },
+    {
+     "kana": "ケサ",
+     "kanji": "今朝",
+     "hr": "jutros",
+     "vjezba": true
+    },
+    {
+     "kana": "クウキ",
+     "kanji": "空気",
+     "hr": "zrak",
+     "vjezba": true
+    },
+    {
+     "kana": "クサ",
+     "kanji": "草",
+     "hr": "trava",
+     "vjezba": true
+    },
+    {
+     "kana": "サカ",
+     "kanji": "坂",
+     "hr": "uzbrdica",
+     "vjezba": true
+    },
+    {
+     "kana": "ケイカク",
+     "kanji": "計画",
+     "hr": "plan",
+     "vjezba": true
+    },
+    {
+     "kana": "ケシキ",
+     "kanji": "景色",
+     "hr": "krajolik",
+     "vjezba": true
+    },
+    {
+     "kana": "イク",
+     "kanji": "行く",
+     "hr": "ići",
+     "vjezba": true
+    },
+    {
+     "kana": "カウ",
+     "kanji": "買う",
+     "hr": "kupiti",
+     "vjezba": true
+    },
+    {
+     "kana": "アキ",
+     "kanji": "秋",
+     "hr": "jesen",
+     "vjezba": true
+    },
+    {
+     "kana": "シオ",
+     "kanji": "塩",
+     "hr": "sol",
+     "vjezba": true
+    },
+    {
+     "kana": "スシ",
+     "kanji": "寿司",
+     "hr": "suši",
+     "vjezba": true
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "かう",
+      "znacenje": "kupiti",
+      "oblici": [
+       "かいます",
+       "かわない",
+       "かった",
+       "かって"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Katakana još nema za tablicu napamet, pa danas napiši cijelu hiraganu. ー produljuje samoglasnik (u vodoravnom pisanju je vodoravna). Riječi označene s „vježba“ nisu posuđenice: to su japanske riječi koje danas pišeš katakanom samo za vježbu slova. Oblici ovaj tjedan ostaju u hiragani.",
+   "upute": null
+  },
+  {
+   "dan": 9,
+   "tjedan": 2,
+   "naslov": "タ ナ",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "katakana: ア, カ, サ + ー",
+    "slova": "アイウエオ カキクケコ サシスセソ ー"
+   },
+   "novaSlova": "タチツテト ナニヌネノ",
+   "rijeci": [
+    {
+     "kana": "ノート",
+     "kanji": null,
+     "hr": "bilježnica"
+    },
+    {
+     "kana": "タクシー",
+     "kanji": null,
+     "hr": "taksi"
+    },
+    {
+     "kana": "コート",
+     "kanji": null,
+     "hr": "kaput"
+    },
+    {
+     "kana": "スカート",
+     "kanji": null,
+     "hr": "suknja"
+    },
+    {
+     "kana": "テスト",
+     "kanji": null,
+     "hr": "test"
+    },
+    {
+     "kana": "セーター",
+     "kanji": null,
+     "hr": "džemper"
+    },
+    {
+     "kana": "ネクタイ",
+     "kanji": null,
+     "hr": "kravata"
+    },
+    {
+     "kana": "ステーキ",
+     "kanji": null,
+     "hr": "odrezak"
+    },
+    {
+     "kana": "オトス",
+     "kanji": "落とす",
+     "hr": "ispustiti",
+     "vjezba": true
+    },
+    {
+     "kana": "シヌ",
+     "kanji": "死ぬ",
+     "hr": "umrijeti",
+     "vjezba": true
+    },
+    {
+     "kana": "ソノ",
+     "kanji": "その",
+     "hr": "taj",
+     "vjezba": true
+    },
+    {
+     "kana": "オオキナ",
+     "kanji": "大きな",
+     "hr": "velik",
+     "vjezba": true
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "まつ",
+      "znacenje": "čekati",
+      "oblici": [
+       "まちます",
+       "またない",
+       "まった",
+       "まって"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Riječi označene s „vježba“ nisu posuđenice: to su japanske riječi koje danas pišeš katakanom samo za vježbu slova. Oblici ovaj tjedan ostaju u hiragani.",
+   "upute": null
+  },
+  {
+   "dan": 10,
+   "tjedan": 2,
+   "naslov": "ハ マ",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "katakana: ア, カ, サ, タ, ナ + ー",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ー"
+   },
+   "novaSlova": "ハヒフヘホ マミムメモ",
+   "rijeci": [
+    {
+     "kana": "コーヒー",
+     "kanji": null,
+     "hr": "kava"
+    },
+    {
+     "kana": "ナイフ",
+     "kanji": null,
+     "hr": "nož"
+    },
+    {
+     "kana": "ソフト",
+     "kanji": null,
+     "hr": "mekan, softver"
+    },
+    {
+     "kana": "ホシイ",
+     "kanji": "欲しい",
+     "hr": "željen",
+     "vjezba": true
+    },
+    {
+     "kana": "カイモノ",
+     "kanji": "買い物",
+     "hr": "kupovina",
+     "vjezba": true
+    },
+    {
+     "kana": "ムスメ",
+     "kanji": "娘",
+     "hr": "kći",
+     "vjezba": true
+    },
+    {
+     "kana": "マイアサ",
+     "kanji": "毎朝",
+     "hr": "svako jutro",
+     "vjezba": true
+    },
+    {
+     "kana": "フウトウ",
+     "kanji": "封筒",
+     "hr": "omotnica",
+     "vjezba": true
+    },
+    {
+     "kana": "ミセ",
+     "kanji": "店",
+     "hr": "trgovina",
+     "vjezba": true
+    },
+    {
+     "kana": "ホシ",
+     "kanji": "星",
+     "hr": "zvijezda",
+     "vjezba": true
+    },
+    {
+     "kana": "ヒト",
+     "kanji": "人",
+     "hr": "osoba",
+     "vjezba": true
+    },
+    {
+     "kana": "ノミモノ",
+     "kanji": "飲み物",
+     "hr": "piće",
+     "vjezba": true
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "よむ",
+      "znacenje": "čitati",
+      "oblici": [
+       "よみます",
+       "よまない",
+       "よんだ",
+       "よんで"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Riječi označene s „vježba“ nisu posuđenice: to su japanske riječi koje danas pišeš katakanom samo za vježbu slova. Oblici ovaj tjedan ostaju u hiragani.",
+   "upute": null
+  },
+  {
+   "dan": 11,
+   "tjedan": 2,
+   "naslov": "ヤ ラ ワ ン",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "katakana: ア, カ, サ, タ, ナ, ハ, マ + ー",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ー"
+   },
+   "novaSlova": "ヤユヨ ラリルレロ ワヲン",
+   "rijeci": [
+    {
+     "kana": "ホテル",
+     "kanji": null,
+     "hr": "hotel"
+    },
+    {
+     "kana": "キロ",
+     "kanji": null,
+     "hr": "kilometar, kilogram"
+    },
+    {
+     "kana": "クラス",
+     "kanji": null,
+     "hr": "razred"
+    },
+    {
+     "kana": "カメラ",
+     "kanji": null,
+     "hr": "fotoaparat"
+    },
+    {
+     "kana": "トイレ",
+     "kanji": null,
+     "hr": "zahod"
+    },
+    {
+     "kana": "レストラン",
+     "kanji": null,
+     "hr": "restoran"
+    },
+    {
+     "kana": "カレー",
+     "kanji": null,
+     "hr": "curry"
+    },
+    {
+     "kana": "ハンカチ",
+     "kanji": null,
+     "hr": "rupčić"
+    },
+    {
+     "kana": "テンイン",
+     "kanji": "店員",
+     "hr": "prodavač",
+     "vjezba": true
+    },
+    {
+     "kana": "ツタエル",
+     "kanji": "伝える",
+     "hr": "prenijeti",
+     "vjezba": true
+    },
+    {
+     "kana": "ヒトリ",
+     "kanji": "一人",
+     "hr": "jedna osoba",
+     "vjezba": true
+    },
+    {
+     "kana": "カエリ",
+     "kanji": "帰り",
+     "hr": "povratak",
+     "vjezba": true
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "あそぶ",
+      "znacenje": "igrati se, zabavljati se",
+      "oblici": [
+       "あそびます",
+       "あそばない",
+       "あそんだ",
+       "あそんで"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Pazi: ン potez ide odozdo prema gore, ソ odozgo prema dolje. ユ je kao コ, ali donja crta prelazi okomitu. ヲ naučiš, ali čestica を se piše hiraganom. Riječi označene s „vježba“ nisu posuđenice: to su japanske riječi koje danas pišeš katakanom samo za vježbu slova. Oblici ovaj tjedan ostaju u hiragani.",
+   "upute": null
+  },
+  {
+   "dan": 12,
+   "tjedan": 2,
+   "naslov": "゛ i ゜",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "katakana: ア, カ, サ, タ, ナ, ハ, マ, ヤ, ラ, ワ + ー",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ー"
+   },
+   "novaSlova": "ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ",
+   "rijeci": [
+    {
+     "kana": "ゼロ",
+     "kanji": null,
+     "hr": "nula"
+    },
+    {
+     "kana": "ギター",
+     "kanji": null,
+     "hr": "gitara"
+    },
+    {
+     "kana": "テーブル",
+     "kanji": null,
+     "hr": "stol"
+    },
+    {
+     "kana": "ラジカセ",
+     "kanji": null,
+     "hr": "radiokasetofon"
+    },
+    {
+     "kana": "ドア",
+     "kanji": null,
+     "hr": "vrata"
+    },
+    {
+     "kana": "バス",
+     "kanji": null,
+     "hr": "autobus"
+    },
+    {
+     "kana": "エレベーター",
+     "kanji": null,
+     "hr": "dizalo"
+    },
+    {
+     "kana": "テープ",
+     "kanji": null,
+     "hr": "traka"
+    },
+    {
+     "kana": "オドロク",
+     "kanji": "驚く",
+     "hr": "iznenaditi se",
+     "vjezba": true
+    },
+    {
+     "kana": "ハジメル",
+     "kanji": "始める",
+     "hr": "početi",
+     "vjezba": true
+    },
+    {
+     "kana": "ヒサシブリ",
+     "kanji": "久しぶり",
+     "hr": "nakon dugo vremena",
+     "vjezba": true
+    },
+    {
+     "kana": "ダイガク",
+     "kanji": "大学",
+     "hr": "fakultet",
+     "vjezba": true
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "いそぐ",
+      "znacenje": "žuriti se",
+      "oblici": [
+       "いそぎます",
+       "いそがない",
+       "いそいだ",
+       "いそいで"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Riječi označene s „vježba“ nisu posuđenice: to su japanske riječi koje danas pišeš katakanom samo za vježbu slova. Oblici ovaj tjedan ostaju u hiragani.",
+   "upute": null
+  },
+  {
+   "dan": 13,
+   "tjedan": 2,
+   "naslov": "ャ ュ ョ",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "katakana: ア, カ, サ, タ, ナ, ハ, マ, ヤ, ラ, ワ, ゛゜ + ー",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ ー"
+   },
+   "novaSlova": "キャ キュ キョ シャ シュ ショ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ミャ ミュ ミョ リャ リュ リョ ギャ ギュ ギョ ジャ ジュ ジョ ビャ ビュ ビョ ピャ ピュ ピョ",
+   "rijeci": [
+    {
+     "kana": "シャツ",
+     "kanji": null,
+     "hr": "košulja"
+    },
+    {
+     "kana": "ワイシャツ",
+     "kanji": null,
+     "hr": "košulja (bijela, uz odijelo)"
+    },
+    {
+     "kana": "シャワー",
+     "kanji": null,
+     "hr": "tuš"
+    },
+    {
+     "kana": "ニュース",
+     "kanji": null,
+     "hr": "vijesti"
+    },
+    {
+     "kana": "ジャム",
+     "kanji": null,
+     "hr": "džem"
+    },
+    {
+     "kana": "コンピュータ",
+     "kanji": null,
+     "hr": "računalo"
+    },
+    {
+     "kana": "ショウカイ",
+     "kanji": "紹介",
+     "hr": "predstavljanje",
+     "vjezba": true
+    },
+    {
+     "kana": "ニュウガク",
+     "kanji": "入学",
+     "hr": "upis u školu",
+     "vjezba": true
+    },
+    {
+     "kana": "チュウイ",
+     "kanji": "注意",
+     "hr": "oprez",
+     "vjezba": true
+    },
+    {
+     "kana": "ショクジ",
+     "kanji": "食事",
+     "hr": "obrok",
+     "vjezba": true
+    },
+    {
+     "kana": "ケンキュウシツ",
+     "kanji": "研究室",
+     "hr": "laboratorij",
+     "vjezba": true
+    },
+    {
+     "kana": "バショ",
+     "kanji": "場所",
+     "hr": "mjesto",
+     "vjezba": true
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "しぬ",
+      "znacenje": "umrijeti",
+      "oblici": [
+       "しにます",
+       "しなない",
+       "しんだ",
+       "しんで"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Riječi označene s „vježba“ nisu posuđenice: to su japanske riječi koje danas pišeš katakanom samo za vježbu slova. Oblici ovaj tjedan ostaju u hiragani.",
+   "upute": null
+  },
+  {
+   "dan": 14,
+   "tjedan": 2,
+   "naslov": "ッ, mali ァィゥェォ i ponavljanje",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "cijela katakana (s ゛゜, ャュョ i ッ)",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ キャ キュ キョ シャ シュ ショ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ミャ ミュ ミョ リャ リュ リョ ギャ ギュ ギョ ジャ ジュ ジョ ビャ ビュ ビョ ピャ ピュ ピョ ッ ー"
+   },
+   "novaSlova": "ッ  ティ ディ ファ フィ フォ チェ ジェ ウィ",
+   "rijeci": [
+    {
+     "kana": "カップ",
+     "kanji": null,
+     "hr": "šalica"
+    },
+    {
+     "kana": "マッチ",
+     "kanji": null,
+     "hr": "šibica"
+    },
+    {
+     "kana": "ベッド",
+     "kanji": null,
+     "hr": "krevet"
+    },
+    {
+     "kana": "ポケット",
+     "kanji": null,
+     "hr": "džep"
+    },
+    {
+     "kana": "サンドイッチ",
+     "kanji": null,
+     "hr": "sendvič"
+    },
+    {
+     "kana": "ハンドバッグ",
+     "kanji": null,
+     "hr": "ručna torbica"
+    },
+    {
+     "kana": "スプーン",
+     "kanji": null,
+     "hr": "žlica"
+    },
+    {
+     "kana": "スポーツ",
+     "kanji": null,
+     "hr": "sport"
+    },
+    {
+     "kana": "パーティー",
+     "kanji": null,
+     "hr": "zabava"
+    },
+    {
+     "kana": "フォーク",
+     "kanji": null,
+     "hr": "vilica"
+    },
+    {
+     "kana": "フィルム",
+     "kanji": null,
+     "hr": "film (rola)"
+    },
+    {
+     "kana": "チェック",
+     "kanji": null,
+     "hr": "provjera"
+    }
+   ],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "コピーする",
+      "znacenje": "kopirati",
+      "oblici": [
+       "コピーします",
+       "コピーしない",
+       "コピーした",
+       "コピーして"
+      ]
+     },
+     {
+      "glagol": "チェックする",
+      "znacenje": "provjeriti",
+      "oblici": [
+       "チェックします",
+       "チェックしない",
+       "チェックした",
+       "チェックして"
+      ]
+     }
+    ]
+   },
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Kombinacije s malim ァィゥェォ postoje samo u posuđenicama. Tablicu napamet danas piši cijelu. Bonus: クロアチア (Hrvatska), ザグレブ (Zagreb) i svoje ime katakanom.",
+   "upute": null
+  },
+  {
+   "dan": 15,
+   "tjedan": 3,
+   "naslov": "る-glagoli i varalice",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "cijela hiragana (s ゛゜, ゃゅょ i っ)",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ っ"
+   },
+   "novaSlova": null,
+   "rijeci": [],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て",
+     "たい"
+    ],
+    "redovi": [
+     {
+      "glagol": "たべる",
+      "znacenje": "jesti",
+      "oblici": [
+       "たべます",
+       "たべない",
+       "たべた",
+       "たべて",
+       "たべたい"
+      ]
+     },
+     {
+      "glagol": "みる",
+      "znacenje": "gledati",
+      "oblici": [
+       "みます",
+       "みない",
+       "みた",
+       "みて",
+       "みたい"
+      ]
+     },
+     {
+      "glagol": "おきる",
+      "znacenje": "ustati",
+      "oblici": [
+       "おきます",
+       "おきない",
+       "おきた",
+       "おきて",
+       "おきたい"
+      ]
+     },
+     {
+      "glagol": "ねる",
+      "znacenje": "spavati",
+      "oblici": [
+       "ねます",
+       "ねない",
+       "ねた",
+       "ねて",
+       "ねたい"
+      ]
+     },
+     {
+      "glagol": "かえる",
+      "znacenje": "vratiti se",
+      "oblici": [
+       "かえります",
+       "かえらない",
+       "かえった",
+       "かえって",
+       "かえりたい"
+      ]
+     },
+     {
+      "glagol": "はいる",
+      "znacenje": "ući",
+      "oblici": [
+       "はいります",
+       "はいらない",
+       "はいった",
+       "はいって",
+       "はいりたい"
+      ]
+     },
+     {
+      "glagol": "しる",
+      "znacenje": "znati, saznati",
+      "oblici": [
+       "しります",
+       "しらない",
+       "しった",
+       "しって",
+       "しりたい"
+      ]
+     }
+    ]
+   },
+   "diktat": [
+    {
+     "hr": "jeo sam",
+     "ja": "たべた"
+    },
+    {
+     "hr": "ne gledam",
+     "ja": "みない"
+    },
+    {
+     "hr": "ustajem (uljudno)",
+     "ja": "おきます"
+    },
+    {
+     "hr": "želim spavati",
+     "ja": "ねたい"
+    },
+    {
+     "hr": "vratio sam se",
+     "ja": "かえった"
+    },
+    {
+     "hr": "ne ulazim",
+     "ja": "はいらない"
+    },
+    {
+     "hr": "ne znam",
+     "ja": "しらない"
+    },
+    {
+     "hr": "želim znati",
+     "ja": "しりたい"
+    },
+    {
+     "hr": "gledao sam",
+     "ja": "みた"
+    },
+    {
+     "hr": "vratim se i… (て)",
+     "ja": "かえって"
+    }
+   ],
+   "recenice": null,
+   "napomena": "Prva četiri su obični る-glagoli (makneš る, dodaš nastavak). かえる, はいる i しる izgledaju isto, ali se mijenjaju kao u-glagoli: ります, らない, った, って. Piši ih jedne ispod drugih.",
+   "upute": null
+  },
+  {
+   "dan": 16,
+   "tjedan": 3,
+   "naslov": "nepravilni i ostali u-glagoli",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "cijela katakana (s ゛゜, ャュョ i ッ)",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ キャ キュ キョ シャ シュ ショ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ミャ ミュ ミョ リャ リュ リョ ギャ ギュ ギョ ジャ ジュ ジョ ビャ ビュ ビョ ピャ ピュ ピョ ッ ー"
+   },
+   "novaSlova": null,
+   "rijeci": [],
+   "oblici": {
+    "stupci": [
+     "ます",
+     "ない",
+     "た",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "する",
+      "znacenje": "raditi",
+      "oblici": [
+       "します",
+       "しない",
+       "した",
+       "して"
+      ]
+     },
+     {
+      "glagol": "くる",
+      "znacenje": "doći",
+      "oblici": [
+       "きます",
+       "こない",
+       "きた",
+       "きて"
+      ]
+     },
+     {
+      "glagol": "いく",
+      "znacenje": "ići",
+      "oblici": [
+       "いきます",
+       "いかない",
+       "いった",
+       "いって"
+      ]
+     },
+     {
+      "glagol": "ある",
+      "znacenje": "postojati (stvari)",
+      "oblici": [
+       "あります",
+       "ない",
+       "あった",
+       "あって"
+      ]
+     },
+     {
+      "glagol": "あう",
+      "znacenje": "sresti",
+      "oblici": [
+       "あいます",
+       "あわない",
+       "あった",
+       "あって"
+      ]
+     },
+     {
+      "glagol": "もつ",
+      "znacenje": "držati, imati",
+      "oblici": [
+       "もちます",
+       "もたない",
+       "もった",
+       "もって"
+      ]
+     },
+     {
+      "glagol": "のむ",
+      "znacenje": "piti",
+      "oblici": [
+       "のみます",
+       "のまない",
+       "のんだ",
+       "のんで"
+      ]
+     },
+     {
+      "glagol": "よぶ",
+      "znacenje": "zvati",
+      "oblici": [
+       "よびます",
+       "よばない",
+       "よんだ",
+       "よんで"
+      ]
+     },
+     {
+      "glagol": "きく",
+      "znacenje": "slušati, pitati",
+      "oblici": [
+       "ききます",
+       "きかない",
+       "きいた",
+       "きいて"
+      ]
+     },
+     {
+      "glagol": "およぐ",
+      "znacenje": "plivati",
+      "oblici": [
+       "およぎます",
+       "およがない",
+       "およいだ",
+       "およいで"
+      ]
+     },
+     {
+      "glagol": "かす",
+      "znacenje": "posuditi (nekome)",
+      "oblici": [
+       "かします",
+       "かさない",
+       "かした",
+       "かして"
+      ]
+     }
+    ]
+   },
+   "diktat": [
+    {
+     "hr": "učinio sam",
+     "ja": "した"
+    },
+    {
+     "hr": "ne dolazim",
+     "ja": "こない"
+    },
+    {
+     "hr": "otišao sam",
+     "ja": "いった"
+    },
+    {
+     "hr": "bilo je (stvar)",
+     "ja": "あった"
+    },
+    {
+     "hr": "ne srećem",
+     "ja": "あわない"
+    },
+    {
+     "hr": "držim i… (て)",
+     "ja": "もって"
+    },
+    {
+     "hr": "pio sam",
+     "ja": "のんだ"
+    },
+    {
+     "hr": "zovem (uljudno)",
+     "ja": "よびます"
+    },
+    {
+     "hr": "slušao sam",
+     "ja": "きいた"
+    },
+    {
+     "hr": "plivao sam",
+     "ja": "およいだ"
+    },
+    {
+     "hr": "ne posuđujem",
+     "ja": "かさない"
+    },
+    {
+     "hr": "dođem i… (て)",
+     "ja": "きて"
+    }
+   ],
+   "recenice": null,
+   "napomena": "Za diktat: pokrij sve osim prvog stupca i napiši cijele redove napamet, pa riješi popis.",
+   "upute": null
+  },
+  {
+   "dan": 17,
+   "tjedan": 3,
+   "naslov": "pridjevi",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "cijela hiragana (s ゛゜, ゃゅょ i っ)",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ っ"
+   },
+   "novaSlova": null,
+   "rijeci": [],
+   "oblici": {
+    "stupci": [
+     "niječno",
+     "prošlo",
+     "prošlo niječno",
+     "て"
+    ],
+    "redovi": [
+     {
+      "glagol": "たかい",
+      "znacenje": "skup, visok",
+      "oblici": [
+       "たかくない",
+       "たかかった",
+       "たかくなかった",
+       "たかくて"
+      ]
+     },
+     {
+      "glagol": "やすい",
+      "znacenje": "jeftin",
+      "oblici": [
+       "やすくない",
+       "やすかった",
+       "やすくなかった",
+       "やすくて"
+      ]
+     },
+     {
+      "glagol": "おおきい",
+      "znacenje": "velik",
+      "oblici": [
+       "おおきくない",
+       "おおきかった",
+       "おおきくなかった",
+       "おおきくて"
+      ]
+     },
+     {
+      "glagol": "ちいさい",
+      "znacenje": "malen",
+      "oblici": [
+       "ちいさくない",
+       "ちいさかった",
+       "ちいさくなかった",
+       "ちいさくて"
+      ]
+     },
+     {
+      "glagol": "いい",
+      "znacenje": "dobar",
+      "oblici": [
+       "よくない",
+       "よかった",
+       "よくなかった",
+       "よくて"
+      ]
+     },
+     {
+      "glagol": "しずか",
+      "znacenje": "tih",
+      "oblici": [
+       "しずかじゃない",
+       "しずかだった",
+       "しずかじゃなかった",
+       "しずかで"
+      ]
+     },
+     {
+      "glagol": "げんき",
+      "znacenje": "zdrav, živahan",
+      "oblici": [
+       "げんきじゃない",
+       "げんきだった",
+       "げんきじゃなかった",
+       "げんきで"
+      ]
+     },
+     {
+      "glagol": "すき",
+      "znacenje": "drag, voljeti",
+      "oblici": [
+       "すきじゃない",
+       "すきだった",
+       "すきじゃなかった",
+       "すきで"
+      ]
+     }
+    ]
+   },
+   "diktat": [
+    {
+     "hr": "nije skupo",
+     "ja": "たかくない"
+    },
+    {
+     "hr": "bilo je jeftino",
+     "ja": "やすかった"
+    },
+    {
+     "hr": "nije bilo veliko",
+     "ja": "おおきくなかった"
+    },
+    {
+     "hr": "malen i… (て)",
+     "ja": "ちいさくて"
+    },
+    {
+     "hr": "nije dobro",
+     "ja": "よくない"
+    },
+    {
+     "hr": "bilo je dobro",
+     "ja": "よかった"
+    },
+    {
+     "hr": "nije tiho",
+     "ja": "しずかじゃない"
+    },
+    {
+     "hr": "bio sam zdrav",
+     "ja": "げんきだった"
+    },
+    {
+     "hr": "nisam volio",
+     "ja": "すきじゃなかった"
+    },
+    {
+     "hr": "tih i… (て)",
+     "ja": "しずかで"
+    }
+   ],
+   "recenice": null,
+   "napomena": "い-pridjevi: い → くない, かった, くなかった, くて. いい je iznimka (よ…). な-pridjevi: じゃない, だった, じゃなかった, で.",
+   "upute": null
+  },
+  {
+   "dan": 18,
+   "tjedan": 3,
+   "naslov": "hiragana koja se miješaju",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "cijela katakana (s ゛゜, ャュョ i ッ)",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ キャ キュ キョ シャ シュ ショ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ミャ ミュ ミョ リャ リュ リョ ギャ ギュ ギョ ジャ ジュ ジョ ビャ ビュ ビョ ピャ ピュ ピョ ッ ー"
+   },
+   "novaSlova": "ぬ/め  わ/れ/ね  は/ほ  さ/ち  る/ろ  き/さ  い/り  あ/お  つ/っ  や/ゃ",
+   "rijeci": [
+    {
+     "kana": "いぬ",
+     "kanji": "犬",
+     "hr": "pas",
+     "pazi": "ぬ (petlja), め (bez)"
+    },
+    {
+     "kana": "あめ",
+     "kanji": "雨",
+     "hr": "kiša",
+     "pazi": "め"
+    },
+    {
+     "kana": "ねこ",
+     "kanji": "猫",
+     "hr": "mačka",
+     "pazi": "ね (petlja)"
+    },
+    {
+     "kana": "わすれる",
+     "kanji": "忘れる",
+     "hr": "zaboraviti",
+     "pazi": "わ, れ"
+    },
+    {
+     "kana": "はし / ほし",
+     "kanji": "箸 / 星",
+     "hr": "štapići / zvijezda",
+     "pazi": "は, ほ"
+    },
+    {
+     "kana": "ちかい / さかい",
+     "kanji": "近い / 境",
+     "hr": "blizu / granica",
+     "pazi": "ち, さ"
+    },
+    {
+     "kana": "まるい / ろく",
+     "kanji": "丸い / 六",
+     "hr": "okrugao / šest",
+     "pazi": "る (petlja), ろ"
+    },
+    {
+     "kana": "きた / さき",
+     "kanji": "北 / 先",
+     "hr": "sjever / naprijed",
+     "pazi": "き, さ"
+    },
+    {
+     "kana": "いりぐち",
+     "kanji": "入口",
+     "hr": "ulaz",
+     "pazi": "い, り"
+    },
+    {
+     "kana": "あおい",
+     "kanji": "青い",
+     "hr": "plav",
+     "pazi": "あ, お"
+    },
+    {
+     "kana": "きって / きて",
+     "kanji": "切手 / 来て",
+     "hr": "marka / dođi",
+     "pazi": "っ"
+    },
+    {
+     "kana": "びょういん / びよういん",
+     "kanji": "病院 / 美容院",
+     "hr": "bolnica / frizerski salon",
+     "pazi": "ょ / よ"
+    },
+    {
+     "kana": "おばさん / おばあさん",
+     "kanji": null,
+     "hr": "teta / baka",
+     "pazi": "dugi あ"
+    }
+   ],
+   "oblici": null,
+   "diktat": null,
+   "recenice": null,
+   "napomena": "Nema novih slova: u koraku „Nova slova“ svaki par napiši 5 puta jedno do drugog, pa riječi.",
+   "upute": null
+  },
+  {
+   "dan": 19,
+   "tjedan": 3,
+   "naslov": "katakana koja se miješaju",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "cijela hiragana (s ゛゜, ゃゅょ i っ)",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ っ"
+   },
+   "novaSlova": "シ/ツ  ソ/ン  ク/タ/ケ  ワ/ウ/フ  チ/テ  ヌ/ス  コ/ユ  マ/ム/ア  ノ/メ  ー/一",
+   "rijeci": [
+    {
+     "kana": "シャツ / スーツ",
+     "kanji": null,
+     "hr": "košulja / odijelo",
+     "pazi": "シ, ツ"
+    },
+    {
+     "kana": "ソフト / パン",
+     "kanji": null,
+     "hr": "mekan / kruh",
+     "pazi": "ソ, ン"
+    },
+    {
+     "kana": "レストラン / ズボン",
+     "kanji": null,
+     "hr": "restoran / hlače",
+     "pazi": "ン"
+    },
+    {
+     "kana": "クラス / タクシー / ケーキ",
+     "kanji": null,
+     "hr": "razred / taksi / kolač",
+     "pazi": "ク, タ, ケ"
+    },
+    {
+     "kana": "ワイシャツ / ウール / フォーク",
+     "kanji": null,
+     "hr": "košulja / vuna / vilica",
+     "pazi": "ワ, ウ, フ"
+    },
+    {
+     "kana": "チェック / テニス",
+     "kanji": null,
+     "hr": "provjera / tenis",
+     "pazi": "チ, テ"
+    },
+    {
+     "kana": "ニュース / ナイフ",
+     "kanji": null,
+     "hr": "vijesti / nož",
+     "pazi": "ス"
+    },
+    {
+     "kana": "カップ / コップ",
+     "kanji": null,
+     "hr": "šalica / čaša",
+     "pazi": "カ, コ"
+    },
+    {
+     "kana": "アメリカ / マッチ",
+     "kanji": null,
+     "hr": "Amerika / šibica",
+     "pazi": "ア, マ"
+    },
+    {
+     "kana": "ノート / メートル",
+     "kanji": null,
+     "hr": "bilježnica / metar",
+     "pazi": "ノ, メ"
+    }
+   ],
+   "oblici": null,
+   "diktat": null,
+   "recenice": null,
+   "napomena": "シ: crtice odozdo; ツ: odozgo. ソ: dugi potez odozgo; ン: odozdo. U koraku „Nova slova“ svaki par napiši 5 puta jedno do drugog.",
+   "upute": null
+  },
+  {
+   "dan": 20,
+   "tjedan": 3,
+   "naslov": "kratke rečenice",
+   "tablicaNapamet": {
+    "pismo": "katakana",
+    "opis": "cijela katakana (s ゛゜, ャュョ i ッ)",
+    "slova": "アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ キャ キュ キョ シャ シュ ショ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ミャ ミュ ミョ リャ リュ リョ ギャ ギュ ギョ ジャ ジュ ジョ ビャ ビュ ビョ ピャ ピュ ピョ ッ ー"
+   },
+   "novaSlova": null,
+   "rijeci": [],
+   "oblici": null,
+   "diktat": null,
+   "recenice": [
+    {
+     "hr": "Svako jutro pijem kavu.",
+     "ja": "まいあさ コーヒーを のみます。"
+    },
+    {
+     "hr": "Kupio sam kruh u robnoj kući.",
+     "ja": "デパートで パンを かいました。"
+    },
+    {
+     "hr": "Idem taksijem u hotel.",
+     "ja": "タクシーで ホテルに いきます。"
+    },
+    {
+     "hr": "U restoranu sam jeo odrezak.",
+     "ja": "レストランで ステーキを たべました。"
+    },
+    {
+     "hr": "Na stolu je bilježnica.",
+     "ja": "テーブルの うえに ノートが あります。"
+    },
+    {
+     "hr": "Prekosutra idem na koncert.",
+     "ja": "あさって コンサートに いきます。"
+    },
+    {
+     "hr": "Želim kupiti novu gitaru.",
+     "ja": "あたらしい ギターを かいたいです。"
+    },
+    {
+     "hr": "Nikad nisam bio u Americi.",
+     "ja": "アメリカに いったことが ありません。"
+    },
+    {
+     "hr": "Nisam gledao vijesti.",
+     "ja": "ニュースを みませんでした。"
+    },
+    {
+     "hr": "Mlađa sestra svira klavir.",
+     "ja": "いもうとは ピアノを ひきます。"
+    }
+   ],
+   "napomena": "Piši iz hrvatskog, s razmakom između riječi. Japansku rečenicu otkrij tek nakon što napišeš.",
+   "upute": null
+  },
+  {
+   "dan": 21,
+   "tjedan": 3,
+   "naslov": "velika provjera",
+   "tablicaNapamet": {
+    "pismo": "hiragana",
+    "opis": "cijela hiragana i cijela katakana (s ゛゜, ゃゅょ i っ)",
+    "slova": "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ きゃ きゅ きょ しゃ しゅ しょ ちゃ ちゅ ちょ にゃ にゅ にょ ひゃ ひゅ ひょ みゃ みゅ みょ りゃ りゅ りょ ぎゃ ぎゅ ぎょ じゃ じゅ じょ びゃ びゅ びょ ぴゃ ぴゅ ぴょ っ / アイウエオ カキクケコ サシスセソ タチツテト ナニヌネノ ハヒフヘホ マミムメモ ヤユヨ ラリルレロ ワヲン ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポ キャ キュ キョ シャ シュ ショ チャ チュ チョ ニャ ニュ ニョ ヒャ ヒュ ヒョ ミャ ミュ ミョ リャ リュ リョ ギャ ギュ ギョ ジャ ジュ ジョ ビャ ビュ ビョ ピャ ピュ ピョ ッ ー"
+   },
+   "novaSlova": null,
+   "rijeci": [],
+   "oblici": null,
+   "diktat": [
+    {
+     "hr": "ovdje",
+     "ja": "ここ",
+     "dan": 1
+    },
+    {
+     "hr": "stolica",
+     "ja": "いす",
+     "dan": 1
+    },
+    {
+     "hr": "trbuh",
+     "ja": "おなか",
+     "dan": 2
+    },
+    {
+     "hr": "jedan dan",
+     "ja": "いちにち",
+     "dan": 2
+    },
+    {
+     "hr": "svaki dan",
+     "ja": "まいにち",
+     "dan": 3
+    },
+    {
+     "hr": "mlađa sestra",
+     "ja": "いもうと",
+     "dan": 3
+    },
+    {
+     "hr": "noć, večer",
+     "ja": "よる",
+     "dan": 4
+    },
+    {
+     "hr": "razni",
+     "ja": "いろいろ",
+     "dan": 4
+    },
+    {
+     "hr": "predsoblje",
+     "ja": "げんかん",
+     "dan": 5
+    },
+    {
+     "hr": "predvečer",
+     "ja": "ゆうがた",
+     "dan": 5
+    },
+    {
+     "hr": "bolnica",
+     "ja": "びょういん",
+     "dan": 6
+    },
+    {
+     "hr": "svaki tjedan",
+     "ja": "まいしゅう",
+     "dan": 6
+    },
+    {
+     "hr": "prekosutra",
+     "ja": "あさって",
+     "dan": 7
+    },
+    {
+     "hr": "onuda",
+     "ja": "あっち",
+     "dan": 7
+    },
+    {
+     "hr": "kolač",
+     "ja": "ケーキ",
+     "dan": 8
+    },
+    {
+     "hr": "krajolik",
+     "ja": "ケシキ",
+     "dan": 8
+    },
+    {
+     "hr": "bilježnica",
+     "ja": "ノート",
+     "dan": 9
+    },
+    {
+     "hr": "kravata",
+     "ja": "ネクタイ",
+     "dan": 9
+    },
+    {
+     "hr": "kava",
+     "ja": "コーヒー",
+     "dan": 10
+    },
+    {
+     "hr": "svako jutro",
+     "ja": "マイアサ",
+     "dan": 10
+    },
+    {
+     "hr": "hotel",
+     "ja": "ホテル",
+     "dan": 11
+    },
+    {
+     "hr": "curry",
+     "ja": "カレー",
+     "dan": 11
+    },
+    {
+     "hr": "nula",
+     "ja": "ゼロ",
+     "dan": 12
+    },
+    {
+     "hr": "dizalo",
+     "ja": "エレベーター",
+     "dan": 12
+    },
+    {
+     "hr": "košulja",
+     "ja": "シャツ",
+     "dan": 13
+    },
+    {
+     "hr": "predstavljanje",
+     "ja": "ショウカイ",
+     "dan": 13
+    },
+    {
+     "hr": "šalica",
+     "ja": "カップ",
+     "dan": 14
+    },
+    {
+     "hr": "žlica",
+     "ja": "スプーン",
+     "dan": 14
+    },
+    {
+     "hr": "pas",
+     "ja": "いぬ",
+     "dan": 18
+    },
+    {
+     "hr": "okrugao / šest",
+     "ja": "まるい / ろく",
+     "dan": 18
+    },
+    {
+     "hr": "košulja / odijelo",
+     "ja": "シャツ / スーツ",
+     "dan": 19
+    },
+    {
+     "hr": "vijesti / nož",
+     "ja": "ニュース / ナイフ",
+     "dan": 19
+    }
+   ],
+   "recenice": [
+    {
+     "hr": "Svako jutro pijem kavu.",
+     "ja": "まいあさ コーヒーを のみます。"
+    },
+    {
+     "hr": "Kupio sam kruh u robnoj kući.",
+     "ja": "デパートで パンを かいました。"
+    },
+    {
+     "hr": "Idem taksijem u hotel.",
+     "ja": "タクシーで ホテルに いきます。"
+    }
+   ],
+   "napomena": "Zabilježi koliko si slova pogriješio u tablici. Slova i riječi koje i dalje kvariš označi ☆.",
+   "upute": [
+    "Obje tablice napamet (8 min)",
+    "Diktat 32 riječi (14 min)",
+    "3 rečenice iz 20. dana bez gledanja (5 min)",
+    "Popis za ☆ (3 min)"
+   ]
+  }
+ ]
+}

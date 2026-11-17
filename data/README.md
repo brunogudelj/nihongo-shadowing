@@ -5,6 +5,8 @@
 - `kanji.json`: kanji JLPT N5 do N1, s čitanjima (on/kun) i engleskim značenjem (KANJIDIC2)
 - `konjugator.json`: glagoli i pridjevi iz `vocab-n4.json` za konjugator, s hrvatskim značenjem
   (napisao Claude, skripta `pipeline/conj-words.mjs`, `npm run konjugator-rijeci`)
+- `pisanje-plan.json`: plan pisanja kane na papiru, 21 dan (slova, riječi iz `rijeci.json`, oblici,
+  diktat, rečenice). Napisao Claude; za stranicu "Pisanje" u aplikaciji
 
 JLPT nema službene popise. Ovi su neslužbeni i preuzeti skriptom `pipeline/lists.mjs` (`npm run popisi`).
 
